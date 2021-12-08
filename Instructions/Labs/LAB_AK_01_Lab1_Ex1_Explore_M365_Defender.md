@@ -39,7 +39,7 @@ In this task, you will assign preset security policies for EOP and Microsoft Def
 
 9. On the *Policy dashboard*, select **Preset Security Policies**.
 
-10. Under *Standard protection*, select **Edit**.
+10. Under *Standard protection*, select **manage**.
 
 11. In *EOP protections apply to*, under **Domains** write your tenant's domain name, select it and select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
 
@@ -47,7 +47,7 @@ In this task, you will assign preset security policies for EOP and Microsoft Def
 
 13. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and select **Done** to finish.
 
-14. Under *Strict protection*, select **Edit**.
+14. Under *Strict protection*, select **manage**.
 
 15. In *EOP protections apply to*, under **Groups** write **Leadership**, select it and select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
 
@@ -57,7 +57,7 @@ In this task, you will assign preset security policies for EOP and Microsoft Def
 
 18. On the top middle menu, select **Threat policies** to go back and under *Policies*, select **Safe Attachments**. Notice that both preset policies appears here and the Status is On.
 
-19. In the menu, select **Global Settings**.
+19. In the menu, select **Settings**.
 
 20. Read through the available options and select the toggle under **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** and select **Save**.
 
