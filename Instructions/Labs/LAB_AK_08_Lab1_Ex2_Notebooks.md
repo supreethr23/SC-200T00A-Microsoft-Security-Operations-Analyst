@@ -54,6 +54,8 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 16. Select the **Launch notebook** button. Close any window that may appear in the Microsoft Azure Machine Learning Studio.
 
+![](../Media/ot1.png)      ![](../Media/n1.png)
+
 17.	Next to the **Compute:** instance selector at the top of the screen, select the **+** symbol for **New Compute**.
 
 18.	Type a unique name for the *Compute name* and select the first compute available since this is a lab environment. **Hint:** Workload type: Development.
