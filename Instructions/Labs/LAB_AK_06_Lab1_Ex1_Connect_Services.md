@@ -38,6 +38,8 @@ In this task, you will connect the Azure Active Directory connector to Microsoft
 
 1. In the Configuration area select **Data connectors**.  In the Data Connectors page, search for the **Azure Active Directory** connector and select it from the list.
 
+   ![](../Media/d1.png)
+
 2. Select **Open connector page** on the connector information blade.
 
 3. Select the **Sign-in Logs** and **Audit Logs** options from the Configuration area, then select **Apply Changes**.
