@@ -186,6 +186,7 @@ In this task, you will on-board a device to Microsoft Defender for Endpoint.
 
 9. From the Onboarding page in the portal, copy the detection test script and run it in an open command window.  You may have to open a new **Administrator: Command Prompt** window by typing *CMD* in the windows search bar and choose to **Run as Administrator**.
 
-10. In the Microsoft 365 Defender portal in the Endpoints area, select **Device inventory**. You should now see your device in the list.
+10. In the Microsoft 365 Defender portal in the Endpoints area, select **Device inventory**. You should now see your device in the list, If not wait for some time and refresh the page.
+
 
 ## Proceed to Exercise 3
