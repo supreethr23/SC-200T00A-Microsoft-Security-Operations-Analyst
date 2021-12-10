@@ -143,6 +143,8 @@ In this task, you will install and collect Sysmon logs.
 
     >**Note:**  Verify that "Configuration file validated" and "Sysmon started" messages appear in the output. If that is not the case, verify that the data is properly copied and the sysmon.xml has been saved.
 
+![](../Media/s2.png)
+
 10. In the browser, navigate back to the Azure portal at https://portal.azure.com 
 
 11. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel** and select your Microsoft Sentinel Workspace you created earlier.
