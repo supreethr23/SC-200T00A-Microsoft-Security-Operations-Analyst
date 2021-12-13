@@ -45,6 +45,8 @@ Because this course can be offered by learning partners using any one of several
 
 7. On the **Add members** page select **+ Add members** and select the **ODLuser** from the list and select **(1) Add** and then **Next.
 
+**Note**: DID is your unique deployment ID and can be found under the environment details tab.
+
 8. On the **Edit Settings** enter **SG-IT-DID** under the **Group Email address**. Leave the rest of the options unchanged and select **Next**.
 
 9. On the **Review and finish adding group** and select **Create Group**.
