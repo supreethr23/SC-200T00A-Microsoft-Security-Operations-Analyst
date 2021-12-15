@@ -5,41 +5,6 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 >**Hint:** This lab involves entering many KQL scripts into Microsoft Sentinel. The scripts were provided in a file at the beginning of this lab. An alternate location to download them is:  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
 
-## Deploy Azure Sentinel Workspace.
-
-In this task, you will create an Azure Sentinel workspace.
-
-3.  In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
-
-4. In the **Sign in** dialog box, copy and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
-
-5. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
-
-6. In the Search bar of the Azure portal, type *Sentinel*, then select **Azure Sentinel**.
-
-7. Select **+ Create**.
-
-8. Next, select **+ Create a new workspace**.
-
-**Note** First, you create a new Log Analytics Workspace. If you have already created a Log Analytics workspace, select the workspace.
-
-9. Select your proper Subscription.
-
-10. Select the **Create New** link for the Resource Group and enter a new resource group name of your choosing.
-
-11. Under Instance details in the name field enter a name for your choosing for the Log Analytics Workspace.
-
-**Note:** This name will also be the Azure Sentinel workspace name.
-
-12. Select the region that is appropriate for you.  The appropriate region may default or your instructor may have specific advice on which region to select.  
-
-13. Select **Review + Create**.
-
-14. Select **Create**. Wait for the new Log Analytics workspace to appear in the list on the Add Azure Sentinel to a workspace page.  This may take a minute.
-
-16. Select the newly created workspace when it appears, then select **Add**.
-
-
 ### Task 1: Access the KQL testing area.
 
 In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
