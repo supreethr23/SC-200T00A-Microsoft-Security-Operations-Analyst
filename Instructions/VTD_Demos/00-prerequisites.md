@@ -257,21 +257,12 @@ In this task, you will connect the Azure Active Directory Identity Protection co
 
 3. Select the **Connect** button.
 
-### Task 4: Connect the Azure Defender connector.
-
-In this task, you will connect the Azure Defender connector.
-
-1. From the Data Connectors tab, select the **Azure Defender** connector from the list.
-
-2. Select **Open connector page** on the connector information blade.
-
-3. Review the Connecting Options. Don't connect. This is for informational purposes only.
 
 ### Task 5: Connect the Microsoft Cloud App Security connector.
 
 In this task, you will connect the Microsoft Cloud App Security connector.
 
-1. From the Data Connectors Tab, select the **Microsoft Cloud App Security** connector from the list.
+1. From the Data Connectors Tab, select the **Microsoft Defender for Cloud Apps** connector from the list.
 
 2. Select **Open connector page** on the connector information blade.
 
