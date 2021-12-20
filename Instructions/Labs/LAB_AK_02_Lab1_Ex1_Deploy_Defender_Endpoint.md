@@ -75,7 +75,7 @@ In this task, you will configure roles for use with device groups.
     |General setting|Value|
     |---|---|
     |Role name|**Tier 1 Support**|
-    |Permissions|Live Response capabilities - Advanced|
+    |Permissions|select **Live Response capabilities** and click on **Advanced**|
 
 1. Select the **Assigned user groups** tab. Select **sg-IT** and then select **Add selected groups**. Make sure it appears under *Azure AD user groups with this role*.
 
