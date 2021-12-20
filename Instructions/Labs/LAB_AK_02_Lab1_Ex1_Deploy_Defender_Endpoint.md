@@ -29,7 +29,6 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 	**Note:** The Defender for Endpoint setup should be performed automatically by your Microsoft 365 E5 tenant.  You can view the other settings if you like.  You will onboard Devices in the next task.  
 
-
 ### Task 2: Onboard a Device.
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
