@@ -135,7 +135,7 @@ In this task, you will install Azure Arc on an on-premises server.
 
 In this task, you will manually install the required agent on the Windows Server.
 
-1. Go to **Microsoft Defender for Cloud** and select the **Getting Started** page.
+1. On WIN1 Virtual machine, Go to **Microsoft Defender for Cloud** and select the **Getting Started** page.
 
 1. Select the **Get Started** tab.
 
