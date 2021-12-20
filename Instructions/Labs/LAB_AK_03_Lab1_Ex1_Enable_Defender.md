@@ -55,11 +55,11 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Select **Environment settings** from the Management area of the portal menu.
 
-1. Note that your "Defender coverage" includes at least 11 plans. If you don't see it, wait for the *Trial started* notification to appear. After that, select **Refresh** and select your Subscription. 
+1. expand it and note that your "Defender coverage" includes at least 11 plans. If you don't see it, wait for the *Trial started* notification to appear. After that, select **Refresh** and select your Subscription. 
 
-1. Review the different Azure resources and fees under the *Microsoft Defender for* and *Pricing* columns.
+1. click on the subscription and Review the different Azure resources and fees under the *Microsoft Defender for* and *Pricing* columns.
 
-1. Select **Auto provisioning** from the Settings area.
+1. Select **Auto provisioning** from the Settings area in Defender plans.
 
 1. Review the Auto provisioning - Extensions. Confirm that **Log Analytics agent for Azure VMs** is **Off**.
 
