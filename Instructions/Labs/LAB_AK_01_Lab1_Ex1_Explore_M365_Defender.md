@@ -53,7 +53,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
 
-**Note**: if you receive a message "You can't access this section.",  wait 5 minutes and try again.  Sometimes the access rules need to propagate the tenant.  
+   **Note**: if you receive a message "You can't access this section.",  wait 5 minutes and try again.  Sometimes the access rules need to propagate the tenant.  
 
 1. On the **Microsoft Security Center** setup Step 2, select **Next**.
 
