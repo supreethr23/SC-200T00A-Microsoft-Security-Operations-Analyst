@@ -55,20 +55,6 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
    **Note**: if you receive a message "You can't access this section.",  wait 5 minutes and try again.  Sometimes the access rules need to propagate the tenant.  
 
-1. On the **Microsoft Security Center** setup Step 2, select **Next**.
-
-1. On Step 3 **Set up preferences**, select the data storage location appropriate for where this training tenant is being managed.  You may want to validate with your course instructor.
-
-1. Confirm the Preview features are **On**.
-
-1. Select **Next**.  
-
-1. Select Continue on the **Create your cloud instance**
-
-1. After the **Creating your Microsoft Defender for Endpoint account** progress bar completes. Step 4 options will be displayed.  Select **Start using Microsoft Defender for Endpoint**.
-
-1. In the Setup incomplete dialog box select **Proceed anyway**.
-
 ### Task 1: Apply Microsoft Defender for Office 365 preset security policies
 
 In this task, you will assign preset security policies for EOP and Microsoft Defender for Office 365 in the Microsoft 365 security portal.
@@ -87,32 +73,28 @@ In this task, you will assign preset security policies for EOP and Microsoft Def
 
 1. If shown, close the Microsoft 365 Defender quick tour.
 
-1. From the navigation menu, under *Email & Collaboration*, select **Polices & Rules**.
+1. From the navigation menu, under **Email & Collaboration**, select **Polices & Rules**.
 
-1. On the *Policy & Rules* dashboard, select **Threat Policies**.
+1. On the **Policy & Rules** dashboard, select **Threat Policies**.
 
-1. On the *Policy dashboard*, select **Preset Security Policies**.
+1. On the **Policy dashboard**, select **Preset Security Policies**.
 
-1. Under *Standard protection*, select **manage**.
+1. Under **Standard protection**, select **manage**.
 
-1. In *EOP protections apply to*, under **Domains** write your tenant's domain name, select it and select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
+1. In **EOP protections apply to**, under **Domains** write your tenant's domain name, select it and select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
 
-1. In *Defender for Office 365 protections​ apply to*, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
-
-1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and select **Done** to finish.
-
-1. Under *Strict protection*, select **manage**.
-
-1. In *EOP protections apply to*, under **Groups** write **Leadership**, select it and select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
-
-1. In *Defender for Office 365 protections​ apply to*, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+1. In **Defender for Office 365 protections apply to**, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and select **Done** to finish.
+
+1. Under **Strict protection**, select **manage**.
+
+1. In **EOP protections apply to**, under **Groups** write **Leadership**, select it and select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
+
+1. In **Defender for Office 365 protections apply to**, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+
+1. Read the content under **Review and confirm your changes** and select **Confirm** to apply the changes and select **Done** to finish.
 
 1. On the top middle menu, select **Threat policies** to go back and under *Policies*, select **Safe Attachments**. Notice that both preset policies appears here and the Status is On.
-
-1. In the menu, select **Settings**.
-
-1. Read through the available options and select the toggle under **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** and select **Save**.
 
 ## You have completed the lab.
