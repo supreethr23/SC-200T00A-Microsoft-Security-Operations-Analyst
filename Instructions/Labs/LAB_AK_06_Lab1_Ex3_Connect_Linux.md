@@ -29,7 +29,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 
 1. Copy to the clipboard the command shown in *1.2 Install the CEF collector on the Linux machine*.
 
-1. Launch your LIN1 virtual machine and login with the username and password provided by your lab hoster. Note the IP address for your LIN1 server. See the screenshot below as an example:
+1. Launch your LIN1 virtual machine and login with the username and password as provided in the Environment tab. Note the IP address for your LIN1 server. See the screenshot below as an example:
 
    ![linux login](../Media/LinuxLoginExample.png)
 
