@@ -5,7 +5,7 @@
 
 In this task, you will connect a Threat intelligence provider with the Threat intelligence - TAXII connector.
 
-1. Login to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Login to WIN1 virtual machine with the password as provided in the Environment tab.  
 
 2. In the Edge browser, navigate to the Azure portal at (https://portal.azure.com).
 
