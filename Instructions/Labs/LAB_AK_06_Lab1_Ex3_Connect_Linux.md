@@ -1,3 +1,5 @@
+# Module 6 - Lab 1 - Exercise 3 - Connect Linux hosts to Microsoft Sentinel using data connectors
+
 ### Task 1: Access the Microsoft Sentinel Workspace.
 
 In this task, you will access your Microsoft Sentinel workspace.
