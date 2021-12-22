@@ -16,7 +16,7 @@ In this task, you will connect an Azure Windows virtual machine to Microsoft Sen
 
 1. Select **Download & install agent for Azure Windows Virtual machines**.
 
-1. Select the **WIN2-DID** virtual machine in the list that you just created in the previous task, then select **Connect**. Wait until the *connecting...* message disappears.
+1. Select the **WIN2-DID** virtual machine in the list that was pre-created by the Lab provider, then select **Connect**. Wait until the *connecting...* message disappears.
 
 1. Close the window by selecting the 'x' to go back to **Virtual machines** view. You should now see the virtual machine has a *Log Analytics Connection* to "This workspace".
 
