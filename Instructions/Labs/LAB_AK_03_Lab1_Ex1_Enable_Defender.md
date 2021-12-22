@@ -61,7 +61,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Select **Auto provisioning** from the Settings area in Defender plans.
 
-1. Review the Auto provisioning - Extensions. Confirm that **Log Analytics agent for Azure VMs** is **Off**.
+1. Review the Auto provisioning - Extensions. Confirm that **Log Analytics agent for Azure VMs** is **Off**, Click **Save**.
 
 1. Close the settings page by selecting the 'x' on the upper right of the page to go back to the **Environment settings** again and select the '>' on the left of your subscription.
 
