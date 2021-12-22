@@ -24,7 +24,15 @@ In this task, you will connect an Azure Windows virtual machine to Microsoft Sen
 
 In this task, you will connect a non-Azure Windows virtual machine to Microsoft Sentinel.
 
-1. Login to WIN2 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Login to WIN2 virtual machine as Azureuser Admin with the password as provided in the Environment tab. To do this,
+
+1. Select the magnifying glass (Search Windows) icon on the taskbar at the bottom of the screen and type **RDP** in the Search box that appears.
+
+1. In the **Remote Desktop Connection** window, copy the **Windows VM DNS Name** as provided under Resource group: WIN2 in the Environmnet Tab.
+
+1. In the **Windows Security** window, select **More choices** and then **Use a different account**. Provide the username (.\azureuser) and the password as provided under Resource group: WIN2 in the Environmnet Tab. Click **OK** to connect.
+
+1. You may receive a certificate warning during the sign-in process. Click **Yes** or to create the connection and connect to your deployed VM. You should connect successfully.
 
 1. Open the Microsoft Edge browser.
 
