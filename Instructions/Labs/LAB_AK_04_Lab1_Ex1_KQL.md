@@ -9,9 +9,9 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
 
-1. Login to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Login to WIN1 virtual machine as Azureuser Admin with the password as provided in the Environment tab.
 
-2. Go to https://aka.ms/lademo in your browser. Login with the MOD Administrator credentials. 
+2. Go to https://aka.ms/lademo in your browser. Login with the ODL_User_Id Administrator credentials. 
 
 3. Explore the available tables listed in the tab on the left side of the screen.
 
@@ -407,7 +407,7 @@ SecurityAlert
 
 6. To create a function:
 
-    >**Note:** You will not be able to do this in the lademo environment used for data in this lab, but it's an important concept to be used in your environment. 
+    >**Note:** You will not be able to do this in the labdemo environment used for data in this lab, but it's an important concept to be used in your environment. 
 
 After running a query, select the **Save** button and then select **Save As function** from the drop-down. Enter the name your want, for example: *MailboxForward* in the **Function name** box and enter a **Legacy category**, like *General* and select **Save**.
 
