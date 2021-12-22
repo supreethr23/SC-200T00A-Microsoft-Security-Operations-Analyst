@@ -120,33 +120,4 @@ In this task, you will install and collect Sysmon logs.
 
 1. Select **Apply**.
 
-
-### Task 4: Onboard Microsoft Defender for Endpoint Device.
-
-In this task, you will on-board a device to Microsoft Defender for Endpoint.
-
-   **IMPORTANT:** If you completed the labs in the first module of this course AND saved your Virtual Machines you have already performed this task. This means that if you’re using the same virtual machine from that lab exercise you can skip this task.
-
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.  
-
-1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com) and login with the **Tenant Email** credentials if you are not currently in the portal.
-
-1. Select **Settings** from the left menu bar, then from the Settings page select **Endpoints**.
-
-1. Select **Onboarding** in the Device management section.
-
-1. Select **Download Package**.
-
-1. Extract the downloaded .zip file.
-
-1. Run the Windows Command Prompt as **Administrator** and agree to any User Account Control prompts that appear.
-
-1. Run the WindowsDefenderATPLocalOnboardingScript.cmd file that you just extracted as administrator. **Note** By default the file should be in the c:\users\admin\downloads directory. Answer Y to questions presented by the script. 
-
-1. From the Onboarding page in the portal, copy the detection test script and run it in an open command window.  You may have to open a new **Administrator: Command Prompt** window by typing *CMD* in the windows search bar and choose to **Run as Administrator**.
-
-1. In the Microsoft 365 Defender portal in the Endpoints area, select **Device inventory**. You should now see your device in the list, If not wait for some time and refresh the page.
-
-    ![](../Media/di11.png)
-
 ## Proceed to Exercise 3
