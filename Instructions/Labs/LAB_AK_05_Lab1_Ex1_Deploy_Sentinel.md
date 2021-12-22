@@ -23,25 +23,9 @@ In this task, you will create an Microsoft Sentinel workspace.
 
 1. Select **+ Create**.
 
-1. Next, select **+ Create a new workspace**.
+1. Next, In Add Microsoft Sentinel to a workspace page.
 
-    **Note:** First, you create a new Log Analytics Workspace.
-
-1. Select your proper Subscription.
-
-1. Select the **Create New** link for the Resource Group and enter a new resource group name of your choosing and select **Ok**.
-
-1. Under *Instance details* in the name field enter a name for your choosing for the Log Analytics Workspace.
-
-    **Note:** This name will also be the Microsoft Sentinel workspace name.
-
-1. Select the region that is appropriate for you. The appropriate region may default or your instructor may have specific advice on which region to select.  
-
-1. Select **Review + Create**.
-
-1. In the Create Log Analytics workspace area select **Create**. Wait for the new Log Analytics workspace to appear in the list on the *Add Microsoft Sentinel to a workspace* page.  This may take a minute.
-
-1. Select your newly created workspace when it appears, then select **Add**. This could take a few minutes.
+1. Select your existed workspace that created in the previous lab, then select **Add**. This could take a few minutes.
 
 1. Navigate around the newly created Microsoft Sentinel workspace to become familiar with the user interface options.
 
