@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Exercise 1 - Configure your Microsoft Sentinel environment'
-    module: 'Module 5 - Configure your Microsoft Sentinel environment'
----
-
 # Module 5 - Lab 1 - Exercise 1 - Configure your Microsoft Sentinel environment
 
 ## Lab scenario
