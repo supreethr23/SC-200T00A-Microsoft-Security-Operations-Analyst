@@ -127,7 +127,7 @@ In this task, you will on-board a device to Microsoft Defender for Endpoint.
 
    **IMPORTANT:** If you completed the labs in the first module of this course AND saved your Virtual Machines you have already performed this task. This means that if you’re using the same virtual machine from that lab exercise you can skip this task.
 
-1. Login to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.  
 
 1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com) and login with the **Tenant Email** credentials if you are not currently in the portal.
 
