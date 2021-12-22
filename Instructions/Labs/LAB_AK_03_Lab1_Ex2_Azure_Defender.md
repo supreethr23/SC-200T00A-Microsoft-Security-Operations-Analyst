@@ -12,9 +12,9 @@ In this task, you will load sample security alerts and review the alert details.
 
 1. In the Edge browser, open the Azure portal at (https://portal.azure.com).
 
-1. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
+1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
 
-1. In the **Enter password** dialog box, copy, and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
 
 1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
