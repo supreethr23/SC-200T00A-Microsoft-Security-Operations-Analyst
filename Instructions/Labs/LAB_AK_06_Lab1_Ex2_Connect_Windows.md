@@ -1,52 +1,10 @@
 # Module 6 - Lab 1 - Exercise 2 - Connect Windows devices to Microsoft Sentinel using data connectors
-
-### Task 1: Create a Windows Virtual Machine in Azure.
-
-In this task, you will create a Windows virtual machine in Azure.
-
-1. Login to WIN1 virtual machine as Azureuser Admin with the password as provided in the environmnent tab.  
-
-1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
-
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
-
-1. Select **+ Create a Resource**. If you were already in the Azure Portal, you might need to select *Microsoft Azure* from the top bar to go Home.
-
-1. In the **search services and marketplace** box, enter *Windows 10*. 
-
-1. Select the **Create** dropdown for *Microsoft Windows 10*.  Then select **Windows 10 Enterprise, version 20H2**.
-
-1. Select your Subscription.
-
-1. Select **Create new** for *Resource group*, enter RG-AZWIN01 as Name and select **OK**.
-
-    **Note:** This should be a new resource group for tracking purposes.  
-
-1. In *Virtual machine name*, enter AZWIN01.
-
-1. Set the *Region* to the appropriate region for your area.  The appropriate region will probably default.
-
-1. For *Availability options*, select **No infrastructure redundancy required**.
-
-1. Enter a *Username* of your choosing that is acceptable for Azure.
-
-1. Enter a *Password* of your choosing. 
-
-    >**Hint:** It might be easiest to use your tenant password.
-
-1. Select the checkbox below *Licensing*.
-
-1. Select **Review + create**.
-
-1. Select **Create**. Wait for the Resource to be created, this may take a few minutes.
-
-### Task 2: Connect an Azure Windows virtual machine.
+ 
+### Task 1: Connect an Azure Windows virtual machine.
 
 In this task, you will connect an Azure Windows virtual machine to Microsoft Sentinel.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. In the Search bar of the Azure portal, type **Sentinel**, then select **Microsoft Sentinel**.
 
 1. Select your Microsoft Sentinel Workspace you created earlier.
 
@@ -58,12 +16,11 @@ In this task, you will connect an Azure Windows virtual machine to Microsoft Sen
 
 1. Select **Download & install agent for Azure Windows Virtual machines**.
 
-1. Select the **AZWIN01** virtual machine in the list that you just created in the previous task, then select **Connect**. Wait until the *connecting...* message disappears.
+1. Select the **WIN2-DID** virtual machine in the list that you just created in the previous task, then select **Connect**. Wait until the *connecting...* message disappears.
 
 1. Close the window by selecting the 'x' to go back to **Virtual machines** view. You should now see the virtual machine has a *Log Analytics Connection* to "This workspace".
 
-
-### Task 3: Connect a non-Azure Windows Machine.
+### Task 2: Connect a non-Azure Windows Machine.
 
 In this task, you will connect a non-Azure Windows virtual machine to Microsoft Sentinel.
 
@@ -77,7 +34,7 @@ In this task, you will connect a non-Azure Windows virtual machine to Microsoft 
 
 1. Select your Microsoft Sentinel Workspace.
 
-1. Select **Data connectors** then search for the **Security Events via Legacy Agent** connector and select it from the list.
+1. In the Configuration area select **Data connectors**. In the Data Connectors page, search for the **Security Events via Legacy Agent** connector and select it from the list.
 
 1. Select **Open connector page** on the connector information blade.
 
@@ -108,7 +65,7 @@ In this task, you will connect a non-Azure Windows virtual machine to Microsoft 
 1. Then select **Install**.  When complete select **Finish**.
 
 
-### Task 4: Install and collect Sysmon logs.
+### Task 3: Install and collect Sysmon logs.
 
 In this task, you will install and collect Sysmon logs.
 
@@ -156,7 +113,7 @@ In this task, you will install and collect Sysmon logs.
 1. Select **Apply**.
 
 
-### Task 5: Onboard Microsoft Defender for Endpoint Device.
+### Task 4: Onboard Microsoft Defender for Endpoint Device.
 
 In this task, you will on-board a device to Microsoft Defender for Endpoint.
 
