@@ -58,7 +58,7 @@ In this task, you will connect a non-Azure Windows virtual machine to Microsoft 
 
 1. Select **Next** on the Welcome dialog.
 
-1. Select **I Agree** on the Microsoft Software License Terms page.  On the Destination prompt select **Next**.
+1. If agent is already installed inside the VM, Try to uninstall it and then install it. and  Select **I Agree** on the Microsoft Software License Terms page.  On the Destination prompt select **Next**.
 
 1. On the Agent Setup Options prompt, select **Connect the agent to Azure Log Analytics (OMS)** option, then select **Next**.
 
