@@ -29,11 +29,11 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 
 1. Copy to the clipboard the command shown in *1.2 Install the CEF collector on the Linux machine*.
 
-1. Launch your LIN1 virtual machine and login with the username and password as provided in the Environment tab. Note the IP address for your LIN1 server. See the screenshot below as an example:
+1. Back to the Azure portal, In the Search bar of the Azure portal, type **virtual machine**, then select **Virtual machine**.
 
-   ![linux login](../Media/LinuxLoginExample.png)
+1. Open LIN1 Linux virtual machine and copy the Public ip address of LIN1.
 
-1. Go back to the WIN1 virtual machine and launch Windows PowerShell as Administrator by right-clicking the Start menu icon and select **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
+1. launch Windows PowerShell as Administrator by right-clicking the Start menu icon and select **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
 
 1. Enter the following PowerShell command, adjusting for your specific Linux server information, and press enter:
 
