@@ -52,9 +52,9 @@ In this task, you will investigate an incident.
 
 1.	Select **Entities** button and review.
 
-1.	Select **Insights** button and review.
-
 1.	Select the *WIN2* Host graphic (your Windows device name may vary depending on how it was deployed by your lab hoster).
+
+1.	Select **Insights** button and review.
 
 1.	Select **Timeline** button and review.
 
