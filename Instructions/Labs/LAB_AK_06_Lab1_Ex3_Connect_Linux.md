@@ -40,6 +40,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 ```PowerShell
 ssh <insert your linux IP address here> -l <insert linux user name here>
 ```
+   **Note**: Replace <insert your linux IP address here> with Copied Public iP address and <insert linux user name here> with Admin Username provided under Resource group: LIN1 in the Environment tab
 
 1. Enter *yes* to confirm the connection and then type the user's password and press enter. Your screen should look something like this:
 
@@ -70,12 +71,10 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 1. Select the link for **Download & install agent for non-Azure Linux machine**. 
 
 1. Select the tab for **Linux servers**.
+   
+1. Open LIN2 Linux virtual machine and copy the Public ip address of LIN2.
 
 1. Copy the command in the *Download and onboard agent for Linux* area to the clipboard.
-
-1. Launch your LIN2 virtual machine and login with the username as password provided by your lab hoster. Note the IP address for your LIN2 server. See the screenshot below as an example:
-
-   ![linux login](../Media/LinuxLoginExample.png)
 
 1. Go back to the WIN1 virtual machine and launch a NEW Windows PowerShell as Administrator by right-clicking the Start menu icon and select **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
 
@@ -87,6 +86,8 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 ssh <insert your linux IP address here> -l <insert linux user name here>
 ```
 
+    **Note**: Replace <insert your linux IP address here> with Copied Public iP address and <insert linux user name here> with Admin Username provided under Resource group: LIN1 in the Environment tab
+   
 1. Enter *yes* to confirm the connection and then type the user's password and press enter. Your screen should look something like this:
 
    ![linux login](../Media/PSconnectLinux.png)
