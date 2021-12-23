@@ -86,7 +86,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 ssh <insert your linux IP address here> -l <insert linux user name here>
 ```
 
-    **Note**: Replace <insert your linux IP address here> with Copied Public iP address and <insert linux user name here> with Admin Username provided under Resource group: LIN1 in the Environment tab
+    **Note**: Replace <insert your linux IP address here> with Copied Public iP address and <insert linux user name here> with Admin Username provided under Resource group: LIN2 in the Environment tab
    
 1. Enter *yes* to confirm the connection and then type the user's password and press enter. Your screen should look something like this:
 
