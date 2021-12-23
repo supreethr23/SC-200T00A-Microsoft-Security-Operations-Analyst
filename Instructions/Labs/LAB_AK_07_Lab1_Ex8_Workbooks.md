@@ -21,7 +21,7 @@ In this task, you will explore the configuration of a workbook.
 
 1. Select your Microsoft Sentinel Workspace.
 
-1. Select **Workbooks**.
+1. Select **Workbooks** in the **Portal** menu.
 
 1. Select **Identity & Access**, then select the **View template** button.
 
