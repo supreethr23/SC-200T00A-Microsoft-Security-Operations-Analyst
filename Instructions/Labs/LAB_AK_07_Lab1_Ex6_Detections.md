@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Exercise 6 - Create Detections'
-    module: 'Module 7 - Create detections and perform investigations using Microsoft Sentinel'
----
-
 # Module 7 - Lab 1 - Exercise 6 - Create Detections
 
 
@@ -11,23 +5,23 @@ lab:
 
 In this task, you will create a detection for **Attack 1** on the host with the Security Events connector and Sysmon installed.
 
-1. Login to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Login to WIN1 virtual machine with the password as provided in the Environment tab.  
 
-2. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
+1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
-3. In the **Sign in** dialog box, copy and paste in the **Tenant Email** account for admin provided by your lab hosting provider and then select **Next**.
+1. In the **Sign in** dialog box, copy and paste in the **Tenant Email** account for admin provided by your lab hosting provider and then select **Next**.
 
-4. In the **Enter password** dialog box, copy and paste in the **Tenant Password** for admin provided by your lab hosting provider and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste in the **Tenant Password** for admin provided by your lab hosting provider and then select **Sign in**.
 
-5. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-6. Select your Microsoft Sentinel Workspace you created earlier.
+1. Select your Microsoft Sentinel Workspace you created earlier.
 
-7. Select **Logs** from the General section.
+1. Select **Logs** from the General section.
 
-8. First, you need to see where the data is stored. Since you just performed the attacks.  Set the Log Time Range to **Last 24 hours**.
+1. First, you need to see where the data is stored. Since you just performed the attacks.  Set the Log Time Range to **Last 24 hours**.
 
-9. Run the following KQL Statement
+1. Run the following KQL Statement
 
 ```KQL
 search "temp\\startup.bat"
@@ -74,7 +68,7 @@ let EventData = Event
 ```
 
 Further down in the file, you see another let statement looking at EventID == 13 and using the EventData variable as input.
->**Hint:** The following code snippet is for better understanding the query in step 16, not to be copied and executed.
+    **Hint:** The following code snippet is for better understanding the query in step 16, not to be copied and executed.
 
 ```
 let SYSMON_REG_SETVALUE_13=()
