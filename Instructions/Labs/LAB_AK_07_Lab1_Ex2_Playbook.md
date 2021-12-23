@@ -37,9 +37,9 @@ In this task, you will create a Logic App that will be used as a Playbook in Mic
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
-1. In the **Sign in** dialog box, copy and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
+1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
 
-1. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
@@ -94,7 +94,7 @@ In this task, you will update the new playbook you created with the proper conne
 
 1. Select the **Change connection** link.
 
-1. Select the connection that has your Azure subscription admin credentials under *Display Name*. **Hint:** admin@ZZZZZZ.onmicrosoft.com.
+1. Select the connection that has your Azure subscription admin credentials under *Display Name*. **Hint:** ODL_USER_ID@ZZZZZZ.onmicrosoft.com.
 
 1. Now select the *third* block **Connections**.
 
