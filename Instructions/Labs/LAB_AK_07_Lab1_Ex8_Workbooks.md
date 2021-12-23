@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Exercise 8 - Create workbooks'
-    module: 'Module 7 - Create detections and perform investigations using Microsoft Sentinel'
----
-
 # Module 7 - Lab 1 - Exercise 8 - Create workbooks
 
 ## Lab scenario
@@ -15,67 +9,67 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 In this task, you will explore the configuration of a workbook.
 
-1. Login to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Login to WIN1 virtual machine with the password as provided in the Environment Tab.  
 
-2. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
+1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
-3. In the **Sign in** dialog box, copy and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
+1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
 
-4. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
 
-5. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-6. Select your Microsoft Sentinel Workspace.
+1. Select your Microsoft Sentinel Workspace.
 
-7. Select **Workbooks**.
+1. Select **Workbooks**.
 
-8. Select **Identity & Access**, then select the **View template** button.
+1. Select **Identity & Access**, then select the **View template** button.
 
-9. Review the Identity & Access workbook.
+1. Review the Identity & Access workbook.
 
-10. Close the workbook by selecting the 'x' in the top-right corner. You should be in the **Microsoft Sentinel - Workbooks - Templates** tab.
+1. Close the workbook by selecting the 'x' in the top-right corner. You should be in the **Microsoft Sentinel - Workbooks - Templates** tab.
 
-11. In the *Templates* tab search for and select **Azure AD Audit logs**, then select the **Save** button from the right pane. 
+1. In the *Templates* tab search for and select **Azure AD Audit logs**, then select the **Save** button from the right pane. 
 
-12. Select the location that is appropriate for your location and select **OK**. The appropriate location usually defaults.
+1. Select the location that is appropriate for your location and select **OK**. The appropriate location usually defaults.
 
-13. Select the **View saved workbook** button.
+1. Select the **View saved workbook** button.
 
-14. Select **Edit** in command bar.
+1. Select **Edit** in command bar.
 
-15. In the *User activities* area, take a look at the colors in the graph for "Operations count" and "Trend". Then select **Edit** below the grid.
+1. In the *User activities* area, take a look at the colors in the graph for "Operations count" and "Trend". Then select **Edit** below the grid.
 
 #### To format columns, the Column setting panel provides customization options, do the following:
 
-16. Select the **Column Settings** button in the right of the Query Command bar.
+1. Select the **Column Settings** button in the right of the Query Command bar.
 
-    >**Note:** This button only appears if there is data in the report.
+    **Note:** This button only appears if there is data in the report.
 
-17. In the *Edit column settings* blade select the column **Operations Count (Heatmap + Formatted)**.
+1. In the *Edit column settings* blade select the column **Operations Count (Heatmap + Formatted)**.
 
-18. Review the settings, specially the options for *Column renderer*. For *Color palette*, select **32-color categorical**.
+1. Review the settings, specially the options for *Column renderer*. For *Color palette*, select **32-color categorical**.
 
-19. Select the column **Trend (Spark line + Formatted)**.
+1. Select the column **Trend (Spark line + Formatted)**.
 
-20. Review the settings, For *Column renderer* select **Spark area** and select the color of your choosing in *Color palette*.
+1. Review the settings, For *Column renderer* select **Spark area** and select the color of your choosing in *Color palette*.
 
-21. Select **Save and Close**.
+1. Select **Save and Close**.
 
 #### To have one tile/grid control filter the results in another tile/grid do the following:
 
-22. Select the **Advanced Settings** button in the *Editing query item: query - 2*.
+1. Select the **Advanced Settings** button in the *Editing query item: query - 2*.
 
-23. Review the *When items are selected, export parameters* setting. Notice the *UserInfo* field is selected.
+1. Review the *When items are selected, export parameters* setting. Notice the *UserInfo* field is selected.
 
-24. Select **Done Editing** at the bottom of the query (not the top menu).
+1. Select **Done Editing** at the bottom of the query (not the top menu).
 
-25. Select **Edit** below the *Top active users* grid on the right side of the screen.  
+1. Select **Edit** below the *Top active users* grid on the right side of the screen.  
 
-26. In the query, locate *UserInfo*. The query is using the parameter exported from the other query to filter results.
+1. In the query, locate *UserInfo*. The query is using the parameter exported from the other query to filter results.
 
-27. Select **Done Editing** at the bottom of the query (not the top menu).
+1. Select **Done Editing** at the bottom of the query (not the top menu).
 
-28. Select **Done Editing** at the top menu for the workbook and select the **Save** icon. Close the workbook by selecting the 'x' in the top-right corner.
+1. Select **Done Editing** at the top menu for the workbook and select the **Save** icon. Close the workbook by selecting the 'x' in the top-right corner.
 
 
 ### Task 2: Create a Workbook.
@@ -84,9 +78,9 @@ In this task, you will create a new workbook with advanced visualizations.
 
 1. Go back to the **Workbooks** area of the Microsoft Sentinel portal.
 
-2. Select **+ Add workbook**
+1. Select **+ Add workbook**
 
-3. Select **Edit**
+1. Select **Edit**
 
 #### Edit Header text:
 
