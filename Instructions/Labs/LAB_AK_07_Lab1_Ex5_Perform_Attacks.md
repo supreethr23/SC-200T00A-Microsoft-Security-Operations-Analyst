@@ -1,17 +1,10 @@
----
-lab:
-    title: 'Exercise 5 - Conduct attacks'
-    module: 'Module 7 - Create detections and perform investigations using Microsoft Sentinel'
----
-
 # Module 7 - Lab 1 - Exercise 5 - Conduct attacks
-
 
 ### Task 1: Attack Windows configured with Defender for Endpoint.
 
 In this task, you will perform attacks on a host with Microsoft Defender for Endpoint configured.
 
-1. Login to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.  
 
 2. In the search of the task bar, enter *Command*.  Command Prompt will be displayed in the search results.  Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
 
@@ -98,7 +91,7 @@ powershell
 
 In this task, you will perform attacks on a host with the Security Events connector configured and Sysmon configured.
 
-1. Login to WIN2 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Login to WIN2 virtual machine with the password as provided in the environment tab.  
 
 2. In the search of the task bar, enter *CMD*.  Command Prompt will be displayed in the search results.  Right-click on the Command Prompt and select **Run as Administrator**.  Accept and User Account Control prompts that appear.
 
