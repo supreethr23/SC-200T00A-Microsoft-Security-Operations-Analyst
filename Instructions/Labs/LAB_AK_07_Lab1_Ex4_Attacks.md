@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Exercise 4 - Understand Detection Modeling'
-    module: 'Module 7 - Create detections and perform investigations using Microsoft Sentinel'
----
-
 # Module 7 - Lab 1 - Exercise 4 - Understand Detection Modeling
 
 ### Task 1: Understand the Attacks
@@ -12,7 +6,7 @@ lab:
 
 The attack patterns are based on an open-source project: https://github.com/redcanaryco/atomic-red-team
 
->**Note:** Some settings are triggered in a smaller time-frame just for our lab purpose.
+   **Note:** Some settings are triggered in a smaller time-frame just for our lab purpose.
 
 #### Attack 1 - Persistence with Registry Key Add.
 
