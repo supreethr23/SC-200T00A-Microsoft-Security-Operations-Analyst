@@ -96,17 +96,17 @@ In this task, you will test your new scheduled query rule.
 
 5. Select **+ Add assignments** from the command bar.
 
-6. In the *Add assignments* page, *Membership* tab, under *Select role*, select **User Administrator**. and select **Next >**.
+6. In the **Add assignments** page, **Membership** tab, under *Select role*, select **User Administrator**. and select **Next >**.
 
-7. Review the default *Assignment type* in the *Settings tab and select **Assign**. If the assignment fails to complete, try again.
+7. Review the default **Assignment type** in the **Settings tab** and select **Assign**. If the assignment fails to complete, try again.
 
 8. Close the "Christie Cline - Assigned roles" and "Users - All users (Preview)" pages by selecting the 'x' in the top-right twice.
 
-9. In the "Contoso - Overview" page, under *Monitoring*, select **Audit logs**.
+9. In the "Adatum Corporation" page, under **Monitoring**, select **Audit logs**.
 
 10. Verify that the "Azure Active Directory" data connector was setup correctly in Sentinel by selecting **Export data settings**.
 
-11. Review that there is a *Diagnostic settings* entry for the *Log Analytics workspace* you created earlier for Sentinel.
+11. Review that there is a **Diagnostic settings** entry for the **Log Analytics workspace** you created earlier for Sentinel.
 
 12. Close the page by selecting the 'x' in the top-right.
 
