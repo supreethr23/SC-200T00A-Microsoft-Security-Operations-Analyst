@@ -1,39 +1,33 @@
----
-lab:
-    title: 'Exercise 1 - Perform Threat Hunting in Microsoft Sentinel'
-    module: 'Module 8 - Perform threat hunting in Microsoft Sentinel'
----
-
 # Module 8 - Lab 1 - Exercise 1 - Perform Threat Hunting in Microsoft Sentinel
 
 ## Lab scenario
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You have received threat intelligence about a Command and Control (C2 or C&C) technique.  You need to perform a hunt and watch for the threat.
 
->**Important:** The log data used in the lab was created in the previous module. See **Attack 3** in WIN1 server in Exercise 5.
+   **Important:** The log data used in the lab was created in the previous module. See **Attack 3** in WIN1 server in Exercise 5.
 
->**Note:**  Because you already experienced the process of exploring data in a previous module, the lab provides a KQL statement to start with.  
+   **Note:**  Because you already experienced the process of exploring data in a previous module, the lab provides a KQL statement to start with.  
 
 
 ### Task 1: Create a hunting query
 
 In this task, you will create a hunting query, bookmark a result, and create a Livestream.
 
-1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Log in to WIN1 virtual machine with the password as provided in the Environment tab.  
 
-2. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
+1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
-3. In the **Sign in** dialog box, copy and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
+1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
 
-4. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
 
-5. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-6. Select your Microsoft Sentinel Workspace.
+1. Select your Microsoft Sentinel Workspace.
 
-7. Select **Logs** 
+1. Select **Logs** 
 
-8. Enter the following KQL Statement in the New Query 1 space:
+1. Enter the following KQL Statement in the New Query 1 space:
 
    >**Important:** Please paste any KQL queries first in Notepad and then copy from there to the *New Query 1* Log window to avoid any errors.
 
