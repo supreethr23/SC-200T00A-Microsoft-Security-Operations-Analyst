@@ -295,7 +295,7 @@ search "administrators"
     - Event
     - SecurityEvent
 
-5. Our first data source is SecurityEvent. Time to research what event ID Windows uses to identify adding a member to a privileged group. My EventID and Event is "4732 - A member was added to a security-enabled local group" Kindly check the Event Id before run the script. Run the following script to confirm:
+5. Our first data source is SecurityEvent. Time to research what event ID Windows uses to identify adding a member to a privileged group. The EventID and Event that we are lookinf for is "4732". Kindly check the Event Id before run the script. Run the following script to confirm:
 
 ```KQL
 SecurityEvent
