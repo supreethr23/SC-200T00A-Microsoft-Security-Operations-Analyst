@@ -89,7 +89,7 @@ In this task, you will assign preset security policies for EOP and Microsoft Def
 
 1. Under **Strict protection**, select **manage**.
 
-1. In **EOP protections apply to**, under **Groups** write **Leadership**, select it and select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
+1. In **EOP protections apply to**, under **Groups** write **Sg-IT**, select it and select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
 
 1. In **Defender for Office 365 protections apply to**, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
