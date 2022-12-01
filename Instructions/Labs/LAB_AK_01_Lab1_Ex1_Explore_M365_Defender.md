@@ -15,7 +15,7 @@ Because this course can be offered by learning partners using any one of several
 
 ### Create a Group 
 
-1. On WIN1 Virtual machine, Navigate to Microsoft 365 Admin center (https://admin.microsoft.com/AdminPortal/Home)
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
 1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
 
@@ -23,23 +23,25 @@ Because this course can be offered by learning partners using any one of several
 
 1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
-1. From the navigation menu select **Teams and Groups** and choose **Active teams and groups**
+1. In the Search bar of the Azure portal, type **Azure Active Directory**, then select Azure Active Directory.
 
-1. Select **Add a group**
+1. Select **Groups** and then click on **New group**.
 
-1. Choose the default option (Microsoft 365) on  **Choose a group type**. Select **Next** 
+1. Enter the below details for New group page :
 
-1. Enter **Sg-IT** as the name of the group, give the Description and select **Next**.
+   |Setting|Value|
+    |---|---|
+    |Group Type| **Microsoft 365** |
+    |Group Name| **Sg-IT** |
+    |Azure AD roles can be assigned to the group| **Yes** |
 
-1. On the **Assign owners** page select **+ Assign Owners** and select the **ODLuser** from the list and select **Add(1)** and then **Next**.
+1. Click on **no owners selected** and select the **ODLuser** from the list and then click on **select**.
 
-1. On the **Add members** page select **+ Add members** and select the **ODLuser** from the list and select **Add(1)** and then **Next**.
+1. Click on **no members selected** and select the **ODLuser** from the list and then click on **select**.
 
-   **Note**: DID is your unique deployment ID and can be found under the environment details tab.
+   **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
-1. On the **Edit Settings** enter **SG-IT-DID** under the **Group Email address**. Leave the rest of the options unchanged and select **Next**.
-
-1. On the **Review and finish adding group** and select **Create Group**.
+1. Select **Create** and click on **Yes**.
  
 ### Initialize Microsoft Defender for Endpoint.
  
@@ -55,13 +57,9 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
    **Note**: if you receive a message "You can't access this section.",  wait 5 minutes and try again.  Sometimes the access rules need to propagate the tenant.  
 
-### Task 1: Apply Microsoft Defender for Office 365 preset security policies
+### Task 2: Apply Microsoft Defender for Office 365 preset security policies
 
-In this task, you will assign preset security policies for EOP and Microsoft Defender for Office 365 in the Microsoft 365 security portal.
-
-1. Login to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
-
-1. Start the Microsoft Edge browser.
+In this task, you will assign preset security policies for Exchange Online Protection (EOP) and Microsoft Defender for Office 365 in the Microsoft 365 security portal.
 
 1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
 
@@ -69,32 +67,57 @@ In this task, you will assign preset security policies for EOP and Microsoft Def
 
 1. In the **Enter password** dialog box, copy and paste in the admin's tenant password provided by your lab hosting provider and then select **Sign in**.
 
-    >**Note**: if you receive a message "You can't access this section." wait 5 minutes and try again. Sometimes the access rules need to propagate the tenant which can take many minutes.  
+    >**Note:** If you receive a message "The operation could not be completed. Please try again later. If the problem persists, contact Microsoft support." just click **OK** to continue.  
 
 1. If shown, close the Microsoft 365 Defender quick tour.
 
-1. From the navigation menu, under **Email & Collaboration**, select **Polices & Rules**.
+1. From the navigation menu, under *Email & Collaboration* area, select **Policies & rules**.
 
-1. On the **Policy & Rules** dashboard, select **Threat Policies**.
+1. On the *Policy & rules* dashboard, select **Threat policies**.
 
-1. On the **Policy dashboard**, select **Preset Security Policies**.
+1. On the *Threat policies* dashboard, select **Preset Security Policies**.
 
-1. Under **Standard protection**, select **manage**.
+    >**Note:** If you receive the message *"Client Error - Error when getting bip rule"* select **OK** to continue. The error is due to the hydration status of your tenant at Office 365 which is not enabled by default.
 
-1. In **EOP protections apply to**, under **Domains** write your tenant's domain name, select it and select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
+    >**Note:** If you receive the message *"Client Error - An error occurred when retrieving preset security policies. Please try again later."* select **OK** to continue. Refresh your browser using **Ctrl+F5**.
 
-1. In **Defender for Office 365 protections apply to**, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+1. Under *Standard protection*, select **Manage protection settings**. **Hint:** If you see this option grayed out, refresh your browser using **Ctrl+F5**.
 
-1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and select **Done** to finish.
+1. In the *Apply Exchange Online Protection* section, select **Specific recipients** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**. **Hint:** You tenant's domain name is the same that you have for you admin account, it might be something like *WWLx######.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing. 
 
-1. Under **Strict protection**, select **manage**.
+1. In the *Apply Defender for Office 365 protection* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
-1. In **EOP protections apply to**, under **Groups** write **Sg-IT**, select it and select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
+1. In the *Impersonation protection* section, select **Next** four times (4x) to continue.
 
-1. In **Defender for Office 365 protections apply to**, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+1. In the *Policy mode* section, make sure the **Turn on the policy after I finish** radio button is selected, and then select **Next**.
 
-1. Read the content under **Review and confirm your changes** and select **Confirm** to apply the changes and select **Done** to finish.
+1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
-1. On the top middle menu, select **Threat policies** to go back and under *Policies*, select **Safe Attachments**. Notice that both preset policies appears here and the Status is On.
+    >**Note:** If you receive the message *"The URI 'https://outlook.office365.com/psws/service.svc/AntiPhishPolicy' is not valid for PUT operation. The URI must point to a single resource for PUT operations."* just select **OK** and then select **Cancel** to return to the main page. You will see that *Standard protection is on* option enabled.
+
+1. Under *Strict protection*, select **Manage protection settings**. **Hint:** *Strict protection* is found under "Email & Collaboration - Policies & rules - Threat policies - Preset security policies".
+
+1. In the *Apply Exchange Online Protection*, select **Specific recipients** and under **Groups** start writing **Sg-IT**, select it, and then select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
+
+1. In the *Apply Defender for Office 365 protection* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+
+1. In the *Impersonation protection* section, select **Next** four times (4x) to continue.
+
+1. In the *Policy mode* section, make sure the **Turn on the policy after I finish** radio button is selected, and then select **Next**.
+
+1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
+
+    >**Note:** If you receive the message *"The URI 'https://outlook.office365.com/psws/service.svc/AntiPhishPolicy' is not valid for PUT operation. The URI must point to a single resource for PUT operations."* just select **OK** and then select **Cancel** to return to the main page. You will see the *Strict protection is on* option enabled.
+
+### Task 3: Preparing the Microsoft 365 Defender workspace
+
+1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
+
+1. On the **Settings** page select **Microsoft 365 Defender**. You are going to see an image of a coffee mug and a message that reads: *Hang on! We're preparing new spaces for your data and connecting them.*. It will take several minutes to finish, so leave the page open but make sure it finishes since it is required for the next Lab. 
+
+    >**Note:** If you get the error message "We didn't plan it will fail, but something went wrong." retry the step later or do it before the next Lab.
+
+1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
 
 ## You have completed the lab.
+
