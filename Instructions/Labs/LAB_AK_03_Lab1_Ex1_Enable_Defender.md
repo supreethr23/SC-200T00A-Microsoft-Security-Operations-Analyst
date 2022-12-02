@@ -19,14 +19,13 @@ In this task, you will set up an Azure Subscription required to complete this la
 
 1. In the Search bar of the Azure portal, type *Subscription*, then select **Subscriptions**. 
 
-1. If the **"Azure HOL xxxx"** subscription is shown (or equivalent name in your selected language), proceed to Task #2.
-
+1. Make sure **"Azure HOL xxxx"** subscription is shown.
 
 ### Task 2: Create a Log Analytics Workspace
 
 In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud.
 
-1. In the Search bar of the Azure portal, type *Log Analytics*, then select **Log Analytics workspaces**.
+1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
 
 1. Select **+Create** from the command bar.
 
@@ -47,31 +46,34 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
-1. Select **Environment settings** from the Management area of the portal menu.
+1. On the **Getting started** page, under the **Upgrade** tab, make sure your subscription is selected, and then select the **Upgrade** button at the bottom of the page. Wait for the *Trial started* notification to appear, it takes about 2 minutes. **Hint:** You can click the bell button on the top bar to review your Azure portal notifications.
 
-1. expand it and note that your "Defender coverage" includes at least 11 plans. If you don't see it, wait for the *Trial started* notification to appear. After that, select **Refresh** and select your Subscription. 
+1. In the left menu for Microsoft Defender for Cloud, under the Management, select **Environment settings**.
 
-1. click on the subscription and Review the different Azure resources and fees under the *Microsoft Defender for* and *Pricing* columns.
+1. Select **"Azure HOL xxxx"** subscription is shown.
 
-1. Select **Auto provisioning** from the Settings area in Defender plans.
+1. Review the Azure reources that are now protected with the Defender for Cloud plans.
 
-1. Review the Auto provisioning - Extensions. Confirm that **Log Analytics agent for Azure VMs** is **Off**, Click **Save**.
+1. Select **Auto provisioning** from the Settings area.
+
+1. Review the Auto provisioning - Extensions. Confirm that **Log Analytics agent/Azure Monitor agent** is **Off**.
 
 1. Close the settings page by selecting the 'x' on the upper right of the page to go back to the **Environment settings** again and select the '>' on the left of your subscription.
 
-1. Select the Log analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing.
+1. Select the Log analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing. 
 
 1. Select **Enable all Microsoft Defender for Cloud plans** and select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender were saved successfully!"* notification to appear.
+
     >**Note:** If the page is not being displayed, refresh your Edge browser and try again.
 
 
 ### Task 4: Install Azure Arc on an On-Premises Server.
 
-To make onboarding of your on-premises server easier.  Install Azure Arc, which will then enable Azure to manage the on-premises server.
+In this task, you will install Azure Arc on an on-premises server to make onboarding easier.
 
-In this task, you will install Azure Arc on an on-premises server.
+>**Important:** The next steps are done in a different machine than the one you were previously working. Look for the Virtual Machine name references.
 
-1. Log in to WINServer virtual machine as Administrator with the password: **Passw0rd!**.  
+1. Log in to **WIN2** virtual machine as Administrator with the given credential in lab guide **Environment tab**.
 
 1. Open the Microsoft Edge browser and navigate to the Azure portal at https://portal.azure.com.
 
@@ -89,7 +91,7 @@ In this task, you will install Azure Arc on an on-premises server.
 
 1. Select **Next** to get to the Resource details tab.
 
-1. Select the Resource group you created earlier. Hint: *RG-Defender*
+1. Select the Resource group you created earlier. **Hint:** *RG-Defender*
 
     **Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
 
@@ -138,19 +140,21 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. Select **+ Add Servers** next to the workspace you created earlier.
 
+1. Select **Log Analytics agent instructions**
+
 1. Select **Download Windows Agent (64 bit)**.
 
-1. Run the downloaded file.
+1. Select **Open file** to run the downloaded *MMASetup-AMD64.exe* file.
 
 1. Select **Next** until the wizard page for **Agent Setup Options** appears, Select **Connect the Agent to Azure Log Analytics (OMS)**, then select **Next**.
 
-1. Copy and paste the **Workspace ID** and **Primary Key** from the Azure portal into the wizard page fields as appropriate and select **Next**.
+1. Copy and paste the **Workspace ID** and **Primary Key** value in the **Workspace Key** text box from the Azure portal into the wizard page fields as appropriate and select **Next**.
 
 1. Continue with the Install. Select **Finish** when complete.
 
 1. Go to the "Microsoft Defender for Cloud" portal and select **Inventory**.
 
-1. The Server should appear in the list.  You may have to select **Refresh** to see the update and it will take a few minutes.
+1. The Server should appear in the list. You may have to select **Refresh** to see the update and it will take a few minutes.
 
 1. You can move on to the next lab and return later to the **Microsoft Defender for Cloud**. Your server will appear in the **Inventory** section. 
 
