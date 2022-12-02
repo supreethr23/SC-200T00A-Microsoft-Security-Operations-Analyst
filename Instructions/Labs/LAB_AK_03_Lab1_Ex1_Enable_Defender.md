@@ -5,7 +5,7 @@
 You're a Security Operations Analyst working at a company that is implementing cloud workload protection with Microsoft Defender for Cloud.  In this lab you will enable Microsoft Defender for Cloud.
 
 
-### Task 1: Access the Azure portal and set up a Subscription.
+### Task 1: Access the Azure portal and set up a Subscription
 
 In this task, you will set up an Azure Subscription required to complete this lab and future labs.
 
@@ -19,12 +19,10 @@ In this task, you will set up an Azure Subscription required to complete this la
 
 1. In the Search bar of the Azure portal, type *Subscription*, then select **Subscriptions**. 
 
-1. If the **"Azure HOL xxxx"** subscription is shown (or equivalent name in your selected language), proceed to Task #2. Otherwise, ask your instructor on how to create the Azure subscription with your tenant admin user credentials. **Note:** The subscription creation process could take up to 10 minutes. 
-
-    **Important:** These labs have been designed to use less than USD $10 of Azure services during the class.
+1. If the **"Azure HOL xxxx"** subscription is shown (or equivalent name in your selected language), proceed to Task #2.
 
 
-### Task 2: Create a Log Analytics Workspace.
+### Task 2: Create a Log Analytics Workspace
 
 In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud.
 
@@ -43,15 +41,11 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
 
 
-### Task 3: Enable Microsoft Defender for Cloud.
+### Task 3: Enable Microsoft Defender for Cloud
 
 In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
-
-1. On the **Getting started** page, go to the **Upgrade** section and make sure your subscription is selected, and then select **Upgrade** button at the bottom of the page.
-
-1. The next page shows the option to install the agent on virtual machines already in the subscription. Do nothing here.
 
 1. Select **Environment settings** from the Management area of the portal menu.
 
@@ -65,10 +59,13 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Close the settings page by selecting the 'x' on the upper right of the page to go back to the **Environment settings** again and select the '>' on the left of your subscription.
 
-1. Select the Log analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing. Select **Enable all Microsoft Defender for Cloud plans** and select **Save**.
+1. Select the Log analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing.
+
+1. Select **Enable all Microsoft Defender for Cloud plans** and select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender were saved successfully!"* notification to appear.
+    >**Note:** If the page is not being displayed, refresh your Edge browser and try again.
 
 
-### Task 4: Install Azure Arc on an On-Premises Server. (Read-Only)
+### Task 4: Install Azure Arc on an On-Premises Server.
 
 To make onboarding of your on-premises server easier.  Install Azure Arc, which will then enable Azure to manage the on-premises server.
 
@@ -96,13 +93,9 @@ In this task, you will install Azure Arc on an on-premises server.
 
     **Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
 
-1. Review the *Server details* and *Network connectivity* options. Select **Next** to get to the Tags tab.
+1. Review the *Server details* and *Connectivity method* options. Keep the default values and select **Next** to get to the Tags tab.
 
 1. Select **Next** to get to the Download and run script tab.
-
-1. Select **Register**.
-
-    **Note:** Wait at least three (3) minutes for processing.
 
 1. Scroll down and select the **Download** button. Hint: if your browser blocks the download take action in the browser to allow it. In Edge Browser, select the 3 dots "..." and then select **Keep**. 
 
@@ -112,7 +105,7 @@ In this task, you will install Azure Arc on an on-premises server.
 
 1. Enter Passw0rd! for the password if prompted.
 
-1. Enter: cd C:\Users\Administrator\Downloads
+1. Enter: cd C:\Users\azureuser\Downloads
 
 1. Type *Set-ExecutionPolicy -ExecutionPolicy Unrestricted* and press enter.
 
