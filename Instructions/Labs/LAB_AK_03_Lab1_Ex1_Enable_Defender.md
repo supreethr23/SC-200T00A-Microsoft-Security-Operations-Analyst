@@ -54,7 +54,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Review the Azure reources that are now protected with the Defender for Cloud plans.
 
-1. Select **Auto provisioning** from the Settings area.
+1. On **Auto provisioning** pop-up Select **Try out** .
 
 1. Review the Auto provisioning - Extensions. Confirm that **Log Analytics agent/Azure Monitor agent** is **Off**.
 
@@ -62,7 +62,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Select the Log analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing. 
 
-1. Select **Enable all Microsoft Defender for Cloud plans** and select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender were saved successfully!"* notification to appear.
+1. Select **Enable all ** and select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender were saved successfully!"* notification to appear.
 
     >**Note:** If the page is not being displayed, refresh your Edge browser and try again.
 
@@ -107,9 +107,9 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Enter Passw0rd! for the password if prompted.
 
-1. Enter: cd C:\Users\azureuser\Downloads
+1. Enter: **cd C:\Users\azureuser\Downloads**
 
-1. Type *Set-ExecutionPolicy -ExecutionPolicy Unrestricted* and press enter.
+1. Type **Set-ExecutionPolicy -ExecutionPolicy Unrestricted** and press enter.
 
 1. Enter **A** for Yes to All and press enter.
 
