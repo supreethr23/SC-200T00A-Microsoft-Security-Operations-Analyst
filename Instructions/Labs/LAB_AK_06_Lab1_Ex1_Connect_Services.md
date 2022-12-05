@@ -56,71 +56,31 @@ In this task, you will connect the Microsoft Defender for Cloud connector.
 
 1. Select **Open connector page** on the connector information blade.
 
-1. In the Configuration area under subscriptions select your Azure subscription and click **Connect**.
+1. In the Configuration area, under Subscription, select the checkbox for the "Azure Pass - Sponsorship" subscription and slide the **Status** option to the right to indicate **Connected**.
 
-1. Read the "Connect" message and select **OK** to continue. Your Azure subscription Status should be now *Connected*.
+1. The "Status" should be now *Connected* and "Bi-directional sync" should be *Enabled*.
 
-1. Scroll down and in the Create incidents - Recommended! area, select **Enable**.
+1. Scroll down and under the "Create incidents - Recommended!" area, select **Enable**. This option creates an Analytics rule automatically for this service. You can manually add it later if not enabled here or change its configuration within the *Analytics* blade.
 
 
 ### Task 5: Connect the Microsoft Defender for Cloud Apps connector.
 
 In this task, you will connect the Microsoft Defender for Cloud Apps connector.
 
-1. From the Data Connectors Tab, search for the **Microsoft Defender for Cloud Apps** connector and select it from the list.
-
-1. Select **Open connector page** on the connector information blade.
-
-1. Select **Alerts** and then select **Apply Changes**.
-
-
-### Task 6: Connect the Microsoft Defender for Office 365 connector.
-
-In this task, you will connect the Microsoft Defender for Office 365 connector.
-
-1. From the Data Connectors tab, search for the **Microsoft Defender for Office 365 (Preview)** connector and select it from the list.
-
-1. Select **Open connector page** on the connector information blade.
-
-1. In the Configuration area select **Connect**.
-
-
-### Task 7: The Microsoft Defender for Identity connector.
-
-In this task, you will review the Microsoft Defender for Identity connector.
-
-1. From the Data Connectors Tab, search for the **Microsoft Defender for Identity** connector and select it from the list.
-
-1. Select **Open connector page** on the connector information blade.
-
-1. Review the Connecting Options. Don't connect. This is for informational purposes only.
-
-
-### Task 8: Connect the Microsoft Defender for Endpoint connector.
-
-In this task, you will connect the Microsoft Defender for Endpoint connector.
-
-1. From the Data Connectors Tab, search for the **Microsoft Defender for Endpoint** connector and select it from the list.
-
-1. Select **Open connector page** on the connector information blade.
-
-1. In the Configuration area select **Connect**.
-
-
-### Task 9: Connect the Microsoft 365 Defender connector.
-
-In this task, you will connect the Microsoft 365 Defender connector.
-
 1. From the Data Connectors Tab, search for the **Microsoft 365 Defender (Preview)** connector and select it from the list.
 
 1. Select **Open connector page** on the connector information blade.
 
-1. Select the **Name** checkbox to select all the checkboxes for Microsoft Defender for Endpoint.
+1. From the Configuration area select **Connect Incident and Alerts**. 
 
-1. Select **Apply Changes**.
+1. Under "Connect Events", select the **Name** checkbox to select all the checkboxes for "Microsoft Defender for Endpoint".
+
+1. Repeat the same for "Microsoft Defender for Office 365"
+
+1. Scroll to the bottom of the page and select **Apply Changes**.
 
 
-### Task 10: Connect the Azure Activity connector.
+### Task 6: Connect the Azure Activity connector.
 
 In this task, you will connect the Azure Activity connector.
 
@@ -128,7 +88,7 @@ In this task, you will connect the Azure Activity connector.
 
 1. Select **Open connector page** on the connector information blade.
 
-1. In the Configuration area select **Launch Azure Policy Assignment Wizard>**.
+1. In the Configuration area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
 
 1. In the **Basics** tab, select the button with the three dots under **Scope** to select your subscription from the drop-down list and click **Select**.
 
