@@ -21,20 +21,18 @@ In this task, you will activate a Microsoft Security rule.
 
 1. Select your Microsoft Sentinel Workspace you created in the previous labs.
 
-1. Select **Analytics** from the Configuration area, then select the **Rule templates** tab.
+1. Select **Analytics** from the Configuration area. By default, you will see the *Active rules*.
 
-1. In the search box on the Rule templates tab, enter *defender*.
+1. Select the **Create incidents based on Microsoft Defender for Cloud**. This rule was activated by the Defender for Cloud connector we configured in "Module 6 - Exercise 1 - Task 4".
 
-1. In the result set, select **Create incidents based on Microsoft Defender for Endpoint alerts**. 
+1. On the right blade, select the **Edit** button.
 
-1. On the right blade, select **Create rule** button.
+1. Scroll down the page and under "Analytics rule logic - Filter by Severity", select the *Custom* drop-down list.
 
-1. Change *Filter by Severity* to **Custom**.
+1. Unselect **Low** for the severity level and go back to the rule.
 
-1. Select **High** for the severity level.
+1. Select the **Next: Automated response** button and then select **Next: Review** button.
 
-1. Select the **Next : Automated response >** button and then select **Next: Review >** button.
+1. Review the changes made and select the **Save** button. The Analytics rule will be saved.
 
-1. Review the changes made and select the **Create** button.  The Analytics rule will be saved.
-
-# Proceed to Exercise 2
+## Proceed to Exercise 2
