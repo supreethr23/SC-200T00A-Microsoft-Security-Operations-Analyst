@@ -73,7 +73,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 >**Important:** The next steps are done in a different machine than the one you were previously working. Look for the Virtual Machine name references.
 
-1. Log in to **WIN2** virtual machine as Administrator with the given credential in lab guide **Environment tab**.
+1. Log in to **WINServer** virtual machine as Administrator with the given credential in lab guide **Environment tab**.
 
 1. Open the Microsoft Edge browser and navigate to the Azure portal at https://portal.azure.com.
 
