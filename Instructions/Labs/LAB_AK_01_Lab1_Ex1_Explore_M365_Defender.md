@@ -41,21 +41,7 @@ Because this course can be offered by learning partners using any one of several
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
-1. Select **Create** and click on **Yes**.
- 
-### Initialize Microsoft Defender for Endpoint.
- 
-In this task, you will perform the initialization of the Microsoft Defender for Endpoint portal.
-
-1. On WIN1 virtual machine, Open the Microsoft Edge browser, search for "edge browser update", download, and install the new Microsoft Edge browser. This is necessary to ensure you're running the latest version of Microsoft Edge in your hosted virtual machine. Start the new Edge browser.
-
-1.  In the Edge browser, go to the Microsoft Defender Security Center at (https://securitycenter.microsoft.com).
-
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
-
-   **Note**: if you receive a message "You can't access this section.",  wait 5 minutes and try again.  Sometimes the access rules need to propagate the tenant.  
+1. Select **Create** and click on **Yes**. 
 
 ### Task 2: Apply Microsoft Defender for Office 365 preset security policies
 
@@ -83,7 +69,9 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. Under *Standard protection*, select **Manage protection settings**. **Hint:** If you see this option grayed out, refresh your browser using **Ctrl+F5**.
 
-1. In the *Apply Exchange Online Protection* section, select **Specific recipients** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**. **Hint:** You tenant's domain name is the same that you have for you admin account, it might be something like *WWLx######.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing. 
+    >**Note:** After clicking on **Manage protection settings**, we might need to wait for 20-25 minutes and if it is still in loading stage we may need to sign out of Microsoft defender and sign in again and then try repeating the steps again to move forward. 
+
+1. In the *Apply Exchange Online Protection* section, select **Specific recipients** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**. **Hint:** You tenant's domain name is the same that you have for you admin account, it might be something like *azureholxxxxx.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing. 
 
 1. In the *Apply Defender for Office 365 protection* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
@@ -92,8 +80,6 @@ In this task, you will assign preset security policies for Exchange Online Prote
 1. In the *Policy mode* section, make sure the **Turn on the policy after I finish** radio button is selected, and then select **Next**.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
-
-    >**Note:** If you receive the message *"The URI 'https://outlook.office365.com/psws/service.svc/AntiPhishPolicy' is not valid for PUT operation. The URI must point to a single resource for PUT operations."* just select **OK** and then select **Cancel** to return to the main page. You will see that *Standard protection is on* option enabled.
 
 1. Under *Strict protection*, select **Manage protection settings**. **Hint:** *Strict protection* is found under "Email & Collaboration - Policies & rules - Threat policies - Preset security policies".
 
@@ -106,8 +92,6 @@ In this task, you will assign preset security policies for Exchange Online Prote
 1. In the *Policy mode* section, make sure the **Turn on the policy after I finish** radio button is selected, and then select **Next**.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
-
-    >**Note:** If you receive the message *"The URI 'https://outlook.office365.com/psws/service.svc/AntiPhishPolicy' is not valid for PUT operation. The URI must point to a single resource for PUT operations."* just select **OK** and then select **Cancel** to return to the main page. You will see the *Strict protection is on* option enabled.
 
 ### Task 3: Preparing the Microsoft 365 Defender workspace
 
