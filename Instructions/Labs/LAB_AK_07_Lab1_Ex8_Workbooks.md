@@ -21,9 +21,9 @@ In this task, you will explore the configuration of a workbook.
 
 1. Select your Microsoft Sentinel Workspace.
 
-1. Select **Workbooks** in the **Portal** menu.
+1. Select **Workbooks**. The Templates tab is selected by default.
 
-1. Select **Identity & Access**, then select the **View template** button.
+1. Search for and select the **Identity & Access** template workbook. In the right pane, scroll down and select the **View template** button.
 
 1. Review the Identity & Access workbook.
 
@@ -31,7 +31,7 @@ In this task, you will explore the configuration of a workbook.
 
 1. In the *Templates* tab search for and select **Azure AD Audit logs**, then select the **Save** button from the right pane. 
 
-1. Select the location that is appropriate for your location and select **OK**. The appropriate location usually defaults.
+1. Leave **East US** as the default value for Region and select **OK**.
 
 1. Select the **View saved workbook** button.
 
