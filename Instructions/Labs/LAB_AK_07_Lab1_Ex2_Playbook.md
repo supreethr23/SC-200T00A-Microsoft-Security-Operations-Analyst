@@ -49,6 +49,8 @@ In this task, you will create a Logic App that will be used as a Playbook in Mic
 
 1. Select the **Onboard community content** link on the right pane. This will open a new tab in the Edge Browser for Microsoft Sentinel GitHub content.
 
+1. Select the **Solutions** folder.
+
 1. Next select the **SentinelSOARessentials** folder, then the **Playbooks** folder.
 
 1. Select the **Post-Message-Teams** folder.
