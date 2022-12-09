@@ -118,7 +118,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. In case you get a UAC prompt, enter *Administrator* for "Username" and *Passw0rd!* for "Password", else skip to next step.
 
-1. Enter: cd C:\Users\azureuser\Downloads
+1. Enter: cd C:\Users\Administrator\Downloads
 
 1. Type *Set-ExecutionPolicy -ExecutionPolicy Unrestricted* and press enter.
 
