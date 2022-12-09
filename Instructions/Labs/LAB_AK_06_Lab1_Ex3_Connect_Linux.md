@@ -105,7 +105,7 @@ In this task, you will configure the Syslog collection facilities.
 
 1. In Microsoft Sentinel portal, select **Settings** and then **Workspace settings** from the settings blade.
 
-1. Select **Agents configuration** from the **Settings** area.
+1. Select **Legacy agents management** from the **Settings** area.
 
 1. Select the **Syslog** tab.
 
