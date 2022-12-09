@@ -90,9 +90,9 @@ DeviceRegistryEvents
     |Incident settings|Enabled|
     |Alert grouping|Disabled|
 
-17. Select **Next : Automated response >**. For the "Automated response" tab select the *PostMessageTeams-OnAlert* under *Alert automation* and then select **Next : Review** button.
+17. For the Automated response tab select the PostMessageTeams-OnAlert under Alert automation (classic) and then select Next: Review button.
 
-18. On the Review and create tab, select **Create**.
+18. On the Review tab, select the Create button to create the new Scheduled Analytics rule.
 
 
 ### Task 2: Attack 2 Detection with SecurityEvent
