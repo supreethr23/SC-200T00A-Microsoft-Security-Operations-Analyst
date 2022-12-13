@@ -40,8 +40,6 @@ AuditLogs
 | project TimeGenerated, InitiatedByUPN, InitiatedFromIP, TargetUser, TargetRoleName, AADOperationType, OperationName
 ```
 
->**Note:** If you select the link to "View query results", you should not receive any results nor any errors. If you receive an error, please review that the query appears just like the previous KQL statement.
-
 13. Select **View query results**. You should not receive any results nor any errors. If you receive an error, please review that the query appears just like the previous KQL statement. Close the *Logs* window by selecting the upper right **X** and select **OK** to discard to save changes to go back to the wizard.
 
 14. Back in the "Analytics rule wizard - Create new scheduled rule" blade in the *Alert enrichment (Preview)* area, select *Entity mapping* and select the following values: 
