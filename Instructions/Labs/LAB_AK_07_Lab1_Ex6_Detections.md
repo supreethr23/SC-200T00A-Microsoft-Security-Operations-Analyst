@@ -25,9 +25,9 @@ search in (Device*) "temp\\startup.bat"
 
   >**Important:** If you do not see the *DeviceRegistryEvents* table in the results, an alternative for the following two queries is to use the *DeviceProcessEvents* table as replacement. Being that said, use one of the two provided examples below, depending on the table you see in the previous query.
 
-7. The table - DeviceRegistryEvents looks to have the data already normalized and easy for us to query.  Expand the rows to see all the columns related to the record.
+6. The table - DeviceRegistryEvents looks to have the data already normalized and easy for us to query.  Expand the rows to see all the columns related to the record.
 
-8. From the results, we now know that the Threat Actor is using reg.exe to add keys to the Registry key and the program is located in C:\temp. **Run** the following statement to replace the *search* operator with the *where* operator in our query:
+7. From the results, we now know that the Threat Actor is using reg.exe to add keys to the Registry key and the program is located in C:\temp. **Run** the following statement to replace the *search* operator with the *where* operator in our query:
 
     ```KQL
     DeviceRegistryEvents | where ActionType == "RegistryValueSet"
@@ -43,7 +43,7 @@ search in (Device*) "temp\\startup.bat"
     | where ProcessCommandLine contains "c:\\temp"
     ```
 
-9. It is important to help the Security Operations Center Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. Run the following query:
+8. It is important to help the Security Operations Center Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. Run the following query:
 
     ```KQL
     DeviceRegistryEvents
@@ -64,9 +64,9 @@ search in (Device*) "temp\\startup.bat"
     | extend timestamp = TimeGenerated, HostCustomEntity = DeviceName, AccountCustomEntity = InitiatingProcessAccountName
     ```
 
-10.  Now that you have a good detection rule, in the Log window with the query, select the **+ New alert rule** in the Command Bar.  Then select **Create Azure Sentinel alert**.
+9.  Now that you have a good detection rule, in the Log window with the query, select the **+ New alert rule** in the Command Bar.  Then select **Create Azure Sentinel alert**.
 
-11. This starts our Analytics rule wizard. For the General Tab, enter:
+10. This starts our Analytics rule wizard. For the General Tab, enter:
 
     |Setting|Value|
     |---|---|
@@ -75,11 +75,11 @@ search in (Device*) "temp\\startup.bat"
     |Tactics|**Persistence**|
     |Severity|**High**|
 
-12. Select **Next : Set rule logic >** button.
+11. Select **Next : Set rule logic >** button.
 
-13. On the Set rule logic tab, the **Rule query** should already be populated.
+12. On the Set rule logic tab, the **Rule query** should already be populated.
 
-14. For Query scheduling set the following:
+13. For Query scheduling set the following:
 
     |Setting|Value|
     |---|---|
@@ -88,18 +88,18 @@ search in (Device*) "temp\\startup.bat"
 
     >**Note:** We are purposely generating many incidents for the same data.  This enables the Lab to use these alerts.
 
-15. Leave the rest of the options to the defaults.  Select **Next : Incident settings >**:
+14. Leave the rest of the options to the defaults.  Select **Next : Incident settings >**:
 
-16. For the *Incident settings (Preview)* set the following: 
+15. For the *Incident settings (Preview)* set the following: 
 
     |Setting|Value|
     |---|---|
     |Incident settings|Enabled|
     |Alert grouping|Disabled|
 
-17. For the Automated response tab select the PostMessageTeams-OnAlert under Alert automation (classic) and then select Next: Review button.
+16. For the Automated response tab select the PostMessageTeams-OnAlert under Alert automation (classic) and then select Next: Review button.
 
-18. On the Review tab, select the Create button to create the new Scheduled Analytics rule.
+17. On the Review tab, select the Create button to create the new Scheduled Analytics rule.
 
 
 ### Task 2: Attack 2 Detection with SecurityEvent
