@@ -21,51 +21,38 @@ In this task, you will investigate an incident.
 1. Review the list of Incidents
 
     **Note:** The analytical rules are generating alerts and incidents on the same specific log entry.  This is done to generate more alerts and incidents to be utilized in the lab.
-  
+    
 1. Select one of the *MDE Startup RegKey* incidents.
 
-1. Select **View full details** button.
+1. Review the incident details on the right blade that opened. Scroll down and select the **View full details** button.
 
-1. On the left side of the page, change the Status to **Active** and then select **Apply**.
+1. On the left blade of the incident, change the Status to **Active** and then select **Apply**.
 
-1. In the Tag area, select **+** and add a tag named **RegKey** and select **Ok**.
+1. Scroll down to the *Tags* area, select **+** and type **RegKey** and select **OK**.
 
-1. On the middle of the page, select the tab **Comments** tab.
+1. On the middle pane, select the tab **Comments** tab.
 
-1. Enter in the Comments: *I will research this. *
+1. Type in the comments box: *I will research this* and select the **Comment** button to submit the new comment.
 
-1. Select the **Comment** button to submit the new comment.
+1. Select the **Entities** tab and review the *Account* and *Host* entities that we mapped within the KQL query from the previous exercise. **Hint:** If no entities are shown, refresh the page.
 
-1. Select the **Entities** tab and review.
+1. Select the **Alerts** tab. For the *MDE Startup RegKey* alert, slide right using the bar and notice the **View playbooks** link. This allows manual execution of a playbook from the alert, rather than triggering it from the *Automated response* tab within an Analytics rule.
 
-1. Select the **Alerts** tab.
+1. From the left pane, scroll down and select the **Investigate** button. **Hint:** If the icons are too small for your screen, select **(+)** to magnify them.
 
-    **Note:** For the alert shown, notice to the far right there is an option for **View playbooks**.  This allows for the manual execution of a playbook.
+1. Hover the **WIN1** entity icon and wait for new *exploration queries* to be shown. It looks that *Related Alerts* has more data on it. Select the name of the exploration query **Related Alerts** to bring them to the investigation graph or select **Events >** to investigate them with a KQL query.
 
-1. Select the **Investigate** button.
+1.	When you select an entity, a window on the right opens for more detailed information. Review the **Info** page.
 
-1. Select the **Sysmon Startup RegKey Alert** graphic.
+1. Select **Timeline** button. Hover the first two incidents and see which things on the graph occurred at what point in time.
 
-1.	Select **Timeline** button and review.
+1. Select **Entities** button and review the *Entities* and *Alerts* related to *WIN1*.
 
-1. Select **Info** button and review.
+1. Close the investigation graph by selecting the **X** in the top right of the page.
 
-1.	Select **Entities** button and review.
+1. Back in the incident page, in the left pane, select **Unassigned Owner**, select **Assign to me** and then select **Apply**. Your account will now appear as the incident owner.
 
-1.	Select the *WIN2* Host graphic (your Windows device name may vary depending on how it was deployed by your lab hoster).
+1. Finally, select **Active Status** and select **Closed**. In the *Select classification* review the different options. After that, select **True positive - suspicious activity** and then select **Apply**.
 
-1.	Select **Insights** button and review.
-
-1.	Select **Timeline** button and review.
-
-1.	Select **Info** button and review.
-
-1.	Select **Entities** button and review.
-
-1.	Select **Insights** button and review.
-
-1.	Hover *WIN2* Host in the graph. A menu should appear around the icon.  Select **Related alerts**.
-
-1. Explore the Related Alerts graphs.
-
+  
 ## Proceed to Exercise 8
