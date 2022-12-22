@@ -32,7 +32,7 @@ search "temp\\startup.bat"
 search in (Device*) "temp\\startup.bat"
 ```
 
-     >**Important:** If you do not see the *DeviceRegistryEvents* table in the results, an alternative for the following two queries is to use the *DeviceProcessEvents* table as replacement. Being that said, use one of the two provided examples below, depending on the table you see in the previous query.
+  >**Important:** If you do not see the *DeviceRegistryEvents* table in the results, an alternative for the following two queries is to use the *DeviceProcessEvents* table as replacement. Being that said, use one of the two provided examples below, depending on the table you see in the previous query.
 
 7. The table - DeviceRegistryEvents looks to have the data already normalized and easy for us to query.  Expand the rows to see all the columns related to the record.
 
