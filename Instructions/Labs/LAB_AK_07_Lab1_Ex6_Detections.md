@@ -17,16 +17,7 @@ In this task, you will create a detection for **Attack 1** on the host with the 
 search "temp\\startup.bat"
 ```
 
-5. The results show data for three different tables:
-    - DeviceProcessEvents
-    - DeviceRegistryEvents
-    - Event
-
-    The *Device* tables are from Defender for Endpoint connector and *Event* table populates data from the Sysmon/Operational Windows Event Logs connected through the Agents configuration.
-
-    Since we are receiving data from two different sources - Sysmon and Defender for Endpoint.  We will need to build two KQL statements that could union later. But our initial investigation, you will look at each separately.
-
-6. This detection will focus on data from Defender for Endpoint.  Run the following KQL Statement:
+5. This detection will focus on data from Defender for Endpoint.  Run the following KQL Statement:
 
 ```KQL
 search in (Device*) "temp\\startup.bat"
@@ -36,26 +27,42 @@ search in (Device*) "temp\\startup.bat"
 
 7. The table - DeviceRegistryEvents looks to have the data already normalized and easy for us to query.  Expand the rows to see all the columns related to the record.
 
-8. From our Threat Intelligence, we know that the Threat Actor is using reg.exe to add the registry key.  The directory is c:\temp. The startup.bat can be a different name.  Enter this KQL statement:
+8. From the results, we now know that the Threat Actor is using reg.exe to add keys to the Registry key and the program is located in C:\temp. **Run** the following statement to replace the *search* operator with the *where* operator in our query:
 
-```KQL
-DeviceRegistryEvents
-| where ActionType == "RegistryValueSet"
-| where InitiatingProcessFileName == "reg.exe"
-| where RegistryValueData startswith "c:\\temp"
-```
+    ```KQL
+    DeviceRegistryEvents | where ActionType == "RegistryValueSet"
+    | where InitiatingProcessFileName == "reg.exe"
+    | where RegistryValueData startswith "c:\\temp"
+    ```
+
+    Alternatively, you can **Run** the following KQL query using the *DeviceProcessEvents* table:
+
+    ```KQL
+    DeviceProcessEvents | where ActionType == "ProcessCreated"
+    | where FileName == "reg.exe"
+    | where ProcessCommandLine contains "c:\\temp"
+    ```
 
 9. It is important to help the Security Operations Center Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. Run the following query:
 
-```KQL
-DeviceRegistryEvents
-| where ActionType == "RegistryValueSet"
-| where InitiatingProcessFileName == "reg.exe"
-| where RegistryValueData startswith "c:\\temp"
-| extend timestamp = TimeGenerated, HostCustomEntity = DeviceName, AccountCustomEntity = InitiatingProcessAccountName
-```
+    ```KQL
+    DeviceRegistryEvents
+    | where ActionType == "RegistryValueSet"
+    | where InitiatingProcessFileName == "reg.exe"
+    | where RegistryValueData startswith "c:\\temp"
+    | extend timestamp = TimeGenerated, HostCustomEntity = DeviceName, AccountCustomEntity = InitiatingProcessAccountName
+    ```
 
    ![Screenshot](../Media/SC200_sysmon_query2.png)
+   
+   Alternatively, you can **Run** the following KQL query using the *DeviceProcessEvents* table:
+
+    ```KQL
+    DeviceProcessEvents | where ActionType == "ProcessCreated"
+    | where FileName == "reg.exe"
+    | where ProcessCommandLine contains "c:\\temp"
+    | extend timestamp = TimeGenerated, HostCustomEntity = DeviceName, AccountCustomEntity = InitiatingProcessAccountName
+    ```
 
 10.  Now that you have a good detection rule, in the Log window with the query, select the **+ New alert rule** in the Command Bar.  Then select **Create Azure Sentinel alert**.
 
