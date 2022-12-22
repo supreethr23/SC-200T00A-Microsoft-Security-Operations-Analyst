@@ -26,8 +26,6 @@ search "temp\\startup.bat"
 
     Since we are receiving data from two different sources - Sysmon and Defender for Endpoint.  We will need to build two KQL statements that could union later. But our initial investigation, you will look at each separately.
 
-    >**Note:** On rare occasions the data loading process may take longer than normal. When that happens, the tables may not appear in the query for some hours. Continue to Task 3 if you don't see the *Device* tables in the results and come back later to this point.
-
 6. This detection will focus on data from Defender for Endpoint.  Run the following KQL Statement:
 
 ```KQL
