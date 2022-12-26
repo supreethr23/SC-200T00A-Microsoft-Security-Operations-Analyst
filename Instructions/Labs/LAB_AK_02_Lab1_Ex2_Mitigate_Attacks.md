@@ -30,9 +30,7 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. In the Microsoft 365 Defender portal select **Incidents & alerts** from the left menu bar, then select **Incidents**.
 
-1. Close all the filters applied above.
-
-1. Select the **[Test Alert] Suspicious Powershell commandline on one endpoint**.
+1. A new incident called "Multi-stage incident..." is in the right pane. Click the incident name to load its details.
 
 1. Select the **Manage incident** button and a new window blade appears. 
 
