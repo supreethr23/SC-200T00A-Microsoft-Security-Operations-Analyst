@@ -2,14 +2,14 @@
 
 ## Lab scenario
 
-You're a Security Operations Analyst working at a company that is implementing cloud workload protection with Microsoft Defender for Cloud.  In this lab you will enable Microsoft Defender for Cloud.
+You're a Security Operations Analyst working at a company that is implementing cloud workload protection with Microsoft Defender for Cloud.  In this lab, you will enable Microsoft Defender for Cloud.
 
 
 ### Task 1: Access the Azure portal and set up a Subscription
 
 In this task, you will set up an Azure Subscription required to complete this lab and future labs.
 
-1. On WIN1 Virtual machine, Open the Microsoft Edge browser or open a new tab if already open.
+1. On the WIN1 Virtual machine, Open the Microsoft Edge browser or open a new tab if already open.
 
 1. In the Edge browser, navigate to the Azure portal at (https://portal.azure.com).
 
@@ -19,7 +19,7 @@ In this task, you will set up an Azure Subscription required to complete this la
 
 1. In the Search bar of the Azure portal, type *Subscription*, then select **Subscriptions**. 
 
-1. Make sure **"Azure HOL xxxx"** subscription is shown.
+1. Make sure the **"Azure HOL xxxx"** subscription is shown.
 
 ### Task 2: Create a Log Analytics Workspace
 
@@ -33,7 +33,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Enter *RG-Defender* and select **Ok**.
 
-1. For the Name, enter something unique like: *uniquenameDefender*.
+1. For the Name, enter something unique like *uniquenameDefender*.
 
 1. Select **Review + Create**.
 
@@ -48,7 +48,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. On the **Getting started** page, under the **Upgrade** tab, make sure your subscription is selected, and then select the **Upgrade** button at the bottom of the page. Wait for the *Trial started* notification to appear, it takes about 2 minutes. **Hint:** You can click the bell button on the top bar to review your Azure portal notifications.
 
-1. In the left menu for Microsoft Defender for Cloud, under the Management, select **Environment settings**.
+1. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings**.
 
 1. Select the **"Azure Pass - Sponsorship"** subscription (or equivalent name in your Language). 
 
@@ -60,9 +60,9 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Close the settings page by selecting the 'X' on the upper right of the page to go back to the **Environment settings** and select the '>' to the left of your subscription.
 
-1. Select the Log analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing.
+1. Select the Log Analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing.
 
-1. Select **Enable all** (to the right of Select Defender plan) and then select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender were saved successfully!"* notification to appear.
+1. Select **Enable all** (to the right of Select Defender plan) and then select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender was saved successfully!"* notification to appear.
 
     >**Note:** If the page is not being displayed, refresh your Edge browser and try again.
 
@@ -73,13 +73,13 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 In this task, you will install Azure Arc on an on-premises server to make onboarding easier.
 
->**Important:** The next steps are done in a different machine than the one you were previously working. Look for the Virtual Machine name references.
+>**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
 1. In the WIN1 virtual machine, search for **Hyper-V** from the bottom windows search bar and select to open.
 
-1. Right click on **WINServer** virtual machine and select start, then again right click on the **WINServer** virtual machine and select **connect**.
+1. Right click on the **WINServer** virtual machine and select start, then again right-click on the **WINServer** virtual machine and select **connect**.
 
-1. Enter the VM Admin password mentioned under the **Resource group : WIN1** in the environment details tab.
+1. Enter the VM Admin password mentioned under the **Resource group: WIN1** in the environment details tab.
 
 1. Open the Microsoft Edge browser and navigate to the Azure portal at https://portal.azure.com.
 
@@ -121,13 +121,13 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Type *.\OnboardingScript.ps1* and press enter.
 
-1. Enter **R** to Run once and press enter (this may take a couple minutes).
+1. Enter **R** to Run once and press enter (this may take a couple of minutes).
 
-1. Follow the instructions on the last line of the output in PowerShell, to complete the device registration.  This will include authentication of the device through a browser.  Copy the url (https://microsoft.com/devicelogin) and enter it in a new Edge browser tab. Go back to the Windows PowerShell window, copy the code to authenticate and paste it in the previously open tab and select **Next**. Select your tenant admin account and select **Continue** in the *Are you trying to sign in to Azure Connected Machine Agent?* window. 
+1. Follow the instructions on the last line of the output in PowerShell, to complete the device registration.  This will include authentication of the device through a browser.  Copy the URL (https://microsoft.com/devicelogin) and enter it in a new Edge browser tab. Go back to the Windows PowerShell window, copy the code to authenticate and paste it into the previously open tab, and select **Next**. Select your tenant admin account and select **Continue** in the *Are you trying to sign in to Azure Connected Machine Agent?* window. 
 
 1. After the message *"Successfully Onboarded Resource to Azure"* appears in the Windows PowerShell window, go to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
 
-1. Select **Refresh** until WINServer server name appears.
+1. Select **Refresh** until the WINServer server name appears.
 
     **Note:** This could take a few minutes.
 
@@ -154,7 +154,7 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. Select **Next** until the wizard page for **Agent Setup Options** appears, Select **Connect the Agent to Azure Log Analytics (OMS)**, then select **Next**.
 
-1. Copy and paste the **Workspace ID** and **Primary Key** value in the **Workspace Key** text box from the Azure portal into the wizard page fields as appropriate and select **Next**.
+1. Copy and paste the **Workspace ID** and **Primary Key** values in the **Workspace Key** text box from the Azure portal into the wizard page fields as appropriate and select **Next**.
 
 1. Continue with the Install. Select **Finish** when complete.
 
