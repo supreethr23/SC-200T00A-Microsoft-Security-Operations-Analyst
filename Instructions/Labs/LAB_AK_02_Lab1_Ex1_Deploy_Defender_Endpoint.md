@@ -4,14 +4,14 @@
 
 You are a Security Operations Analyst working at a company that is implementing Microsoft Defender for Endpoint. Your manager plans to onboard a few devices to provide insight into required changes to the Security Operations (SecOps) team response procedures.
 
-You start by initializing the Defender for Endpoint environment. Next, you onboard the initial devices for your deployment by running the onboarding script on the devices. You configure security for the environment. Lastly, you create Device groups and assign the appropriate devices.
+You start by initializing the Defender for the Endpoint environment. Next, you onboard the initial devices for your deployment by running the onboarding script on the devices. You configure security for the environment. Lastly, you create Device groups and assign the appropriate devices.
 
 >**Important:**  The lab Virtual Machines are used through different modules. SAVE your virtual machines. If you exit the lab without saving, you will be required to re-run some configurations again.
 
 
 ### Task 1: Initialize Microsoft Defender for Endpoint
 
-In this task, you will perform the initialization of the Microsoft Defender for Endpoint portal.
+In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
 
 1. If you are not already at the Microsoft 365 Defender portal, start the Microsoft Edge browser.
 
@@ -27,10 +27,10 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 1. On the **Settings** page select **Device discovery**. 
 
-    >**Note:** If you do not see the **Device discovery** option under **Settings**, logout by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try is to refresh the page with Ctrl+F5 or open the page InPrivate. Login again with the **Tenant Email** credentials.
+    >**Note:** If you do not see the **Device discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try are to refresh the page with Ctrl+F5 or open the page InPrivate. Login again with the **Tenant Email** credentials.
 
 
-1. In Discovery setup make sure **Standard discovery (recommended)** is selected. 
+1. In the Discovery setup make sure **Standard discovery (recommended)** is selected. 
     >**Hint:** If you do not see the option, refresh the page.
 
 
@@ -38,7 +38,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
 
-1. If you are not already at the Microsoft 365 Defender portal in your browser, start the Microsoft Edge browser and go to (https://security.microsoft.com) and login with the **Tenant Email** credentials.
+1. If you are not already at the Microsoft 365 Defender portal in your browser, start the Microsoft Edge browser and go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
 
 1. Select **Settings** from the left menu bar, then from the Settings page select **Endpoints**.
 
@@ -48,7 +48,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. In the "1. Onboard a device" area make sure "Local Script (for up to 10 devices)" is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
 
-1. Under the *Downloads* pop-ipup, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
+1. Under the *Downloads* pop-up, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
 
 1. Right-click the downloaded zip file and select **Extract All...**, make sure that *Show extracted files when complete* is checked and select **Extract**.
 
@@ -62,7 +62,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. Back in the Onboarding page from the Microsoft 365 Defender portal, under the section "2. Run a detection test", copy the detection test script by selecting the **Copy** button.  
 
-1. In the windows search bar of the WIN1 virtual machine, type **CMD** and choose to **Run as Administrator** on the right pane for the Command Prompt app. 
+1. In the windows search bar of the WIN1 virtual machine, type **CMD** and choose **Run as Administrator** on the right pane for the Command Prompt app. 
 
 1. When the "User Account Control" window is shown, select **Yes** to allow the app to run. 
 
@@ -112,7 +112,7 @@ In this task, you will configure device groups that allow for access control and
     |General setting|Value|
     |---|---|
     |Device group name|**Regular**|
-    |Automation level|Full - remediate threats automatically|
+    |Automation level| Full-remediate threats automatically|
 
 1. Select **Next**.
 
