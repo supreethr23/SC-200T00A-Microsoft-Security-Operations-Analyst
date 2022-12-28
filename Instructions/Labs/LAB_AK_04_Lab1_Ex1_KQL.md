@@ -9,9 +9,9 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
 
-1. Login to WIN1 virtual machine as Azureuser Admin with the password as provided in the Environment tab.
+1. Log  in to WIN1 virtual machine as Azureuser Admin with the password as provided in the Environment tab.
 
-2. Go to https://aka.ms/lademo in your browser. Login with the ODL_User_Id Administrator credentials. 
+2. Go to https://aka.ms/lademo in your browser. Log in with the ODL_User_Id Administrator credentials. 
 
 3. Explore the available tables listed in the tab on the left side of the screen.
 
@@ -45,7 +45,7 @@ In this task, you will build basic KQL statements.
 
 1. Change back the **Time range** to **Last 24 hours** in the Query Window.
 
-1. The following statements demonstrates the **where** operator, which filters on a specific predicate. In the Query Window enter the following statement and select **Run**: 
+1. The following statements demonstrate the **where** operator, which filters on a specific predicate. In the Query Window enter the following statement and select **Run**: 
 
     >**Note:** You should select **Run** after entering each query from the code blocks below.
 
@@ -91,7 +91,7 @@ In this task, you will build basic KQL statements.
     ];
     SecurityEvent  
     | where TimeGenerated > ago(1h)
-    | where Account in (suspiciousAccounts)
+    | where Account in (suspiciousAccounts)
     ```
 
     >**Tip:** You can re-format the query easily by selecting the ellipsis (...) in the Query window and select **Format query**.
@@ -279,22 +279,22 @@ In this task, you will build multi-table KQL statements.
     1. **Query 1** will return all rows of SecurityEvent and all rows of SigninLogs.
 
         ```KQL
-        SecurityEvent  
-        | union SigninLogs  
+        SecurityEvent  
+        | union SigninLogs  
         ```
 
     1. **Query 2** will return one row and column, which is the count of all rows of SigninLogs and all rows of SecurityEvent.
 
         ```KQL
-        SecurityEvent  
-        | union SigninLogs  
-        | summarize count() 
+        SecurityEvent  
+        | union SigninLogs  
+        | summarize count() 
         ```
 
     1. **Query 3** will return all rows of SecurityEvent and one (last) row for SigninLogs. The last row for SigninLogs will have the summarized count of the total number of rows.
 
         ```KQL
-        SecurityEvent  
+        SecurityEvent  
         | union (SigninLogs | summarize count() | project count_)
         ```
 
@@ -368,22 +368,22 @@ In this task, you will work with structured and unstructured string fields with 
     SigninLogs | extend OS = DeviceDetail.operatingSystem
     ```
 
-1. The following example shows how to break out packed fields for SigninLogs. In the Query Window enter the following statement and select **Run**: 
+1. The following example shows how to break out packed fields for SigninLogs. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
-    SigninLogs | extend OS = DeviceDetail.operatingSystem, Browser = DeviceDetail.browser
-    | extend CAPol0Name = tostring(ConditionalAccessPolicies[0].displayName), CAPol0Result = tostring(ConditionalAccessPolicies[0].result)
-    | extend CAPol1Name = tostring(ConditionalAccessPolicies[1].displayName), CAPol1Result = tostring(ConditionalAccessPolicies[1].result)
-    | extend CAPol2Name = tostring(ConditionalAccessPolicies[2].displayName), CAPol2Result = tostring(ConditionalAccessPolicies[2].result)
-    | extend StatusCode = tostring(Status.errorCode), StatusDetails = tostring(Status.additionalDetails)
-    | extend Date = startofday(TimeGenerated), City = tostring(LocationDetails.city)
-    | summarize count() by Date, Identity, UserDisplayName, UserPrincipalName, IPAddress, City, ResultType, ResultDescription, StatusCode, StatusDetails, CAPol0Name, CAPol0Result, CAPol1Name, CAPol1Result, CAPol2Name, CAPol2Result
-    | sort by Date
+    SigninLogs | extend OS = DeviceDetail.operatingSystem, Browser = DeviceDetail.browser
+    | extend CAPol0Name = tostring(ConditionalAccessPolicies[0].displayName), CAPol0Result = tostring(ConditionalAccessPolicies[0].result)
+    | extend CAPol1Name = tostring(ConditionalAccessPolicies[1].displayName), CAPol1Result = tostring(ConditionalAccessPolicies[1].result)
+    | extend CAPol2Name = tostring(ConditionalAccessPolicies[2].displayName), CAPol2Result = tostring(ConditionalAccessPolicies[2].result)
+    | extend StatusCode = tostring(Status.errorCode), StatusDetails = tostring(Status.additionalDetails)
+    | extend Date = startofday(TimeGenerated), City = tostring(LocationDetails.city)
+    | summarize count() by Date, Identity, UserDisplayName, UserPrincipalName, IPAddress, City, ResultType, ResultDescription, StatusCode, StatusDetails, CAPol0Name, CAPol0Result, CAPol1Name, CAPol1Result, CAPol2Name, CAPol2Result
+    | sort by Date
     ```
 
     >**Important:** Although the dynamic type appears JSON-like, it can hold values that the JSON model does not represent because they do not exist in JSON. Therefore, in serializing dynamic values into a JSON representation, values that JSON cannot represent are serialized into string values. 
 
-1. The following statements demonstrates operators to manipulate JSON stored in string fields. Many logs submit data in JSON format, which requires you to know how to transform JSON data to fields that can be queried. In the Query Window enter the following statement and select **Run**: 
+1. The following statements demonstrate operators to manipulate JSON stored in string fields. Many logs submit data in JSON format, which requires you to know how to transform JSON data into fields that can be queried. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
     SigninLogs | extend Location =  todynamic(LocationDetails)
@@ -408,7 +408,7 @@ In this task, you will work with structured and unstructured string fields with 
 
 1. A **function** is a log query that can be used in other log queries with the saved name as a command. To create a **function**, after running your query, select the **Save** button and then select **Save As function** from the drop-down. Enter the name your want (for example: *PrivLogins*) in the **Function name** box and enter a **Legacy category** (for example: *General*) and select **Save**. The function will be available in KQL by using the function's alias:
 
-    >**Note:** You will not be able to do this in the lademo environment used for this lab since your account has only Reader permissions, but it is an important concept to make your queries more efficient and effective. 
+    >**Note:** You will not be able to do this in the lab demo environment used for this lab since your account has only Reader permissions, but it is an important concept to make your queries more efficient and effective. 
 
     ```KQL
     PrivLogins  
