@@ -31,15 +31,15 @@ In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
 
 1. Select **Next: Set rule logic >** button:
 
-1. For the rule query, paste in the following KQL statement:
+1. For the rule query, paste the following KQL statement:
 
-    >**Warning:** When using the Paste function to the virtual machine extra (pipe) characters could be added. Make sure you use Notepad first to paste the following query.
+    >**Warning:** When using the Paste function on the virtual machine extra (pipe) characters could be added. Make sure you use Notepad first to paste the following query.
 
     ```KQL
     SecurityEvent | where EventID == 4732
     ```
 
-1. Select **View query results**. You should not receive any results nor any errors. If you receive an error, please review that the query appears just like the previous KQL statement. Close the *Logs* window by selecting the upper right **X** and select **OK** to discard to save changes to go back to the wizard.
+1. Select **View query results**. You should not receive any results or errors. If you receive an error, please review that the query appears just like the previous KQL statement. Close the *Logs* window by selecting the upper right **X** and select **OK** to discard to save changes to go back to the wizard.
 
 
 1. Scroll down and under *Query scheduling* set the following:
@@ -70,7 +70,7 @@ In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
 
 ### Task 2: Create our Azure DevOps environment
 
-In this task, you will test create and populate an Azure DevOps repository..
+In this task, you will test create and populate an Azure DevOps repository.
 
 1. Open another tab in the browser.
 
@@ -88,11 +88,11 @@ In this task, you will test create and populate an Azure DevOps repository..
 
 1. Navigate to **Repos** on the left pane.
 
-1. At the bottom of the page in the area *Initialize main branch with a README or gitignore*, select **Initialize**.
+1. At the bottom of the page in the area *Initialize the main branch with a README or gitignore*, select **Initialize**.
 
 1. The page should show the Files for the Repo.  the only file is README.me.
 
-1. On the Files (right side of the page) blade, the toolbar include options *Set up build*, *Clone*, and *:*.  Select **:** to show more options.
+1. On the Files (right side of the page) blade, the toolbar includes options *Set up build*, *Clone*, and *:*.  Select **:** to show more options.
 
 1. Select **Upload Files**.
 
