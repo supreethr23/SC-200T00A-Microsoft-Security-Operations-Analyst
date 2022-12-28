@@ -28,7 +28,7 @@ In this task, you will create a Windows virtual machine in Azure.
 
 1. Leave **(US) East US** as the default value for *Region*.
 
-1. Scroll down and review the *Size* for the virtual machine. If it appears empty, select **See all sizes**, choose the first VM size under *Most used by Azure users* and click **Select**.
+1. Scroll down and review the *Size* of the virtual machine. If it appears empty, select **See all sizes**, choose the first VM size under *Most used by Azure users*, and click **Select**.
 
 1. Enter a *Username* of your choosing. **Hint:** Avoid reserved words like admin or root.
 
@@ -47,11 +47,11 @@ In this task, you will connect an Azure Windows virtual machine to Microsoft Sen
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select your Microsoft Sentinel Workspace you created earlier.
+1. Select the Microsoft Sentinel Workspace you created earlier.
 
 1. From the Data Connectors Tab, search for the **Windows Security Events via AMA** connector and select it from the list.
 
-1. Select **Open connector page** on the connector information blade.
+1. Select the **Open connector page** on the connector information blade.
 
 1. In the *Configuration* section, select the **Create data collection rule**.
 
@@ -74,15 +74,15 @@ In this task, you will connect an Azure Windows virtual machine to Microsoft Sen
 
 In this task, you will install Azure Arc and connect a non-Azure Windows virtual machine to Microsoft Sentinel.  
 
->**Important:** The next steps are done in a different machine than the one you were previously working. Look for the Virtual Machine name references.
+>**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
 >**Important:** The *Windows Security Events via AMA* data connector requires Azure Arc for non-Azure devices. 
 
 1. In the WIN1 virtual machine, search for **Hyper-V** from the bottom windows search bar and select to open.
 
-1. Right click on **WIN2** virtual machine and select start, then again right click on the **WIN2** virtual machine and select **connect**.
+1. Right click on the **WIN2** virtual machine and select start, then again right-click on the **WIN2** virtual machine and select **connect**.
 
-1. Enter the VM Admin password mentioned under the **Resource group : WIN1** in the environment details tab.
+1. Enter the VM Admin password mentioned under the **Resource group: WIN1** in the environment details tab.
 
 1. Open the Microsoft Edge browser.
 
@@ -126,9 +126,9 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Type *.\OnboardingScript.ps1* and press enter.  
 
-    >**Important:** If you get the error *"The term .\OnboardingScript.ps1 is not recognized..."*, make sure you are doing the steps for Task 3 on the WIN2 virtual machine. Other issue might be that the name of the file changed due to multiple downloads, search for *".\OnboardingScript (1).ps1"* or other file numbers in the running directory.
+    >**Important:** If you get the error *"The term .\OnboardingScript.ps1 is not recognized..."*, make sure you are doing the steps for Task 3 on the WIN2 virtual machine. Another issue might be that the name of the file changed due to multiple downloads, search for *".\OnboardingScript (1).ps1"* or other file numbers in the running directory.
 
-1. Enter **R** to Run once and press enter (this may take a couple minutes).
+1. Enter **R** to Run once and press enter (this may take a couple of minutes).
 
 1. The setup process will open a new Edge browser tab to authenticate the Azure Arc agent. Select your admin account, wait for the message "Authentication complete" and then go back to the Windows PowerShell window.
 
@@ -140,11 +140,11 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select your Microsoft Sentinel Workspace you created earlier.
+1. Select the Microsoft Sentinel Workspace you created earlier.
 
 1. From the Data Connectors Tab, search for the **Windows Security Events via AMA** connector and select it from the list.
 
-1. Select **Open connector page** on the connector information blade.
+1. Select the **Open connector page** on the connector information blade.
 
 1. In the *Configuration* section, select the **Create data collection rule**.
 
@@ -152,7 +152,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Select **+Add resource(s)**.
 
-1. Expand **rg-defender** (or the Resource Group your created), then select **WIN2**.
+1. Expand **rg-defender** (or the Resource Group you are created), then select **WIN2**.
 
 1. Select **Apply**.
 
@@ -165,15 +165,15 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 ### Task 4: Onboard Microsoft Defender for Endpoint Device
 
-In this task, you will on-board a device to Microsoft Defender for Endpoint.
+In this task, you will onboard a device to Microsoft Defender for Endpoint.
 
 >**VERY IMPORTANT:** If you completed the labs for "Module 2 - Exercise 1" of this course AND have been saving your Virtual Machines until now, you can skip this task. Otherwise, you need to onboard again the **WIN1** machine to Defender for Endpoint.
 
->**Important:** The next steps are done in a different machine than the one you were previously working. Look for the Virtual Machine name references.
+>**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
 1. Login to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
 
-1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com) and login with the **Tenant Email** credentials if you are not currently in the portal.
+1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com) and log in with the **Tenant Email** credentials if you are not currently in the portal.
 
 1. Select **Settings** from the left menu bar, then from the Settings page select **Endpoints**.
 
@@ -187,7 +187,7 @@ In this task, you will on-board a device to Microsoft Defender for Endpoint.
 
 1. Run the WindowsDefenderATPLocalOnboardingScript.cmd file that you just extracted as administrator. **Note:** By default the file should be in the c:\users\admin\downloads directory. Answer Y to questions presented by the script. 
 
-1. From the Onboarding page in the portal, copy the detection test script and run it in an open command window. You may have to open a new **Administrator: Command Prompt** window by typing *CMD* in the windows search bar and choose to **Run as Administrator**.
+1. From the Onboarding page in the portal, copy the detection test script and run it in an open command window. You may have to open a new **Administrator: Command Prompt** window by typing *CMD* in the windows search bar and choosing to **Run as Administrator**.
 
 1. In the Microsoft 365 Defender portal in the Endpoints area, select **Device inventory**. You should now see your device in the list.
 
