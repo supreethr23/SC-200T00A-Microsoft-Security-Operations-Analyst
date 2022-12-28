@@ -7,9 +7,9 @@ You're a Security Operations Analyst working at a company that is implementing M
 
 ### Task 1: Initialize the Microsoft Sentinel Workspace.
 
-In this task, you will create an Microsoft Sentinel workspace.
+In this task, you will create a Microsoft Sentinel workspace.
 
-1. Log in to WIN1 virtual machine as Azureuser Admin with the password as provided in the Environment tab.  
+1. Log in to WIN1 virtual machine as Azureuser Admin with the password provided in the Environment tab.  
 
 1. Open the Edge browser.
 
@@ -25,7 +25,7 @@ In this task, you will create an Microsoft Sentinel workspace.
 
 1. Next, In Add Microsoft Sentinel to a workspace page.
 
-1. Select your existed workspace that created in the previous lab, then select **Add**. This could take a few minutes.
+1. Select your existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
 
 1. Navigate around the newly created Microsoft Sentinel workspace to become familiar with the user interface options.
 
@@ -36,7 +36,7 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. In the search box at the bottom of the Windows 10 screen, enter *Notepad*.  Select **Notepad** from the results.
 
-1. Type **Hostname** then enter for a new line.
+1. Type **Hostname** then enter a new line.
 
 1. In Row 2 through 6 of the notepad, copy the following hostnames, each one in a different line:
 
@@ -107,7 +107,7 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 1. Select **Apply**.
 
-    **Note:** It could take a couple of minute for the indicator to appear.
+    **Note:** It could take a couple of minutes for the indicator to appear.
 
 1. Select the **Logs** option in the General area. You may need to disable the "Always show queries" option and close the *Queries* window to get run the statements.
 
