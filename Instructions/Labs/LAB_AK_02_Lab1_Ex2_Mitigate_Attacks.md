@@ -11,7 +11,7 @@ To explore the Defender for Endpoint attack mitigation capabilities, you will ru
 
 In this task, you will run two simulated attacks to explore the capabilities of Microsoft Defender for Endpoint.
 
-1. If you are not already at the Microsoft 365 Defender portal in your Microsoft Edge browser, go to (https://security.microsoft.com) and login as Admin for your tenant.
+1. If you are not already at the Microsoft 365 Defender portal in your Microsoft Edge browser, go to (https://security.microsoft.com) and log in as Admin for your tenant.
 
 1. From the menu, under **Endpoints**, select **Evaluation & tutorials** and then select **Tutorials & simulations** from the left side.
 
@@ -21,7 +21,7 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. In the new browser tab, locate the section named **Run the simulation** (page 5, starting at step 2) and follow the steps to run the attack. **Hint:** The simulation file *RS4_WinATP-Intro-Invoice.docm* can be found back in portal, just below the **Read the walkthrough** you selected in the previous step by selecting the **Get simulation file** button. 
 
-1. After downloading the file,  open the file with **Micrsosft word** and continue with the setps mentioned in the walkthrough of the attack simulation file.
+1. After downloading the file,  open the file with **Microsoft word** and continue with the steps mentioned in the walkthrough of the attack simulation file.
 
 1. Repeat the last 3 steps to run another tutorial, *Automated investigation (fileless attack)*.
 
@@ -36,7 +36,7 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. Under **Incident tags** type "Tutorial" and select **Tutorial (Create new)** to create a new tag. 
 
-1. Select the toggle **Assign to**  and add your user account (Me) as owner of the incident. 
+1. Select the toggle **Assign to**  and add your user account (Me) as the owner of the incident. 
 
 1. Under **Classification**, expand the drop-down menu. 
 
@@ -44,8 +44,8 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. Add any comments if desired and click **Save** to finish.
 
-1. Review the contents of the Alerts, Devices, Users, Investigations, Evidence and Response, Graph tabs. **Hint:** Some tabs might be hidden due the size of your display. Select the ellipsis tab (...) to make them appear.
+1. Review the contents of the Alerts, Devices, Users, Investigations, Evidence, Response, and Graph tabs. **Hint:** Some tabs might be hidden due to the size of your display. Select the ellipsis tab (...) to make them appear.
 
->**Warning:** The simulations and tutorials here are an excellent source of learning through practice.  Simulations and tutorials are being added and edited regularly in the portal.  However, some of these simulations & tutorials may interfere with performance of the labs designed for this training course.  Only perform the simulations and tutorials recommended in the instructions provided for this lab when using the course provided Azure tenant.  You may perform the other simulations and tutorials *after* this training course is complete with this tenant.
+>**Warning:** The simulations and tutorials here are an excellent source of learning through practice.  Simulations and tutorials are being added and edited regularly in the portal.  However, some of these simulations & tutorials may interfere with the performance of the labs designed for this training course.  Only perform the simulations and tutorials recommended in the instructions provided for this lab when using the course provided Azure tenant.  You may perform the other simulations and tutorials *after* this training course is complete with this tenant.
 
 ## You have completed the lab.
