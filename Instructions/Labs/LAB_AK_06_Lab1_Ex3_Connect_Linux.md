@@ -4,7 +4,7 @@
 
 In this task, you will access your Microsoft Sentinel workspace.
 
-1. Log in to WIN1 virtual machine with the password as provided in the Environment tab.  
+1. Log in to WIN1 virtual machine with the password provided in the Environment tab.  
 
 1. Start the Microsoft Edge browser.
 
@@ -16,7 +16,7 @@ In this task, you will access your Microsoft Sentinel workspace.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select your Microsoft Sentinel Workspace you created in a previous lab.
+1. Select the Microsoft Sentinel Workspace you created in a previous lab.
 
 
 ### Task 2: Connect a Linux Host using the Common Event Format connector.
@@ -25,20 +25,20 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 
 1. Select **Data connectors** from the Configuration area in Microsoft Sentinel.  From the Data Connectors tab, search for the **Common Event Format (CEF) via Legacy agent** connector and select it from the list.
 
-1. Select **Open connector page** on the connector information blade.
+1. Select the **Open connector page** on the connector information blade.
 
 1. Copy to the clipboard the command shown in *1.2 Install the CEF collector on the Linux machine*.
 
 1. Back to the Azure portal, In the Search bar of the Azure portal, type **virtual machine**, then select **Virtual machine**.
 
-1. Open LIN1 Linux virtual machine and copy the Public ip address of LIN1.
+1. Open LIN1 Linux virtual machine and copy the Public IP address of LIN1.
 
-1. launch Windows PowerShell as Administrator by right-clicking the Start menu icon and select **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
+1. launch Windows PowerShell as Administrator by right-clicking the Start menu icon and selecting **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
 
 1. Enter the following PowerShell command, adjusting for your specific Linux server information, and press enter:
 
 ```PowerShell
-ssh <insert your linux IP address here> -l <insert linux user name here>
+ssh <insert your Linux IP address here> -l <insert Linux user name here>
 ```
    **Note**: Replace `<insert your linux IP address here>` with Copied Public iP address and `<insert linux user name here>` with Admin Username provided under Resource group: LIN1 in the Environment tab
 
@@ -46,7 +46,7 @@ ssh <insert your linux IP address here> -l <insert linux user name here>
 
    ![linux login](../Media/PSconnectLinux.png)
 
-1. You are now ready to paste in the *1.2 Install the CEF collector on the Linux machine* from the earlier step. Make sure that script from Azure is in the clipboard. In PowerShell right-click the top bar and choose **Edit** and then **Paste**. Once pasted add a **3** to the word *python* as shown below:
+1. You are now ready to paste in the *1.2 Install the CEF collector on the Linux machine* from the earlier step. Make sure that the script from Azure is in the clipboard. In PowerShell right-click the top bar and choose **Edit** and then **Paste**. Once pasted add a **3** to the word *python* as shown below:
 
    ![ConnectorScript](../Media/ConnectorScript.png)
 
@@ -64,7 +64,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 
 1. From the Data Connectors tab, search for the **Syslog** connector and select it from the list.
 
-1. Select **Open connector page** on the connector information blade.
+1. Select the **Open connector page** on the connector information blade.
 
 1. Open the **Install agent on a non-Azure Linux Machine** section.
 
@@ -72,18 +72,18 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 
 1. Select the tab for **Linux servers**.
    
-1. Open LIN2 Linux virtual machine and copy the Public ip address of LIN2.
+1. Open LIN2 Linux virtual machine and copy the Public IP address of LIN2.
 
 1. Copy the command in the *Download and onboard agent for Linux* area to the clipboard.
 
-1. Go back to the WIN1 virtual machine and launch a NEW Windows PowerShell as Administrator by right-clicking the Start menu icon and select **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
+1. Go back to the WIN1 virtual machine and launch a NEW Windows PowerShell as Administrator by right-clicking the Start menu icon and selecting **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
 
    >**Note:** You can reuse the Windows PowerShell window if the *Installation completed* for the last task by entering *exit* to close the connection to LIN1.
 
 1. Enter the following PowerShell command, adjusting for your specific Linux server information, and press enter:
 
 ```PowerShell
-ssh <insert your linux IP address here> -l <insert linux user name here>
+ssh <insert your Linux IP address here> -l <insert Linux user name here>
 ```
 
    **Note**: Replace `<insert your linux IP address here>` with Copied Public iP address and `<insert linux user name here>` with Admin Username provided under Resource group: LIN2 in the Environment tab
@@ -92,7 +92,7 @@ ssh <insert your linux IP address here> -l <insert linux user name here>
 
    ![linux login](../Media/PSconnectLinux.png)
 
-1. You are now ready to paste in the *Download and onboard agent for Linux* from the earlier step. Make sure that script from Azure is in the clipboard. In PowerShell right-click the top bar and choose **Edit** and then **Paste**.
+1. You are now ready to paste in the *Download and onboard agent for Linux* from the earlier step. Make sure that the script from Azure is in the clipboard. In PowerShell right-click the top bar and choose **Edit** and then **Paste**.
 
 1. Once the script is pasted in press enter. The script will run against your Linux server remotely. You have completed the task. No further labs in this course rely on this connection.
 
@@ -101,7 +101,7 @@ ssh <insert your linux IP address here> -l <insert linux user name here>
 
 In this task, you will configure the Syslog collection facilities.
 
-1. Connect to WIN1 virtual machine.
+1. Connect to the WIN1 virtual machine.
 
 1. In Microsoft Sentinel portal, select **Settings** and then **Workspace settings** from the settings blade.
 
