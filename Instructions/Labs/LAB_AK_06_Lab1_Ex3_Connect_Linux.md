@@ -71,10 +71,12 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 1. Select the link for **Download & install agent for non-Azure Linux machine**. 
 
 1. Select the tab for **Linux servers**.
-   
-1. Open LIN2 Linux virtual machine and copy the Public IP address of LIN2.
+
+1. Select **Log Analytics agent instructions**.
 
 1. Copy the command in the *Download and onboard agent for Linux* area to the clipboard.
+   
+1. Open LIN2 Linux virtual machine and copy the Public IP address of LIN2.
 
 1. Go back to the WIN1 virtual machine and launch a NEW Windows PowerShell as Administrator by right-clicking the Start menu icon and selecting **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
 
