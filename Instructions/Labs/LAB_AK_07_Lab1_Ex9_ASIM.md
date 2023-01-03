@@ -24,9 +24,7 @@ In this task, you create a function that is a workspace parser for DeviceRegistr
 
 1. Select the **Logs** page.
 
-1. Open the **SC200_module7_ASIM_Parser_scripts.txt** you downloaded and copy and paste the *Task 1 Script* KQL statements into a new query tab.
-
-    >**Note:** The script below is only shown for reference; take time to review the KQL query.
+1. Copy and paste the  KQL statements into a new query tab.
 
     ```KQL
     let RegistryType = datatable (TypeCode: string, TypeName: string) [
@@ -42,9 +40,9 @@ In this task, you create a function that is a workspace parser for DeviceRegistr
     DeviceRegistryEvents
     | extend
         // Event
-        EventOriginalUid = tostring(ReportId),
+        EventOriginalUid = tostring(ReportId), 
         EventCount = int(1), 
-        EventProduct = 'M365 Defender for Endpoint',
+        EventProduct = 'M365 Defender for Endpoint', 
         EventVendor = 'Microsoft', 
         EventSchemaVersion = '0.1.0', 
         EventStartTime = TimeGenerated, 
@@ -53,8 +51,8 @@ In this task, you create a function that is a workspace parser for DeviceRegistr
         // Registry
         RegistryKey = iff (ActionType in ("RegistryKeyDeleted", "RegistryValueDeleted"), PreviousRegistryKey, RegistryKey),
         RegistryValue = iff (ActionType == "RegistryValueDeleted", PreviousRegistryValueName, RegistryValueName),
-        // RegistryValueType -- original name is fine
-        // RegistryValueData -- original name is fine
+        // RegistryValueType -- original name is fine 
+        // RegistryValueData -- original name is fine 
         RegistryKeyModified = iff (ActionType == "RegistryKeyRenamed", PreviousRegistryKey, ""),
         RegistryValueModified = iff (ActionType == "RegistryValueSet", PreviousRegistryValueName, ""),
         // RegistryValueTypeModified -- Not provided by Defender
@@ -68,9 +66,9 @@ In this task, you create a function that is a workspace parser for DeviceRegistr
         PreviousRegistryValueData
     // Device
     | extend
-        DvcHostname = DeviceName,
-        DvcId = DeviceId,
-        Dvc = DeviceName
+        DvcHostname = DeviceName, 
+        DvcId = DeviceId, 
+        Dvc = DeviceName 
     // Users
     | extend
         ActorUsername = iff (InitiatingProcessAccountDomain == '', InitiatingProcessAccountName, strcat(InitiatingProcessAccountDomain, '\\', InitiatingProcessAccountName)), 
@@ -132,9 +130,7 @@ In this task, you create a function that is a workspace parser for SecurityEvent
 
 1. Create a new query tab.
 
-1. Go back to the **SC200_module7_ASIM_Parser_scripts.txt** you downloaded and copy and paste the *Task 2 Script* KQL statements into the new query tab.
-
-    >**Note:** The script below is only shown for reference; take time to review the KQL query.
+1. Copy and paste the KQL statements into the new query tab.
 
     ```KQL
     let RegistryType = datatable (TypeCode: string, TypeName: string) [
