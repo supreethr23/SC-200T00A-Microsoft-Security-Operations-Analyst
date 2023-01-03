@@ -140,12 +140,16 @@ SecurityEvent
 
 28. Select the **Save** icon, change the *Title* to *My Workbook* and select **Save** again.
 
-29. Close the workbook by selecting the 'x' at the top-right or select **Workbooks** in the Microsoft Sentinel portal.
+29.  Select the **RG-Defender** resource group if needed and leave other values as default.
 
-30. Select the **My workbooks** tab if needed.
+30.  Select **Apply** to commit the changes. 
 
-31. Select the workbook you just created.
+31. Close the workbook by selecting the 'x' at the top-right or select **Workbooks** in the Microsoft Sentinel portal.
 
-32. Select **View saved workbook**.
+32. Select the **My workbooks** tab if needed.
+
+33. Select the workbook you just created.
+
+34. Select **View saved workbook**.
 
 ## You have completed the lab.
