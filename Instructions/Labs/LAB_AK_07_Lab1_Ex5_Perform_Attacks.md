@@ -90,11 +90,15 @@ In the Notepad menu, select **File** and then **Save**. At the Command Prompt wi
 
 In this task, you will perform attacks on a host with the Security Events connector configured and Sysmon configured.
 
-1. Login to WIN2 virtual machine with the password as provided in the environment tab.  
+1. 1. In the WIN1 virtual machine, search for **Hyper-V** from the bottom windows search bar and select to open.
 
-2. In the search of the task bar, enter *CMD*.  Command Prompt will be displayed in the search results.  Right-click on the Command Prompt and select **Run as Administrator**.  Accept and User Account Control prompts that appear.
+1. Right click on the **WIN2** virtual machine and select start, then again right-click on the **WIN2** virtual machine and select **connect**.
 
-3. In the command prompt, enter the command in each row pressing Enter key after each row:
+1. Enter the **Password** as `Password.1!!` when prompted.
+
+1. In the search of the task bar, enter *CMD*.  Command Prompt will be displayed in the search results.  Right-click on the Command Prompt and select **Run as Administrator**.  Accept and User Account Control prompts that appear.
+
+1. In the command prompt, enter the command in each row pressing Enter key after each row:
 
 ```Command
 cd \
@@ -102,7 +106,7 @@ mkdir temp
 cd \temp
 ```
 
-4. Attack 1 - Copy and run this command in the Command Prompt app:
+1. Attack 1 - Copy and run this command in the Command Prompt app:
 
 ```Command
 REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
@@ -110,7 +114,7 @@ REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t RE
 
 >**Note:** We are using the same *persistence* tactic just like in WIN1 but we will use different detections in the next exercise.
 
-5. Attack 2 - Copy and run this command, enter the command in each row pressing Enter key after each row:
+1. Attack 2 - Copy and run this command, enter the command in each row pressing Enter key after each row:
 
 ```Command
 net user theusernametoadd /add
