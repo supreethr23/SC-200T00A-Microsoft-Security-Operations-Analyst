@@ -79,7 +79,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Right click on the **WINServer** virtual machine and select start, then again right-click on the **WINServer** virtual machine and select **connect**.
 
-1. Enter the VM Admin password mentioned under the **Resource group: WIN1** in the environment details tab.
+1. Enter the **Password** as `Password.1!!` when prompted.
 
 1. Open the Microsoft Edge browser and navigate to the Azure portal at https://portal.azure.com.
 
