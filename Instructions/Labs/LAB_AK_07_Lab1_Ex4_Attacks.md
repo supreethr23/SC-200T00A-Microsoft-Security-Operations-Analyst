@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 4 - Understand Detection Modeling (Read Only)
+# Module 7 - Lab 1 - Exercise 4 - Understand Detection Modeling
 
 ### Task 1: Understand the Attacks
 
