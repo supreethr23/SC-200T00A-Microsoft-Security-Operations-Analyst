@@ -1,4 +1,4 @@
-# Module 8 - Lab 1 - Exercise 1 - Perform Threat Hunting in Microsoft Sentinel(Read Only)
+# Module 8 - Lab 1 - Exercise 1 - Perform Threat Hunting in Microsoft Sentinel
 
 ## Lab scenario
 
