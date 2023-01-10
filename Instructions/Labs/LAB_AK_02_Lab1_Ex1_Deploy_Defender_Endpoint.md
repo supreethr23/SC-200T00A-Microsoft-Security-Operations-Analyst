@@ -62,7 +62,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. Back in the Onboarding page from the Microsoft 365 Defender portal, under the section "2. Run a detection test", copy the detection test script by selecting the **Copy** button.  
 
-1. In the windows search bar of the WIN1 virtual machine, type **CMD** and choose **Run as Administrator** on the right pane for the Command Prompt app. 
+1. In the windows search bar of the virtual machine, type **CMD** and choose **Run as Administrator** on the right pane for the Command Prompt app. 
 
 1. When the "User Account Control" window is shown, select **Yes** to allow the app to run. 
 
