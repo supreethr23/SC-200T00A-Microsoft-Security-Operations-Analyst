@@ -9,11 +9,9 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
 
-1. Log  in to WIN1 virtual machine as Azureuser Admin with the password as provided in the Environment tab.
+1. Go to https://aka.ms/lademo in your browser. Log in with the ODL_User_Id Administrator credentials. 
 
-2. Go to https://aka.ms/lademo in your browser. Log in with the ODL_User_Id Administrator credentials. 
-
-3. Explore the available tables listed in the tab on the left side of the screen.
+1. Explore the available tables listed in the tab on the left side of the screen.
 
 1. In the query editor, enter the following query and select the **Run** button. You should see the query results in the bottom window.
 
@@ -23,6 +21,8 @@ In this task, you will access a Log Analytics environment where you can practice
 
 1. Next to the first record, select the **>** to expand the information for the row.
 
+    ![Picture 1](../Media/SC-200-img7.png)
+
 ### Task 2: Run Basic KQL Statements
 
 In this task, you will build basic KQL statements.
@@ -31,11 +31,14 @@ In this task, you will build basic KQL statements.
 
 1. Change the **Time range** to **Last hour** in the Query Window.
 
+    ![Picture 1](../Media/SC-200-img8.png)
+
 1. The following statement demonstrates the **search** operator, which searches all columns in the table for the value. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
     search "err"
     ```
+    ![Picture 1](../Media/SC-200-img9.png)
 
 1. The following statement demonstrates **search** across tables listed within the **in** clause. In the Query Window enter the following statement and select **Run**: 
 
