@@ -9,7 +9,7 @@ You're a Security Operations Analyst working at a company that is implementing c
 
 In this task, you will set up an Azure Subscription required to complete this lab and future labs.
 
-1. On the Virtual machine, Open the Microsoft Edge browser or open a new tab if already open.
+1. On the lab Virtual machine, Open the Microsoft Edge browser or open a new tab if already open.
 
 1. In the Edge browser, navigate to the Azure portal at (https://portal.azure.com).
 
@@ -79,7 +79,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
-1. In the virtual machine, search for **Hyper-V** from the bottom windows search bar and select to open.
+1. In the lab virtual machine, search for **Hyper-V** from the bottom windows search bar and select to open.
 
 1. Select and right click on the **WINServer** virtual machine and select start, then again right-click on the **WINServer** virtual machine and select **connect**.
 
