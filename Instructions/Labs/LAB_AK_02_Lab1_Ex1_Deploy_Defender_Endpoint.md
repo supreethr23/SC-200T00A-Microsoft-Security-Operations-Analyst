@@ -27,7 +27,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 1. On the **Settings** page select **Device discovery**. 
 
-    ![Picture 1](Media/SC-200-img1.png)
+    ![Picture 1](../Media/SC-200-img1.png)
 
     >**Note:** If you do not see the **Device discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try are to refresh the page with Ctrl+F5 or open the page InPrivate. Login again with the **Tenant Email** credentials.
 
