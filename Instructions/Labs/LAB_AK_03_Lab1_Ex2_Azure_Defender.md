@@ -28,8 +28,6 @@ In this task, you will load sample security alerts and review the alert details.
 
 1. Review the "Industry & regulatory standards" available to you by default.
 
-1. Select **Add more standards** to review additional standards available.
-
 1. Select Microsoft Defender for Cloud below the search box to return to the main blade.
 
 
