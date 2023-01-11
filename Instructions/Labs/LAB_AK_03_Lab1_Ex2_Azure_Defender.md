@@ -6,9 +6,7 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 ### Task 1: Explore Regulatory Compliance
 
-In this task, you will load sample security alerts and review the alert details.
-
-1. Log in to lab virtual machine as Azureuser Admin with the password as provided in the Environment tab.  
+In this task, you will load sample security alerts and review the alert details.  
 
 1. In the Edge browser, open the Azure portal at (https://portal.azure.com).
 
