@@ -8,7 +8,7 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 In this task, you will load sample security alerts and review the alert details.
 
-1. Log in to WIN1 virtual machine as Azureuser Admin with the password as provided in the Environment tab.  
+1. Log in to lab virtual machine as Azureuser Admin with the password as provided in the Environment tab.  
 
 1. In the Edge browser, open the Azure portal at (https://portal.azure.com).
 
@@ -55,7 +55,7 @@ In this task, you will load sample security alerts and review the alert details.
 
 1. Select **Sample alerts** from the command bar. **Hint:** you may need to select the ellipsis (...) button from the command bar).
 
-1. In the Create sample alerts (Preview) pane make sure your subscription is selected and that all sample alerts are selected in the *Defender for Cloud plans* area.
+1. In the **Create sample alerts (Preview)** pane make sure your subscription is selected and that all sample alerts are selected in the *Defender for Cloud plans* area.
 
 1. Select **Create sample alerts**.  
 
@@ -65,7 +65,7 @@ In this task, you will load sample security alerts and review the alert details.
 
     - Select the alert, information about the alert should appear. Select **View full details**.
 
-    - Review and read the *Alert details* tab.
+    - Review and read the **Alert details** tab.
 
     - Select the **Take action** tab or select the **Next: Take Action** button at the end of the page.
 
