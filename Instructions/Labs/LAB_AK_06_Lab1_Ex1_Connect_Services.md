@@ -9,9 +9,7 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
 ### Task 1: Access the Microsoft Sentinel Workspace.
 
-In this task, you will access your Microsoft Sentinel workspace.
-
-1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+In this task, you will access your Microsoft Sentinel workspace.  
 
 1. Open the Microsoft Edge browser.
 
@@ -36,6 +34,7 @@ In this task, you will connect the Azure Active Directory connector to Microsoft
 
 1. Select the **Sign-in Logs** and **Audit Logs** options from the Configuration area, then select **Apply Changes**.
 
+  ![Picture 1](../Media/SC-200-img10.png)
 
 ### Task 3: Connect the Azure Active Directory Identity Protection connector.
 
@@ -45,7 +44,7 @@ In this task, you will connect the Azure Active Directory Identity Protection co
 
 1. Select the **Open connector page** on the connector information blade.
 
-1. From the Configuration area select the **Connect** button.
+1. From the **Configuration** area select the **Connect** button.
 
 
 ### Task 4: Connect the Microsoft Defender for Cloud connector.
@@ -56,7 +55,7 @@ In this task, you will connect the Microsoft Defender for Cloud connector.
 
 1. Select the **Open connector page** on the connector information blade.
 
-1. In the Configuration area, under Subscription, select the checkbox for the "Azure Pass - Sponsorship" subscription and slide the **Status** option to the right to indicate **Connected**.
+1. In the **Configuration** area, under Subscription, select the checkbox for the "Azure Pass - Sponsorship" subscription and slide the **Status** option to the right to indicate **Connected**.
 
 1. The "Status" should be now *Connected* and "Bi-directional sync" should be *Enabled*.
 
