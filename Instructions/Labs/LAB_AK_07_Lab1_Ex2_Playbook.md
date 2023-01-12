@@ -28,7 +28,7 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 
 1. Scroll down the Teams blade to locate the newly created SOC team, select the ellipsis **(...)** on the right side of the name and select **Add channel**.
 
-1. Enter a channel name of *New Alerts* then select the **Add** button.
+1. Enter a channel name as *New Alerts* then select the **Add** button.
 
 
 ### Task 2: Create a Playbook in Microsoft Sentinel.
@@ -86,13 +86,13 @@ In this task, you will update the new playbook you created with the proper conne
 
 1. On the Logic App page for *PostMessageTeams-OnAlert*, in the center menu, select **Edit**.
 
-1. Select the *first* block **When a response to an Microsoft Sentinel alert is triggered**.
+1. Select the *first* block **Microsoft Sentinel alert(Preview)**.
 
 1. Select the **Change connection** link.
 
 1. Select **Add new** and select **Sign in**. In the new window, select your Azure subscription admin credentials when prompted.
 
-1. Now select the *second* block **Alert - Get incident**.
+1. Now select the *second* block **Alert - Get incident(Preview)**.
 
 1. Select the **Change connection** link.
 
@@ -105,6 +105,8 @@ In this task, you will update the new playbook you created with the proper conne
 1. The block has now been renamed to **Post a message (V3)**, at the end of the *Team* field, select the **X** to clear the contents. The field will be changed to a drop-down with a listing of the available Teams from Microsoft Teams. Select **SOC**.
 
 1. Do the same for the *Channel* field, select the **X** at the end of the field to clear the contents. The field will be changed to a drop-down with a listing of the Channels of the SOC Teams. Select **New Alerts**.
+
+   ![Picture 1](../Media/SC-200-img13.png)
 
 1. Select **Save** on the command bar.
 
