@@ -20,7 +20,7 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 8. In the Analytics rule wizard, on the General tab, enter the Name *Azure AD Role Assignment Audit Trail*.
 
-9. For Tactics, select **Persistence**.
+9. For Tactics and techniques, select **Persistence**.
 
 10. For Severity, select **Low**.
 
@@ -42,7 +42,7 @@ AuditLogs
 
 13. Select **View query results**. You should not receive any results nor any errors. If you receive an error, please review that the query appears just like the previous KQL statement. Close the *Logs* window by selecting the upper right **X** and select **OK** to discard to save changes to go back to the wizard.
 
-14. Back in the "Analytics rule wizard - Create new scheduled rule" blade in the *Alert enrichment (Preview)* area, select *Entity mapping* and select the following values: 
+14. Back in the "Analytics rule wizard - Create new scheduled rule" blade in the *Alert enrichment* area, select *Entity mapping* and select the following values: 
 
     - For the *Entity type* drop-down list select **Account**.
     - For the *Identifier* drop-down list select **FullName**.
@@ -71,13 +71,13 @@ AuditLogs
 
 18. Select the **Next: Incident settings >** button.  
 
-19. On the *Incident settings (Preview)* tab, review the default options.
+19. On the *Incident settings* tab, review the default options.
 
 20. Select the **Next: Automated response >** button.
 
-21. On the Automated response tab in the *Alert automation* area, select the playbook *PostMessageTeams-OnAlert* you had created in the previous exercise.
+21. On the Automated response tab in the *Alert automation (Classic)* area, select the playbook *PostMessageTeams-OnAlert* you had created in the previous exercise.
 
-22. Under Automation rules (Preview), select **Add new**.
+22. Under Automation rules, select **Add new**.
 
 23. For the *Automation rule name*, enter **Tier 2**.
 
@@ -103,9 +103,7 @@ In this task, you will test your new scheduled query rule.
 
 5. Select **+ Add assignments** from the command bar.
 
-6. In the **Add assignments** page, **Membership** tab, under *Select role*, select **User Administrator**. and select **Next >**.
-
-7. Review the default **Assignment type** in the **Settings tab** and select **Assign**. If the assignment fails to complete, try again.
+6. In the **Directory roles** page, search and select **User Administrator**. and select **Add**.
 
 8. Close the "Christie Cline - Assigned roles" and "Users - All users (Preview)" pages by selecting the 'x' in the top-right twice.
 
