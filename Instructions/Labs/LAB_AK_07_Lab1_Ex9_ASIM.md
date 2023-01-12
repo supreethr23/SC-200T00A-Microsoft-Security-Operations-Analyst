@@ -229,6 +229,8 @@ In this task, you create a function that is a workspace parser for SecurityEvent
     |Function name|vimRegEvtSecurityEvent|
     |Legacy Category|MyASIM|
 
+    >Note: Sometime it will take long time  to get the output, Meanwhile you can procceed with next task.
+
 1. Then select **Save**.
 
 1. In a new query tab, enter **vimRegEvtSecurityEvent** and select **Run**.
