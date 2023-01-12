@@ -16,7 +16,7 @@ In this task, you will investigate an incident.
 
 1. Select your Microsoft Sentinel Workspace you created earlier.
 
-1. Select the **Incidents** page.
+1. Select the **Incidents** tab from Threat management area.
 
 1. Review the list of Incidents
 
