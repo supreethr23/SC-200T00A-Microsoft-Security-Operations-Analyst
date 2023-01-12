@@ -90,7 +90,7 @@ In the Notepad menu, select **File** and then **Save**. At the Command Prompt wi
 
 In this task, you will perform attacks on a host with the Security Events connector configured and Sysmon configured.
 
-1. 1. In the WIN1 virtual machine, search for **Hyper-V** from the bottom windows search bar and select to open.
+1. In the WIN1 virtual machine, search for **Hyper-V** from the bottom windows search bar and select to open.
 
 1. Right click on the **WIN2** virtual machine and select start, then again right-click on the **WIN2** virtual machine and select **connect**.
 
@@ -103,7 +103,7 @@ In this task, you will perform attacks on a host with the Security Events connec
 ```Command
 cd \
 mkdir temp
-cd \temp
+cd temp
 ```
 
 1. Attack 1 - Copy and run this command in the Command Prompt app:
