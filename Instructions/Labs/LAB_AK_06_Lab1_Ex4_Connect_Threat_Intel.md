@@ -17,7 +17,7 @@ In this task, you will connect a Threat intelligence provider with the Threat in
 
 1. Select the Microsoft Sentinel Workspace you created earlier.
 
-1. From the Data Connectors tab, select the **Threat intelligence - TAXII** connector.
+1. From the Data Connectors tab, Search and select the **Threat intelligence - TAXII** connector.
 
 1. Select the **Open connector page** on the connector information blade.
 
