@@ -38,7 +38,7 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 12.	At the bottom of the page, select **Review + create**. Then on the next page, select **Create**. 
 
-     **Note:** It may take a few moments to deploy the Machine Learning workspace. 
+     >**Note:** It may take a few moments to deploy the Machine Learning workspace. 
 
 13.	After the deployment is finished, return to the Microsoft Sentinel portal.
 
@@ -65,6 +65,8 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 22.  Select the **Authenticate** button and wait for the authentication to complete.
 
 23. Clear all the results from the notebook by selecting the **Clear all outputs** from the command bar and follow the *Getting Started* tutorial. **Hint:** This can be found by selecting the ellipsis (...) from the command bar.
+
+    ![Picture 1](../Media/SC-200-img18.png)
 
     **Note** If you cannot complete the steps above to access the notebook, you can view it on its GitHub page instead.  See the notebook file here: [Azure Sentinal Notebooks on GitHub](https://github.com/Azure/Azure-Sentinel-Notebooks/blob/8122bca32387d60a8ee9c058ead9d3ab8f4d61e6/A%20Getting%20Started%20Guide%20For%20Azure%20Sentinel%20ML%20Notebooks.ipynb) 
 
