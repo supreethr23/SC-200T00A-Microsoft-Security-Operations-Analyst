@@ -2,9 +2,7 @@
  
 ### Task 1: Create a Windows Virtual Machine in Azure
 
-In this task, you will create a Windows virtual machine in Azure.
-
-1. Login to **WIN1** virtual machine as Admin with the password: **Pa55w.rd**.  
+In this task, you will create a Windows virtual machine in Azure.  
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
@@ -16,11 +14,9 @@ In this task, you will create a Windows virtual machine in Azure.
 
 1. In the **Search services and marketplace** box, enter *Windows 10* and select **Microsoft Window 10** from the drop-down list.
 
-1. Open the *Plan* drop-down list and select **Windows 10 Enterprise, version 21H2**. Select **Start with a pre-set configuration** to continue.
+1. Open the *Plan* drop-down list and select **Windows 10 Enterprise, version 21H2**.
 
-1. Select **Dev/Test** and then select **Continue to create a VM**.
-
-1. Select **Create new** for *Resource group*, enter RG-AZWIN01 as Name and select **OK**.
+1. On **Create a virtual machine** page select create new on *Resource group*, enter RG-AZWIN01 as Name and select **OK**.
 
     >**Note:** This will be a new resource group for tracking purposes. 
 
@@ -49,11 +45,13 @@ In this task, you will connect an Azure Windows virtual machine to Microsoft Sen
 
 1. Select the Microsoft Sentinel Workspace you created earlier.
 
+1. Select **Data Connector** from configuration area.
+
 1. From the Data Connectors Tab, search for the **Windows Security Events via AMA** connector and select it from the list.
 
 1. Select the **Open connector page** on the connector information blade.
 
-1. In the *Configuration* section, select the **Create data collection rule**.
+1. In the *Configuration* section, select the **+Create data collection rule**.
 
 1. Enter **AZWIN01DCR** for Rule Name, then select **Next: Resources**.
 
@@ -78,9 +76,9 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 >**Important:** The *Windows Security Events via AMA* data connector requires Azure Arc for non-Azure devices. 
 
-1. In the WIN1 virtual machine, search for **Hyper-V** from the bottom windows search bar and select to open.
+1. In the lab virtual machine, search for **Hyper-V** from the bottom windows search bar and select to open.
 
-1. Right click on the **WIN2** virtual machine and select start, then again right-click on the **WIN2** virtual machine and select **connect**.
+1. Select and right click on the **WIN2** virtual machine and select start, then again right-click on the **WIN2** virtual machine and select **connect**.
 
 1. Enter the **Password** as `Password.1!!` when prompted.
 
@@ -146,7 +144,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Select the **Open connector page** on the connector information blade.
 
-1. In the *Configuration* section, select the **Create data collection rule**.
+1. In the *Configuration* section, select the **+Create data collection rule**.
 
 1. Enter **WIN2** for Rule Name, then select **Next: Resources**.
 
@@ -171,7 +169,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint.
 
 >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
-1. Login to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Back to lab virtual machine.  
 
 1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com) and log in with the **Tenant Email** credentials if you are not currently in the portal.
 
@@ -189,6 +187,6 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint.
 
 1. From the Onboarding page in the portal, copy the detection test script and run it in an open command window. You may have to open a new **Administrator: Command Prompt** window by typing *CMD* in the windows search bar and choosing to **Run as Administrator**.
 
-1. In the Microsoft 365 Defender portal in the Endpoints area, select **Device inventory**. You should now see your device in the list.
+1. In the Microsoft 365 Defender portal in the Assets area, select **Devices**. You should now see your device in the list.
 
 ## Proceed to Exercise 3
