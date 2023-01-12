@@ -41,7 +41,7 @@ ssh <insert your Linux IP address here> -l <insert Linux user name here>
 
 1. Enter *yes* to confirm the connection and then type the user's password provided under Resource group: LIN1 in the Environment tab and press enter. Your screen should look something like this:
 
-   ![linux login](../Media/SC-200-img10.png)
+   ![linux login](../Media/SC-200-img12.png)
 
 1. You are now ready to paste in the *1.2 Install the CEF collector on the Linux machine* from the earlier step. Make sure that the script from Azure is in the clipboard. In PowerShell right-click the top bar and choose **Edit** and then **Paste**. Once pasted add a **3** to the word *python* as shown below:
 
@@ -89,7 +89,7 @@ ssh <insert your Linux IP address here> -l <insert Linux user name here>
    
 1. Enter *yes* to confirm the connection and then type the user's password provided under Resource group: LIN2 in the Environment tab and press enter. Your screen should look something like this:
 
-   ![linux login](../Media/SC-200-img10.png)
+   ![linux login](../Media/SC-200-img12.png)
 
 1. You are now ready to paste in the *Download and onboard agent for Linux* from the earlier step. Make sure that the script from Azure is in the clipboard. In PowerShell right-click the top bar and choose **Edit** and then **Paste**.
 
