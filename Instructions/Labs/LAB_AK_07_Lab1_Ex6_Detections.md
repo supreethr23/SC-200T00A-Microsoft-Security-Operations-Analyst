@@ -72,7 +72,7 @@ search in (Device*) "temp\\startup.bat"
     |---|---|
     |Name|**MDE Startup RegKey**|
     |Description|**MDE Startup Regkey in c:\temp**|
-    |Tactics|**Persistence**|
+    |Tactics and techniques|**Persistence**|
     |Severity|**High**|
 
 11. Select **Next : Set rule logic >** button.
@@ -90,7 +90,7 @@ search in (Device*) "temp\\startup.bat"
 
 14. Leave the rest of the options to the defaults.  Select **Next : Incident settings >**:
 
-15. For the *Incident settings (Preview)* set the following: 
+15. For the *Incident settings* set the following: 
 
     |Setting|Value|
     |---|---|
