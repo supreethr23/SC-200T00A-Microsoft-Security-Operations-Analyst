@@ -98,6 +98,8 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Select **Generate script** in the "Add a single server" section.
 
+   ![Picture 1](../Media/SC-200-img4.png)
+
 1. Select **Next** to get to the Resource details tab.
 
 1. Select the Resource group you created earlier. **Hint:** *RG-Defender*
@@ -111,6 +113,8 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 1. Scroll down and select the **Download** button. **Hint:** if your browser blocks the download, take action in the browser to allow it. In Edge Browser, select the ellipsis button (...) if needed and then select **Keep**. 
 
 1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
+
+   ![Picture 1](../Media/SC-200-img5.png)
 
     >**Note:** You may need to search for **Windows PowerShell**. In the search box type in **PowerShell**. You should see the **Windows PowerShell App** appear. Select the **Run as Administrator** option.
 
