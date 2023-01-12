@@ -84,7 +84,7 @@ In this task, you will test create and populate an Azure DevOps repository.
 
 1. *Enter characters you see*, then **Continue**.
 
-1. On the *Create a project to get started* page, enter **My Sentinel Content** and then select **Create project**.
+1. On the *Create a project to get started* page, enter **My Sentinel Content** as project name and then select **Create project**.
 
 1. Navigate to **Repos** on the left pane.
 
@@ -139,7 +139,7 @@ In this task, you will test create and populate an Azure DevOps repository.
 
 1. Go to the *Repositories (Preview)* page, select **Refresh**. Wait until *Last deployment status* is *Failed*.  
 
-    >**Note:** The *Failed* status is due to limitations in the hosted lab environment. You would normally see *Succeeded*. Then you can see in the *Analytics* the imported rule *Rule from Azure DevOps*.
+    >**Note:** The *Failed/Unknown* status is due to limitations in the hosted lab environment. You would normally see *Succeeded*. Then you can see in the *Analytics* the imported rule *Rule from Azure DevOps*.
 
 
 ## You have completed the lab.
