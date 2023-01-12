@@ -43,7 +43,7 @@ DeviceEvents
 | render timechart 
 ```
 
-   ![Screenshot](../Media/SC200_hunting1.png)
+   ![Screenshot](../Media/SC-200-img14.png)
 
 9. The goal of this statement is to provide a visualization to check for a C2 beaconing out on a consistent basis. Take time to adjust the 3m setting to 30s in the summarize operator and more. Change the count_ > 5 setting to other threshold counts to witness the impact.
 
@@ -60,7 +60,7 @@ DeviceEvents
 | where cnt > 15
 ```
 
-   ![Screenshot](../Media/SC200_hunting2.png)
+   ![Screenshot](../Media/SC-200-img15.png)
 
    >**Note:** The generated log data is only from one device.
 
@@ -83,7 +83,7 @@ DeviceEvents
 | where cnt > 15
 ```
 
-15. In the *Entity mapping (Preview)* select **+ Add new entity**:
+15. In the *Entity mapping* select **+ Add new entity**:
 
     - For the *Entity type* drop-down list select **Host**.
     - For the *Identifier* drop-down list select **HostName**.
@@ -104,6 +104,8 @@ DeviceEvents
 22. Select the checkbox of the first row in the results. 
 
 23. In the middle command bar, select the **Add bookmark** button.
+
+    ![Screenshot](../Media/SC-200-img16.png)
 
 24. Review the values populated by default and in the *Add bookmark* blade, select **Create**.
 
@@ -185,7 +187,7 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
 
 In this task, you will use a Search job to look for a C2. 
 
-1. Select the **Search (Preview)** page in Microsoft Sentinel. 
+1. Select the **Search** page in Microsoft Sentinel. 
 
 1. Select the **Restore** button from the command bar.
 
@@ -196,6 +198,8 @@ In this task, you will use a Search job to look for a C2.
 1. Select the **Search** tab.
 
 1. Select the *Table* filter below the search box and change it to **DeviceRegistryEvents** and the select **Apply**.
+
+   ![Picture 1](../Media/SC-200-img17.png)
 
 1. In the search box, enter **reg.exe** and then select **Run search**.
 
