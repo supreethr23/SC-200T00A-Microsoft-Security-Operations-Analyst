@@ -9,6 +9,8 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
 
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.
+
 1. Go to https://aka.ms/lademo in your browser. Log in with the ODL_User_Id Administrator credentials. 
 
 1. Explore the available tables listed in the tab on the left side of the screen.
@@ -181,7 +183,7 @@ In this task, you will build KQL statements to aggregate data. **Summarize** gro
     | summarize dcount(IpAddress)
     ```
 
-1. The following statement is a rule to detect MFA failures across multiple applications for the same account. In the Query Window enter the following statement and select **Run**: 
+1. (**READ ONLY**) The following statement is a rule to detect MFA failures across multiple applications for the same account. In the Query Window enter the following statement and select **Run**:
 
     ```KQL
     let timeframe = 30d;
@@ -193,7 +195,7 @@ In this task, you will build KQL statements to aggregate data. **Summarize** gro
     | where applicationCount >= threshold
     ```
 
-1. The following statement demonstrates the **arg_max()** function, which returns one or more expressions when the argument is maximized. The following statement will return the most current row from the SecurityEvent table for the computer SQL12.NA.contosohotels.com. The * in the arg_max function requests all columns for the row. In the Query Window enter the following statement and select **Run**: 
+1. (**READ ONLY**) The following statement demonstrates the **arg_max()** function, which returns one or more expressions when the argument is maximized. The following statement will return the most current row from the SecurityEvent table for the computer SQL12.NA.contosohotels.com. The * in the arg_max function requests all columns for the row. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
     SecurityEvent  
@@ -201,7 +203,7 @@ In this task, you will build KQL statements to aggregate data. **Summarize** gro
     | summarize arg_max(TimeGenerated,*) by Computer
     ```
 
-1. The following statement demonstrates the **arg_min()** function, which returns one or more expressions when the argument is minimized. In this statement, the oldest SecurityEvent for the computer SQL12.NA.contosohotels.com will be returned as the result set. In the Query Window enter the following statement and select **Run**: 
+1. (**READ ONLY**) The following statement demonstrates the **arg_min()** function, which returns one or more expressions when the argument is minimized. In this statement, the oldest SecurityEvent for the computer SQL12.NA.contosohotels.com will be returned as the result set. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
     SecurityEvent  
@@ -409,7 +411,7 @@ In this task, you will work with structured and unstructured string fields with 
     ( where Location.countryOrRegion == "ES")
     ```
 
-1. A **function** is a log query that can be used in other log queries with the saved name as a command. To create a **function**, after running your query, select the **Save** button and then select **Save As function** from the drop-down. Enter the name your want (for example: *PrivLogins*) in the **Function name** box and enter a **Legacy category** (for example: *General*) and select **Save**. The function will be available in KQL by using the function's alias:
+1. (**READ ONLY**) A **function** is a log query that can be used in other log queries with the saved name as a command. To create a **function**, after running your query, select the **Save** button and then select **Save As function** from the drop-down. Enter the name your want (for example: *PrivLogins*) in the **Function name** box and enter a **Legacy category** (for example: *General*) and select **Save**. The function will be available in KQL by using the function's alias:
 
     >**Note:** You will not be able to do this in the lab demo environment used for this lab since your account has only Reader permissions, but it is an important concept to make your queries more efficient and effective. 
 
