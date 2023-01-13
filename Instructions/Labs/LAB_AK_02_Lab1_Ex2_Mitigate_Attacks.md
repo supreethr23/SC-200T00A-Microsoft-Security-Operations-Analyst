@@ -21,10 +21,25 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. In the new browser tab, locate the section named **Run the simulation** (page 5, starting at step 2) and follow the steps to run the attack. **Hint:** The simulation file *RS4_WinATP-Intro-Invoice.docm* can be found back in portal, just below the **Read the walkthrough** you selected in the previous step by selecting the **Get simulation file** button. 
 
-1. After downloading the file,  open the file with **Microsoft word** and continue with the steps mentioned in the walkthrough of the attack simulation file.
+1. After downloading the file,  open the file with **Microsoft word** and enter the password as `WDATP!diy#`.
 
-1. Repeat the last 3 steps to run another tutorial, *Automated investigation (fileless attack)*.
+1. In the Sign in dialog box, click on **Sign in** and copy and paste in the Username and password provided in the environment details page and select next.
 
+1. Click **Enable Editing** if the document opens inProtectedView. If you see a subsequent security warning about macros being disabled.
+
+1. To unblock the document, navigate to its location in File Explorer. In File Explorer, right-click the document, select Properties. In the General tab, mark the Unblock option under Security.
+
+   ![Picture 1](../Media/SC200-img21.png)
+  
+1. Close the **Microsoft word** and re-open from the File Explorer and enter the password as `WDATP!diy#` and after re-opening click on **Enable Content** and click on **OK**.
+
+1. In the Command prompt pop-up press any key to close.
+
+1. Go back to the portal and in *Automated investigation (fileless attack)* click on **Copy simulation script**.
+
+1. Open a Windows PowerShell window with administrative privileges from the bottom search bar.
+
+1. At the Windows PowerShell, paste and run the provided script. A few seconds later, notepad.exe is started and the simulated attack code is injected into it. The simulated attack code attempts communication to an external IP address simulating the C&C server.
 
 ### Task 2: Investigate the Attacks
 
