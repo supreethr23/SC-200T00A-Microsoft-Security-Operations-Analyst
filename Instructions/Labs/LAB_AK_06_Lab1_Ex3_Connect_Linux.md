@@ -4,6 +4,8 @@
 
 In this task, you will access your Microsoft Sentinel workspace.
 
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.
+
 1. In the lab virtual machine, Start the Microsoft Edge browser.
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
@@ -30,13 +32,13 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 
 1. Open LIN1 Linux virtual machine and copy the Public IP address of LIN1.
 
-1. launch Windows PowerShell as Administrator by right-clicking the Start menu icon and selecting **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
+1. Go back to the WIN1 virtual machine. launch Windows PowerShell as Administrator by right-clicking the Start menu icon and selecting **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
 
 1. Enter the following PowerShell command, adjusting for your specific Linux server information, and press enter:
 
-```PowerShell
-ssh <insert your Linux IP address here> -l <insert Linux user name here>
-```
+    ```PowerShell
+    ssh <insert your Linux IP address here> -l <insert Linux user name here>
+    ```
    **Note**: Replace `<insert your linux IP address here>` with Copied Public iP address and `<insert linux user name here>` with Admin Username provided under Resource group: LIN1 in the Environment Details page of the lab guide.
 
 1. Enter *yes* to confirm the connection and then type the user's password provided under Resource group: LIN1 in the Environment tab and press enter. Your screen should look something like this:
@@ -75,15 +77,15 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
    
 1. Open LIN2 Linux virtual machine and copy the Public IP address of LIN2.
 
-1. In the lab virtual machine, launch a NEW Windows PowerShell as Administrator by right-clicking the Start menu icon and selecting **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
+1. Go back to the WIN1 virtual machine, launch a NEW Windows PowerShell as Administrator by right-clicking the Start menu icon and selecting **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
 
    >**Note:** You can reuse the Windows PowerShell window if the *Installation completed* for the last task by entering *exit* to close the connection to LIN1.
 
 1. Enter the following PowerShell command, adjusting for your specific Linux server information, and press enter:
 
-```PowerShell
-ssh <insert your Linux IP address here> -l <insert Linux user name here>
-```
+    ```PowerShell
+    ssh <insert your Linux IP address here> -l <insert Linux user name here>
+    ```
 
    **Note**: Replace `<insert your linux IP address here>` with Copied Public iP address and `<insert linux user name here>` with Admin Username provided under Resource group: LIN2 in the Environment tab
    
