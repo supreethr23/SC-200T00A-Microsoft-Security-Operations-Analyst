@@ -13,6 +13,8 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
 
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.  
+
 1. If you are not already at the Microsoft 365 Defender portal, start the Microsoft Edge browser.
 
 1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
