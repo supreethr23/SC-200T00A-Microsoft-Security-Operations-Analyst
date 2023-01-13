@@ -78,7 +78,7 @@ Host5
 
 15. Select your new watchlist.  On the right tab, select **View in Log Analytics**.
 
-16. You can now use the _GetWatchlist('HighValueHosts') in your own KQL statements to access the list. The column to reference would be *Hostname*.
+16. (**READ ONLY**) You can now use the _GetWatchlist('HighValueHosts') in your own KQL statements to access the list. The column to reference would be *Hostname*.
 
 ```KQL
 _GetWatchlist('HighValueHosts')
@@ -111,7 +111,7 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 1. Select the **Logs** option in the General area. You may need to disable the "Always show queries" option and close the *Queries* window to get run the statements.
 
-1. Run the following KQL statement.
+1. (**READ ONLY**) Run the following KQL statement.
 
 ```KQL
 ThreatIntelligenceIndicator
