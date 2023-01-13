@@ -11,6 +11,8 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
 In this task, you will access your Microsoft Sentinel workspace.  
 
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.
+
 1. Open the Microsoft Edge browser.
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
