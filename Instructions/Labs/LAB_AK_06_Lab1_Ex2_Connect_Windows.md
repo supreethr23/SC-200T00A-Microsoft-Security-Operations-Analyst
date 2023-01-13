@@ -4,6 +4,8 @@
 
 In this task, you will create a Windows virtual machine in Azure.  
 
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.
+
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
 1. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
@@ -173,7 +175,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint.
 
 >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
-1. Back to lab virtual machine.  
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.  
 
 1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com) and log in with the **Tenant Email** credentials if you are not currently in the portal.
 
