@@ -29,7 +29,7 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. To unblock the document, navigate to its location in File Explorer. In File Explorer, right-click the document, select Properties. In the General tab, mark the Unblock option under Security.
 
-   ![Picture 1](../Media/SC200-img21.png)
+   ![Picture 1](../Media/SC-200-img21.png)
   
 1. Close the **Microsoft word** and re-open from the File Explorer and enter the password as `WDATP!diy#` and after re-opening click on **Enable Content** and click on **OK**.
 
