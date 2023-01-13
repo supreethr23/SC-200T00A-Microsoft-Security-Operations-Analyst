@@ -9,6 +9,8 @@ You're a Security Operations Analyst working at a company that is implementing c
 
 In this task, you will set up an Azure Subscription required to complete this lab and future labs.
 
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.
+
 1. On the lab Virtual machine, Open the Microsoft Edge browser or open a new tab if already open.
 
 1. In the Edge browser, navigate to the Azure portal at (https://portal.azure.com).
