@@ -8,6 +8,8 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 In this task, you will load sample security alerts and review the alert details.  
 
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.
+
 1. In the Edge browser, open the Azure portal at (https://portal.azure.com).
 
 1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
