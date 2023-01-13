@@ -10,7 +10,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you create a function that is a workspace parser for DeviceRegistryEvents. 
 
-1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.   
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
