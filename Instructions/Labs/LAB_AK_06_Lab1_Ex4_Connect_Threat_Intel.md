@@ -1,3 +1,7 @@
+---
+Lab - Do not use. Temporarily not operational!:
+---
+
 # Module 6 - Lab 1 - Exercise 4 - Connect Threat intelligence to Microsoft Sentinel using data connectors (READ ONLY)
 
 
