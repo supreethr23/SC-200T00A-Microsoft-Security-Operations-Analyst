@@ -174,6 +174,8 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. The Server should appear in the list. You may have to select **Refresh** to see the update and it will take a few minutes.
 
+    ![Picture 1](../Media/SC-200-img26.png)
+
 1. You can move on to the next lab and return later to the **Microsoft Defender for Cloud**. Your server will appear in the **Inventory** section. 
 
 # Proceed to Exercise 2
