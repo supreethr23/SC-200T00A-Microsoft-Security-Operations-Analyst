@@ -81,7 +81,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
-1. In the lab virtual machine, search for **Hyper-V** from the bottom windows search bar and select to open.
+1. In the WIN1 virtual machine, search for **Hyper-V** from the bottom windows search bar and select to open.
 
 1. Select and right click on the **WINServer** virtual machine and select start, then again right-click on the **WINServer** virtual machine and select **connect**.
 
@@ -148,7 +148,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 In this task, you will manually install the required agent on the Windows Server.
 
-1. On lab Virtual machine, Go to **Microsoft Defender for Cloud** and select the **Getting Started** page.
+1. On the WIN1 Virtual machine, Go to **Microsoft Defender for Cloud** and select the **Getting Started** page.
 
 1. Select the **Get Started** tab.
 
