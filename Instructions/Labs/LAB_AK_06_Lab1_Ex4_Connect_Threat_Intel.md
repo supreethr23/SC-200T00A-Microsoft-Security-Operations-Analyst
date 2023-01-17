@@ -1,4 +1,4 @@
-# Module 6 - Lab 1 - Exercise 4 - Connect Threat intelligence to Microsoft Sentinel using data connectors
+# Module 6 - Lab 1 - Exercise 4 - Connect Threat intelligence to Microsoft Sentinel using data connectors (READ ONLY)
 
 
 ### Task 1: Connect Threat intelligence.
