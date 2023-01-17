@@ -59,7 +59,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 
 In this task, you will connect a Linux host to Microsoft Sentinel with the Syslog connector.
 
-1. Connect to lab virtual machine, which should already be in the Microsoft Sentinel portal for your workspace.  
+1. Connect to WIN1 virtual machine, which should already be in the Microsoft Sentinel portal for your workspace.  
 
 1. From the Data Connectors tab, search for the **Syslog** connector and select it from the list.
 
@@ -102,9 +102,9 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 
 In this task, you will configure the Syslog collection facilities.
 
-1. Connect to the lab virtual machine.
+1. Connect to WIN1 virtual machine, which should already be in the Microsoft Sentinel portal for your workspace.
 
-1. In Microsoft Sentinel portal, select **Settings** and then **Workspace settings** from the settings blade.
+1. In Microsoft Sentinel portal, select **Settings** from *Configuration* area and then select **Workspace settings** from the settings blade.
 
 1. Select **Legacy agents management** from the **Settings** area.
 
