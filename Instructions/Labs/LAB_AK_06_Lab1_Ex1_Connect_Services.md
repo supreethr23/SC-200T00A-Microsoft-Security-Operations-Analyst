@@ -36,8 +36,6 @@ In this task, you will connect the Azure Active Directory connector to Microsoft
 
 1. Select the **Sign-in Logs** and **Audit Logs** options from the Configuration area, then select **Apply Changes**.
 
-   ![Picture 1](../Media/SC-200-img10.png)
-
 ### Task 3: Connect the Azure Active Directory Identity Protection connector.
 
 In this task, you will connect the Azure Active Directory Identity Protection connector to Microsoft Sentinel.
