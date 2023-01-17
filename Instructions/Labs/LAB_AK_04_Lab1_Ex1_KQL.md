@@ -48,8 +48,6 @@ In this task, you will build basic KQL statements.
     search in (SecurityEvent,SecurityAlert,A*) "err"
     ```
 
-1. Change back the **Time range** to **Last 24 hours** in the Query Window.
-
 1. The following statements demonstrate the **where** operator, which filters on a specific predicate. In the Query Window enter the following statement and select **Run**: 
 
     >**Note:** You should select **Run** after entering each query from the code blocks below.
@@ -110,8 +108,6 @@ In this task, you will build basic KQL statements.
         | where cnt < 1000;
     LowActivityAccounts | where Account contains "sql"
     ```
-
-1. Change the **Time range** to **Last hour** in the Query Window. This will limit our results for the following statements.
 
 1. The following statement demonstrates the **extend** operator, which creates a calculated column and adds it to the result set. In the Query Window enter the following statement and select **Run**: 
 
@@ -333,6 +329,8 @@ In this task, you will build multi-table KQL statements.
 ### Task 6: Work with string data in KQL
 
 In this task, you will work with structured and unstructured string fields with KQL statements.
+
+1. Change the Time range to **Last 24 hour** in the Query Window. This will limit our results for the following statements.
 
 1. The following statement demonstrates the **extract** function, which gets a match for a regular expression from a source string. You have the option to convert the extracted substring to the indicated type. In the Query Window, enter the following statement and select **Run**: 
 
