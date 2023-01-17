@@ -35,11 +35,13 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. In the Command prompt pop-up press any key to close.
 
-   >**Note:** **Congrats – you’re done running the attack!** The attack simulation ends here. A real attacker, if successful, would likely continue to scan for information, send collected reconnaissance information to a command-and-control (C&C) server, and use this information to move laterally and pursue other attractive targets.Next, let’s review and investigate the Defender for Endpoint alerts that surfaced the simulated attack.**Note:** Alerts should start to appear 15-30 minutes after the simulated backdoor is launched.
+   >**Note:** **Congrats – you’re done running the attack!** The attack simulation ends here. A real attacker, if successful, would likely continue to scan for information, send collected reconnaissance information to a command-and-control (C&C) server, and use this information to move laterally and pursue other attractive targets.Next, let’s review and investigate the Defender for Endpoint alerts that surfaced the simulated attack. **Note:** Alerts should start to appear 15-30 minutes after the simulated backdoor is launched.
 
 1. Go back to the portal and in *Automated investigation (fileless attack)* click on **Copy simulation script**.
 
-1. Open a Windows PowerShell window with administrative privileges from the bottom search bar.
+1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
+
+    ![Picture 1](../Media/SC-200-img5.png).
 
 1. At the Windows PowerShell, paste and run the provided script. A few seconds later, notepad.exe is started and the simulated attack code is injected into it. The simulated attack code attempts communication to an external IP address simulating the C&C server.
 
