@@ -28,7 +28,7 @@ In this task, you will create a Windows virtual machine in Azure.
 
 1. Scroll down and review the *Size* of the virtual machine. If it appears empty, select **See all sizes**, choose the first VM size under *Most used by Azure users*, and click **Select**.
 
-1. Enter a *Username* of your choosing. **Hint:** Avoid reserved words like admin or root.
+1. Enter a *Username* as *azureuser*.
 
 1. Enter a *Password* of your choosing. **Hint:** It might be easier to re-use your tenant password. It can be found in the resources tab.
 
@@ -122,7 +122,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. In case you get a UAC prompt, enter *Administrator* for "Username" and *Passw0rd!* for "Password", else skip to next step.
 
-1. Enter: cd C:\Users\Administrator\Downloads
+1. Enter: **cd C:\Users\Administrator\Downloads**
 
 1. Type *Set-ExecutionPolicy -ExecutionPolicy Unrestricted* and press enter.
 
