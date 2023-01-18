@@ -122,7 +122,7 @@ search "administrators"
     - Event
     - SecurityEvent
 
-5. Our first data source is SecurityEvent. Time to research what event ID Windows uses to identify adding a member to a privileged group. The EventID and Event that we are lookinf for is "4732". Kindly check the Event Id before run the script. Run the following script to confirm:
+5. Our first data source is SecurityEvent. Time to research what event ID Windows uses to identify adding a member to a privileged group. The EventID and Event that we are looking for is "4732". **Kindly check the Event Id before run the script**. Run the following script to confirm:
 
 ```KQL
 SecurityEvent
@@ -171,7 +171,7 @@ SecurityEvent
     |---|---|
     |Name|**SecurityEvents Local Administrators User Add**|
     |Description|**User added to Local Administrators group**|
-    |Tactics|**Privilege Escalation**|
+    |Tactics and techniques|**Privilege Escalation**|
     |Severity|**High**|
 
 10. Select **Next : Set rule logic >** button. On the Set rule logic tab, the Rule query and Map entities should already be populated.
