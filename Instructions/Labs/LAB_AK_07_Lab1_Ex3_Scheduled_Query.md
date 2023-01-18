@@ -127,6 +127,8 @@ In this task, you will test your new scheduled query rule.
 
 17. You should see the newly created Incident. Select the Incident and review the information in the right blade.
 
+    ![Picture 1](../Media/SC-200-img30.png)
+
 18. Open Microsoft Teams by opening a browser tab and going to https://teams.microsoft.com. Go to the *SOC* Team and see the message post about the incident.
 
 ## Proceed to Exercise 4
