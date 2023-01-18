@@ -34,8 +34,6 @@ In this task, you will investigate an incident.
 
 1. Type in the comments box: *I will research this* and select the **Comment** button to submit the new comment.
 
-1. Select the **Entities** tab and review the *Account* and *Host* entities that we mapped within the KQL query from the previous exercise. **Hint:** If no entities are shown, refresh the page.
-
 1. Select the **Alerts** tab. For the *MDE Startup RegKey* alert, slide right using the bar and notice the **View playbooks** link. This allows manual execution of a playbook from the alert, rather than triggering it from the *Automated response* tab within an Analytics rule.
 
 1. From the left pane, scroll down and select the **Investigate** button. **Hint:** If the icons are too small for your screen, select **(+)** to magnify them.
