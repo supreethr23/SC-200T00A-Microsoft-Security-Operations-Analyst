@@ -11,7 +11,7 @@ Microsoft Sentinel allows you to create custom workbooks across your data, and a
 
 In this task, you will explore the Microsoft Sentinel workbook templates.
 
-1. 1. Login to WIN1 virtual machine with the password as provided in the environment tab.
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
