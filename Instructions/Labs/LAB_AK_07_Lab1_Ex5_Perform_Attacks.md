@@ -10,22 +10,22 @@ In this task, you will perform attacks on a host with Microsoft Defender for End
 
 3. In the command prompt, enter the command in each row pressing Enter key after each row:
 
-```Command
-cd \
-mkdir temp
-cd temp
-```
+    ```Command
+    cd \
+    mkdir temp
+    cd temp
+    ```
 4. Attack 1 - Copy and run this command into the Command Prompt app:
 
-```Command
-REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
-```
+    ```Command
+    REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
+    ```
 
 5. Attack 3 - Copy and run this command:
 
-```Command
-notepad c2.ps1
-```
+    ```Command
+    notepad c2.ps1
+    ```
 Select **Yes** to create a new file and copy the following PowerShell script into *c2.ps1*.
 
 >**Note:** Paste into the virtual machine might have a limited length. If direct copy from the instructions is unavailable, paste this code in three sections to ensure all the script is pasted into the Virtual Machine.  Make sure the script looks as it does in these instructions within the notepad *c2.ps1* file.
@@ -79,9 +79,9 @@ Until ($TimeNow -ge $RunEnd)
 
 In the Notepad menu, select **File** and then **Save**. At the Command Prompt window, enter the following commands in each row pressing Enter key after each one. **Note:** You will see resolve errors. This is expected.
 
- ```CommandPrompt
-    Start PowerShell.exe -file c2.ps1
- ```
+     ```CommandPrompt
+     Start PowerShell.exe -file c2.ps1
+     ```
 
 >**Important:** Do not close the window. Let this command/powershell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
 
@@ -100,26 +100,26 @@ In this task, you will perform attacks on a host with the Security Events connec
 
 1. In the command prompt, enter the command in each row pressing Enter key after each row:
 
-```Command
-cd \
-mkdir temp
-cd temp
-```
+    ```Command
+    cd \
+    mkdir temp
+    cd temp
+    ```
 
 1. Attack 1 - Copy and run this command in the Command Prompt app:
 
-```Command
-REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
-```
+    ```Command
+    REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
+    ```
 
 >**Note:** We are using the same *persistence* tactic just like in WIN1 but we will use different detections in the next exercise.
 
 1. Attack 2 - Copy and run this command, enter the command in each row pressing Enter key after each row:
 
-```Command
-net user theusernametoadd /add
-net user theusernametoadd ThePassword1!
-net localgroup administrators theusernametoadd /add
-```
+    ```Command
+    net user theusernametoadd /add
+    net user theusernametoadd ThePassword1!
+    net localgroup administrators theusernametoadd /add
+    ```
 
 ## Proceed to Exercise 6
