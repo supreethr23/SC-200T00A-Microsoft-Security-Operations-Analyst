@@ -1,4 +1,4 @@
-# Learning Path 7 - Lab 1 - Exercise 10 - Create workbooks
+# Module 7 - Lab 1 - Exercise 10 - Create workbooks
 
 ## Lab scenario
 
