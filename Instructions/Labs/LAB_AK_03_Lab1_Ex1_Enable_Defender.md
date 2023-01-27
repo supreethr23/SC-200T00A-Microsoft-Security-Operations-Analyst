@@ -31,10 +31,6 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Select **+Create** from the command bar.
 
-1. Select **Create new** for the Resource group.
-
-1. Enter **RG-Defender** and select **Ok**.
-
 1. For the Name, enter something unique like **uniquenameDefender**.
 
 1. Select **Review + Create**.
@@ -85,7 +81,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Select and right click on the **WINServer** virtual machine and select start, then again right-click on the **WINServer** virtual machine and select **connect**.
 
-1. Enter the **Password** as `Password.1!!` when prompted.
+1. Select connect and enter the **Password** as `Password.1!!` when prompted.
 
 1. Open the Microsoft Edge browser and navigate to the Azure portal at https://portal.azure.com.
 
@@ -118,10 +114,6 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
 
     ![Picture 1](../Media/SC-200-img5.png)
-
-1. Enter Administrator for the Username if prompted.
-
-1. Enter Passw0rd! for the password if prompted.
 
 1. Enter: **cd C:\Users\Administrator\Downloads**
 
