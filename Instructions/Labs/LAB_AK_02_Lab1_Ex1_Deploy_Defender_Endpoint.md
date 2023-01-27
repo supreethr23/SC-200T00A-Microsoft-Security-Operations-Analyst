@@ -122,7 +122,7 @@ In this task, you will configure device groups that allow for access control and
     |General setting|Value|
     |---|---|
     |Device group name|**Regular**|
-    |Automation level| Full-remediate threats automatically|
+    |Regular level| Full-remediate threats automatically|
 
 1. Select **Next**.
 
