@@ -179,14 +179,14 @@ In this task, you will build KQL statements to aggregate data. **Summarize** gro
     | summarize dcount(IpAddress)
     ```
 
-1. (**READ ONLY**) The following statement is a rule to detect MFA failures across multiple applications for the same account. In the Query Window enter the following statement and select **Run**:
+1. (**READ ONLY**) The following statement is a rule to detect Invalid password failures across multiple applications for the same account. In the Query Window enter the following statement and select **Run**:
 
     ```KQL
     let timeframe = 30d;
     let threshold = 1;
     SigninLogs
     | where TimeGenerated >= ago(timeframe)
-    | where ResultDescription has "MFA"
+    | where ResultDescription has "Invalid password"
     | summarize applicationCount = dcount(AppDisplayName) by UserPrincipalName, IPAddress
     | where applicationCount >= threshold
     ```
