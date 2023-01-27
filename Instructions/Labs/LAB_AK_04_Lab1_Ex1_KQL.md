@@ -179,7 +179,7 @@ In this task, you will build KQL statements to aggregate data. **Summarize** gro
     | summarize dcount(IpAddress)
     ```
 
-1. (**READ ONLY**) The following statement is a rule to detect Invalid password failures across multiple applications for the same account. In the Query Window enter the following statement and select **Run**:
+1. The following statement is a rule to detect Invalid password failures across multiple applications for the same account. In the Query Window enter the following statement and select **Run**:
 
     ```KQL
     let timeframe = 30d;
@@ -191,7 +191,7 @@ In this task, you will build KQL statements to aggregate data. **Summarize** gro
     | where applicationCount >= threshold
     ```
 
-1. (**READ ONLY**) The following statement demonstrates the **arg_max()** function, which returns one or more expressions when the argument is maximized. The following statement will return the most current row from the SecurityEvent table for the computer SQL10.NA.contosohotels.com. The * in the arg_max function requests all columns for the row. In the Query Window enter the following statement and select **Run**: 
+1. The following statement demonstrates the **arg_max()** function, which returns one or more expressions when the argument is maximized. The following statement will return the most current row from the SecurityEvent table for the computer SQL10.NA.contosohotels.com. The * in the arg_max function requests all columns for the row. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
     SecurityEvent  
@@ -199,7 +199,7 @@ In this task, you will build KQL statements to aggregate data. **Summarize** gro
     | summarize arg_max(TimeGenerated,*) by Computer
     ```
 
-1. (**READ ONLY**) The following statement demonstrates the **arg_min()** function, which returns one or more expressions when the argument is minimized. In this statement, the oldest SecurityEvent for the computer SQL10.NA.contosohotels.com will be returned as the result set. In the Query Window enter the following statement and select **Run**: 
+1. The following statement demonstrates the **arg_min()** function, which returns one or more expressions when the argument is minimized. In this statement, the oldest SecurityEvent for the computer SQL10.NA.contosohotels.com will be returned as the result set. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
     SecurityEvent  
@@ -322,8 +322,6 @@ In this task, you will build multi-table KQL statements.
     ```
 
     >**Important:** The first table specified in the join is considered the Left table. The table after the **join** operator is the right table. When working with columns from the tables, the $left.Column name and $right.Column name is to distinguish which tables column are referenced. The **join** operator supports a full range of types: flouter, inner, innerunique, leftanti, leftantisemi, leftouter, leftsemi, rightanti, rightantisemi, rightouter, rightsemi.
-
-1. Change back the **Time range** to **Last 24 hours** in the Query Window.
 
 
 ### Task 6: Work with string data in KQL
