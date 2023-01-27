@@ -34,29 +34,29 @@ In this task, you will create a Microsoft Sentinel workspace.
 
 In this task, you will create a watchlist in Microsoft Sentinel.
 
-1. In the search box at the bottom of the Windows 10 screen, enter *Notepad*.  Select **Notepad** from the results.
+1. In the search box at the bottom of the Windows 10 screen, enter *Notepad*. Select **Notepad** from the results.
 
-1. Type **Hostname** then enter a new line.
+1. Type *Hostname* then enter for a new line.
 
-1. In Row 2 through 6 of the notepad, copy the following hostnames, each one in a different line:
+1. From row 2 of the notepad, copy the following hostnames, each one in a different line:
 
-```Notepad
-Host1
-Host2
-Host3
-Host4
-Host5
-```
+    ```Notepad
+    Host1
+    Host2
+    Host3
+    Host4
+    Host5
+    ```
 
-4. From the menu select, **File - Save As**, Name the file *HighValue.csv*.  Then change the file type to **All files(*.*)**.  Then select **Save**.  The file can be saved in the *Documents* folder for the PC.
+1. From the menu select, **File - Save As**, Name the file *HighValue.csv*, change the file type to **All files(*.*)** and select **Save**. **Hint:** The file can be saved in the *Documents* folder.
 
-5. Close Notepad.
+1. Close Notepad.
 
-6. In Microsoft Sentinel, select the **Watchlist** option in the Configuration area.
+1. In Microsoft Sentinel, select the **Watchlist** option under the Configuration area.
 
-7. Select **+ Add new** from the command bar.
+1. Select **+ Add new** from the command bar.
 
-8. In the Watchlist wizard, enter the following:
+1. In the Watchlist wizard, enter the following:
 
     |General setting|Value|
     |---|---|
@@ -64,30 +64,25 @@ Host5
     |Description|**High Value Hosts**|
     |Watchlist alias|**HighValueHosts**|
 
-9. Select, **Next: Source >**.
+1. Select, **Next: Source >**.
 
-10. Select **Browse for files** under *Upload file* and browse for the *HighValue.csv* file you just created.
+1. Select **Browse for files** under *Upload file* and browse for the *HighValue.csv* file you just created.
 
-11. In the *SearchKey field* select **Hostname**.
+1. In the *SearchKey field* select **Hostname**.
 
-12. Select **Next: Review and Create >**.
+1. Select **Next: Review and Create >**.
 
-13. Review the settings you entered and select **Create**.
+1. Review the settings you entered and select **Create**.
 
-14. The screen returns to the watchlists list.
+1. The screen returns to the Watchlist page.
 
-15. Select your new watchlist.  On the right tab, select **View in logs**.
+1. Select the *HighValueHosts* watchlist and on the right pane, select **View in logs**.
 
-16. (**READ ONLY**) You can now use the _GetWatchlist('HighValueHosts') in your own KQL statements to access the list. The column to reference would be *Hostname*.
+    >**Important:** It could take up to ten minutes for the watchlist to appear. **Please continue to with the following task and run this command on the next lab**.
+    
+    >**Note:** You can now use the _GetWatchlist('HighValueHosts') in your own KQL statements to access the list. The column to reference would be *Hostname*.
 
-    ```KQL
-    _GetWatchlist('HighValueHosts')
-    ```
-
-   **Note:** It could take a couple of minutes for the import to complete. You can continue with the following task and come back later to run this command.
-
-17. Close the *Logs* window by selecting the 'x' in the top-right and click **OK** to discard the unsaved edits.
-
+1. Close the *Logs* window by selecting the 'x' in the top-right and select **OK** to discard the unsaved edits.
 
 ### Task 3: Create a Threat Indicator.
 
@@ -97,11 +92,11 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 1. Select **+ Add New** from the command bar.
 
-1. Review the different indicator types available in the *Types* dropdown. Select the **domain-name**. Enter your initials in the Domain box. An example would be *azure.com*.
+1. Review the different indicator types available in the *Types* dropdown. Select the **domain-name**. Enter your initials in the Domain box. An example would be *onmicrosoft.com*.
 
 1. For the *Threat types*, add **malicious-activity** and select **OK**.
 
-1. For the *Name*, enter the same value used for the Domain. An example would be *azure.com*.
+1. For the *Name*, enter the same value used for the Domain. An example would be *onmicrosoft.com*.
 
 1. Set the *Valid from* field to today's date.
 
@@ -122,5 +117,7 @@ Scroll the results to the right to see the DomainName column. You can also run t
 ThreatIntelligenceIndicator
 | project DomainName
 ```
+
+![Picture 1](../Media/SC-200-img50.png)
 
 ## You have completed the lab.
