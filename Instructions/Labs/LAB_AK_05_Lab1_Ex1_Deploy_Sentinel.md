@@ -106,7 +106,7 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 1. Select the **Logs** option in the General area. You may need to disable the "Always show queries" option and close the *Queries* window to get run the statements.
 
-1. (**READ ONLY**) Run the following KQL statement.
+1. Run the following KQL statement.
 
 ```KQL
 ThreatIntelligenceIndicator
