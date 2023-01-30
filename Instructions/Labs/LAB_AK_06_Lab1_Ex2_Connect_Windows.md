@@ -30,7 +30,7 @@ In this task, you will create a Windows virtual machine in Azure.
 
 1. Enter a *Username* as *azureuser*.
 
-1. Enter a *Password* of your choosing. **Hint:** It might be easier to re-use your tenant password. It can be found in the resources tab.
+1. Enter a *Password* as **Password.1!!**
 
 1. Scroll down to the bottom of the page and select the checkbox below *Licensing* to confirm you have the eligible license.
 
