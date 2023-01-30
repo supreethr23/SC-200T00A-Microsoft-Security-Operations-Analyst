@@ -120,4 +120,4 @@ In this task, you will configure the Syslog collection facilities.
 
 1. Select **Apply**.  You have completed this task.
 
-## Proceed to Exercise 4
+## You have completed this lab.
