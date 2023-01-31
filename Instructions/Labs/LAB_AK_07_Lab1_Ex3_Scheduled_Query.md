@@ -113,6 +113,8 @@ In this task, you will test your new scheduled query rule.
 
 11. Review that there is a **Diagnostic settings** entry for the **Log Analytics workspace** you created earlier for Sentinel.
 
+    ![Picture 1](../Media/SC-200-Diagnostic.png)
+
 12. Close the page by selecting the 'x' in the top-right.
 
 13. Select **Refresh** until you see the entries for the *Category: RoleManagement* that indicates the change in roles you made earlier.
