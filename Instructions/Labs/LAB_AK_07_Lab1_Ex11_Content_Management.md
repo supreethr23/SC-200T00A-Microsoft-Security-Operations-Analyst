@@ -38,6 +38,7 @@ In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
     ```KQL
     SecurityEvent | where EventID == 4732
     ```
+    **Note**: Make sure you replace the EventID which you copied earlier.
 
 1. Select **View query results**. You should not receive any results or errors. If you receive an error, please review that the query appears just like the previous KQL statement. Close the *Logs* window by selecting the upper right **X** and select **OK** to discard to save changes to go back to the wizard.
 
