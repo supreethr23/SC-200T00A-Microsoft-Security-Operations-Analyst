@@ -64,7 +64,7 @@ search in (Device*) "temp\\startup.bat"
     | extend timestamp = TimeGenerated, HostCustomEntity = DeviceName, AccountCustomEntity = InitiatingProcessAccountName
     ```
 
-9.  Now that you have a good detection rule, in the Log window with the query, select the **+ New alert rule** in the Command Bar.  Then select **Create Azure Sentinel alert**.
+9.  Now that you have a good detection rule, in the Log window with the query, select the **+ New alert rule** in the Command Bar(**...**).  Then select **Create Azure Sentinel alert**.
 
 10. This starts our Analytics rule wizard. For the General Tab, enter:
 
@@ -97,7 +97,7 @@ search in (Device*) "temp\\startup.bat"
     |Incident settings|Enabled|
     |Alert grouping|Disabled|
 
-16. For the Automated response tab select the PostMessageTeams-OnAlert under Alert automation (classic) and then select Next: Review button.
+16. For the Automated response tab select the **PostMessageTeams-OnAlert** under Alert automation (classic) and then select Next: Review button.
 
 17. On the Review tab, select the Create button to create the new Scheduled Analytics rule.
 
@@ -122,7 +122,7 @@ search "administrators"
     - Event
     - SecurityEvent
 
-5. Our first data source is SecurityEvent. Time to research what event ID Windows uses to identify adding a member to a privileged group. The EventID and Event that we are looking for is "4732". **Kindly check the Event Id before run the script**. Run the following script to confirm:
+5. Our first data source is SecurityEvent. Time to research what event ID Windows uses to identify adding a member to a privileged group. copy the EventID and replace in all the bewlow queries. **Kindly check the Event Id before run the script** and replace. Run the following script to confirm:
 
 ```KQL
 SecurityEvent
@@ -163,7 +163,7 @@ SecurityEvent
 | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = UserName1
 ```
 
-8. Now that you have a good detection rule, in the Log window with the query, select **+ New alert rule** in the Command Bar, then select **Create Azure Sentinel alert**.
+8. Now that you have a good detection rule, in the Log window with the query, select **+ New alert rule** in the Command Bar(by selecting **...**), then select **Create Azure Sentinel alert**.
 
 9. This starts our Analytics rule wizard. For the General Tab, enter:
 
