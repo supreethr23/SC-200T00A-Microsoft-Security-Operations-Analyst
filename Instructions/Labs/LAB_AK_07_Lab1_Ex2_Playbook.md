@@ -61,7 +61,7 @@ In this task, you will create a Logic App that will be used as a Playbook in Mic
 
 1. Make sure your Azure Subscription is selected.
 
-1. For Resource Group, select **Create New** and enter *RG-Playbooks* and select **OK**.
+1. For Resource Group, select **Create New** and select resource group from drop down *RG-Playbooks* and select **OK**.
 
 1. For region, select the appropriate region for your situation. The default region will likely be optimal.
 
