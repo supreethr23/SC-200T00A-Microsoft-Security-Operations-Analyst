@@ -126,7 +126,7 @@ search "administrators"
 
 ```KQL
 SecurityEvent
-| where EventID == "4732"
+| where EventID == "4799"
 | where TargetAccount == "Builtin\\Administrators"
 ```
 
@@ -134,7 +134,7 @@ SecurityEvent
 
 ```KQL
 SecurityEvent
-| where EventID == "4732"
+| where EventID == "4799"
 | where TargetAccount == "Builtin\\Administrators"
 | extend Acct = MemberSid, MachId = SourceComputerId 
 | join kind=leftouter (
@@ -152,7 +152,7 @@ SecurityEvent
 
 ```KQL
 SecurityEvent
-| where EventID == "4732"
+| where EventID == "4799"
 | where TargetAccount == "Builtin\\Administrators"
 | extend Acct = MemberSid, MachId = SourceComputerId 
 | join kind=leftouter (
