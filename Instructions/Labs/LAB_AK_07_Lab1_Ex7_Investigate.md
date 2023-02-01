@@ -22,7 +22,7 @@ In this task, you will investigate an incident.
 
     **Note:** The analytical rules are generating alerts and incidents on the same specific log entry.  This is done to generate more alerts and incidents to be utilized in the lab.
     
-1. Select one of the *MDE Startup RegKey* incidents.
+1. Select one of the *Azure AD Role Assignment Audit Trail* incidents.
 
 1. Review the incident details on the right blade that opened. Scroll down and select the **View full details** button.
 
@@ -38,19 +38,15 @@ In this task, you will investigate an incident.
 
 1. From the left pane, scroll down and select the **Investigate** button. **Hint:** If the icons are too small for your screen, select **(+)** to magnify them.
 
-1. Hover the **WIN1** entity icon and wait for new *exploration queries* to be shown. It looks that *Related Alerts* has more data on it. Select the name of the exploration query **Related Alerts** to bring them to the investigation graph or select **Events >** to investigate them with a KQL query.
+1. Hover the **ODL_user_xxx@mocholxxxx.onmicrosoft.com** entity icon and wait for new *exploration queries* to be shown. It looks that *Related Alerts* has more data on it. Select the name of the exploration query **Related Alerts** to bring them to the investigation graph or select **Events >** to investigate them with a KQL query.
 
 1.	When you select an entity, a window on the right opens for more detailed information. Review the **Info** page.
 
 1. Select **Timeline** button. Hover the first two incidents and see which things on the graph occurred at what point in time.
 
-1. Select **Entities** button and review the *Entities* and *Alerts* related to *WIN1*.
+1. Select **Entities** button and review the *Entities* and *Alerts* related to *ODL_user_xxx@mocholxxxx.onmicrosoft.com*.
 
 1. Close the investigation graph by selecting the **X** in the top right of the page.
-
-1. Back in the incident page, in the left pane, select **Unassigned Owner**, select **Assign to me** and then select **Apply**. Your account will now appear as the incident owner.
-
-1. Finally, select **Active Status** and select **Closed**. In the *Select classification* review the different options. After that, select **True positive - suspicious activity** and then select **Apply**.
 
   
 ## Proceed to Exercise 8
