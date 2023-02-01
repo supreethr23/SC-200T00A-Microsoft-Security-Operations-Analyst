@@ -66,7 +66,7 @@ In this task, you will connect the Microsoft Defender for Cloud connector.
 
 In this task, you will connect the Microsoft Defender for Cloud Apps connector.
 
-1. From the Data Connectors Tab, search for the **Microsoft 365 Defender (Preview)** connector and select it from the list.
+1. From the Data Connectors Tab, search for the **Microsoft 365 Defender** connector and select it from the list.
 
 1. Select the **Open connector page** on the connector information blade.
 
