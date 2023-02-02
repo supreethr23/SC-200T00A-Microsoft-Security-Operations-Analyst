@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 9 - Create ASIM parsers
+# Module 7 - Lab 1 - Exercise 8 - Create ASIM parsers
 
 ## Lab scenario
 
