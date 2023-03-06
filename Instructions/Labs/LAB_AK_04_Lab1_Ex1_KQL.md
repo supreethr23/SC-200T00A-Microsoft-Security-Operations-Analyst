@@ -3,7 +3,7 @@
 ## Lab scenario
 You are a Security Operations Analyst working at a company that is implementing Microsoft Sentinel. You are responsible for performing log data analysis to search for malicious activity, display visualizations, and perform threat hunting. To query log data, you use the Kusto Query Language (KQL).
 
->**Hint:** This lab involves entering many KQL scripts into Microsoft Sentinel. The scripts were provided in a file at the beginning of this lab. An alternate location to download them is:  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
+>**Important:** This lab involves entering many KQL scripts into Microsoft Sentinel. The scripts were provided in a file at the beginning of this lab. An alternate location to download them is:  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
 
 ### Task 1: Access the KQL testing area.
 
@@ -48,8 +48,9 @@ In this task, you will build basic KQL statements.
     search in (SecurityEvent,SecurityAlert,A*) "err"
     ```
 
-1. The following statements demonstrate the **where** operator, which filters on a specific predicate. In the Query Window enter the following statement and select **Run**: 
+1. Change back the **Time range** to **Last 24 hours** in the Query Window.
 
+1. The following statements demonstrates the **where** operator, which filters on a specific predicate. In the Query Window enter the following statement and select **Run**: 
     >**Note:** You should select **Run** after entering each query from the code blocks below.
 
     ```KQL
@@ -108,6 +109,8 @@ In this task, you will build basic KQL statements.
         | where cnt < 1000;
     LowActivityAccounts | where Account contains "sql"
     ```
+
+1. Change the **Time range** to **Last hour** in the Query Window. This will limit our results for the following statements.
 
 1. The following statement demonstrates the **extend** operator, which creates a calculated column and adds it to the result set. In the Query Window enter the following statement and select **Run**: 
 
@@ -328,8 +331,6 @@ In this task, you will build multi-table KQL statements.
 
 In this task, you will work with structured and unstructured string fields with KQL statements.
 
-1. Change the Time range to **Last 24 hour** in the Query Window. This will limit our results for the following statements.
-
 1. The following statement demonstrates the **extract** function, which gets a match for a regular expression from a source string. You have the option to convert the extracted substring to the indicated type. In the Query Window, enter the following statement and select **Run**: 
 
     ```KQL
@@ -384,7 +385,7 @@ In this task, you will work with structured and unstructured string fields with 
 
     >**Important:** Although the dynamic type appears JSON-like, it can hold values that the JSON model does not represent because they do not exist in JSON. Therefore, in serializing dynamic values into a JSON representation, values that JSON cannot represent are serialized into string values. 
 
-1. The following statements demonstrate operators to manipulate JSON stored in string fields. Many logs submit data in JSON format, which requires you to know how to transform JSON data into fields that can be queried. In the Query Window enter the following statement and select **Run**: 
+1. The following statements demonstrates operators to manipulate JSON stored in string fields. Many logs submit data in JSON format, which requires you to know how to transform JSON data to fields that can be queried. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
     SigninLogs | extend Location =  todynamic(LocationDetails)
@@ -407,7 +408,7 @@ In this task, you will work with structured and unstructured string fields with 
     ( where Location.countryOrRegion == "ES")
     ```
 
-1. (**READ ONLY**) A **function** is a log query that can be used in other log queries with the saved name as a command. To create a **function**, after running your query, select the **Save** button and then select **Save As function** from the drop-down. Enter the name your want (for example: *PrivLogins*) in the **Function name** box and enter a **Legacy category** (for example: *General*) and select **Save**. The function will be available in KQL by using the function's alias:
+1. A **function** is a log query that can be used in other log queries with the saved name as a command. To create a **function**, after running your query, select the **Save** button and then select **Save As function** from the drop-down. Enter the name your want (for example: *PrivLogins*) in the **Function name** box and enter a **Legacy category** (for example: *General*) and select **Save**. The function will be available in KQL by using the function's alias:
 
     >**Note:** You will not be able to do this in the lab demo environment used for this lab since your account has only Reader permissions, but it is an important concept to make your queries more efficient and effective. 
 
