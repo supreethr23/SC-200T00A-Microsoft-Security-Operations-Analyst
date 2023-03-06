@@ -52,7 +52,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings**.
 
-1. Select the **"MOC HOL - Sponsorship"** subscription (or equivalent name in your Language). 
+1. Select the **"Azure HOL XXXX"** subscription (or equivalent name in your Language). 
 
 1. Review the Azure resources that are now protected with the Defender for Cloud plans.
 
