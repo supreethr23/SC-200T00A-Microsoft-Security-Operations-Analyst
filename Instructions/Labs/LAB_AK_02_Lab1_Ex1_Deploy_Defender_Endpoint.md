@@ -13,7 +13,7 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
 
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.  
+1. Log in to WIN1 virtual machine with the password provided in the environment tab.  
 
 1. If you are not already at the Microsoft 365 Defender portal, start the Microsoft Edge browser.
 
@@ -122,7 +122,7 @@ In this task, you will configure device groups that allow for access control and
     |General setting|Value|
     |---|---|
     |Device group name|**Regular**|
-    |Regular level| Full-remediate threats automatically|
+    |Automation level| Full-remediate threats automatically|
 
 1. Select **Next**.
 
