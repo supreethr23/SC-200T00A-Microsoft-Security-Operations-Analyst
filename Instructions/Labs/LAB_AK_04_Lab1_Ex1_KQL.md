@@ -341,7 +341,7 @@ In this task, you will work with structured and unstructured string fields with 
 
     ```KQL
     SecurityEvent  
-    | where EventID == '4672' and AccountType == 'User' 
+    | where EventID == '4688' and AccountType == 'User' 
     | extend Account_Name = extract(@"^(.*\\)?([^@]*)(@.*)?$", 2, tolower(Account))
     | summarize LoginCount = count() by Account_Name
     | where Account_Name != ""
@@ -385,7 +385,7 @@ In this task, you will work with structured and unstructured string fields with 
 
     >**Important:** Although the dynamic type appears JSON-like, it can hold values that the JSON model does not represent because they do not exist in JSON. Therefore, in serializing dynamic values into a JSON representation, values that JSON cannot represent are serialized into string values. 
 
-1. The following statements demonstrates operators to manipulate JSON stored in string fields. Many logs submit data in JSON format, which requires you to know how to transform JSON data to fields that can be queried. In the Query Window enter the following statement and select **Run**: 
+1. **[Read-Only]** The following statements demonstrates operators to manipulate JSON stored in string fields. Many logs submit data in JSON format, which requires you to know how to transform JSON data to fields that can be queried. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
     SigninLogs | extend Location =  todynamic(LocationDetails)
@@ -394,13 +394,13 @@ In this task, you will work with structured and unstructured string fields with 
     | project Location, City, City2
     ```
 
-1. The following statement demonstrates the **mv-expand** operator, which turns dynamic arrays into rows (multi-value expansion).
+1.  The following statement demonstrates the **mv-expand** operator, which turns dynamic arrays into rows (multi-value expansion).
 
     ```KQL
     SigninLogs | mv-expand Location = todynamic(LocationDetails)
     ```
 
-1. The following statement demonstrates the **mv-apply** operator, which applies a subquery to each record and returns the union of the results of all subqueries.
+1. **[Read-Only]** The following statement demonstrates the **mv-apply** operator, which applies a subquery to each record and returns the union of the results of all subqueries.
 
     ```KQL
     SigninLogs  
