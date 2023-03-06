@@ -37,9 +37,9 @@ Because this course can be offered by learning partners using any one of several
     |Group Name| **Sg-IT** |
     |Azure AD roles can be assigned to the group| **Yes** |
 
-1. Click on **no owners selected** and select the **ODLuser** from the list and then click on **select**.
+1. Click on **no owners selected** and select the **ODL_user** from the list and then click on **select**.
 
-1. Click on **no members selected** and select the **ODLuser** from the list and then click on **select**.
+1. Click on **no members selected** and select the **ODL_user** from the list and then click on **select**.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
