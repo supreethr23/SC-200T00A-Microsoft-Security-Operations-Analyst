@@ -28,7 +28,7 @@ In this task, you will create a Windows virtual machine in Azure.
 
 1. Scroll down and review the *Size* of the virtual machine. If it appears empty, select **See all sizes**, choose the first VM size under *Most used by Azure users*, and click **Select**.
 
-1. Enter a *Username* as *azureuser*.
+1. Enter a *Username* as **azureuser**.
 
 1. Enter a *Password* as **Password.1!!**
 
