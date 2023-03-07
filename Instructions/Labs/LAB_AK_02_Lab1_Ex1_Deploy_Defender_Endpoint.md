@@ -13,7 +13,7 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
 
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.  
+1. Log in to WIN1 virtual machine with the password provided in the environment tab.  
 
 1. If you are not already at the Microsoft 365 Defender portal, start the Microsoft Edge browser.
 
@@ -87,6 +87,36 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 In this task, you will configure roles for use with device groups.
 
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.
+
+1. Sign in to the [Azure portal](https://portal.azure.com).
+
+1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+
+1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+
+1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
+
+1. In the Search bar of the Azure portal, type **Azure Active Directory**, then select Azure Active Directory.
+
+1. Select **Groups** and then click on **New group**.
+
+1. Enter the below details for New group page :
+
+   |Setting|Value|
+    |---|---|
+    |Group Type| **Microsoft 365** |
+    |Group Name| **Sg-IT** |
+    |Azure AD roles can be assigned to the group| **Yes** |
+
+1. Click on **no owners selected** and select the **ODL_user** from the list and then click on **select**.
+
+1. Click on **no members selected** and select the **ODL_user** from the list and then click on **select**.
+
+   **Note**: Make sure you have selected **Group type** as Microsoft 365.
+
+1. Select **Create** and click on **Yes**. 
+
 1. In the Microsoft 365 Defender portal select **Settings** from the left menu bar, then select **Endpoints**. 
 
 1. Select **Roles** under the permissions area.
@@ -122,7 +152,7 @@ In this task, you will configure device groups that allow for access control and
     |General setting|Value|
     |---|---|
     |Device group name|**Regular**|
-    |Regular level| Full-remediate threats automatically|
+    |Automation level| Full-remediate threats automatically|
 
 1. Select **Next**.
 
