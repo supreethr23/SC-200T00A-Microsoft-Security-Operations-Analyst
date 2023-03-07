@@ -23,7 +23,7 @@ In this task, you will access a Log Analytics environment where you can practice
 
 1. Next to the first record, select the **>** to expand the information for the row.
 
-    ![Picture 1](../Media/SC-200-img7.png)
+    ![Picture 1](../Media/SC-200-img-7.png)
 
 ### Task 2: Run Basic KQL Statements
 
