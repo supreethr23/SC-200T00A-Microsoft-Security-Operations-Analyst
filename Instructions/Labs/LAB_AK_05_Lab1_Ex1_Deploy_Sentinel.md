@@ -4,10 +4,9 @@
 
 You're a Security Operations Analyst working at a company that is implementing Microsoft Sentinel. You're responsible for setting up the Microsoft Sentinel environment to meet the company requirement to minimize cost, meet compliance regulations, and provide the most manageable environment for your security team to perform their daily job responsibilities.
 
+### Task 1: Create a Log Analytics Workspace
 
-### Task 1: Initialize the Microsoft Sentinel Workspace.
-
-In this task, you will create a Microsoft Sentinel workspace.
+In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud.
 
 1. Log in to WIN1 virtual machine as Azureuser Admin with the password provided in the Environment tab.  
 
@@ -18,6 +17,20 @@ In this task, you will create a Microsoft Sentinel workspace.
 1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
 
 1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+
+1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
+
+1. Select **+Create** from the command bar.
+
+1. Select **RG-Defender** from the drop down.
+
+1. For the Name, enter something unique like **uniquenameDefender**.
+
+1. Select **Review + Create**.
+
+1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
+
+### Task 2: Initialize the Microsoft Sentinel Workspace.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
@@ -30,7 +43,7 @@ In this task, you will create a Microsoft Sentinel workspace.
 1. Navigate around the newly created Microsoft Sentinel workspace to become familiar with the user interface options.
 
 
-### Task 2: Create a Watchlist.
+### Task 3: Create a Watchlist.
 
 In this task, you will create a watchlist in Microsoft Sentinel.
 
@@ -84,7 +97,7 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. Close the *Logs* window by selecting the 'x' in the top-right and select **OK** to discard the unsaved edits.
 
-### Task 3: Create a Threat Indicator.
+### Task 4: Create a Threat Indicator.
 
 In this task, you will create an indicator in Microsoft Sentinel.
 
