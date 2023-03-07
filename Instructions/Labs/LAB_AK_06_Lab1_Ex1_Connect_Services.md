@@ -25,7 +25,7 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
  1. In the **Enter password** dialog box, copy, and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
 
- 1.1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
+ 1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
 
  1. Select **+Create** from the command bar.
 
