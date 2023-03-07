@@ -21,7 +21,7 @@ In this task, you will set up an Azure Subscription required to complete this la
 
 1. In the Search bar of the Azure portal, type *Subscription*, then select **Subscriptions**. 
 
-1. Make sure the **"MOC HOL xxxx"** subscription is shown.
+1. Make sure the **"Azure HOL xxxx"** subscription is shown.
 
 ### Task 2: Create a Log Analytics Workspace
 
