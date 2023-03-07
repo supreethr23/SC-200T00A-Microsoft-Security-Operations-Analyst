@@ -35,9 +35,13 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
  1. Select **Review + Create**.
 
- 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes
+ 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
  
- 1. select the newly created workspace and click on **Add**
+ 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+ 
+ 1. Click on **+ Create**
+ 
+ 1. Select the newly created workspace and click on **Add**
 
 
 ### Task 2: Connect the Azure Active Directory connector.
@@ -73,7 +77,7 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
 1. The "Status" should be now *Connected* and "Bi-directional sync" should be *Enabled*.
 
-1. Scroll down and under the "Create incidents - Recommended!" area, select **Enable**. This option creates an Analytics rule automatically for this service. You can manually add it later if not enabled here or change its configuration within the *Analytics* blade.
+1. Scroll down and under the **"Create incidents - Recommended!"** area, select **Enable**. This option creates an Analytics rule automatically for this service. You can manually add it later if not enabled here or change its configuration within the *Analytics* blade.
 
 
 ### Task 5: Connect the Microsoft Defender for Cloud Apps connector.
