@@ -34,9 +34,7 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
  1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
  
  1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
- 
- 1. Click on **+ Create**
- 
+
  1. Select the newly created workspace and click on **Add**
 
 
