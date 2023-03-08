@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 5 - Conduct attacks
+# Module 7 - Lab 1 - Exercise 6 - Conduct attacks
 
 ### Task 1: Simulated Attacks
 
@@ -163,4 +163,4 @@ In this task, you will perform attacks on a host with the Security Events connec
     net localgroup administrators theusernametoadd /add
     ```
 
-## Proceed to Exercise 6
+## Proceed to Exercise 7
