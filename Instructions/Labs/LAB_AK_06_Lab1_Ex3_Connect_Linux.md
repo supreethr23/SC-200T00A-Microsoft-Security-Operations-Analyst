@@ -43,16 +43,16 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 
 1. Enter *yes* to confirm the connection and then type the user's password provided under Resource group: LIN1 in the Environment tab and press enter. Your screen should look something like this:
 
-   ![linux login](../Media/SC-200-img12.png)
+   ![linux login](../Media/SC-200-img12updated.png)
 
 1. You are now ready to paste in the *1.2 Install the CEF collector on the Linux machine* from the earlier step. Make sure that the script from Azure is in the clipboard. In PowerShell right-click the top bar and choose **Edit** and then **Paste**. Once pasted add a **3** to the word *python* as shown below:
 
-   ![ConnectorScript](../Media/ConnectorScript.png)
+   ![ConnectorScript](../Media/ConnectorScriptupdated.png)
 
 
 1. Once the script is pasted in and adjusted press enter. The script will run against your Linux server remotely. When the script processes properly it should look similar to this screen:
 
-   ![ConnectorScript](../Media/LinuxConnected.png)
+   ![ConnectorScript](../Media/LinuxConnectedupd.png)
 
 
 ### Task 3: Connect a Linux host using the Syslog connector.
@@ -95,7 +95,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
    
 1. Enter *yes* to confirm the connection and then type the user's password provided under Resource group: LIN2 in the Environment tab and press enter. Your screen should look something like this:
 
-   ![linux login](../Media/SC-200-img12.png)
+   ![linux login](../Media/SC-200-img12updated.png)
 
 1. You are now ready to paste in the *Download and onboard agent for Linux* from the earlier step. Make sure that the script from Azure is in the clipboard. In PowerShell right-click the top bar and choose **Edit** and then **Paste**.
 
