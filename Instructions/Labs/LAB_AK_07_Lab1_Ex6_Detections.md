@@ -163,7 +163,7 @@ SecurityEvent
 | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = UserName1
 ```
 
-8. Now that you have a good detection rule, in the Log window with the query, select **+ New alert rule** in the Command Bar(by selecting **...**), then select **Create Azure Sentinel alert**.
+8. Now that you have a good detection rule, in the Log window with the query, select **+ New alert rule** in the Command Bar(by selecting **...**), then select **Create Microsoft Sentinel alert**.
 
 9. This starts our Analytics rule wizard. For the General Tab, enter:
 
