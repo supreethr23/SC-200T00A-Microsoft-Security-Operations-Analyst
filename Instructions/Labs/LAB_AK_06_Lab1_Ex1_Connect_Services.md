@@ -7,10 +7,6 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 You plan on using the Microsoft Sentinel data connectors to integrate the log data from various sources. You need to write a connector plan for management that maps each of the organization's data sources to the proper Microsoft Sentinel data connector.
 
- ![Picture 1](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex1.png)
-
-
-
 ### Task 1: Access the Microsoft Sentinel Workspace.
 
  In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud and you will access your Microsoft Sentinel workspace.  
