@@ -1,6 +1,67 @@
 # Module 7 - Lab 1 - Exercise 2 - Create a Playbook
 
-### Task 1: Create a Security Operations Center Team in Microsoft Teams.
+### Task 2: Connect the Azure Active Directory connector.
+
+ In this task, you will connect the Azure Active Directory connector to Microsoft Sentinel.
+ 
+ 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+
+ 1. Select the sentinel workspace you created in the previous exercise and from the left menu, in the Configuration area select **Data connectors**.  In the Data Connectors page, search for the **Azure Active Directory** connector and select it from the list.
+
+ 1. Select the **Open connector page** on the connector information blade.
+
+ 1. Select the **Sign-in Logs** and **Audit Logs** options from the Configuration area, then select **Apply Changes**.
+
+### Task 3: Connect the Azure Active Directory Identity Protection connector.
+
+ In this task, you will connect the Azure Active Directory Identity Protection connector to Microsoft Sentinel.
+
+ 1. From the Data Connectors Tab, search for the **Azure Active Directory Identity Protection** connector and select it from the list.
+
+ 1. Select the **Open connector page** on the connector information blade.
+
+ 1. From the **Configuration** area select the **Connect** button.
+
+
+### Task 4: Connect the Microsoft Defender for Cloud Apps connector.
+
+In this task, you will connect the Microsoft Defender for Cloud Apps connector.
+
+1. From the Data Connectors Tab, search for the **Microsoft 365 Defender** connector and select it from the list.
+
+1. Select the **Open connector page** on the connector information blade.
+
+1. From the Configuration area select **Connect Incident and Alerts**. 
+
+1. Under "Connect Events", select the **Name** checkbox to select all the checkboxes for "Microsoft Defender for Endpoint".
+
+1. Repeat the same for "Microsoft Defender for Office 365"
+
+1. Scroll to the bottom of the page and select **Apply Changes**.
+
+
+### Task 5: Connect the Azure Activity connector.
+
+In this task, you will connect the Azure Activity connector.
+
+1. From the Data Connectors Tab, search for the **Azure Activity** connector and select it from the list.
+
+1. Select the **Open connector page** on the connector information blade.
+
+1. In the Configuration area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
+
+1. In the **Basics** tab, select the button with the three dots under **Scope** to select your subscription from the drop-down list and click **Select**.
+
+1. Select the **Parameters** tab, choose your Microsoft Sentinel workspace from the **Primary Log Analytics workspace** drop-down list.
+
+1. Select the **Remediation** tab and mark the **Create a remediation task** checkbox.
+
+1. Select the **Review + Create** button to review the configuration.
+
+1. Select **Create** to finish.
+
+
+### Task 6: Create a Security Operations Center Team in Microsoft Teams.
 
 In this task, you will create a Microsoft Teams team for use in the lab.
 
@@ -31,7 +92,7 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 1. Enter a channel name as *New Alerts* then select the **Add** button.
 
 
-### Task 2: Create a Playbook in Microsoft Sentinel.
+### Task 7: Create a Playbook in Microsoft Sentinel.
 
 In this task, you will create a Logic App that will be used as a Playbook in Microsoft Sentinel.
 
@@ -72,7 +133,7 @@ In this task, you will create a Logic App that will be used as a Playbook in Mic
     **Note:** Wait for the deployment to finish before proceeding to the next task. It may take a couple minutes to deploy.
 
 
-### Task 3: Update a Playbook in Microsoft Sentinel.
+### Task 8: Update a Playbook in Microsoft Sentinel.
 
 In this task, you will update the new playbook you created with the proper connection information.
 
