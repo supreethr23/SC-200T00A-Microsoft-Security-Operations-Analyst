@@ -64,7 +64,7 @@ search in (Device*) "temp\\startup.bat"
     | extend timestamp = TimeGenerated, HostCustomEntity = DeviceName, AccountCustomEntity = InitiatingProcessAccountName
     ```
 
-9.  Now that you have a good detection rule, in the Log window with the query, select the **+ New alert rule** in the Command Bar(**...**).  Then select **Create Azure Sentinel alert**.
+9.  Now that you have a good detection rule, in the Log window with the query, select the **+ New alert rule** in the Command Bar(**...**).  Then select **Create Microsoft Sentinel alert**.
 
 10. This starts our Analytics rule wizard. For the General Tab, enter:
 
@@ -106,7 +106,7 @@ search in (Device*) "temp\\startup.bat"
 
 In this task, you will create a detection for *Attack 2* on the host with the Security Events connector and Sysmon installed.
 
-1. Select **Logs** from the General section of the Microsoft Sentinel portal.
+1. Go to https://aka.ms/lademo in your browser. Log in with the ODL_User_Id Administrator credentials.
 
 2. First, you need to see where the data is stored. Since you just performed the attacks.  
 
