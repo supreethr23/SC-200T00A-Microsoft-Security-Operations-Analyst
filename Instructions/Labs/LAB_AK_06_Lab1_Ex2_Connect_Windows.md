@@ -1,9 +1,11 @@
 # Module 6 - Lab 1 - Exercise 2 - Connect Windows devices to Microsoft Sentinel using data connectors
 
-  
-  ![Picture 1](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex2.png)
+## Lab scenario
   
  You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to connect log data from the many data sources in your organization. The next source of data are Windows virtual machines inside and outside of Azure, like On-Premises environments or other Public Clouds.
+ 
+ ![Picture 1](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex2.png)
+  
  
 ### Task 1: Create a Windows Virtual Machine in Azure
 
