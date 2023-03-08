@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 7 - Investigate Incidents
+# Module 7 - Lab 1 - Exercise 8 - Investigate Incidents
 
 ### Task 1: Investigate an incident.
 
@@ -49,4 +49,4 @@ In this task, you will investigate an incident.
 1. Close the investigation graph by selecting the **X** in the top right of the page.
 
   
-## Proceed to Exercise 8
+## Proceed to Exercise 9
