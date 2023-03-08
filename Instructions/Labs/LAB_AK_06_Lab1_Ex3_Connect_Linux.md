@@ -1,5 +1,11 @@
 # Module 6 - Lab 1 - Exercise 3 - Connect Linux hosts to Microsoft Sentinel using data connectors
 
+## Lab scenario
+
+You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to connect log data from the many data sources in your organization. The next source of data are Linux virtual machines using the Common Event Formatting (CEF) via Legacy Agent and Syslog connectors.
+
+>**Important:** There are steps within the next Tasks that are done in different virtual machines. Look for the Virtual Machine name references
+
 ### Task 1: Access the Microsoft Sentinel Workspace.
 
 In this task, you will access your Microsoft Sentinel workspace.
@@ -43,33 +49,37 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 
 1. Enter *yes* to confirm the connection and then type the user's password provided under Resource group: LIN1 in the Environment tab and press enter. Your screen should look something like this:
 
-   ![linux login](../Media/SC-200-img12.png)
+   ![linux login](../Media/SC-200-img12updated.png)
 
 1. You are now ready to paste in the *1.2 Install the CEF collector on the Linux machine* from the earlier step. Make sure that the script from Azure is in the clipboard. In PowerShell right-click the top bar and choose **Edit** and then **Paste**. Once pasted add a **3** to the word *python* as shown below:
 
-   ![ConnectorScript](../Media/ConnectorScript.png)
+   ![ConnectorScript](../Media/ConnectorScriptupdated.png)
 
 
 1. Once the script is pasted in and adjusted press enter. The script will run against your Linux server remotely. When the script processes properly it should look similar to this screen:
 
-   ![ConnectorScript](../Media/LinuxConnected.png)
+   ![ConnectorScript](../Media/LinuxConnectedupd.png)
 
 
 ### Task 3: Connect a Linux host using the Syslog connector.
 
 In this task, you will connect a Linux host to Microsoft Sentinel with the Syslog connector.
 
-1. Connect to WIN1 virtual machine, which should already be in the Microsoft Sentinel portal for your workspace.  
+1. Go back to the Edge browser where you have your Microsoft Sentinel Portal open and close the "Common Event Format (CEF) via Legacy Agent" data connector page by selecting the 'x' in the top right corner. 
 
 1. From the Data Connectors tab, search for the **Syslog** connector and select it from the list.
 
 1. Select the **Open connector page** on the connector information blade.
 
-1. Open the **Install agent on a non-Azure Linux Machine** section.
+1. Under *Configuration*, open the **Install agent on a non-Azure Linux Machine** section.
 
 1. Select the link for **Download & install agent for non-Azure Linux machine**. 
 
+    >**Note:** Your Log Analytics workspace should show *3 Windows computers connected*. This corresponds to WIN2, WINServer and AZWIN01 virtual machines connected earlier.
+
 1. Select the tab for **Linux servers**.
+
+    >**Note:** Your Log Analytics workspace should show *1 Linux computers connected*. This corresponds to LIN1 (ubuntu1) virtual machine connected earlier with the CEF connector.
 
 1. Select **Log Analytics agent instructions**.
 
@@ -84,14 +94,14 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 1. Enter the following PowerShell command, adjusting for your specific Linux server information, and press enter:
 
     ```PowerShell
-    ssh <insert your Linux IP address here> -l <insert Linux user name here>
+    ssh insert-your-linux-IP-address-here -l insert-linux-user-name-here
     ```
 
    **Note**: Replace `<insert your linux IP address here>` with Copied Public iP address and `<insert linux user name here>` with Admin Username provided under Resource group: LIN2 in the Environment tab
    
 1. Enter *yes* to confirm the connection and then type the user's password provided under Resource group: LIN2 in the Environment tab and press enter. Your screen should look something like this:
 
-   ![linux login](../Media/SC-200-img12.png)
+   ![linux login](../Media/SC-200-img12updated.png)
 
 1. You are now ready to paste in the *Download and onboard agent for Linux* from the earlier step. Make sure that the script from Azure is in the clipboard. In PowerShell right-click the top bar and choose **Edit** and then **Paste**.
 
@@ -102,21 +112,21 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 
 In this task, you will configure the Syslog collection facilities.
 
-1. Connect to WIN1 virtual machine, which should already be in the Microsoft Sentinel portal for your workspace.
+1. Go back to the Edge browser where you have your Microsoft Sentinel Portal open and close the "Log Analytics workspace" page and the "Syslog" data connector page by selecting the 'x' in the top right corner twice.
 
 1. In Microsoft Sentinel portal, select **Settings** from *Configuration* area and then select **Workspace settings** from the settings blade.
 
-1. Select **Legacy agents management** from the **Settings** area.
+1. Select **Legacy agents management** from the **Classic** area.
 
 1. Select the **Syslog** tab.
 
 1. Select the **+ Add facility** button.
 
-1. Select **auth** from the drop-down menu for *Facility name*.
+1. Select **auth** from the drop-down menu for **Facility name**.
 
 1. Select the **+ Add facility** button again.
 
-1. Select **authpriv** from the drop-down menu for *Facility name*.
+1. Select **authpriv** from the drop-down menu for **Facility name**.
 
 1. Select **Apply**.  You have completed this task.
 

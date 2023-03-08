@@ -3,6 +3,8 @@
 ## Lab scenario
 You are a Security Operations Analyst working at a company that is implementing Microsoft Sentinel. You are responsible for performing log data analysis to search for malicious activity, display visualizations, and perform threat hunting. To query log data, you use the Kusto Query Language (KQL).
 
+   ![Picture 1](../Media/SC-200-Lab_Diagrams_Mod4_L1_Ex1.png)
+
 >**Important:** This lab involves entering many KQL scripts into Microsoft Sentinel. The scripts were provided in a file at the beginning of this lab. An alternate location to download them is:  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
 
 ### Task 1: Access the KQL testing area.
@@ -23,7 +25,7 @@ In this task, you will access a Log Analytics environment where you can practice
 
 1. Next to the first record, select the **>** to expand the information for the row.
 
-    ![Picture 1](../Media/SC-200-img7.png)
+    ![Picture 1](../Media/SC-200-img-7.png)
 
 ### Task 2: Run Basic KQL Statements
 
