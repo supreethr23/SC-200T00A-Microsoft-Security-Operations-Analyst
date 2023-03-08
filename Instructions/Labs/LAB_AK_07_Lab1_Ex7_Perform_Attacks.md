@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 6 - Conduct attacks
+# Module 7 - Lab 1 - Exercise 7 - Conduct attacks
 
 ### Task 1: Simulated Attacks
 
