@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 6 - Create Detections
+# Module 7 - Lab 1 - Exercise 7 - Create Detections
 
 
 ### Task 1: Attack 1 Detection with Defender for Endpoint
@@ -198,4 +198,4 @@ SecurityEvent
 
 15. On the Review tab, select **Create**.
 
-## Proceed to Exercise 7
+## Proceed to Exercise 8
