@@ -100,7 +100,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Select **Generate script** in the "Add a single server" section.
 
-     ![Picture 1](../Media/SC-200-img4.png)
+     ![Picture 1](../Media/SC-200-module6-ex2-img4.png)
 
  1. Select **Next** to get to the Resource details tab.
 
@@ -116,7 +116,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
 
-     ![Picture 1](../Media/SC-200-img5.png)
+     ![Picture 1](../Media/SC-200-module6-ex2-img5.png)
 
      >**Note:** You may need to search for **Windows PowerShell**. In the search box type in **PowerShell**. You should see the **Windows PowerShell App** appear. Select the **Run as Administrator** option.
 
@@ -169,44 +169,43 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 ### Task 4: Onboard Microsoft Defender for Endpoint Device
 
-In this task, you will onboard a device to Microsoft Defender for Endpoint.
-
+ In this task, you will onboard a device to Microsoft Defender for Endpoint.
 
  >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
- 1. Login to WIN1 virtual machine with the password as provided in the environment tab.  
+1. Login to WIN1 virtual machine with the password as provided in the environment tab.  
 
- 1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com) and log in with the **Tenant Email** credentials if you are not currently in the portal.
+1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com) and log in with the **Tenant Email** credentials if you are not currently in the portal.
 
- 1. Select **Settings** from the left menu bar, then from the Settings page select **Endpoints**.
+1. Select **Settings** from the left menu bar, then from the Settings page select **Endpoints**.
 
- >**Note:** If you do not see the **Endpoints** option under **Settings**, log out by selecting the top-right circle with your account initials and selecting **Sign out**. Other options that you might want to try is to refresh the page with Ctrl+F5 or open the page InPrivate. Login again with the **Tenant Email** credentials.
+      >**Note:** If you do not see the **Endpoints** option under **Settings**, log out by selecting the top-right circle with your account initials and selecting **Sign out**. Other options that you might want to try is to refresh the page with Ctrl+F5 or open the page InPrivate. Login again with the **Tenant Email** credentials.
 
- 1. Select **Onboarding** in the Device management section.
+1. Select **Onboarding** in the Device management section.
 
  1. In the "1. Onboard a device" area make sure "Local Script (for up to 10 devices)" is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
 
- 1. Under the *Downloads* pop-ipup, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
+1. Under the *Downloads* pop-ipup, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
 
- 1. Right-click the downloaded zip file and select **Extract All...**, make sure that *Show extracted files when complete* is checked and select **Extract**.
+1. Right-click the downloaded zip file and select **Extract All...**, make sure that *Show extracted files when complete* is checked and select **Extract**.
 
- 1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" and select **Properties**. Select the **Unblock** checkbox in the bottom right of the Properties windows and select **OK**.
+1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" and select **Properties**. Select the **Unblock** checkbox in the bottom right of the Properties windows and select **OK**.
 
- 1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" again and choose **Run as Administrator**.  **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
+1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" again and choose **Run as Administrator**.  **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
     
- 1. When the "User Account Control" window is shown, select **Yes** to allow the script to run and answer **Y** to the question presented by the script and press **Enter**. When complete you should see a message in the command screen that says *Successfully onboarded machine to Microsoft Defender for Endpoint*.
+1. When the "User Account Control" window is shown, select **Yes** to allow the script to run and answer **Y** to the question presented by the script and press **Enter**. When complete you should see a message in the command screen that says *Successfully onboarded machine to Microsoft Defender for Endpoint*.
 
- 1. Press any key to continue. This will close the Command Prompt window.
+1. Press any key to continue. This will close the Command Prompt window.
 
- 1. Back in the Onboarding page from the Microsoft 365 Defender portal, under the section "2. Run a detection test", copy the detection test script by selecting the **Copy** button.  
+1. Back in the Onboarding page from the Microsoft 365 Defender portal, under the section "2. Run a detection test", copy the detection test script by selecting the **Copy** button.  
 
- 1. In the windows search bar of the WIN1 virtual machine, type **CMD** and choose to **Run as Administrator** on the right pane for the Command Prompt app. 
+1. In the windows search bar of the WIN1 virtual machine, type **CMD** and choose to **Run as Administrator** on the right pane for the Command Prompt app. 
 
- 1. When the "User Account Control" window is shown, select **Yes** to allow the app to run. 
+1. When the "User Account Control" window is shown, select **Yes** to allow the app to run. 
 
- 1. Paste the script by right-clicking in the **Administrator: Command Prompt** windows and press **Enter** to run it. **Note:** The window closes automatically after running the script.
+1. Paste the script by right-clicking in the **Administrator: Command Prompt** windows and press **Enter** to run it. **Note:** The window closes automatically after running the script.
 
- 1. In the Microsoft 365 Defender portal, in the left-hand menu, under the **Assets** area, select **Devices**. If the device is not shown, complete the next task and come back to check it back later. It can take up to 60 minutes for the first device to be displayed in the portal.
+1. In the Microsoft 365 Defender portal, in the left-hand menu, under the **Assets** area, select **Devices**. If the device is not shown, complete the next task and come back to check it back later. It can take up to 60 minutes for the first device to be displayed in the portal.
 
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
 
