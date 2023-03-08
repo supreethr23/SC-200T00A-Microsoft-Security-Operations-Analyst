@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 4 - Understand Detection Modeling
+# Module 7 - Lab 1 - Exercise 5 - Understand Detection Modeling
 
 ### Task 1: Understand the Attacks
 
@@ -87,4 +87,4 @@ Once the rule triggers and creates the alerts and incidents, you then investigat
 
 Next, make any other changes to the analytics rule.
 
-# Proceed to Exercise 5
+# Proceed to Exercise 6
