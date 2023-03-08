@@ -1,5 +1,7 @@
 # Module 6 - Lab 1 - Exercise 3 - Connect Linux hosts to Microsoft Sentinel using data connectors
 
+## Lab scenario
+
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to connect log data from the many data sources in your organization. The next source of data are Linux virtual machines using the Common Event Formatting (CEF) via Legacy Agent and Syslog connectors.
 
 >**Important:** There are steps within the next Tasks that are done in different virtual machines. Look for the Virtual Machine name references
