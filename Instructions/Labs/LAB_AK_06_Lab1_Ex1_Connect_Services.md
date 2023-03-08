@@ -7,7 +7,8 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 You plan on using the Microsoft Sentinel data connectors to integrate the log data from various sources. You need to write a connector plan for management that maps each of the organization's data sources to the proper Microsoft Sentinel data connector.
 
-![Picture 1](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex1.png)
+ ![Picture 1](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex1.png)
+
 
 
 ### Task 1: Access the Microsoft Sentinel Workspace.
@@ -34,11 +35,11 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
  1. Select **Review + Create**.
 
- 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
+ 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes
  
  1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
- 1. Select the newly created workspace and click on **Add**
+ 1. Click om **Create** then select the newly created workspace and click on **Add**
 
 
 ### Task 2: Connect the Azure Active Directory connector.
