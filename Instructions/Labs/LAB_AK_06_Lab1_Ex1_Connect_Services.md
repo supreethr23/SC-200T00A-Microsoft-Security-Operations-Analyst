@@ -36,7 +36,7 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
  1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes
  
- 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+ 1. In the Search bar of the Azure portal, type **Sentinel**, then select **Microsoft Sentinel**.
  
  1. Select **+ Create**
 
@@ -74,9 +74,9 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
  1. In the **Configuration** area, under Subscription, select the checkbox for the available subscription and slide the **Status** option to the right to indicate **Connected**.
 
-1. The "Status" should be now **Connected** and **"Bi-directional sync"** should be **Enabled**.
+1. The **Status** should be now **Connected** and **"Bi-directional sync"** should be **Enabled**.
 
-1. Scroll down and under the **"Create incidents - Recommended!"** area, select **Enable**. This option creates an Analytics rule automatically for this service. You can manually add it later if not enabled here or change its configuration within the *Analytics* blade.
+1. Scroll down and under the **"Create incidents - Recommended!"** area, select **Enable**. This option creates an Analytics rule automatically for this service. You can manually add it later if not enabled here or change its configuration within the **Analytics** blade.
 
 
 ### Task 5: Connect the Microsoft Defender for Cloud Apps connector.
@@ -89,13 +89,13 @@ In this task, you will connect the Microsoft Defender for Cloud Apps connector.
 
 1. From the Configuration area select **Connect Incident and Alerts**. 
 
-1. Under **"Connect Events"**, select the **Name** checkbox to select all the checkboxes for "Microsoft Defender for Endpoint".
+1. Under **Connect Events**, select the **Name** checkbox to select all the checkboxes for **Microsoft Defender for Endpoint**.
 
-1. Repeat the same for "Microsoft Defender for Office 365"
+1. Repeat the same for **Microsoft Defender for Office 365**
 
 1. Scroll to the bottom of the page and select **Apply Changes**.
 
-   >**Note:** If you see **No Permission** under **Connect incidents & alerts** that means **License** and Permissions we need to perform this task is not reflected on the Odl_user. it will take 1-2 hours to reflect you can perform the next task, exercise 2 and exercise 3 later you can perform this task again.
+   >**Note:** If you see **No Permission** under **Connect incidents & alerts** that means **License** and Permissions we need to perform this task is not reflected on the Odl_user. it will take 1-2 hours to reflect you can perform the next task, exercise 2 and exercise 3. later you can perform task 5 again.
 
 ### Task 6: Connect the Azure Activity connector.
 
