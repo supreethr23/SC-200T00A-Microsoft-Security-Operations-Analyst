@@ -23,9 +23,9 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
  1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
 
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+ 1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
 
-1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
+ 1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
  1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
 
@@ -75,11 +75,11 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
  1. Select the **Open connector page** on the connector information blade.
 
- 1. In the **Configuration** area, under Subscription, select the checkbox for the "Azure Pass - Sponsorship" subscription and slide the **Status** option to the right to indicate **Connected**.
+ 1. In the **Configuration** area, under Subscription, select the checkbox for the available subscription and slide the **Status** option to the right to indicate **Connected**.
 
-1. The "Status" should be now *Connected* and "Bi-directional sync" should be *Enabled*.
+1. The "Status" should be now **Connected** and **"Bi-directional sync"** should be **Enabled**.
 
-1. Scroll down and under the "Create incidents - Recommended!" area, select **Enable**. This option creates an Analytics rule automatically for this service. You can manually add it later if not enabled here or change its configuration within the *Analytics* blade.
+1. Scroll down and under the **"Create incidents - Recommended!"** area, select **Enable**. This option creates an Analytics rule automatically for this service. You can manually add it later if not enabled here or change its configuration within the *Analytics* blade.
 
 
 ### Task 5: Connect the Microsoft Defender for Cloud Apps connector.
@@ -92,7 +92,7 @@ In this task, you will connect the Microsoft Defender for Cloud Apps connector.
 
 1. From the Configuration area select **Connect Incident and Alerts**. 
 
-1. Under "Connect Events", select the **Name** checkbox to select all the checkboxes for "Microsoft Defender for Endpoint".
+1. Under **"Connect Events"**, select the **Name** checkbox to select all the checkboxes for "Microsoft Defender for Endpoint".
 
 1. Repeat the same for "Microsoft Defender for Office 365"
 
