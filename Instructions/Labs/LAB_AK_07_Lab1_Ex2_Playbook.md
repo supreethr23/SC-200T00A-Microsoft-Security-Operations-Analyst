@@ -1,6 +1,6 @@
 # Module 7 - Lab 1 - Exercise 2 - Create a Playbook
 
-### Task 2: Connect the Azure Active Directory connector.
+### Task 1: Connect the Azure Active Directory connector.
 
  In this task, you will connect the Azure Active Directory connector to Microsoft Sentinel.
  
@@ -12,7 +12,7 @@
 
  1. Select the **Sign-in Logs** and **Audit Logs** options from the Configuration area, then select **Apply Changes**.
 
-### Task 3: Connect the Azure Active Directory Identity Protection connector.
+### Task 2: Connect the Azure Active Directory Identity Protection connector.
 
  In this task, you will connect the Azure Active Directory Identity Protection connector to Microsoft Sentinel.
 
@@ -23,7 +23,7 @@
  1. From the **Configuration** area select the **Connect** button.
 
 
-### Task 4: Connect the Microsoft Defender for Cloud Apps connector.
+### Task 3: Connect the Microsoft Defender for Cloud Apps connector.
 
 In this task, you will connect the Microsoft Defender for Cloud Apps connector.
 
@@ -40,7 +40,7 @@ In this task, you will connect the Microsoft Defender for Cloud Apps connector.
 1. Scroll to the bottom of the page and select **Apply Changes**.
 
 
-### Task 5: Connect the Azure Activity connector.
+### Task 4: Connect the Azure Activity connector.
 
 In this task, you will connect the Azure Activity connector.
 
@@ -61,7 +61,7 @@ In this task, you will connect the Azure Activity connector.
 1. Select **Create** to finish.
 
 
-### Task 6: Create a Security Operations Center Team in Microsoft Teams.
+### Task 5: Create a Security Operations Center Team in Microsoft Teams.
 
 In this task, you will create a Microsoft Teams team for use in the lab.
 
@@ -92,7 +92,7 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 1. Enter a channel name as *New Alerts* then select the **Add** button.
 
 
-### Task 7: Create a Playbook in Microsoft Sentinel.
+### Task 6: Create a Playbook in Microsoft Sentinel.
 
 In this task, you will create a Logic App that will be used as a Playbook in Microsoft Sentinel.
 
@@ -133,7 +133,7 @@ In this task, you will create a Logic App that will be used as a Playbook in Mic
     **Note:** Wait for the deployment to finish before proceeding to the next task. It may take a couple minutes to deploy.
 
 
-### Task 8: Update a Playbook in Microsoft Sentinel.
+### Task 7: Update a Playbook in Microsoft Sentinel.
 
 In this task, you will update the new playbook you created with the proper connection information.
 
