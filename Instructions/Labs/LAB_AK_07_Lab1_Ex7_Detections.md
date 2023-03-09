@@ -114,9 +114,9 @@ In this task, you will create a detection for *Attack 2* on the host with the Se
 
 3. Run the following KQL Statement:
 
-```KQL
-search "administrators"
-```
+  ```KQL
+  search "administrators"
+  ```
 
 4. The results show the following tables:
     - Event
@@ -124,78 +124,45 @@ search "administrators"
 
 5. Our first data source is SecurityEvent. Time to research what event ID Windows uses to identify adding a member to a privileged group. copy the EventID and replace in all the bewlow queries. **Kindly check the Event Id before run the script** and replace. Run the following script to confirm:
 
-```KQL
-SecurityEvent
-| where EventID == "4799"
-| where TargetAccount == "Builtin\\Administrators"
-```
+  ```KQL
+  SecurityEvent
+  | where EventID == "4799"
+  | where TargetAccount == "Builtin\\Administrators"
+  ```
 
 6. Expand the rows to see all the columns related to the record.  The username we are looking for doesn't show.  The issue is that instead of storing the username, the security identifier (SID) is stored.  The following KQL will try to match the SID to populate the TargetUserName that was added to the Administrators group.
 
-```KQL
-SecurityEvent
-| where EventID == "4799"
-| where TargetAccount == "Builtin\\Administrators"
-| extend Acct = MemberSid, MachId = SourceComputerId 
-| join kind=leftouter (
-     SecurityEvent 
-     | summarize count() by TargetSid, SourceComputerId, TargetUserName
-     | project Acct1 = TargetSid, MachId1 = SourceComputerId, UserName1 = TargetUserName
-) on $left.MachId == $right.MachId1, $left.Acct == $right.Acct1 
-```
+  ```KQL
+  SecurityEvent
+  | where EventID == "4799"
+  | where TargetAccount == "Builtin\\Administrators"
+  | extend Acct = MemberSid, MachId = SourceComputerId 
+  | join kind=leftouter (
+      SecurityEvent 
+      | summarize count() by TargetSid, SourceComputerId, TargetUserName
+      | project Acct1 = TargetSid, MachId1 = SourceComputerId, UserName1 = TargetUserName
+  ) on $left.MachId == $right.MachId1, $left.Acct == $right.Acct1 
+  ```
 
    ![Screenshot](../Media/SC200_sysmon_attack3.png)
 
->**Note:** This KQL might not return the expected results because of the small dataset used in the lab.
+  >**Note:** This KQL might not return the expected results because of the small dataset used in the lab.
 
 7. It is important to help the Security Operations Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph.  Run the following query:
 
-```KQL
-SecurityEvent
-| where EventID == "4799"
-| where TargetAccount == "Builtin\\Administrators"
-| extend Acct = MemberSid, MachId = SourceComputerId 
-| join kind=leftouter (
-     SecurityEvent 
-     | summarize count() by TargetSid, SourceComputerId, TargetUserName
-     | project Acct1 = TargetSid, MachId1 = SourceComputerId, UserName1 = TargetUserName
-) on $left.MachId == $right.MachId1, $left.Acct == $right.Acct1 
-| extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = UserName1
-```
+  ```KQL
+  SecurityEvent
+  | where EventID == "4799"
+  | where TargetAccount == "Builtin\\Administrators"
+  | extend Acct = MemberSid, MachId = SourceComputerId 
+  | join kind=leftouter (
+      SecurityEvent 
+      | summarize count() by TargetSid, SourceComputerId, TargetUserName
+      | project Acct1 = TargetSid, MachId1 = SourceComputerId, UserName1 = TargetUserName
+  ) on $left.MachId == $right.MachId1, $left.Acct == $right.Acct1 
+  | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = UserName1
+  ```
 
-8. Now that you have a good detection rule, in the Log window with the query, select **+ New alert rule** in the Command Bar(by selecting **...**), then select **Create Microsoft Sentinel alert**.
 
-9. This starts our Analytics rule wizard. For the General Tab, enter:
-
-    |Setting|Value|
-    |---|---|
-    |Name|**SecurityEvents Local Administrators User Add**|
-    |Description|**User added to Local Administrators group**|
-    |Tactics and techniques|**Privilege Escalation**|
-    |Severity|**High**|
-
-10. Select **Next : Set rule logic >** button. On the Set rule logic tab, the Rule query and Map entities should already be populated.
-
-11. For Query scheduling set the following:
-
-    |Setting|Value|
-    |---|---|
-    |Run Query every|5 minutes|
-    |Look data from the last|1 Day|
-
-    >**Note:** We are purposely generating many incidents for the same data.  This enables the Lab to use these alerts.
-
-12. Leave the rest of the options to the defaults.  Select **Next : Incident settings >**:
-
-13. For the *Incident settings (Preview)* set the following:
-
-    |Setting|Value|
-    |---|---|
-    |Incident settings|Enabled|
-    |Alert grouping|Disabled|
-
-14. Select **Next: Automated response >**. For the "Automated response" tab select the *PostMessageTeams-OnAlert* under *Alert automation* and then select **Next : Review** button.
-
-15. On the Review tab, select **Create**.
 
 ## Proceed to Exercise 8
