@@ -140,7 +140,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Enter **A** for Yes to All and press enter.
 
- 1. Type **.\OnboardingScript.PS1** and press enter.  
+ 1. Type **.\OnboardingScript.ps1** and press enter.  
 
     >**Important:** If you get the error *"The term .\OnboardingScript.ps1 is not recognized..."*, make sure you are doing the steps for Task 3 on the WIN2 virtual machine. Another issue might be that the name of the file changed due to multiple downloads, search for *".\OnboardingScript (1).ps1"* or other file numbers in the running directory.
 
