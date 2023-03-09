@@ -23,22 +23,24 @@ In this task, you will create a Windows virtual machine in Azure.
  1. In the **Search services and marketplace** box, enter *Windows 10* and select **Microsoft Window 10** from the drop-down list.
 
  1. Open the *Plan* drop-down list and select **Windows 10 Enterprise, version 21H2**. Select **Start with a pre-set configuration** to continue.
+ 
+ 1. On **Choose recommended defaults that match your workload**  page select **Continue to Create a VM**
 
- 1. On **Create a virtual machine** page select create new on *Resource group*, enter RG-AZWIN01 as Name and select **OK**.
+ 1. On **Create a virtual machine** page, select resource group **RG-AZWIN01** from the drop down.
 
     >**Note:** This will be a new resource group for tracking purposes. 
 
-  1. In *Virtual machine name*, enter AZWIN01.
+  1. In Virtual machine name, enter **AZWIN01.**
 
-  1. Leave **(US) East US** as the default value for *Region*.
+  1. Leave **(US) East US** as the default value for **Region**.
 
-  1. Scroll down and review the *Size* for the virtual machine. If it appears empty, select **See all sizes**, choose the first VM size under *Most used by Azure users* and click **Select**.
+  1. Scroll down and review the **Size** for the virtual machine. If it appears empty, select **See all sizes**, choose the first VM size under *Most used by Azure users* and click **Select**.
 
-  1. Enter a *Username* as **azureuser**.
+  1. Enter a **Username** as **azureuser**.
 
-  1. Enter a *Password* as **Password.1!!**
+  1. Enter a **Password** as **Password.1!!**
 
-  1. Scroll down to the bottom of the page and select the checkbox below *Licensing* to confirm you have the eligible license.
+  1. Scroll down to the bottom of the page and select the checkbox below **Licensing** to confirm you have the eligible license.
 
   1. Select **Review + create** and wait until the validation is passed.
 
@@ -55,23 +57,23 @@ In this task, you will connect an Azure Windows virtual machine to Microsoft Sen
 
  1. Select **Data Connector** from configuration area.
 
- 1. From the Data Connectors Tab, search for the **Windows Security Events via AMA(Preview)** connector and select it from the list.
+ 1. From the Data Connectors Tab, search for the **Windows Security Events via AMA** connector and select it from the list.
 
  1. Select the **Open connector page** on the connector information blade.
 
- 1. In the **Configuration** section, select the **+Create data collection rule**.
+ 1. In the Configuration section, select the **+Create data collection rule.**
 
- 1. Enter **AZWIN01DCR** for Rule Name, then select **Next: Resources**.
+ 1. Enter **AZWIN01DCR** for Rule Name, then select Next: Resources.
 
- 1. Select **+Add resource(s)**.
+ 1. Select +Add resource(s).
 
- 1. Expand **RG-AZWIN01**, then select **AZWIN01**.
+ 1. Expand **RG-AZWIN01**, then select AZWIN01.
 
  1. Select **Apply**.
 
- 1. Select **Next: Collect**, then **Next: Review + create**.
+ 1. Select **Next: Collect**, then **Next: Review + create.**
 
- 1. Select **Create**.
+ 1. Select **Create.**
 
  1. Wait a minute and then select **Refresh** to see the new data collection rule listed.
 
@@ -86,17 +88,21 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. In the lab virtual machine, search for **Hyper-V Manager** from the bottom windows search bar and select to open.
 
- 1. Select and right-click on the **WIN2** virtual machine and select start, then again right-click on the **WIN2** virtual machine and select **connect**.
+ 1. Select and right-click on the **WIN2** virtual machine and select start click on **Continue**, then again right-click on the **WIN2** virtual machine and select **connect**.
+ 
+ 1. Inside **WIN2** Click on **connect**
 
  1. Enter the **Password** as `Password.1!!` when prompted.
 
- 1. Open the Microsoft Edge browser.
+ 1. Open the Microsoft Edge browser inside **WIN2**.
 
  1. Open a browser and log into the Azure Portal at https://portal.azure.com with the credentials you have been using in the previous labs.
 
- 1. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
+ 1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
 
- 1. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
+ 1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+
+ 1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
  1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
@@ -110,7 +116,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Select **Next** to get to the Resource details tab.
 
- 1. Select the Resource group you created earlier. **Hint:** *RG-Defender*
+ 1. Select the Resource group **rg-defender**
 
     >**Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
 
@@ -134,7 +140,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Enter **A** for Yes to All and press enter.
 
- 1. Type *.\OnboardingScript.ps1* and press enter.  
+ 1. Type **.\OnboardingScript.PS1** and press enter.  
 
     >**Important:** If you get the error *"The term .\OnboardingScript.ps1 is not recognized..."*, make sure you are doing the steps for Task 3 on the WIN2 virtual machine. Another issue might be that the name of the file changed due to multiple downloads, search for *".\OnboardingScript (1).ps1"* or other file numbers in the running directory.
 
@@ -148,7 +154,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
     >**Note:** This could take a few minutes.
 
- 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+ 1. In the Search bar of the Azure portal, type **Sentinel**, then select **Microsoft Sentinel**.
 
  1. Select your Microsoft Sentinel Workspace you created earlier.
 
@@ -156,7 +162,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Select the **Open connector page** on the connector information blade.
 
- 1. In the *Configuration* section, select the **+Create data collection rule**.
+ 1. In the **Configuration** section, select the **+Create data collection rule**.
 
  1. Enter **WIN2** for Rule Name, then select **Next: Resources**.
 
@@ -185,21 +191,23 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Select **Settings** from the left menu bar, then from the Settings page select **Endpoints**.
 
-      >**Note:** If you do not see the **Endpoints** option under **Settings**, log out by selecting the top-right circle with your account initials and selecting **Sign out**. Other options that you might want to try is to refresh the page with Ctrl+F5 or open the page InPrivate. Login again with the **Tenant Email** credentials.
+      >**Note:** If you do not see the **Endpoints** option under **Settings**, log out by selecting the top-right circle with your account initials and selecting **Sign out**. Other options that you might want to try is to refresh the page with Ctrl+F5 or open the page InPrivate. Login again with the **Username** and **Password** Provided in the environment details page. It will take 30-35 minutes to reflect you can procide with next exercise untill **Endpoints** are visible and then perform this task.
+      
+      >**Note:** You have to keep Checking  after each 10-15 mins so that you don't miss this task.
 
 1. Select **Onboarding** in the Device management section.
 
  1. In the "1. Onboard a device" area make sure "Local Script (for up to 10 devices)" is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
 
-1. Under the *Downloads* pop-ipup, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
+1. Under the *Downloads* pop-ipup, highlight the **WindowsDefenderATPOnboardingPackage.zip** file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the downloads of **WIN01** file explorer.
 
-1. Right-click the downloaded zip file and select **Extract All...**, make sure that *Show extracted files when complete* is checked and select **Extract**.
+1. Right-click the downloaded zip file and select **Extract All...**, make sure that **Show extracted files when complete** is checked and select **Extract**.
 
-1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" and select **Properties**. Select the **Unblock** checkbox in the bottom right of the Properties windows and select **OK**.
+1. Right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** and select **Properties**. Select the **Unblock** checkbox in the bottom right of the Properties windows and select **OK**.
 
-1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" again and choose **Run as Administrator**.  **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
+1. Right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** again and choose **Run as Administrator**.  **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
     
-1. When the "User Account Control" window is shown, select **Yes** to allow the script to run and answer **Y** to the question presented by the script and press **Enter**. When complete you should see a message in the command screen that says *Successfully onboarded machine to Microsoft Defender for Endpoint*.
+1. When the "User Account Control" window is shown, select **Yes** to allow the script to run and answer **Y** to the question presented by the script and press **Enter**. When complete you should see a message in the command screen that says **Successfully onboarded machine to Microsoft Defender for Endpoint**.
 
 1. Press any key to continue. This will close the Command Prompt window.
 
