@@ -86,7 +86,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
-### Task 1: Initialize Microsoft Defender for Endpoint
+### Task 3: Initialize Microsoft Defender for Endpoint
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
 
@@ -115,7 +115,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
     >**Hint:** If you do not see the option, refresh the page.
 
 
-### Task 2: Onboard a Device.
+### Task 4: Onboard a Device.
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
 
@@ -159,7 +159,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
 
-### Task 2: Create a Log Analytics Workspace and Initialize the Microsoft Sentinel Workspace.
+### Task 5: Create a Log Analytics Workspace and Initialize the Microsoft Sentinel Workspace.
 
 In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud.
 
@@ -183,7 +183,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Navigate around the newly created Microsoft Sentinel workspace to become familiar with the user interface options.
 
-### Task 4: Connect the Microsoft Defender for Cloud connector.
+### Task 6: Connect the Microsoft Defender for Cloud connector.
 
  In this task, you will connect the Microsoft Defender for Cloud connector.
 
@@ -197,7 +197,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Scroll down and under the "Create incidents - Recommended!" area, select **Enable**. This option creates an Analytics rule automatically for this service. You can manually add it later if not enabled here or change its configuration within the *Analytics* blade.
 
-### Task 1: Activate a Microsoft Security Rule
+### Task 7: Activate a Microsoft Security Rule
 
 In this task, you will activate a Microsoft Security rule.
 
