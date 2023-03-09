@@ -153,7 +153,7 @@ In this task, you will perform attacks on a host with the Security Events connec
     REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
     ```
 
->**Note:** We are using the same *persistence* tactic just like in WIN1 but we will use different detections in the next exercise.
+    >**Note:** We are using the same *persistence* tactic just like in WIN1 but we will use different detections in the next exercise.
 
 1. Attack 2 - Copy and run this command, enter the command in each row pressing Enter key after each row:
 
