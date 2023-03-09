@@ -19,11 +19,9 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
 
-1. In the **Sign in** dialog box, copy, and paste in the tenant Email account for the admin username provided by your lab hosting provider and then select **Next**.
+1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the **Environment details** page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
 
-1. In the **Enter password** dialog box, copy, and paste in the admin's tenant password provided by your lab hosting provider and then select **Sign in**.
-
-    >**Tip:** The admin's tenant email account and password can be found on the Resources tab.
+1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
 
 1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
 
