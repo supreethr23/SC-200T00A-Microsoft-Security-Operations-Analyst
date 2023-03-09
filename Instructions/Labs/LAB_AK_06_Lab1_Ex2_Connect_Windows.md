@@ -12,9 +12,11 @@ In this task, you will create a Windows virtual machine in Azure.
 
  1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
- 1. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
+ 1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
 
- 1. In the **Enter password** dialog box, copy, and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
+ 1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+
+ 1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
  1. Select **+ Create a Resource**. **Hint:** If you were already in the Azure Portal, you might need to select *Microsoft Azure* from the top bar to go Home.
 
