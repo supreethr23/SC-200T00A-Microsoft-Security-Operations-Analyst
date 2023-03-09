@@ -13,7 +13,13 @@ In this task, you will access a Log Analytics environment where you can practice
 
 1. Login to WIN1 virtual machine with the password as provided in the environment tab.
 
-1. Go to https://aka.ms/lademo in your browser. Log in with the ODL_User_Id Administrator credentials. 
+1. Go to https://aka.ms/lademo in your browser. 
+
+1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+
+1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+
+1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
 1. Explore the available tables listed in the tab on the left side of the screen.
 
