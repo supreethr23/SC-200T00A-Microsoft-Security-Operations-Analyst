@@ -95,7 +95,7 @@ In this task, you will connect the Microsoft Defender for Cloud Apps connector.
 
 1. Scroll to the bottom of the page and select **Apply Changes**.
 
-   >**Note:** If you see **No Permission** under **Connect incidents & alerts** that means **License** and Permissions we need to perform this task is not reflected on the Odl_user. it will take 1-2 hours to reflect you can perform the next task, exercise 2 and exercise 3. later you can perform task 5 again.
+   >**Note:** If you see **No Permission** under **Connect incidents & alerts** that means **License** and Permissions is not reflected on the Odl_user. it will take 1-2 hours to reflect the license on the odl user, meanwhile you can perform the next task, exercise 2 and exercise 3. After 1-2 hrs come back and refresh the page to re-perform the task 5 again.
 
 ### Task 6: Connect the Azure Activity connector.
 
