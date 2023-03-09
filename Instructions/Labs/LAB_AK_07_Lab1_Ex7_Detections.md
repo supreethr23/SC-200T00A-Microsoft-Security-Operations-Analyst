@@ -13,15 +13,15 @@ In this task, you will create a detection for **Attack 1** on the host with the 
 
 4. Run the following KQL Statement:
 
-```KQL
-search "temp\\startup.bat"
-```
+  ```KQL
+  search "temp\\startup.bat"
+  ```
 
 5. This detection will focus on data from Defender for Endpoint.  Run the following KQL Statement:
 
-```KQL
-search in (Device*) "temp\\startup.bat"
-```
+  ```KQL
+  search in (Device*) "temp\\startup.bat"
+  ```
 
   >**Important:** If you do not see the *DeviceRegistryEvents* table in the results, an alternative for the following two queries is to use the *DeviceProcessEvents* table as replacement. Being that said, use one of the two provided examples below, depending on the table you see in the previous query.
 
