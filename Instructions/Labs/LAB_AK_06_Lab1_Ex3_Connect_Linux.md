@@ -81,7 +81,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 
 1. Select the link for **Download & install agent for non-Azure Linux machine**. 
 
-    >**Note:** Your Log Analytics workspace should show **3 Windows computers connected**. This corresponds to WIN2, WINServer and AZWIN01 virtual machines connected earlier.
+    >**Note:** Your Log Analytics workspace should show **2 Windows computers connected**. This corresponds to WIN2 and AZWIN01 virtual machines connected earlier.
 
 1. Select the tab for **Linux servers**.
 
@@ -107,7 +107,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
    
 1. Enter **yes** to confirm the connection and then type the user's **password provided under Resource group: LIN2** in the Environment tab and press enter. Your screen should look something like this:
 
-   ![linux login](../Media/SC-200-img12updated.png)
+   ![linux login](../Media/sc-200-M6-Ex3.png)
 
 1. You are now ready to paste in the **Download and onboard agent for Linux** from the earlier step. Make sure that the script from Azure is in the clipboard. In PowerShell right-click the top bar and choose **Edit** and then **Paste**. 
 
