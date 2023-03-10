@@ -8,8 +8,18 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 >**Important:**  The lab Virtual Machines are used through different modules. SAVE your virtual machines. If you exit the lab without saving, you will be required to re-run some configurations again.
 
+### Task 1: Preparing the Microsoft 365 Defender workspace
 
-### Task 1: Onboard a Device.
+1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
+
+1. On the **Settings** page select **Microsoft 365 Defender**. You are going to see an image of a coffee mug and a message that reads: *Hang on! We're preparing new spaces for your data and connecting them.*. It will take several minutes to finish, so leave the page open but make sure it finishes since it is required for the next Lab. 
+
+    >**Note:** If you get the error message "We didn't plan it will fail, but something went wrong." retry the step later or do it before the next Lab.
+
+1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
+
+
+### Task 2: Onboard a Device.
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
 
@@ -54,7 +64,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
 
 
-### Task 2: Configure Roles
+### Task 3: Configure Roles
 
 In this task, you will configure roles for use with device groups.
 
@@ -108,7 +118,7 @@ In this task, you will configure roles for use with device groups.
 1. Select **Save**. If you receive an error while saving the role, refresh the page and try again.
 
 
-### Task 3: Configure Device Groups
+### Task 4: Configure Device Groups
 
 In this task, you will configure device groups that allow for access control and automation configuration.
 
