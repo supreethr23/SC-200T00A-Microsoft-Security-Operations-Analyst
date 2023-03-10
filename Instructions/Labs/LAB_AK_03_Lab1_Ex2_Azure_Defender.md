@@ -60,7 +60,7 @@ In this task, you will load sample security alerts and review the alert details.
 
 1. For the alerts that grabbed your attention, perform the following actions:
 
-    - Select the alert, information about the alert should appear. Select **View full details**.
+    - Select any one alert from the list , information about the alert should appear. Select **View full details**.
 
     - Review and read the **Alert details** tab.
 
