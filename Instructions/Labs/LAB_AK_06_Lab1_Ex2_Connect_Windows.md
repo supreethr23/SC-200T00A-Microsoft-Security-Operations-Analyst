@@ -179,7 +179,17 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 1. Wait a few minutes and then select **Refresh** to see the new data collection rule listed.
 
 
-### Task 4: Onboard Microsoft Defender for Endpoint Device
+### Task 4: Preparing the Microsoft 365 Defender workspace
+
+1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
+
+1. On the **Settings** page select **Microsoft 365 Defender**. You are going to see an image of a coffee mug and a message that reads: *Hang on! We're preparing new spaces for your data and connecting them.*. It will take several minutes to finish, so leave the page open but make sure it finishes since it is required for the next Lab. 
+
+    >**Note:** If you get the error message "We didn't plan it will fail, but something went wrong." retry the step later or do it before the next Lab.
+
+1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
+
+### Task 5: Onboard Microsoft Defender for Endpoint Device
 
  In this task, you will onboard a device to Microsoft Defender for Endpoint.
 
