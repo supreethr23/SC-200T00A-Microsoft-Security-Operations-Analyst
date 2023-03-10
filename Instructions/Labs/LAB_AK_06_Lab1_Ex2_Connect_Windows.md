@@ -4,7 +4,17 @@
   
  You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to connect log data from the many data sources in your organization. The next source of data are Windows virtual machines inside and outside of Azure, like On-Premises environments or other Public Clouds.
  
-### Task 1: Create a Windows Virtual Machine in Azure
+### Task 1: Preparing the Microsoft 365 Defender workspace
+
+1. On the **Microsoft 365 Defender** (https://security.microsoft.com) portal, from the navigation menu, select **Settings** from the left.
+
+1. On the **Settings** page select **Microsoft 365 Defender**. You are going to see an image of a coffee mug and a message that reads: *Hang on! We're preparing new spaces for your data and connecting them.*. It will take several minutes to finish, so leave the page open but make sure it finishes since it is required for the next Lab. 
+
+    >**Note:** If you get the error message "We didn't plan it will fail, but something went wrong." retry the step later or do it before the next Lab.
+
+1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
+
+### Task 2: Create a Windows Virtual Machine in Azure
 
 In this task, you will create a Windows virtual machine in Azure.  
 
@@ -47,7 +57,7 @@ In this task, you will create a Windows virtual machine in Azure.
   1. Select **Create**. Wait for the Resource to be created, this may take a few minutes.
 
 
-### Task 2: Connect an Azure Windows virtual machine
+### Task 3: Connect an Azure Windows virtual machine
 
 In this task, you will connect an Azure Windows virtual machine to Microsoft Sentinel.
 
@@ -78,7 +88,7 @@ In this task, you will connect an Azure Windows virtual machine to Microsoft Sen
  1. Wait a minute and then select **Refresh** to see the new data collection rule listed.
 
 
-### Task 3: Connect a non-Azure Windows Machine
+### Task 4: Connect a non-Azure Windows Machine
 
 In this task, you will install Azure Arc and connect a non-Azure Windows virtual machine to Microsoft Sentinel.  
 
@@ -177,17 +187,6 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
  1. Select **Create**.
 
 1. Wait a few minutes and then select **Refresh** to see the new data collection rule listed.
-
-
-### Task 4: Preparing the Microsoft 365 Defender workspace
-
-1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
-
-1. On the **Settings** page select **Microsoft 365 Defender**. You are going to see an image of a coffee mug and a message that reads: *Hang on! We're preparing new spaces for your data and connecting them.*. It will take several minutes to finish, so leave the page open but make sure it finishes since it is required for the next Lab. 
-
-    >**Note:** If you get the error message "We didn't plan it will fail, but something went wrong." retry the step later or do it before the next Lab.
-
-1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
 
 ### Task 5: Onboard Microsoft Defender for Endpoint Device
 
