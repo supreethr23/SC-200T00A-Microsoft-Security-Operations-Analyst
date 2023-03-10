@@ -58,7 +58,7 @@ In this task, you will build basic KQL statements.
 
 1. Change back the **Time range** to **Last 24 hours** in the Query Window.
 
-1. The following statements demonstrates the **where** operator, which filters on a specific predicate. In the Query Window enter the following statement and select **Run**: 
+1. The following statements demonstrates the **where** operator, which filters on a specific predicate. In the Query Window enter the following statements and run each query separately: 
     >**Note:** You should select **Run** after entering each query from the code blocks below.
 
     ```KQL
