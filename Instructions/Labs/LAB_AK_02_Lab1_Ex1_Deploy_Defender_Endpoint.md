@@ -9,34 +9,7 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 >**Important:**  The lab Virtual Machines are used through different modules. SAVE your virtual machines. If you exit the lab without saving, you will be required to re-run some configurations again.
 
 
-### Task 1: Initialize Microsoft Defender for Endpoint
-
-In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
-
-1. Log in to WIN1 virtual machine with the password provided in the environment tab.  
-
-1. If you are not already at the Microsoft 365 Defender portal, start the Microsoft Edge browser.
-
-1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
-
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the **Environment details** page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
-
-1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
-
-1. On the **Settings** page select **Device discovery**. 
-
-    ![Picture 1](../Media/SC200-img1.png)
-
-    >**Note:** If you do not see the **Device discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try are to refresh the page with Ctrl+F5 or wait for 10-15 minutes or open the page InPrivate. Login again with the **Tenant Email** credentials.
-
-
-1. In the Discovery setup make sure **Standard discovery (recommended)** is selected. 
-    >**Hint:** If you do not see the option, refresh the page.
-
-
-### Task 2: Onboard a Device.
+### Task 1: Onboard a Device.
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
 
@@ -81,7 +54,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
 
 
-### Task 3: Configure Roles
+### Task 2: Configure Roles
 
 In this task, you will configure roles for use with device groups.
 
@@ -135,7 +108,7 @@ In this task, you will configure roles for use with device groups.
 1. Select **Save**. If you receive an error while saving the role, refresh the page and try again.
 
 
-### Task 4: Configure Device Groups
+### Task 3: Configure Device Groups
 
 In this task, you will configure device groups that allow for access control and automation configuration.
 
