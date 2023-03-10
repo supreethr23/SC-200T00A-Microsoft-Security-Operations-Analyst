@@ -59,13 +59,13 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. Under the *Downloads* pop-up, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
 
-1. Right-click the downloaded zip file and select **Extract All...**, make sure that *Show extracted files when complete* is checked and select **Extract**.
+1. Right-click the downloaded zip file and select **Extract All...**, make sure that **Show extracted files when complete** is checked and select **Extract**.
 
 1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" and select **Properties**. Select the **Unblock** checkbox in the bottom right of the Properties windows and select **OK**.
 
-    ![Picture 1](../Media/SC-200-img20.png)
+    ![Picture 1](../Media/sc200-mod2-unblock.png)
 
-1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" again and choose **Run as Administrator**.  **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
+1. Right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** again and choose **Run as Administrator**.  **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
     
 1. When the "User Account Control" window is shown, select **Yes** to allow the script to run and answer **Y** to the question presented by the script and press **Enter**. When complete you should see a message in the command screen that says *Successfully onboarded machine to Microsoft Defender for Endpoint*.
 
@@ -157,7 +157,7 @@ In this task, you will configure device groups that allow for access control and
     |General setting|Value|
     |---|---|
     |Device group name|**Regular**|
-    |Automation level| Full-remediate threats automatically|
+    |Remediation level| Full-remediate threats automatically|
 
 1. Select **Next**.
 
@@ -165,12 +165,12 @@ In this task, you will configure device groups that allow for access control and
 
 1. On the Preview devices tab, select **Next**.
 
-1. For the User access tab, select **sg-IT** and then select **Add selected groups** button. Make sure it appears under *Azure AD user groups with access to this device group*.
+1. For the User access tab, select **sg-IT** and then select **Add selected groups** button. Make sure it appears under **Azure AD user groups with access to this device group**.
 
 1. Select **Done**.
 
 1. Device group configuration has changed. Select **Apply changes** to check matches and recalculate groupings.
 
-1. You are going to have two device groups now; the "Regular" you just created and the "Ungrouped devices (default)" with the same remediation level.
+1. You are going to have two device groups now; the **Regular** you just created and the **Ungrouped devices (default)** with the same remediation level.
 
 ## Proceed to Exercise 2
