@@ -99,7 +99,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Select **Generate script** in the "Add a single server" section.
 
-    ![Picture 1](../Media/SC-200-img4.png)
+    ![Picture 1](../Media/sc-200-img004.png)
 
 1. Select **Next** to get to the Resource details tab.
 
@@ -114,8 +114,6 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 1. Scroll down and select the **Download** button. Hint: if your browser blocks the download take action in the browser to allow it. In Edge Browser, select the 3 dots "..." and then select **Keep**. 
 
 1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
-
-    ![Picture 1](../Media/SC-200-img5.png)
 
 1. Enter: **cd C:\Users\Administrator\Downloads**
 
