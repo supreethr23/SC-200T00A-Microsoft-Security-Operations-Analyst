@@ -71,7 +71,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. Under **Standard protection**, select **Manage protection settings**. **Hint:** If you see this option grayed out, refresh your browser using **Ctrl+F5**.
 
-    >**Note:** After clicking on **Manage protection settings**, This might need 1-2 hours to load the content, wait for 1-2 hours to get loaded the page completely after 1-2 hours back to the same page and might need to sign out of Microsoft defender and sign in again and then try repeating the steps again to move forward. 
+    >**Note:** After clicking on **Manage protection settings**, This might need 40 to 60 Minutes to load the content, wait for 40 to 60 Minutes to get loaded the page completely after 40 to 60 Minutes back to the same page and might need to sign out of Microsoft defender and sign in again and then try repeating the steps again to move forward. 
 
 1. In the *Apply Exchange Online Protection* section, select **Specific recipients** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**. **Hint:** Your tenant's domain name is the same that you have for your admin account, it might be something like *mocholxxxxx.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing. 
 
