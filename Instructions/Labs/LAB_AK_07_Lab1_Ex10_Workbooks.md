@@ -36,7 +36,7 @@ In this task, you will explore the Microsoft Sentinel workbook templates.
 
 In this task, you will save a workbook template and modify it.
 
-1. You should be back in the **Microsoft Sentinel - Workbooks - Templates** tab. Search for and select **Azure AD Audit logs**. 
+1. You should be back in the **Microsoft Sentinel - Workbooks - Templates** tab. Search for and select **Azure AD Audit logs**, in the right pane, scroll down and select the **Save** button
 
 1. Leave **East US** as the default value for *Region* and select **OK**.
 
