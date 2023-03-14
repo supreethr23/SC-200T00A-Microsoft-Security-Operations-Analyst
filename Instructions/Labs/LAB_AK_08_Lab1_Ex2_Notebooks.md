@@ -31,10 +31,10 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 11.	In the Workspace details section do the following:
 
-    - Give your workspace a unique name.
-    - Choose your Region (it should default with a reasonable option)
-    - Keep the default Storage account, Key vault, and Application insights information.
-    - The Container registry option can remain as **None**.
+   - Give your workspace a unique name.
+   - Choose your Region (it should default with a reasonable option)
+   - Keep the default Storage account, Key vault, and Application insights information.
+   - The Container registry option can remain as **None**.
 
 12.	At the bottom of the page, select **Review + create**. Then on the next page, select **Create**. 
 
