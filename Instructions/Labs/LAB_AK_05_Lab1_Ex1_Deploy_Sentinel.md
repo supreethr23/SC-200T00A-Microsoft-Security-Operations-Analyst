@@ -105,11 +105,11 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 1. Select **+ Add New** from the command bar.
 
-1. Review the different indicator types available in the *Types* dropdown. Select the **domain-name**. Enter your initials in the Domain box. An example would be *onmicrosoft.com*.
+1. Review the different indicator types available in the *Types* dropdown. Select the **domain-name**. Enter your initials in the Domain box. An example would be **onmicrosoft.com**.
 
 1. For the *Threat types*, add **malicious-activity** and select **OK**.
 
-1. For the *Name*, enter the same value used for the Domain. An example would be *onmicrosoft.com*.
+1. For the *Name*, enter the same value used for the Domain. An example would be **onmicrosoft.com**.
 
 1. Set the *Valid from* field to today's date.
 
