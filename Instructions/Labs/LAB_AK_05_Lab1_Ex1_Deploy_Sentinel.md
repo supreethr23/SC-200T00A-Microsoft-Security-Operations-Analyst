@@ -20,9 +20,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. In the Search bar of the Azure portal, type *Log Analytics workspaces*, then select the same service name.
 
-1. Select **+Create** from the command bar.
-
-1. Select **Create new** for the Resource group.
+1. Select **rg-defender** for the Resource group drop down.
 
 1. Enter *RG-Defender* and select **Ok**.
 
