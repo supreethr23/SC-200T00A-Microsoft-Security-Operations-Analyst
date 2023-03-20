@@ -30,7 +30,7 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
  1. Select Resouce Group **RG-Defender**  from the drop down.
 
- 1. For the Name, enter something unique like **uniquenameDefender**.
+ 1. For the Name, enter **uniquenameDefender**
 
  1. Select **Review + Create**.
 
