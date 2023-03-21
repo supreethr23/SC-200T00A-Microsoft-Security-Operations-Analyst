@@ -37,9 +37,9 @@ Because this course can be offered by learning partners using any one of several
     |Group Name| **Sg-IT** |
     |Azure AD roles can be assigned to the group| **Yes** |
 
-1. Click on **no owners selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **No owners selected** and select the **ODL_user** from the list and then click on **select**.
 
-1. Click on **no members selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **No members selected** and select the **ODL_user** from the list and then click on **select**.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
@@ -87,7 +87,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. In the **Apply Exchange Online Protection**, select **Specific recipients** and under **Groups** start writing **Sg-IT**, select it, and then select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing.
 
-1. In the *Apply Defender for Office 365 protection* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+1. In the *Apply protection to* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
 1. In the *Impersonation protection* section, select **Next** four times (4x) to continue.
 
