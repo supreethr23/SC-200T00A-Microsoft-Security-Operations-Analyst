@@ -10,7 +10,7 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 ### Task 1: Preparing the Microsoft 365 Defender workspace
 
-1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
+1. On the **Microsoft 365 Defender** portal(https://security.microsoft.com/), from the navigation menu, select **Settings** from the left.
 
 1. On the **Settings** page select **Microsoft 365 Defender**. You are going to see an image of a coffee mug and a message that reads: *Hang on! We're preparing new spaces for your data and connecting them.*. It will take several minutes to finish, so leave the page open but make sure it finishes since it is required for the next Lab. 
 
@@ -114,9 +114,9 @@ In this task, you will configure roles for use with device groups.
     |Group Name| **Sg-IT** |
     |Azure AD roles can be assigned to the group| **Yes** |
 
-1. Click on **no owners selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **No owners selected** and select the **ODL_user** from the list and then click on **select**.
 
-1. Click on **no members selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **No members selected** and select the **ODL_user** from the list and then click on **select**.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
