@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Explore Entity Behavior Analytics",
+    "Name": "Conduct attacks",
     "Language": "English",
     "BaseURL": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst",
     "Files": [
@@ -9,7 +9,7 @@
         "Order": 1
       },
 	    {
-        "RawFilePath": "https://raw.githubusercontent.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/master/Instructions/Labs/LAB_AK_07_Lab1_Ex4_Entity_Behavior.md",
+        "RawFilePath": "https://raw.githubusercontent.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/master/Instructions/Labs/LAB_AK_07_Lab1_Ex6_Perform_Attacks.md",
         "Order": 2
       }
       
