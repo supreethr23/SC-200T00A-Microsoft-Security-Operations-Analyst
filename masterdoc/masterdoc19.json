@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Conduct attacks",
+    "Name": "Investigate Incidents",
     "Language": "English",
     "BaseURL": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst",
     "Files": [
@@ -9,7 +9,7 @@
         "Order": 1
       },
 	    {
-        "RawFilePath": "https://raw.githubusercontent.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/master/Instructions/Labs/LAB_AK_07_Lab1_Ex6_Perform_Attacks.md",
+        "RawFilePath": "https://raw.githubusercontent.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/master/Instructions/Labs/LAB_AK_07_Lab1_Ex8_Investigate.md",
         "Order": 2
       }
       
