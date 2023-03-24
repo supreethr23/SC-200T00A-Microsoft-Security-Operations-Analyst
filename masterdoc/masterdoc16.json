@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Create a Scheduled Query",
+    "Name": "Understand Detection Modeling",
     "Language": "English",
     "BaseURL": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst",
     "Files": [
@@ -9,7 +9,7 @@
         "Order": 1
       },
 	    {
-        "RawFilePath": "https://raw.githubusercontent.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/master/Instructions/Labs/LAB_AK_07_Lab1_Ex3_Scheduled_Query.md",
+        "RawFilePath": "https://raw.githubusercontent.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/master/Instructions/Labs/LAB_AK_07_Lab1_Ex5_Attacks.md",
         "Order": 2
       }
       
