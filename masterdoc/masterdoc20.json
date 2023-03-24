@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Create Detections",
+    "Name": "Create ASIM parsers",
     "Language": "English",
     "BaseURL": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst",
     "Files": [
@@ -9,7 +9,7 @@
         "Order": 1
       },
 	    {
-        "RawFilePath": "https://raw.githubusercontent.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/master/Instructions/Labs/LAB_AK_07_Lab1_Ex7_Detections.md",
+        "RawFilePath": "https://raw.githubusercontent.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/master/Instructions/Labs/LAB_AK_07_Lab1_Ex9_ASIM.md",
         "Order": 2
       }
       
