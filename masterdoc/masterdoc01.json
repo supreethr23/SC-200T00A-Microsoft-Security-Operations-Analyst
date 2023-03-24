@@ -1,8 +1,8 @@
 [
   {
-    "Name": "Agile Planning and Portfolio Management with Azure Boards",
+    "Name": "Explore_M365_Defender",
     "Language": "English",
-    "BaseURL": "https://github.com/MicrosoftLearning/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions",
+    "BaseURL": "https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst",
     "Files": [
 	    {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/AzurePass/Allfiles/lab-intro-modules.md",
