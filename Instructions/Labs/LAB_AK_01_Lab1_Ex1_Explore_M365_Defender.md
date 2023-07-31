@@ -39,15 +39,19 @@ Because this course can be offered by learning partners using any one of several
 
 1. Click on **No owners selected** and select the **ODL_user** from the list and then click on **select**.
 
-1. Click on **No members selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **No members selected** and select the **ODL_user** and click on **users** from the list and then click on **select**.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
+
+1. Ignore the **No Roles selected**   
 
 1. Select **Create** and click on **Yes**. 
 
 ### Task 2: Apply Microsoft Defender for Office 365 preset security policies
 
 In this task, you will assign preset security policies for Exchange Online Protection (EOP) and Microsoft Defender for Office 365 in the Microsoft 365 security portal.
+
+**Note**: Skip the log-in steps if already logged in by default 
 
 1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
 
@@ -77,9 +81,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. In the **Apply Defender for Office 365 protection** section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
-1. In the *Impersonation protection* section, select **Next** four times (4x) to continue.
-
-1. In the *Policy mode* section, make sure the **Turn on the policy after I finish** radio button is selected, and then select **Next**.
+1. In the *Impersonation protection* section, select **Next** for next all steps i.e (4x times) to continue.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
@@ -89,9 +91,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. In the *Apply protection to* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
-1. In the *Impersonation protection* section, select **Next** four times (4x) to continue.
-
-1. In the *Policy mode* section, make sure the **Turn on the policy after I finish** radio button is selected, and then select **Next**.
+1. In the *Impersonation protection* section, select **Next** for next all steps i.e (4x times) to continue.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
