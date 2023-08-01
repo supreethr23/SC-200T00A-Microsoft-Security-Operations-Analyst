@@ -8,8 +8,6 @@ You're a Security Operations Analyst working at a company that is implementing M
 
 In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud.
 
-1. Log in to WIN1 virtual machine as Azureuser Admin with the password provided in the Environment tab.  
-
 1. Open the Edge browser.
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
@@ -19,6 +17,8 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
 
 1. In the Search bar of the Azure portal, type *Log Analytics workspaces*, then select the same service name.
+
+1. Click on **create**
 
 1. Select **rg-defender** for the Resource group drop down.
 
@@ -33,8 +33,6 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 ### Task 2: Initialize the Microsoft Sentinel Workspace.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
-
-1. Select **+ Create**.
 
 1. Next, In Add Microsoft Sentinel to a workspace page.
 
@@ -65,7 +63,7 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. Close Notepad.
 
-1. In Microsoft Sentinel, select the **Watchlist** option under the Configuration area.
+1. In Microsoft Sentinel,On the left menu, select the **Watchlist** option under the Configuration area.
 
 1. Select **+ Add new** from the command bar.
 
@@ -81,7 +79,7 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. Select **Browse for files** under *Upload file* and browse for the *HighValue.csv* file you just created.
 
-1. In the *SearchKey field* select **Hostname**.
+1. In the *SearchKey field* select **Hostnames**.
 
 1. Select **Next: Review and Create >**.
 
@@ -101,11 +99,11 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 In this task, you will create an indicator in Microsoft Sentinel.
 
-1. In Microsoft Sentinel, select the **Threat intelligence** option in the Threat management area.
+1. In Microsoft Sentinel, On the left menu, select the **Threat intelligence** option in the Threat management area.
 
 1. Select **+ Add New** from the command bar.
 
-1. Review the different indicator types available in the *Types* dropdown. Select the **domain-name**. Enter your initials in the Domain box. An example would be **onmicrosoft.com**.
+1. Review the different indicator types available in the *Types* dropdown. Select the **domain-name**. Enter your initials in the Domain box. You can use **onmicrosoft.com**.
 
 1. For the *Threat types*, add **malicious-activity** and select **OK**.
 
@@ -117,7 +115,7 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
     **Note:** It could take a couple of minutes for the indicator to appear.
 
-1. Select the **Logs** option in the General area. You may need to disable the "Always show queries" option and close the *Queries* window to get run the statements.
+1. On the left Menu , Select the **Logs** option in the General area. You may need to disable the "Always show queries" option and close the *Queries* window to get run the statements.
 
 1. Run the following KQL statement.
 
