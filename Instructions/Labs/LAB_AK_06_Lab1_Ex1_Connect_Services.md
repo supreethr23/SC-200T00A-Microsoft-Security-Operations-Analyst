@@ -12,8 +12,6 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
  In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud and you will access your Microsoft Sentinel workspace.  
 
- 1. Login to WIN1 virtual machine with the password as provided in the environment tab.
-
  1. Open the Microsoft Edge browser.
 
  1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
@@ -30,15 +28,13 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
  1. Select Resouce Group **RG-Defender**  from the drop down.
 
- 1. For the Name, enter **uniquenameDefender**
+ 1. For the Name, enter **uniquenameDefender** 
 
  1. Select **Review + Create**.
 
  1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes
  
  1. In the Search bar of the Azure portal, type **Sentinel**, then select **Microsoft Sentinel**.
- 
- 1. Select **+ Create**
 
  1. select the newly created workspace and click on **Add**
 
@@ -47,16 +43,22 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
  In this task, you will connect the Azure Active Directory connector to Microsoft Sentinel.
 
- 1. In the Configuration area select **Data connectors**.  In the Data Connectors page, search for the **Azure Active Directory** connector and select it from the list.
+ 1. On the left side menu, In the Configuration area select **Data connectors**.
+ 
+ 1. In the Data Connectors page, click on content hub and search for **Azure Active Directory** and select and install it
+   
+ 1. Go back to data connector page and search for the **Azure Active Directory** connector and select it from the list.
 
  1. Select the **Open connector page** on the connector information blade.
 
- 1. Select the **Sign-in Logs** and **Audit Logs** options from the Configuration area, then select **Apply Changes**.
+ 1. Check and click on the **Sign-in Logs** and **Audit Logs** options from the Configuration area, then select **Apply Changes**.
 
 ### Task 3: Connect the Azure Active Directory Identity Protection connector.
 
  In this task, you will connect the Azure Active Directory Identity Protection connector to Microsoft Sentinel.
 
+ 1. In the Data Connectors page, click on content hub and search for **Azure Active Directory Identity Protection** and select and install it
+ 
  1. From the Data Connectors Tab, search for the **Azure Active Directory Identity Protection** connector and select it from the list.
 
  1. Select the **Open connector page** on the connector information blade.
@@ -67,7 +69,9 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 ### Task 4: Connect the Microsoft Defender for Cloud connector.
 
  In this task, you will connect the Microsoft Defender for Cloud connector.
-
+ 
+ 1. In the Data Connectors page, click on content hub and search for **Microsoft Defender for Cloud** and select and install it
+ 
  1. From the Data Connectors tab, search for the **Microsoft Defender for Cloud** connector and select it from the list.
 
  1. Select the **Open connector page** on the connector information blade.
@@ -100,6 +104,7 @@ In this task, you will connect the Microsoft Defender for Cloud Apps connector.
 ### Task 6: Connect the Azure Activity connector.
 
 In this task, you will connect the Azure Activity connector.
+1. In the Data Connectors page, click on content hub and search for **Azure Activity** and select and install it
 
 1. From the Data Connectors Tab, search for the **Azure Activity** connector and select it from the list.
 
