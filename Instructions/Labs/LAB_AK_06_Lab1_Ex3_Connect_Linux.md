@@ -28,11 +28,15 @@ In this task, you will access your Microsoft Sentinel workspace.
 
 In this task, you will connect a Linux host to Microsoft Sentinel with the Common Event Format (CEF) connector.
 
-1. Select **Data connectors** from the Configuration area in Microsoft Sentinel.  From the Data Connectors tab, search for the **Common Event Format (CEF) via Legacy agent** connector and select it from the list.
+1. Select **Data connectors** from the Configuration area in Microsoft Sentinel.
+
+1. Go-to content hub and search  **Common Event Format** and click on install
+
+1. From the Data Connectors tab, search for the **Common Event Format (CEF) via Legacy agent** connector and select it from the list.
 
 1. Select the **Open connector page** on the connector information blade.
 
-1. Copy to the clipboard the command shown in **1.2 Install the CEF collector on the Linux machine** and paste on the Notepad.
+1. Under configuration Copy the command shown in **1.2 Install the CEF collector on the Linux machine** and paste on the Notepad.
 
 1. Back to the Azure portal, In the Search bar of the Azure portal, type **virtual machine**, then select **Virtual machine**.
 
@@ -73,6 +77,8 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 
 1. Select the Microsoft Sentinel Workspace you created in a previous lab.
 
+1. Go-to content hub in data connector window search for **syslog** and install it.
+  
 1. From the **Data Connectors tab**, search for the **Syslog** connector and select it from the list.
 
 1. Select the **Open connector page** on the connector information blade.
@@ -124,7 +130,7 @@ In this task, you will configure the Syslog collection facilities.
 
 1. In Microsoft Sentinel portal, select **Settings** from *Configuration* area and then select **Workspace settings** from the settings blade.
 
-1. Select **Legacy agents management** from the **Classic** area.
+1. On the left menu Select **Legacy agents management** from the **Classic** area.
 
 1. Select the **Syslog** tab.
 
