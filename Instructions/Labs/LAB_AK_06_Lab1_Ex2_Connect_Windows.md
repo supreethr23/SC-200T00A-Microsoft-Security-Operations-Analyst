@@ -42,7 +42,7 @@ In this task, you will create a Windows virtual machine in Azure.
 
   1. In Virtual machine name, enter **AZWIN01.**
 
-  1. Leave **(US) East US** as the default value for **Region**.
+  1. Leave the default value for **Region**.
 
   1. Scroll down and review the **Size** for the virtual machine. If it appears empty, select **See all sizes**, choose the first VM size under *Most used by Azure users* and click **Select**.
 
@@ -66,7 +66,9 @@ In this task, you will connect an Azure Windows virtual machine to Microsoft Sen
  1. Select your Microsoft Sentinel Workspace you created earlier.
 
  1. Select **Data Connector** from configuration area.
-
+ 
+ 1. GO-to conent hub and search for **Windows Security Events** and Install
+ 
  1. From the Data Connectors Tab, search for the **Windows Security Events via AMA** connector and select it from the list.
 
  1. Select the **Open connector page** on the connector information blade.
@@ -116,7 +118,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
- 1. In the navigation pane under **Infrastructure** select **Servers**
+ 1. Onthe left side navigation pane under **Infrastructure** select **Servers**
 
  1. Select **+ Add**.
 
@@ -129,6 +131,8 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
  1. Select the Resource group **rg-defender**
 
     >**Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
+ 
+ 1. Select a region  
 
  1. Review the *Server details* and *Connectivity method* options. Keep the default values and select **Next** to get to the Tags tab.
 
@@ -160,7 +164,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. When the installation finishes, go back to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
 
- 1. Select **Refresh** until **WIN2**  name appears.
+ 1. Select **Refresh** until **WIN-xxxx**  name appears.
 
     >**Note:** This could take a few minutes.
 
@@ -178,7 +182,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Select **+Add resource(s)**.
 
- 1. Expand **rg-defender** (or the Resource Group you are created), then select **WIN2**.
+ 1. Expand **rg-defender** (or the Resource Group you are created), then select **WIN-xxxx**.
 
  1. Select **Apply**.
 
