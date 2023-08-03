@@ -21,11 +21,19 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
 
+1. In the Search bar of the Azure portal, type **log analytics workspace**, then select **log analytics workspace**.
+
+1. In the creation page in resource group tab create new and name it as **rg-defender**
+
+1. Name your workspace as **uniquenameDefender**
+
+1. And click on create  
+
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
 1. Select your Microsoft Sentinel Workspace.
 
-1. Select **Logs** 
+1. On the left menu Select **Logs** 
 
 1. Enter the following KQL Statement in the New Query 1 space:
 
@@ -174,11 +182,7 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
 
 1. Leave the rest of the options with the defaults. Select **Next: Incident settings>** button.
 
-1. For the *Incident settings* tab, leave the default values and select **Next: Automated response >** button.
-
-1. For the *Automated response* tab select the **PostMessageTeams-OnAlert** under *Alert automation (classic)* and then select **Next: Review** button.
-
-1. On the *Review* tab, select the **Create** button to create the new Scheduled Analytics rule.
+1. On the *Review* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
 1. Select the **Incidents** page in Microsoft Sentinel, within the *Threat management* section and wait for the new *C2 Hunt* alert to appear.
 
