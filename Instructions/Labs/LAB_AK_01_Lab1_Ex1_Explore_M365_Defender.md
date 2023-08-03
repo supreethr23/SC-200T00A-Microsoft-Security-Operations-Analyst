@@ -106,3 +106,10 @@ In this task, you will assign preset security policies for Exchange Online Prote
 1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
 
 ## You have completed the lab.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
