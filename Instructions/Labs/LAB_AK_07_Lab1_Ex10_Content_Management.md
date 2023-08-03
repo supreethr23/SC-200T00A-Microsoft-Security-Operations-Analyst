@@ -15,6 +15,14 @@ In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
 
 1. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
 
+1. In the Search bar of the Azure portal, type **log analytics workspace**, then select **log analytics workspace**.
+
+1. In the creation page in resource group tab create new and name it as **rg-defender**
+
+1. Name your workspace as **uniquenameDefender**
+
+1. And click on create  
+
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
 1. Select your Microsoft Sentinel Workspace.
