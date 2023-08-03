@@ -22,8 +22,6 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
 
-1. Log in to WIN1 virtual machine with the password provided in the environment tab.  
-
 1. If you are not already at the Microsoft 365 Defender portal, start the Microsoft Edge browser.
 
 1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
@@ -92,8 +90,6 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 In this task, you will configure roles for use with device groups.
 
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.
-
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
 1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
@@ -128,7 +124,7 @@ In this task, you will configure roles for use with device groups.
 
 1. Select the **Turn on roles** button.
 
-1. Select **+ Add item**.
+1. Select **+ Add Role**. by clicking three dots
 
 1. In the Add role dialog enter the following:
 
@@ -139,7 +135,7 @@ In this task, you will configure roles for use with device groups.
 
 1. Select the **Assigned user groups** tab on the top. Select **sg-IT** and then select **Add selected groups**. Make sure it appears under *Azure AD user groups with this role*.
 
-1. Select **Save**. If you receive an error while saving the role, refresh the page and try again.
+1. Select **Submit**. If you receive an error while saving the role, refresh the page and try again.
 
 
 ### Task 5: Configure Device Groups
@@ -166,6 +162,8 @@ In this task, you will configure device groups that allow for access control and
 1. On the Preview devices tab, select **Next**.
 
 1. For the User access tab, select **sg-IT** and then select **Add selected groups** button. Make sure it appears under **Azure AD user groups with access to this device group**.
+
+1. Select **submit***
 
 1. Select **Done**.
 
