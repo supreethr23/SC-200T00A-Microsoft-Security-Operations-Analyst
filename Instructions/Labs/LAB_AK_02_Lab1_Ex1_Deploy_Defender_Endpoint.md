@@ -26,9 +26,9 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
 
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the **Environment details** page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
 1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
 
