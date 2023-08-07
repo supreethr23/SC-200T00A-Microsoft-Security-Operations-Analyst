@@ -1,5 +1,5 @@
 # Lab Scenario Preview: SC-200: Create detections and perform investigations using Microsoft Sentinel
-## Lab 06: Activate a Microsoft Security rule
+## Lab 07: Activate a Microsoft Security rule
 ### Lab overview
 
 In this lab, you will  learn how to detect and mitigate threats using Microsoft Sentinel.
