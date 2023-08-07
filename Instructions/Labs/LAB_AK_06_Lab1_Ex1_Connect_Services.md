@@ -16,9 +16,9 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
  1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
- 1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
- 1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
  1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
