@@ -8,22 +8,27 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 >**Important:**  The lab Virtual Machines are used through different modules. SAVE your virtual machines. If you exit the lab without saving, you will be required to re-run some configurations again.
 
+### Task 1: Preparing the Microsoft 365 Defender workspace
 
-### Task 1: Initialize Microsoft Defender for Endpoint
+1. On the **Microsoft 365 Defender** portal(https://security.microsoft.com/), from the navigation menu, select **Settings** from the left.
+
+1. On the **Settings** page select **Microsoft 365 Defender**. You are going to see an image of a coffee mug and a message that reads: *Hang on! We're preparing new spaces for your data and connecting them.*. It will take several minutes to finish, so leave the page open but make sure it finishes since it is required for the next Lab. 
+
+    >**Note:** If you get the error message "We didn't plan it will fail, but something went wrong." retry the step later or do it before the next Lab.
+
+1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
+
+### Task 2: Initialize Microsoft Defender for Endpoint
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
-
-1. Log in to WIN1 virtual machine with the password provided in the environment tab.  
 
 1. If you are not already at the Microsoft 365 Defender portal, start the Microsoft Edge browser.
 
 1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
 
-1. In the **Sign in** dialog box, copy, and paste in the tenant Email account for the admin username provided by your lab hosting provider and then select **Next**.
+1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
-1. In the **Enter password** dialog box, copy, and paste in the admin's tenant password provided by your lab hosting provider and then select **Sign in**.
-
-    >**Tip:** The admin's tenant email account and password can be found on the Resources tab.
+1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
 1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
 
@@ -33,12 +38,10 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
     >**Note:** If you do not see the **Device discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try are to refresh the page with Ctrl+F5 or wait for 10-15 minutes or open the page InPrivate. Login again with the **Tenant Email** credentials.
 
-
 1. In the Discovery setup make sure **Standard discovery (recommended)** is selected. 
     >**Hint:** If you do not see the option, refresh the page.
 
-
-### Task 2: Onboard a Device.
+### Task 3: Onboard a Device.
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
 
@@ -54,13 +57,13 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. Under the *Downloads* pop-up, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
 
-1. Right-click the downloaded zip file and select **Extract All...**, make sure that *Show extracted files when complete* is checked and select **Extract**.
+1. Right-click the downloaded zip file and select **Extract All...**, make sure that **Show extracted files when complete** is checked and select **Extract**.
 
 1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" and select **Properties**. Select the **Unblock** checkbox in the bottom right of the Properties windows and select **OK**.
 
-    ![Picture 1](../Media/SC-200-img20.png)
+    ![Picture 1](../Media/sc200-mod2-unblock.png)
 
-1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" again and choose **Run as Administrator**.  **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
+1. Right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** again and choose **Run as Administrator**.  **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
     
 1. When the "User Account Control" window is shown, select **Yes** to allow the script to run and answer **Y** to the question presented by the script and press **Enter**. When complete you should see a message in the command screen that says *Successfully onboarded machine to Microsoft Defender for Endpoint*.
 
@@ -83,11 +86,9 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
 
 
-### Task 3: Configure Roles
+### Task 4: Configure Roles
 
 In this task, you will configure roles for use with device groups.
-
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -109,9 +110,9 @@ In this task, you will configure roles for use with device groups.
     |Group Name| **Sg-IT** |
     |Azure AD roles can be assigned to the group| **Yes** |
 
-1. Click on **no owners selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **No owners selected** and select the **ODL_user** from the list and then click on **select**.
 
-1. Click on **no members selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **No members selected** and select the **ODL_user** from the list and then click on **select**.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
@@ -123,7 +124,7 @@ In this task, you will configure roles for use with device groups.
 
 1. Select the **Turn on roles** button.
 
-1. Select **+ Add item**.
+1. Select **+ Add Role**. by clicking three dots
 
 1. In the Add role dialog enter the following:
 
@@ -134,10 +135,10 @@ In this task, you will configure roles for use with device groups.
 
 1. Select the **Assigned user groups** tab on the top. Select **sg-IT** and then select **Add selected groups**. Make sure it appears under *Azure AD user groups with this role*.
 
-1. Select **Save**. If you receive an error while saving the role, refresh the page and try again.
+1. Select **Submit**. If you receive an error while saving the role, refresh the page and try again.
 
 
-### Task 4: Configure Device Groups
+### Task 5: Configure Device Groups
 
 In this task, you will configure device groups that allow for access control and automation configuration.
 
@@ -152,7 +153,7 @@ In this task, you will configure device groups that allow for access control and
     |General setting|Value|
     |---|---|
     |Device group name|**Regular**|
-    |Automation level| Full-remediate threats automatically|
+    |Remediation level| Full-remediate threats automatically|
 
 1. Select **Next**.
 
@@ -160,12 +161,14 @@ In this task, you will configure device groups that allow for access control and
 
 1. On the Preview devices tab, select **Next**.
 
-1. For the User access tab, select **sg-IT** and then select **Add selected groups** button. Make sure it appears under *Azure AD user groups with access to this device group*.
+1. For the User access tab, select **sg-IT** and then select **Add selected groups** button. Make sure it appears under **Azure AD user groups with access to this device group**.
+
+1. Select **submit***
 
 1. Select **Done**.
 
 1. Device group configuration has changed. Select **Apply changes** to check matches and recalculate groupings.
 
-1. You are going to have two device groups now; the "Regular" you just created and the "Ungrouped devices (default)" with the same remediation level.
+1. You are going to have two device groups now; the **Regular** you just created and the **Ungrouped devices (default)** with the same remediation level.
 
 ## Proceed to Exercise 2

@@ -19,9 +19,9 @@ Because this course can be offered by learning partners using any one of several
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
 1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
@@ -37,17 +37,21 @@ Because this course can be offered by learning partners using any one of several
     |Group Name| **Sg-IT** |
     |Azure AD roles can be assigned to the group| **Yes** |
 
-1. Click on **no owners selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **No owners selected** and select the **ODL_user** from the list and then click on **select**.
 
-1. Click on **no members selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **No members selected** and select the **ODL_user** and click on **users** from the list and then click on **select**.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
+
+1. Ignore the **No Roles selected**   
 
 1. Select **Create** and click on **Yes**. 
 
 ### Task 2: Apply Microsoft Defender for Office 365 preset security policies
 
 In this task, you will assign preset security policies for Exchange Online Protection (EOP) and Microsoft Defender for Office 365 in the Microsoft 365 security portal.
+
+**Note**: Skip the log-in steps if already logged in by default 
 
 1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
 
@@ -71,15 +75,13 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. Under **Standard protection**, select **Manage protection settings**. **Hint:** If you see this option grayed out, refresh your browser using **Ctrl+F5**.
 
-    >**Note:** After clicking on **Manage protection settings**, This might need 1-2 hours to load the content, wait for 1-2 hours to get loaded the page completely after 1-2 hours back to the same page and might need to sign out of Microsoft defender and sign in again and then try repeating the steps again to move forward. 
+    >**Note:** After clicking on **Manage protection settings**, This might need 40 to 60 Minutes to load the content, wait for 40 to 60 Minutes to get loaded the page completely after 40 to 60 Minutes back to the same page and might need to sign out of Microsoft defender and sign in again and then try repeating the steps again to move forward. 
 
 1. In the *Apply Exchange Online Protection* section, select **Specific recipients** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**. **Hint:** Your tenant's domain name is the same that you have for your admin account, it might be something like *mocholxxxxx.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing. 
 
 1. In the **Apply Defender for Office 365 protection** section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
-1. In the *Impersonation protection* section, select **Next** four times (4x) to continue.
-
-1. In the *Policy mode* section, make sure the **Turn on the policy after I finish** radio button is selected, and then select **Next**.
+1. In the *Impersonation protection* section, select **Next** for next all steps i.e (4x times) to continue.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
@@ -87,11 +89,9 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. In the **Apply Exchange Online Protection**, select **Specific recipients** and under **Groups** start writing **Sg-IT**, select it, and then select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing.
 
-1. In the *Apply Defender for Office 365 protection* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+1. In the *Apply protection to* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
-1. In the *Impersonation protection* section, select **Next** four times (4x) to continue.
-
-1. In the *Policy mode* section, make sure the **Turn on the policy after I finish** radio button is selected, and then select **Next**.
+1. In the *Impersonation protection* section, select **Next** for next all steps i.e (4x times) to continue.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
@@ -106,3 +106,10 @@ In this task, you will assign preset security policies for Exchange Online Prote
 1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
 
 ## You have completed the lab.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.

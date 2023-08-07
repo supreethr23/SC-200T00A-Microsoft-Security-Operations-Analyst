@@ -4,24 +4,35 @@
 
 You're a Security Operations Analyst working at a company that is implementing Microsoft Sentinel. You're responsible for setting up the Microsoft Sentinel environment to meet the company requirement to minimize cost, meet compliance regulations, and provide the most manageable environment for your security team to perform their daily job responsibilities.
 
+### Task 1: Create a Log Analytics Workspace
 
-### Task 1: Initialize the Microsoft Sentinel Workspace.
-
-In this task, you will create a Microsoft Sentinel workspace.
-
-1. Log in to WIN1 virtual machine as Azureuser Admin with the password provided in the Environment tab.  
+In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud.
 
 1. Open the Edge browser.
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+
+1. In the Search bar of the Azure portal, type *Log Analytics workspaces*, then select the same service name.
+
+1. Click on **create**
+
+1. Select **rg-defender** for the Resource group drop down.
+
+1. Enter *RG-Defender* and select **Ok**.
+
+1. For the Name, enter **uniquenameDefender**
+
+1. Select **Review + Create**.
+
+1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
+
+### Task 2: Initialize the Microsoft Sentinel Workspace.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
-
-1. Select **+ Create**.
 
 1. Next, In Add Microsoft Sentinel to a workspace page.
 
@@ -30,7 +41,7 @@ In this task, you will create a Microsoft Sentinel workspace.
 1. Navigate around the newly created Microsoft Sentinel workspace to become familiar with the user interface options.
 
 
-### Task 2: Create a Watchlist.
+### Task 3: Create a Watchlist.
 
 In this task, you will create a watchlist in Microsoft Sentinel.
 
@@ -52,7 +63,7 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. Close Notepad.
 
-1. In Microsoft Sentinel, select the **Watchlist** option under the Configuration area.
+1. In Microsoft Sentinel,On the left menu, select the **Watchlist** option under the Configuration area.
 
 1. Select **+ Add new** from the command bar.
 
@@ -68,7 +79,7 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. Select **Browse for files** under *Upload file* and browse for the *HighValue.csv* file you just created.
 
-1. In the *SearchKey field* select **Hostname**.
+1. In the *SearchKey field* select **Hostnames**.
 
 1. Select **Next: Review and Create >**.
 
@@ -84,19 +95,19 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. Close the *Logs* window by selecting the 'x' in the top-right and select **OK** to discard the unsaved edits.
 
-### Task 3: Create a Threat Indicator.
+### Task 4: Create a Threat Indicator.
 
 In this task, you will create an indicator in Microsoft Sentinel.
 
-1. In Microsoft Sentinel, select the **Threat intelligence** option in the Threat management area.
+1. In Microsoft Sentinel, On the left menu, select the **Threat intelligence** option in the Threat management area.
 
 1. Select **+ Add New** from the command bar.
 
-1. Review the different indicator types available in the *Types* dropdown. Select the **domain-name**. Enter your initials in the Domain box. An example would be *onmicrosoft.com*.
+1. Review the different indicator types available in the *Types* dropdown. Select the **domain-name**. Enter your initials in the Domain box. You can use **onmicrosoft.com**.
 
 1. For the *Threat types*, add **malicious-activity** and select **OK**.
 
-1. For the *Name*, enter the same value used for the Domain. An example would be *onmicrosoft.com*.
+1. For the *Name*, enter the same value used for the Domain. An example would be **onmicrosoft.com**.
 
 1. Set the *Valid from* field to today's date.
 
@@ -104,22 +115,29 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
     **Note:** It could take a couple of minutes for the indicator to appear.
 
-1. Select the **Logs** option in the General area. You may need to disable the "Always show queries" option and close the *Queries* window to get run the statements.
+1. On the left Menu , Select the **Logs** option in the General area. You may need to disable the "Always show queries" option and close the *Queries* window to get run the statements.
 
 1. Run the following KQL statement.
 
-```KQL
-ThreatIntelligenceIndicator
-```
-**Note:** You may need to wait for 20 minutes to get the expected output.
+    ```KQL
+    ThreatIntelligenceIndicator
+    ```
+    **Note:** You may need to wait for 20 minutes to get the expected output.
 
-Scroll the results to the right to see the DomainName column. You can also run the following KQL statement to just see the DomainName column.  
+    Scroll the results to the right to see the DomainName column. You can also run the following KQL statement to just see the DomainName column.  
 
-```KQL
-ThreatIntelligenceIndicator
-| project DomainName
-```
+    ```KQL
+    ThreatIntelligenceIndicator
+    | project DomainName
+    ```
 
-![Picture 1](../Media/SC-200-img50.png)
+   ![Picture 1](../Media/SC-200-img50.png)
 
 ## You have completed the lab.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.

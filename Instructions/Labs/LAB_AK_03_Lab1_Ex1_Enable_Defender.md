@@ -9,19 +9,17 @@ You're a Security Operations Analyst working at a company that is implementing c
 
 In this task, you will set up an Azure Subscription required to complete this lab and future labs.
 
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.
-
 1. On the lab Virtual machine, Open the Microsoft Edge browser or open a new tab if already open.
 
 1. In the Edge browser, navigate to the Azure portal at (https://portal.azure.com).
 
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
 1. In the Search bar of the Azure portal, type *Subscription*, then select **Subscriptions**. 
 
-1. Make sure the **"MOC HOL xxxx"** subscription is shown.
+1. Make sure the **"Azure HOL xxxx"** subscription is shown.
 
 ### Task 2: Create a Log Analytics Workspace
 
@@ -31,9 +29,10 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Select **+Create** from the command bar.
 
-1. Select **RG-Defender** from the drop down.
+1. Select Resouce Group **RG-Defender** from the drop down.
 
 1. For the Name, enter something unique like **uniquenameDefender**.
+1. Select the default Region 
 
 1. Select **Review + Create**.
 
@@ -79,33 +78,41 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
-1. In the WIN1 virtual machine, search for **Hyper-V** from the bottom windows search bar and select to open.
+1. Click on Start button, search for **Hyper-V** from the bottom windows search bar and select to open.
 
-1. Select and right click on the **WINServer** virtual machine and select start, then again right-click on the **WINServer** virtual machine and select **connect**.
+1. Click on WIN1    
+
+1. Select and right click on the **WINServer** virtual machine from the virtual machine section in the middle and select start, then again right-click on the **WINServer** virtual machine and select **connect**.
+
+1. It asks you to press ctrl+alt+dlt, Go-to **actions** in the top of VM toolbar and click on **ctrl+alt+dlt** (**Skip if not asked**)
 
 1. Select connect and enter the **Password** as `Password.1!!` when prompted.
 
 1. Open the Microsoft Edge browser and navigate to the Azure portal at https://portal.azure.com.
 
 1. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
+**NOTE**: You can use the clipboard in the toolbox of VM to copy and paste
 
 1. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
+**NOTE**: You can use the clipboard in the toolbox of VM to copy and paste
 
 1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
-1. In the navigation pane under **Infrastructure** select **Servers**
+1. On the left menu, In the navigation pane under **Infrastructure** select **Servers**
 
 1. Select **+ Add**.
 
 1. Select **Generate script** in the "Add a single server" section.
 
-    ![Picture 1](../Media/SC-200-img4.png)
+    ![Picture 1](../Media/sc-200-img004.png)
 
 1. Select **Next** to get to the Resource details tab.
 
 1. Select the Resource group you created earlier. **Hint:** *RG-Defender*
 
     **Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
+
+1. Select a Region in this case choose **EAST-US**   
 
 1. Review the *Server details* and *Connectivity method* options. Keep the default values and select **Next** to get to the Tags tab.
 
@@ -114,8 +121,6 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 1. Scroll down and select the **Download** button. Hint: if your browser blocks the download take action in the browser to allow it. In Edge Browser, select the 3 dots "..." and then select **Keep**. 
 
 1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
-
-    ![Picture 1](../Media/SC-200-img5.png)
 
 1. Enter: **cd C:\Users\Administrator\Downloads**
 

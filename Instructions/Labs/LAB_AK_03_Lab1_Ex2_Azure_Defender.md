@@ -12,9 +12,9 @@ In this task, you will load sample security alerts and review the alert details.
 
 1. In the Edge browser, open the Azure portal at (https://portal.azure.com).
 
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
 1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
@@ -60,7 +60,7 @@ In this task, you will load sample security alerts and review the alert details.
 
 1. For the alerts that grabbed your attention, perform the following actions:
 
-    - Select the alert, information about the alert should appear. Select **View full details**.
+    - Select any one alert from the list , information about the alert should appear. Select **View full details**.
 
     - Review and read the **Alert details** tab.
 
@@ -70,3 +70,9 @@ In this task, you will load sample security alerts and review the alert details.
 
 ## You have completed the lab.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
