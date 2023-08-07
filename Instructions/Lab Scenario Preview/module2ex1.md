@@ -1,6 +1,6 @@
 # Lab Scenario Preview: SC-200: Mitigate threats using Microsoft Defender for Endpoint
 
-## Lab 01: Deploy Microsoft Defender for Endpoint
+## Lab 02: Deploy Microsoft Defender for Endpoint
 
 ### Lab overview
 
