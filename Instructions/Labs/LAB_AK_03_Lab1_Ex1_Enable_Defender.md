@@ -72,7 +72,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 1. Close the Defender plans page by selecting the 'X' on the upper right of the page to go back to the **Environment settings**
 
 
-### Task 4: Install Azure Arc on an On-Premises Server.
+### Task 4: Install Azure Arc on an On-Premises Server
 
 In this task, you will install Azure Arc on an on-premises server to make onboarding easier.
 
@@ -143,7 +143,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
     **Note:** This could take a few minutes.
 
 
-### Task 5: Protect an On-Premises Server.
+### Task 5: Protect an On-Premises Server
 
 In this task, you will manually install the required agent on the Windows Server.
 
