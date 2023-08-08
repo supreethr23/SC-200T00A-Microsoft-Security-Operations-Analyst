@@ -12,9 +12,9 @@ In this task, you will load sample security alerts and review the alert details.
 
 1. In the Edge browser, open the Azure portal at (https://portal.azure.com).
 
-1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
+1. In the **Sign in** dialog box, copy and paste Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
-1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
 1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
@@ -24,7 +24,7 @@ In this task, you will load sample security alerts and review the alert details.
 
 1. Select your subscription.
 
-1. Under *Policy settings*, select **Security policy** in the portal menu.
+1. On the left menu Under *Policy settings*, select **Security policy** in the portal menu.
 
 1. Review the "Industry & regulatory standards" available to you by default.
 
@@ -35,7 +35,7 @@ In this task, you will load sample security alerts and review the alert details.
 
 In this task, you will review cloud security posture management.  The Secure Score information can take 24 hours to recalculate.  It is beneficial to do this task again in 24 hours.
 
-1. Under *Cloud Security*, select **Security posture** in the portal menu.
+1. On the left menu Under *Cloud Security*, select **Security posture** in the portal menu.
 
 1. The Secure score most likely will show *N/A* until the score is calculated.
 
