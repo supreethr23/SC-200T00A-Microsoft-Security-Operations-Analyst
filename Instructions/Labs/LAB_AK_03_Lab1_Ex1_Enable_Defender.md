@@ -128,7 +128,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Enter **A** for Yes to All and press enter.
 
-1. Type *.\OnboardingScript.ps1* and press enter.
+1. Type **.\OnboardingScript.ps1** and press enter.
 
 1. Enter **R** to Run once and press enter (this may take a couple of minutes).
 
