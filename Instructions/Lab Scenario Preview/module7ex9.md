@@ -14,7 +14,7 @@ After completing this lab, you will be able to:
   
 ## Architecture Diagram
 
-SC-200-Mod7-ex 9.png
+  ![](media/SC-200-Mod7-ex9.png)
 
 
 
