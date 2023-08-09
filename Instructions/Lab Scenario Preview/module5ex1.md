@@ -17,3 +17,4 @@ In this lab, you will set up the Microsoft Sentinel environment to meet the comp
   
 ## Architecture Diagram
 
+   ![](media/SC-200-Lab_Diagrams_Mod5_L1_Ex1.png)

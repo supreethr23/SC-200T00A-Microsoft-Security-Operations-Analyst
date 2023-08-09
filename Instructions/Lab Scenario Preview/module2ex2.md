@@ -15,6 +15,8 @@ After completing this lab, you will be able to:
 
 ## Architecture Diagram
 
+ ![](media/SC-200-Lab_Diagrams_Mod2_L1_Ex2.png)
+
 
 
 

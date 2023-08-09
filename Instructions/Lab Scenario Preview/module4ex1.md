@@ -16,5 +16,5 @@ In this lab, you will perform log data analysis to search for malicious activity
   
 ## Architecture Diagram
 
-
+ ![](media/SC-200-Lab_Diagrams_Mod4_L1_Ex1.png)
 
