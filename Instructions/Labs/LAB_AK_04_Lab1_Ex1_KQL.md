@@ -5,19 +5,130 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 >**Important:** This lab involves entering many KQL scripts into Microsoft Sentinel. The scripts were provided in a file at the beginning of this lab. An alternate location to download them is:  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
 
-### Task 1: Access the KQL testing area.
+### Task 1: Create a Log Analytics Workspace
+
+In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud.
+
+1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
+
+1. Select **+Create** from the command bar.
+
+1. Select Resouce Group **RG-Defender** from the drop down.
+
+1. For the Name, enter something unique like **uniquenameDefender**.
+1. Select the default Region 
+
+1. Select **Review + Create**.
+
+1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
+
+### Task 2: Initialize the Microsoft Sentinel Workspace.
+
+1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+
+1. Next, In Add Microsoft Sentinel to a workspace page.
+
+1. Select your existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
+
+### Task 3: Connect the Windows security event connector.
+
+1. On the search bar type **microsoft sentinel** and select it
+
+1. select the created workspace
+
+1. On the left menu search for data connectors and click on it
+
+1. You can see there are no connector installed yet so go to content hub in the same page
+
+1. On the content hub page search for **Windows security event** and select , Install
+
+1. Once you recive the notification of successful installation go back to Data connector page and click on refresh
+
+1. You can see **Security events Via Legacy agent** and **windows security events via AMA**
+
+1. Select  **Security events Via Legacy agent** and click on **open connector page**
+
+1. Under configuration choose **Install agent on Azure Windows Virtual Machine** and select **Download & install agent for Azure Windows Virtual machines** 
+
+1. Select the **WIN 1** virtual machine and click on connect
+
+1. Then come back to Configuration and scroll down a bit you can find **Select wich events to stream** Click on **All Events**
+
+1. Click on apply changes now if you refresh the data connector page you can see the status connected for **Security events Via Legacy agent**
+
+### Task 4: Enable Microsoft Defender for Cloud
+
+In this task, you will enable and configure Microsoft Defender for Cloud.
+
+1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
+
+1. click the left menu abd click on **Getting started**
+
+1. On the **Getting started** page, under the **Upgrade** tab, make sure your subscription is selected, and then select the **Upgrade** button at the bottom of the page. Wait for the *Trial started* notification to appear, it takes about 2 minutes. **Hint:** You can click the bell button on the top bar to review your Azure portal notifications.
+
+    ![Picture 1](../Media/SC-200-img2.png)
+
+1. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings**.
+
+1. Select the **"MOC HOL XXXX"** subscription (or equivalent name in your Language). 
+
+1. Review the Azure resources that are now protected with the Defender for Cloud plans.
+
+1. Select the **Settings & monitoring** tab from the Settings area (next to Save).
+
+1. Review the monitoring extensions. Confirm that **Log Analytics agent/Azure Monitor agent** is **Off**. Close the Settings & monitoring page by selecting the 'X' on the upper right of the page.
+
+1. Close the settings page by selecting the 'X' on the upper right of the page to go back to the **Environment settings** and select the '>' to the left of your subscription.
+
+1. Select the Log Analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing.
+
+1. Select **Enable all** (to the right of Select Defender plan) and then select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender was saved successfully!"* notification to appear.
+
+    ![Picture 1](../Media/SC-200-img3.png)
+
+    >**Note:** If the page is not being displayed, refresh your Edge browser and try again.
+
+1. Close the Defender plans page by selecting the 'X' on the upper right of the page to go back to the **Environment settings**
+
+### Task 5: Protect an On-Premises Server.
+
+In this task, you will manually install the required agent on the Windows Server.
+
+1. On the WIN1 Virtual machine, Go to **Microsoft Defender for Cloud** and select the **Getting Started** page.
+
+1. Select the **Get Started** tab.
+
+1. Scroll down and select **Configure** under the *Add non-Azure servers* section.
+
+1. Select **Upgrade** next to the workspace you created earlier.  This might take a few minutes, wait until you see the notification *"Defender plans for workspace were saved successfully"*.
+
+1. Select **+ Add Servers** next to the workspace you created earlier.
+
+1. Select **Log Analytics agent instructions**
+
+1. Select **Download Windows Agent (64 bit)**.
+
+1. Select **Open file** to run the downloaded *MMASetup-AMD64.exe* file.
+
+1. Select **Next** until the wizard page for **Agent Setup Options** appears, Select **Connect the Agent to Azure Log Analytics (OMS)**, then select **Next**.
+
+1. Copy and paste the **Workspace ID** and **Primary Key** values in the **Workspace Key** text box from the Azure portal into the wizard page fields as appropriate and select **Next**.
+
+1. Continue with the Install. Select **Finish** when complete.
+
+1. Go to the "Microsoft Defender for Cloud" portal and select **Inventory** from general section.
+
+1. The Server should appear in the list. You may have to select **Refresh** to see the update and it will take a few minutes.
+
+    ![Picture 1](../Media/SC-200-img26.png)
+
+### Task 6: Access the KQL testing area.
 
 In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
 
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.
+1. Go-to log analytics workspace.
 
-1. Go to https://aka.ms/lademo in your browser. 
-
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
-
-1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
+1. On the left menu click on **logs** close if any tutorial window pops up
 
 1. Explore the available tables listed in the tab on the left side of the screen.
 
@@ -31,7 +142,7 @@ In this task, you will access a Log Analytics environment where you can practice
 
     ![Picture 1](../Media/SC-200-img-7.png)
 
-### Task 2: Run Basic KQL Statements
+### Task 7: Run Basic KQL Statements
 
 In this task, you will build basic KQL statements.
 
@@ -72,13 +183,13 @@ In this task, you will build basic KQL statements.
     ```KQL
     SecurityEvent  
     | where TimeGenerated > ago(1h)
-    | where EventID == 4624
+    | where EventID == 8002
     | where AccountType =~ "user"
     ```
 
     ```KQL
     SecurityEvent  
-    | where TimeGenerated > ago(1h) and EventID in (4624, 4625)
+    | where TimeGenerated > ago(1h) and EventID in (8002, 4688)
  
     ```
 
@@ -113,7 +224,7 @@ In this task, you will build basic KQL statements.
         SecurityEvent 
         | summarize cnt = count() by Account 
         | where cnt < 1000;
-    LowActivityAccounts | where Account contains "sql"
+    LowActivityAccounts
     ```
 
 1. Change the **Time range** to **Last hour** in the Query Window. This will limit our results for the following statements.
@@ -160,7 +271,7 @@ In this task, you will build basic KQL statements.
     ```
 
 
-### Task 3: Analyze Results in KQL with the Summarize Operator
+### Task 8: Analyze Results in KQL with the Summarize Operator
 
 In this task, you will build KQL statements to aggregate data. **Summarize** groups the rows according to the **by** group columns, and calculates aggregations over each group.
 
@@ -255,7 +366,7 @@ In this task, you will build KQL statements to aggregate data. **Summarize** gro
     ```
 
 
-### Task 4: Create visualizations in KQL with the Render Operator
+### Task 9: Create visualizations in KQL with the Render Operator
 
 In this task, you will use generate visualizations with KQL statements.
 
@@ -278,7 +389,7 @@ In this task, you will use generate visualizations with KQL statements.
     ```
 
 
-### Task 5: Build multi-table statements in KQL
+### Task 10: Build multi-table statements in KQL
 
 In this task, you will build multi-table KQL statements.
 
@@ -333,7 +444,7 @@ In this task, you will build multi-table KQL statements.
     >**Important:** The first table specified in the join is considered the Left table. The table after the **join** operator is the right table. When working with columns from the tables, the $left.Column name and $right.Column name is to distinguish which tables column are referenced. The **join** operator supports a full range of types: flouter, inner, innerunique, leftanti, leftantisemi, leftouter, leftsemi, rightanti, rightantisemi, rightouter, rightsemi.
 
 
-### Task 6: Work with string data in KQL
+### Task 11: Work with string data in KQL
 
 In this task, you will work with structured and unstructured string fields with KQL statements.
 
