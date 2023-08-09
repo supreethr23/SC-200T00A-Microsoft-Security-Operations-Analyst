@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 7 - Investigate Incidents
+# Module 7 - Lab 1 - Exercise 8 - Investigate Incidents
 
 ### Task 1: Investigate an incident.
 
