@@ -5,7 +5,7 @@ Lab - Do not use. Temporarily not operational!:
 # Module 6 - Lab 1 - Exercise 4 - Connect Threat intelligence to Microsoft Sentinel using data connectors (READ ONLY)
 
 
-### Task 1: Connect Threat intelligence.
+### Task 1: Connect Threat intelligence
 
 In this task, you will connect a Threat intelligence provider with the Threat intelligence - TAXII connector.
 
