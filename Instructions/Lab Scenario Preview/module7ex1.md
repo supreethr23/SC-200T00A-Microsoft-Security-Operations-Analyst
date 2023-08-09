@@ -9,3 +9,5 @@ In this lab, you will  learn how to detect and mitigate threats using Microsoft 
 After completing this lab, you will be able to activate a Microsoft Security Rule
 
 ## Architecture Diagram
+
+  ![](media/SC-200-Lab_Diagrams_Mod7_L1_Ex1.png)
