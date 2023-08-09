@@ -43,6 +43,10 @@
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/stage/Instructions/Lab%20Scenario%20Preview/module7ex10.md",
           "Order": 10
         },
+       {
+          "RawFilePath": "https://raw.githubusercontent.com/shahanakattil/SC-200T00A-Microsoft-Security-Operations-Analyst/stage/Instructions/Lab%20Scenario%20Preview/module7ex11.md",
+          "Order": 11
+       }
       
      ]  
    } 
