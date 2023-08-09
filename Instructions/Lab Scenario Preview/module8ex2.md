@@ -10,6 +10,8 @@ After completing this lab, you will be able to explore Notebooks
 
 ## Architecture Diagram
 
+ ![](media/SC-200-Lab_Diagrams_Mod8_L1_Ex2.png)
+
 
 
 
