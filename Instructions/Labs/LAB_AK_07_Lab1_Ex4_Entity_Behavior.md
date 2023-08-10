@@ -31,7 +31,7 @@ In this task, you will explore Entity behavior analytics in Microsoft Sentinel.
 
 1. Select your Microsoft Sentinel Workspace you created earlier.
 
-1. Select the **Entity behavior** page.
+1. On the left menu Select the **Entity behavior** page.
 
 1. On the popup from *Entity behavior settings*, select **Set UEBA**.
 
