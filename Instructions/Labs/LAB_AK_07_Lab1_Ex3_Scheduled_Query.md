@@ -18,7 +18,7 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 7. Select the **+ Create** button and select **Scheduled query rule**.
 
-8. In the Analytics rule wizard, on the General tab, enter the Name *Azure AD Role Assignment Audit Trail*.
+8. In the Analytics rule wizard, on the General tab, enter the Name **Azure AD Role Assignment Audit Trail**.
 
 9. For Tactics and techniques, select **Persistence**.
 
@@ -42,7 +42,9 @@ AuditLogs
 
 13. Select **View query results**. You should not receive any results nor any errors. If you receive an error, please review that the query appears just like the previous KQL statement. Close the *Logs* window by selecting the upper right **X** and select **OK** to discard to save changes to go back to the wizard.
 
-14. Back in the "Analytics rule wizard - Create new scheduled rule" blade in the *Alert enrichment* area, select *Entity mapping* and select the following values: 
+14. Back in the "Analytics rule wizard - Create new scheduled rule" blade in the *Alert enhancement* area, select *Entity mapping* ,and select the following values:
+
+    Select **Add new entity** and select the following values:
 
     - For the *Entity type* drop-down list select **Account**.
     - For the *Identifier* drop-down list select **FullName**.
@@ -54,7 +56,7 @@ AuditLogs
     - For the *Identifier* drop-down list select **Address**.
     - For the *Value* drop-down list select **InitiatedFromIP**.
 
-15. In the *Query scheduling* set the following:
+16. In the *Query scheduling* set the following:
 
     |Setting|Value|
     |---|---|
@@ -63,31 +65,31 @@ AuditLogs
 
     >**Note:** We are purposely generating many incidents for the same data.  This enables the Lab to use these alerts.
 
-16. For the *Alert threshold* area, leave the options unchanged.
+17. For the *Alert threshold* area, leave the options unchanged.
 
     >**Note:** Best practices are to manage thresholds in the alert rule KQL query statement.
 
-17. Under the *Event grouping* area, leave the **Group all events into a single alert** as the selected option since we want to generate a single alert every time it runs, as long as the query returns more results than the specified alert threshold above.
+18. Under the *Event grouping* area, leave the **Group all events into a single alert** as the selected option since we want to generate a single alert every time it runs, as long as the query returns more results than the specified alert threshold above.
 
-18. Select the **Next: Incident settings >** button.  
+19. Select the **Next: Incident settings >** button.  
 
-19. On the *Incident settings* tab, review the default options.
+20. On the *Incident settings* tab, review the default options.
 
-20. Select the **Next: Automated response >** button.
+21. Select the **Next: Automated response >** button.
 
-21. On the Automated response tab in the *Alert automation (Classic)* area, select the playbook *PostMessageTeams-OnAlert* you had created in the previous exercise.
+22. On the Automated response tab in the *Alert automation (Classic)* area, select the playbook *PostMessageTeams-OnAlert* you had created in the previous exercise.
 
-22. Under Automation rules, select **Add new**.
+23. Under Automation rules, select **Add new**.
 
-23. For the *Automation rule name*, enter **Tier 2**.
+24. For the *Automation rule name*, enter **Tier 2**.
 
-24. For the *Actions*, select **Assign owner**.
+25. For the *Actions*, select **Assign owner**.
 
-25. Then select **Assign to me**. Then select **Apply**.
+26. Then select **Assign to me**. Then select **Apply**.
 
-26. Select the **Next: Review >** button.
+27. Select the **Next: Review >** button.
   
-27. Select **Create**.
+28. Select **Create**.
 
 ### Task 2: Test our new rule.
 
