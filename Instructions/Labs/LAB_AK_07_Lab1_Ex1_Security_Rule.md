@@ -42,6 +42,7 @@ In this task, you will activate a Microsoft Security rule.
 1. Under Filter by Severity, select the Custom option and select Low, Medium and High for the severity level and go back to the rule.
 
 1. Select the **Next: Automated response** button and then select **Next: Review + create** button.
+
 1. Click on save
 
 
