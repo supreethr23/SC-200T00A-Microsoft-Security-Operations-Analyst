@@ -15,8 +15,6 @@ Because this course can be offered by learning partners using any one of several
 
 ### Create a Group 
 
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.
-
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
 1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
