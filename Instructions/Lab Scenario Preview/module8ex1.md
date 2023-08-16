@@ -16,8 +16,7 @@ After completing this lab, you will be able to:
 
  ![](media/SC200-Lab_Diagrams_Mod8_L1_Ex1.png)
 
-
-
+Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located in the top right corner. This will lead you to the lab environment and guide. You can also preview the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/1da53001-e467-49ba-9bf9-1b1a0fe8ec05) if you want to go through detailed guide prior to launching lab environment.
 
 
 
