@@ -1,0 +1,16 @@
+[
+   {
+    "Name": "Lab Scenario Preview - SC-200: Mitigate threats using Microsoft Defender for Cloud",
+    "Language": "English",
+    "Files": [
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/stage/Instructions/Lab%20Scenario%20Preview/module3ex1.md",
+          "Order": 1
+        },
+       {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/stage/Instructions/Lab%20Scenario%20Preview/module3ex2.md",
+          "Order": 2
+        }
+     ]  
+   } 
+]
