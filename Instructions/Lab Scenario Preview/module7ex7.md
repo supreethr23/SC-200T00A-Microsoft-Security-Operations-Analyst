@@ -10,7 +10,7 @@ After completing this lab, you will be able to create an investigation graph
 
 ## Architecture Diagram
 
- ![](media/SC-200-Lab_Diagrams_Mod7_L1_Ex7.png)
+ ![](media/SC200-Lab_Diagrams_Mod7_L1_Ex7.png)
 
 
 
