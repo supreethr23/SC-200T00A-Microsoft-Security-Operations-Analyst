@@ -17,4 +17,4 @@ In this lab, you will enable Microsoft Defender for Cloud.
 
 ## Architecture Diagram
 
-   ![](media/SC-200-Lab_Diagrams_Mod3_L1_Ex1.png)
+   ![](media/SC200-Lab_Diagrams_Mod3_L1_Ex1.png)
