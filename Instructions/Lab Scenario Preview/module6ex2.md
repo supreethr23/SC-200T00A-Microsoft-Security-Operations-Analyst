@@ -13,3 +13,4 @@ After completing this lab, you will be able to connect Windows virtual machines,
 
   ![](media/SC200-Lab_Diagrams_Mod6_L1_Ex2.png)
 
+Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located in the top right corner. This will lead you to the lab environment and guide. You can also preview the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/67795e6f-3d1c-437c-bbc7-561aafb6434e) if you want to go through detailed guide prior to launching lab environment.
