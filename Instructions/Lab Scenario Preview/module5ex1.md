@@ -17,4 +17,6 @@ In this lab, you will set up the Microsoft Sentinel environment to meet the comp
   
 ## Architecture Diagram
 
-   ![](media/SC-200-Lab_Diagrams_Mod5_L1_Ex1.png)
+   ![](media/SC200-Lab_Diagrams_Mod5_L1_Ex1.png)
+
+Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located in the top right corner. This will lead you to the lab environment and guide. You can also preview the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/94dc4e65-1d16-43de-bcfe-fcb89ec87a7e) if you want to go through detailed guide prior to launching lab environment.
