@@ -10,4 +10,4 @@ After completing this lab, you will be able to activate a Microsoft Security Rul
 
 ## Architecture Diagram
 
-  ![](media/SC-200-Lab_Diagrams_Mod7_L1_Ex1.png)
+  ![](media/SC200-Lab_Diagrams_Mod7_L1_Ex1.png)
