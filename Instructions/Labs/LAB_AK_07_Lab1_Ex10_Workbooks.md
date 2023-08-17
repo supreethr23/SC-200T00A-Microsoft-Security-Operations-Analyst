@@ -6,8 +6,6 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 Microsoft Sentinel allows you to create custom workbooks across your data, and also comes with built-in workbook templates to allow you to quickly gain insights across your data as soon as you connect a data source.
 
-## Estimated timing: 120 minutes
-
 ### Task 1: Explore workbook templates
 
 In this task, you will explore the Microsoft Sentinel workbook templates.
