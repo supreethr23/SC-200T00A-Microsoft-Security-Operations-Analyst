@@ -95,6 +95,13 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. Close the *Logs* window by selecting the 'x' in the top-right and select **OK** to discard the unsaved edits.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ### Task 4: Create a Threat Indicator.
 
 In this task, you will create an indicator in Microsoft Sentinel.
@@ -133,7 +140,9 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
    ![Picture 1](../Media/SC-200-img50.png)
 
-## You have completed the lab.
+## Review
+
+- In this lab you create a log analytics workspace and attach it to sentinel then create a watchlist and threat indicator in sentinel in order to detect malicious activity
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 
@@ -141,3 +150,5 @@ In this task, you will create an indicator in Microsoft Sentinel.
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+## You have completed the lab.
