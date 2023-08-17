@@ -75,7 +75,9 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 >**Warning:** The simulations and tutorials here are an excellent source of learning through practice.  Simulations and tutorials are being added and edited regularly in the portal.  However, some of these simulations & tutorials may interfere with the performance of the labs designed for this training course.  Only perform the simulations and tutorials recommended in the instructions provided for this lab when using the course provided Azure tenant.  You may perform the other simulations and tutorials *after* this training course is complete with this tenant.
 
-## You have completed the lab.
+## Review
+
+In this lab you have oboarded a device and simulated the attacks
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 
@@ -83,3 +85,5 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+## You have completed the lab.
