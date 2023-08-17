@@ -4,7 +4,7 @@
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to detect and mitigate threats using Microsoft Sentinel.  You need to enable alerts from other Microsoft 365 and Azure services.  
 
-## Estimated timing: 120 minutes
+## Estimated timing: 180 minutes
 
 ### Task 1: Activate a Microsoft Security Rule
 
