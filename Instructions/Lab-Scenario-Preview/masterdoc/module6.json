@@ -4,15 +4,15 @@
     "Language": "English",
     "Files": [
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/stage/Instructions/Lab%20Scenario%20Preview/module6ex1.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/prod/Instructions/Lab-Scenario-Preview/module6ex1.md",
           "Order": 1
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/stage/Instructions/Lab%20Scenario%20Preview/module6ex2.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/prod/Instructions/Lab-Scenario-Preview/module6ex2.md",
           "Order": 2
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/stage/Instructions/Lab%20Scenario%20Preview/module6ex3.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/prod/Instructions/Lab-Scenario-Preview/module6ex3.md",
           "Order": 3
         }
      ]  
