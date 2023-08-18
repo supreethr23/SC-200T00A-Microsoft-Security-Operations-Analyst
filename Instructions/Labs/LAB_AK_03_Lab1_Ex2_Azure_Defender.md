@@ -33,7 +33,7 @@ In this task, you will load sample security alerts and review the alert details.
 
 ### Task 2: Explore Security posture and recommendations
 
-In this task, you will review cloud security posture management.  The Secure Score information can take 24 hours to recalculate.  It is beneficial to do this task again in 24 hours.
+In this task, you will review cloud security posture management. The Secure Score information can take 24 hours to recalculate.  It is beneficial to do this task again in 24 hours.
 
 1. On the left menu Under *Cloud Security*, select **Security posture** in the portal menu.
 
@@ -68,7 +68,10 @@ In this task, you will load sample security alerts and review the alert details.
 
     - Review the *Take action* information. Notice the sections available to take action depending on the type of alert: Inspect resource context, Mitigate the threat, Prevent future attacks, Trigger automated response and Suppress similar alerts.
 
-## You have completed the lab.
+## Review
+
+In this module you have set up an on premise server and checked for security alerts
+
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 
@@ -76,3 +79,5 @@ In this task, you will load sample security alerts and review the alert details.
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+ ## You have completed the lab. 

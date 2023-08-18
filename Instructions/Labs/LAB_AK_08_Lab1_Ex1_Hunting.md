@@ -8,6 +8,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
    **Note:**  Because you already experienced the process of exploring data in a previous module, the lab provides a KQL statement to start with.  
 
+## Estimated timing: 120 minutes
 
 ### Task 1: Create a hunting query
 

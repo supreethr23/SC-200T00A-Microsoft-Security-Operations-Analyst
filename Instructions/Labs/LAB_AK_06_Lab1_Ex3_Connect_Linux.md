@@ -144,9 +144,11 @@ In this task, you will configure the Syslog collection facilities.
 
 1. Select **Apply**.  You have completed this task.
 
-## You have completed this lab.
-
    >**Note:** If you have not perform task 5 in exercise 1 beacause of Licenses takes some time to reflect then please go back to the page 2 and perform task 5 to successfully complete this lab.
+
+## Review 
+
+In this lab you connect azure and non azure virtual machines to Sentinel using data connectors.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 
@@ -155,4 +157,4 @@ In this task, you will configure the Syslog collection facilities.
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-
+## You have completed this lab.
