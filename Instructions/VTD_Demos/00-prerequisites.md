@@ -27,10 +27,32 @@ Because this course can be offered by learning partners using any one of several
 
 	- **Tenant suffix ID.** This ID is for the onmicrosoft.com accounts that you will use to sign in to Microsoft 365 throughout the labs. This is in the format of **{username}@M365xZZZZZZ.onmicrosoft.com**, where ZZZZZZ is your unique tenant suffix ID provided by your lab hosting provider. Record this ZZZZZZ value for later use. When any of the lab steps direct you to sign in to Microsoft 365 portals, you must enter the ZZZZZZ value that you obtained here.
 	- **Tenant password.** This is the password for the admin account provided by your lab hosting provider.
-	
 
+
+### Create a Group 
+
+1. Navigate to Microsoft 365 Admin center (https://admin.microsoft.com/AdminPortal/Home).	
+
+2. From the navigation menu select **Teams and Groups** and choose **Active teams and groups**
+
+3. Select **Add a group**
+
+4. Choose the default option (Microsoft 365) on  **Choose a group type**. Select **Next** 
+
+5. Enter **Sg-IT** as the name of the group and select **Next**(1) Add
+
+6. On the **Assign owners** page select **+ Assign Owners** and select the **ODLuser** from the list and select **(1) Add** and then **Next**.
+
+7. On the **Add members** page select **+ Add members** and select the **ODLuser** from the list and select **(1) Add** and then **Next.
+
+**Note**: DID is your unique deployment ID and can be found under the environment details tab.
+
+8. On the **Edit Settings** enter **SG-IT-DID** under the **Group Email address**. Leave the rest of the options unchanged and select **Next**.
+
+9. On the **Review and finish adding group** and select **Create Group**.
+ 
 ### Initialize Microsoft Defender for Endpoint.
-
+ 
 In this task, you will perform the initialization of the Microsoft Defender for Endpoint portal.
 
 
@@ -102,9 +124,10 @@ In this task, you will configure roles for use with device groups.
 4. Select **Add item**.
 
 5. In the Add Role dialog enter the following:
-    Role Name: Tier
-    Live Response capabilities: select checkbox
-    Advanced: select.
+
+   - Role Name: Tier
+   - Live Response capabilities: select checkbox
+   - Advanced: select.
 
 6. Select **Next**.
 
@@ -234,21 +257,12 @@ In this task, you will connect the Azure Active Directory Identity Protection co
 
 3. Select the **Connect** button.
 
-### Task 4: Connect the Azure Defender connector.
-
-In this task, you will connect the Azure Defender connector.
-
-1. From the Data Connectors tab, select the **Azure Defender** connector from the list.
-
-2. Select **Open connector page** on the connector information blade.
-
-3. Review the Connecting Options. Don't connect. This is for informational purposes only.
 
 ### Task 5: Connect the Microsoft Cloud App Security connector.
 
 In this task, you will connect the Microsoft Cloud App Security connector.
 
-1. From the Data Connectors Tab, select the **Microsoft Cloud App Security** connector from the list.
+1. From the Data Connectors Tab, select the **Microsoft Defender for Cloud Apps** connector from the list.
 
 2. Select **Open connector page** on the connector information blade.
 

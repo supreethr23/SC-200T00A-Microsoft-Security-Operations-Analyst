@@ -6,7 +6,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
   >**Important:** There are steps within the next Tasks that are done in different virtual machines. Look for the Virtual Machine name references
 
-### Task 1: Access the Microsoft Sentinel Workspace.
+### Task 1: Access the Microsoft Sentinel Workspace
 
 In this task, you will access your Microsoft Sentinel workspace.
 
@@ -24,7 +24,7 @@ In this task, you will access your Microsoft Sentinel workspace.
 
 1. Select the Microsoft Sentinel Workspace you created in a previous lab.
 
-### Task 2: Connect a Linux Host using the Common Event Format connector.
+### Task 2: Connect a Linux Host using the Common Event Format connector
 
 In this task, you will connect a Linux host to Microsoft Sentinel with the Common Event Format (CEF) connector.
 
@@ -67,7 +67,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
    ![ConnectorScript](../Media/LinuxConnectedupd.png)
 
 
-### Task 3: Connect a Linux host using the Syslog connector.
+### Task 3: Connect a Linux host using the Syslog connector
 
 In this task, you will connect a Linux host to Microsoft Sentinel with the Syslog connector.
 
@@ -122,7 +122,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 1. Once the script is pasted in press enter. The script will run against your Linux server remotely. You have completed the task. No further labs in this course rely on this connection.
 
 
-### Task 4: Configure the facilities you want to collect and their severities for the Syslog connector.
+### Task 4: Configure the facilities you want to collect and their severities for the Syslog connector
 
 In this task, you will configure the Syslog collection facilities.
 

@@ -43,7 +43,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 1. In the Discovery setup make sure **Standard discovery (recommended)** is selected. 
     >**Hint:** If you do not see the option, refresh the page.
 
-### Task 3: Onboard a Device.
+### Task 3: Onboard a Device
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
 

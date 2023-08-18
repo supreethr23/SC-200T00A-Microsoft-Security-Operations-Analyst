@@ -105,7 +105,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
 
-## You have completed the lab.
+## You have completed the lab
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 
