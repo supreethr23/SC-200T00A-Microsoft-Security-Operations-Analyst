@@ -1,4 +1,4 @@
-# Hands-on Lab 1 - Exercise 3 - Connect Linux hosts to Microsoft Sentinel using data connectors
+# Hands-on Lab - Exercise 3 - Connect Linux hosts to Microsoft Sentinel using data connectors
 
 ## Lab scenario
 
