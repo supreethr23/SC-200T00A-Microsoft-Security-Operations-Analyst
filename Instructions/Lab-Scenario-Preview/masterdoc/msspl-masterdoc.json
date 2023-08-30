@@ -1,0 +1,24 @@
+[
+   {
+    "Name": "Ingest logs in Microsoft Sentinel",
+    "Language": "English",
+    "Files": [
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/MS-SPL/Instructions/Labs/LabIntro.md",
+          "Order": 1
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/MS-SPL/Instructions/Labs/LAB_AK_06_Lab1_Ex1_Connect_Services.md",
+          "Order": 2
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/MS-SPL/Instructions/Labs/LAB_AK_06_Lab1_Ex2_Connect_Windows.md",
+          "Order": 3
+        },
+       {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/MS-SPL/Instructions/Labs/LAB_AK_06_Lab1_Ex3_Connect_Linux.md",
+          "Order": 4
+        }
+     ]  
+   } 
+]
