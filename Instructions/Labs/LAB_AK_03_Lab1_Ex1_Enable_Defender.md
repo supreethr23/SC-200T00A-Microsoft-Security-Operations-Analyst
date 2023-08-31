@@ -66,9 +66,9 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Select the Log Analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing.
 
-1. Select **Enable all** (to the right of Select Defender plan) and then select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender was saved successfully!"* notification to appear.
+1. Select **Enable all plans** (to the right of Select Defender plan) and then select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender was saved successfully!"* notification to appear.
 
-    ![Picture 1](../Media/SC-200-img3.png)
+    ![Picture 1](../Media/enable.png)
 
     >**Note:** If the page is not being displayed, refresh your Edge browser and try again.
 
@@ -103,17 +103,15 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
-1. On the left menu, In the navigation pane under **Infrastructure** select **Servers**
+1. On the left menu, In the navigation pane under **Infrastructure** select **Machines**
 
-1. Select **+ Add**.
+1. Select **+ Add/Create**.
 
 1. Select **Generate script** in the "Add a single server" section.
 
     ![Picture 1](../Media/sc-200-img004.png)
 
-1. Select **Next** to get to the Resource details tab.
-
-1. Select the Resource group you created earlier. **Hint:** *RG-Defender*
+1. Select the Resource group you created earlier. **Hint:**RG-Defender**
 
     **Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
 
@@ -137,7 +135,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Enter **R** to Run once and press enter (this may take a couple of minutes).
 
-1. While running the script, One pop-up will recive for sign-in authentication In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting and **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting.
+1. While running the script, we will receive a pop-up for authentication. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting and **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting.
 
 1. After the message *" Connected machine to Azure"* appears in the Windows PowerShell window, go to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
 
