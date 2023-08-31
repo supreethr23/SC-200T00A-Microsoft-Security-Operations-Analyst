@@ -77,19 +77,17 @@ AuditLogs
 
 21. Select the **Next: Automated response >** button.
 
-22. On the Automated response tab in the *Alert automation (Classic)* area, select the playbook *PostMessageTeams-OnAlert* you had created in the previous exercise.
+22. Under Automation rules, select **Add new**.
 
-23. Under Automation rules, select **Add new**.
+23. For the *Automation rule name*, enter **Tier 2**.
 
-24. For the *Automation rule name*, enter **Tier 2**.
+24. For the *Actions*, select **Assign owner**.
 
-25. For the *Actions*, select **Assign owner**.
+25. Then select **Assign to me**. Then select **Apply**.
 
-26. Then select **Assign to me**. Then select **Apply**.
-
-27. Select the **Next: Review >** button.
+26. Select the **Next: Review >** button.
   
-28. Select **Create**.
+27. Click on **save**.
 
 ### Task 2: Test our new rule.
 
