@@ -118,7 +118,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
- 1. Onthe left side navigation pane under **Infrastructure** select **Servers**
+ 1. Onthe left side navigation pane under **Infrastructure** select **Machines**
 
  1. Select **+ Add**.
 
@@ -132,7 +132,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
     >**Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
  
- 1. Select a region  
+ 1. Select a **eastus** region  
 
  1. Review the *Server details* and *Connectivity method* options. Keep the default values and select **Next** to get to the Tags tab.
 
@@ -204,8 +204,6 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
  In this task, you will onboard a device to Microsoft Defender for Endpoint.
 
  >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
-
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.  
 
 1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com) and log in with the **Tenant Email** credentials if you are not currently in the portal.
 
