@@ -10,9 +10,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will access your Microsoft Sentinel workspace.
 
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.
-
-1. In the lab virtual machine, Start the Microsoft Edge browser.
+1. Start the Microsoft Edge browser.
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
