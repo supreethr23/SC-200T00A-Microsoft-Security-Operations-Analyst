@@ -105,7 +105,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. On the left menu, In the navigation pane under **Infrastructure** select **Machines**
 
-1. Select **+ Add?Create**.
+1. Select **+ Add/Create**.
 
 1. Select **Generate script** in the "Add a single server" section.
 
