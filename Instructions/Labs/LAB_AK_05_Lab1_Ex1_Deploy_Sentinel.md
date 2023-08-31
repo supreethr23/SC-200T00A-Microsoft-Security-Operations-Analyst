@@ -36,6 +36,8 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
+1. Click on + Create.
+
 1. Next, In Add Microsoft Sentinel to a workspace page.
 
 1. Select your existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
@@ -81,7 +83,7 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. Select **Browse for files** under *Upload file* and browse for the *HighValue.csv* file you just created.
 
-1. In the *SearchKey field* select **Hostnames**.
+1. In the *SearchKey field* select **Hostname**.
 
 1. Select **Next: Review and Create >**.
 
@@ -119,7 +121,7 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 1. For the *Name*, enter the same value used for the Domain. An example would be **onmicrosoft.com**.
 
-1. Set the *Valid from* field to today's date.
+1. Set the **Valid from* field to today's date. and **valid till* to next day 
 
 1. Select **Apply**.
 
