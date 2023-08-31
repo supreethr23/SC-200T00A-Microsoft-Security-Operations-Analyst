@@ -97,17 +97,17 @@ In this task, you will test your new scheduled query rule.
 
 2. Select **Users** in the Manage area so the "Users - All users (Preview)" page is displayed.
 
-3. Select user **Christie Cline** in the list so the "Christie Cline - Profile" page is displayed.
+3. Select user **odl_user** in the list so the "odl_user - Profile" page is displayed.
 
-4. Select **Assigned roles** in the Manage area so the "Christie Cline - Assigned roles" page is displayed.
+4. Select **Assigned roles** in the Manage area so the "odl_user - Assigned roles" page is displayed.
 
 5. Select **+ Add assignments** from the command bar.
 
 6. In the **Directory roles** page, search and select **User Administrator**. and select **Add**.
 
-8. Close the "Christie Cline - Assigned roles" and "Users - All users (Preview)" pages by selecting the 'x' in the top-right twice.
+8. Close the "odl_user - Assigned roles" and "Users - All users (Preview)" pages by selecting the 'x' in the top-right twice.
 
-9. In the "Adatum Corporation" page, under **Monitoring**, select **Audit logs**.
+9. In the "MOC HOL" page, under **Monitoring**, select **Audit logs**.
 
 10. Verify that the "Azure Active Directory" data connector was setup correctly in Sentinel by selecting **Export data settings**.
 
