@@ -135,7 +135,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Enter **R** to Run once and press enter (this may take a couple of minutes).
 
-1. While running the script, One pop-up will recive for sign-in authentication In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting and **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting.
+1. While running the script, we will receive a pop-up for authentication. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting and **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting.
 
 1. After the message *" Connected machine to Azure"* appears in the Windows PowerShell window, go to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
 
