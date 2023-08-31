@@ -21,7 +21,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Select **+Create** from the command bar.
 
-1. Select Resouce Group **RG-Defender** from the drop down.
+1. Select "create new Resouce Group" give the name **RG-Defender**.
 
 1. For the Name, enter something unique like **uniquenameDefender**.
 1. Select the default Region 
@@ -70,7 +70,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
-1. click the left menu abd click on **Getting started**
+1. click the left menu and click on **Getting started**
 
 1. On the **Getting started** page, under the **Upgrade** tab, make sure your subscription is selected, and then select the **Upgrade** button at the bottom of the page. Wait for the *Trial started* notification to appear, it takes about 2 minutes. **Hint:** You can click the bell button on the top bar to review your Azure portal notifications.
 
@@ -134,7 +134,7 @@ In this task, you will manually install the required agent on the Windows Server
 
 In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
 
-1. Go-to log analytics workspace.
+1. Go-to microsoft sentinel select your log analytics workspace.
 
 1. On the left menu click on **logs** close if any tutorial window pops up
 
