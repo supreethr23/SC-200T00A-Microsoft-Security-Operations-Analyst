@@ -118,6 +118,8 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. Select **Open file** to run the downloaded *MMASetup-AMD64.exe* file.
 
+   >**Note** If it is already installed it asks for "Repair" or "remove" select **Repair** then click on next then click on **install**
+
 1. Select **Next** until the wizard page for **Agent Setup Options** appears, Select **Connect the Agent to Azure Log Analytics (OMS)**, then select **Next**.
 
 1. Copy and paste the **Workspace ID** and **Primary Key** values in the **Workspace Key** text box from the Azure portal into the wizard page fields as appropriate and select **Next**.
