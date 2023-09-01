@@ -92,7 +92,7 @@ In this task, you will update the new playbook you created with the proper conne
 
 1. Select the connection that has your Azure subscription admin credentials under *Display Name*. **Hint:** ODL_USER_ID@ZZZZZZ.onmicrosoft.com. The last line of the block should now read "Connected to your-admin-username".
 
-1. Now select the *third* block **Connections**.
+1. Now select the *second* block **Connections**.
 
 1. Select **Add new** and select your Azure subscription admin credentials when prompted. The last line of the block should now read "Connected to your-admin-username".
 
