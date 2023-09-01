@@ -1,4 +1,4 @@
-# Module 3 - Lab 1 - Exercise 1 - Enable Microsoft Defender for Cloud
+# Module 1 - Lab 1 - Exercise 1 - Enable Microsoft Defender for Cloud
 
 ## Lab scenario
 
