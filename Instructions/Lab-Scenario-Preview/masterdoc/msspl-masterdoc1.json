@@ -1,0 +1,16 @@
+[
+   {
+    "Name": "Enable Defender for MS Cloud",
+    "Language": "English",
+    "Files": [
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/MS-SPL/Instructions/Labs/LabIntro.md",
+          "Order": 1
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/MS-SPL/Instructions/Labs/Enable-Microsoft-Defender-for-Cloud.md",
+          "Order": 2
+        }
+     ]  
+   } 
+]
