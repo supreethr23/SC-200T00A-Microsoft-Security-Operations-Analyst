@@ -81,7 +81,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
-1. Click on Start button, search for **Hyper-V** from the bottom windows search bar and select to open.
+1. Click on the Start button, search for **Hyper-V** from the bottom windows search bar, and select to open.
 
 1. Click on WIN1    
 
@@ -109,7 +109,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Select **Generate script** in the "Add a single server" section.
 
-    ![Picture 1](/Media/sc-200-img004.png)
+    ![Picture 1](../Media/sc-200-img004.png)
 
 1. Select **Next** to get to the Resource details tab.
 
