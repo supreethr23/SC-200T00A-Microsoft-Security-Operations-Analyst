@@ -53,7 +53,7 @@ In this task, you will create a Logic App that will be used as a Playbook in Mic
 
 1. Select the **Post-Message-Teams** folder.
 
-1. In the readme.md box, go below the second *Quick Deployment* option **Deploy with alert trigger** and select **Deploy to Azure** button.  
+1. In the readme.md box, go below the second *Quick Deployment* option **Deploy with incident trigger (recommended)** and select **Deploy to Azure** button.  
 
     **VERY IMPORTANT**: Be aware that they are two different Microsoft Sentinel triggers to use, Incident and Alert. Make sure you are selecting the Alert (second) one.
 
@@ -63,7 +63,7 @@ In this task, you will create a Logic App that will be used as a Playbook in Mic
 
 1. For region, select the appropriate region for your situation. The default region will likely be optimal.
 
-1. Make sure the *Playbook Name* is "PostMessageTeams-OnAlert" and select **Review + create**.
+1. Make sure the *Playbook Name* is "PostMessageTeams-OnIncident" and select **Review + create**.
 
 1. Now select **create**.
 
@@ -80,19 +80,15 @@ In this task, you will update the new playbook you created with the proper conne
 
 1. Select the **Automation** from the Configuration area and then select the **Active Playbooks** tab.
 
-1. Select the **PostMessageTeams-OnAlert** playbook.
+1. Select the **PostMessageTeams-OnIncident** playbook.
 
-1. On the Logic App page for *PostMessageTeams-OnAlert*, in the center menu, select **Edit**.
+1. On the Logic App page for *PostMessageTeams-OnIncident*, in the center menu, select **Edit**.
 
 1. Select the *first* block **Microsoft Sentinel alert(Preview)**.
 
 1. Select the **Change connection** link.
 
 1. Select **Add new** and select **Sign in**. In the new window, select your Azure subscription admin credentials when prompted.
-
-1. Now select the *second* block **Alert - Get incident(Preview)**.
-
-1. Select the **Change connection** link.
 
 1. Select the connection that has your Azure subscription admin credentials under *Display Name*. **Hint:** ODL_USER_ID@ZZZZZZ.onmicrosoft.com. The last line of the block should now read "Connected to your-admin-username".
 
