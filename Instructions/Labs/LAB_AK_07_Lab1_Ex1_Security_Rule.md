@@ -20,15 +20,8 @@ In this task, you will activate a Microsoft Security rule.
 
 1. Select your Microsoft Sentinel Workspace you created in the previous labs.
 
- > **NOTE**: If not created follow the below steps:
-
-    1. In the Search bar of the Azure portal, type *Log Analytics workspaces*, then select the same service name.
-    1. Click on create
-    1. Select WIN-1 for the Resource group drop down.
-    1. For the Name, enter **uniquenameDefender**
-    1. Select Review + Create.
-    1. Once the workspace validation has passed, select Create. Wait for the new workspace to be provisioned, this may take a few minutes.
-    1. Go-to sentinel and click on create and select the created workspace and click on add
+   > **NOTE**: If not created follow the below steps:
+ In the Search bar of the Azure portal, type *Log Analytics workspaces*, then select the same service name. Click on **create**.Select WIN-1 for the Resource group drop down. For the Name, enter **uniquenameDefender**.  Select **Review + Create**. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes. Go-to sentinel and click on **create** and select the created workspace and click on **add**.
         
 1. Select **Analytics** from the Configuration area. By default, you will see the *Active rules*.
 
