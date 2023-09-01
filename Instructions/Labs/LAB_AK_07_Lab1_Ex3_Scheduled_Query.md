@@ -48,6 +48,8 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 1. Select **Create** to finish.
 
+1. It might take few minutes for the **Connected** status to appear.
+
 ## Task 3: Create a Scheduled Query.
 
 1. Select **Create rule** to continue.
@@ -129,7 +131,7 @@ In this task, you will test your new scheduled query rule.
 
 1. You should see the newly created Incident.
 
-    >**Note:** The event that triggers the incident may take 5+ minutes to process. Continue with the next exercise, you will come back to this view later.
+    >**Note:** The event that triggers the incident may take 30 or more minutes to process. Continue with the next exercise, you will come back to this view later.
 
 1. Select the Incident and review the information in the right blade.
 
