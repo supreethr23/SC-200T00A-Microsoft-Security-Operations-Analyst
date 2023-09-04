@@ -4,21 +4,15 @@
 
 In this task, you will create a scheduled query and connect it to the Teams channel you created in the previous exercise.
 
-1. Log in to WIN1 virtual machine with the password as provided in the Environment tab.  
+1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+2. Select your Microsoft Sentinel Workspace.
 
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+3. Select **Analytics** from the Configuration area.
 
-4. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+4. Make sure that you are in the *Rule templates* tab in the command bar and search for the **New CloudShell User** rule.
 
-5. Select your Microsoft Sentinel Workspace.
-
-6. Select **Analytics** from the Configuration area.
-
-7. Make sure that you are in the *Rule templates* tab in the command bar and search for the **New CloudShell User** rule.
-
-8. From the rule summary blade, make sure you're receiving data by reviewing the green icon under *Data sources: Azure Activity*.
+5. From the rule summary blade, make sure you're receiving data by reviewing the green icon under *Data sources: Azure Activity*.
 
     >**Note:** If you do not see it in a connected state, follow the following steps:
 
@@ -51,6 +45,7 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 1. It might take few minutes for the **Connected** status to appear.
 
 ## Task 3: Create a Scheduled Query.
+
 
 1. Select **Create rule** to continue.
 
