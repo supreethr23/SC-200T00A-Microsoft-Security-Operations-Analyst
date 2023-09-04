@@ -1,15 +1,8 @@
----
-lab:
-    title: 'Exercise 4 - Explore Entity Behavior Analytics'
-    module: 'Learning Path 7 - Create detections and perform investigations using Microsoft Sentinel'
----
-
-# Learning Path 7 - Lab 1 - Exercise 4 - Explore Entity Behavior Analytics
+# Module 7 - Lab 1 - Exercise 4 - Explore Entity Behavior Analytics
 
 ## Lab scenario
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You already created Scheduled and Microsoft Security Analytics rules. 
-
 
 You need to configure Microsoft Sentinel to perform Entity Behavior Analytics to discover anomalies and provide entity analytic pages.
 
