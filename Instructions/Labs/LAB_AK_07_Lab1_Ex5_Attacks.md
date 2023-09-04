@@ -1,5 +1,8 @@
 # Module 7 - Lab 1 - Exercise 5 - Understand Detection Modeling
 
+
+![Lab overview.](../Media/sc-200ex5.png)
+
 ### Task 1: Understand the Attacks
 
 **IMPORTANT: You will perform no actions in this exercise.**  These instructions are only an explanation of the attacks you will perform in the next exercise. Please carefully read this page.
@@ -87,4 +90,4 @@ Once the rule triggers and creates the alerts and incidents, you then investigat
 
 Next, make any other changes to the analytics rule.
 
-# Proceed to Exercise 5
+# Proceed to Exercise 6

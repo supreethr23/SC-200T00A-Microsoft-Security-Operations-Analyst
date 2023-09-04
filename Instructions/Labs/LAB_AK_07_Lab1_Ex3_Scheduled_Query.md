@@ -1,24 +1,28 @@
 # Module 7 - Lab 1 - Exercise 3 - Create a Scheduled Query
 
+## Lab scenario
+
+![Lab overview.](../Media/sc200ex3.png)
+
+You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to detect and mitigate threats using Microsoft Sentinel. After connecting your data sources to Microsoft Sentinel, you create custom analytics rules to help discover threats and anomalous behaviors in your environment.
+
+Analytics rules search for specific events or sets of events across your environment, alert you when certain event thresholds or conditions are reached, generate incidents for your SOC to triage and investigate, and respond to threats with automated tracking and reMediation processes.
+
+>**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20a%20scheduled%20query)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+
 ### Task 1: Create a Scheduled Query.
 
 In this task, you will create a scheduled query and connect it to the Teams channel you created in the previous exercise.
 
-1. Log in to WIN1 virtual machine with the password as provided in the Environment tab.  
+1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+2. Select your Microsoft Sentinel Workspace.
 
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+3. Select **Analytics** from the Configuration area.
 
-4. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+4. Make sure that you are in the *Rule templates* tab in the command bar and search for the **New CloudShell User** rule.
 
-5. Select your Microsoft Sentinel Workspace.
-
-6. Select **Analytics** from the Configuration area.
-
-7. Make sure that you are in the *Rule templates* tab in the command bar and search for the **New CloudShell User** rule.
-
-8. From the rule summary blade, make sure you're receiving data by reviewing the green icon under *Data sources: Azure Activity*.
+5. From the rule summary blade, make sure you're receiving data by reviewing the green icon under *Data sources: Azure Activity*.
 
     >**Note:** If you do not see it in a connected state, follow the following steps:
 
@@ -51,6 +55,8 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 1. It might take few minutes for the **Connected** status to appear.
 
 ## Task 3: Create a Scheduled Query.
+
+1. Once, you've received data by reviewing the green icon under *Data sources: Azure Activity*.
 
 1. Select **Create rule** to continue.
 
@@ -91,21 +97,21 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 1. Use the *And then* drop-down menus to select **Run playbook**
 
-24. A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**
+1. A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**
 
     >**Note:** The playbooks will appear grayed out in the drop-down list until permissions are configured.
 
-25. Select the **Manage playbook permissions link**
+1. Select the **Manage playbook permissions link**
 
-26. On the *Manage Permissions* page, select the **RG-Playbooks** resource group you created in the previous lab, and select **Apply**.
+1. On the *Manage Permissions* page, select the **RG-Playbooks** resource group you created in the previous lab, and select **Apply**.
 
-27. From the drop-down menu, select the playbook **PostMessageTeams-OnIncident** you created in the previous exercise.
+1. From the drop-down menu, select the playbook **PostMessageTeams-OnIncident** you created in the previous exercise.
 
-28. Select **Apply**
+1. Select **Apply**
 
-29. Select the **Next: Review and create >** button.
+1. Select the **Next: Review and create >** button.
   
-30. Select **Save**.
+1. Select **Save**.
 
 ### Task 4: Test our new rule.
 

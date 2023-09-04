@@ -1,5 +1,15 @@
 # Module 7 - Lab 1 - Exercise 2 - Create a Playbook
 
+## Lab scenario
+
+![Lab overview.](../Media/sc200ex2.png)
+
+You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to detect and mitigate threats using Microsoft Sentinel. Now, you want to respond and reMediate actions that can be run from Microsoft Sentinel as a routine.
+
+With a playbook, you can help automate and orchestrate your threat response, integrate with other systems both internal and external, and can be set to run automatically in response to specific alerts or incidents, when triggered by an analytics rule or an automation rule, respectively. 
+
+>**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20a%20playbook)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+
 ### Task 1: Create a Security Operations Center Team in Microsoft Teams.
 
 In this task, you will create a Microsoft Teams team for use in the lab.
@@ -92,7 +102,7 @@ In this task, you will update the new playbook you created with the proper conne
 
 1. Select the connection that has your Azure subscription admin credentials under *Display Name*. **Hint:** ODL_USER_ID@ZZZZZZ.onmicrosoft.com. The last line of the block should now read "Connected to your-admin-username".
 
-1. Now select the *third* block **Connections**.
+1. Now select the *second* block **Connections**.
 
 1. Select **Add new** and select your Azure subscription admin credentials when prompted. The last line of the block should now read "Connected to your-admin-username".
 
