@@ -30,6 +30,8 @@ In this task, you will investigate an incident.
 
 1. On the left blade of the incident, change the Status to **Active** and then select **Apply**.
 
+   ![Lab overview.](../Media/sc200ex8.png)
+
 1. Scroll down to the *Tags* area, select **+** and type **RegKey** and select **OK**.
 
 1. Scroll down and in the *Write a comment...* box type: *I will research this* and select the **>** icon to submit the new comment.
