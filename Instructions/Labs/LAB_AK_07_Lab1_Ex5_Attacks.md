@@ -1,7 +1,7 @@
 # Module 7 - Lab 1 - Exercise 5 - Understand Detection Modeling
 
 
-![Lab overview.](../Media/sc200ex5.png)
+![Lab overview.](../Media/sc-200ex5.png)
 
 ### Task 1: Understand the Attacks
 
