@@ -28,7 +28,7 @@ In this task, you will create a detection for the first attack of the previous e
     ```KQL
     search "temp\\startup.bat"
     ```
-![Lab overview.](../Media/sc200ex7temp.png)
+   ![Lab overview.](../Media/sc200ex7temp.png)
     
     >**Note:** A result with the event might take up to 5 minutes to appear. Wait until it does. If it does not appear, make sure you have rebooted WINServer as instructed in the previous exercise and that you have completed the Task #3 of the Learning Path 6 Lab, Exercise 2.
 
@@ -42,7 +42,7 @@ In this task, you will create a detection for the first attack of the previous e
     | where Process == "reg.exe" 
     | where CommandLine startswith "REG" 
     ```
-![Lab overview.](../Media/sc200ex7log.png)
+   ![Lab overview.](../Media/sc200ex7log.png)
 
 1. It is important to help the Security Operations Center Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. **Run** the following query:
 
