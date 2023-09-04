@@ -46,6 +46,7 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 ## Task 3: Create a Scheduled Query.
 
+1. Once, you've received data by reviewing the green icon under *Data sources: Azure Activity*.
 
 1. Select **Create rule** to continue.
 
@@ -86,21 +87,21 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 1. Use the *And then* drop-down menus to select **Run playbook**
 
-24. A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**
+1. A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**
 
     >**Note:** The playbooks will appear grayed out in the drop-down list until permissions are configured.
 
-25. Select the **Manage playbook permissions link**
+1. Select the **Manage playbook permissions link**
 
-26. On the *Manage Permissions* page, select the **RG-Playbooks** resource group you created in the previous lab, and select **Apply**.
+1. On the *Manage Permissions* page, select the **RG-Playbooks** resource group you created in the previous lab, and select **Apply**.
 
-27. From the drop-down menu, select the playbook **PostMessageTeams-OnIncident** you created in the previous exercise.
+1. From the drop-down menu, select the playbook **PostMessageTeams-OnIncident** you created in the previous exercise.
 
-28. Select **Apply**
+1. Select **Apply**
 
-29. Select the **Next: Review and create >** button.
+1. Select the **Next: Review and create >** button.
   
-30. Select **Save**.
+1. Select **Save**.
 
 ### Task 4: Test our new rule.
 
