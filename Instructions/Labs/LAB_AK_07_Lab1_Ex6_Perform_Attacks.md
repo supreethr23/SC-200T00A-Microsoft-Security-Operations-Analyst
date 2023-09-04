@@ -8,7 +8,7 @@ lab:
 
 ## Lab scenario
 
-![Lab overview.](../Media/SC-200-Lab_Diagrams_Mod7_L1_Ex6.png)
+![Lab overview.](../Media/labscenario.png)
 
 You are going to simulate the attacks that you will later use to detect and investigate in Microsoft Sentinel.
 
@@ -114,8 +114,10 @@ In this task, you will perform attacks on the host connected with Azure Arc and 
 
 1. In the Notepad menu, select **File** and then **Save**. 
 
-1. Go back to the Command Prompt window, enter the following command and press Enter. 
+1. Go back to the Command Prompt window, enter the following command and press Enter.
 
+    ![Lab overview.](../Media/cmd.png)
+   
     >**Note:** You will see DNS resolve errors. This is expected.
 
     ```CommandPrompt
