@@ -87,4 +87,4 @@ Once the rule triggers and creates the alerts and incidents, you then investigat
 
 Next, make any other changes to the analytics rule.
 
-# Proceed to Exercise 5
+# Proceed to Exercise 6
