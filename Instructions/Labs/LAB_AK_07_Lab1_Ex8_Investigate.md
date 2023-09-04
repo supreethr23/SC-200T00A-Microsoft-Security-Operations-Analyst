@@ -62,6 +62,8 @@ In this task, you will investigate an incident.
 
 1. Expand the left blade by selecting the **>>** icon. and then select the **Investigate** button.
 
+   ![Lab overview.](../Media/sc200ex8(1).png)
+
     >**Hint:** If the icons are too small for your screen, select **(+)** to magnify them.
 
 1. **Hover** the WINServer entity icon and wait for new *exploration queries* to be shown. It looks that *Related Alerts* has more data on it. Select the name of the exploration query **Related Alerts** to bring them to the investigation graph or select **Events >** to investigate them with a KQL query.
