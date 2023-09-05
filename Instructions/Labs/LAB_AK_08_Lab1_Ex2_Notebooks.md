@@ -4,6 +4,8 @@
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You need to explore the benefits of threat hunting with Microsoft Sentinel Notebooks.
 
+## Estimated time: 60 minutes
+
 ### Task 1: Explore Notebooks
 
 In this task, you will explore using notebooks in Microsoft Sentinel.
