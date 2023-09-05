@@ -8,7 +8,7 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 >**Important:**  The lab Virtual Machines are used through different modules. SAVE your virtual machines. If you exit the lab without saving, you will be required to re-run some configurations again.
 
-## Estimated timing: 120 minutes
+## Estimated timing: 60 minutes
 
 ### Task 1: Preparing the Microsoft 365 Defender workspace
 

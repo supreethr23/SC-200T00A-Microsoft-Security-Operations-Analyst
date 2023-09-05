@@ -1,5 +1,7 @@
 # LAB PREREQUISITES
 
+## Estimated timing: 30 minutes
+
 ## Prerequisites to be completed before proceeding to further exercises
 
 ### Prerequisite 01

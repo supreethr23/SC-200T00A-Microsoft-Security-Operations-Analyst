@@ -1,5 +1,6 @@
 # Module 7 - Lab 1 - Exercise 5 - Understand Detection Modeling
 
+## Estimated timing: 10 minutes
 
 ![Lab overview.](../Media/sc-200ex5.png)
 

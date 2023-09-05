@@ -10,6 +10,8 @@ With a playbook, you can help automate and orchestrate your threat response, int
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20a%20playbook)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
+## Estimated timing: 30 minutes
+
 ### Task 1: Create a Security Operations Center Team in Microsoft Teams.
 
 In this task, you will create a Microsoft Teams team for use in the lab.
