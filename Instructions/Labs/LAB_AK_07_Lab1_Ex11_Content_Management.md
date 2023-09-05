@@ -6,6 +6,8 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Use%20repositories%20in%20Microsoft%20Sentinel)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
+## Estimated timing: 30 minutes
+
 ### Task 1: Create and export an analytical rule
 
 In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
