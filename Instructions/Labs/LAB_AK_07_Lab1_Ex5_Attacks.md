@@ -3,7 +3,7 @@
 
 ![Lab overview.](../Media/sc-200ex5.png)
 
-## Estimated timing: 5 minutes
+## Estimated timing: 10 minutes
 
 ### Task 1: Understand the Attacks
 
