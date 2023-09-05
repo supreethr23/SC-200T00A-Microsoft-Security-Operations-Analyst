@@ -4,7 +4,7 @@
 
 You're a Security Operations Analyst working at a company that is implementing cloud workload protection with Microsoft Defender for Cloud.  In this lab, you will enable Microsoft Defender for Cloud.
 
-## Estimated timing: 120 minutes
+## Estimated timing: 40 minutes
 
 ### Task 1: Access the Azure portal and set up a Subscription
 
