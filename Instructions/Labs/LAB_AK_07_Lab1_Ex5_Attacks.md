@@ -3,6 +3,8 @@
 
 ![Lab overview.](../Media/sc-200ex5.png)
 
+## Estimated timing: 5 minutes
+
 ### Task 1: Understand the Attacks
 
 **IMPORTANT: You will perform no actions in this exercise.**  These instructions are only an explanation of the attacks you will perform in the next exercise. Please carefully read this page.
