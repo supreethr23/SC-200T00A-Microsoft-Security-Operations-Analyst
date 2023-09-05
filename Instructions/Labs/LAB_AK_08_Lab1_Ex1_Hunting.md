@@ -49,6 +49,8 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. In the middle command bar, select the **Add bookmark** button.
 
+   ![Picture 1](../Media/SC-200-logs.png)
+
 1. Select **+ Add new entity** under *Entity mapping*.
 
 1. For *Entity* select **Host**, then **Hostname** and **Computer** for the values.
