@@ -171,6 +171,8 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
  1. In the Search bar of the Azure portal, type **Sentinel**, then select **Microsoft Sentinel**.
 
  1. Select your Microsoft Sentinel Workspace you created earlier.
+ 
+ 1. Go to content hub and search for **Windows Security Events** and click on install. Then go to data connector page and refresh you should find  **Windows Security Events     via AMA**
 
  1. From the Data Connectors Tab, search for the **Windows Security Events via AMA** connector and select it from the list.
 
