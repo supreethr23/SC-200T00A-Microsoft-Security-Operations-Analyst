@@ -92,6 +92,8 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Select **PowerShell Hunt** from the list.
 
+   ![Picture 1](../Media/huntingg.png)
+
 1. Review the number of results in the middle pane under the *Results* column.
 
 1. Select the **View Results** button from the right pane. The KQL query will automatically run.
