@@ -172,7 +172,7 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
 
 In this task, you will use a Search job to look for a C2. 
 
-1. Select the **Search** page under *General* in Microsoft Sentinel. 
+1. On the left menu Select the **Search** page under *General* in Microsoft Sentinel. 
 
 1. In the search box, enter **reg.exe** and then select **Start**. 
 
