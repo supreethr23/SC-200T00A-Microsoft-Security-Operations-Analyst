@@ -4,7 +4,7 @@
   
  You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to connect log data from the many data sources in your organization. The next source of data are Windows virtual machines inside and outside of Azure, like On-Premises environments or other Public Clouds.
 
-## Estimated timing: 30 minutes
+## Estimated timing: 40 minutes
  
 ### Task 1: Preparing the Microsoft 365 Defender workspace
 
