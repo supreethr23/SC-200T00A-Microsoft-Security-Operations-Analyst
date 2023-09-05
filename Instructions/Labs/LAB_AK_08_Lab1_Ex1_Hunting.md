@@ -49,7 +49,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. In the middle command bar, select the **Add bookmark** button.
 
-   ![Picture 1](../Media/SC-200-logs.png)
+   ![Picture 1](../Media/logss.png)
 
 1. Select **+ Add new entity** under *Entity mapping*.
 
