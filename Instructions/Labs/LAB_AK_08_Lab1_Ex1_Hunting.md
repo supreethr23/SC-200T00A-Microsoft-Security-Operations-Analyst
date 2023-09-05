@@ -49,6 +49,8 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. In the middle command bar, select the **Add bookmark** button.
 
+   ![Picture 1](../Media/logss.png)
+
 1. Select **+ Add new entity** under *Entity mapping*.
 
 1. For *Entity* select **Host**, then **Hostname** and **Computer** for the values.
@@ -89,6 +91,8 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 1. In the *"Microsoft Sentinel - Hunting"* blade, search for the query you just created in the list, *PowerShell Hunt*.
 
 1. Select **PowerShell Hunt** from the list.
+
+   ![Picture 1](../Media/huntingg.png)
 
 1. Review the number of results in the middle pane under the *Results* column.
 

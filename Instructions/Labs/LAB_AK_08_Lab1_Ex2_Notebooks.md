@@ -26,6 +26,8 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 1. Next, you need to create an AzureML Workspace. Select **Configure Azure Machine Learning** and then select **Create new Azure ML workspace** button in the command bar.
 
+     ![Picture 1](../Media/ML.png)
+
 1. In the Subscription box, select your subscription.
 
 1. Select **Create new** for the Resource group and enter *RG-MachineLearning* for the Name and select **OK**. 
