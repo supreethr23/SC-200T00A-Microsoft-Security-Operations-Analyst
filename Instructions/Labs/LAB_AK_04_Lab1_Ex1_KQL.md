@@ -554,6 +554,6 @@ In this task, you will work with structured and unstructured string fields with 
     ```
 
 ## Review
-In this lab, you perform log data analysis to search for malicious activity, display visualizations, and perform threat hunting.
+In this lab, you perform log data analysis to search for malicious activity and display visualizations.
 
 ## You have successfully completed the lab.
