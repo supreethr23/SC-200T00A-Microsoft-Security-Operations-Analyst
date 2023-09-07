@@ -100,6 +100,4 @@ In this task, you will create an Azure DevOps repository.
 
     >**Note:** The *Failed* status is due to limitations in the hosted lab environment. You would normally see *Succeeded*. Then you can see in the *Analytics* the imported rule *Rule from Azure DevOps*.
 
-## You have completed the lab.
-
-
+## You have successfully completed the lab.
