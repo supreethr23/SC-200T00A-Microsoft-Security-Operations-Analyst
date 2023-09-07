@@ -4,18 +4,16 @@
 
 You are a Security Operations Analyst working at a company that is implementing Microsoft 365 Defender. You start by assigning preset security policies in EOP and Microsoft Defender for Office 365.
 
+## Lab objectives
+In this lab, you will perform:
+
++ Task 1: Create a Group 
++ Task 2: Apply Microsoft Defender for Office 365 preset security policies
++ Task 3: Preparing the Microsoft 365 Defender workspace
+    
 ## Estimated timing: 120 minutes
 
-### Obtain Your Microsoft 365 Credentials
-
-Once you launch the lab, a free trial tenant will be made available to you to access in the Microsoft Virtual Lab environment. This tenant will be automatically assigned a unique username and password. You must retrieve this username and password so that you can sign into Azure and Microsoft 365 within the Microsoft Virtual Lab environment. 
-
-Because this course can be offered by learning partners using any one of several Authorized Lab Hosting (ALH) providers, the actual steps involved to retrieve the tenant ID associated with your tenant may vary by lab hosting provider. Therefore, your instructor will provide you with the necessary instructions for how to retrieve this information for your course. The information that you should note for later use includes:
-
-- **Tenant suffix ID.** This ID is for the onmicrosoft.com accounts that you will use to sign into Microsoft 365 throughout the labs. This is in the format of **{username}@ZZZZZZ.onmicrosoft.com**, where ZZZZZZ is your unique tenant suffix ID provided by your lab hosting provider. Record this ZZZZZZ value for later use. When any of the lab steps direct you to sign in to Microsoft 365 portals, you must enter the ZZZZZZ value that you obtained here.
-- **Tenant password.** This is the password for the admin account provided by your lab hosting provider.
-
-### Create a Group 
+### Task 1: Create a Group 
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
@@ -105,11 +103,15 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
 
-## You have completed the lab
-
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 
 - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+### Review
+In this lab, you created a group, applied microsoft 365 defender policy and also created a defender workspace.
+
+## You have successfully completed the lab
+
