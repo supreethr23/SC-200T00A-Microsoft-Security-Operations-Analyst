@@ -553,5 +553,7 @@ In this task, you will work with structured and unstructured string fields with 
     PrivLogins  
     ```
 
+## Review
+In this lab, you perform log data analysis to search for malicious activity, display visualizations, and perform threat hunting.
 
 ## You have successfully completed the lab.
