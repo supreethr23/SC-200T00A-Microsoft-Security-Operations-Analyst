@@ -99,5 +99,10 @@ In this task, you will create an Azure DevOps repository.
 1. Go to the *Repositories (Preview)* page, select **Refresh**. Wait until *Last deployment status* is *Failed*.  
 
     >**Note:** The *Failed* status is due to limitations in the hosted lab environment. You would normally see *Succeeded*. Then you can see in the *Analytics* the imported rule *Rule from Azure DevOps*.
-
+    
+## Review
+1. In this Lab we successfully explored Microsoft sentinel
+2. We created a playbook and set it for automation.
+3. We initiated the attack and created detections for those and investigated it
+   
 ## You have successfully completed the lab.
