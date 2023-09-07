@@ -81,4 +81,4 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 In this lab you have oboarded a device and simulated the attacks
 
-## You have completed the lab.
+## You have successfully completed the lab.
