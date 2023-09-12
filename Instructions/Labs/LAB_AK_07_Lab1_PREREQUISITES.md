@@ -18,7 +18,9 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Select and right-click on the **WINSERVER** virtual machine and select start click on **Continue**, then again right-click on the **WINSERVER** virtual machine and select **connect**.
  
- 1. Inside **WINSERVER** Click on **connect**
+ 1. Inside **WINSERVER** Click on **Action (1)** then click on **Ctrl+Alt+Delete (2)** to turn on WINSERVER.
+
+    ![Picture 1](../Media/winserveron1.png)
 
  1. Enter the **Password** as `Password.1!!` when prompted.
 
