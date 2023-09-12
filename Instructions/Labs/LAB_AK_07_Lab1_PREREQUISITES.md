@@ -85,10 +85,30 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
  1. Select **Refresh** until **WIN-xxxx**  name appears.
 
     >**Note:** This could take a few minutes.
+    
+ 1. In the Search bar of the Azure portal, type *Log Analytics workspaces*, then select the same service name.
 
- 1. In the Search bar of the Azure portal, type **Sentinel**, then select **Microsoft Sentinel**.
+ 1. Click on **create**
 
- 1. Select your Microsoft Sentinel Workspace you created earlier.
+ 1. Select **rg-defender** for the Resource group drop down.
+
+ 1. Enter *RG-Defender* and select **Ok**.
+
+ 1. For the Name, enter **uniquenameDefender**
+
+ 1. Select **Review + Create**.
+
+ 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
+
+ 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+
+ 1. Click on + Create.
+
+ 1. Next, In Add Microsoft Sentinel to a workspace page.
+
+ 1. Select your existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
+
+ 1. Select your Microsoft Sentinel Workspace you created.
  
  1. Go to content hub and search for **Windows Security Events** and click on install. Then go to data connector page and refresh you should find  **Windows Security Events     via AMA**
 
