@@ -36,7 +36,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
- 1. Onthe left side navigation pane under **Infrastructure** select **Machines**
+ 1. Onthe left side navigation pane under **Infrastructure** select **+ Add/Create** then click on **Add a Machine**.
 
  1. Select **+ Add**.
 
