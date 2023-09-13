@@ -22,6 +22,8 @@ In this task, you will explore Entity behavior analytics in Microsoft Sentinel.
 
 1. On the popup from *Entity behavior settings*, select **Set UEBA**.
 
+    ![Lab overview.](../Media/ueba.png)
+
 1. On the next page, select  **Set UEBA**.
 
 1. Review the three pre-requisite steps to enable entity behavior analytics.
@@ -54,6 +56,8 @@ In this task, you will confirm Anomalies analytics rules are enabled.
 1. Select **Duplicate** and scroll left to review the new rule with the **FLGT** tab at the beginning of the name.
 
 1. Select **FLGT** rule and then select **Edit** on the rule blade.
+
+     ![Lab overview.](../Media/flgt.png)
 
 1. Review the *General* tab information. Notice the *Mode* is **Flighting** and then select **Next: Configuration**.
 
