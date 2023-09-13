@@ -41,8 +41,6 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
    > From there click on allow enhanced mode policy Under **Server** and enable the option.
    > Again  click on allow enhanced mode under **User** and enable the option.
 
-
-
  1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
  1. Onthe left side navigation pane under **Infrastructure** select **+ Add/Create** then click on **Add a Machine**.
