@@ -110,7 +110,7 @@ In this task, you will perform attacks on the host connected with Azure Arc and 
 
 1. Go-to hyperv manager. Connect to WINSERVER virtual machine
 
-1. Login to WINSERVER virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Login to WINSERVER virtual machine as Admin with the password: **Password.1!!**.  
 
     >**Important:** The lab *SAVE* functionality can cause WINServer to become disconnected from Azure Arc. A reboot will solve the issue. 
 
