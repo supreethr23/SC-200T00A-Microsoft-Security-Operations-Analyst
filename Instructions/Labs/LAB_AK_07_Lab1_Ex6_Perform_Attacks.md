@@ -91,13 +91,13 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 1. Go back to the Command Prompt window, enter the following command and press Enter.
 
-    ![Lab overview.](../Media/cmd.png)
-   
-    >**Note:** You will see DNS resolve errors. This is expected.
-
     ```CommandPrompt
     Start PowerShell.exe -file c2.ps1
     ```
+    
+      ![Lab overview.](../Media/cmd.png)
+   
+    >**Note:** You will see DNS resolve errors. This is expected.
 
 >**Important:** Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
 
