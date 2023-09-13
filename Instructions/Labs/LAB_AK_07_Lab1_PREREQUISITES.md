@@ -34,6 +34,15 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
+   >**Note:** If you are not able to copy paste the username and password then:
+   > Go to hyper-v manager.
+   > On the left right click on **WINSERVER**.
+   > Click on hyper-v settings.
+   > From there click on allow enhanced mode policy Under **Server** and enable the option.
+   > Again  click on allow enhanced mode under **User** and enable the option.
+
+
+
  1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
  1. Onthe left side navigation pane under **Infrastructure** select **+ Add/Create** then click on **Add a Machine**.
