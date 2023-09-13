@@ -13,8 +13,6 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 ### Task 1: Persistence Attack with Registry Key Add 
 
-1. Select **Start** in Windows. Then **Power**, next **Restart**.
-
 1. Follow the instructions to log into WINServer again.
 
 1. In the search of the task bar, enter *Command*. Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
