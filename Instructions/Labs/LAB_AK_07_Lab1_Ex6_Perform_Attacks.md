@@ -124,7 +124,11 @@ In this task, you will perform attacks on the host connected with Azure Arc and 
 
     ```CommandPrompt
     cd \
+    ```
+    ```CommandPrompt
     mkdir temp
+    ```
+    ```CommandPrompt
     cd temp
     ```
 
@@ -132,7 +136,11 @@ In this task, you will perform attacks on the host connected with Azure Arc and 
 
     ```CommandPrompt
     net user theusernametoadd /add
+    ```
+    ```CommandPrompt
     net user theusernametoadd ThePassword1!
+    ```
+    ```CommandPrompt
     net localgroup administrators theusernametoadd /add
     ```
 
