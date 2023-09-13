@@ -42,8 +42,6 @@ In this task, you will create a detection for the first attack of the previous e
     ```KQL
     SecurityEvent 
     | where Activity startswith "4688" 
-    | where Process == "reg.exe" 
-    | where CommandLine startswith "REG" 
     ```
    ![Lab overview.](../Media/sc200ex7log.png)
 
@@ -52,8 +50,6 @@ In this task, you will create a detection for the first attack of the previous e
     ```KQL
     SecurityEvent 
     | where Activity startswith "4688" 
-    | where Process == "reg.exe" 
-    | where CommandLine startswith "REG" 
     | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = SubjectUserName
     ```
 
