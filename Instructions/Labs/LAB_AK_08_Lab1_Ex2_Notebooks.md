@@ -10,18 +10,6 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will explore using notebooks in Microsoft Sentinel.
 
-1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
-
-1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
-
-1. In the **Sign in** dialog box, copy and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
-
-1. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
-
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
-
-1. Select your Microsoft Sentinel Workspace.
-
 1. In the Microsoft Sentinel Workspace, select **Notebooks** under the *Threat management* area.
 
 1. Next, you need to create an AzureML Workspace. Select **Configure Azure Machine Learning** and then select **Create new Azure ML workspace** button in the command bar.
@@ -47,13 +35,17 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 1. Select **Notebooks** again and then select the **Templates** tab from the middle command bar. 
 
-1. Select **A Getting Started Guide for Microsoft Sentinel ML Notebooks**. 
+1. Select **A Getting Started Guide for Microsoft Sentinel** ML Notebooks. 
 
 1. On the right pane, scroll down and select **Create from template** button. Review the default options and then select **Save**.
 
+   ![Picture 1](../Media/createfromtemplate.png)
+
 1. Once the saving is done, select the **Launch notebook** button. This will take you to the Microsoft Azure Machine Learning Studio.
 
-1. Select **Close** if an informational window appears in the Microsoft Azure Machine Learning Studio.
+    ![Picture 1](../Media/launchnotebook.png)
+
+1. Select **X** if an informational window appears in the Microsoft Azure Machine Learning Studio.
 
 1. In the command bar, to the right of the **Compute instance:**  selector, select the **+** symbol to create a new compute instance. **Hint:** It might be hidden inside the ellipsis icon **(...)**.
 

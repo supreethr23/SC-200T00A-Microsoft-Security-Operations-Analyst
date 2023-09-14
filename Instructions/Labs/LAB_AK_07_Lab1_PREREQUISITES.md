@@ -53,7 +53,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Select **Next** to get to the Resource details tab.
 
- 1. Select the Resource group **rg-defender**
+ 1. Select the Resource group **RG-DEFENDER**
 
     >**Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
  

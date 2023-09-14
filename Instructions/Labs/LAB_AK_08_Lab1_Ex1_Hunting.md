@@ -14,14 +14,6 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will create a hunting query, bookmark a result, and create a Livestream.
 
-1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
-
-1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
-
-1. In the **Sign in** dialog box, copy and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
-
-1. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
-
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
 1. Select your Microsoft Sentinel Workspace.
@@ -45,7 +37,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Review the different results. You have now identified PowerShell requests that are running in your environment.
 
-1. Select the checkbox of the results that shows the *"-file c2.ps1"*.
+1. Select the checkbox of the results that shows the **azureuser** SubjectUsername.
 
 1. In the middle command bar, select the **Add bookmark** button.
 
@@ -81,7 +73,8 @@ In this task, you will create a hunting query, bookmark a result, and create a L
     ```
 
 1. Scroll down and under *Entity mapping* select:
-
+   
+    - Select **+ Add new entity** under *Entity mapping*.
     - For the *Entity type* drop-down list select **Host**.
     - For the *Identifier* drop-down list select **HostName**.
     - For the *Value* drop-down list select **Computer**.
@@ -110,6 +103,8 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. On the right pane, scroll down and select the **Investigate** button. **Hint:** It might take a couple of minutes to show the investigation graph.
 
+   ![Picture 1](../Media/bookmarkinvestigate.png)
+
 1. Explore the Investigation graph just like you did a the previous module. Notice the high number of *Related alerts* for *WINServer*.
 
 1. Close the *Investigation* graph window by selecting the **X** in the top-right of the window. 
@@ -119,6 +114,8 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 1. Select **Add to existing incident**. All the incidents appear in the right pane.
 
 1. Select one of the incidents and then select **Add**. 
+
+   ![Picture 1](../Media/addingbookmark.png)
 
 1. Scroll left to notice that the *Severity* column is now populated with the incident's data.
 
@@ -137,8 +134,8 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
     |---|---|
     |Name|**NRT PowerShell Hunt**|
     |Description|**NRT PowerShell Hunt**|
-    |Tactics|**Command and Control**|
     |Severity|**High**|
+    |Tactics|**Command and Control**|
 
 1. Select **Next: Set rule logic >** button. 
 
@@ -158,17 +155,18 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
 
 1. Close the *Logs* window by selecting the **X** in the top-right of the window and select **OK** to discard the changes. 
 
-1. Select **Test with current data** under *Results simulation*. Notice the expected number of *Alerts per day*.
-
 1. Under *Entity mapping* select:
-
+     
+    - Select **+ Add new entity** under *Entity mapping*.
     - For the *Entity type* drop-down list select **Host**.
     - For the *Identifier* drop-down list select **HostName**.
     - For the *Value* drop-down list select **Computer**.
 
 1. Scroll down and select **Next: Incident settings>** button.
 
-1. For the *Incident settings* tab, leave the default values and select **Next: Review and create >** button.
+1. For the *Incident settings* tab, leave the default values and select **Next: Automated response>** button.
+
+1. For the *Automated response* tab, leave the default values and select **Next: Review and create >** button.
 
 1. On the *Review and create* tab, select the **Save** button to create and save the new Scheduled Analytics rule.
 
