@@ -13,8 +13,6 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 ### Task 1: Persistence Attack with Registry Key Add 
 
-1. Select **Start** in Windows. Then **Power**, next **Restart**.
-
 1. Follow the instructions to log into WINServer again.
 
 1. In the search of the task bar, enter *Command*. Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
@@ -91,13 +89,13 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 1. Go back to the Command Prompt window, enter the following command and press Enter.
 
-    ![Lab overview.](../Media/cmd.png)
-   
-    >**Note:** You will see DNS resolve errors. This is expected.
-
     ```CommandPrompt
     Start PowerShell.exe -file c2.ps1
     ```
+    
+      ![Lab overview.](../Media/cmd.png)
+   
+    >**Note:** You will see DNS resolve errors. This is expected.
 
 >**Important:** Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
 
@@ -110,7 +108,7 @@ In this task, you will perform attacks on the host connected with Azure Arc and 
 
 1. Go-to hyperv manager. Connect to WINSERVER virtual machine
 
-1. Login to WINSERVER virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Login to WINSERVER virtual machine as Admin with the password: **Password.1!!**.  
 
     >**Important:** The lab *SAVE* functionality can cause WINServer to become disconnected from Azure Arc. A reboot will solve the issue. 
 
@@ -124,7 +122,11 @@ In this task, you will perform attacks on the host connected with Azure Arc and 
 
     ```CommandPrompt
     cd \
+    ```
+    ```CommandPrompt
     mkdir temp
+    ```
+    ```CommandPrompt
     cd temp
     ```
 
@@ -132,7 +134,11 @@ In this task, you will perform attacks on the host connected with Azure Arc and 
 
     ```CommandPrompt
     net user theusernametoadd /add
+    ```
+    ```CommandPrompt
     net user theusernametoadd ThePassword1!
+    ```
+    ```CommandPrompt
     net localgroup administrators theusernametoadd /add
     ```
 

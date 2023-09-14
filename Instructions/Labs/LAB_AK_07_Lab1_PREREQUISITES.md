@@ -18,7 +18,9 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Select and right-click on the **WINSERVER** virtual machine and select start click on **Continue**, then again right-click on the **WINSERVER** virtual machine and select **connect**.
  
- 1. Inside **WINSERVER** Click on **connect**
+ 1. Inside **WINSERVER** Click on **Action (1)** then click on **Ctrl+Alt+Delete (2)** to turn on WINSERVER.
+
+    ![Picture 1](../Media/winserveron1.png)
 
  1. Enter the **Password** as `Password.1!!` when prompted.
 
@@ -26,15 +28,22 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Open a browser and log into the Azure Portal at https://portal.azure.com with the credentials you have been using in the previous labs.
 
- 1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+ 1. In the **Sign in** dialog box, copy and paste in the **Username** <inject key="AzureAdUserEmail"></inject> and then select Next.
 
- 1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+ 1. In the **Enter password** dialog box, copy and paste in the Password  <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
  1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
+   >**Note:** If you are not able to copy paste the username and password then:
+   > Go to hyper-v manager.
+   > On the left right click on **WINSERVER**.
+   > Click on hyper-v settings.
+   > From there click on allow enhanced mode policy Under **Server** and enable the option.
+   > Again  click on allow enhanced mode under **User** and enable the option.
+
  1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
- 1. Onthe left side navigation pane under **Infrastructure** select **Machines**
+ 1. Onthe left side navigation pane under **Infrastructure** select **+ Add/Create** then click on **Add a Machine**.
 
  1. Select **+ Add**.
 
@@ -44,7 +53,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Select **Next** to get to the Resource details tab.
 
- 1. Select the Resource group **rg-defender**
+ 1. Select the Resource group **RG-DEFENDER**
 
     >**Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
  
@@ -83,10 +92,30 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
  1. Select **Refresh** until **WIN-xxxx**  name appears.
 
     >**Note:** This could take a few minutes.
+    
+ 1. In the Search bar of the Azure portal, type *Log Analytics workspaces*, then select the same service name.
 
- 1. In the Search bar of the Azure portal, type **Sentinel**, then select **Microsoft Sentinel**.
+ 1. Click on **create**
 
- 1. Select your Microsoft Sentinel Workspace you created earlier.
+ 1. Select **rg-defender** for the Resource group drop down.
+
+ 1. Enter *RG-Defender* and select **Ok**.
+
+ 1. For the Name, enter **uniquenameDefender**
+
+ 1. Select **Review + Create**.
+
+ 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
+
+ 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+
+ 1. Click on + Create.
+
+ 1. Next, In Add Microsoft Sentinel to a workspace page.
+
+ 1. Select your existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
+
+ 1. Select your Microsoft Sentinel Workspace you created.
  
  1. Go to content hub and search for **Windows Security Events** and click on install. Then go to data connector page and refresh you should find  **Windows Security Events     via AMA**
 

@@ -35,13 +35,19 @@ In this task, you will save a workbook template and modify it.
 
 1. You should be back in the **Microsoft Sentinel - Workbooks - Templates** tab. Scroll down again and select the **Save** button for the *Azure Activity* workbook. 
 
-1. Leave **East US** as the default value for *Region* and select **OK**.
+   ![Picture 1](../Media/savedactivity.png)
+
+1. Leave **East US** as the default value for *Region* and select **Yes**.
 
 1. Select the **View saved workbook** button.
+
+   ![Picture 1](../Media/savedworkbook.png)
 
 1. Select **Edit** in the command bar to enable changes in the workbook.
 
 1. Scroll down to the *Caller activities over time* area, look at the color of the *Activities* column since we are going to format those columns. Select the **Edit** button below the grid.
+
+   ![Picture 1](../Media/editcaller.png)
 
 1. Select the **Column Settings** button, it is located to the right of the *Run Query* command bar. **Hint:** This button only appears if there is data from the KQL query.
 
@@ -70,7 +76,8 @@ In this task, you will create a new workbook with advanced visualizations.
 
 1. To edit the workbook, select **Edit**.
 
-1. Select the **Edit** button below the first paragraph of the workbook.
+1. Select the **Edit** button below the new workbook
+overview of the workbook.
 
 1. Type *# My workbook* in a new line on top of *## New workbook*.
 
@@ -104,17 +111,23 @@ In this task, you will create a new workbook with advanced visualizations.
 
 1. Scroll down and at the bottom of the workbook select **+ Add**, then **Add query**.
 
+    ![Picture 1](../Media/addquery.png)
+
 1. Type **SecurityEvent** into the query box.
 
-1. Change the *Time Range* to **Last hour**.
+1. Change the *Time Range* to **Last hour (1)**.
 
-1. Change the *Visualization* to **Grid**.
+1. Change the *Visualization* to **Grid (2)**.
+
+   ![Picture 1](../Media/grid.png)
 
 1. Select **Style** from the query's command bar.
 
 1. Select **Make this item a custom width** box.
 
 1. Set the *Percent width* to **75** and *Maximum width* to **75**.
+
+   ![Picture 1](../Media/75.png)
 
 1. Scroll down and select **Done Editing** on the bottom menu, for the new *Editing query item: query - 3*.
 

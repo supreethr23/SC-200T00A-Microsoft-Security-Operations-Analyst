@@ -38,6 +38,8 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 
 1. Scroll down the Teams blade to locate the newly created SOC team, select the ellipsis **(...)** on the right side of the name and select **Add channel**.
 
+    ![Lab overview.](../Media/addchannel.png)    
+
 1. Enter a channel name as *New Alerts* then select the **Add** button.
 
 
@@ -71,7 +73,7 @@ In this task, you will create a Logic App that will be used as a Playbook in Mic
 
 1. Make sure your Azure Subscription is selected.
 
-1. For Resource Group, select **Create New** and select resource group from drop down *RG-Playbooks* and select **OK**.
+1. For Resource Group, select **Create New** and select resource group from drop down *rg-playbooks* and select **OK**.
 
 1. For region, select the appropriate region for your situation. The default region will likely be optimal.
 
