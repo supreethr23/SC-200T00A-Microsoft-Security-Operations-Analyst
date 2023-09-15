@@ -2,25 +2,33 @@
 
 ## Lab scenario
 
-![Lab overview.](../Media/sc200ex7.png)
-
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You are going to work with Log Analytics KQL queries and from there, you will create custom analytics rules to help discover threats and anomalous behaviors in your environment.
 
 Analytics rules search for specific events or sets of events across your environment, alert you when certain event thresholds or conditions are reached, generate incidents for your SOC to triage and investigate, and respond to threats with automated tracking and reMediation processes.
 
+>**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20detections)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+
+## Lab objectives
+ In this lab, you will Understand following:
+ 
+- Persistence Attack Detection
+- Privilege Elevation Attack Detection
+
 ## Estimated timing: 30 minutes
 
->**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20detections)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+## Architecture Diagram
+
+  ![Lab overview.](../Media/sc200ex7.png)
 
 ### Task 1: Persistence Attack Detection
 
->**Important:** The next steps are done in a different machine than the one you were previously working. Look for the Virtual Machine name references.
+>**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
 In this task, you will create a detection for the first attack of the previous exercise.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select your Microsoft Sentinel Workspace you created earlier.
+1. Select the Microsoft Sentinel Workspace you created earlier.
 
 1. Select **Logs** from the *General* section.
 
@@ -31,11 +39,9 @@ In this task, you will create a detection for the first attack of the previous e
     ```
    ![Lab overview.](../Media/sc200ex7temp.png)
     
-    >**Note:** A result with the event might take up to 5 minutes to appear. Wait until it does. If it does not appear, make sure you have rebooted WINServer as instructed in the previous exercise and that you have completed the Task #3 of the Learning Path 6 Lab, Exercise 2.
-    
-    >**Note:** Incase if the expected output doesn't show up, sometimes it might take an hour or more than hour for thr logs to generate. Wait until it does.
-
-1. The table *SecurityEvent* looks to have the data already normalized and easy for us to query. Expand the row to see all the columns related to the record.
+    >**Note:** A result with the event might take up to 5 minutes to appear. Wait until it does. If it does not appear, make sure you have rebooted WINServer as instructed in the previous exercise and that you have completed Task #3 of the Learning Path 6 Lab, Exercise 2.
+     
+1. The table *SecurityEvent* looks to have the data already normalized and is easy for us to query. Expand the row to see all the columns related to the record.
 
 1. From the results, we now know that the Threat Actor is using reg.exe to add keys to the Registry key and the program is located in C:\temp. **Run** the following statement to replace the *search* operator with the *where* operator in our query:
 
@@ -203,5 +209,10 @@ In this task, you will create a detection for the second attack of the previous 
 1. Select the **Next: Review and create >** button.
   
 1. On the *Review and create* tab, select the **Create** button to create the new Scheduled Analytics rule.
+
+## Review
+In this lab, you have completed the following:
+- Persistence Attack Detection
+- Privilege Elevation Attack Detection
 
 ## Proceed to Exercise 8

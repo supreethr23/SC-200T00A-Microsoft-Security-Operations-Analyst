@@ -2,15 +2,22 @@
 
 ## Lab scenario
 
-![Lab overview.](../Media/SC-200ex8.png)
-
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You already created Scheduled and Microsoft Security Analytics rules. The Fusion and Anomalies Analytics rules are also enabled in your environment. Now is the time to investigate the Incidents created by them.
 
 An incident can include multiple alerts. It is an aggregation of all the relevant evidence for a specific investigation. The properties related to the alerts, such as severity and status, are set at the incident level. After you let Microsoft Sentinel know what kinds of threats you are looking for and how to find them, you can monitor detected threats by investigating incidents.
 
+>**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Investigate%20incidents)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+
+## Lab objectives
+ In this lab, you will Understand following:
+
+ - Investigate an incident
+
 ## Estimated timing: 20 minutes
 
->**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Investigate%20incidents)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+## Architecture Diagram
+
+  ![Lab overview.](../Media/SC-200ex8.png)
 
 ### Task 1: Investigate an incident
 
@@ -42,10 +49,9 @@ In this task, you will investigate an incident.
 
     ![Lab overview.](../Media/comment.png)
 
-
 1. Hide the left blade by selecting the **<<** icon next to the owner.
 
-1. Review the **Incident timeline** window. For the *Startup RegKey* alert, select the ellipsis **(...) (1)** icon and then **Run playbook (2)**. You will see the *PostMessageTeams-OnAlert* playbook. This option help you to run playbooks manually.
+1. Review the **Incident timeline** window. For the *Startup RegKey* alert, select the ellipsis **(...) (1)** icon and then **Run playbook (2)**. You will see the *PostMessageTeams-OnAlert* playbook. This option helps you to run playbooks manually.
 
     ![Lab overview.](../Media/runplaybook.png)
 
@@ -75,7 +81,7 @@ In this task, you will investigate an incident.
 
       ![Lab overview.](../Media/clickinvestiagtion.png)
 
-1. **Hover** the WINServer entity icon and wait for new *exploration queries* to be shown. It looks that *Related Alerts* has more data on it. Select the name of the exploration query **Related Alerts** to bring them to the investigation graph or select **Events >** to investigate them with a KQL query.
+1. **Hover** the WINServer entity icon and wait for new *exploration queries* to be shown. It looks like *Related Alerts* has more data on it. Select the name of the exploration query **Related Alerts** to bring them to the investigation graph or select **Events >** to investigate them with a KQL query.
 
    ![Lab overview.](../Media/investigation.png) 
 
@@ -94,5 +100,10 @@ In this task, you will investigate an incident.
 1. Back in the incident page, in the left pane select **Active Status** and select **Closed**. 
 
 1. In the *Select classification* drop-down review the different options. After that, select **True positive - suspicious activity** and then select **Apply**.
+
+## Review
+In this lab, you have completed the following:
+
+- You have investigated an incident.
 
 ## Proceed to Exercise 9

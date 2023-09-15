@@ -1,6 +1,6 @@
 # LAB PREREQUISITES
 
-## Estimated timing: 30 minutes
+## Estimated timing: 40 minutes
 
 ## Prerequisites to be completed before proceeding to further exercises
 
@@ -30,20 +30,20 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. In the **Sign in** dialog box, copy and paste in the **Username** <inject key="AzureAdUserEmail"></inject> and then select Next.
 
- 1. In the **Enter password** dialog box, copy and paste in the Password  <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+ 1. In the **Enter password** dialog box, copy and paste in the Password <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
  1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
-   >**Note:** If you are not able to copy paste the username and password then:
-   > Go to hyper-v manager.
-   > On the left right click on **WINSERVER**.
-   > Click on hyper-v settings.
-   > From there click on allow enhanced mode policy Under **Server** and enable the option.
-   > Again  click on allow enhanced mode under **User** and enable the option.
+   >**Note:** If you are not able to copy-paste the username and password then:
+    - Go to Hyper-V manager.
+    - On the left-right click on **WINSERVER**.
+    - Click on Hyper-V settings.
+    - From there click on allow enhanced mode policy Under **Server** and enable the option.
+-	Again, click on allow enhanced mode under **User** and enable the option.
 
  1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
- 1. Onthe left side navigation pane under **Infrastructure** select **+ Add/Create** then click on **Add a Machine**.
+ 1. On the left side navigation pane under **Infrastructure** select **+ Add/Create** then click on **Add a Machine**.
 
  1. Select **+ Add**.
 
@@ -57,13 +57,13 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
     >**Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
  
- 1. Select a **eastus** region  
+ 1. Select a **east us** region  
 
  1. Review the *Server details* and *Connectivity method* options. Keep the default values and select **Next** to get to the Tags tab.
 
  1. Select **Next** to get to the Download and run script tab.
 
- 1. Scroll down and select the **Download** button. **Hint:** if your browser blocks the download, take action in the browser to allow it. In Edge Browser, select the ellipsis button (...) if needed and then select **Keep**. 
+ 1. Scroll down and select the **Download** button. **Hint:** If your browser blocks the download, take action in the browser to allow it. In Edge Browser, select the ellipsis button (...) if needed and then select **Keep**. 
 
  1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
 
@@ -89,7 +89,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. When the installation finishes, go back to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
 
- 1. Select **Refresh** until **WIN-xxxx**  name appears.
+ 1. Select **Refresh** until **WIN-xxxx** name appears.
 
     >**Note:** This could take a few minutes.
     
@@ -97,7 +97,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Click on **create**
 
- 1. Select **rg-defender** for the Resource group drop down.
+ 1. Select **rg-defender** for the Resource group drop-down.
 
  1. Enter *RG-Defender* and select **Ok**.
 
@@ -115,9 +115,9 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Select your existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
 
- 1. Select your Microsoft Sentinel Workspace you created.
+ 1. Select the Microsoft Sentinel Workspace you created.
  
- 1. Go to content hub and search for **Windows Security Events** and click on install. Then go to data connector page and refresh you should find  **Windows Security Events     via AMA**
+ 1. Go to the content hub search for **Windows Security Events** and click on install. Then go to the data connector page and refresh you should find **Windows Security Events via AMA**
 
  1. From the Data Connectors Tab, search for the **Windows Security Events via AMA** connector and select it from the list.
 
@@ -140,4 +140,3 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 1. Wait a few minutes and then select **Refresh** to see the new data collection rule listed.
 
 **PROCEED TO NEXT EXERCISE**
-

@@ -5,7 +5,18 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 >**Important:** This lab involves entering many KQL scripts into Microsoft Sentinel. The scripts were provided in a file at the beginning of this lab. An alternate location to download them is:  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
 
+## Lab objectives
+ In this lab, you will perform the following:
+ 
+- Run Basic KQL Statements
+- Create visualizations in KQL with the Render Operator
+- Build multi-table statements in KQL
+
 ## Estimated timing: 90 minutes
+
+## Architecture Diagram
+
+  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod4_L1_Ex1.png)
 
 ### Task 1: Create a Log Analytics Workspace
 
@@ -21,7 +32,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Select **+Create** from the command bar.
 
-1. Select "create new Resouce Group" give the name **RG-Defender**.
+1. Select "create new Resource Group" give the name **RG-Defender**.
 
 1. For the Name, enter something unique like **uniquenameDefender**.
 1. Select the default Region 
@@ -30,11 +41,11 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+> - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
   
 ### Task 2: Initialize the Microsoft Sentinel Workspace.
 
@@ -46,27 +57,27 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 ### Task 3: Connect the Windows security event connector.
 
-1. On the search bar type **microsoft sentinel** and select it
+1. On the search bar type **Microsoft sentinel** and select it
 
 1. select the created workspace
 
 1. On the left menu search for data connectors and click on it
 
-1. You can see there are no connector installed yet so go to content hub in the same page
+1. You can see there are no connectors installed yet so go to the content hub on the same page
 
-1. On the content hub page search for **Windows security event** and select , Install
+1. On the content hub page search for **Windows security event** and select, Install
 
-1. Once you recive the notification of successful installation go back to Data connector page and click on refresh
+1. Once you receive the notification of successful installation go back to the Data connector page and click on refresh
 
 1. You can see **Security events Via Legacy agent** and **windows security events via AMA**
 
-1. Select  **Security events Via Legacy agent** and click on **open connector page**
+1. Select **Security events Via Legacy agent** and click on **open connector page**
 
 1. Under configuration choose **Install agent on Azure Windows Virtual Machine** and select **Download & install agent for Azure Windows Virtual machines** 
 
 1. Select the **WIN 1** virtual machine and click on connect
 
-1. Then come back to Configuration and scroll down a bit you can find **Select wich events to stream** Click on **All Events**
+1. Then come back to Configuration and scroll down a bit you can find **Select which events to stream** Click on **All Events**
 
 1. Click on apply changes now if you refresh the data connector page you can see the status connected for **Security events Via Legacy agent**
 
@@ -78,7 +89,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. click the left menu and click on **Getting started**
 
-1. On the **Getting started** page, under the **Upgrade** tab, make sure your subscription is selected, and then select the **Upgrade** button at the bottom of the page. Wait for the *Trial started* notification to appear, it takes about 2 minutes. **Hint:** You can click the bell button on the top bar to review your Azure portal notifications.
+1. On the **Getting Started** page, under the **Upgrade** tab, make sure your subscription is selected, and then select the **Upgrade** button at the bottom of the page. Wait for the *Trial started* notification to appear, it takes about 2 minutes. **Hint:** You can click the bell button on the top bar to review your Azure portal notifications.
 
     ![Picture 1](../Media/SC-200-img2.png)
 
@@ -132,23 +143,24 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. Continue with the Install. Select **Finish** when complete.
 
-1. Go to the "Microsoft Defender for Cloud" portal and select **Inventory** from general section.
+1. Go to the "Microsoft Defender for Cloud" portal and select **Inventory** from the general section.
 
 1. The Server should appear in the list. You may have to select **Refresh** to see the update and it will take a few minutes.
 
     ![Picture 1](../Media/SC-200-img26.png)
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 6: Access the KQL testing area.
 
 In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
 
-1. Go-to microsoft sentinel select your log analytics workspace.
+1. Go-to Microsoft sentinel and select your log analytics workspace.
 
 1. On the left menu click on **logs** close if any tutorial window pops up
 
@@ -189,7 +201,7 @@ In this task, you will build basic KQL statements.
 
 1. Change back the **Time range** to **Last 24 hours** in the Query Window.
 
-1. The following statements demonstrates the **where** operator, which filters on a specific predicate. In the Query Window enter the following statements and run each query separately: 
+1. The following statements demonstrate the **where** operator, which filters on a specific predicate. In the Query Window enter the following statements and run each query separately: 
     >**Note:** You should select **Run** after entering each query from the code blocks below.
 
     ```KQL
@@ -237,7 +249,7 @@ In this task, you will build basic KQL statements.
     | where Account in (suspiciousAccounts)
     ```
 
-    >**Tip:** You can re-format the query easily by selecting the ellipsis (...) in the Query window and select **Format query**.
+    >**Tip:** You can re-format the query easily by selecting the ellipsis (...) in the Query window and selecting **Format query**.
 
 1. The following statement demonstrates the use of the **let** statement to declare a *dynamic table*. In the Query Window enter the following statement and select **Run**: 
 
@@ -291,7 +303,6 @@ In this task, you will build basic KQL statements.
     | order by StartDir desc, Process asc
     | project-away ProcessName
     ```
-
 
 ### Task 8: Analyze Results in KQL with the Summarize Operator
 
@@ -387,7 +398,6 @@ In this task, you will build KQL statements to aggregate data. **Summarize** gro
     | summarize make_set(Account) by Computer
     ```
 
-
 ### Task 9: Create visualizations in KQL with the Render Operator
 
 In this task, you will use generate visualizations with KQL statements.
@@ -409,7 +419,6 @@ In this task, you will use generate visualizations with KQL statements.
     | summarize count() by bin(TimeGenerated, 1m)
     | render timechart
     ```
-
 
 ### Task 10: Build multi-table statements in KQL
 
@@ -464,7 +473,6 @@ In this task, you will build multi-table KQL statements.
     ```
 
     >**Important:** The first table specified in the join is considered the Left table. The table after the **join** operator is the right table. When working with columns from the tables, the $left.Column name and $right.Column name is to distinguish which tables column are referenced. The **join** operator supports a full range of types: flouter, inner, innerunique, leftanti, leftantisemi, leftouter, leftsemi, rightanti, rightantisemi, rightouter, rightsemi.
-
 
 ### Task 11: Work with string data in KQL
 
@@ -524,7 +532,7 @@ In this task, you will work with structured and unstructured string fields with 
 
     >**Important:** Although the dynamic type appears JSON-like, it can hold values that the JSON model does not represent because they do not exist in JSON. Therefore, in serializing dynamic values into a JSON representation, values that JSON cannot represent are serialized into string values. 
 
-1. **[Read-Only]** The following statements demonstrates operators to manipulate JSON stored in string fields. Many logs submit data in JSON format, which requires you to know how to transform JSON data to fields that can be queried. In the Query Window enter the following statement and select **Run**: 
+1. **[Read-Only]** The following statements demonstrate operators to manipulate JSON stored in string fields. Many logs submit data in JSON format, which requires you to know how to transform JSON data into fields that can be queried. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
     SigninLogs | extend Location =  todynamic(LocationDetails)
@@ -556,6 +564,9 @@ In this task, you will work with structured and unstructured string fields with 
     ```
 
 ## Review
-In this lab, you perform log data analysis to search for malicious activity and display visualizations.
+In this lab, you have completed the following:
+   - Run Basic KQL Statements
+   - Create visualizations in KQL with the Render Operator
+   - Build multi-table statements in KQL
 
 ## You have successfully completed the lab.

@@ -6,10 +6,18 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 To explore the Defender for Endpoint attack mitigation capabilities, you will run two simulated attacks.
 
+>**Important:** Please wait until WIN1 appears on the Devices page before you continue. Otherwise, you might need to repeat this task to see the alerts that will be generated later.
+
+## Lab objectives
+ In this lab, you will perform the following:
+- Run Simulated Attacks
+- Investigate the Attacks
+
 ## Estimated timing: 60 minutes
 
->**Important:** Please wait until WIN1 appears in the Devices page before you continue. Otherwise, you might need to repeat this task to see the alerts that will be generated later.
+## Architecture Diagram
 
+  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod2_L1_Ex2.png)
 
 ### Task 1: Simulated Attacks
 
@@ -29,29 +37,28 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. In the new browser tab, locate the section named **Run the simulation** (page 5, starting at step 2) and follow the steps to run the attack. **Hint:** The simulation file *RS4_WinATP-Intro-Invoice.docm* can be found back in portal, just below the **Read the walkthrough** you selected in the previous step by selecting the **Get simulation file** button. 
 
-1. After downloading the file,  open the file with **Microsoft word** and enter the password as `WDATP!diy#`.
+1. After downloading the file,  open the file with **Microsoft Word** and enter the password as `WDATP!diy#`.
 
-1. In the Sign in dialog box, click on **Sign in** and copy and paste in the Username and password provided in the environment details page and select next.	
+1. In the Sign in dialog box, click on **Sign in** copy and paste in the Username and password provided in the environment details page, and select next.    
 
-1. Click **Enable Editing** if the document opens inProtectedView. If you see a subsequent security warning about macros being disabled.	
+1. Click **Enable Editing** if the document opens inProtectedView. If you see a subsequent security warning about macros being disabled.    
 
-1. To unblock the document, navigate to its location in File Explorer. In File Explorer, right-click the document, select Properties. In the General tab, mark the Unblock option under Security.	
+1. To unblock the document, navigate to its location in File Explorer. In File Explorer, right-click the document, and select Properties. In the General tab, mark the Unblock option under Security.   
 
-   ![Picture 1](../Media/SC-200-img21.png)	
+   ![Picture 1](../Media/SC-200-img21.png)  
 
-1. Close the **Microsoft word** and re-open from the File Explorer and enter the password as `WDATP!diy#` and after re-opening click on **Enable Content** and click on **OK**.	
+1. Close the **Microsoft Word** and re-open from the File Explorer and enter the password as `WDATP!diy#` after re-opening click on **Enable Content** and click on **OK**. 
 
-1. In the Command prompt pop-up press any key to close.	
+1. In the Command prompt pop-up press any key to close. 
    
    
-    >**Note:** **Congrats – you’re done running the attack!** The attack simulation ends here. A real attacker, if successful, would likely continue to scan for information, send collected reconnaissance information to a command-and-control (C&C) server, and use this information to move laterally and pursue other attractive targets.Next, let’s review and investigate the Defender for Endpoint alerts that surfaced the simulated attack. **Note:** Alerts should start to appear 15-30 minutes after the simulated backdoor is launched.	
+    >**Note:** **Congrats – you’re done running the attack!** The attack simulation ends here. A real attacker, if successful, would likely continue to scan for information, send collected reconnaissance information to a command-and-control (C&C) server, and use this information to move laterally and pursue other attractive targets. Next, let’s review and investigate the Defender for Endpoint alerts that surfaced in the simulated attack. **Note:** Alerts should start to appear 15-30 minutes after the simulated backdoor is launched.   
 
 1. Go back to the portal and in *Automated investigation (fileless attack)* click on **Copy simulation script**.
 
-1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.	
+1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.  
 
-    ![Picture 1](../Media/SC-200-module6-ex2-img5.png).	
-
+    ![Picture 1](../Media/SC-200-module6-ex2-img5.png). 
 
 1. At the Windows PowerShell, paste and run the provided script. A few seconds later, notepad.exe is started and the simulated attack code is injected into it. The simulated attack code attempts communication to an external IP address simulating the C&C server.
 
@@ -65,7 +72,7 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 1. Under **Incident tags** type "Tutorial" and select **Tutorial (Create new)** to create a new tag. 
 
-1. Select the toggle **Assign to**  and add your user account (Me) as the owner of the incident. 
+1. Select the toggle **Assign to** and add your user account (Me) as the owner of the incident. 
 
 1. Under **Classification**, expand the drop-down menu. 
 
@@ -77,8 +84,15 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 
 >**Warning:** The simulations and tutorials here are an excellent source of learning through practice.  Simulations and tutorials are being added and edited regularly in the portal.  However, some of these simulations & tutorials may interfere with the performance of the labs designed for this training course.  Only perform the simulations and tutorials recommended in the instructions provided for this lab when using the course provided Azure tenant.  You may perform the other simulations and tutorials *after* this training course is complete with this tenant.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+> - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
 ## Review
-
-In this lab you have oboarded a device and simulated the attacks
+In this lab, you have completed the following:
+- Ran Simulated Attacks
+- Investigated the Attacks
 
 ## You have successfully completed the lab.
