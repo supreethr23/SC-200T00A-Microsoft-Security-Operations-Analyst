@@ -10,7 +10,6 @@ You need to configure Microsoft Sentinel to perform Entity Behavior Analytics to
 
 ## Lab objectives
  In this lab, you will perform the following:
-
 - Understand the Attacks
 - Understand Detection Modeling
 

@@ -2,7 +2,6 @@
 
 ## Lab objectives
  In this lab, you will understand the following:
- 
 - Understand the Attacks.
   - Attack 1 - Persistence with Registry Key Add.
   - Attack 2 - User Add and Elevate Privilege

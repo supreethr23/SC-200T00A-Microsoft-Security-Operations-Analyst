@@ -10,7 +10,6 @@ An incident can include multiple alerts. It is an aggregation of all the relevan
 
 ## Lab objectives
  In this lab, you will Understand following:
-
  - Investigate an incident
 
 ## Estimated timing: 20 minutes
@@ -103,7 +102,6 @@ In this task, you will investigate an incident.
 
 ## Review
 In this lab, you have completed the following:
-
 - You have investigated an incident.
 
 ## Proceed to Exercise 9

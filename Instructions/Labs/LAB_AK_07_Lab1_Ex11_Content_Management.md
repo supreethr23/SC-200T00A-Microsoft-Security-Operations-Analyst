@@ -8,7 +8,6 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 ## Lab objectives
  In this lab, you will Understand following:
-
  - Create and export an analytical rule
  - Create our Azure DevOps environment
  - Connect Sentinel to Azure DevOps.
@@ -118,7 +117,6 @@ In this task, you will create an Azure DevOps repository.
     >**Note:** The *Failed* status is due to limitations in the hosted lab environment. You would normally see *Succeeded*. Then you can see in the *Analytics* the imported rule *Rule from Azure DevOps*.
 
 ## Review
-
 -  In this Lab we successfully explored Microsoft sentinel
 - We created a playbook and set it for automation.
 - We initiated the attack and created detections for those and investigated it

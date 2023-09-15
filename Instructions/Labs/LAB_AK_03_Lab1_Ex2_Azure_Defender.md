@@ -6,7 +6,6 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 ## Lab objectives
  In this lab, you will perform the following:
-
 - Explore Regulatory Compliance
 - Explore Security posture and recommendations
 - Mitigate security alerts

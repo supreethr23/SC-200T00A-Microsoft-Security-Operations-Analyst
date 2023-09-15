@@ -10,7 +10,6 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 ## Lab objectives
  In this lab, you will perform the following:
-
  - Create a hunting query
  - Create a NRT query rule
  - Create a Search
@@ -204,7 +203,6 @@ In this task, you will use a Search job to look for a C2.
 
 ## Review
 In this lab, you have completed the following:
-
 - We created a hunting query.
 - We created an NRT query rule.
 - We Created a Search.

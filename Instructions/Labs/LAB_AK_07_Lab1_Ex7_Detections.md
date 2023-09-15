@@ -10,7 +10,6 @@ Analytics rules search for specific events or sets of events across your environ
 
 ## Lab objectives
  In this lab, you will Understand following:
- 
 - Persistence Attack Detection
 - Privilege Elevation Attack Detection
 

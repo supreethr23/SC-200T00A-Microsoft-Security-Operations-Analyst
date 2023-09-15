@@ -7,8 +7,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 >**Important:** There are steps within the next Tasks that are done in different virtual machines. Look for the Virtual Machine name references.
 
 ## Lab objectives
- In this lab, you will perform the following:
- 
+ In this lab, you will perform the following: 
 - Connect a Linux Host using the Common Event Format connector
 - Connect a Linux host using the Syslog connector
 - Configure the facilities you want to collect and their severities for the Syslog connector
@@ -157,7 +156,6 @@ In this task, you will configure the Syslog collection facilities.
 
 ## Review 
 In this lab, you have completed the following:
- 
 - Connected to a Linux Host using the Common Event Format connector
 - Connect to a Linux host using the Syslog connector
 - Configured the facilities you want to collect and their severities for the Syslog connector

@@ -9,7 +9,6 @@ Microsoft Sentinel allows you to create custom workbooks across your data and al
 
 ## Lab objectives
  In this lab, you will Understand following:
-
  - Explore workbook templates
  - Save and modify a workbook template
  - Create a Workbook
@@ -155,7 +154,6 @@ overview of the workbook.
 
 ## Review
 In this lab, you have completed the following:
-
  - Explored workbook templates
  - Saved and modified a workbook template
  - Created a Workbook
