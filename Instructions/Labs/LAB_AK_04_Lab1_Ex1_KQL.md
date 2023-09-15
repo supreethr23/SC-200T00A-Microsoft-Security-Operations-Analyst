@@ -7,10 +7,19 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 ## Lab objectives
  In this lab, you will perform the following:
- 
+
+- Task 1: Create a Log Analytics Workspace
+- Task 2: Initialize the Microsoft Sentinel Workspace.
+- Task 3: Connect the Windows security event connector.
+- Task 4: Enable Microsoft Defender for Cloud
 - Run Basic KQL Statements
-- Create visualizations in KQL with the Render Operator
-- Build multi-table statements in KQL
+- Task 5: Protect an On-Premises Server.
+- Task 6: Access the KQL testing area.
+- Task 7: Run Basic KQL Statements
+- Task 8: Analyze Results in KQL with the Summarize Operator
+- Task 9: Create visualizations in KQL with the Render Operator
+- Task 10: Build multi-table statements in KQL
+- Task 11: Work with string data in KQL
 
 ## Estimated timing: 90 minutes
 
@@ -564,8 +573,17 @@ In this task, you will work with structured and unstructured string fields with 
 
 ## Review
 In this lab, you have completed the following:
-   - Run Basic KQL Statements
-   - Create visualizations in KQL with the Render Operator
-   - Build multi-table statements in KQL
+- Created a Log Analytics Workspace
+- Initialized the Microsoft Sentinel Workspace.
+- Connected the Windows security event connector.
+- Enabled Microsoft Defender for Cloud
+- Ran Basic KQL Statements
+- Protected an On-Premises Server.
+- Able to access the KQL testing area.
+- Ran Basic KQL Statements
+- Analyzed Results in KQL with the Summarize Operator
+- Created visualizations in KQL with the Render Operator
+- Built multi-table statements in KQL
+- Worked with string data in KQL
 
 ## You have successfully completed the lab.

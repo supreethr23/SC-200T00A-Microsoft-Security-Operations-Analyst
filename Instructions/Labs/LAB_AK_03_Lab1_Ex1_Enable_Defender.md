@@ -6,11 +6,11 @@ You're a Security Operations Analyst working at a company that is implementing c
 
 ## Lab objectives
 In this lab, you will perform the following:
-- Access the Azure portal and set up a Subscription
-- Create a Log Analytics Workspace
-- Enable Microsoft Defender for Cloud
-- Install Azure Arc on an On-Premises Server
-- Protect an On-Premises Server
+- Task 1: Access the Azure portal and set up a Subscription
+- Task 2: Create a Log Analytics Workspace
+- Task 3: Enable Microsoft Defender for Cloud
+- Task 4: Install Azure Arc on an On-Premises Server
+- Task 5: Protect an On-Premises Server
 
 ## Estimated timing: 40 minutes
 

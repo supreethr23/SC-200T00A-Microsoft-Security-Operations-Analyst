@@ -8,7 +8,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 ## Lab objectives
  In this lab, you will Understand the following:
- -  Deploy the Registry Schema ASIM parser.
+ -  Task 1: Deploy the Registry Schema ASIM parser.
 
 ## Estimated timing: 20 minutes
 

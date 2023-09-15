@@ -8,7 +8,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 ## Lab objectives
  In this lab, you will perform the following:
- - Activate a Microsoft Security Rule
+ - Task 1: Activate a Microsoft Security Rule
 
 ## Estimated timing: 20 minutes
 

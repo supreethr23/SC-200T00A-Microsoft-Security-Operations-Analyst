@@ -11,9 +11,9 @@ With a playbook, you can help automate and orchestrate your threat response, int
 ## Lab Objectives
   
 After completing this lab, you will be able to:
-- Create a Security Operations Center Team in Microsoft Teams
-- Create a Playbook in Microsoft Sentinel
-- Update a Playbook in Microsoft Sentinel
+- Task 1: Create a Security Operations Center Team in Microsoft Teams
+- Task 2: Create a Playbook in Microsoft Sentinel
+- Task 3: Update a Playbook in Microsoft Sentinel
 
 ## Estimated timing: 30 minutes
 

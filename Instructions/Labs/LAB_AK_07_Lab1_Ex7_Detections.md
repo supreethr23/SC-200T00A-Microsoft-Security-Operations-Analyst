@@ -10,8 +10,8 @@ Analytics rules search for specific events or sets of events across your environ
 
 ## Lab objectives
  In this lab, you will Understand following:
-- Persistence Attack Detection
-- Privilege Elevation Attack Detection
+- Task 1: Persistence Attack Detection
+- Task 2: Privilege Elevation Attack Detection
 
 ## Estimated timing: 30 minutes
 

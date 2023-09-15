@@ -10,8 +10,8 @@ You need to configure Microsoft Sentinel to perform Entity Behavior Analytics to
 
 ## Lab objectives
  In this lab, you will perform the following:
-- Understand the Attacks
-- Understand Detection Modeling
+- Task 1: Explore Entity Behavior 
+- Task 2: Confirm and review Anomalies rules
 
 ## Estimated timing: 20 minutes
 

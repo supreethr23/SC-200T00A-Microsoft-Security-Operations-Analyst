@@ -5,9 +5,10 @@
 
 ## Lab objectives
 In this lab, you will perform:
-- Create a Group 
-- Apply Microsoft Defender for Office 365 preset security policies.
-- Preparing the Microsoft 365 Defender workspace.
+- Task 1: Create a Group 
+- Task 2: Apply Microsoft Defender for Office 365 preset security policies
+- Task 3: Preparing the Microsoft 365 Defender workspace
+-
     
 ## Estimated timing: 120 minutes
 

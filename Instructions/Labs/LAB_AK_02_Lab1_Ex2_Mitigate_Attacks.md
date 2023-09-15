@@ -10,8 +10,8 @@ To explore the Defender for Endpoint attack mitigation capabilities, you will ru
 
 ## Lab objectives
  In this lab, you will perform the following:
-- Run Simulated Attacks
-- Investigate the Attacks
+- Task 1: Run Simulated Attacks
+- Task 2: Investigate the Attacks
 
 ## Estimated timing: 60 minutes
 

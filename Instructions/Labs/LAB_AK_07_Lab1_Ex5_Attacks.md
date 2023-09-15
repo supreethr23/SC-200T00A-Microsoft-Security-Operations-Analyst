@@ -2,11 +2,11 @@
 
 ## Lab objectives
  In this lab, you will understand the following:
-- Understand the Attacks.
+- Task 1: Understand the Attacks
   - Attack 1 - Persistence with Registry Key Add.
   - Attack 2 - User Add and Elevate Privilege
   - Attack 3 - DNS / C2 
-- Understand Detection Modeling.
+- Task 2: Understand Detection Modeling.
 
 ## Estimated timing: 10 minutes
 

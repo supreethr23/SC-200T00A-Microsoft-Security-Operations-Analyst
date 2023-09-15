@@ -8,9 +8,9 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 ## Lab objectives
  In this lab, you will perform the following:
-- Persistence Attack with Registry Key Add 
-- Command and Control Attack with DNS
-- Privilege Elevation Attack with User Add
+- Task 1: Persistence Attack with Registry Key Add 
+- Task 2: Command and Control Attack with DNS
+- Task 3: Privilege Elevation Attack with User Add
 
 ## Estimated timing: 30 minutes
 

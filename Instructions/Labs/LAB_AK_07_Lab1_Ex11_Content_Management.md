@@ -8,9 +8,9 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 ## Lab objectives
  In this lab, you will Understand following:
- - Create and export an analytical rule
- - Create our Azure DevOps environment
- - Connect Sentinel to Azure DevOps.
+ - Task 1: Create and export an analytical rule
+ - Task 2: Create our Azure DevOps environment
+ - Task 3: Connect Sentinel to Azure DevOps.
 
 ## Estimated timing: 30 minutes
 

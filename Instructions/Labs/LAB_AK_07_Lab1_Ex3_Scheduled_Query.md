@@ -10,8 +10,11 @@ Analytics rules search for specific events or sets of events across your environ
 
 ## Lab objectives
  In this lab, you will perform the following:
-- Create a Scheduled Query
-- Test the new rule
+- Task 1: Create a Scheduled Query
+- Task 2: Test the new rule
+- Task 3: Create a Scheduled Query.
+- Task 4: Test our new rule.
+
 
 ## Estimated timing: 40 minutes
 

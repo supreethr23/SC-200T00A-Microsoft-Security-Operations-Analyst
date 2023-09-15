@@ -6,9 +6,9 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 ## Lab objectives
  In this lab, you will perform the following:
-- Explore Regulatory Compliance
-- Explore Security posture and recommendations
-- Mitigate security alerts
+- Task 1: Explore Regulatory Compliance
+- Task 2: Explore Security posture and recommendations
+- Task 3: Mitigate security alerts
   
 ## Estimated timing: 40 minutes
 

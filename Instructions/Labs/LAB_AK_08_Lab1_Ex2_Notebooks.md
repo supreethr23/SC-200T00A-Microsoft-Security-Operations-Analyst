@@ -5,7 +5,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 ## Lab objectives
  In this lab, you will Understand the following:
-  -  Explore Notebooks
+  -  Task 1: Explore Notebooks
 
 ## Estimated time: 30 minutes
 

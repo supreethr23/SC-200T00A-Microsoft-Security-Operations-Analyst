@@ -10,9 +10,11 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 ## Lab objectives
 In this lab, you will perform the following:
-- Initialize Microsoft Defender for Endpoint
-- Onboard a Device
-- Configure Roles and Device Groups
+- Task 1: Preparing the Microsoft 365 Defender workspace
+- Task 2: Initialize Microsoft Defender for Endpoint
+- Task 3: Onboard a Device
+- Task 4: Configure Roles
+- Task 5: Configure Device Groups
 
 ## Estimated timing: 60 minutes
 
@@ -190,9 +192,11 @@ In this task, you will configure device groups that allow for access control and
 
 ### Review
 In this lab, you have completed the following:
+- Prepared the Microsoft 365 Defender workspace
 - Initialized Microsoft Defender for Endpoint
 - Onboarded a Device
-- Configured Roles and Device Groups
+- Configured Roles
+- Configured Device Groups
 
 ## Proceed to Exercise 2
 
