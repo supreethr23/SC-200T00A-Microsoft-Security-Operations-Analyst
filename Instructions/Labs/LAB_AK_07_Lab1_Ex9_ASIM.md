@@ -47,11 +47,13 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 1. Hover the **vimRegistryEventMicrosoftSecurityEvents** *workspace parser* and then select **Load the function code**.
 
+    ![Picture 1](../Media/securityeventsfunctioncode.png)
+
 1. Review the KQL that is parsing the Event ID 4657 to simplifying your analysis of the data in the Microsoft Sentinel workspace.
 
 1. **Run** the query. You should not get any result nor errors, it is just for validation purposes.
 
-1. Go back to the *Schema and Filter* blade and now hover the **inRegistry** *unifying parser* and then select **Load the function code**.
+1. Go back to the *Schema and Filter* blade and now hover the **imRegistry** *unifying parser* and then select **Load the function code**.
 
 1. Notice that the unifying parsers uses the *union* operator to run all the workspace parsers at once. If you develop a parser for the Registry Schema you will need to add it here.
 
