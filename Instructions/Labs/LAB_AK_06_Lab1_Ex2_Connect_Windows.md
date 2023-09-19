@@ -7,17 +7,10 @@
 ## Lab objective
  In this lab, you will connect to Windows virtual machines, both within and outside of Azure, to Microsoft Sentinel using data connectors.
 
- ## Objective
-  
-After completing this lab, you will be able to connect Windows virtual machines, both within and outside of Azure, to Microsoft Sentinel using data connectors.
-
 ## Estimated timing: 40 minutes
 
 ## Architecture Diagram
 
-
-  ![](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex2.png)
-=======
   ![Picture 1](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex2.png)
  
 ### Task 1: Preparing the Microsoft 365 Defender workspace
