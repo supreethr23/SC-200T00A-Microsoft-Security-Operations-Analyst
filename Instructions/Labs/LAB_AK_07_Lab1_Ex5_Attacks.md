@@ -1,34 +1,22 @@
 # Module 7 - Lab 1 - Exercise 5 - Understand Detection Modeling
 
-
-### Lab overview
+### Lab Scenario
 
 In this lab, you will understand the attacks and about Detection Modeling
 
-## Objective
-  
-After completing this lab, you will:
-
-- Understand the Attacks
-- Understand Detection Modeling
-=======
 ## Lab objectives
  In this lab, you will understand the following:
 - Task 1: Understand the Attacks
-  - Attack 1 - Persistence with Registry Key Add.
-  - Attack 2 - User Add and Elevate Privilege
-  - Attack 3 - DNS / C2 
+- Attack 1 - Persistence with Registry Key Add.
+- Attack 2 - User Add and Elevate Privilege
+- Attack 3 - DNS / C2 
 - Task 2: Understand Detection Modeling.
 
 ## Estimated timing: 10 minutes
 
 ## Architecture Diagram
 
-
-![Lab overview.](../Media/sc-200ex5.png)
-=======
   ![Lab overview.](../Media/sc-200ex5.png)
-
 
 ### Task 1: Understand the Attacks
 
