@@ -5,7 +5,19 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 >**Important:** This lab involves entering many KQL scripts into Microsoft Sentinel. The scripts were provided in a file at the beginning of this lab. An alternate location to download them is:  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
 
+## Objective
+  
+  After completing this lab, you will be able to:
+
+- Run Basic KQL Statements
+- Create visualizations in KQL with the Render Operator
+- Build multi-table statements in KQL
+
 ## Estimated timing: 90 minutes
+
+## Architecture Diagram
+
+ ![](../Media/SC200-Lab_Diagrams_Mod4_L1_Ex1.png)
 
 ### Task 1: Create a Log Analytics Workspace
 
