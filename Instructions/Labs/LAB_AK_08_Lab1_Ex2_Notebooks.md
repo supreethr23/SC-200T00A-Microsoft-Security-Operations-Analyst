@@ -3,14 +3,9 @@
 ## Lab scenario
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You need to explore the benefits of threat hunting with Microsoft Sentinel Notebooks.
 
-## Objective
-  
-After completing this lab, you will be able to explore Notebooks
-=======
 ## Lab objectives
  In this lab, you will Understand the following:
   -  Task 1: Explore Notebooks
-
 
 ## Estimated time: 30 minutes
 
