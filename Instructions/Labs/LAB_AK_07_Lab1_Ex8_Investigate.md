@@ -6,6 +6,10 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 An incident can include multiple alerts. It is an aggregation of all the relevant evidence for a specific investigation. The properties related to the alerts, such as severity and status, are set at the incident level. After you let Microsoft Sentinel know what kinds of threats you are looking for and how to find them, you can monitor detected threats by investigating incidents.
 
+## Objective
+
+By end of this exercise you will be able to investigate the incidents in terms of severity and status using microsoft sentinel.
+
 ## Estimated timing: 20 minutes
 
 ## Architecture Diagram
