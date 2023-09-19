@@ -4,7 +4,20 @@
 
 You're a Security Operations Analyst working at a company that is implementing cloud workload protection with Microsoft Defender for Cloud.  In this lab, you will enable Microsoft Defender for Cloud.
 
+## Objective
+  
+  After completing this lab, you will be able to:
+
+- Create a Log Analytics Workspace
+- Enable Microsoft Defender for Cloud
+- Install Azure Arc on an On-Premises Server.
+- Protect an On-Premises Server
+
 ## Estimated timing: 40 minutes
+
+## Architecture Diagram
+
+   ![](../Media/SC200-Lab_Diagrams_Mod3_L1_Ex1.png)
 
 ### Task 1: Access the Azure portal and set up a Subscription
 
