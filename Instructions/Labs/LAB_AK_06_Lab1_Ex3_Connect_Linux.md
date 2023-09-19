@@ -13,24 +13,11 @@ You are a Security Operations Analyst working at a company that implemented Micr
 - Task 3: Connect a Linux host using the Syslog connector
 - Task 4: Configure the facilities you want to collect and their severities for the Syslog connector
 
-## Objective
-  
-After completing this lab, you will be able to:
-
-- Connect a Linux Host using the Common Event Format connector
-- Connect a Linux host using the Syslog connector
-- Configure the facilities you want to collect and their severities for the Syslog connector
-
 ## Estimated timing: 40 minutes
 
 ## Architecture Diagram
 
-
   ![](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex3.png)
-
-  >**Important:** There are steps within the next Tasks that are done in different virtual machines. Look for the Virtual Machine name references
-=======
-  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex3.png)
 
 ### Task 1: Access the Microsoft Sentinel Workspace
 
