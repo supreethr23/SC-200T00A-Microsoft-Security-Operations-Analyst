@@ -2,9 +2,20 @@
 
 ## Lab scenario
 
-You're a Security Operations Analyst working at a company that is implementing Microsoft Sentinel. You're responsible for setting up the Microsoft Sentinel environment to meet the company requirement to minimize cost, meet compliance regulations, and provide the most manageable environment for your security team to perform their daily job responsibilities.
+You're a Security Operations Analyst working at a company that is implementing Microsoft Sentinel. You're responsible for setting up the Microsoft Sentinel environment to meet the company requirements to minimize cost, meet compliance regulations, and provide the most manageable environment for your security team to perform their daily job responsibilities.
+
+## Lab objectives
+ In this lab, you will perform the following:
+- Task 1: Create a Log Analytics Workspace
+- Task 2: Initialize the Microsoft Sentinel Workspace
+- Task 3: Create a Watchlist
+- Task 4: Create a Threat Indicator.
 
 ## Estimated timing: 90 minutes
+
+## Architecture Diagram
+
+  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod5_L1_Ex1.png)
 
 ### Task 1: Create a Log Analytics Workspace
 
@@ -22,9 +33,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Click on **create**
 
-1. Select **rg-defender** for the Resource group drop down.
-
-1. Enter *RG-Defender* and select **Ok**.
+1. Select **rg-defender** for the Resource group drop-down.
 
 1. For the Name, enter **uniquenameDefender**
 
@@ -38,7 +47,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Click on + Create.
 
-1. Next, In Add Microsoft Sentinel to a workspace page.
+1. Next, Add Microsoft Sentinel to a workspace page.
 
 1. Select your existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
 
@@ -46,9 +55,9 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 3: Create a Watchlist
 
@@ -72,7 +81,7 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. Close Notepad.
 
-1. In Microsoft Sentinel,On the left menu, select the **Watchlist** option under the Configuration area.
+1. In Microsoft Sentinel, On the left menu, select the **Watchlist** option under the Configuration area.
 
 1. Select **+ Add new** from the command bar.
 
@@ -124,7 +133,7 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
     **Note:** It could take a couple of minutes for the indicator to appear.
 
-1. On the left Menu , Select the **Logs** option in the General area. You may need to disable the "Always show queries" option and close the *Queries* window to get run the statements.
+1. On the left Menu, Select the **Logs** option in the General area. You may need to disable the "Always show queries" option and close the *Queries* window to run the statements.
 
 1. Run the following KQL statement.
 
@@ -142,7 +151,17 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
    ![Picture 1](../Media/SC-200-img50.png)
 
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ## Review
-- In this lab you create a log analytics workspace and attach it to sentinel then create a watchlist and threat indicator in sentinel in order to detect malicious activity
+In this lab, you have completed the following:
+- Created a Log Analytics Workspace
+- Initialized the Microsoft Sentinel Workspace
+- Created a Watchlist
+- Created a Threat Indicator.
 
 ## You have successfully completed the lab.

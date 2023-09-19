@@ -4,8 +4,20 @@
 
 You're a Security Operations Analyst working at a company that is implementing cloud workload protection with Microsoft Defender for Cloud.  In this lab, you will enable Microsoft Defender for Cloud.
 
+## Lab objectives
+In this lab, you will perform the following:
+- Task 1: Access the Azure portal and set up a Subscription
+- Task 2: Create a Log Analytics Workspace
+- Task 3: Enable Microsoft Defender for Cloud
+- Task 4: Install Azure Arc on an On-Premises Server
+- Task 5: Protect an On-Premises Server
+
 ## Estimated timing: 40 minutes
 
+## Architecture Diagram
+
+  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod3_L1_Ex1.png)
+  
 ### Task 1: Access the Azure portal and set up a Subscription
 
 In this task, you will set up an Azure Subscription required to complete this lab and future labs.
@@ -30,15 +42,15 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Select **+Create** from the command bar.
 
-1. Select Resouce Group **RG-Defender** from the drop down.
+1. Select Resource Group **RG-Defender** from the drop down.
 
 1. For the Name, enter something unique like **uniquenameDefender**.
+
 1. Select the default Region 
 
 1. Select **Review + Create**.
 
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
-
 
 ### Task 3: Enable Microsoft Defender for Cloud
 
@@ -48,7 +60,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. click the left menu and click on **Getting started**
 
-1. On the **Getting started** page, under the **Upgrade** tab, make sure your subscription is selected, and then select the **Upgrade** button at the bottom of the page. Wait for the *Trial started* notification to appear, it takes about 2 minutes. **Hint:** You can click the bell button on the top bar to review your Azure portal notifications.
+1. On the **Getting Started** page, under the **Upgrade** tab, make sure your subscription is selected and then select the **Upgrade** button at the bottom of the page. Wait for the *Trial started* notification to appear, it takes about 2 minutes. **Hint:** You can click the bell button on the top bar to review your Azure portal notifications.
 
     ![Picture 1](../Media/SC-200-img2.png)
 
@@ -74,20 +86,19 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Close the Defender plans page by selecting the 'X' on the upper right of the page to go back to the **Environment settings**
 
-
 ### Task 4: Install Azure Arc on an On-Premises Server
 
 In this task, you will install Azure Arc on an on-premises server to make onboarding easier.
 
 >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
-1. Click on Start button, search for **Hyper-V** from the bottom windows search bar and select to open.
+1. Click on the Start button, search for **Hyper-V** from the bottom windows search bar, and select to open.
 
 1. Click on WIN1    
 
-1. Select and right click on the **WINServer** virtual machine from the virtual machine section in the middle and select start, then again right-click on the **WINServer** virtual machine and select **connect**.
+1. Select and right-click on the **WINServer** virtual machine from the virtual machine section in the middle and select start, then again right-click on the **WINServer** virtual machine and select **connect**.
 
-   >**Note:** To enable clipboard Right click on WIN1-xxxx and select hyper-v Settings and click on **enhanced session mode** and check the **use enhanced mode** click on apply Then restart your virtual machine, once vm starts you will get a configuration pop-up click on show more options and select local resources and make sure the clipboard is selected
+   >**Note:** To enable the clipboard Right-click on WIN1-xxxx and select Hyper-V Settings click on **enhanced session mode** and check the **use enhanced mode** click on apply Then restart your virtual machine, once vm starts you will get a configuration pop-up click on show more options and select local resources and make sure the clipboard is selected
 
 1. It asks you to press ctrl+alt+dlt, Go-to **actions** in the top of VM toolbar and click on **ctrl+alt+dlt** (**Skip if not asked**)
 
@@ -113,7 +124,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Select the Resource group you created earlier. **Hint:**RG-Defender**
 
-    **Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
+    **Note:** If you haven't already created a resource group, open another tab create the resource group, and start over.
 
 1. Select a Region in this case choose **EAST-US**   
 
@@ -145,18 +156,17 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
     **Note:** This could take a few minutes.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.   
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 5: Protect an On-Premises Server
 
 In this task, you will manually install the required agent on the Windows Server.
 
-1. On the WIN1 Virtual machine, Go to **Microsoft Defender for Cloud** and select the **Getting Started** page.
+1. On the WIN1 Virtual machine, go to **Microsoft Defender for Cloud** and select the **Getting Started** page.
 
 1. Select the **Get Started** tab.
 
@@ -184,6 +194,20 @@ In this task, you will manually install the required agent on the Windows Server
 
     ![Picture 1](../Media/SC-200-img26.png)
 
-1. You can move on to the next lab and return later to the **Microsoft Defender for Cloud**. Your server will appear in the **Inventory** section. 
+1. You can move on to the next lab and return later to the **Microsoft Defender for Cloud**. Your server will appear in the **Inventory** section.
+
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+### Review
+In this lab, you have completed the following:
+- Able to access the Azure portal and set up a Subscription.
+- Created a Log Analytics Workspace
+- Enabled Microsoft Defender for Cloud
+- Installed Azure Arc on an On-Premises Server.
+- Protected an On-Premises Server
 
 # Proceed to Exercise 2

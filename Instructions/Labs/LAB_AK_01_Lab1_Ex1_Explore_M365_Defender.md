@@ -1,17 +1,20 @@
 # Module 1 - Lab 1 - Exercise 1 - Explore Microsoft 365 Defender 
 
 ## Lab scenario
-
-You are a Security Operations Analyst working at a company that is implementing Microsoft 365 Defender. You start by assigning preset security policies in EOP and Microsoft Defender for Office 365.
+ You are a Security Operations Analyst working at a company that is implementing Microsoft 365 Defender. You start by assigning preset security policies in EOP and Microsoft Defender for Office 365.
 
 ## Lab objectives
 In this lab, you will perform:
-
-+ Task 1: Create a Group 
-+ Task 2: Apply Microsoft Defender for Office 365 preset security policies
-+ Task 3: Preparing the Microsoft 365 Defender workspace
+- Task 1: Create a Group 
+- Task 2: Apply Microsoft Defender for Office 365 preset security policies
+- Task 3: Preparing the Microsoft 365 Defender workspace
+-
     
 ## Estimated timing: 120 minutes
+
+## Architecture Diagram
+
+  ![Picture 1](../Media/SC200-Lab_M1_L1_Ex1.png)
 
 ### Task 1: Create a Group 
 
@@ -21,13 +24,13 @@ In this lab, you will perform:
 
 1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
-1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
+1. On the **Stay signed in? ** dialog box, select the Don’t show this again check box and then select **No**.
 
 1. In the Search bar of the Azure portal, type **Azure Active Directory**, then select Azure Active Directory.
 
 1. Select **Groups** and then click on **New group**.
 
-1. Enter the below details for New group page :
+1. Enter the below details for new group page:
 
    |Setting|Value|
     |---|---|
@@ -79,7 +82,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. In the **Apply Defender for Office 365 protection** section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
-1. In the *Impersonation protection* section, select **Next** for next all steps i.e (4x times) to continue.
+1. In the *Impersonation protection* section, select **Next** for next all steps i.e. (4x times) to continue.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
@@ -89,7 +92,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. In the *Apply protection to* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
-1. In the *Impersonation protection* section, select **Next** for next all steps i.e (4x times) to continue.
+1. In the *Impersonation protection* section, select **Next** for next all steps i.e. (4x times) to continue.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
@@ -103,15 +106,16 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Review
-In this lab, you created a group, applied microsoft 365 defender policy and also created a defender workspace.
+ In this lab, you have completed the following:
+   - Created a Group
+   - Applied Microsoft Defender for Office 365 preset security policies
+   - Prepared the Microsoft 365 Defender workspace
 
 ## You have successfully completed the lab
-

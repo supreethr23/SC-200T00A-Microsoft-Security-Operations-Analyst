@@ -1,16 +1,23 @@
 # Module 7 - Lab 1 - Exercise 10 - Create workbooks
 
 ## Lab scenario
-
-![Lab overview.](../Media/SC-200ex10.png)
-
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. Once you have connected your data sources to Microsoft Sentinel, you can visualize and monitor the data using the Microsoft Sentinel adoption of Azure Monitor Workbooks, which provides versatility in creating custom dashboards. 
 
-Microsoft Sentinel allows you to create custom workbooks across your data, and also comes with built-in workbook templates to allow you to quickly gain insights across your data as soon as you connect a data source.
+Microsoft Sentinel allows you to create custom workbooks across your data and also comes with built-in workbook templates to allow you to quickly gain insights across your data as soon as you connect a data source.
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20workbooks)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
+## Lab objectives
+ In this lab, you will Understand following:
+ - Task 1: Explore workbook templates
+ - Task 2: Save and modify a workbook template
+ - Task 3: Create a Workbook
+
 ## Estimated timing: 20 minutes
+
+## Architecture Diagram
+
+ ![Lab overview.](../Media/SC-200ex10.png)
 
 ### Task 1: Explore workbook templates
 
@@ -24,10 +31,9 @@ In this task, you will explore the Microsoft Sentinel workbook templates.
 
 1. Search for and select the **Azure Activity** template workbook. In the right pane, scroll down and select the **View template** button.
 
-1. Review the contents of the workbook. It shows insights of your Azure subscription operations by collecting and analyzing the data from the Activity Log.
+1. Review the contents of the workbook. It shows insights into your Azure subscription operations by collecting and analyzing the data from the Activity Log.
 
 1. Close the workbook by selecting the **X** in the top-right corner.
-
 
 ### Task 2: Save and modify a workbook template
 
@@ -53,7 +59,7 @@ In this task, you will save a workbook template and modify it.
 
 1. In the *Edit column settings* blade that appears, within *Columns* select **Activities**.
 
-1. Change the value for *Column renderer* to **Heatmap**. For *Color palette*, scroll down to select **32-color categorical**.
+1. Change the value for *Column renderer* to **Heatmap**. For *Colour palette*, scroll down to select **32-color categorical**.
 
 1. Select **Save and Close**. Notice the change in the *Activities* column.
 
@@ -62,7 +68,6 @@ In this task, you will save a workbook template and modify it.
 1. Now select **Done Editing** at the top menu and select the **Save** icon. 
 
 1. Close the workbook by selecting the **X** in the top-right corner.
-
 
 ### Task 3: Create a Workbook
 
@@ -81,15 +86,15 @@ overview of the workbook.
 
 1. Type *# My workbook* in a new line on top of *## New workbook*.
 
-1. Select **Done Editing** on the bottom of this section, *Editing text item: text - 2*. Notice that your header increased size and name changed.
+1. Select **Done Editing** on the bottom of this section, *Editing text item: text - 2*. Notice that your header increased in size and name changed.
 
-1. Select **Edit** below the only visible barchart graph.
+1. Select **Edit** below the only visible bar chart graph.
 
 1. Review the KQL statement that provides a *union* statement of counts across all tables.
 
 1. Scroll down and select the **Done Editing** on the bottom menu, for the *Editing query item: query - 2*.
 
-1. Select the ellipsis **...** next to the *Edit* button of the barchart graph, then select **+ Add**, then select **Add query**.
+1. Select the ellipsis **...** next to the *Edit* button of the bar chart graph, then select **+ Add**, then select **Add query**.
 
 1. Type **SecurityEvent** into the query box.
 
@@ -97,7 +102,7 @@ overview of the workbook.
 
 1. Change the *Visualization* to **Time chart**.
 
-1. Select **Style** tab from the query's command bar.
+1. Select the **Style** tab from the query's command bar.
 
 1. Select the **Make this item a custom width** box.
 
@@ -147,5 +152,10 @@ overview of the workbook.
 
 1. On the right pane, select **View saved workbook** to review your workbook.
 
-## Proceed to Exercise 11
+## Review
+In this lab, you have completed the following:
+ - Explored workbook templates
+ - Saved and modified a workbook template
+ - Created a Workbook
 
+## Proceed to Exercise 11

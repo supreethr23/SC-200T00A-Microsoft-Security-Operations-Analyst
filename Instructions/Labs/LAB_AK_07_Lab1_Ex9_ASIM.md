@@ -2,14 +2,19 @@
 
 ## Lab scenario
 
-![Lab overview.](../Media/SC-200ex9.png)
-
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You need to model ASIM parsers for a specific Windows registry event. These simplified parsers will be finalized at a later time following the [Advanced Security Information Model (ASIM) Registry Event normalization schema reference](https://docs.microsoft.com/en-us/azure/sentinel/registry-event-normalization-schema).
+
+>**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20Advanced%20Security%20Information%20Model%20Parsers)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+
+## Lab objectives
+ In this lab, you will Understand the following:
+ -  Task 1: Deploy the Registry Schema ASIM parser.
 
 ## Estimated timing: 20 minutes
 
->**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20Advanced%20Security%20Information%20Model%20Parsers)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+## Architecture Diagram
 
+ ![Lab overview.](../Media/SC-200ex9.png)
 
 ### Task 1: Deploy the Registry Schema ASIM parser. 
 
@@ -21,7 +26,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 1. On the right pane, select the **Onboard community content** link. This will open a new tab in the Edge Browser for Microsoft Sentinel GitHub content. **Hint:** You might need to scroll right to see the link. Alternatively, follow this link instead: [Microsoft Sentinel on GitHub](https://github.com/Azure/Azure-Sentinel).
 
-1. Select the **ASIM** folder. In here, you can deploy a template that contains all ASIM parsers, but we will only focus on the Registry Schema.
+1. Select the **ASIM** folder. Here, you can deploy a template that contains all ASIM parsers, but we will only focus on the Registry Schema.
 
 1. Scroll down and next to **Registry**, select the **Deploy to Azure** button.
 
@@ -35,7 +40,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select your Microsoft Sentinel Workspace you created earlier.
+1. Select the Microsoft Sentinel Workspace you created earlier.
 
 1. Select **Logs** under the *General* left menu.
 
@@ -43,7 +48,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 1. Select the **Functions** tab (next to the Tables and Queries tabs). **Hint:** You might need to select the ellipsis icon **(...)** to select the tab.
 
-1. Expand **Worspace functions**. Notice that the names correspond to the templates you just deployed.
+1. Expand **Workspace functions**. Notice that the names correspond to the templates you just deployed.
 
 1. Hover the **vimRegistryEventMicrosoftSecurityEvents** *workspace parser* and then select **Load the function code**.
 
@@ -51,17 +56,18 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 1. Review the KQL that is parsing the Event ID 4657 to simplifying your analysis of the data in the Microsoft Sentinel workspace.
 
-1. **Run** the query. You should not get any result nor errors, it is just for validation purposes.
+1. **Run** the query. You should not get any results or errors, it is just for validation purposes.
 
 1. Go back to the *Schema and Filter* blade and now hover the **imRegistry** *unifying parser* and then select **Load the function code**.
 
-1. Notice that the unifying parsers uses the *union* operator to run all the workspace parsers at once. If you develop a parser for the Registry Schema you will need to add it here.
+1. Notice that the unifying parsers use the *union* operator to run all the workspace parsers at once. If you develop a parser for the Registry Schema you will need to add it here.
 
-1. **Run** the query. You should not get any result nor errors, it is just for validation purposes.
+1. **Run** the query. You should not get any results or errors; it is just for validation purposes.
 
 1. This unifying parser can now be used for Analytic Rules or Hunting Queries.
 
+## Review
+In this lab, you have completed the following:
+-  Deployed the Registry Schema ASIM parser. 
 
 ## Proceed to Exercise 10
-
-
