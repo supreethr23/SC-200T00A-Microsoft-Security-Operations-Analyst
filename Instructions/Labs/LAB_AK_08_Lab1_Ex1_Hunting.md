@@ -8,15 +8,6 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
    **Note:**  Because you already experienced the process of exploring data in a previous module, the lab provides a KQL statement to start with.  
 
-
-## Objective
-  
-After completing this lab, you will be able to:
-
-- Create a hunting query
-- Create a NRT query rule
-- Create a Search
-=======
 ## Lab objectives
  In this lab, you will perform the following:
  - Task 1: Create a hunting query
