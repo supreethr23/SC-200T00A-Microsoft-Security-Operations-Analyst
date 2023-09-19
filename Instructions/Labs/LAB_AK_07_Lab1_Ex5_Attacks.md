@@ -1,6 +1,19 @@
 # Module 7 - Lab 1 - Exercise 5 - Understand Detection Modeling
 
+### Lab overview
+
+In this lab, you will understand the attacks and about Detection Modeling
+
+## Objective
+  
+After completing this lab, you will:
+
+- Understand the Attacks
+- Understand Detection Modeling
+
 ## Estimated timing: 10 minutes
+
+## Architecture Diagram
 
 ![Lab overview.](../Media/sc-200ex5.png)
 
