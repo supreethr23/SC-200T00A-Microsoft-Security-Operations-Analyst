@@ -17,7 +17,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex3.png)
+  ![](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex3.png)
 
 ### Task 1: Access the Microsoft Sentinel Workspace
 

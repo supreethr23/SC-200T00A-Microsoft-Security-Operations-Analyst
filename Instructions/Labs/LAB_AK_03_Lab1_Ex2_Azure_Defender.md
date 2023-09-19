@@ -16,7 +16,6 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
   ![Picture 1](../Media/SC200-Lab_Diagrams_Mod3_L1_Ex2.png)
   
-
 ### Task 1: Explore Regulatory Compliance
 
 In this task, you will load sample security alerts and review the alert details.  

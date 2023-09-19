@@ -6,8 +6,6 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 To explore the Defender for Endpoint attack mitigation capabilities, you will run two simulated attacks.
 
->**Important:** Please wait until WIN1 appears on the Devices page before you continue. Otherwise, you might need to repeat this task to see the alerts that will be generated later.
-
 ## Lab objectives
  In this lab, you will perform the following:
 - Task 1: Run Simulated Attacks

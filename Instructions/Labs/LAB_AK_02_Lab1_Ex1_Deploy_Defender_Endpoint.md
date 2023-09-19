@@ -22,7 +22,6 @@ In this lab, you will perform the following:
 
   ![Picture 1](../Media/SC200-Lab_Diagrams_Mod2_L1_Ex1.png)
 
-
 ### Task 1: Preparing the Microsoft 365 Defender workspace
 
 1. On the **Microsoft 365 Defender** portal(https://security.microsoft.com/), from the navigation menu, select **Settings** from the left.
@@ -199,5 +198,3 @@ In this lab, you have completed the following:
 - Configured Device Groups
 
 ## Proceed to Exercise 2
-
-

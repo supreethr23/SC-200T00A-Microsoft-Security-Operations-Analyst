@@ -13,8 +13,12 @@ You are a Security Operations Analyst working at a company that implemented Micr
  - Task 1: Create a hunting query
  - Task 2: Create a NRT query rule
  - Task 3: Create a Search
-
+ 
 ## Estimated timing: 40 minutes
+
+## Architecture Diagram
+
+ ![](../Media/SC200-Lab_Diagrams_Mod8_L1_Ex1.png)
 
 ### Task 1: Create a hunting query
 
