@@ -6,31 +6,14 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 To explore the Defender for Endpoint attack mitigation capabilities, you will run two simulated attacks.
 
-
-## Objective
-  
-After completing this lab, you will be able to:
-
-- Simulated Attacks
-- Investigate the Attacks
-=======
->**Important:** Please wait until WIN1 appears on the Devices page before you continue. Otherwise, you might need to repeat this task to see the alerts that will be generated later.
-
 ## Lab objectives
  In this lab, you will perform the following:
 - Task 1: Run Simulated Attacks
 - Task 2: Investigate the Attacks
 
-
 ## Estimated timing: 60 minutes
 
 ## Architecture Diagram
-
-
- ![](../Media/SC200-Lab_Diagrams_Mod2_L1_Ex2.png)
-
->**Important:** Please wait until WIN1 appears in the Devices page before you continue. Otherwise, you might need to repeat this task to see the alerts that will be generated later.
-=======
 
   ![Picture 1](../Media/SC200-Lab_Diagrams_Mod2_L1_Ex2.png)
 
