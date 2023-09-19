@@ -11,22 +11,10 @@ You're a Security Operations Analyst working at a company that is implementing M
 - Task 3: Create a Watchlist
 - Task 4: Create a Threat Indicator.
 
-## Objective
-  
-  After completing this lab, you will be able to:
-
-- Create a Log Analytics Workspace
-- Initialize the Microsoft Sentinel Workspace
-- Create a Watchlist
-- Create a Threat Indicator
-
 ## Estimated timing: 90 minutes
 
 ## Architecture Diagram
 
-
-   ![](../Media/SC200-Lab_Diagrams_Mod5_L1_Ex1.png)
-=======
   ![Picture 1](../Media/SC200-Lab_Diagrams_Mod5_L1_Ex1.png)
 
 ### Task 1: Create a Log Analytics Workspace
