@@ -8,7 +8,19 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 >**Important:**  The lab Virtual Machines are used through different modules. SAVE your virtual machines. If you exit the lab without saving, you will be required to re-run some configurations again.
 
+## Objective
+  
+After completing this lab, you will be able to:
+
+- Initialize Microsoft Defender for Endpoint
+- Onboard a Device
+- Configure Roles and Device Groups
+
 ## Estimated timing: 60 minutes
+
+## Architecture Diagram
+
+   ![](../Media/SC200-Lab_Diagrams_Mod2_L1_Ex1.png)
 
 ### Task 1: Preparing the Microsoft 365 Defender workspace
 
