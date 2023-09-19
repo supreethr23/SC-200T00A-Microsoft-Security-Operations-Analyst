@@ -2,22 +2,11 @@
 
 ## Lab scenario
 
-
-=======
-
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. Once you have connected your data sources to Microsoft Sentinel, you can visualize and monitor the data using the Microsoft Sentinel adoption of Azure Monitor Workbooks, which provides versatility in creating custom dashboards. 
 
 Microsoft Sentinel allows you to create custom workbooks across your data and also comes with built-in workbook templates to allow you to quickly gain insights across your data as soon as you connect a data source.
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20workbooks)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
-
-## Objective
-  
-After completing this lab, you will be able to:
-
-- Explore workbook templates
-- Save and modify a workbook template
-- Create a Workbook
 
 ## Lab objectives
  In this lab, you will Understand following:
@@ -28,10 +17,6 @@ After completing this lab, you will be able to:
 ## Estimated timing: 20 minutes
 
 ## Architecture Diagram
-
-   
-   ![Lab overview.](../Media/SC-200ex10.png)
-=======
 
  ![Lab overview.](../Media/SC-200ex10.png)
 
