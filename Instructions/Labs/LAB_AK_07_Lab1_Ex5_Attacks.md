@@ -1,5 +1,6 @@
 # Module 7 - Lab 1 - Exercise 5 - Understand Detection Modeling
 
+
 ### Lab overview
 
 In this lab, you will understand the attacks and about Detection Modeling
@@ -10,12 +11,24 @@ After completing this lab, you will:
 
 - Understand the Attacks
 - Understand Detection Modeling
+=======
+## Lab objectives
+ In this lab, you will understand the following:
+- Task 1: Understand the Attacks
+  - Attack 1 - Persistence with Registry Key Add.
+  - Attack 2 - User Add and Elevate Privilege
+  - Attack 3 - DNS / C2 
+- Task 2: Understand Detection Modeling.
 
 ## Estimated timing: 10 minutes
 
 ## Architecture Diagram
 
+
 ![Lab overview.](../Media/sc-200ex5.png)
+=======
+  ![Lab overview.](../Media/sc-200ex5.png)
+
 
 ### Task 1: Understand the Attacks
 
@@ -23,7 +36,7 @@ After completing this lab, you will:
 
 The attack patterns are based on an open-source project: https://github.com/redcanaryco/atomic-red-team
 
-   **Note:** Some settings are triggered in a smaller time-frame just for our lab purpose.
+   **Note:** Some settings are triggered in a smaller time frame just for our lab purpose.
 
 #### Attack 1 - Persistence with Registry Key Add.
 
@@ -43,7 +56,7 @@ net user theusernametoadd ThePassword1!
 net localgroup administrators theusernametoadd /add
 ```
 
-### Attack 3 - DNS / C2 
+#### Attack 3 - DNS / C2 
 
 This attack will simulate a command and control (C2) communication.
 
@@ -89,7 +102,6 @@ Do {
 Until ($TimeNow -ge $RunEnd)
 ```
 
-
 ### Task 2: Understand Detection Modeling.
 
 The attack-detect configuration cycle used in this lab represents all data sources even though you are only focused on two specific data sources.
@@ -103,5 +115,13 @@ After you have the KQL statement, you create the Analytical Rule.
 Once the rule triggers and creates the alerts and incidents, you then investigate to decide if you are providing fields that help Security Operations Analysts in their investigation.
 
 Next, make any other changes to the analytics rule.
+
+## Review
+In this lab
+- You have understood attacks:
+   - Attack 1 - Persistence with Registry Key Add.
+   - Attack 2 - User Add and Elevate Privilege
+   - Attack 3 - DNS / C2 
+- You have understood Detection Modeling. 
 
 # Proceed to Exercise 6

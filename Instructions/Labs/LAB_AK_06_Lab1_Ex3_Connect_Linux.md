@@ -2,7 +2,16 @@
 
 ## Lab scenario
 
-You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to connect log data from the many data sources in your organization. The next source of data are Linux virtual machines using the Common Event Formatting (CEF) via Legacy Agent and Syslog connectors.
+You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to connect log data from the many data sources in your organization. The next source of data is Linux virtual machines using the Common Event Formatting (CEF) via Legacy Agent and Syslog connectors.
+
+>**Important:** There are steps within the next Tasks that are done in different virtual machines. Look for the Virtual Machine name references.
+
+## Lab objectives
+ In this lab, you will perform the following: 
+- Task 1: Access the Microsoft Sentinel Workspace
+- Task 2: Connect a Linux Host using the Common Event Format connector
+- Task 3: Connect a Linux host using the Syslog connector
+- Task 4: Configure the facilities you want to collect and their severities for the Syslog connector
 
 ## Objective
   
@@ -16,9 +25,12 @@ After completing this lab, you will be able to:
 
 ## Architecture Diagram
 
+
   ![](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex3.png)
 
   >**Important:** There are steps within the next Tasks that are done in different virtual machines. Look for the Virtual Machine name references
+=======
+  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex3.png)
 
 ### Task 1: Access the Microsoft Sentinel Workspace
 
@@ -42,19 +54,19 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 
 1. Select **Data connectors** from the Configuration area in Microsoft Sentinel.
 
-1. Go-to content hub and search  **Common Event Format** and click on install
+1. Go to content hub and search **Common Event Format** and click on install
 
 1. From the Data Connectors tab, search for the **Common Event Format (CEF) via Legacy agent** connector and select it from the list.
 
 1. Select the **Open connector page** on the connector information blade.
 
-1. Under configuration Copy the command shown in **1.2 Install the CEF collector on the Linux machine** and paste on the Notepad.
+1. Under configuration Copy the command shown in **1.2 Install the CEF collector on the Linux machine** and paste it on the Notepad.
 
 1. Back to the Azure portal, In the Search bar of the Azure portal, type **virtual machine**, then select **Virtual machine**.
 
 1. Open LIN1 Linux virtual machine and copy the **Public IP address** of LIN1 and paste on the notepad.
 
-1. Go back to the WIN1 virtual machine. launch Windows PowerShell as Administrator by right-clicking the Start menu icon and selecting **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
+1. Go back to the WIN1 virtual machine. launch Windows PowerShell as Administrator by right clicking the Start menu icon and selecting **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
 
 1. Enter the following PowerShell command, adjusting for your specific Linux server information, and press enter:
 
@@ -62,22 +74,21 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
     ssh insert your Linux IP address here -l insert Linux user name here
     ```
     
-     >**Note**: Replace **insert your linux IP address** here with pasted on the notepad Public iP address of **LIN1** and **insert linux user name here** with **Admin Username** provided under Resource group: **LIN1** in the **Environment Details** page of the lab guide.
+     >**Note**: Replace **insert your linux IP address** here with pasted on the notepad Public Ip address of **LIN1** and **insert linux username here** with **Admin Username** provided under Resource group: **LIN1** in the **Environment Details** page of the lab guide.
 
 1. Enter **yes** to confirm the connection and then type the user's **password provided under Resource group: LIN1** in the Environment tab and press enter. Your screen should look something like this:
 
    ![linux login](../Media/SC-200-img12updated.png)
 
-1. You are now ready to paste in the **1.2 Install the CEF collector on the Linux machine** from the earlier step. Make sure that the script from Azure is in the clipboard . In PowerShell right-click the top bar and choose **Edit** and then **Paste**. Once pasted add a **3** to the word *python* as shown below:
+1. You are now ready to paste in the **1.2 Install the CEF collector on the Linux machine** from the earlier step. Make sure that the script from Azure is in the clipboard. In PowerShell right-click the top bar and choose **Edit** and then **Paste**. Once pasted add a **3** to the word *python* as shown below:
 
    ![ConnectorScript](../Media/ConnectorScriptupdated.png)
    
     >**Note:** You can also copy from the notepad you have pasted earlier.
 
-1. Once the script is pasted in and adjusted press enter. The script will run against your Linux server remotely. When the script processes properly it should look similar to this screen:
+1. Once the script is pasted in and adjusted press enter. The script will run against your Linux server remotely. When the script processes properly it should look like this screen:
 
    ![ConnectorScript](../Media/LinuxConnectedupd.png)
-
 
 ### Task 3: Connect a Linux host using the Syslog connector
 
@@ -103,15 +114,15 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 
 1. Select the tab for **Linux servers**.
 
-    >**Note:** Your Log Analytics workspace should show **1 Linux computers connected**. This corresponds to LIN1 (ubuntu1) virtual machine connected earlier with the CEF connector.
+    >**Note:** Your Log Analytics workspace should show **1 Linux computers connected**. This corresponds to the LIN1 (ubuntu1) virtual machine connected earlier with the CEF connector.
 
 1. Select **Log Analytics agent instructions**.
 
-1. Copy the command in the **Download and onboard agent for Linux** area to the clipboard and paste on the notepad.
+1. Copy the command in the **Download and onboard agent for Linux** area to the clipboard and paste it into the notepad.
    
 1. Open LIN2 Linux virtual machine and copy the Public IP address of **LIN2** paste on the notepad.
 
-1. Go back to the WIN1 virtual machine, launch a NEW Windows PowerShell as Administrator by right-clicking the Start menu icon and selecting **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
+1. Go back to the WIN1 virtual machine, and launch a NEW Windows PowerShell as Administrator by right-clicking the Start menu icon and selecting **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
 
    >**Note:** You can reuse the Windows PowerShell window if the **Installation completed** for the last task by entering **exit** to close the connection to LIN1.
 
@@ -121,7 +132,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
     ssh insert-your-linux-IP-address-here -l insert-linux-user-name-here
     ```
 
-    >**Note**: Replace **insert your linux IP address here** with pasted on the notepad Public iP address of **LIN2** and **insert linux user name here** with **Admin Username** provided under Resource group: **LIN2** in the Environment tab
+    >**Note**: Replace **insert your linux IP address here** with pasted on the notepad Public Ip address of **LIN2** and **insert linux username here** with **Admin Username** provided under Resource group: **LIN2** in the Environment tab
    
 1. Enter **yes** to confirm the connection and then type the user's **password provided under Resource group: LIN2** in the Environment tab and press enter. Your screen should look something like this:
 
@@ -132,7 +143,6 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
    >**Note:** You can also copy from the notepad you have pasted earlier.
 
 1. Once the script is pasted in press enter. The script will run against your Linux server remotely. You have completed the task. No further labs in this course rely on this connection.
-
 
 ### Task 4: Configure the facilities you want to collect and their severities for the Syslog connector
 
@@ -156,9 +166,13 @@ In this task, you will configure the Syslog collection facilities.
 
 1. Select **Apply**.  You have completed this task.
 
-   >**Note:** If you have not perform task 5 in exercise 1 beacause of Licenses takes some time to reflect then please go back to the page 2 and perform task 5 to successfully complete this lab.
+   >**Note:** If you have not performed task 5 in exercise 1 because Licenses take some time to reflect then please go back to page 2 and perform task 5 to successfully complete this lab.
 
 ## Review 
-In this lab you connect azure and non azure virtual machines to Sentinel using data connectors.
+In this lab, you have completed the following:
+- able to access the Microsoft Sentinel Workspace
+- Connected a Linux Host using the Common Event Format connector
+- Connected a Linux host using the Syslog connector
+- Configured the facilities you want to collect and their severities for the Syslog connector
 
 ## You have successfully completed this lab.

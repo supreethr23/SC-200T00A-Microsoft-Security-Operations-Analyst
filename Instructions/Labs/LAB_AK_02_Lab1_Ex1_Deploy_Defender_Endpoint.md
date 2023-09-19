@@ -8,6 +8,7 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 >**Important:**  The lab Virtual Machines are used through different modules. SAVE your virtual machines. If you exit the lab without saving, you will be required to re-run some configurations again.
 
+
 ## Objective
   
 After completing this lab, you will be able to:
@@ -15,12 +16,24 @@ After completing this lab, you will be able to:
 - Initialize Microsoft Defender for Endpoint
 - Onboard a Device
 - Configure Roles and Device Groups
+=======
+## Lab objectives
+In this lab, you will perform the following:
+- Task 1: Preparing the Microsoft 365 Defender workspace
+- Task 2: Initialize Microsoft Defender for Endpoint
+- Task 3: Onboard a Device
+- Task 4: Configure Roles
+- Task 5: Configure Device Groups
+
 
 ## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 
    ![](../Media/SC200-Lab_Diagrams_Mod2_L1_Ex1.png)
+=======
+  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod2_L1_Ex1.png)
+
 
 ### Task 1: Preparing the Microsoft 365 Defender workspace
 
@@ -50,7 +63,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
     ![Picture 1](../Media/SC200-img1.png)
 
-    >**Note:** If you do not see the **Device discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try are to refresh the page with Ctrl+F5 or wait for 10-15 minutes or open the page InPrivate. Login again with the **Tenant Email** credentials.
+    >**Note:** If you do not see the **Device discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try are to refresh the page with Ctrl+F5 wait for 10-15 minutes or open the page InPrivate. Login again with the **Tenant Email** credentials.
 
 1. In the Discovery setup make sure **Standard discovery (recommended)** is selected. 
     >**Hint:** If you do not see the option, refresh the page.
@@ -59,11 +72,11 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
 
-1. If you are not already at the Microsoft 365 Defender portal in your browser, start the Microsoft Edge browser and go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
+1. If you are not already at the Microsoft 365 Defender portal in your browser, start the Microsoft Edge browser go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
 
 1. Select **Settings** from the left menu bar, then from the Settings page select **Endpoints**.
 
-1. Select **Onboarding** in the Device management section.
+1. Select **Onboarding** in the Device Management section.
 
     >**Note:** You can also perform device onboarding from the **Assets** section of the left menu bar. Expand Assets and select Devices. On the Device Inventory page, with Computers & Mobile selected, scroll down to **Onboard devices.** This takes you to the **Settings > Endpoints** page.
 
@@ -100,12 +113,10 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
     
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
+    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 4: Configure Roles
 
@@ -123,7 +134,7 @@ In this task, you will configure roles for use with device groups.
 
 1. Select **Groups** and then click on **New group**.
 
-1. Enter the below details for New group page :
+1. Enter the below details for the New group page:
 
    |Setting|Value|
     |---|---|
@@ -158,7 +169,6 @@ In this task, you will configure roles for use with device groups.
 
 1. Select **Submit**. If you receive an error while saving the role, refresh the page and try again.
 
-
 ### Task 5: Configure Device Groups
 
 In this task, you will configure device groups that allow for access control and automation configuration.
@@ -192,4 +202,14 @@ In this task, you will configure device groups that allow for access control and
 
 1. You are going to have two device groups now; the **Regular** you just created and the **Ungrouped devices (default)** with the same remediation level.
 
+### Review
+In this lab, you have completed the following:
+- Prepared the Microsoft 365 Defender workspace
+- Initialized Microsoft Defender for Endpoint
+- Onboarded a Device
+- Configured Roles
+- Configured Device Groups
+
 ## Proceed to Exercise 2
+
+

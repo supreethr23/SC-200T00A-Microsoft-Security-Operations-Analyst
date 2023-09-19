@@ -14,6 +14,12 @@ After completing this lab, you will be able to:
 - Create your Azure DevOps environment
 - Connect Sentinel to Azure DevOps
 
+## Lab objectives
+ In this lab, you will Understand following:
+ - Task 1: Create and export an analytical rule
+ - Task 2: Create our Azure DevOps environment
+ - Task 3: Connect Sentinel to Azure DevOps.
+
 ## Estimated timing: 30 minutes
 
 ## Architecture Diagram
@@ -44,7 +50,6 @@ In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
 
 1. Review the Azure Resource Manager template and the close it when done.
 
-
 ### Task 2: Create our Azure DevOps environment
 
 In this task, you will create an Azure DevOps repository.
@@ -69,7 +74,7 @@ In this task, you will create an Azure DevOps repository.
 
 1. The page should show the Files for the Repo.  the only file is README.me.
 
-1. On the Files (right side of the page) blade, the toolbar include options *Set up build*, *Clone*, ... Select the colon icon **(:)** to show more options.
+1. On the Files (right side of the page) blade, the toolbar includes options *Set up build*, *Clone*, ... Select the colon icon **(:)** to show more options.
 
 1. Select **Upload Files**.
 
@@ -79,7 +84,7 @@ In this task, you will create an Azure DevOps repository.
 
 1. Select **Commit**.
 
-1. Select **Azure DevOps** on the top left corner of the page.  This display your organization and projects.
+1. Select **Azure DevOps** on the top left corner of the page.  This displays your organization and projects.
 
 1. Select **Organization settings** from the bottom left of the page.
 
@@ -103,7 +108,7 @@ In this task, you will create an Azure DevOps repository.
 
 1. Select **Authorize**. Scroll down the permissions request and then select **Accept**.
 
-1. Select the Organization your created earlier (e.g. WWLx...).
+1. Select the Organization you created earlier (e.g., WWLx...).
 
 1. Select the Project you created earlier, *My Sentinel Content*.
 
@@ -117,17 +122,15 @@ In this task, you will create an Azure DevOps repository.
 
 1. Go back to Microsoft Sentinel workspace if needed
 
-1. Go to the *Repositories (Preview)* page, select **Refresh**. Wait until *Last deployment status* is *Failed*.  
+1. Go to the *Repositories (Preview)* page, select **Refresh**. Wait until the last deployment status* is *Failed*.  
 
     ![Picture 1](../Media/failed.png)
 
     >**Note:** The *Failed* status is due to limitations in the hosted lab environment. You would normally see *Succeeded*. Then you can see in the *Analytics* the imported rule *Rule from Azure DevOps*.
 
-
-    
 ## Review
-1. In this Lab we successfully explored Microsoft sentinel
-2. We created a playbook and set it for automation.
-3. We initiated the attack and created detections for those and investigated it
+-  In this Lab we successfully explored Microsoft sentinel
+- We created a playbook and set it for automation.
+- We initiated the attack and created detections for those and investigated it
    
 ## You have successfully completed the lab.

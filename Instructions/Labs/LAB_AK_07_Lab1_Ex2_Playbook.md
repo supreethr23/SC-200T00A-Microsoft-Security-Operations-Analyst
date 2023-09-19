@@ -2,7 +2,11 @@
 
 ## Lab scenario
 
+
 You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to detect and mitigate threats using Microsoft Sentinel. Now, you want to respond and reMediate actions that can be run from Microsoft Sentinel as a routine.
+=======
+You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to detect and mitigate threats using Microsoft Sentinel. Now, you want to respond and re-mediate actions that can be run from Microsoft Sentinel as a routine.
+
 
 With a playbook, you can help automate and orchestrate your threat response, integrate with other systems both internal and external, and can be set to run automatically in response to specific alerts or incidents, when triggered by an analytics rule or an automation rule, respectively. 
 
@@ -16,11 +20,22 @@ After completing this lab, you will be able to :
 - Create a Playbook in Microsoft Sentinel
 - Update a Playbook in Microsoft Sentinel
 
+## Lab Objectives
+  
+After completing this lab, you will be able to:
+- Task 1: Create a Security Operations Center Team in Microsoft Teams
+- Task 2: Create a Playbook in Microsoft Sentinel
+- Task 3: Update a Playbook in Microsoft Sentinel
+
 ## Estimated timing: 30 minutes
 
 ## Architecture Diagram
+<<<<
     
 ![Lab overview.](../Media/sc200ex2.png)
+=======
+
+  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod7_L1_Ex2.png)
 
 ### Task 1: Create a Security Operations Center Team in Microsoft Teams.
 
@@ -51,7 +66,6 @@ In this task, you will create a Microsoft Teams team for use in the lab.
     ![Lab overview.](../Media/addchannel.png)    
 
 1. Enter a channel name as *New Alerts* then select the **Add** button.
-
 
 ### Task 2: Create a Playbook in Microsoft Sentinel.
 
@@ -91,13 +105,13 @@ In this task, you will create a Logic App that will be used as a Playbook in Mic
 
 1. Now select **create**.
 
-    **Note:** Wait for the deployment to finish before proceeding to the next task. It may take a couple minutes to deploy.
+    **Note:** Wait for the deployment to finish before proceeding to the next task. It may take a couple of minutes to deploy.
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 3: Update a Playbook in Microsoft Sentinel.
 
@@ -134,5 +148,11 @@ In this task, you will update the new playbook you created with the proper conne
 1. Select **Save** on the command bar.
 
 The Logic App will be used in a future lab.
+
+### Review
+In this lab, you have completed the following:
+-You have created a Security Operations Center Team in Microsoft Teams
+- You have created a Playbook in Microsoft Sentinel
+- You have updated a Playbook in Microsoft Sentinel
 
 ## Proceed to Exercise 3

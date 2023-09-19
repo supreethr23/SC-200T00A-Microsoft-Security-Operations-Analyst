@@ -2,6 +2,7 @@
 
 ## Lab scenario
 
+
 You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to detect and mitigate threats using Microsoft Sentinel. After connecting your data sources to Microsoft Sentinel, you create custom analytics rules to help discover threats and anomalous behaviors in your environment.
 
 Analytics rules search for specific events or sets of events across your environment, alert you when certain event thresholds or conditions are reached, generate incidents for your SOC to triage and investigate, and respond to threats with automated tracking and reMediation processes.
@@ -12,14 +13,34 @@ After completing this lab, you will be able to :
 
 - Create a Scheduled Query
 - Test the new rule
+=======
+You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to detect and mitigate threats using Microsoft Sentinel. After connecting your data sources to Microsoft Sentinel, you create custom analytics rules to help discover threats and anomalous Behavior  in your environment.
+
+Analytics rules search for specific events or sets of events across your environment, alert you when certain event thresholds or conditions are reached, generate incidents for your SOC to triage and investigate, and respond to threats with automated tracking and reMediation processes.
+
+>**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20a%20scheduled%20query)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+
+## Lab objectives
+ In this lab, you will perform the following:
+- Task 1: Create a Scheduled Query
+- Task 2: Test the new rule
+- Task 3: Create a Scheduled Query.
+- Task 4: Test our new rule.
+
+
 
 ## Estimated timing: 40 minutes
 
 ## Architecture Diagram
 
+
 ![Lab overview.](../Media/sc200ex3.png)
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20a%20scheduled%20query)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+=======
+  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod7_L1_Ex3.png)
+  
+
 
 ### Task 1: Create a Scheduled Query.
 
@@ -130,7 +151,7 @@ In this task, you will test your new scheduled query rule.
 
 1. In the top bar of the Azure portal, Select the icon **>_** that corresponds to the Cloud Shell. You might need to select the ellipsis icon first **(...)** if your display resolution is too low.
 
-1. Select **Powershell** and then **Create storage**. Wait until the Cloud Shell is provisioned.
+1. Select **PowerShell** and then **Create storage**. Wait until the Cloud Shell is provisioned.
 
 1. Close the Azure Cloud Shell window.
 
@@ -154,12 +175,18 @@ In this task, you will test your new scheduled query rule.
 
 1. Select the Incident and review the information in the right blade.
 
-1. Go back to Microsoft Teams by selecting the tab in your Microsoft Edge browser. If you closed it, just open a new tab and type https://teams.microsoft.com. Go to the *SOC* Teams, select the *New Alerts* channel and see the message post about the incident.
+1. Go back to Microsoft Teams by selecting the tab in your Microsoft Edge browser. If you closed it, just open a new tab and type https://teams.microsoft.com. Go to the *SOC* Teams, select the *New Alerts* channel, and see the message post about the incident.
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help.
+    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+    > - If not, carefully read the 
+        error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+### Review
+In this lab, you have completed the following:
+- You have created a Scheduled Query.
+- You have tested the new rule. 
 
 ## Proceed to Exercise 4

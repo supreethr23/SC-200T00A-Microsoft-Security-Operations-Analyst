@@ -2,20 +2,26 @@
 
 ## Lab scenario
 
-
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to connect log data from the many data sources in your organization. The organization has data from Microsoft 365, Microsoft 365 Defender, Azure resources, non-azure virtual machines, and network appliances.
 
 You plan on using the Microsoft Sentinel data connectors to integrate the log data from various sources. You need to write a connector plan for management that maps each of the organization's data sources to the proper Microsoft Sentinel data connector.
 
+
 ## Objective
   
+=======
+## Lab objective
+
 After completing this lab, you will be able to integrate log data from various data sources within the organization into Microsoft Sentinel using appropriate data connectors.
 
 ## Estimated timing: 40 minutes
 
 ## Architecture Diagram
 
+
  ![](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex1.png)
+=======
+  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex1.png)
 
 ### Task 1: Access the Microsoft Sentinel Workspace
 
@@ -35,7 +41,7 @@ After completing this lab, you will be able to integrate log data from various d
 
  1. Select **+Create** from the command bar.
 
- 1. Select Resouce Group **RG-Defender**  from the drop down.
+ 1. Select Resource Group **RG-Defender**  from the drop down.
 
  1. For the Name, enter **uniquenameDefender** 
 
@@ -46,7 +52,6 @@ After completing this lab, you will be able to integrate log data from various d
  1. In the Search bar of the Azure portal, type **Sentinel**, then select **Microsoft Sentinel**.
 
  1. select the newly created workspace and click on **Add**
-
 
 ### Task 2: Connect the Azure Active Directory connector
 
@@ -74,12 +79,11 @@ After completing this lab, you will be able to integrate log data from various d
 
  1. From the **Configuration** area select the **Connect** button.
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help
-
+      > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+      > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+      > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+      > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+      > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 4: Connect the Microsoft Defender for Cloud connector
 
@@ -97,7 +101,6 @@ After completing this lab, you will be able to integrate log data from various d
 
 1. Scroll down and under the **"Create incidents - Recommended!"** area, select **Enable**. This option creates an Analytics rule automatically for this service. You can manually add it later if not enabled here or change its configuration within the **Analytics** blade.
 
-
 ### Task 5: Connect the Microsoft Defender for Cloud Apps connector
 
 In this task, you will connect the Microsoft Defender for Cloud Apps connector.
@@ -114,12 +117,12 @@ In this task, you will connect the Microsoft Defender for Cloud Apps connector.
 
 1. Scroll to the bottom of the page and select **Apply Changes**.
 
-   >**Note:** If you see **No Permission** under **Connect incidents & alerts** that means **License** and Permissions is not reflected on the Odl_user. it will take 1-2 hours to reflect the license on the odl user, meanwhile you can perform the next task, exercise 2 and exercise 3. After 1-2 hrs come back and refresh the page to re-perform the task 5 again.
+   >**Note:** If you see **No Permission** under **Connect incidents & alerts** that means **License** and Permissions is not reflected on the Odl_user. it will take 1-2 hours to reflect the license on the ODL user, meanwhile, you can perform the next task, exercise 2 and exercise 3. After 1-2 hrs come back and refresh the page to re-perform task 5 again.
 
 ### Task 6: Connect the Azure Activity connector
 
 In this task, you will connect the Azure Activity connector.
-1. In the Data Connectors page, click on content hub and search for **Azure Activity** and select and install it
+1. In the Data Connectors page, click on content hub search for **Azure Activity**, and select and install it
 
 1. From the Data Connectors Tab, search for the **Azure Activity** connector and select it from the list.
 
@@ -136,5 +139,8 @@ In this task, you will connect the Azure Activity connector.
 1. Select the **Review + Create** button to review the configuration.
 
 1. Select **Create** to finish.
+
+### Review
+In this lab, you have integrated log data from various data sources within the organization into Microsoft Sentinel using appropriate data connectors.
 
 ## Proceed to Exercise 2

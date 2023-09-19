@@ -4,9 +4,10 @@
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You have received threat intelligence about a Command and Control (C2 or C&C) technique.  You need to perform a hunt and watch for the threat.
 
-   **Important:** The log data used in the lab was created in the previous module. See **Attack 3** in WIN1 server in Exercise 5.
+   **Important:** The log data used in the lab was created in the previous module. See **Attack 3** in the WIN1 server in Exercise 5.
 
    **Note:**  Because you already experienced the process of exploring data in a previous module, the lab provides a KQL statement to start with.  
+
 
 ## Objective
   
@@ -15,7 +16,13 @@ After completing this lab, you will be able to:
 - Create a hunting query
 - Create a NRT query rule
 - Create a Search
-
+=======
+## Lab objectives
+ In this lab, you will perform the following:
+ - Task 1: Create a hunting query
+ - Task 2: Create a NRT query rule
+ - Task 3: Create a Search
+ 
 ## Estimated timing: 40 minutes
 
 ## Architecture Diagram
@@ -107,7 +114,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Right-click the **PowerShell Hunt** query and select **Add to livestream**. **Hint:** This also can be done by sliding right and selecting the ellipsis **(...)** at the end of the row to open a context menu.
 
-1. Review that the *Status* is now *Running*. This will be running every 30 seconds in the background and you will receive a notification in the Azure Portal (bell icon) when a new result is found. 
+1. Review that the *Status* is now *Running*. This will be running every 30 seconds in the background, and you will receive a notification in the Azure Portal (bell icon) when a new result is found. 
 
 1. Select the **Bookmarks** tab in the middle pane.
 
@@ -117,7 +124,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
    ![Picture 1](../Media/bookmarkinvestigate.png)
 
-1. Explore the Investigation graph just like you did a the previous module. Notice the high number of *Related alerts* for *WINServer*.
+1. Explore the Investigation graph just like you did the previous module. Notice the high number of *Related alerts* for *WINServer*.
 
 1. Close the *Investigation* graph window by selecting the **X** in the top-right of the window. 
 
@@ -131,10 +138,9 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Scroll left to notice that the *Severity* column is now populated with the incident's data.
 
-
 ### Task 2: Create a NRT query rule
 
-In this task, instead of using a LiveStream, you will create a NRT analytics query rule. NRT rules run every minute and lookback one minute. The benefit to NRT rules are they can use the alert and incident creation logic.
+In this task, instead of using a LiveStream, you will create a NRT analytics query rule. NRT rules run every minute and look back one minute. The benefit of NRT rules is they can use the alert and incident creation logic.
 
 1. Select the **Analytics** page under *Configuration* in Microsoft Sentinel. 
 
@@ -180,7 +186,7 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
 
 1. For the *Automated response* tab, leave the default values and select **Next: Review and create >** button.
 
-1. On the *Review and create* tab, select the **Save** button to create and save the new Scheduled Analytics rule.
+1. On the *Review and Create* tab, select the **Save** button to create and save the new Scheduled Analytics rule.
 
 ### Task 3: Create a Search
 
@@ -208,5 +214,10 @@ In this task, you will use a Search job to look for a C2.
 
     >**Important:** The restore jobs should be used to recover Archive data, not interactive logs.
 
+## Review
+In this lab, you have completed the following:
+- We created a hunting query.
+- We created an NRT query rule.
+- We Created a Search.
 
 ## Proceed to Exercise 2

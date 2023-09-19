@@ -4,21 +4,35 @@
 
 You are going to simulate the attacks that you will later use to detect and investigate in Microsoft Sentinel.
 
+
 ## Objective
   
 After completing this lab, you will:
 
 - Attack Windows configured with Defender for Endpoint
 - Attack Windows configured with Sysmon
+=======
+>**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Perform%20simulated%20attacks)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+
+## Lab objectives
+ In this lab, you will perform the following:
+- Task 1: Persistence Attack with Registry Key Add 
+- Task 2: Command and Control Attack with DNS
+- Task 3: Privilege Elevation Attack with User Add
+
 
 ## Estimated timing: 30 minutes
 
 ## Architecture Diagram
 
+
 ![Lab overview.](../Media/labscenario.png)
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Perform%20simulated%20attacks)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+=======
 
+
+  ![Lab overview.](../Media/labscenario.png)
 
 ### Task 1: Persistence Attack with Registry Key Add 
 
@@ -50,7 +64,7 @@ After completing this lab, you will:
 
 1. Select **Yes** to create a new file and copy the following PowerShell script into *c2.ps1*.
 
-    >**Note:** Pasting into the virtual machine file might not show the full script length. Make sure the script matches  the instructions within the *c2.ps1* file.
+    >**Note:** Pasting into the virtual machine file might not show the full script length. Make sure the script matches the instructions within the *c2.ps1* file.
 
     ```PowerShell
     param(
@@ -108,14 +122,13 @@ After completing this lab, you will:
 
 >**Important:** Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
 
-
 ### Task 3: Privilege Elevation Attack with User Add
 
->**Important:** The next steps are done in a different machine than the one you were previously working. Look for the Virtual Machine name references.
+>**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
-In this task, you will perform attacks on the host connected with Azure Arc and that has the Azure Monitor Agent configured.
+In this task, you will perform attacks on the host connected with Azure Arc that has the Azure Monitor Agent configured.
 
-1. Go-to hyperv manager. Connect to WINSERVER virtual machine
+1. Go to Hyper-V manager. Connect to WINSERVER virtual machine.
 
 1. Login to WINSERVER virtual machine as Admin with the password: **Password.1!!**.  
 
@@ -125,7 +138,7 @@ In this task, you will perform attacks on the host connected with Azure Arc and 
 
 1. Follow the instructions to log into WINServer again.
 
-1. In the search of the task bar, enter *Command*. Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
+1. In the search of the taskbar, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
 
 1. In the Command Prompt, create a Temp folder in the root directory. Remember to press Enter after the last row:
 
@@ -150,5 +163,11 @@ In this task, you will perform attacks on the host connected with Azure Arc and 
     ```CommandPrompt
     net localgroup administrators theusernametoadd /add
     ```
+
+## Review
+In this lab, you have completed the following:
+- Persistence Attack with Registry Key Add 
+- Command and Control Attack with DNS
+- Privilege Elevation Attack with User Add
 
 ## Proceed to Exercise 7
