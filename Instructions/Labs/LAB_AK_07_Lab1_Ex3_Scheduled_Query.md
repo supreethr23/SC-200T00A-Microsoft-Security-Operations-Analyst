@@ -2,13 +2,22 @@
 
 ## Lab scenario
 
-![Lab overview.](../Media/sc200ex3.png)
-
 You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to detect and mitigate threats using Microsoft Sentinel. After connecting your data sources to Microsoft Sentinel, you create custom analytics rules to help discover threats and anomalous behaviors in your environment.
 
 Analytics rules search for specific events or sets of events across your environment, alert you when certain event thresholds or conditions are reached, generate incidents for your SOC to triage and investigate, and respond to threats with automated tracking and reMediation processes.
 
+## Objective
+  
+After completing this lab, you will be able to :
+
+- Create a Scheduled Query
+- Test the new rule
+
 ## Estimated timing: 40 minutes
+
+## Architecture Diagram
+
+![Lab overview.](../Media/sc200ex3.png)
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20a%20scheduled%20query)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
