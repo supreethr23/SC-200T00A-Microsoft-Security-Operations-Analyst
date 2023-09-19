@@ -4,7 +4,15 @@
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You need to explore the benefits of threat hunting with Microsoft Sentinel Notebooks.
 
+## Objective
+  
+After completing this lab, you will be able to explore Notebooks
+
 ## Estimated time: 30 minutes
+
+## Architecture Diagram
+
+ ![](../Media/SC200-Lab_Diagrams_Mod8_L1_Ex2.png)
 
 ### Task 1: Explore Notebooks
 
