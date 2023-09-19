@@ -2,11 +2,20 @@
 
 ## Lab scenario
 
-![Lab overview.](../Media/labscenario.png)
-
 You are going to simulate the attacks that you will later use to detect and investigate in Microsoft Sentinel.
 
+## Objective
+  
+After completing this lab, you will:
+
+- Attack Windows configured with Defender for Endpoint
+- Attack Windows configured with Sysmon
+
 ## Estimated timing: 30 minutes
+
+## Architecture Diagram
+
+![Lab overview.](../Media/labscenario.png)
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Perform%20simulated%20attacks)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
