@@ -13,6 +13,10 @@ In this lab, you will perform:
     
 ## Estimated timing: 120 minutes
 
+## Architecture Diagram
+
+ ![](../Media/SC200-Lab_M1_L1_Ex1.png)
+
 ### Task 1: Create a Group 
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
