@@ -4,7 +4,7 @@
 
     ![](../Media/start2.png)
 
-1. To get the lab environment details, you can select the **Environment Details** tab.
+1. To get the lab environment details, you can select the **Environment** tab.
 
     ![](../Media/env.png)
 
