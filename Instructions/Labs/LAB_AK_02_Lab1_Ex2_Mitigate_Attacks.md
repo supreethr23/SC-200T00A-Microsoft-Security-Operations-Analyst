@@ -15,7 +15,7 @@ To explore the Defender for Endpoint attack mitigation capabilities, you will ru
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod2_L1_Ex2.png)
+  ![Picture 1](../Media/SC-200-Lab_Diagrams_Mod2.png)
 
 ### Task 1: Simulated Attacks
 
