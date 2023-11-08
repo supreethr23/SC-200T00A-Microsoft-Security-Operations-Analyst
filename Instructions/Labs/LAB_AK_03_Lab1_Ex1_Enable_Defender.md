@@ -126,7 +126,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
     **Note:** If you haven't already created a resource group, open another tab create the resource group, and start over.
 
-1. Select a Region in this case choose **EAST-US**   
+1. For *Region*, select **(US) East Us** from the drop-down list. 
 
 1. Review the *Server details* and *Connectivity method* options. Keep the default values and select **Next** to get to the Tags tab.
 
