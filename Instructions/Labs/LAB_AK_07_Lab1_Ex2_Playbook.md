@@ -33,9 +33,9 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 
 1. Close any Teams pop-ups that may appear.
 
-1. If not already selected, select **Teams** on the left menu, then at the bottom, select **Join or create a team**.
+1. If not already selected, select **Teams** on the left menu, then at the top, select the **+** icon.
 
-1. Select the **Create Team** button in the main window.
+1. Select the **Create Team** option.
 
 1. Select the **From scratch** button.
 
