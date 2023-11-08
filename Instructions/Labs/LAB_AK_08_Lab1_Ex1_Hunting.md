@@ -179,13 +179,13 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
 
 1. On the *Review and Create* tab, select the **Save** button to create and save the new Scheduled Analytics rule.
 
-### Task 3: Create a Search
+### Task 3: Create a Search job
 
-In this task, you will use a Search job to look for a C2. 
+In this task, you will use a Search job to look for a C2.
 
-1. On the left menu Select the **Search** page under *General* in Microsoft Sentinel. 
+1. On the left menu Select the **Search** page under *General* in Microsoft Sentinel.
 
-1. In the search box, enter **reg.exe** and then select **Start**. 
+1. In the search box, enter **reg.exe** and then select **Start**.
 
 1. A new window running the query opens. Select the ellipsis icon **(...)** from the top right and then toggle the **Search job mode**.
 
@@ -199,11 +199,9 @@ In this task, you will use a Search job to look for a C2.
 
 1. Under *Select a table to restore*, search for and select **SecurityEvent**.
 
-1. Review the options available and then select the **Restore** button.
+1. Review the options available and then select the **Cancel** button.
 
-1. The restore job will run for a couple of minutes and your data will be available in a new table.
-
-    >**Important:** The restore jobs should be used to recover Archive data, not interactive logs.
+    >**Note:** If you were running the job, the restore would run for a couple of minutes and your data would be available in a new table.
 
 ## Review
 In this lab, you have completed the following:
