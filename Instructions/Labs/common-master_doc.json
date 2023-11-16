@@ -5,7 +5,7 @@
     "BaseURL": "https://github.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/prod",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/prod/Instructions/Labs/LabIntro.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/prod/Instructions/Labs/LabIntro-V2.md",
         "Order": 1
       },
       {
