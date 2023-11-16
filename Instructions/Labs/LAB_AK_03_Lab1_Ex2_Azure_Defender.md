@@ -83,5 +83,3 @@ In this lab, you have completed the following:
 - Explored Regulatory Compliance
 - Explored Security posture and recommendations
 - Mitigated security alerts
-
-## You have successfully completed the lab. 
