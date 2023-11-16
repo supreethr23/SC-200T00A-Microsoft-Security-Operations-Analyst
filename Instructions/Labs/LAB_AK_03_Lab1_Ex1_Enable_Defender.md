@@ -197,5 +197,3 @@ In this lab, you have completed the following:
 - Enabled Microsoft Defender for Cloud
 - Installed Azure Arc on an On-Premises Server.
 - Protected an On-Premises Server
-
-# Proceed to Exercise 2
