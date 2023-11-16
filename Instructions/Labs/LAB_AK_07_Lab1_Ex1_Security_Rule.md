@@ -51,5 +51,3 @@ In this task, you will activate a Microsoft Security rule.
 
 ### Review
 In this lab, you have successfully activated a Microsoft Security Rule.
-
-## Proceed to Exercise 2
