@@ -159,5 +159,3 @@ In this task, you will test your new scheduled query rule.
 In this lab, you have completed the following:
 - You have created a Scheduled Query.
 - You have tested the new rule. 
-
-## Proceed to Exercise 4
