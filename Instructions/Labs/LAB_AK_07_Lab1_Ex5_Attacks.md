@@ -111,5 +111,3 @@ In this lab
    - Attack 2 - User Add and Elevate Privilege
    - Attack 3 - DNS / C2 
 - You have understood Detection Modeling. 
-
-# Proceed to Exercise 6
