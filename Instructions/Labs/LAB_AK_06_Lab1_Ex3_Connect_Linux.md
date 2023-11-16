@@ -161,5 +161,3 @@ In this lab, you have completed the following:
 - Connected a Linux Host using the Common Event Format connector
 - Connected a Linux host using the Syslog connector
 - Configured the facilities you want to collect and their severities for the Syslog connector
-
-## You have successfully completed this lab.
