@@ -129,5 +129,3 @@ In this task, you will connect the Azure Activity connector.
 
 ### Review
 In this lab, you have integrated log data from various data sources within the organization into Microsoft Sentinel using appropriate data connectors.
-
-## Proceed to Exercise 2
