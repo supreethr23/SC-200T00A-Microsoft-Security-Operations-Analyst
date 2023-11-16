@@ -211,5 +211,3 @@ In this task, you will create a detection for the second attack of the previous 
 In this lab, you have completed the following:
 - Persistence Attack Detection
 - Privilege Elevation Attack Detection
-
-## Proceed to Exercise 8
