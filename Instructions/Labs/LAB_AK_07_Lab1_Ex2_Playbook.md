@@ -138,5 +138,3 @@ In this lab, you have completed the following:
 -You have created a Security Operations Center Team in Microsoft Teams
 - You have created a Playbook in Microsoft Sentinel
 - You have updated a Playbook in Microsoft Sentinel
-
-## Proceed to Exercise 3
