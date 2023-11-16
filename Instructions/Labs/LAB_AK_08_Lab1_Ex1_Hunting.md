@@ -208,5 +208,3 @@ In this lab, you have completed the following:
 - We created a hunting query.
 - We created an NRT query rule.
 - We Created a Search.
-
-## Proceed to Exercise 2
