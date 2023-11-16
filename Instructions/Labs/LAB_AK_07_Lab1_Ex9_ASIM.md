@@ -67,5 +67,3 @@ You are a Security Operations Analyst working at a company that implemented Micr
 ## Review
 In this lab, you have completed the following:
 -  Deployed the Registry Schema ASIM parser. 
-
-## Proceed to Exercise 10
