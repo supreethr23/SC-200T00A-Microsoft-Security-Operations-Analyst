@@ -190,5 +190,3 @@ In this lab, you have completed the following:
 - Onboarded a Device
 - Configured Roles
 - Configured Device Groups
-
-## Proceed to Exercise 2
