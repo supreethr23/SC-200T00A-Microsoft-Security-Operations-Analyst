@@ -123,6 +123,4 @@ In this task, you will create an Azure DevOps repository.
 ## Review
 -  In this Lab we successfully explored Microsoft sentinel
 - We created a playbook and set it for automation.
-- We initiated the attack and created detections for those and investigated it
-   
-## You have successfully completed the lab.
+- We initiated the attack and created detections for those and investigated it.
