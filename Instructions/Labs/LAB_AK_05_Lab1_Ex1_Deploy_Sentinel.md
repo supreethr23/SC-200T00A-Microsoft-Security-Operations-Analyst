@@ -151,5 +151,3 @@ In this lab, you have completed the following:
 - Initialized the Microsoft Sentinel Workspace
 - Created a Watchlist
 - Created a Threat Indicator.
-
-## You have successfully completed the lab.
