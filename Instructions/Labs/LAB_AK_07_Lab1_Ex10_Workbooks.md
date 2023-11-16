@@ -158,5 +158,3 @@ In this lab, you have completed the following:
  - Explored workbook templates
  - Saved and modified a workbook template
  - Created a Workbook
-
-## Proceed to Exercise 11
