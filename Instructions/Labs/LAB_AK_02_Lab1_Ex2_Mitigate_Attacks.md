@@ -83,5 +83,3 @@ In this task, you will run two simulated attacks to explore the capabilities of 
 In this lab, you have completed the following:
 - Ran Simulated Attacks
 - Investigated the Attacks
-
-## You have successfully completed the lab.
