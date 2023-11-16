@@ -76,4 +76,4 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 In this lab, you have completed the following:
 -  In this Lab, we successfully explored AZURE ML Notebooks.
 
-## You have completed the lab.
+## You have Successfully completed the lab.
