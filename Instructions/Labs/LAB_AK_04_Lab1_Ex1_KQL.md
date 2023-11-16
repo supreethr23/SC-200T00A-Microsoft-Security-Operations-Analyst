@@ -579,5 +579,3 @@ In this lab, you have completed the following:
 - Created visualizations in KQL with the Render Operator
 - Built multi-table statements in KQL
 - Worked with string data in KQL
-
-## You have successfully completed the lab.
