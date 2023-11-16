@@ -245,5 +245,3 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 ### Review
 In this lab, you have connected to Windows virtual machines, both within and outside of Azure, to Microsoft Sentinel using data connectors.
-
-## Proceed to Exercise 3
