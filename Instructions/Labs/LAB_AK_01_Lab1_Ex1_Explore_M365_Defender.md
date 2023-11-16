@@ -112,5 +112,3 @@ In this task, you will assign preset security policies for Exchange Online Prote
    - Created a Group
    - Applied Microsoft Defender for Office 365 preset security policies
    - Prepared the Microsoft 365 Defender workspace
-
-## You have successfully completed the lab
