@@ -23,7 +23,7 @@ In this lab, you will perform:
 
 1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
-1. On the **Stay signed in? ** dialog box, select the Don’t show this again check box and then select **No**.
+1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
 1. In the Search bar of the Azure portal, type **Microsoft Entra ID**, then select Microsoft Entra ID.
 
