@@ -53,21 +53,23 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 
 ### Task 2: Create a Playbook in Microsoft Sentinel.
 
-In this task, you will create a Logic App that will be used as a Playbook in Microsoft Sentinel.
+In this task, you'll create a Logic App that is used as a Playbook in Microsoft Sentinel.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. In the Microsoft Edge browser, navigate to [Microsoft Sentinel on GitHub](https://github.com/Azure/Azure-Sentinel).
 
-1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
+<!--- the Azure portal at https://portal.azure.com.
 
-1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+1. In the **Sign in** dialog box, copy and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
+
+1. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
 1. Select your Microsoft Sentinel Workspace you created earlier.
 
-1. On the left menu Select the **Community** page in the *Content management* area on the left side of the page.
+1. Select the **Community** page under the *Content management* area on the left side of the page.
 
-1. Select the **Onboard community content** link on the right pane. This will open a new tab in the Edge Browser for Microsoft Sentinel GitHub content.
+1. On the right pane, select the **Onboard community content** link. This opens a new tab in the Microsoft Edge Browser for Microsoft Sentinel GitHub content. **Hint:** You might need to scroll right to see the link. Alternatively, follow this link instead: [Microsoft Sentinel on GitHub](https://github.com/Azure/Azure-Sentinel). --->
 
 1. Scroll down and select the **Solutions** folder.
 
@@ -75,21 +77,19 @@ In this task, you will create a Logic App that will be used as a Playbook in Mic
 
 1. Select the **Post-Message-Teams** folder.
 
-1. In the readme.md box, go below the second *Quick Deployment* option **Deploy with incident trigger (recommended)** and select **Deploy to Azure** button.  
-
-    **VERY IMPORTANT**: Be aware that they are two different Microsoft Sentinel triggers to use, Incident and Alert. Make sure you are selecting the Alert (second) one.
+1. In the readme.md box, scroll down to the *Quick Deployment* section, **Deploy with incident trigger (recommended)** and select the **Deploy to Azure** button.  
 
 1. Make sure your Azure Subscription is selected.
 
-1. For Resource Group, select **Create New** and select resource group from drop down *rg-playbooks* and select **OK**.
+1. For Resource Group, select **Create New**, enter *RG-Playbooks* and select **OK**.
 
-1. For region, select the appropriate region for your situation. The default region will likely be optimal.
+1. Leave **(US) East US** as the default value for *Region*.
 
-1. Make sure the *Playbook Name* is "PostMessageTeams-OnIncident" and select **Review + create**.
+1. Rename the *Playbook Name* to "PostMessageTeams-OnIncident" and select **Review + create**.
 
-1. Now select **create**.
+1. Now select **Create**. 
 
-    **Note:** Wait for the deployment to finish before proceeding to the next task. It may take a couple of minutes to deploy.
+    >**Note:** Wait for the deployment to finish before proceeding to the next task.
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
