@@ -12,7 +12,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
  In this lab, you will perform the following:
  - Task 1: Create a hunting query
  - Task 2: Create a NRT query rule
- - Task 3: Create a Search
+ - Task 3: Create a Search job
  
 ## Estimated timing: 40 minutes
 
