@@ -79,11 +79,14 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
     >**Note:** After clicking on **Manage protection settings**, This might need 40 to 60 Minutes to load the content, wait for 40 to 60 Minutes to get loaded the page completely after 40 to 60 Minutes back to the same page and might need to sign out of Microsoft defender and sign in again and then try repeating the steps again to move forward. 
 
-1. In the *Apply Exchange Online Protection* section, select **Specific recipients** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**. **Hint:** Your tenant's domain name is the same that you have for your admin account, it might be something like *mocholxxxxx.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing. 
+1. In the *Apply Exchange Online Protection* section, select **Specific recipients** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**.                                                                              
+  >**Hint:** Your tenant's domain name is the same that you have for your admin account, it might be something like *mocholxxxxx.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing. 
 
 1. In the **Apply Defender for Office 365 protection** section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
 1. In the *Impersonation protection* section, select **Next** for next all steps i.e. (4x times) to continue.
+
+1. In the Policy mode section, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
@@ -95,17 +98,30 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. In the *Impersonation protection* section, select **Next** for next all steps i.e. (4x times) to continue.
 
+1. In the Policy mode section, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
+
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
 ### Task 3: Preparing the Microsoft 365 Defender workspace
 
-1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
+1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Home** from the left.
 
-1. On the **Settings** page select **Microsoft 365 Defender**. You are going to see an image of a coffee mug and a message that reads: *Hang on! We're preparing new spaces for your data and connecting them.*. It will take several minutes to finish, so leave the page open but make sure it finishes since it is required for the next Lab. 
+    >**Note:** You may need to scroll all the way to the menu top.
 
-    >**Note:** If you get the error message "We didn't plan it will fail, but something went wrong." retry the step later or do it before the next Lab.
+1. On the **Home** portal page, **Welcome to Microsoft Defender** is displayed.
 
-1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
+1. Scroll down through the tiles until you find the tile labeled **Microsoft Defender XDR**.
+
+    >**Hint:** It should be at the bottom right of the tiles.
+
+1. Select the button that says **Turn new features on.**
+
+1. You will see messages saying *loading and Initializing* briefly displayed at the top of the page, and then you're going to see an image of a coffee mug and a message that reads: **Hang on! We're preparing new spaces for your data and connecting them.** It will take approximately 5 minutes to finish. *Leave the page open and make sure it finishes since it is required for the next Lab.*
+
+    >**Note:** If the message "Hang on! We're preparing new spaces for your data and connecting them" does not appear, or the "Settings > Microsoft Defender XDR > Account" page opens, but you see the message "Failed to load data storage location. Please try again later",  select "Alert service settings" from the "General" menu, or go to the navigation menu, scroll down to the "Assets" section and select "Devices".
+
+1. When the new space completes successfully, you are going to see the Microsoft 365 Defender General settings for Account, Email notifications, Alert service settings, Permissions and roles and Streaming API. You will also see **Preview Features** turned on.
+
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
