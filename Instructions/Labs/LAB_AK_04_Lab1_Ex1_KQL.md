@@ -41,9 +41,8 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Select **+Create** from the command bar.
 
-1. Select "create new Resource Group" give the name **RG-Defender**.
-
-1. For the Name, enter **uniquenameDefender**.
+1. Select "create new Resource Group" give the name  **RG-Defender**.
+1. For the Name, enter as **uniquenameDefender**.
 
 1. Select the default Region 
 
