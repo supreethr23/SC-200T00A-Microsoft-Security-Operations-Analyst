@@ -31,7 +31,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. In the Search bar of the Azure portal, type *Log Analytics workspaces*, then select the same service name.
 
-1. Click on **create**
+1. Select **+ Create**
 
 1. Select **rg-defender** for the Resource group drop-down.
 
@@ -45,7 +45,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Click on + Create.
+1. Click on **+ Create**.
 
 1. Next, Add Microsoft Sentinel to a workspace page.
 
@@ -77,13 +77,14 @@ In this task, you will create a watchlist in Microsoft Sentinel.
     Host5
     ```
 
-1. From the menu select, **File - Save As**, Name the file *HighValue.csv*, change the file type to **All files(*.*)** and select **Save**. **Hint:** The file can be saved in the *Documents* folder.
+1. From the menu select, **File - Save As**, Name the file *HighValue.csv*, change the file type to **All files(*.*)** and select **Save**.                                             
+  >**Hint:** The file can be saved in the *Documents* folder.
 
 1. Close Notepad.
 
 1. In Microsoft Sentinel, On the left menu, select the **Watchlist** option under the Configuration area.
 
-1. Select **+ Add new** from the command bar.
+1. Select **+ New** from the command bar.
 
 1. In the Watchlist wizard, enter the following:
 
@@ -99,7 +100,7 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. In the *SearchKey field* select **Hostname**.
 
-1. Select **Next: Review and Create >**.
+1. Select **Next: Review + Create >**.
 
 1. Review the settings you entered and select **Create**.
 
@@ -127,7 +128,7 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 1. For the *Name*, enter the same value used for the Domain. An example would be **onmicrosoft.com**.
 
-1. Set the **Valid from* field to today's date. and **valid till* to next day 
+1. Set the **Valid from** field to today's date. and **valid till** to next day 
 
 1. Select **Apply**.
 
