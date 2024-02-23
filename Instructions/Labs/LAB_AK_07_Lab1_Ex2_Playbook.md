@@ -25,7 +25,7 @@ After completing this lab, you will be able to:
 
 In this task, you will create a Microsoft Teams team for use in the lab.
 
-1. In the Edge browser, open a new tan and navigate to the Microsoft Teams portal at (https://teams.microsoft.com).
+1. In the Edge browser, open a new tab and navigate to the Microsoft Teams portal at (https://teams.microsoft.com).
 
 1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
@@ -35,9 +35,7 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 
 1. If not already selected, select **Teams** on the left menu, then at the top, select the **+** icon.
 
-1. Select the **Create Team** option.
-
-1. Select the **From scratch** button.
+1. Under the **Create Team**, select **From scratch** button.
 
 1. Select the **Private** button.
 
@@ -109,7 +107,7 @@ In this task, you will update the new playbook you created with the proper conne
 
 1. Select the **PostMessageTeams-OnIncident** playbook.
 
-1. On the Logic App page for *PostMessageTeams-OnIncident*, in the center menu, select **Edit**.
+1. On the Logic App Designer page for *PostMessageTeams-OnIncident*, in the center menu, select **Edit**.
 
 1. Select the *first* block **Microsoft Sentinel alert(Preview)**.
 
