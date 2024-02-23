@@ -83,6 +83,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
     ![Picture 1](../Media/enable.png)
 
     >**Note:** If the page is not being displayed, refresh your Edge browser and try again.
+    >**Note:** You can ignore if the plans are already enabled and are in **On state**
 
 1. Close the Defender plans page by selecting the 'X' on the upper right of the page to go back to the **Environment settings**
 
