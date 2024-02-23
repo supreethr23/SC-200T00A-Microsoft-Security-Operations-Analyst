@@ -46,27 +46,27 @@ After completing this lab, you will be able to integrate log data from various d
 
  1. select the newly created workspace and click on **Add**
 
-### Task 2: Connect the Azure Active Directory connector
+### Task 2: Connect the Microsoft Entra ID connector
 
- In this task, you will connect the Azure Active Directory connector to Microsoft Sentinel.
+ In this task, you will connect the Microsoft Entra ID connector to Microsoft Sentinel.
 
- 1. On the left side menu, In the Configuration area select **Data connectors**.
+ 1. On the left side menu, in the Configuration area select **Data connectors**.
  
- 1. In the Data Connectors page, click on content hub and search for **Azure Active Directory** and select and install it
+ 1. In the Data Connectors page, click on content hub and search for **Microsoft Entra ID** and select and install it
    
- 1. Go back to data connector page and search for the **Azure Active Directory** connector and select it from the list.
+ 1. Go back to data connector page and search for the **Microsoft Entra ID** connector and select it from the list.
 
  1. Select the **Open connector page** on the connector information blade.
 
  1. Check and click on the **Sign-in Logs** and **Audit Logs** options from the Configuration area, then select **Apply Changes**.
 
-### Task 3: Connect the Azure Active Directory Identity Protection connector
+### Task 3: Connect the Microsoft Entra ID Protection connector
 
- In this task, you will connect the Azure Active Directory Identity Protection connector to Microsoft Sentinel.
+ In this task, you will connect the Microsoft Entra ID Protection connector to Microsoft Sentinel.
 
- 1. In the Data Connectors page, click on content hub and search for **Azure Active Directory Identity Protection** and select and install it
+ 1. In the Data Connectors page, click on content hub and search for **Microsoft Entra ID Protection** and select and install it
  
- 1. From the Data Connectors Tab, search for the **Azure Active Directory Identity Protection** connector and select it from the list.
+ 1. From the Data Connectors Tab, search for the **Microsoft Entra ID Protection** connector and select it from the list.
 
  1. Select the **Open connector page** on the connector information blade.
 
@@ -86,19 +86,19 @@ After completing this lab, you will be able to integrate log data from various d
  
  1. From the Data Connectors tab, search for the **Microsoft Defender for Cloud** connector and select it from the list.
 
- 1. Select the **Open connector page** on the connector information blade.
+    >**Note:** The Microsoft Defender for Cloud solution installs the Subscription-based Microsoft Defender for Cloud (Legacy) Data connector, the Tenant-based Microsoft Defender for Cloud (Preview) Data connector, and an Analytics rule.
+
+ 1. Select the Subscription-based Microsoft Defender for Cloud (Legacy) Data connector, and select the **Open connector page** on the connector information blade.
 
  1. In the **Configuration** area, under Subscription, select the checkbox for the available subscription and slide the **Status** option to the right to indicate **Connected**.
 
 1. The **Status** should be now **Connected** and **"Bi-directional sync"** should be **Enabled**.
 
-1. Scroll down and under the **"Create incidents - Recommended!"** area, select **Enable**. This option creates an Analytics rule automatically for this service. You can manually add it later if not enabled here or change its configuration within the **Analytics** blade.
-
 ### Task 5: Connect the Microsoft Defender for Cloud Apps connector
 
 In this task, you will connect the Microsoft Defender for Cloud Apps connector.
 
-1. From the Data Connectors Tab, search for the **Microsoft 365 Defender** connector and select it from the list.
+1. From the Data Connectors Tab, search for the **Microsoft Defender XDR** connector and select it from the list.
 
 1. Select the **Open connector page** on the connector information blade.
 
