@@ -94,7 +94,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Click on the Start button, search for **Hyper-V** from the bottom windows search bar, and select to open.
 
-1. Click on WIN1    
+1. Click on WIN1-XXXXX    
 
 1. Select and right-click on the **WINServer** virtual machine from the virtual machine section in the middle and select start, then again right-click on the **WINServer** virtual machine and select **connect**.
 
@@ -166,11 +166,11 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 In this task, you will manually install the required agent on the Windows Server.
 
-1. On the WIN1 Virtual machine, go to **Microsoft Defender for Cloud** and select the **Getting Started** page.
+1. On the Lab Virtual machine, navigate to **Microsoft Defender for Cloud** in Azure Portal.
 
-1. Select the **Get Started** tab.
+1. Select the **Inventory** from the leftpane.
 
-1. Scroll down and select **Configure** under the *Add non-Azure servers* section.
+1. Select *+ Add non-Azure servers* section.
 
 1. Select **Upgrade** next to the workspace you created earlier.  This might take a few minutes, wait until you see the notification *"Defender plans for workspace were saved successfully"*.
 
@@ -195,12 +195,6 @@ In this task, you will manually install the required agent on the Windows Server
     ![Picture 1](../Media/SC-200-img26.png)
 
 1. You can move on to the next lab and return later to the **Microsoft Defender for Cloud**. Your server will appear in the **Inventory** section.
-
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Review
 In this lab, you have completed the following:
