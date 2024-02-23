@@ -24,13 +24,29 @@ In this lab, you will perform the following:
 
 ### Task 1: Preparing the Microsoft 365 Defender workspace
 
-1. On the **Microsoft 365 Defender** portal(https://security.microsoft.com/), from the navigation menu, select **Settings** from the left.
+1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
 
-1. On the **Settings** page select **Microsoft 365 Defender**. You are going to see an image of a coffee mug and a message that reads: *Hang on! We're preparing new spaces for your data and connecting them.*. It will take several minutes to finish, so leave the page open but make sure it finishes since it is required for the next Lab. 
+1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
-    >**Note:** If you get the error message "We didn't plan it will fail, but something went wrong." retry the step later or do it before the next Lab.
+1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
-1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
+1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Home** from the left.
+
+    >**Note:** You may need to scroll all the way to the menu top.
+
+1. On the **Home** portal page, **Welcome to Microsoft Defender** is displayed.
+
+1. Scroll down through the tiles until you find the tile labeled **Microsoft Defender XDR**.
+
+    >**Hint:** It should be at the bottom right of the tiles.
+
+1. Select the button that says **Turn new features on.**
+
+1. You will see messages saying *loading and Initializing* briefly displayed at the top of the page, and then you're going to see an image of a coffee mug and a message that reads: **Hang on! We're preparing new spaces for your data and connecting them.** It will take approximately 5 minutes to finish. *Leave the page open and make sure it finishes since it is required for the next Lab.*
+
+    >**Note:** If the message "Hang on! We're preparing new spaces for your data and connecting them" does not appear, or the "Settings > Microsoft Defender XDR > Account" page opens, but you see the message "Failed to load data storage location. Please try again later",  select "Alert service settings" from the "General" menu, or go to the navigation menu, scroll down to the "Assets" section and select "Devices".
+
+1. When the new space completes successfully, you are going to see the Microsoft 365 Defender General settings for Account, Email notifications, Alert service settings, Permissions and roles and Streaming API. You will also see **Preview Features** turned on.
 
 ### Task 2: Initialize Microsoft Defender for Endpoint
 
