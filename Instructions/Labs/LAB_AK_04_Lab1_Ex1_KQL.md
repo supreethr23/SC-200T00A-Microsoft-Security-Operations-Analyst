@@ -43,7 +43,8 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Select "create new Resource Group" give the name **RG-Defender**.
 
-1. For the Name, enter something unique like **uniquenameDefender**.
+1. For the Name, enter **uniquenameDefender**.
+
 1. Select the default Region 
 
 1. Select **Review + Create**.
@@ -59,6 +60,8 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 ### Task 2: Initialize the Microsoft Sentinel Workspace.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+
+2. CLick on **+ Create**.  
 
 1. Next, In Add Microsoft Sentinel to a workspace page.
 
