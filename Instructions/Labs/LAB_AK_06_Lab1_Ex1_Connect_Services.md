@@ -100,7 +100,7 @@ In this task, you will connect the Microsoft Defender for Cloud Apps connector.
 
 1. From the Data Connectors Tab, search for the **Microsoft Defender XDR** connector and select it from the list.
 
-   >**Note:** the **Microsoft Defender XDR** connector should be installed 
+   >**Note:** The **Microsoft Defender XDR** connector must be installed from the list even if its available in the connector list.
 
 1. Select the **Open connector page** on the connector information blade.
 
