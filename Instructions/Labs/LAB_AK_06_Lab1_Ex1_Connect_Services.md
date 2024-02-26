@@ -106,7 +106,7 @@ In this task, you will connect the Microsoft Defender for Cloud Apps connector.
 
 1. Under **Connect Events**, select the **Name** checkbox to select all the checkboxes for **Microsoft Defender for Endpoint**.
 
-   >**Note:** Please do not select the events **Microsoft Defender for Office 365**, **Microsoft Defender for Cloud Apps**, **Microsoft Defender for Identity**, **Microsoft Defender Alert** because those are unsupported.  
+1. Repeat the same for **Microsoft Defender for Office 365**
 
 1. Scroll to the bottom of the page and select **Apply Changes**.
 
