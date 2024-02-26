@@ -76,6 +76,8 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 1. Once the script is pasted in and adjusted press enter. The script will run against your Linux server remotely. When the script processes properly it should look like this screen:
 
    ![ConnectorScript](../Media/LinuxConnectedupd.png)
+   
+1. Type **exit** to close the remote shell connection to LIN1.
 
 ### Task 3: Connect a Linux host using the Syslog connector
 
@@ -130,6 +132,8 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
    >**Note:** You can also copy from the notepad you have pasted earlier.
 
 1. Once the script is pasted in press enter. The script will run against your Linux server remotely. You have completed the task. No further labs in this course rely on this connection.
+
+1. When it finished, type **exit** to close the remote shell connection to LIN2.
 
 ### Task 4: Configure the facilities you want to collect and their severities for the Syslog connector
 
