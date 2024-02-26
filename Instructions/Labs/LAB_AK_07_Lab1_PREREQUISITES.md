@@ -16,7 +16,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. In the lab virtual machine, search for **Hyper-V Manager** from the bottom windows search bar and select to open.
 
- 1. Select and right-click on the **WINSERVER** virtual machine and select start click on **Continue**, then again right-click on the **WINSERVER** virtual machine and select **connect**.
+ 1. Select and right-click on the **WINSERVER** virtual machine and select **Start**, then again right-click on the **WINSERVER** virtual machine and select **connect**.
  
  1. Inside **WINSERVER** Click on **Action (1)** then click on **Ctrl+Alt+Delete (2)** to turn on WINSERVER.
 
@@ -39,15 +39,13 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
     - On the left-right click on **WINSERVER**.
     - Click on Hyper-V settings.
     - From there click on allow enhanced mode policy Under **Server** and enable the option.
--	Again, click on allow enhanced mode under **User** and enable the option.
+-	Again, click on allow enhanced mode under **User** and enable the option. Restart the WINSERVER machine once to reflect the changes.
 
  1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
- 1. On the left side navigation pane under **Infrastructure** select **+ Add/Create** then click on **Add a Machine**.
+ 1. On the left side navigation pane under **Infrastructure** select **Machines** and then click on **+ Add/Create** then click on **Add a Machine**.
 
- 1. Select **+ Add**.
-
- 1. Select **Generate script** in the "Add a single server" section.
+ 1. Select **Generate script** in the **"Add a single server"** section.
 
      ![Picture 1](../Media/SC-200-module6-ex2-img4.png)
 
@@ -97,9 +95,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Click on **create**
 
- 1. Select **rg-defender** for the Resource group drop-down.
-
- 1. Enter *RG-Defender* and select **Ok**.
+ 1. Select **RG-DEFENDER** for the Resource group drop-down.
 
  1. For the Name, enter **uniquenameDefender**
 
@@ -111,29 +107,26 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Click on + Create.
 
- 1. Next, In Add Microsoft Sentinel to a workspace page.
-
- 1. Select your existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
+ 1. Next, in Add Microsoft Sentinel to a workspace page select the existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
 
  1. Select the Microsoft Sentinel Workspace you created.
  
- 1. Go to the content hub search for **Windows Security Events** and click on install. Then go to the data connector page and refresh you should find **Windows Security Events via AMA**
+ 1. Go to the content hub search for **Windows Security Events** and click on install. 
 
- 1. From the Data Connectors Tab, search for the **Windows Security Events via AMA** connector and select it from the list.
+     ![Picture 1](../Media/contenthub.png)
+     ![Picture 1](../Media/installWSEvents.png)
 
- 1. Select the **Open connector page** on the connector information blade.
+ 1. Once the installation is completed, go to the data connector page and refresh you should find **Windows Security Events via AMA**
+
+     ![Picture 1](../Media/dataconnectors.png)
+
+ 1. Select the **Windows Security Events via AMA** connector and click on **Open connector page** on the connector information blade. 
 
  1. In the **Configuration** section, select the **+Create data collection rule**.
 
  1. Enter **WINSERVER** for Rule Name, then select **Next: Resources**.
 
- 1. Select **+Add resource(s)**.
-
- 1. Expand **rg-defender** (or the Resource Group you are created), then select **WIN-xxxx**.
-
- 1. Select **Apply**.
-
- 1. Select **Next: Collect**, then **Next: Review + create**.
+ 1. Expand the **Subscription** and the **RG-DEFENDER** (or the Resource Group you are created), then select **WIN-xxxx**. Then select **Next: Collect** and **Next: Review + Create**.
 
  1. Select **Create**.
 

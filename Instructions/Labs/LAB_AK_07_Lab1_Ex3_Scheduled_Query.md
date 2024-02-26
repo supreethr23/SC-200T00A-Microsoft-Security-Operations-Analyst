@@ -10,7 +10,7 @@ Analytics rules search for specific events or sets of events across your environ
 ## Lab objectives
  In this lab, you will perform the following:
 - Task 1: Create a Scheduled Query
-- Task 2: Test the new rule
+- Task 2: Connect to Azure Activity data connector
 - Task 3: Create a Scheduled Query.
 - Task 4: Test our new rule.
 
@@ -34,41 +34,27 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 5. From the rule summary blade, make sure you're receiving data by reviewing the green icon under *Data sources: Azure Activity*.
 
-    >**Note:** If you do not see it in a connected state, follow the following steps:
-
-### Task 2:  Connect the Azure Activity data connector
-
-1. In the Microsoft Sentinel left menus, scroll down to the *Content management* section and select **Content Hub**.
-
-1. In the *Content hub*, search for the **Azure Activity** solution and select it from the list.
-
-1. On the *Microsoft Defender for Cloud* solution page select **Install**.
-
-1. When the installation completes select **Manage**
-
-    >**Note:** The *Azure Activity* solution installs the *Azure Activity* Data connector, 12 Analytic rules, 14 Hunting queries and 1 Workbook.
-
-1. Select the *Azure Activity* Data connector and select **Open connector page**.
-
-1. In the *Configuration* area under the *Instructions* tab, scroll down to "2. Connect your subscriptions...", and select **Launch Azure Policy Assignment Wizard>**.
-
-1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure Pass - Sponsorship" subscription from the drop-down list and click **Select**.
-
-1. Select the **Parameters** tab, choose your *uniquenameDefender* workspace from the **Primary Log Analytics workspace** drop-down list. This action will apply the subscription configuration to send the information to the Log Analytics workspace.
-
-1. Select the **Remediation** tab and select the **Create a remediation task** checkbox. This action will apply the policy to existing Azure resources.
-
-1. Select the **Review + Create** button to review the configuration.
-
-1. Select **Create** to finish.
-
-1. It might take few minutes for the **Connected** status to appear.
+    >**Note:** If you do not see it in a connected state, follow the below Task to **connect to Azure Activity data connector**:
+    
+    > Task 2: Connect to Azure Activity data connector
+    >1. In the Microsoft Sentinel left menus, scroll down to the *Content management* section and select **Content Hub**.
+    >1. In the *Content hub*, search for the **Azure Activity** solution and select it from the list.
+    >1. On the Azure Activity solution page select **Install**.
+    >1. When the installation completes, go to Data connectors page in Microsoft Sentinel. The *Azure Activity* solution installs the *Azure Activity* Data connector, 12 Analytic rules, 14 Hunting queries and 1 Workbook.
+    >1. Select the *Azure Activity* Data connector and select **Open connector page**.
+    >1. In the *Configuration* area under the *Instructions* tab, scroll down to "2. Connect your subscriptions...", and select **Launch Azure Policy Assignment Wizard>**.
+    >1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your subscription from the drop-down list and click **Select**.
+    >1. Select the **Parameters** tab, choose your *uniquenameDefender* workspace from the **Primary Log Analytics workspace** drop-down list. This action will apply the subscription configuration to send the information to the Log Analytics workspace.
+    >1. Select the **Remediation** tab and select the **Create a remediation task** checkbox. This action will apply the policy to existing Azure resources.
+    >1. Select the **Review + Create** button to review the configuration.
+    >1. Select **Create** to finish.
+    >1. It might take few minutes for the **Connected** status to appear.
 
 ## Task 3: Create a Scheduled Query.
 
 1. Once, you've received data by reviewing the green icon under *Data sources: Azure Activity*.
 
-1. Select **Create rule** to continue.
+1. Select **Create rule** and select Scheduled query rule to continue.
 
 1. In the Analytics rule wizard, on the *General* tab, change the *Severity* to **Medium**.
 

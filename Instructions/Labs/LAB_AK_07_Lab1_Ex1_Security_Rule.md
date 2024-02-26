@@ -35,15 +35,13 @@ In this task, you will activate a Microsoft Security rule.
         
 1. Select **Analytics** from the Configuration area. By default, you will see the *Active rules*.
 
-1. Select the + Create button from the command bar and select the Microsoft incident creation rule.
+1. Select the **+ Create** button from the command bar and select the **Microsoft incident creation rule**.
 
-1. Under Name, enter Create incidents based on Defender for Endpoint.
+1. Under Name, enter **Create incidents based on Defender for Endpoint**.
 
-1. Scroll down and under Microsoft security service select Microsoft Defender for Endpoint. 
+1. Scroll down and under Microsoft security service select **Microsoft Defender for Endpoint**. 
 
-1. Scroll down the page and under "Analytics rule logic - Filter by Severity", select the *Custom* drop-down list.
-
-1. Under Filter by Severity, select the Custom option select Low, Medium, and High for the severity level, and go back to the rule.
+1. Under Filter by Severity, select the **Custom** option select Low, Medium, and High for the severity level.
 
 1. Select the **Next: Automated response** button and then select **Next: Review + create** button.
 
