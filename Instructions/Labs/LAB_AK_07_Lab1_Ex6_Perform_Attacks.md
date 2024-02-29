@@ -54,7 +54,10 @@ In this task, you will perform attacks on a host with Microsoft Defender for End
     cd \
     mkdir temp
     cd temp
+    notepad startup.bat
     ```
+Select **Yes** to create a new file and **Save** the empty startup.bat file opened
+
 4. Attack 1 - Copy and run this command into the Command Prompt app:
 
     ```Command
