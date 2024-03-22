@@ -60,6 +60,8 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
+1. Navigate to **Assets** from left panel and click on **Devices** and, wait for **few minutes** to get loaded once loading completed refresh the page.
+
 1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
 
 1. On the **Settings** page select **Device discovery**. 
