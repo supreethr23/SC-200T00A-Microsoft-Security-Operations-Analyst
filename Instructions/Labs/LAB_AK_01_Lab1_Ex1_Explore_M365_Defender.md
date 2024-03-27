@@ -116,6 +116,8 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. Select the button that says **Turn new features on.**
 
+    **Note:** If you do not see the the **Microsoft Defender XDR** tile on the Home page, please go to **Settings** and then **Account** to verify if the the New features are already turned on. 
+
 1. You will see messages saying *loading and Initializing* briefly displayed at the top of the page, and then you're going to see an image of a coffee mug and a message that reads: **Hang on! We're preparing new spaces for your data and connecting them.** It will take approximately 5 minutes to finish. *Leave the page open and make sure it finishes since it is required for the next Lab.*
 
     >**Note:** If the message "Hang on! We're preparing new spaces for your data and connecting them" does not appear, or the "Settings > Microsoft Defender XDR > Account" page opens, but you see the message "Failed to load data storage location. Please try again later",  select "Alert service settings" from the "General" menu, or go to the navigation menu, scroll down to the "Assets" section and select "Devices".
