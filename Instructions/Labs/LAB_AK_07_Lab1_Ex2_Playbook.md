@@ -33,6 +33,8 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 
 1. Close any Teams pop-ups that may appear.
 
+   >**Note:** If prompted to use **New Teams** accept and proceed with the exercise.
+
 1. If not already selected, select **Teams** on the left menu, then at the top, select the **+** icon.
 
 1. Under the **Create Team**, select **From scratch** button.
@@ -105,11 +107,11 @@ In this task, you will update the new playbook you created with the proper conne
 
 1. Select the **Automation** from the Configuration area and then select the **Active Playbooks** tab.
 
-1. Select the **PostMessageTeams-OnIncident** playbook.
+1. Select the **PostMessageTeams** playbook.
 
 1. On the Logic App Designer page for *PostMessageTeams-OnIncident*, in the center menu, select **Edit**.
 
-1. Select the *first* block **Microsoft Sentinel alert(Preview)**.
+1. Select the *first* block **Microsoft Sentinel alert**.
 
 1. Select the **Change connection** link.
 
@@ -117,11 +119,11 @@ In this task, you will update the new playbook you created with the proper conne
 
 1. Select the connection that has your Azure subscription admin credentials under *Display Name*. **Hint:** ODL_USER_ID@ZZZZZZ.onmicrosoft.com. The last line of the block should now read "Connected to your-admin-username".
 
-1. Now select the *second* block **Connections**.
+1. Now select the *second* block **Post a message (V3)**.
 
-1. Select **Add new** and select your Azure subscription admin credentials when prompted. The last line of the block should now read "Connected to your-admin-username".
+1. In the Prameters tab, scroll down and select the **Change connection** link and then select **Add new** and **Sign in**. Chose your Azure admin credentials when prompted. The Prameters tab should now read "Connected to your-admin-username".
 
-1. The block has now been renamed to **Post a message (V3)**, at the end of the *Team* field, select the **X** to clear the contents. The field will be changed to a drop-down with a listing of the available Teams from Microsoft Teams. Select **SOC**.
+1. At the end of the *Team* field, select the **X** to clear the contents. The field will be changed to a drop-down with a listing of the available Teams from Microsoft Teams. Select **SOC**.
 
 1. Do the same for the *Channel* field, select the **X** at the end of the field to clear the contents. The field will be changed to a drop-down with a listing of the Channels of the SOC Teams. Select **New Alerts**.
 
