@@ -10,7 +10,7 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 ## Lab objectives
 In this lab, you will perform the following:
-- Task 1: Preparing the Microsoft 365 Defender workspace
+- Task 1: Preparing the Microsoft Defender XDR workspace
 - Task 2: Initialize Microsoft Defender for Endpoint
 - Task 3: Onboard a Device
 - Task 4: Configure Roles
@@ -22,15 +22,15 @@ In this lab, you will perform the following:
 
   ![Picture 1](../Media/SC200-Lab_Diagrams_Mod2_L1_Ex1.png)
 
-### Task 1: Preparing the Microsoft 365 Defender workspace
+### Task 1: Preparing the Microsoft Defender XDR workspace
 
-1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
+1. In the Edge browser, go to the Microsoft Defender XDR portal at (https://security.microsoft.com).
 
 1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
 1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
-1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Home** from the left.
+1. On the **Microsoft Defender XDR** portal, from the navigation menu, select **Home** from the left.
 
     >**Note:** You may need to scroll all the way to the menu top.
 
@@ -46,15 +46,15 @@ In this lab, you will perform the following:
 
     >**Note:** If the message "Hang on! We're preparing new spaces for your data and connecting them" does not appear, or the "Settings > Microsoft Defender XDR > Account" page opens, but you see the message "Failed to load data storage location. Please try again later",  select "Alert service settings" from the "General" menu, or go to the navigation menu, scroll down to the "Assets" section and select "Devices".
 
-1. When the new space completes successfully, you are going to see the Microsoft 365 Defender General settings for Account, Email notifications, Alert service settings, Permissions and roles and Streaming API. You will also see **Preview Features** turned on.
+1. When the new space completes successfully, you are going to see the Microsoft Defender XDR General settings for Account, Email notifications, Alert service settings, Permissions and roles and Streaming API. You will also see **Preview Features** turned on.
 
 ### Task 2: Initialize Microsoft Defender for Endpoint
 
-In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
+In this task, you will perform the initialization of the Microsoft Defender for the Endpoint.
 
-1. If you are not already at the Microsoft 365 Defender portal, start the Microsoft Edge browser.
+1. If you are not already at the Microsoft Defender XDR portal, start the Microsoft Edge browser.
 
-1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
+1. In the Edge browser, go to the Microsoft Defender XDR portal at (https://security.microsoft.com).
 
 1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
@@ -62,7 +62,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 1. Navigate to **Assets** from left panel and click on **Devices** and, wait for **few minutes** to get loaded once loading completed refresh the page.
 
-1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
+1. On the **Microsoft Defender XDR** portal, from the navigation menu, select **Settings** from the left.
 
 1. On the **Settings** page select **Device discovery**. 
 
@@ -77,7 +77,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
 
-1. If you are not already at the Microsoft 365 Defender portal in your browser, start the Microsoft Edge browser go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
+1. If you are not already at the Microsoft Defender XDR portal in your browser, start the Microsoft Edge browser go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
 
 1. Select **Settings** from the left menu bar, then from the Settings page select **Endpoints**.
 
@@ -103,7 +103,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
     ![Picture 1](../Media/SC-200-img25.png)
 
-1. Back in the Onboarding page from the Microsoft 365 Defender portal, under the section "2. Run a detection test", copy the detection test script by selecting the **Copy** button.  
+1. Back in the Onboarding page from the Microsoft Defender XDR portal, under the section "2. Run a detection test", copy the detection test script by selecting the **Copy** button.  
 
 1. In the windows search bar of the virtual machine, type **CMD** and choose **Run as Administrator** on the right pane for the Command Prompt app. 
 
@@ -111,7 +111,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. Paste the script by right-clicking in the **Administrator: Command Prompt** windows and press **Enter** to run it. **Note:** The window closes automatically after running the script.
 
-1. In the Microsoft 365 Defender portal, in the left-hand menu, under the **Assets** area, select **Devices**. If the device is not shown, complete the next task and come back to check it back later. It can take up to 60 minutes for the first device to be displayed in the portal.
+1. In the Microsoft Defender XDR portal, in the left-hand menu, under the **Assets** area, select **Devices**. If the device is not shown, complete the next task and come back to check it back later. It can take up to 60 minutes for the first device to be displayed in the portal.
 
      ![Picture 1](../Media/SC-200-img22.png)
 
@@ -155,7 +155,7 @@ In this task, you will configure roles for use with device groups.
 
 1. Select **Create** and click on **Yes**. 
 
-1. In the Microsoft 365 Defender portal select **Settings** from the left menu bar, then select **Endpoints**. 
+1. In the Microsoft Defender XDR portal select **Settings** from the left menu bar, then select **Endpoints**. 
 
 1. Select **Roles** under the permissions area.
 
@@ -178,7 +178,7 @@ In this task, you will configure roles for use with device groups.
 
 In this task, you will configure device groups that allow for access control and automation configuration.
 
-1. In the Microsoft 365 Defender portal select **Settings** from the left menu bar, then select **Endpoints**. 
+1. In the Microsoft Defender XDR portal select **Settings** from the left menu bar, then select **Endpoints**. 
 
 1. Select **Device groups** under the permissions area.
 
@@ -209,7 +209,7 @@ In this task, you will configure device groups that allow for access control and
 
 ### Review
 In this lab, you have completed the following:
-- Prepared the Microsoft 365 Defender workspace
+- Prepared the Microsoft Defender XDR workspace
 - Initialized Microsoft Defender for Endpoint
 - Onboarded a Device
 - Configured Roles
