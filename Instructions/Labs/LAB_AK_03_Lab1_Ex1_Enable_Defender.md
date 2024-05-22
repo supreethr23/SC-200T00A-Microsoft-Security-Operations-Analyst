@@ -5,11 +5,17 @@
 You're a Security Operations Analyst working at a company that is implementing cloud workload protection with Microsoft Defender for Cloud.  In this lab, you will enable Microsoft Defender for Cloud.
 
 ## Lab objectives
+
 In this lab, you will perform the following:
+
 - Task 1: Access the Azure portal and set up a Subscription
+
 - Task 2: Create a Log Analytics Workspace
+
 - Task 3: Enable Microsoft Defender for Cloud
+
 - Task 4: Install Azure Arc on an On-Premises Server
+
 - Task 5: Protect an On-Premises Server
 
 ## Estimated timing: 40 minutes
@@ -40,9 +46,9 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
 
-1. Select **+Create** from the command bar.
+1. Select **+ Create** from the command bar.
 
-1. Select Resource Group **RG-Defender** from the drop down.
+1. Select Resource Group **rg-defender** from the drop down.
 
 1. For the Name, enter something unique like **uniquenameDefender**.
 
@@ -54,36 +60,35 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 ### Task 3: Enable Microsoft Defender for Cloud
 
-In this task, you will enable and configure Microsoft Defender for Cloud.
+In this task, you'll enable and configure Microsoft Defender for Cloud.
 
 1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
-1. click the left menu and click on **Getting started**
+1. On the **Getting started** page, under the **Upgrade** tab, make sure your subscription is selected, and then select the **Upgrade** button at the bottom of the page. Wait for the *Trial started* notification to appear, it takes about 2 minutes. 
 
-1. On the **Getting Started** page, under the **Upgrade** tab, make sure your subscription is selected and then select the **Upgrade** button at the bottom of the page. Wait for the *Trial started* notification to appear, it takes about 2 minutes. **Hint:** You can click the bell button on the top bar to review your Azure portal notifications.
+    >**Hint:** You can click the bell button on the top bar to review your Azure portal notifications.
 
-    ![Picture 1](../Media/SC-200-img2.png)
+    >**Note:** If you see the error *"Could not start Azure Defender trial on the subscription"*, continue with the next steps to enable all the Defender plans in Step 5.
 
-1. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings**.
+1. In the left menu for Microsoft Defender for Cloud, under the Management, select **Environment settings**.
 
-1. Select the **"Azure HOL XXXX"** subscription (or equivalent name in your Language). 
+1. Select the **"MOC HOL xxxx"** subscription.
 
 1. Review the Azure resources that are now protected with the Defender for Cloud plans.
 
+    >**Important:** If all Defender plans are *Off*, select **Enable all plans** and then click **Save**. Wait for the *"Resource plan in subscription Azure Pass were saved successfully!"* notification to appear.
+
 1. Select the **Settings & monitoring** tab from the Settings area (next to Save).
 
-1. Review the monitoring extensions. Confirm that **Log Analytics agent/Azure Monitor agent** is **Off**. Close the Settings & monitoring page by selecting the 'X' on the upper right of the page.
+1. Review the monitoring extensions. It includes configurations for Virtual Machines, Containers and Storage Accounts. Close the "Settings & monitoring" page by selecting the 'X' on the upper right of the page.
 
 1. Close the settings page by selecting the 'X' on the upper right of the page to go back to the **Environment settings** and select the '>' to the left of your subscription.
 
-1. Select the Log Analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing.
+1. Select the Log analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing.
 
-1. Select **Enable all plans** (to the right of Select Defender plan) and then select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender was saved successfully!"* notification to appear.
-
-    ![Picture 1](../Media/enable.png)
+1. Select **Enable all plans** (to the right of Select Defender plan) and then select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender were saved successfully!"* notification to appear.
 
     >**Note:** If the page is not being displayed, refresh your Edge browser and try again.
-    >**Note:** You can ignore if the plans are already enabled and are in **On state**
 
 1. Close the Defender plans page by selecting the 'X' on the upper right of the page to go back to the **Environment settings**
 
@@ -108,54 +113,54 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 1. Open the Microsoft Edge browser and navigate to the Azure portal at https://portal.azure.com.
 
 1. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
-**NOTE**: You can use the clipboard in the toolbox of VM to copy and paste
 
 1. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
-**NOTE**: You can use the clipboard in the toolbox of VM to copy and paste
 
 1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
-1. On the left menu, In the navigation pane under **Azure Arc resources** select **Machines**
+1. In the navigation pane under **Azure Arc resources** select **Machines**
 
-1. Select **+ Add/Create**.
+1. Select **+ Add/Create**, then select **Add a machine**.
 
-1. Select **Generate script** in the "Add a single server" section.
+1. Select **Generate script** from the "Add a single server" section.
 
-    ![Picture 1](../Media/sc-200-img004.png)
+    <!--- 1. Read through the *Prerequisites* tab and then select **Next** to continue.--->
 
-1. Select the Resource group you created earlier. **Hint:**RG-Defender**
+1. In the *Add a server with Azure Arc* page, select the Resource group you created earlier under *Project details*. **Hint:** *rg-defender*
 
-    **Note:** If you haven't already created a resource group, open another tab create the resource group, and start over.
+    >**Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
 
-1. For *Region*, select **(US) East Us** from the drop-down list. 
+1. For *Region*, select **(US) East Us** from the drop-down list.
 
 1. Review the *Server details* and *Connectivity method* options. Keep the default values and select **Next** to get to the Tags tab.
 
-1. Select **Next** to get to the Download and run script tab.
+1. Review the default available tags. Select **Next** to get to the Download and run script tab.
 
-1. Scroll down and select the **Download** button. Hint: if your browser blocks the download take action in the browser to allow it. In Edge Browser, select the 3 dots "..." and then select **Keep**. 
+1. Scroll down and select the **Download** button. **Hint:** if your browser blocks the download, take action in the browser to allow it. In Edge Browser, select the ellipsis button (...) if needed and then select **Keep**.
 
 1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
 
-1. Enter: **cd C:\Users\Administrator\Downloads**
+1. Enter: cd C:\Users\Administrator\Downloads
 
-1. Type **Set-ExecutionPolicy -ExecutionPolicy Unrestricted** and press enter.
+    >**Important:** If you do not have this directory, most likely means that you are in the wrong machine. Go back to the beginning of Task 4 and change to WINServer and start over.
+
+1. Type *Set-ExecutionPolicy -ExecutionPolicy Unrestricted* and press enter.
 
 1. Enter **A** for Yes to All and press enter.
 
-1. Type **.\OnboardingScript.ps1** and press enter.
+1. Type *.\OnboardingScript.ps1* and press enter.  
 
-1. Enter **R** to Run once and press enter (this may take a couple of minutes).
+    >**Important:** If you get the error *"The term .\OnboardingScript.ps1 is not recognized..."*, make sure you are doing the steps for Task 4 in the WINServer virtual machine. Other issue might be that the name of the file changed due to multiple downloads, search for *".\OnboardingScript (1).ps1"* or other file numbers in the running directory.
 
-1. While running the script, we will receive a pop-up for authentication. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting and **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting.
+1. Enter **R** to Run once and press enter (this may take a couple minutes).
 
-1. After the message *" Connected machine to Azure"* appears in the Windows PowerShell window, go to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
+1. The setup process will open a new Edge browser tab to authenticate the Azure Arc agent. Select your admin account, wait for the message "Authentication complete" and then go back to the Windows PowerShell window.
 
-    ![Picture 1](../Media/SC-200-img6.png)
+1. When the installation finishes, go back to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Machines** page.
 
-1. Select **Refresh** until the WINServer server name appears.
+1. Select **Refresh** until WINServer server name appears and the Status is *Connected*.
 
-    **Note:** This could take a few minutes.
+    >**Note:** This could take a couple of minutes.
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -171,31 +176,59 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. Select the **Inventory** from the leftpane.
 
-1. Select *+ Add non-Azure servers* section.
+1. Select **+ Add non-Azure servers** section.
 
 1. Select **Upgrade** next to the workspace you created earlier.  This might take a few minutes, wait until you see the notification *"Defender plans for workspace were saved successfully"*.
 
 1. Select **+ Add Servers** next to the workspace you created earlier.
 
-1. Select **Log Analytics agent instructions**
+1. Select **Data Collection Rules**.
 
-1. Select **Download Windows Agent (64 bit)**.
+1. Select **+ Create**.
 
-1. Select **Open file** to run the downloaded *MMASetup-AMD64.exe* file.
+1. Enter **WINServer** for Rule Name.
 
-1. Select **Next** until the wizard page for **Agent Setup Options** appears, Select **Connect the Agent to Azure Log Analytics (OMS)**, then select **Next**.
+1. Select your *MOC HOL xxxx* subscription and select a Resource Group. **Hint:** *rg-defender*
 
-1. Copy and paste the **Workspace ID** and **Primary Key** values in the **Workspace Key** text box from the Azure portal into the wizard page fields as appropriate and select **Next**.
+1. You can keep the default *East US* region or select another preferable location.
 
-1. Continue with the Install. Select **Finish** when complete.
+1. Select the **Windows** radio button for *Platform Type* and select **Next:Resources**.
 
-1. Go to the "Microsoft Defender for Cloud" portal and select **Inventory** from general section.
+1. In the **Resources** tab, **+ Add resources**.
 
-1. The Server should appear in the list. You may have to select **Refresh** to see the update and it will take a few minutes.
+1. In the **Select a scope** page, expand the *Scope* column for **rg-defender** (or the Resource Group your created), then select **WINServer** and select **Apply**.
 
-    ![Picture 1](../Media/SC-200-img26.png)
+    >**Note:** You may need to set the column filter for *Resource type* to *Server-Azure Arc* if **WINServer** is not displayed.
 
-1. You can move on to the next lab and return later to the **Microsoft Defender for Cloud**. Your server will appear in the **Inventory** section.
+1. Select **Next: Collect and deliver**
+
+1. In the **Collect and deliver** tab, select **+ Add data source**
+
+1. In the **Add a data source** page, select **Performance Counters** from *Data source type*.
+
+    >**Note:** For the purposes of this lab you could select *Windows Event Logs*. These selections can be revised later.
+
+1. Click the **Destination** tab
+
+1. Select **Azure Monitor Logs** in the **Destination Type** dropdown
+
+1. Select your *Azure Pass - Sponsorship* subscription from the **Subscription** dropdown
+
+1. Select your workspace name **Hint:** *RG-Defender* from the **Account or namespace** dropdown
+
+1.  Select **Add data source** and select **Review + create**
+
+1. Select **Create** after *Validation passed* is displayed.
+
+1. The **Data Collection Rule** creation initiates the installation of the *AzureMonitorWindowsAgent* extension on **WINServer**.
+
+1. When the *Data Collection Rule* creation completes, enter **WINServer** in the *Search resources, services and docs* search bar, and select **WINServer** from *Resources*.
+
+1. On **WINServer** scroll down through the left menu to *Settings* and *Extensions*.
+
+1. The **AzureMonitorWindowsAgent** should be listed with a *Status* of **Succeeded**.
+
+1. You can move on to the next lab and return later to review the **Inventory** section of **Microsoft Defender for Cloud** to verify that **WINServer** is included.
 
 ### Review
 In this lab, you have completed the following:
@@ -205,4 +238,4 @@ In this lab, you have completed the following:
 - Installed Azure Arc on an On-Premises Server.
 - Protected an On-Premises Server
 
-# Proceed to Exercise 2
+## Proceed to Exercise 2
