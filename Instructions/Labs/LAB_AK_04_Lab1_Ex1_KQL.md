@@ -41,10 +41,10 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Select **+Create** from the command bar.
 
-1. Select "create new Resource Group" give the name  **RG-Defender**.
+1. Select **Create new** under Resource Group and provide the name **RG-Defender**. Select **Ok**.
 1. For the Name, enter as **uniquenameDefender**.
 
-1. Select the default Region 
+1. Select the default Region. 
 
 1. Select **Review + Create**.
 
@@ -60,37 +60,39 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-2. CLick on **+ Create**.  
+1. Click on **+ Create**.  
 
-1. Next, In Add Microsoft Sentinel to a workspace page.
+1. Next, in Add Microsoft Sentinel to a workspace page.
 
-1. Select your existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
+1. Select your existing workspace that was created in the previous task, then select **Add**. This could take a few minutes.
+
+1. In the Microsoft Sentinel free trial activated tab, select **Ok**.
 
 ### Task 3: Connect the Windows security event connector.
 
-1. On the search bar type **Microsoft sentinel** and select it
+1. On the search bar type **Microsoft sentinel** and select it.
 
-1. select the created workspace
+1. Select the created workspace.
 
-1. On the left menu search for data connectors and click on it
+1. On the left menu search for data connectors and click on it.
 
-1. You can see there are no connectors installed yet so go to the content hub on the same page
+1. You can see there are no connectors installed yet so go to the content hub on the same page.
 
-1. On the content hub page search for **Windows security event** and select, Install
+1. On the content hub page search for **Windows security event** and select it, choose **Install**.
 
-1. Once you receive the notification of successful installation go back to the Data connector page and click on refresh
+1. Once you receive the notification of successful installation go back to the Data connector page and click on refresh.
 
-1. You can see **Security events Via Legacy agent** and **windows security events via AMA**
+1. You can see **Security events via Legacy agent** and **Windows security events via AMA**.
 
-1. Select **Security events Via Legacy agent** and click on **open connector page**
+1. Select **Security events via Legacy agent** and click on **Open connector page**.
 
-1. Under configuration choose **Install agent on Azure Windows Virtual Machine** and select **Download & install agent for Azure Windows Virtual machines** 
+1. Under configuration choose **Install agent on Azure Windows Virtual Machine** and select **Download & install agent for Azure Windows Virtual machines**.
 
-1. Select the **WIN 1** virtual machine and click on connect
+1. Select the **WIN1-<inject key="DeploymentID" enableCopy="false" /></inject>** virtual machine and click on **Connect**.
 
-1. Then come back to Configuration and scroll down a bit you can find **Select which events to stream** Click on **All Events**
+1. Then come back to Configuration and scroll down a bit you can find **Select which events to stream** Click on **All Events**.
 
-1. Click on apply changes now if you refresh the data connector page you can see the status connected for **Security events Via Legacy agent**
+1. Click on **Apply changes** now if you refresh the data connector page you can see the status connected for **Security events Via Legacy agent**.
 
 ### Task 4: Enable Microsoft Defender for Cloud
 
@@ -98,7 +100,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
-1. click the left menu and click on **Getting started**
+1. Click the left menu and click on **Getting started**
 
 1. On the **Getting Started** page, under the **Upgrade** tab, make sure your subscription is selected, and then select the **Upgrade** button at the bottom of the page. Wait for the *Trial started* notification to appear, it takes about 2 minutes. **Hint:** You can click the bell button on the top bar to review your Azure portal notifications.
 
@@ -118,7 +120,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Select the Log Analytics workspace you created earlier *uniquenameDefender* to review the available options and pricing.
 
-1. Select **Enable all** (to the right of Select Defender plan) and then select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender was saved successfully!"* notification to appear.
+1. Select **Enable all plans** (to the right of Select Defender plan) and then select **Save**. Wait for the *"Microsoft Defender plan for workspace uniquenameDefender was saved successfully!"* notification to appear.
 
     ![Picture 1](../Media/SC-200-img333.png)
 
@@ -146,13 +148,13 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. Select **Open file** to run the downloaded *MMASetup-AMD64.exe* file.
 
-   >**Note** If it is already installed it asks for "Repair" or "remove" select **Repair** then click on next then click on **install**
+   >**Note** If it is already installed it asks for "Repair" or "remove" select **Repair** then click on **Next** then click on **Install**
+
+1. Continue with the Install. Select **Finish** when complete.
 
 1. Select **Next** until the wizard page for **Agent Setup Options** appears, Select **Connect the Agent to Azure Log Analytics (OMS)**, then select **Next**.
 
 1. Copy and paste the **Workspace ID** and **Primary Key** values in the **Workspace Key** text box from the Azure portal into the wizard page fields as appropriate and select **Next**.
-
-1. Continue with the Install. Select **Finish** when complete.
 
 1. Go to the "Microsoft Defender for Cloud" portal and select **Inventory** from the general section.
 
