@@ -91,7 +91,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 
 1. Go-to content hub in data connector window search for **syslog** and install it.
   
-1. From the **Data Connectors tab**, search for the **Syslog** connector and select it from the list.
+1. From the **Data Connectors tab**, search for the **Syslog via Legacy Agent** connector and select it from the list.
 
 1. Select the **Open connector page** on the connector information blade.
 
