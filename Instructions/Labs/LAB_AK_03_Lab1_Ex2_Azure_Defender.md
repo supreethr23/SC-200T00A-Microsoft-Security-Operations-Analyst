@@ -32,13 +32,13 @@ In this task, you will load sample security alerts and review the alert details.
 
 1. Under *Cloud Security*, select **Regulatory compliance** in the portal menu.
 
-1. Select **Managed compliance policies** on the toolbar.
+1. Select **Manage compliance standards** on the toolbar.
 
 1. Select your subscription.
 
-1. On the left menu Under *Policy settings*, select **Security policy** in the portal menu.
+1. On the left menu Under *Policy settings*, select **Security policies** in the portal menu.
 
-1. Review the "Industry & regulatory standards" available to you by default.
+1. Review the "Microsoft security benchmark" available to you by default.
 
 1. Select Microsoft Defender for Cloud below the search box to return to the main blade.
 
@@ -56,32 +56,38 @@ In this task, you will review cloud security posture management. The Secure Scor
 
 ### Task 3: Mitigate security alerts
 
-In this task, you will load sample security alerts and review the alert details.
+In this task, you'll load sample security alerts and review the alert details.
 
 1. Under *General*, select **Security alerts** in the portal menu.
 
-1. Select **Sample alerts** from the command bar. **Hint:** you may need to select the ellipsis (...) button from the command bar).
+1. Select **Sample alerts** from the command bar. **Hint:** you may need to select the ellipsis (...) button from the command bar.
 
-1. In the **Create sample alerts (Preview)** pane make sure your subscription is selected and that all sample alerts are selected in the *Defender for Cloud plans* area.
+1. In the Create sample alerts (Preview) pane make sure your subscription is selected and that all sample alerts are selected in the *Defender for Cloud plans* area.
 
 1. Select **Create sample alerts**.  
 
-    >**Note:** This sample alert creation process may take a few minutes to complete, wait for the "Successfully created sample alerts" notification. Once complete each of the alerts should appear in the *Security alerts* area.
+    >**Note:** This sample alert creation process may take a few minutes to complete, wait for the *"Successfully created sample alerts"* notification.
 
-1. For the alerts that grabbed your attention, perform the following actions:
+1. Once completed, select **Refresh** (if needed) to see the alerts appear under the *Security alerts* area.
 
-    - Select any one alert from the list, and information about the alert should appear. Select **View full details**.
+1. Choose an interesting alert with a *Severity* of *High* and perform the following actions:
 
-    - Review and read the **Alert details** tab.
+    - Select the alert checkbox and the alert detail pane should appear. Select **View full details**.
 
-    - Select the **Take action** tab or select the **Next: Take Action** button at the end of the page.
+    - Review and read the *Alert details* tab.
 
-    - Review the *Take action* information. Notice the sections available to take action depending on the type of alert: Inspect resource context, Mitigate the threat, prevent future attacks, Trigger automated response, and Suppress similar alerts.
+    - Select the **Take action** tab or scroll down and select the **Next: Take Action** button at the end of the page.
+
+    - Review the *Take action* information. Notice the sections available to take action depending on the type of alert: Inspect resource context, Mitigate the threat, Prevent future attacks, Trigger automated response and Suppress similar alerts.
 
 ## Review
+
 In this lab, you have completed the following:
+
 - Explored Regulatory Compliance
+
 - Explored Security posture and recommendations
+
 - Mitigated security alerts
 
 ## You have successfully completed the lab. 
