@@ -235,13 +235,9 @@ In this task, you will manually install the required agent on the Windows Server
 In this lab, you have completed the following:
 
 - Able to access the Azure portal and set up a Subscription.
-
 - Created a Log Analytics Workspace
-
 - Enabled Microsoft Defender for Cloud
-
 - Installed Azure Arc on an On-Premises Server.
-
 - Protected an On-Premises Server
 
 ## Proceed to Exercise 2
