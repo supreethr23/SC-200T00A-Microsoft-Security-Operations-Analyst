@@ -6,8 +6,11 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 ## Lab objectives
  In this lab, you will perform the following:
+ 
 - Task 1: Explore Regulatory Compliance
+
 - Task 2: Explore Security posture and recommendations
+
 - Task 3: Mitigate security alerts
   
 ## Estimated timing: 40 minutes
@@ -19,14 +22,6 @@ You're a Security Operations Analyst working at a company that implemented Micro
 ### Task 1: Explore Regulatory Compliance
 
 In this task, you will load sample security alerts and review the alert details.  
-
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.
-
-1. In the Edge browser, open the Azure portal at (https://portal.azure.com).
-
-1. In the **Sign in** dialog box, copy and paste Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
 1. In the Search bar of the Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
@@ -52,7 +47,7 @@ In this task, you will review cloud security posture management. The Secure Scor
 
 1. Under *General*, select **Recommendations** in the portal menu.
 
-1. Explore Recommendations provided (after 24 hours).
+1. Explore the Recommendations provided (after 24 hours).
 
 ### Task 3: Mitigate security alerts
 
