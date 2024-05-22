@@ -44,7 +44,9 @@ After completing this lab, you will be able to integrate log data from various d
  
  1. In the Search bar of the Azure portal, type **Sentinel**, then select **Microsoft Sentinel**.
 
- 1. select the newly created workspace and click on **Add**
+ 1. Select **+Create** from the command bar.
+
+ 1. Select the newly created workspace and click on **Add**
 
 ### Task 2: Connect the Microsoft Entra ID connector
 
@@ -56,7 +58,7 @@ After completing this lab, you will be able to integrate log data from various d
    
  1. Go back to data connector page and search for the **Microsoft Entra ID** connector and select it from the list.
 
- 1. Select the **Open connector page** on the connector information blade.
+ 1. Navigate back to the **Data connectors** pagwe and select the **Open connector page** on the connector information blade.
 
  1. Check and click on the **Sign-in Logs** and **Audit Logs** options from the Configuration area, then select **Apply Changes**.
 
@@ -88,7 +90,7 @@ After completing this lab, you will be able to integrate log data from various d
 
     >**Note:** The Microsoft Defender for Cloud solution installs the Subscription-based Microsoft Defender for Cloud (Legacy) Data connector, the Tenant-based Microsoft Defender for Cloud (Preview) Data connector, and an Analytics rule.
 
- 1. Select the Subscription-based Microsoft Defender for Cloud (Legacy) Data connector, and select the **Open connector page** on the connector information blade.
+ 1. Select the **Subscription-based Microsoft Defender for Cloud (Legacy)** Data connector, and select the **Open connector page** on the connector information blade.
 
  1. In the **Configuration** area, under Subscription, select the checkbox for the available subscription and slide the **Status** option to the right to indicate **Connected**.
 
