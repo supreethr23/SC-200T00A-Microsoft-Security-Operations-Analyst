@@ -13,21 +13,19 @@
 
   ![Picture 1](../Media/SC200-Lab_Diagrams_Mod6_L1_Ex2.png)
  
-### Task 1: Preparing the Microsoft 365 Defender workspace
+### Task 1: Preparing the Microsoft Defender XDR workspace
 
-1. On the **Microsoft 365 Defender** (https://security.microsoft.com) portal, from the navigation menu, select **Settings** from the left.
+1. On the **Microsoft Defender XDR** (https://security.microsoft.com) portal, from the navigation menu, select **Settings** from the left.
 
-1. On the **Settings** page select **Microsoft 365 Defender**. You are going to see an image of a coffee mug and a message that reads: *Hang on! We're preparing new spaces for your data and connecting them.*. It will take several minutes to finish, so leave the page open but make sure it finishes since it is required for the next Lab. 
+1. On the **Settings** page select **Microsoft Defender XDR**. You are going to see an image of a coffee mug and a message that reads: *Hang on! We're preparing new spaces for your data and connecting them.*. It will take several minutes to finish, so leave the page open but make sure it finishes since it is required for the next Lab. 
 
     >**Note:** If you get the error message "We didn't plan it will fail, but something went wrong." retry the step later or do it before the next Lab.
 
-1. When the new space completes successfully, you are going to see the Microsoft 365 Defender settings for Account, Email notifications, Preview features and Streaming API.
+1. When the new space completes successfully, you are going to see the Microsoft Defender XDR settings for Account, Email notifications, Preview features and Streaming API.
 
 ### Task 2: Create a Windows Virtual Machine in Azure
 
 In this task, you will create a Windows virtual machine in Azure.  
-
- 1. Login to WIN1 virtual machine with the password as provided in the environment tab.
 
  1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
@@ -53,7 +51,7 @@ In this task, you will create a Windows virtual machine in Azure.
 
   1. Leave the default value for **Region**.
 
-  1. Scroll down and review the **Size** for the virtual machine it should be selected as **Standard_B2s**. If it appears empty, select **See all sizes**, choose the **Standard_B2s** click **Select**.
+  1. Scroll down and review the **Size** for the virtual machine it should be selected as **Standard_B2s**. If it appears empty, select **See all sizes**, choose the **Standard_DS1_v2** click **Select**.
 
   1. Enter a **Username** as **azureuser**.
 
