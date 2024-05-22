@@ -1,13 +1,13 @@
-# Module 1 - Lab 1 - Exercise 1 - Explore Microsoft 365 Defender 
+# Module 1 - Lab 1 - Exercise 1 - Explore Microsoft Defender XDR
 
 ## Lab scenario
- You are a Security Operations Analyst working at a company that is implementing Microsoft 365 Defender. You start by assigning preset security policies in EOP and Microsoft Defender for Office 365.
+ You are a Security Operations Analyst working at a company that is implementing Microsoft Defender XDR. You start by assigning preset security policies in EOP and Microsoft Defender XDR for Office 365.
 
 ## Lab objectives
 In this lab, you will perform:
 - Task 1: Create a Group 
-- Task 2: Apply Microsoft Defender for Office 365 preset security policies
-- Task 3: Preparing the Microsoft 365 Defender workspace
+- Task 2: Apply Microsoft Defender XDR for Office 365 preset security policies
+- Task 3: Preparing the Microsoft Defender XDR workspace
     
 ## Estimated timing: 120 minutes
 
@@ -33,7 +33,7 @@ In this lab, you will perform:
 
    |Setting|Value|
     |---|---|
-    |Group Type| **Microsoft 365** |
+    |Group Type| **Microsoft ** |
     |Group Name| **Sg-IT** |
     |Azure AD roles can be assigned to the group| **Yes** |
 
@@ -41,19 +41,19 @@ In this lab, you will perform:
 
 1. Click on **No members selected** and select the **ODL_user** and click on **users** from the list and then click on **select**.
 
-   **Note**: Make sure you have selected **Group type** as Microsoft 365.
+   **Note**: Make sure you have selected **Group type** as Microsoft .
 
 1. Ignore the **No Roles selected**   
 
 1. Select **Create** and click on **Yes**. 
 
-### Task 2: Apply Microsoft Defender for Office 365 preset security policies
+### Task 2: Apply Microsoft Defender XDR for Office 365 preset security policies
 
-In this task, you will assign preset security policies for Exchange Online Protection (EOP) and Microsoft Defender for Office 365 in the Microsoft 365 security portal.
+In this task, you will assign preset security policies for Exchange Online Protection (EOP) and Microsoft Defender XDR for Office 365 in the Microsoft  security portal.
 
 **Note**: Skip the log-in steps if already logged in by default 
 
-1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
+1. In the Edge browser, go to the Microsoft  Defender XDR portal at (https://security.microsoft.com).
 
 1. In the **Sign in** dialog box, copy and paste in the tenant Email account for the admin username provided by your lab hosting provider and then select **Next**.
 
@@ -61,7 +61,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
     >**Note:** If you receive a message "The operation could not be completed. Please try again later. If the problem persists, contact Microsoft support." just click **OK** to continue.  
 
-1. If shown, close the Microsoft 365 Defender quick tour.
+1. If shown, close the Microsoft Defender XDR quick tour.
 
 1. From the navigation menu, under *Email & Collaboration* area, select **Policies & rules**.
 
@@ -77,12 +77,12 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. Under **Standard protection**, select **Manage protection settings**. **Hint:** If you see this option grayed out, refresh your browser using **Ctrl+F5**.
 
-    >**Note:** After clicking on **Manage protection settings**, This might need 40 to 60 Minutes to load the content, wait for 40 to 60 Minutes to get loaded the page completely after 40 to 60 Minutes back to the same page and might need to sign out of Microsoft defender and sign in again and then try repeating the steps again to move forward. 
+    >**Note:** After clicking on **Manage protection settings**, This might need 40 to 60 Minutes to load the content, wait for 40 to 60 Minutes to get loaded the page completely after 40 to 60 Minutes back to the same page and might need to sign out of Microsoft defender XDR and sign in again and then try repeating the steps again to move forward. 
 
 1. In the *Apply Exchange Online Protection* section, select **Specific recipients** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**.                                                                              
   >**Hint:** Your tenant's domain name is the same that you have for your admin account, it might be something like *mocholxxxxx.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing. 
 
-1. In the **Apply Defender for Office 365 protection** section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+1. In the **Apply Defender XDR for Office  protection** section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
 1. In the *Impersonation protection* section, select **Next** for next all steps i.e. (4x times) to continue.
 
@@ -102,28 +102,21 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
-### Task 3: Preparing the Microsoft 365 Defender workspace
+### Task 3: Preparing the Microsoft Defender XDR workspace
 
-1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Home** from the left.
+1. On the **Microsoft Defender** portal, from the navigation menu, select **Home** from the left.
 
     >**Note:** You may need to scroll all the way to the menu top.
 
-1. On the **Home** portal page, **Welcome to Microsoft Defender** is displayed.
+1. On the **Home** portal page, the **Get your SIEM and XDR in one place** banner is displayed.
 
-1. Scroll down through the tiles until you find the tile labeled **Microsoft Defender XDR**.
+1. Scroll down the menu items to **Assets** and select **Devices**.
 
-    >**Hint:** It should be at the bottom right of the tiles.
+1. The process to deploy the Defender XDR workspace should start and you should see messages saying *loading and Initializing* briefly displayed at the top of the page, and then you're going to see an image of a coffee mug and a message that reads: **Hang on! We're preparing new spaces for your data and connecting them.** It will take approximately 5 minutes to finish. *Leave the page open and make sure it finishes since it is required for the next Lab.*
 
-1. Select the button that says **Turn new features on.**
+   >**Note:** If the message "Hang on! We're preparing new spaces for your data and connecting them" does not appear, or the "Settings > Microsoft Defender XDR > Account" page opens, but you see the message "Failed to load data storage location. Please try again later", select "Alert service settings" from the "General" menu, or go to the navigation menu, scroll down to the "Assets" section and select "Devices".
 
-    **Note:** If you do not see the the **Microsoft Defender XDR** tile on the Home page, please go to **Settings** and then **Account** to verify if the the New features are already turned on. 
-
-1. You will see messages saying *loading and Initializing* briefly displayed at the top of the page, and then you're going to see an image of a coffee mug and a message that reads: **Hang on! We're preparing new spaces for your data and connecting them.** It will take approximately 5 minutes to finish. *Leave the page open and make sure it finishes since it is required for the next Lab.*
-
-    >**Note:** If the message "Hang on! We're preparing new spaces for your data and connecting them" does not appear, or the "Settings > Microsoft Defender XDR > Account" page opens, but you see the message "Failed to load data storage location. Please try again later",  select "Alert service settings" from the "General" menu, or go to the navigation menu, scroll down to the "Assets" section and select "Devices".
-
-1. When the new space completes successfully, you are going to see the Microsoft 365 Defender General settings for Account, Email notifications, Alert service settings, Permissions and roles and Streaming API. You will also see **Preview Features** turned on.
-
+1. When the new space completes successfully, you are going to see the Microsoft Defender XDR General settings for Account, Email notifications, Alert service settings, Permissions and roles and Streaming API. You will also see **Preview Features** turned on. 
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -134,7 +127,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 ### Review
  In this lab, you have completed the following:
    - Created a Group
-   - Applied Microsoft Defender for Office 365 preset security policies
-   - Prepared the Microsoft 365 Defender workspace
+   - Applied Microsoft Defender XDR for Office 365 preset security policies
+   - Prepared the Microsoft Defender XDR workspace
 
 ## You have successfully completed the lab
