@@ -9,7 +9,8 @@ You're a Security Operations Analyst working at a company that is implementing M
 - Task 1: Create a Log Analytics Workspace
 - Task 2: Initialize the Microsoft Sentinel Workspace
 - Task 3: Create a Watchlist
-- Task 4: Create a Threat Indicator.
+- Task 4: Create a Threat Indicator
+- Task 5: Configure log retention
 
 ## Estimated timing: 90 minutes
 
@@ -50,6 +51,8 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 1. Next, Add Microsoft Sentinel to a workspace page.
 
 1. Select your existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
+
+1. In **Microsoft Sentinel** you should be in the **General** section *News & Guides* and see a notice stating *Microsoft Sentinel free trial activated*. Press the **OK** button.
 
 1. Navigate around the newly created Microsoft Sentinel workspace to become familiar with the user interface options.
 
@@ -92,7 +95,7 @@ In this task, you will create a watchlist in Microsoft Sentinel.
     |---|---|
     |Name|**HighValueHosts**|
     |Description|**High Value Hosts**|
-    |Watchlist alias|**HighValueHosts**|
+    |Alias|**HighValueHosts**|
 
 1. Select, **Next: Source >**.
 
@@ -124,7 +127,7 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 1. Review the different indicator types available in the *Types* dropdown. Select the **domain-name**. Enter your initials in the Domain box. You can use **onmicrosoft.com**.
 
-1. For the *Threat types*, add **malicious-activity** and select **OK**.
+1. For the *Threat types*, add **malicious-activity** and select **Apply**.
 
 1. For the *Name*, enter the same value used for the Domain. An example would be **onmicrosoft.com**.
 
@@ -152,17 +155,30 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
    ![Picture 1](../Media/SC-200-img50.png)
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+### Task 5: Configure log retention
+
+In this task, you will change the retention period for the SecurityEvent table.
+
+1. In Microsoft Sentinel, select the **Settings** option under the *Configuration* area.
+
+1. Select **Workspace settings**.
+
+1. In Log Analytics workspace, select the **Tables** option under the *Settings* area.
+
+1. Search and select the table **SecurityEvent**, and then select the ellipsis button (...).
+
+1. Select **Manage Table**.
+
+1. Select **180 days** for *Total retention period*. Notice that *Archive period* is only 150 days, since it uses 30 days from the (default) *Interactive retention*.
+
+1. Select **Save** to apply the changes.
 
 ## Review
 In this lab, you have completed the following:
 - Created a Log Analytics Workspace
 - Initialized the Microsoft Sentinel Workspace
 - Created a Watchlist
-- Created a Threat Indicator.
+- Created a Threat Indicator
+- Configured log retention
 
 ## You have successfully completed the lab.
