@@ -79,6 +79,8 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Enter: **cd C:\Users\Administrator\Downloads**
 
+    >**Note:** If you are not able to copy the content, then copy the required content to a notepad file using the Clipboard functionality in the top navigation pane of the Hyper V VM in the lab VM and paste it in the Powershell window.
+ 
  1. Type **Set-ExecutionPolicy -ExecutionPolicy Unrestricted** and press enter.
 
  1. Enter **A** for Yes to All and press enter.
