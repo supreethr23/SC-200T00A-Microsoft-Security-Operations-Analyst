@@ -6,9 +6,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 ### Task 1: Create a Group 
 
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.
-
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Now,back in the lab vm, sign in to the [Azure portal](https://portal.azure.com).
 
 1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
 
@@ -16,9 +14,9 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
-1. In the Search bar of the Azure portal, type **Azure Active Directory**, then select Azure Active Directory.
+1. In the Search bar of the Azure portal, type **Entra ID**, then select Entra ID.
 
-1. Select **Groups** and then click on **New group**.
+1. Under **Manage** select **Groups** and then click on **New group**.
 
 1. Enter the below details for New group page :
 
@@ -26,7 +24,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
     |---|---|
     |Group Type| **Microsoft 365** |
     |Group Name| **Sg-IT** |
-    |Azure AD roles can be assigned to the group| **Yes** |
+    |Microsoft Entra roles can be assigned to the group| **Yes** |
 
 1. Click on **no owners selected** and select the **ODL_user** from the list and then click on **select**.
 
@@ -70,8 +68,6 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. In the *Impersonation protection* section, select **Next** four times (4x) to continue.
 
-1. In the *Policy mode* section, make sure the **Turn on the policy after I finish** radio button is selected, and then select **Next**.
-
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
 1. Under **Strict protection**, select **Manage protection settings**. **Hint:** *Strict protection* is found under "Email & Collaboration - Policies & rules - Threat policies - Preset security policies".
@@ -81,8 +77,6 @@ In this task, you will assign preset security policies for Exchange Online Prote
 1. In the *Apply Defender for Office 365 protection* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
 
 1. In the *Impersonation protection* section, select **Next** four times (4x) to continue.
-
-1. In the *Policy mode* section, make sure the **Turn on the policy after I finish** radio button is selected, and then select **Next**.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
