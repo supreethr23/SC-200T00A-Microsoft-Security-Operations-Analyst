@@ -2,7 +2,7 @@
 
 ## Lab scenario
 
-![Lab overview.](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex4.png)
+![Lab overview.](../Media/23-05-2024.png)
 
 You're a Security Operations Analyst working at a company that deployed both Microsoft Defender XDR and Microsoft Sentinel. You need to prepare for the Unified Security Operations Platform connecting Microsoft Sentinel to Defender XDR. Your next step will be to install the Defender XDR Content Hub solution and deploy the Defender XDR data connector to Microsoft Sentinel.
 
