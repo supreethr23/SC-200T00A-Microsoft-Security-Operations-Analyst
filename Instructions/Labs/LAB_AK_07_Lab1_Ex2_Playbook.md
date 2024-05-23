@@ -16,7 +16,7 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 
 1. If not already selected, select **Teams** on the left menu.
 
-1. Select the **Create Team** option.
+1. Select the **Create a new Team** option.
 
    ![Picture 1](../Media/xl1.png)
 
