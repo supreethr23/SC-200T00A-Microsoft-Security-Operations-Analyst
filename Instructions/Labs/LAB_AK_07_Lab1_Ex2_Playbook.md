@@ -1,176 +1,107 @@
 # Module 7 - Lab 1 - Exercise 2 - Create a Playbook
 
-### Task 1: Connect the Azure Active Directory connector.
-
- In this task, you will connect the Azure Active Directory connector to Microsoft Sentinel.
- 
- 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
-
- 1. Select the sentinel workspace you created in the previous exercise and from the left menu, in the Configuration area select **Data connectors**.  In the Data Connectors page, search for the **Azure Active Directory** connector and select it from the list.
-
- 1. Select the **Open connector page** on the connector information blade.
-
- 1. Select the **Sign-in Logs** and **Audit Logs** options from the Configuration area, then select **Apply Changes**.
-
-### Task 2: Connect the Azure Active Directory Identity Protection connector.
-
- In this task, you will connect the Azure Active Directory Identity Protection connector to Microsoft Sentinel.
-
- 1. From the Data Connectors Tab, search for the **Azure Active Directory Identity Protection** connector and select it from the list.
-
- 1. Select the **Open connector page** on the connector information blade.
-
- 1. From the **Configuration** area select the **Connect** button.
-
-
-### Task 3: Connect the Microsoft Defender for Cloud Apps connector.
-
-In this task, you will connect the Microsoft Defender for Cloud Apps connector.
-
-1. From the Data Connectors Tab, search for the **Microsoft 365 Defender** connector and select it from the list.
-
-1. Select the **Open connector page** on the connector information blade.
-
-1. From the Configuration area select **Connect Incident and Alerts**. 
-
-1. Under "Connect Events", select the **Name** checkbox to select all the checkboxes for "Microsoft Defender for Endpoint".
-
-1. Repeat the same for "Microsoft Defender for Office 365"
-
-1. Scroll to the bottom of the page and select **Apply Changes**.
-
-
-### Task 4: Connect the Azure Activity connector.
-
-In this task, you will connect the Azure Activity connector.
-
-1. From the Data Connectors Tab, search for the **Azure Activity** connector and select it from the list.
-
-1. Select the **Open connector page** on the connector information blade.
-
-1. In the Configuration area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
-
-1. In the **Basics** tab, select the button with the three dots under **Scope** to select your subscription from the drop-down list and click **Select**.
-
-1. Select the **Parameters** tab, choose your Microsoft Sentinel workspace from the **Primary Log Analytics workspace** drop-down list.
-
-1. Select the **Remediation** tab and mark the **Create a remediation task** checkbox.
-
-1. Select the **Review + Create** button to review the configuration.
-
-1. Select **Create** to finish.
-
-
-### Task 5: Create a Security Operations Center Team in Microsoft Teams.
+### Task 1: Create a Security Operations Center Team in Microsoft Teams.
 
 In this task, you will create a Microsoft Teams team for use in the lab.
 
-1. Log in to WIN1 virtual machine with the password as provided in the Environment tab.  
+1. In the Edge browser, open a new window and navigate to the Microsoft Teams portal at (https://teams.microsoft.com).
 
-1. In the Edge browser, open a new tan and navigate to the Microsoft Teams portal at (https://teams.microsoft.com).
-
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+1.  If prompted, in the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
 
 1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
 
 1. Close any Teams pop-ups that may appear.
 
-1. If not already selected, select **Teams** on the left menu, then at the bottom, select **Join or create a team**.
+    >**Note:** If prompted to use **New Teams** accept and proceed with the exercise.
 
-1. Select the **Create Team** button in the main window.
+1. If not already selected, select **Teams** on the left menu.
+
+1. Select the **Create a new Team** option.
+
+   ![Picture 1](../Media/xl1.png)
 
 1. Select the **From scratch** button.
 
 1. Select the **Private** button.
 
-1. Give the team the name: **SOC** and select the **Create** button.
+1. Give the team the name: type **SOC** and select the **Create** button.
 
 1. In the Add members to SOC screen, select the **Skip** button. 
 
 1. Scroll down the Teams blade to locate the newly created SOC team, select the ellipsis **(...)** on the right side of the name and select **Add channel**.
 
-1. Enter a channel name as *New Alerts* then select the **Add** button.
+1. Enter a channel name of *New Alerts* and channel type choose it as private then select the **Create** button.
 
+### Task 2: Create a Playbook in Microsoft Sentinel
 
-### Task 6: Create a Playbook in Microsoft Sentinel.
+In this task, you'll create a Logic App that is used as a Playbook in Microsoft Sentinel.
 
-In this task, you will create a Logic App that will be used as a Playbook in Microsoft Sentinel.
+1. In the Microsoft Edge browser, navigate to [Microsoft Sentinel on GitHub](https://github.com/Azure/Azure-Sentinel).
 
-1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
-
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
-
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
-
-1. Select your Microsoft Sentinel Workspace you created earlier.
-
-1. Select the **Community** page in the *Content management* area on the left side of the page.
-
-1. Select the **Onboard community content** link on the right pane. This will open a new tab in the Edge Browser for Microsoft Sentinel GitHub content.
-
-1. Select the **Solutions** folder.
+1. Scroll down and select the **Solutions** folder.
 
 1. Next select the **SentinelSOARessentials** folder, then the **Playbooks** folder.
 
 1. Select the **Post-Message-Teams** folder.
 
-1. In the readme.md box, go below the second *Quick Deployment* option **Deploy with alert trigger** and select **Deploy to Azure** button.  
+1. In the readme.md box, scroll down to the *Quick Deployment* section, Under **Deploy with incident trigger (recommended)**  select the **Deploy to Azure** button.  
 
-    **VERY IMPORTANT**: Be aware that they are two different Microsoft Sentinel triggers to use, Incident and Alert. Make sure you are selecting the Alert (second) one.
+   ![Picture 1](../Media/xox.png)
 
 1. Make sure your Azure Subscription is selected.
 
-1. For Resource Group, select **Create New** and select resource group from drop down *RG-Playbooks* and select **OK**.
+1. For Resource Group, select **Create New**, enter *RG-Playbooks* and select **OK**.
 
-1. For region, select the appropriate region for your situation. The default region will likely be optimal.
+1. Leave **(US) East US** as the default value for *Region*.
 
-1. Make sure the *Playbook Name* is "PostMessageTeams-OnAlert" and select **Review + create**.
+1. Rename the *Playbook Name* to "PostMessageTeams-OnIncident" and select **Review + create**.
 
-1. Now select **create**.
+1. Now select **Create**. 
 
-    **Note:** Wait for the deployment to finish before proceeding to the next task. It may take a couple minutes to deploy.
+    >**Note:** Wait for the deployment to finish before proceeding to the next task.
 
+### Task 3: Update a Playbook in Microsoft Sentinel
 
-### Task 7: Update a Playbook in Microsoft Sentinel.
-
-In this task, you will update the new playbook you created with the proper connection information.
+In this task, you'll update the new playbook you created with the proper connection information.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select your Microsoft Sentinel Workspace.
+1. Select **uniquenameDefender** Microsoft Sentinel Workspace.
 
-1. Select the **Automation** from the Configuration area and then select the **Active Playbooks** tab.
+1. Select **Automation** under the *Configuration* area and then select the **Active Playbooks** tab.
 
-1. Select the **PostMessageTeams-OnAlert** playbook.
+1. Select **Refresh** from the command bar in case you don't see any playbooks. You should see the playbook created from the previous step.
 
-1. On the Logic App page for *PostMessageTeams-OnAlert*, in the center menu, select **Edit**.
+1. Select the **PostMessageTeams-Onincident** playbook name.
 
-1. Select the *first* block **Microsoft Sentinel alert(Preview)**.
+   ![Picture 1](../Media/xox1.png)
+
+1. On the Logic App page for *PostMessageTeams-Onincident*, in the command menu, select **Edit**.
+
+    >**Note:** You may need to refresh the page.
+
+1. Select the *first* block, **Microsoft Sentinel incident**.
 
 1. Select the **Change connection** link.
 
-1. Select **Add new** and select **Sign in**. In the new window, select your Azure subscription admin credentials when prompted.
+   ![Picture 1](../Media/xox2.png)
 
-1. Now select the *second* block **Alert - Get incident(Preview)**.
+1. Select **Add new** and select **Sign in**. In the new window, select your Azure subscription admin credentials (odl username) when prompted. The last line of the block should now read "Connected to your-admin-username".
 
-1. Select the **Change connection** link.
+  >**Note:** If you face a pop-up blocker from the browser allow it and try to authenticate again.
 
-1. Select the connection that has your Azure subscription admin credentials under *Display Name*. **Hint:** ODL_USER_ID@ZZZZZZ.onmicrosoft.com. The last line of the block should now read "Connected to your-admin-username".
+1. Now select the *second* block, **Post a message (V3)**.
 
-1. Now select the *third* block **Connections**.
+1. In the Prameters tab, scroll down and select the **Change connection** link and then select **Add new** and **Sign in**. Choose your Azure admin credentials(odl username) when prompted. The Prameters tab should now read "Connected to your-admin-username".
 
-1. Select **Add new** and select your Azure subscription admin credentials when prompted. The last line of the block should now read "Connected to your-admin-username".
+1. At the end of the *Team* field, select the **X** to clear the contents. The field is changed to a drop-down with a listing of the available Teams from Microsoft Teams. Select **SOC**.
 
-1. The block has now been renamed to **Post a message (V3)**, at the end of the *Team* field, select the **X** to clear the contents. The field will be changed to a drop-down with a listing of the available Teams from Microsoft Teams. Select **SOC**.
+   ![Picture 1](../Media/xox3.png)
 
-1. Do the same for the *Channel* field, select the **X** at the end of the field to clear the contents. The field will be changed to a drop-down with a listing of the Channels of the SOC Teams. Select **New Alerts**.
+1. Do the same for the *Channel* field, select the **X** at the end of the field to clear the contents. The field is changed to a drop-down with a listing of the Channels of the SOC Teams. Select **New Alerts**.
 
-   ![Picture 1](../Media/SC-200-img13.png)
+   ![Picture 1](../Media/xox4.png)
 
-1. Select **Save** on the command bar.
-
-The Logic App will be used in a future lab.
+1. Select **Save** on the command bar. The Logic App will be used in a future lab.
 
 ## Proceed to Exercise 3
