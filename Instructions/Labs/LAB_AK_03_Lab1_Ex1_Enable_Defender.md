@@ -168,6 +168,8 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
+      <validation step="0c6dee81-f921-4af0-b0aa-c090d4d61db8" />
+
 ### Task 5: Protect an On-Premises Server
 
 In this task, you will manually install the required agent on the Windows Server.
