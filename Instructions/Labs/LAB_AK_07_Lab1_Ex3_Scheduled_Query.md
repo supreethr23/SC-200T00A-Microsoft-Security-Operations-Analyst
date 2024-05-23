@@ -97,149 +97,47 @@ In this task, you create a scheduled query and connect it to the Teams channel y
   
 1. Select **Save**.
 
+### Task 3: Test your new rule
 
+In this task, you test your new scheduled query rule.
 
+1. In the top bar of the Azure portal, Select the icon **>_** that corresponds to the Cloud Shell. You might need to select the ellipsis icon first **(...)** if your display resolution is too low.
 
+   ![Picture 1](../Media/xs5.png)
 
+1. In the *Welcome to Azure Cloud Shell* window, select **Powershell**.
 
+1. On the *Getting started* page, select **Mount storage account**, and then select your **Subscription** from the *storage account subscription* drop-down menu item and select the **Apply** button.
 
+   ![Picture 1](../Media/xs6.png)
 
+   >**Important:** Do not select the *No storage account required* radio button option. This will cause the incident creation to fail.
 
+1. On the *Mount storage account* page, select **We will create a storage account for you**, and then select **Next**.
 
+1. Wait until the Cloud Shell is provisioned, then close the Azure Cloud Shell window.
 
+1. In the Search bar of the Azure portal, type *Activity* and then select **Activity Log**.
 
+1. Make sure the following *Operation name* items appear: **List Storage Account Keys** and **Update Storage Account Create**. These are the operations that the KQL query you reviewed earlier will match to generate the alert. **Hint:** You might need to select **Refresh** to update the list.
 
-### Task 1: Create a Scheduled Query.
+1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-In this task, you will create a scheduled query and connect it to the Teams channel you created in the previous exercise.
+1. Select your Microsoft Sentinel Workspace.
 
-1. Log in to WIN1 virtual machine with the password as provided in the Environment tab.  
+1. Select the **Incidents** menu option under *Threat management*.
 
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+1. Select the **Auto-refresh incidents** toggle.
 
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+   ![Picture 1](../Media/xs7.png)
 
-4. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. You should see the newly created Incident.
 
-5. Select your Microsoft Sentinel Workspace.
+    >**Note:** The event that triggers the incident may take 5+ minutes to process. Continue with the next exercise, you will come back to this view later.
 
-6. Select **Analytics** from the Configuration area.
+1. Select the Incident and review the information in the right blade.
 
-7. Select the **+ Create** button and select **Scheduled query rule**.
+1. Go back to Microsoft Teams by selecting the tab in your Microsoft Edge browser. If you closed it, just open a new tab and type https://teams.microsoft.com. Go to the *SOC* Teams, select the *New Alerts* channel and see the message post about the incident.
 
-8. In the Analytics rule wizard, on the General tab, enter the Name *Azure AD Role Assignment Audit Trail*.
-
-9. For Tactics and techniques, select **Persistence**.
-
-10. For Severity, select **Low**.
-
-11. Select **Next : Set rule logic >** button:
-
-12. For the rule query, paste in the following KQL statement:
-
-    >**Warning:** When using the Paste function to the virtual machine extra (pipe) characters could be added. Make sure you use Notepad first to paste the following query.
-
-```KQL
-AuditLogs 
-| where isnotempty(InitiatedBy.user.userPrincipalName) and Result == 'success' and OperationName contains "member to role" and AADOperationType startswith "Assign"
-| extend InitiatedByUPN = tostring(InitiatedBy.user.userPrincipalName)
-| extend InitiatedFromIP = iff(tostring(AdditionalDetails.[7].value) == '', tostring(AdditionalDetails.[6].value), tostring(AdditionalDetails.[7].value))
-| extend TargetUser = tostring(TargetResources.[2].displayName)
-| extend TargetRoleName = tostring(TargetResources.[0].displayName)
-| project TimeGenerated, InitiatedByUPN, InitiatedFromIP, TargetUser, TargetRoleName, AADOperationType, OperationName
-```
-
-13. Select **View query results**. You should not receive any results nor any errors. If you receive an error, please review that the query appears just like the previous KQL statement. Close the *Logs* window by selecting the upper right **X** and select **OK** to discard to save changes to go back to the wizard.
-
-14. Back in the "Analytics rule wizard - Create new scheduled rule" blade in the *Alert enrichment* area, select *Entity mapping* and select the following values: 
-
-    - For the *Entity type* drop-down list select **Account**.
-    - For the *Identifier* drop-down list select **FullName**.
-    - For the *Value* drop-down list select **InitiatedByUPN**.
-
-    Then select **Add new entity** and select the following values:
-
-    - For the *Entity type* drop-down list select **IP**.
-    - For the *Identifier* drop-down list select **Address**.
-    - For the *Value* drop-down list select **InitiatedFromIP**.
-
-15. In the *Query scheduling* set the following:
-
-    |Setting|Value|
-    |---|---|
-    |Run Query every|5 minutes|
-    |Look data from the last|1 Day|
-
-    >**Note:** We are purposely generating many incidents for the same data.  This enables the Lab to use these alerts.
-
-16. For the *Alert threshold* area, leave the options unchanged.
-
-    >**Note:** Best practices are to manage thresholds in the alert rule KQL query statement.
-
-17. Under the *Event grouping* area, leave the **Group all events into a single alert** as the selected option since we want to generate a single alert every time it runs, as long as the query returns more results than the specified alert threshold above.
-
-18. Select the **Next: Incident settings >** button.  
-
-19. On the *Incident settings* tab, review the default options.
-
-20. Select the **Next: Automated response >** button.
-
-21. On the Automated response tab in the *Alert automation (Classic)* area, select the playbook *PostMessageTeams-OnAlert* you had created in the previous exercise.
-
-22. Under Automation rules, select **Add new**.
-
-23. For the *Automation rule name*, enter **Tier 2**.
-
-24. For the *Actions*, select **Assign owner**.
-
-25. Then select **Assign to me**. Then select **Apply**.
-
-26. Select the **Next: Review >** button.
-  
-27. Select **Create**.
-
-### Task 2: Test our new rule.
-
-In this task, you will test your new scheduled query rule.
-
-1. In the Search bar of the Azure portal, type *Azure Active Directory*. Then select **Azure Active Directory**.
-
-2. Select **Users** in the Manage area so the "Users - All users (Preview)" page is displayed.
-
-3. Select user **Christie Cline** in the list so the "Christie Cline - Profile" page is displayed.
-
-4. Select **Assigned roles** in the Manage area so the "Christie Cline - Assigned roles" page is displayed.
-
-5. Select **+ Add assignments** from the command bar.
-
-6. In the **Directory roles** page, search and select **User Administrator**. and select **Add**.
-
-8. Close the "Christie Cline - Assigned roles" and "Users - All users (Preview)" pages by selecting the 'x' in the top-right twice.
-
-9. In the "Adatum Corporation" page, under **Monitoring**, select **Audit logs**.
-
-10. Verify that the "Azure Active Directory" data connector was setup correctly in Sentinel by selecting **Export data settings**.
-
-11. Review that there is a **Diagnostic settings** entry for the **Log Analytics workspace** you created earlier for Sentinel.
-
-    ![Picture 1](../Media/SC-200-Diagnostic.png)
-
-12. Close the page by selecting the 'x' in the top-right.
-
-13. Select **Refresh** until you see the entries for the *Category: RoleManagement* that indicates the change in roles you made earlier.
-
-14. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
-
-15. Select your Microsoft Sentinel Workspace.
-
-16. Select the **Incidents** menu option.
-
-    >**Note:** The alert triggered may take 5+ minutes to process. You may continue with the next exercise and return to this point later. For automatic updating of the Incidents page, select the **Auto-refresh incidents** toggle.
-
-17. You should see the newly created Incident. Select the Incident and review the information in the right blade.
-
-    ![Picture 1](../Media/SC-200-img30.png)
-
-18. Open Microsoft Teams by opening a browser tab and going to https://teams.microsoft.com. Go to the *SOC* Team and see the message post about the incident.
 
 ## Proceed to Exercise 4
