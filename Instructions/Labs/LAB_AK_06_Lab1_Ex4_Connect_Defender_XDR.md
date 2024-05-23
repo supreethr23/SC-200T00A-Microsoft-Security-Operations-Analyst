@@ -1,9 +1,3 @@
----
-lab:
-    title: 'Exercise 4 - Connect Defender XDR to Microsoft Sentinel using data connectors'
-    module: 'Learning Path 6 - Connect logs to Microsoft Sentinel'
----
-
 # Learning Path 6 - Lab 1 - Exercise 4 - Connect Defender XDR to Microsoft Sentinel using data connectors
 
 ## Lab scenario
