@@ -28,6 +28,8 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Open a browser and log into the Azure Portal at https://portal.azure.com with the credentials you have been using in the previous labs.
 
+     >**Note:** Kindly use the 
+ 
  1. In the **Sign in** dialog box, copy and paste in the **Username** <inject key="AzureAdUserEmail"></inject> and then select Next.
 
  1. In the **Enter password** dialog box, copy and paste in the Password <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
@@ -40,6 +42,10 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
     > - Click on Hyper-V settings.
     > - From there click on allow enhanced mode policy Under **Server** and enable the option.
     > -	Again, click on allow enhanced mode under **User** and enable the option. Restart the WINSERVER machine once to reflect the changes.
+
+      >**Note:** If the copy-paste functionality is still not working, copy the content that has to be pasted then from the top navigation pane of the WINSERVER Hyper-V VM click on **Clipboard** and choose **Type Clipboard text** to paste.
+      
+      > ![Picture 1](../Media/x0.png)
 
  1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
@@ -141,8 +147,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 
-**PROCEED TO NEXT EXERCISE**
+**PROCEED TO  THE NEXT EXERCISE**
 
-=======
-**PROCEED TO NEXT EXERCISE**
+
 
