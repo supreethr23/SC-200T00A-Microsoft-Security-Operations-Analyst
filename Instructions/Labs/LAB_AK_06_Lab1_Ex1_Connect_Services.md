@@ -64,15 +64,15 @@ After completing this lab, you will be able to integrate log data from various d
 
 ### Task 3: Connect the Microsoft Entra ID Protection connector
 
- In this task, you will connect the Microsoft Entra ID Protection connector to Microsoft Sentinel.
+In this task, you will connect the Microsoft Entra ID Protection connector to Microsoft Sentinel.
 
- 1. In the Data Connectors page, click on content hub and search for **Microsoft Entra ID Protection** and select and install it
+1. In the Data Connectors page, click on content hub and search for **Microsoft Entra ID Protection** and select and install it
  
- 1. From the Data Connectors Tab, search for the **Microsoft Entra ID Protection** connector and select it from the list.
+1. From the Data Connectors Tab, search for the **Microsoft Entra ID Protection** connector and select it from the list.
 
- 1. Select the **Open connector page** on the connector information blade.
+1. Select the **Open connector page** on the connector information blade.
 
- 1. From the **Configuration** area select the **Connect** button.
+1. From the **Configuration** area select the **Connect** button.
 
       > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
       > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -82,41 +82,21 @@ After completing this lab, you will be able to integrate log data from various d
 
 ### Task 4: Connect the Microsoft Defender for Cloud connector
 
- In this task, you will connect the Microsoft Defender for Cloud connector.
+In this task, you will connect the Microsoft Defender for Cloud connector.
  
- 1. In the Data Connectors page, click on content hub and search for **Microsoft Defender for Cloud** and select and install it
+1. In the Data Connectors page, click on content hub and search for **Microsoft Defender for Cloud** and select and install it
  
- 1. From the Data Connectors tab, search for the **Microsoft Defender for Cloud** connector and select it from the list.
+1. From the Data Connectors tab, search for the **Microsoft Defender for Cloud** connector and select it from the list.
 
     >**Note:** The Microsoft Defender for Cloud solution installs the Subscription-based Microsoft Defender for Cloud (Legacy) Data connector, the Tenant-based Microsoft Defender for Cloud (Preview) Data connector, and an Analytics rule.
 
- 1. Select the **Subscription-based Microsoft Defender for Cloud (Legacy)** Data connector, and select the **Open connector page** on the connector information blade.
+1. Select the **Subscription-based Microsoft Defender for Cloud (Legacy)** Data connector, and select the **Open connector page** on the connector information blade.
 
- 1. In the **Configuration** area, under Subscription, select the checkbox for the available subscription and slide the **Status** option to the right to indicate **Connected**.
+1. In the **Configuration** area, under Subscription, select the checkbox for the available subscription and slide the **Status** option to the right to indicate **Connected**.
 
 1. The **Status** should be now **Connected** and **"Bi-directional sync"** should be **Enabled**.
 
-### Task 5: Connect the Microsoft Defender for Cloud Apps connector
-
-In this task, you will connect the Microsoft Defender for Cloud Apps connector.
-
-1. From the Data Connectors Tab, search for the **Microsoft Defender XDR** connector and select it from the list.
-
-   >**Note:** The **Microsoft Defender XDR** connector must be installed from the list even if its available in the connector list.
-
-1. Select the **Open connector page** on the connector information blade.
-
-1. From the Configuration area select **Connect Incident and Alerts**. 
-
-1. Under **Connect Events**, select the **Name** checkbox to select all the checkboxes for **Microsoft Defender for Endpoint**.
-
-1. Repeat the same for **Microsoft Defender for Office 365**
-
-1. Scroll to the bottom of the page and select **Apply Changes**.
-
-   >**Note:** If you see **No Permission** under **Connect incidents & alerts** that means **License** and Permissions is not reflected on the Odl_user. it will take 1-2 hours to reflect the license on the ODL user, meanwhile, you can perform the next task, exercise 2 and exercise 3. After 1-2 hrs come back and refresh the page to re-perform task 5 again.
-
-### Task 6: Connect the Azure Activity connector
+### Task 5: Connect the Azure Activity connector
 
 In this task, you will connect the Azure Activity connector.
 1. In the Data Connectors page, click on content hub search for **Azure Activity**, and select and install it
