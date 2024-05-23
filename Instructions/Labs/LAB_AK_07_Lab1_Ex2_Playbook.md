@@ -6,7 +6,7 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 
 1. In the Edge browser, open a new window and navigate to the Microsoft Teams portal at (https://teams.microsoft.com).
 
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+1.  If prompted, in the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
 
 1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
 
@@ -14,9 +14,11 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 
     >**Note:** If prompted to use **New Teams** accept and proceed with the exercise.
 
-1. If not already selected, select **Teams** on the left menu, then at the top, select the **+** icon.
+1. If not already selected, select **Teams** on the left menu.
 
 1. Select the **Create Team** option.
+
+   ![Picture 1](../Media/xl1.png)
 
 1. Select the **From scratch** button.
 
@@ -28,7 +30,7 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 
 1. Scroll down the Teams blade to locate the newly created SOC team, select the ellipsis **(...)** on the right side of the name and select **Add channel**.
 
-1. Enter a channel name of *New Alerts* and channel type choose it as private then select the **Add** button.
+1. Enter a channel name of *New Alerts* and channel type choose it as private then select the **Create** button.
 
 ### Task 2: Create a Playbook in Microsoft Sentinel
 
@@ -84,11 +86,13 @@ In this task, you'll update the new playbook you created with the proper connect
 
    ![Picture 1](../Media/xox2.png)
 
-1. Select **Add new** and select **Sign in**. In the new window, select your Azure subscription admin credentials when prompted. The last line of the block should now read "Connected to your-admin-username".
+1. Select **Add new** and select **Sign in**. In the new window, select your Azure subscription admin credentials (odl username) when prompted. The last line of the block should now read "Connected to your-admin-username".
+
+  >**Note:** If you face a pop-up blocker from the browser allow it and try to authenticate again.
 
 1. Now select the *second* block, **Post a message (V3)**.
 
-1. In the Prameters tab, scroll down and select the **Change connection** link and then select **Add new** and **Sign in**. Chose your Azure admin credentials when prompted. The Prameters tab should now read "Connected to your-admin-username".
+1. In the Prameters tab, scroll down and select the **Change connection** link and then select **Add new** and **Sign in**. Choose your Azure admin credentials(odl username) when prompted. The Prameters tab should now read "Connected to your-admin-username".
 
 1. At the end of the *Team* field, select the **X** to clear the contents. The field is changed to a drop-down with a listing of the available Teams from Microsoft Teams. Select **SOC**.
 
