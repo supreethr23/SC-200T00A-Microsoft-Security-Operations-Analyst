@@ -38,7 +38,7 @@ In this task, you create a scheduled query and connect it to the Teams channel y
 
 1. Select **Create rule** to continue.
 
-  ![Picture 1](../Media/xs2.png)
+   ![Picture 1](../Media/xs2.png)
 
 1. In the Analytics rule wizard, on the *General* tab, change the *Severity* to **Medium**.
 
