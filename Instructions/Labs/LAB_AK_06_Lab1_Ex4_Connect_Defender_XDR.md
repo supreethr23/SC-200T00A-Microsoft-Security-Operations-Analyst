@@ -20,7 +20,7 @@ In this task, you deploy the Microsoft Defender XDR connector.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select your Microsoft Sentinel Workspace you created earlier.
+1. Select the Microsoft Sentinel Workspace you created earlier.
 
 1. In the Microsoft Sentinel left menus, scroll down to the **Content management** section and select **Content Hub**.
 
@@ -32,7 +32,7 @@ In this task, you deploy the Microsoft Defender XDR connector.
 
 1. On the *Microsoft Defender XDR* solution details page, select **Manage**
 
->**Note:** The *Microsoft Defender XDR* solution installs the *Microsoft Defender XDR* Data connector, Hunting queries, Workbooks and Analytics rules.
+    >**Note:** The *Microsoft Defender XDR* solution installs the *Microsoft Defender XDR* Data connector, Hunting queries, Workbooks and Analytics rules.
 
 1. Select the *Microsoft Defender XDR* Data connector check-box, and select **Open connector page**.
 
