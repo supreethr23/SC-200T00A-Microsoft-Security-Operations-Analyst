@@ -84,19 +84,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint portal.
 
-1. Log in to WIN1 virtual machine with the password provided in the environment tab.  
-
-1. If you are not already at the Microsoft 365 Defender portal, start the Microsoft Edge browser.
-
-1. In the Edge browser, go to the Microsoft 365 Defender portal at (https://security.microsoft.com).
-
-1. In the **Sign in** dialog box, copy, and paste in the tenant Email account for the admin username provided by your lab hosting provider and then select **Next**.
-
-1. In the **Enter password** dialog box, copy, and paste in the admin's tenant password provided by your lab hosting provider and then select **Sign in**.
-
-    >**Tip:** The admin's tenant email account and password can be found on the Resources tab.
-
-1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
+1. On the **Microsoft 365 Defender** portal, from the left navigation menu, select **Settings** from the left.
 
 1. On the **Settings** page select **Device discovery**. 
 
@@ -112,8 +100,6 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 ### Task 4: Onboard a Device.
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
-
-1. If you are not already at the Microsoft 365 Defender portal in your browser, start the Microsoft Edge browser and go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
 
 1. Select **Settings** from the left menu bar, then from the Settings page select **Endpoints**.
 
@@ -153,64 +139,57 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
 
-### Task 5: Create a Log Analytics Workspace and Initialize the Microsoft Sentinel Workspace.
 
-In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud.
-
-1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
-
-1. Select **+Create** from the command bar.
-
-1. Select **RG-Defender** from the drop down.
-
-1. For the Name, enter something unique like **uniquenameDefender**.
-
-1. Select **Review + Create**.
-
-1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
-
-1. Once again in the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
-
-1. Select **+ Create**.
-
-1. Next, In Add Microsoft Sentinel to a workspace page, select your existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
-
-1. Navigate around the newly created Microsoft Sentinel workspace to become familiar with the user interface options.
-
-### Task 6: Connect the Microsoft Defender for Cloud connector.
+### Task 5: Connect the Microsoft Defender for Cloud connector.
 
  In this task, you will connect the Microsoft Defender for Cloud connector.
 
- 1. From the Data Connectors tab, search for the **Microsoft Defender for Cloud** connector and select it from the list.
+1. In the Azure portal, search for and select Microsoft Sentinel and choose **uniquenameDefender** sentinel workspace.
 
- 1. Select the **Open connector page** on the connector information blade.
+1. In the Microsoft Sentinel left menus, scroll down to the **Content management** section and select **Content Hub**.
 
- 1. In the **Configuration** area, under Subscription, select the checkbox for the "Azure Pass - Sponsorship" subscription and slide the **Status** option to the right to indicate **Connected**.
+1. In the *Content hub*, search for the **Microsoft Defender for Cloud** solution and select it from the list.
 
-1. The "Status" should be now *Connected* and "Bi-directional sync" should be *Enabled*.
+1. On the *Microsoft Defender for Cloud* solution details page select **Install**.
 
-1. Scroll down and under the "Create incidents - Recommended!" area, select **Enable**. This option creates an Analytics rule automatically for this service. You can manually add it later if not enabled here or change its configuration within the *Analytics* blade.
+1. When the installation completes,  search for the **Microsoft Defender for Cloud** solution and select it.
 
-### Task 7: Activate a Microsoft Security Rule
+1. On the *Microsoft Defender for Cloud* solution details page select **Manage**
+ 
+1. Select the *Subscription-based Microsoft Defender for Cloud (Legacy)* Data connector check-box, and select **Open connector page**.
 
-In this task, you will activate a Microsoft Security rule.
+1. In the *Configuration* section, under the *Instructions* tab, **select** the checkbox for the "Azure Pass - Sponsorship" subscription and slide the **Status** option to the right.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+    >**Note:** If it switches back to disconnected, please review the Learning Path 3, Exercise 1, Task 1 to assign the proper permissions to your account.
 
-1. Select your Microsoft Sentinel Workspace you created in the previous labs.
+1. The *Status* should be now **Connected** and "Bi-directional sync" should be *Enabled*.
+ 
+### Task 6: Connect the Azure Activity data connector
 
-1. Select **Analytics** from the Configuration area. By default, you will see the *Active rules*.
+In this task, you will connect the *Azure Activity* data connector.
 
-1. Select the **Create incidents based on Microsoft Defender for Cloud**.
+1. In the Microsoft Sentinel left menus, scroll down to the *Content management* section and select **Content Hub**.
 
-1. On the right blade, select the **Edit** button.
+1. In the *Content hub*, search for the **Azure Activity** solution and select it from the list.
 
-1. Scroll down the page and under "Analytics rule logic - Filter by Severity", select the *Custom* drop-down list.
+1. On the *Azure Activity* solution page select **Install**.
 
-1. Unselect **Low** for the severity level and go back to the rule.
+1. When the installation completes select **Manage**
 
-1. Select the **Next: Automated response** button and then select **Next: Review** button.
+    >**Note:** The *Azure Activity* solution installs the *Azure Activity* Data connector, 12 Analytic rules, 14 Hunting queries and 1 Workbook.
 
-1. Review the changes made and select the **Save** button. The Analytics rule will be saved.
+1. Select the *Azure Activity* Data connector and select **Open connector page**.
 
+1. In the *Configuration* area under the *Instructions* tab, scroll down to "2. Connect your subscriptions...", and select **Launch Azure Policy Assignment Wizard>**.
+
+1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure Pass - Sponsorship" subscription from the drop-down list and click **Select**.
+
+1. Select the **Parameters** tab, choose your *uniquenameDefender* workspace from the **Primary Log Analytics workspace** drop-down list. This action will apply the subscription configuration to send the information to the Log Analytics workspace.
+
+1. Select the **Remediation** tab and select the **Create a remediation task** checkbox. This action will apply the policy to existing Azure resources.
+
+1. Select the **Review + Create** button to review the configuration.
+
+1. Select **Create** to finish.
+   
 ## Proceed to Exercise 2
