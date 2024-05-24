@@ -11,6 +11,84 @@ Microsoft Sentinel allows you to create custom workbooks across your data, and a
 
 In this task, you will explore the Microsoft Sentinel workbook templates.
 
+1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+
+1. Select your Microsoft Sentinel Workspace.
+
+1. Select **Workbooks** under the *Threat Management* left blade. The *Templates* tab is selected by default.
+
+1. Search for and select the **Azure Activity** template workbook. In the right pane, scroll down and select the **View template** button.
+
+     m2.png
+1. Review the contents of the workbook. It shows insights of your Azure subscription operations by collecting and analyzing the data from the Activity Log.
+
+m3.png
+1. Close the workbook by selecting the **X** in the top-right corner.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Task 1: Explore workbook templates
+
+In this task, you will explore the Microsoft Sentinel workbook templates.
+
 1. Login to WIN1 virtual machine with the password as provided in the environment tab.
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
