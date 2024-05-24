@@ -36,7 +36,7 @@ In this task, you deploy the Microsoft Defender XDR connector.
 
 1. Select the *Microsoft Defender XDR* Data connector check-box, and select **Open connector page**.
 
-1. In the *Configuration* section, under the *Instructions* tab, **deselect** the checkbox for the *Turn off all Microsoft incident creation rules for these products. Recommended*, and select the **Connect incidents & alerts** button.
+1. In the *Configuration* section, under the *Instructions* tab, **select** the checkbox for *Turn off all Microsoft incident creation rules for these products. Recommended*, and select the **Connect incidents & alerts** button.
 
 1. You should see a message that the connection was successful.
 
@@ -66,7 +66,7 @@ In this task, you'll connect a Microsoft Sentinel workspace to Microsoft Defende
 
 1. Select the **Next** button.
 
-    >**Note:** if the *Next* button is disabled, or greyed out, and you see an error message that the Microsoft Sentinel workspace is *not onboarded* to Defender XDR, try refreshing the Defender XDR portal page as it may take 5 to 10 minutes to sync up.
+    >**Note:** If the *Next* button is disabled or greyed out, and you see an error message that the Microsoft Sentinel workspace is *not onboarded* to Defender XDR, try refreshing the Defender XDR portal page as it may take 5 to 10 minutes to sync up.
 
 1. On the *Review changes* page, verify that the *Workspace* selection is correct and review the bulleted items under the *What to expect when the workspace is connected* section. Select the **Connect** button.
 
@@ -80,6 +80,6 @@ In this task, you'll connect a Microsoft Sentinel workspace to Microsoft Defende
 
 1. Expand the left main menu pane if collapsed and  expand the new **Microsoft Sentinel** menu items. You should see *Threat management*, *Content management* and *Configuration* selections.
 
- >**Note:** Some features may not be available in the public preview, and the user interface may differ from the lab instructions. Also, the syncronization between Microsoft Sentinel and Microsoft Defender XDR may take a few minutes to complete, so you may not see all the installed *Data connectors* for example.
+ >**Note:** Some features may not be available in the public preview, and the user interface may differ from the lab instructions. Also, the synchronization between Microsoft Sentinel and Microsoft Defender XDR may take a few minutes to complete, so you may not see all the installed *Data connectors* for example.
 
 ## You completed the lab
