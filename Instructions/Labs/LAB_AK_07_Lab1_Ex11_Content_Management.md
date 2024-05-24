@@ -38,8 +38,7 @@ In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
     ```KQL
     SecurityEvent | where EventID == 4732
     ```
-    **Note**: Make sure you replace the EventID which you copied earlier.
-
+    
 1. Select **View query results**. You should not receive any results or errors. If you receive an error, please review that the query appears just like the previous KQL statement. Close the *Logs* window by selecting the upper right **X** and select **OK** to discard to save changes to go back to the wizard.
 
 
@@ -66,8 +65,7 @@ In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
 
 1. Select the rule just created, then select **Export** from the toolbar.
 
-1. Select the rule just created, then select **Delete**.
-
+   ![linux login](../Media/m11.png)
 
 ### Task 2: Create our Azure DevOps environment
 
@@ -99,6 +97,8 @@ In this task, you will test create and populate an Azure DevOps repository.
 
 1. Select **Browse** and select the file **Azure_Sentinel_analytic_rule.json** from your *Downloads* directory.
 
+   ![linux login](../Media/m12.png)
+
 1. Select **Commit**.
 
 1. Select **Azure DevOps** on the top left corner of the page.  This display your organization and projects.
@@ -108,7 +108,6 @@ In this task, you will test create and populate an Azure DevOps repository.
 1. Select **Policies** in the *Security* area.
 
 1. Turn **On** *Third-party application access via OAuth* in the *Application connection policies* area.
-
 
 ### Task 3: Connect Sentinel to Azure DevOps.
 
@@ -134,6 +133,8 @@ In this task, you will test create and populate an Azure DevOps repository.
 
 1. Select all content types.
 
+   ![linux login](../Media/m13.png)
+
 1. Then select **Create**.
 
 1. Go back to Microsoft Sentinel workspace if needed
@@ -143,4 +144,4 @@ In this task, you will test create and populate an Azure DevOps repository.
     >**Note:** The *Failed/Unknown* status is due to limitations in the hosted lab environment. You would normally see *Succeeded*. Then you can see in the *Analytics* the imported rule *Rule from Azure DevOps*.
 
 
-## You have completed the lab.
+## Proceed to the next lab.
