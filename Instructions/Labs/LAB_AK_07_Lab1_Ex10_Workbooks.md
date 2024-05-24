@@ -19,7 +19,7 @@ In this task, you will explore the Microsoft Sentinel workbook templates.
 
 1. Search for and select the **Azure Activity** template workbook. In the right pane, scroll down and select the **View template** button.
 
-    ![linux login](../Media/m2.png.png) 
+    ![linux login](../Media/m2.png.png)   
 
 1. Review the contents of the workbook. It shows insights of your Azure subscription operations by collecting and analyzing the data from the Activity Log.
 
