@@ -141,6 +141,8 @@ In this task, you will test create and populate an Azure DevOps repository.
 
 1. Go to the *Repositories (Preview)* page, select **Refresh**. Wait until *Last deployment status* is *Failed*.  
 
+    ![linux login](../Media/m14.png)
+   
     >**Note:** The *Failed/Unknown* status is due to limitations in the hosted lab environment. You would normally see *Succeeded*. Then you can see in the *Analytics* the imported rule *Rule from Azure DevOps*.
 
 
