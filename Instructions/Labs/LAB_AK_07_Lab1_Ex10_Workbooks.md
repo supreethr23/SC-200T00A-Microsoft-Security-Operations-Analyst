@@ -19,11 +19,11 @@ In this task, you will explore the Microsoft Sentinel workbook templates.
 
 1. Search for and select the **Azure Activity** template workbook. In the right pane, scroll down and select the **View template** button.
 
-    ![linux login](../Media/m2.png.png)   
+    ![linux login](../Media/m2.png)   
 
 1. Review the contents of the workbook. It shows insights of your Azure subscription operations by collecting and analyzing the data from the Activity Log.
 
-    ![linux login](../Media/m3.png.png)  
+    ![linux login](../Media/m3.png)  
 
 1. Close the workbook by selecting the **X** in the top-right corner.
 
@@ -41,11 +41,11 @@ In this task, you will save a workbook template and modify it.
 
 1. Scroll down to the *Caller activities over time* area, look at the color of the *Activities* column since we are going to format those columns. Select the **Edit** button below the grid.
 
-   ![linux login](../Media/m4.png.png)  
+   ![linux login](../Media/m4.png)  
 
 1. Select the **Column Settings** button, it is located to the right of the *Run Query* command bar. **Hint:** This button only appears if there is data from the KQL query.
 
-   ![linux login](../Media/m5.png.png)  
+   ![linux login](../Media/m5.png)  
 
 1. In the *Edit column settings* blade that appears, within *Columns* select **Activities**.
 
@@ -53,7 +53,7 @@ In this task, you will save a workbook template and modify it.
 
 1. Select **Save and Close**. Notice the change in the *Activities* column.
 
-   ![linux login](../Media/m6.png.png)  
+   ![linux login](../Media/m6.png)  
 
 1. Select **Done Editing** at the bottom of the query (not the top menu).
 
@@ -77,7 +77,7 @@ In this task, you will create a new workbook with advanced visualizations.
 
 1. Type *# My workbook* in a new line on top of *## New workbook*.
 
-   ![linux login](../Media/m7.png.png)  
+   ![linux login](../Media/m7.png)  
 
 1. Select **Done Editing** on the bottom of this section, *Editing text item: text - 2*. Notice that your header increased size and name changed.
 
@@ -95,13 +95,13 @@ In this task, you will create a new workbook with advanced visualizations.
 
 1. Change the *Visualization* to **Time chart**.
 
-   ![linux login](../Media/m8.png.png) 
+   ![linux login](../Media/m8.png) 
    
 1. Select **Style** tab from the query's command bar.
 
 1. Select the **Make this item a custom width** box.
 
-    ![linux login](../Media/m9.png.png) 
+    ![linux login](../Media/m9.png) 
 
 1. Set the *Percent width* to **25** and *Maximum width* to **25**.
 
@@ -113,7 +113,7 @@ In this task, you will create a new workbook with advanced visualizations.
 
 1. Scroll down and at the bottom of the workbook select **+ Add**, then **Add query**.
 
-   ![linux login](../Media/m10.png.png) 
+   ![linux login](../Media/m10.png) 
 
 1. Type **SecurityEvent** into the query box.
 
