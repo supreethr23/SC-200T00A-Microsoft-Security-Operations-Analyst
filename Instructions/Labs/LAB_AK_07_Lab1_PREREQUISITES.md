@@ -130,6 +130,10 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Select the **Windows Security Events via AMA** connector and click on **Open connector page** on the connector information blade. 
 
+    >**Note:** You  may have to click on the arrow head that appears to see the **Open Connector Page Option**
+
+       ![Picture 1](../Media/m1.png)
+ 
  1. In the **Configuration** section, select the **+Create data collection rule**.
 
  1. Enter **WINSERVER** for Rule Name, then select **Next: Resources**.
