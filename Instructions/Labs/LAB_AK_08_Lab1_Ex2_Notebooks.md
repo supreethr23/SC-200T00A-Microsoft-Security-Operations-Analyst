@@ -48,7 +48,7 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 19. Next to the **Compute:** instance selector at the top of the screen, select the **+** symbol for **New Compute**.
 
-      ![](../Media/n1.png)
+    ![](../Media/m19.png)
 
 20. Type a unique name for the *Compute name* and select the first compute available since this is a lab environment. 
 
