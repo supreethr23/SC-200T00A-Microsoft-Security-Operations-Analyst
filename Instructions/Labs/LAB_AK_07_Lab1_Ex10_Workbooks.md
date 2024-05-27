@@ -147,7 +147,7 @@ In this task, you will create a new workbook with advanced visualizations.
 
 1. On the right pane, select **View saved workbook** to review your workbook.
 
-## Proceed to Exercise 11
+## Proceed to Exercise 9
 
 
 
