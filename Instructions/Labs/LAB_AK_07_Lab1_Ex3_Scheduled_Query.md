@@ -133,7 +133,7 @@ In this task, you test your new scheduled query rule.
 
 1. You should see the newly created Incident.
 
-    >**Note:** The event that triggers the incident may take 5+ minutes to process. Continue with the next exercise, you will come back to this view later.
+    >**Note:** The event that triggers the incident may take time to process. Continue with the next exercise, you will come back to this view later.
 
 1. Select the Incident and review the information in the right blade.
 
