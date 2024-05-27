@@ -1,4 +1,4 @@
-# Module 8 - Lab 1 - Exercise 2 - Threat Hunting using Notebooks with Microsoft Sentinel
+# Module 8 - Lab 1 - Exercise 1 - Threat Hunting using Notebooks with Microsoft Sentinel
 
 ## Lab scenario
 

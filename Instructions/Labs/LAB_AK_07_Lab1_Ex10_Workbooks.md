@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 10 - Create workbooks
+# Module 7 - Lab 1 - Exercise 8 - Create workbooks
 
 ## Lab scenario
 
@@ -61,6 +61,8 @@ In this task, you will save a workbook template and modify it.
 
 1. Close the workbook by selecting the **X** in the top-right corner and observe the change.
 
+   >**Note:** If you don't find the results it might take some to populate.Please proceed with the next task.
+  
 ### Task 3: Create a Workbook
 
 In this task, you will create a new workbook with advanced visualizations.
@@ -145,7 +147,7 @@ In this task, you will create a new workbook with advanced visualizations.
 
 1. On the right pane, select **View saved workbook** to review your workbook.
 
-## Proceed to Exercise 11
+## Proceed to Exercise 9
 
 
 
