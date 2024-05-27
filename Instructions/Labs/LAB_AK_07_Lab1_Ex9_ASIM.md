@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 9 - Create ASIM parsers
+# Module 7 - Lab 1 - Exercise 7 - Create ASIM parsers
 
 ## Lab scenario
 
@@ -274,4 +274,4 @@ In this task, you create a unifying parser function that combines the previous t
     | where ActionType == 'RegistryValueSet'
     ```
 
-## Proceed to Exercise 10
+## Proceed to Exercise 8
