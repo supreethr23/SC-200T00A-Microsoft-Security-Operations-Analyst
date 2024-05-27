@@ -60,6 +60,8 @@ In this task, you'll connect a Microsoft Sentinel workspace to Microsoft Defende
 
 1. On the **Defender XDR** portal **Home** screen, you should see a banner at the top with the message, *Get your SIEM and XDR in one place*. Select the **Connect a workspaces** button.
 
+   >**Note:** If the options are not visible, please wait 40 to 60 minutes for them to appear in the Defender portal. After this time, return to the same page. You may need to sign out of Microsoft Defender XDR, sign back in, and then repeat the steps to proceed.
+
 1. On the *Choose a workspace* page, select the **Microsoft Sentinel** workspace you created earlier.
 
     >**Hint:** It should have a name like *uniquenameDefender*.
