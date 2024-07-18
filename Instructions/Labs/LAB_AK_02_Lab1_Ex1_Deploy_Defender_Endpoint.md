@@ -148,11 +148,13 @@ In this task, you will configure roles for use with device groups.
     |Group Name| **Sg-IT** |
     |Microsoft Entra roles can be assigned to the group| **Yes** |
 
-1. Click on **No owners selected** and select the **ODL_user ** from the list and then click on **select**.
+1. Click on **No owners selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
-1. Click on **No members selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **No members selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
+
+1. Ignore the **No Roles Selected**.
 
 1. Select **Create** and click on **Yes**. 
 
@@ -162,7 +164,7 @@ In this task, you will configure roles for use with device groups.
 
 1. Select the **Turn on roles** button.
 
-1. Select **+ Add Role**. by clicking three dots
+1. Select **+ Add Role**. by clicking three dots.
 
 1. In the Add role dialog enter the following:
 
@@ -171,9 +173,11 @@ In this task, you will configure roles for use with device groups.
     |Role name|**Tier 1 Support**|
     |Permissions|Live Response capabilities - Advanced|
 
+1. Select **Next**.
+
 1. Select the **Assigned user groups** tab on the top. Select **sg-IT** and then select **Add selected groups**. Make sure it appears under *Azure AD user groups with this role*.
 
-1. Select **Submit**. If you receive an error while saving the role, refresh the page and try again.
+1. Select **Submit** and **Done**. If you receive an error while saving the role, refresh the page and try again.
 
 ### Task 5: Configure Device Groups
 
@@ -200,7 +204,7 @@ In this task, you will configure device groups that allow for access control and
 
 1. For the User access tab, select **sg-IT** and then select **Add selected groups** button. Make sure it appears under **Azure AD user groups with access to this device group**.
 
-1. Select **submit***
+1. Select **Submit**.
 
 1. Select **Done**.
 
