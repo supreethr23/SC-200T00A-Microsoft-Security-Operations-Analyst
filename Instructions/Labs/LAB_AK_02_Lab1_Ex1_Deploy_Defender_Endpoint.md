@@ -60,7 +60,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
 1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
-1. Navigate to **Assets** from left panel and click on **Devices** and, wait for **few minutes** to get loaded once loading completed refresh the page.
+1. Navigate to **Assets** from the left panel click on **Devices** and, wait for **few minutes** to get loaded once loading is completed refresh the page.
 
 1. On the **Microsoft Defender XDR** portal, from the navigation menu, select **Settings** from the left.
 
@@ -71,6 +71,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
     >**Note:** If you do not see the **Device discovery** option under **Settings**, log out by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try are to refresh the page with Ctrl+F5 wait for 30-45 minutes or open the page InPrivate. Login again with the **Tenant Email** credentials.
 
 1. In the Discovery setup make sure **Standard discovery (recommended)** is selected. 
+
     >**Hint:** If you do not see the option, refresh the page.
 
 ### Task 3: Onboard a Device
@@ -95,7 +96,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
     ![Picture 1](../Media/sc200-mod2-unblock.png)
 
-1. Right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** again and choose **Run as Administrator**.  **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
+1. Right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** again and choose **Run as administrator**. **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
     
 1. When the "User Account Control" window is shown, select **Yes** to allow the script to run and answer **Y** to the question presented by the script and press **Enter**. When complete you should see a message in the command screen that says *Successfully onboarded machine to Microsoft Defender for Endpoint*.
 
@@ -105,13 +106,13 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. Back in the Onboarding page from the Microsoft Defender XDR portal, under the section "2. Run a detection test", copy the detection test script by selecting the **Copy** button.  
 
-1. In the windows search bar of the virtual machine, type **CMD** and choose **Run as Administrator** on the right pane for the Command Prompt app. 
+1. In the Windows search bar of the virtual machine, type **CMD** and choose **Run as Administrator** on the right pane for the Command Prompt app. 
 
 1. When the "User Account Control" window is shown, select **Yes** to allow the app to run. 
 
 1. Paste the script by right-clicking in the **Administrator: Command Prompt** windows and press **Enter** to run it. **Note:** The window closes automatically after running the script.
 
-1. In the Microsoft Defender XDR portal, in the left-hand menu, under the **Assets** area, select **Devices**. If the device is not shown, complete the next task and come back to check it back later. It can take up to 60 minutes for the first device to be displayed in the portal.
+1. In the Microsoft Defender XDR portal, in the left-hand menu, under the **Assets** area, select **Devices**. If the device is not shown, complete the next task and come back to check it later. It can take up to 60 minutes for the first device to be displayed in the portal.
 
      ![Picture 1](../Media/SC-200-img22.png)
 
@@ -129,9 +130,9 @@ In this task, you will configure roles for use with device groups.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 
-1. In the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
+1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
 1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
@@ -145,9 +146,9 @@ In this task, you will configure roles for use with device groups.
     |---|---|
     |Group Type| **Microsoft 365** |
     |Group Name| **Sg-IT** |
-    |Azure AD roles can be assigned to the group| **Yes** |
+    |Microsoft Entra roles can be assigned to the group| **Yes** |
 
-1. Click on **No owners selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **No owners selected** and select the **ODL_user ** from the list and then click on **select**.
 
 1. Click on **No members selected** and select the **ODL_user** from the list and then click on **select**.
 
