@@ -6,7 +6,7 @@
 ## Lab objectives
 In this lab, you will perform:
 - Task 1: Create a Group 
-- Task 2: Apply Microsoft Defender XDR for Office 365 preset security policies
+- Task 2: Apply Microsoft Defender XDR for Office 365 present security policies
 - Task 3: Preparing the Microsoft Defender XDR workspace
     
 ## Estimated timing: 120 minutes
@@ -29,7 +29,7 @@ In this lab, you will perform:
 
 1. Select **Groups** and then click on **New group**.
 
-1. Enter the below details for new group page:
+1. Enter the below details for the new group page:
 
    |Setting|Value|
     |---|---|
@@ -43,7 +43,7 @@ In this lab, you will perform:
 
    **Note**: Make sure you have selected **Group type** as Microsoft .
 
-1. Ignore the **No Roles selected**   
+1. Ignore the **No Roles Selected**   
 
 1. Select **Create** and click on **Yes**. 
 
@@ -59,7 +59,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. In the **Enter password** dialog box, copy and paste in the admin's tenant password provided by your lab hosting provider and then select **Sign in**.
 
-    >**Note:** If you receive a message "The operation could not be completed. Please try again later. If the problem persists, contact Microsoft support." just click **OK** to continue.  
+    >**Note:** If you receive a message "The operation could not be completed. Please try again later. If the problem persists, contact Microsoft support." just click **OK** to continue.
 
 1. If shown, close the Microsoft Defender XDR quick tour.
 
@@ -75,14 +75,14 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. On the **Learn about preset security policies** *pop-out* page, select **Close**.
 
-1. Under **Standard protection**, select **Manage protection settings**. **Hint:** If you see this option grayed out, refresh your browser using **Ctrl+F5**.
+1. Under **Standard protection**, select **Manage protection settings**. **Hint:** If you see this option greyed out, refresh your browser using **Ctrl+F5**.
 
-    >**Note:** After clicking on **Manage protection settings**, This might need 40 to 60 Minutes to load the content, wait for 40 to 60 Minutes to get loaded the page completely after 40 to 60 Minutes back to the same page and might need to sign out of Microsoft defender XDR and sign in again and then try repeating the steps again to move forward. 
+    >**Note:** After clicking on **Manage protection settings**, This might need 40 to 60 Minutes to load the content, wait for 40 to 60 Minutes to load the page completely after 40 to 60 Minutes back to the same page and might need to sign out of Microsoft defender XDR and sign in again and then try repeating the steps again to move forward. 
 
 1. In the *Apply Exchange Online Protection* section, select **Specific recipients** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**.                                                                              
   >**Hint:** Your tenant's domain name is the same that you have for your admin account, it might be something like *mocholxxxxx.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing. 
 
-1. In the **Apply Defender XDR for Office  protection** section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+1. In the **Apply Defender XDR for Office  protection** section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
 
 1. In the *Impersonation protection* section, select **Next** for next all steps i.e. (4x times) to continue.
 
@@ -94,7 +94,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. In the **Apply Exchange Online Protection**, select **Specific recipients** and under **Groups** start writing **Sg-IT**, select it, and then select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing.
 
-1. In the *Apply protection to* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+1. In the *Apply protection to* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
 
 1. In the *Impersonation protection* section, select **Next** for next all steps i.e. (4x times) to continue.
 
