@@ -37,13 +37,13 @@ In this lab, you will perform:
     |Group Name| **Sg-IT-<inject key="DeploymentID" enableCopy="false"/>** |
     |Microsoft Entra roles can be assigned to the group| **Yes** |
 
-1. Click on **No owners selected** and select the **ODL_user** from the list and then click on **select**.
+1. Click on **No owners selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
-1. Click on **No members selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** and click on **users** from the list and then click on **select** it.
+1. Click on **No members selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
-   **Note**: Make sure you have selected **Group type** as Microsoft 365.
+  > **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
-1. Ignore the **No Roles Selected**   
+1. Ignore the **No Roles Selected**.
 
 1. Select **Create** and click on **Yes**. 
 
