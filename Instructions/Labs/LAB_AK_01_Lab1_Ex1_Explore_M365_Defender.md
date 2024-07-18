@@ -33,7 +33,7 @@ In this lab, you will perform:
 
    |Setting|Value|
     |---|---|
-    |Group Type| **Microsoft ** |
+    |Group Type| **Microsoft** |
     |Group Name| **Sg-IT** |
     |Azure AD roles can be assigned to the group| **Yes** |
 
