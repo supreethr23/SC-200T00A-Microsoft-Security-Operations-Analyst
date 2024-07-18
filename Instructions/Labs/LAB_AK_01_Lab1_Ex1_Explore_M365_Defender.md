@@ -9,7 +9,7 @@ In this lab, you will perform:
 - Task 2: Apply Microsoft Defender XDR for Office 365 present security policies
 - Task 3: Preparing the Microsoft Defender XDR workspace
     
-## Estimated timing: 120 minutes
+## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 
@@ -41,7 +41,7 @@ In this lab, you will perform:
 
 1. Click on **No members selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
-  > **Note**: Make sure you have selected **Group type** as Microsoft 365.
+   > **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
 1. Ignore the **No Roles Selected**.
 
