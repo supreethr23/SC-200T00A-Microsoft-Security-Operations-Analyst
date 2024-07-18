@@ -33,15 +33,15 @@ In this lab, you will perform:
 
    |Setting|Value|
     |---|---|
-    |Group Type| **Microsoft** |
-    |Group Name| **Sg-IT** |
-    |Azure AD roles can be assigned to the group| **Yes** |
+    |Group Type| **Microsoft 365** |
+    |Group Name| **Sg-IT-<inject key="DeploymentID" enableCopy="false"/>** |
+    |Microsoft Entra roles can be assigned to the group| **Yes** |
 
 1. Click on **No owners selected** and select the **ODL_user** from the list and then click on **select**.
 
-1. Click on **No members selected** and select the **ODL_user** and click on **users** from the list and then click on **select**.
+1. Click on **No members selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** and click on **users** from the list and then click on **select** it.
 
-   **Note**: Make sure you have selected **Group type** as Microsoft .
+   **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
 1. Ignore the **No Roles Selected**   
 
@@ -73,32 +73,32 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
     >**Note:** If you receive the message *"Client Error - An error occurred when retrieving preset security policies. Please try again later."* select **OK** to continue. Refresh your browser using **Ctrl+F5**.
 
-1. On the **Learn about preset security policies** *pop-out* page, select **Close**.
+1. On the **Learn about preset security policies** *pop-out* page, select **Cancel**.
 
 1. Under **Standard protection**, select **Manage protection settings**. **Hint:** If you see this option greyed out, refresh your browser using **Ctrl+F5**.
 
     >**Note:** After clicking on **Manage protection settings**, This might need 40 to 60 Minutes to load the content, wait for 40 to 60 Minutes to load the page completely after 40 to 60 Minutes back to the same page and might need to sign out of Microsoft defender XDR and sign in again and then try repeating the steps again to move forward. 
 
-1. In the *Apply Exchange Online Protection* section, select **Specific recipients** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**.                                                                              
+1. In the *Apply Exchange Online Protection* page, select **Specific recipients** under **Apply protection to:** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**.                                                                              
   >**Hint:** Your tenant's domain name is the same that you have for your admin account, it might be something like *mocholxxxxx.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing. 
 
-1. In the **Apply Defender XDR for Office  protection** section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
+1. In the *Apply Defender XDR for Office  protection* page, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
 
-1. In the *Impersonation protection* section, select **Next** for next all steps i.e. (4x times) to continue.
+1. In the *Impersonation protection* page, select **Next** for next all steps i.e. (4x times) to continue.
 
-1. In the Policy mode section, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
+1. In the *Policy mode* page, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
 1. Under **Strict protection**, select **Manage protection settings**. **Hint:** *Strict protection* is found under "Email & Collaboration - Policies & rules - Threat policies - Preset security policies".
 
-1. In the **Apply Exchange Online Protection**, select **Specific recipients** and under **Groups** start writing **Sg-IT**, select it, and then select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing.
+1. In the *Apply Exchange Online Protection* page, select **Specific recipients** and under **Groups** start writing **Sg-IT-<inject key="DeploymentID" enableCopy="false"/>**, select it, and then select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing.
 
-1. In the *Apply protection to* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
+1. In the *Apply protection to* page, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
 
-1. In the *Impersonation protection* section, select **Next** for next all steps i.e. (4x times) to continue.
+1. In the *Impersonation protection* page, select **Next** for next all steps i.e. (4x times) to continue.
 
-1. In the Policy mode section, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
+1. In the *Policy mode* page, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
