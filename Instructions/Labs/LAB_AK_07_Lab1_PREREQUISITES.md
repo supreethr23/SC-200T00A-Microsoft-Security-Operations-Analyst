@@ -71,7 +71,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. In case you get a UAC prompt, enter *Administrator* for "Username" and *Passw0rd!* for "Password", else skip to the next step.
 
-1. Enter: **cd C:\Users\Administrator\Downloads**.
+1. Enter: **cd C:\Users\Administrator\Downloads**
 
     >**Note:** If you are not able to copy the content, then copy the required content to a notepad file using the Clipboard functionality in the top navigation pane of the Hyper V VM in the lab VM and paste it into the Powershell window.
  
@@ -126,7 +126,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
     >**Note:** You  may have to click on the arrowhead that appears to see the **Open Connector Page Option**
 
-       ![Picture 1](../Media/m1.png)
+    ![Picture 1](../Media/m1.png)
  
 1. In the **Configuration** section, select the **+Create data collection rule**.
 
