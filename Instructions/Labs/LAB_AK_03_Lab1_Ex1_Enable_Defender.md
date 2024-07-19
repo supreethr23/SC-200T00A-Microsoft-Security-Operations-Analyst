@@ -32,9 +32,9 @@ In this task, you will set up an Azure Subscription required to complete this la
 
 1. In the Edge browser, navigate to the Azure portal at (https://portal.azure.com).
 
-1. In the **Sign in** dialog box, copy and paste Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
+1. In the **Sign in** dialog box, copy and paste **Email/Username:** <inject key="AzureAdUserEmail"></inject> and then select **Next**.
 
-1. In the **Enter password** dialog box, copy and paste Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste **Password:** <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
 1. In the Search bar of the Azure portal, type *Subscription*, then select **Subscriptions**. 
 
@@ -48,11 +48,11 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Select **+ Create** from the command bar.
 
-1. Select Resource Group **rg-defender** from the drop down.
+1. Create a new resource group named **rg-defender**.
 
 1. For the Name, enter something unique like **uniquenameDefender**.
 
-1. Select the default Region 
+1. Select the default Region.
 
 1. Select **Review + Create**.
 
@@ -96,7 +96,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. Click on the Start button, search for **Hyper-V** from the bottom windows search bar, and select to open.
 
-1. Click on WIN1-XXXXX    
+1. Click on WIN1-XXXXX.
 
 1. Select and right-click on the **WINServer** virtual machine from the virtual machine section in the middle and select start, then again right-click on the **WINServer** virtual machine and select **connect**.
 
@@ -124,7 +124,7 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 1. In the *Add a server with Azure Arc* page, select the Resource group you created earlier under *Project details*. **Hint:** *rg-defender*
 
-    >**Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
+    >**Note:** If you haven't already created a resource group, open another tab create the resource group and start over.
 
 1. For *Region*, select **(US) East Us** from the drop-down list.
 
@@ -200,21 +200,21 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. Select **Next: Collect and deliver**
 
-1. In the **Collect and deliver** tab, select **+ Add data source**
+1. In the **Collect and deliver** tab, select **+ Add data source**.
 
 1. In the **Add a data source** page, select **Performance Counters** from *Data source type*.
 
     >**Note:** For the purposes of this lab you could select *Windows Event Logs*. These selections can be revised later.
 
-1. Click the **Destination** tab
+1. Click the **Destination** tab.
 
-1. Select **Azure Monitor Logs** in the **Destination Type** dropdown
+1. Select **Azure Monitor Logs** in the **Destination Type** dropdown.
 
-1. Select your *Azure Pass - Sponsorship* subscription from the **Subscription** dropdown
+1. Select your *Azure Pass - Sponsorship* subscription from the **Subscription** dropdown.
 
-1. Select your workspace name **Hint:** *RG-Defender* from the **Account or namespace** dropdown
+1. Select your workspace name **Hint:** *RG-Defender* from the **Account or namespace** dropdown.
 
-1.  Select **Add data source** and select **Review + create**
+1.  Select **Add data source** and select **Review + create**.
 
 1. Select **Create** after *Validation passed* is displayed.
 
