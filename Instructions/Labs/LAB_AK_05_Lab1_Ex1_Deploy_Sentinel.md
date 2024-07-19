@@ -26,11 +26,11 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
-1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
+1. In the **Sign in** dialog box, copy and paste **Email/Username:** <inject key="AzureAdUserEmail"></inject> and then select Next.
 
-1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste **Password:** <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
-1. In the Search bar of the Azure portal, type *Log Analytics workspaces*, then select the same service name.
+1. In the Search bar of the Azure portal, type **Log Analytics workspaces**, then select the same service name.
 
 1. Select **+ Create**
 
@@ -68,7 +68,7 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. In the search box at the bottom of the Windows 10 screen, enter *Notepad*. Select **Notepad** from the results.
 
-1. Type *Hostname* then enter for a new line.
+1. Type ***Hostname*** then enter for a new line.
 
 1. From row 2 of the notepad, copy the following hostnames, each one in a different line:
 
@@ -80,12 +80,12 @@ In this task, you will create a watchlist in Microsoft Sentinel.
     Host5
     ```
 
-1. From the menu select, **File - Save As**, Name the file *HighValue.csv*, change the file type to **All files(*.*)** and select **Save**.                                             
+1. From the menu select, **File - Save As**, Name the file ***HighValue.csv***, change the file type to **All files(*.*)** and select **Save**.                                             
   >**Hint:** The file can be saved in the *Documents* folder.
 
 1. Close Notepad.
 
-1. In Microsoft Sentinel, On the left menu, select the **Watchlist** option under the Configuration area.
+1. In Microsoft Sentinel, On the left menu, select the **Watchlist** option under the **Configuration** area.
 
 1. Select **+ New** from the command bar.
 
@@ -101,7 +101,7 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. Select **Browse for files** under *Upload file* and browse for the *HighValue.csv* file you just created.
 
-1. In the *SearchKey field* select **Hostname**.
+1. In the ***SearchKey field*** select **Hostname**.
 
 1. Select **Next: Review + Create >**.
 
@@ -121,15 +121,15 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 In this task, you will create an indicator in Microsoft Sentinel.
 
-1. In Microsoft Sentinel, On the left menu, select the **Threat intelligence** option in the Threat management area.
+1. In Microsoft Sentinel, On the left menu, select the **Threat intelligence** option in the **Threat management** area.
 
 1. Select **+ Add New** from the command bar.
 
-1. Review the different indicator types available in the *Types* dropdown. Select the **domain-name**. Enter your initials in the Domain box. You can use **onmicrosoft.com**.
+1. Review the different indicator types available in the ***Types*** dropdown. Select the **domain-name**. Enter your initials in the Domain box. You can use **onmicrosoft.com**.
 
-1. For the *Threat types*, add **malicious-activity** and select **Apply**.
+1. For the ***Threat types***, add **malicious-activity** and select **Apply**.
 
-1. For the *Name*, enter the same value used for the Domain. An example would be **onmicrosoft.com**.
+1. For the ***Name***, enter the same value used for the Domain. An example would be **onmicrosoft.com**.
 
 1. Set the **Valid from** field to today's date. and **valid till** to next day 
 
@@ -137,7 +137,7 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
     **Note:** It could take a couple of minutes for the indicator to appear.
 
-1. On the left Menu, Select the **Logs** option in the General area. You may need to disable the "Always show queries" option and close the *Queries* window to run the statements.
+1. On the left Menu, Select the **Logs** option in the **General** area. You may need to disable the "Always show queries" option and close the *Queries* window to run the statements.
 
 1. Run the following KQL statement.
 
@@ -159,17 +159,17 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 In this task, you will change the retention period for the SecurityEvent table.
 
-1. In Microsoft Sentinel, select the **Settings** option under the *Configuration* area.
+1. In Microsoft Sentinel, select the **Settings** option under the ***Configuration*** area.
 
 1. Select **Workspace settings**.
 
-1. In Log Analytics workspace, select the **Tables** option under the *Settings* area.
+1. In Log Analytics workspace, select the **Tables** option under the ***Settings*** area.
 
-1. Search and select the table **SecurityEvent**, and then select the ellipsis button (...).
+1. Search and select the table **SecurityEvent**, and then right click on ***Security Event*** table.
 
 1. Select **Manage Table**.
 
-1. Select **180 days** for *Total retention period*. Notice that *Archive period* is only 150 days, since it uses 30 days from the (default) *Interactive retention*.
+1. Select **180 days** for ***Total retention period***. Notice that ***Archive period*** is only 150 days, since it uses 30 days from the (default) ***Interactive retention***.
 
 1. Select **Save** to apply the changes.
 
