@@ -28,8 +28,6 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Open a browser and log into the Azure Portal at https://portal.azure.com with the credentials you have been using in the previous labs.
 
-     >**Note:** Kindly use the 
- 
 1. In the **Sign in** dialog box, copy and paste in the **Username** <inject key="AzureAdUserEmail"></inject> and then select Next.
 
 1. In the **Enter password** dialog box, copy and paste in the Password <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
@@ -55,14 +53,10 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
      ![Picture 1](../Media/SC-200-module6-ex2-img4.png)
 
-1. Select **Next** to get to the Resource details tab.
+1. First, select the **East US** region.
 
-1. Select the Resource group **RG-DEFENDER**.
-
-    >**Note:** If you haven't already created a resource group, open another tab and create the resource group and start over.
+1. Then, create a new resource group named **RG-DEFENDER**.
      
-1. Select a **east us** region.
-
 1. Review the *Server details* and *Connectivity method* options. Keep the default values and select **Next** to get to the Tags tab.
 
 1. Select **Next** to get to the Download and run script tab.
@@ -99,9 +93,9 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
     >**Note:** This could take a few minutes.
     
-1. In the Search bar of the Azure portal, type *Log Analytics workspaces*, then select the same service name.
+1. In the Azure portal's search bar, type **Log Analytics workspaces** and select it.
 
-1. Click on **Create**.
+1. Click on **+ Create**.
 
 1. Select **RG-DEFENDER** for the Resource group drop-down.
 
@@ -111,7 +105,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+1. In the Azure portal's search bar, type **Microsoft Sentinel** and select it.
 
 1. Click on **+ Create**.
 
@@ -119,7 +113,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Select the Microsoft Sentinel Workspace you created.
  
-1. Go to the content hub search for **Windows Security Events** and click on install. 
+1. Click on **Go to the content hub**, search for **Windows Security Events**, and click on **Install**.
 
      ![Picture 1](../Media/contenthub.png)
      ![Picture 1](../Media/installWSEvents.png)
