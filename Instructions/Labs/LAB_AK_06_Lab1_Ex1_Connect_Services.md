@@ -58,7 +58,7 @@ After completing this lab, you will be able to integrate log data from various d
    
  1. Go back to data connector page and search for the **Microsoft Entra ID** connector and select it from the list.
 
- 1. Navigate back to the **Data connectors** pagwe and select the **Open connector page** on the connector information blade.
+ 1. Navigate back to the **Data connectors** page and select the **Open connector page** on the connector information blade.
 
  1. Check and click on the **Sign-in Logs** and **Audit Logs** options from the Configuration area, then select **Apply Changes**.
 
@@ -66,7 +66,7 @@ After completing this lab, you will be able to integrate log data from various d
 
 In this task, you will connect the Microsoft Entra ID Protection connector to Microsoft Sentinel.
 
-1. In the Data Connectors page, click on content hub and search for **Microsoft Entra ID Protection** and select and install it
+1. In the Data Connectors page, click on content hub and search for **Microsoft Entra ID Protection** and select and **install** it.
  
 1. From the Data Connectors Tab, search for the **Microsoft Entra ID Protection** connector and select it from the list.
 

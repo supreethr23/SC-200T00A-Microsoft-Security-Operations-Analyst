@@ -29,17 +29,19 @@ In this task, you will create a Windows virtual machine in Azure.
 
  1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
- 1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
+ 1. In the **Sign in** dialog box, copy and paste **Email/Username:** <inject key="AzureAdUserEmail"></inject> and then select **Next**.
 
- 1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+ 1. In the **Enter password** dialog box, copy and paste **Password:** <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
  1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
- 1. Select **+ Create a Resource**. **Hint:** If you were already in the Azure Portal, you might need to select *Microsoft Azure* from the top bar to go Home.
+ 1. Select **+ Create a Resource**. 
+  
+    **Hint:** If you were already in the Azure Portal, you might need to select *Microsoft Azure* from the top bar to go Home.
 
- 1. In the **Search services and marketplace** box, enter *Windows 10* and select **Microsoft Window 10** from the drop-down list.
+ 1. In the **Search services and marketplace** box, enter ***Windows 10*** and select **Microsoft Window 10** from the drop-down list.
 
- 1. Open the *Plan* drop-down list and select **Windows 10 Enterprise, version 21H2**. Select **Start with a pre-set configuration** to continue.
+ 1. Open the *Plan* drop-down list and select **Windows 10 Enterprise, version 22H2**. Select **Start with a pre-set configuration** to continue.
  
  1. On **Choose recommended defaults that match your workload**  page select **Continue to Create a VM**
 
