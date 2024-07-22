@@ -4,12 +4,11 @@
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You already created Scheduled and Microsoft Security Analytics rules.  You need to centralize analytical rules in an Azure DevOps repository.  Then connect Sentinel to the Azure DevOps repository and import the content. 
 
-
 ### Task 1: Create and export an analytical rule
 
 In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
 
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.
+1. log in to the WIN1 virtual machine with the password provided in the environment tab.
 
 1. In the **Sign in** dialog box, copy and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
 
@@ -41,7 +40,6 @@ In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
     
 1. Select **View query results**. You should not receive any results or errors. If you receive an error, please review that the query appears just like the previous KQL statement. Close the *Logs* window by selecting the upper right **X** and select **OK** to discard to save changes to go back to the wizard.
 
-
 1. Scroll down and under *Query scheduling* set the following:
 
     |Setting|Value|
@@ -55,7 +53,7 @@ In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
 
 1. Under the *Event grouping* area, leave the **Group all events into a single alert** as the selected option since we want to generate a single alert every time it runs, as long as the query returns more results than the specified alert threshold above.
 
-1. Select the **Next: Incident settings >** button. 
+1. Select the **Next: Incident settings >** button.
 
 1. Select the **Next: Automated response >** button.
 
@@ -89,9 +87,9 @@ In this task, you will test create and populate an Azure DevOps repository.
 
 1. At the bottom of the page in the area *Initialize the main branch with a README or gitignore*, select **Initialize**.
 
-1. The page should show the Files for the Repo.  the only file is README.me.
+1. The page should show the Files for the Repo. the only file is README.me.
 
-1. On the Files (right side of the page) blade, the toolbar includes options *Set up build*, *Clone*, and *:*.  Select **:** to show more options.
+1. On the Files (right side of the page) blade, the toolbar includes options *Set up build*, *Clone*, and *:*. Select **:** to show more options.
 
 1. Select **Upload Files**.
 
@@ -101,7 +99,7 @@ In this task, you will test create and populate an Azure DevOps repository.
 
 1. Select **Commit**.
 
-1. Select **Azure DevOps** on the top left corner of the page.  This display your organization and projects.
+1. Select **Azure DevOps** on the top left corner of the page. This displays your organization and projects.
 
 1. Select **Organization settings** from the bottom left of the page.
 
@@ -123,7 +121,7 @@ In this task, you will test create and populate an Azure DevOps repository.
 
 1. Select **Authorize**. Scroll down the permissions request and then select **Accept**.
 
-1. Select the Organization your created earlier (e.g. WWLx...).
+1. Select the Organization you created earlier (e.g. WWLx...).
 
 1. Select the Project you created earlier, *My Sentinel Content*.
 
@@ -137,13 +135,12 @@ In this task, you will test create and populate an Azure DevOps repository.
 
 1. Then select **Create**.
 
-1. Go back to Microsoft Sentinel workspace if needed
+1. Go back to Microsoft Sentinel workspace if needed.
 
-1. Go to the *Repositories (Preview)* page, select **Refresh**. Wait until *Last deployment status* is *Failed*.  
+1. Go to the *Repositories (Preview)* page, select **Refresh**. Wait until *Last deployment status* is *Failed*.
 
     ![linux login](../Media/m14.png)
    
     >**Note:** The *Failed/Unknown* status is due to limitations in the hosted lab environment. You would normally see *Succeeded*. Then you can see in the *Analytics* the imported rule *Rule from Azure DevOps*.
-
 
 ## Proceed to the next lab.
