@@ -4,7 +4,6 @@
 
 You are going to simulate the attacks that you will later use to detect and investigate in Microsoft Sentinel.
 
-
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Perform%20simulated%20attacks)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 ## Architecture Diagram
@@ -13,11 +12,11 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 ### Task 1: Persistence Attack with Registry Key Add
 
->**Important:** The next steps are done in a different machine than the one you were previously working. Look for the Virtual Machine name references.
+>**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
-In this task, you will perform attacks on the host connected with Azure Arc and that has the Azure Monitor Agent configured.
+In this task, you will perform attacks on the host connected with Azure Arc that has the Azure Monitor Agent configured.
 
-1. Login to WINServer virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Login to the WINServer virtual machine as Admin with the password: **Pa55w.rd**.  
 
     >**Important:** The lab *SAVE* functionality can cause WINServer to become disconnected from Azure Arc. A reboot will solve the issue.  
 
@@ -25,7 +24,7 @@ In this task, you will perform attacks on the host connected with Azure Arc and 
 
 1. Follow the instructions to log into WINServer again.
 
-1. In the search of the task bar, enter *Command*. Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
+1. In the search of the taskbar, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
 
 1. In the Command Prompt, create a Temp folder in the root directory. Remember to press Enter after the last row:
 
@@ -40,8 +39,6 @@ In this task, you will perform attacks on the host connected with Azure Arc and 
     ```CommandPrompt
     REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
     ```
-
-
 ### Task 2: Privilege Elevation Attack with User Add
 
 1. Copy and run this command to simulate the creation of an Admin account. Remember to press Enter after the last row:
@@ -51,7 +48,6 @@ In this task, you will perform attacks on the host connected with Azure Arc and 
     net user theusernametoadd ThePassword1!
     net localgroup administrators theusernametoadd /add
     ```
-
 
 ### Task 3: Command and Control Attack with DNS
 
