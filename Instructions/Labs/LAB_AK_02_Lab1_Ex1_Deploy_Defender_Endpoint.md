@@ -26,9 +26,9 @@ In this lab, you will perform the following:
 
 1. In the Edge browser, go to the Microsoft Defender XDR portal at (https://security.microsoft.com).
 
-1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
+1. In the **Sign in** dialog box, copy and paste **Email/Username:** <inject key="AzureAdUserEmail"></inject> and then select Next.
 
-1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+1. In the **Enter password** dialog box, copy and paste **Password:** <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
 1. On the **Microsoft Defender XDR** portal, from the navigation menu, select **Home** from the left.
 
