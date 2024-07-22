@@ -18,10 +18,6 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Select and right-click on the **WINSERVER** virtual machine and select **Start**, then again right-click on the **WINSERVER** virtual machine and select **Connect**.
  
-1. Inside **WINSERVER** Click on **Action (1)** then click on **Ctrl+Alt+Delete (2)** to turn on WINSERVER.
-
-    ![Picture 1](../Media/winserveron1.png)
-
 1. Enter the **Password** as `Password.1!!` when prompted.
 
 1. Open the Microsoft Edge browser inside **WINSERVER**.
