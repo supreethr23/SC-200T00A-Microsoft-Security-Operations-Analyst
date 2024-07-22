@@ -36,11 +36,11 @@ After completing this lab, you will be able to integrate log data from various d
 
  1. Select Resource Group **RG-Defender**  from the drop down.
 
- 1. For the Name, enter **uniquenameDefender** 
+ 1. For the Name, enter **uniquenameDefender**.
 
  1. Select **Review + Create**.
 
- 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes
+ 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
  
  1. In the Search bar of the Azure portal, type **Sentinel**, then select **Microsoft Sentinel**.
 
@@ -54,7 +54,7 @@ After completing this lab, you will be able to integrate log data from various d
 
  1. On the left side menu, in the Configuration area select **Data connectors**.
  
- 1. In the Data Connectors page, click on content hub and search for **Microsoft Entra ID** and select and install it
+ 1. In the Data Connectors page, click on **content hub** and search for **Microsoft Entra ID** and select and install it.
    
  1. Go back to data connector page and search for the **Microsoft Entra ID** connector and select it from the list.
 
@@ -84,7 +84,7 @@ In this task, you will connect the Microsoft Entra ID Protection connector to Mi
 
 In this task, you will connect the Microsoft Defender for Cloud connector.
  
-1. In the Data Connectors page, click on content hub and search for **Microsoft Defender for Cloud** and select and install it
+1. In the Data Connectors page, click on content hub and search for **Microsoft Defender for Cloud** and select and **install** it.
  
 1. From the Data Connectors tab, search for the **Microsoft Defender for Cloud** connector and select it from the list.
 
