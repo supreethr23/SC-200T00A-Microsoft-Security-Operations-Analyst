@@ -4,7 +4,7 @@
 
 In this task, you will investigate an incident.
 
-1. Log in to WIN1 virtual machine with the password as provided in the Environment tab.  
+1. Log in to the WIN1 virtual machine with the password as provided in the Environment tab.  
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
@@ -14,7 +14,7 @@ In this task, you will investigate an incident.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select your Microsoft Sentinel Workspace you created earlier.
+1. Select the Microsoft Sentinel Workspace you created earlier.
 
 1. Select the **Incidents** tab from Threat management area.
 
@@ -38,7 +38,7 @@ In this task, you will investigate an incident.
 
 1. From the left pane, scroll down and select the **Investigate** button. **Hint:** If the icons are too small for your screen, select **(+)** to magnify them.
 
-1. Hover the **ODL_user_xxx@mocholxxxx.onmicrosoft.com** entity icon and wait for new *exploration queries* to be shown. It looks that *Related Alerts* has more data on it. Select the name of the exploration query **Related Alerts** to bring them to the investigation graph or select **Events >** to investigate them with a KQL query.
+1. Hover the **ODL_user_xxx@mocholxxxx.onmicrosoft.com** entity icon and wait for new *exploration queries* to be shown. It looks like *Related Alerts* has more data on it. Select the name of the exploration query **Related Alerts** to bring them to the investigation graph or select **Events >** to investigate them with a KQL query.
 
 1.	When you select an entity, a window on the right opens for more detailed information. Review the **Info** page.
 
@@ -47,6 +47,5 @@ In this task, you will investigate an incident.
 1. Select **Entities** button and review the *Entities* and *Alerts* related to *ODL_user_xxx@mocholxxxx.onmicrosoft.com*.
 
 1. Close the investigation graph by selecting the **X** in the top right of the page.
-
   
 ## Proceed to Exercise 9
