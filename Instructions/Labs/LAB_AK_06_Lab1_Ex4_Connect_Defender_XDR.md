@@ -40,6 +40,8 @@ In this task, you deploy the Microsoft Defender XDR connector.
 
 1. In the *Configuration* section, under the *Instructions* tab, **select** the checkbox for *Turn off all Microsoft incident creation rules for these products. Recommended*, and select the **Connect incidents & alerts** button.
 
+    >**Note:** If you are not able to see the **Connect incident & alerts button**, search for **Microsoft Defender For Cloud** in the azure portal and **Select** it, in the getting started page Select **Upgrade** to upgrade your Microsoft Defender For cloud plan.
+
 1. You should see a message that the connection was successful.
 
 ### Task 2: Connect Microsoft Sentinel and Microsoft Defender XDR
