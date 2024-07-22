@@ -4,8 +4,7 @@
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. Once you have connected your data sources to Microsoft Sentinel, you can visualize and monitor the data using the Microsoft Sentinel adoption of Azure Monitor Workbooks, which provides versatility in creating custom dashboards. 
 
-Microsoft Sentinel allows you to create custom workbooks across your data, and also comes with built-in workbook templates to allow you to quickly gain insights across your data as soon as you connect a data source.
-
+Microsoft Sentinel allows you to create custom workbooks across your data and also comes with built-in workbook templates to allow you to quickly gain insights across your data as soon as you connect a data source.
 
 ### Task 1: Explore workbook templates
 
@@ -21,7 +20,7 @@ In this task, you will explore the Microsoft Sentinel workbook templates.
 
     ![linux login](../Media/m2.png)   
 
-1. Review the contents of the workbook. It shows insights of your Azure subscription operations by collecting and analyzing the data from the Activity Log.
+1. Review the contents of the workbook. It shows insights into your Azure subscription operations by collecting and analyzing the data from the Activity Log.
 
     ![linux login](../Media/m3.png)  
 
@@ -39,7 +38,7 @@ In this task, you will save a workbook template and modify it.
 
 1. Select **Edit** in the command bar to enable changes in the workbook.
 
-1. Scroll down to the *Caller activities over time* area, look at the color of the *Activities* column since we are going to format those columns. Select the **Edit** button below the grid.
+1. Scroll down to the *Caller activities over time* area, and look at the color of the *Activities* column since we are going to format those columns. Select the **Edit** button below the grid.
 
    ![linux login](../Media/m4.png)  
 
@@ -61,7 +60,7 @@ In this task, you will save a workbook template and modify it.
 
 1. Close the workbook by selecting the **X** in the top-right corner and observe the change.
 
-   >**Note:** If you don't find the results it might take some to populate.Please proceed with the next task.
+   >**Note:** If you don't find the results it might take some to populate. Please proceed with the next task.
   
 ### Task 3: Create a Workbook
 
@@ -81,9 +80,9 @@ In this task, you will create a new workbook with advanced visualizations.
 
    ![linux login](../Media/m7.png)  
 
-1. Select **Done Editing** on the bottom of this section, *Editing text item: text - 2*. Notice that your header increased size and name changed.
+1. Select **Done Editing** on the bottom of this section, *Editing text item: text - 2*. Notice that your header increased in size and name changed.
 
-1. Select **Edit** below the only visible barchart graph.
+1. Select **Edit** below the only visible bar chart graph.
 
 1. Review the KQL statement that provides a *union* statement of counts across all tables.
 
@@ -99,7 +98,7 @@ In this task, you will create a new workbook with advanced visualizations.
 
    ![linux login](../Media/m8.png) 
    
-1. Select **Style** tab from the query's command bar.
+1. Select the **Style** tab from the query's command bar.
 
 1. Select the **Make this item a custom width** box.
 
@@ -107,7 +106,7 @@ In this task, you will create a new workbook with advanced visualizations.
 
 1. Set the *Percent width* to **25** and *Maximum width* to **25**.
 
-1. Now select **Advanced Settings** tab from the query's command bar.
+1. Now select the **Advanced Settings** tab from the query's command bar.
 
 1. Select **Show refresh icon when not editing** box. 
 
@@ -148,62 +147,3 @@ In this task, you will create a new workbook with advanced visualizations.
 1. On the right pane, select **View saved workbook** to review your workbook.
 
 ## Proceed to Exercise 9
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
