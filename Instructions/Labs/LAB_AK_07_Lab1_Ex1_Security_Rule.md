@@ -10,7 +10,7 @@ In this task, you will activate a Microsoft Security rule.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select your Microsoft Sentinel Workspace you created in the previous labs.
+1. Select the Microsoft Sentinel Workspace you created in the previous labs.
 
     ![Picture 1](../Media/xx2.png)
 
