@@ -88,11 +88,11 @@ In this task, you'll update the new playbook you created with the proper connect
 
 1. Select **Add new** and select **Sign in**. In the new window, select your Azure subscription admin credentials (odl username) when prompted. The last line of the block should now read "Connected to your-admin-username".
 
-  >**Note:** If you face a pop-up blocker from the browser allow it and try to authenticate again.
+   >**Note:** If you face a pop-up blocker from the browser allow it and try to authenticate again.
 
 1. Now select the *second* block, **Post a message (V3)**.
 
-1. In the Prameters tab, scroll down and select the **Change connection** link and then select **Add new** and **Sign in**. Choose your Azure admin credentials(odl username) when prompted. The Prameters tab should now read "Connected to your-admin-username".
+1. In the Parameters tab, scroll down and select the **Change connection** link and then select **Add new** and **Sign in**. Choose your Azure admin credentials (odl username) when prompted. The Parameters tab should now read "Connected to your-admin-username".
 
 1. At the end of the *Team* field, select the **X** to clear the contents. The field is changed to a drop-down with a listing of the available Teams from Microsoft Teams. Select **SOC**.
 
