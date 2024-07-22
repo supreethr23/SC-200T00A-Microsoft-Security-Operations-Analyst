@@ -1,11 +1,10 @@
 # Module 7 - Lab 1 - Exercise 7 - Create Detections
 
-
 ### Task 1: Attack 1 Detection with Defender for Endpoint
 
 In this task, you will create a detection for **Attack 1** on the host with the Microsoft Defender for Endpoint configured.
 
-1. Log in to WIN1 virtual machine with the password as provided in the Environment tab. 
+1. Log in to the WIN1 virtual machine with the password as provided in the Environment tab. 
 
 2. In the Microsoft Sentinel portal, Select **Logs** from the General section.
 
@@ -23,7 +22,7 @@ In this task, you will create a detection for **Attack 1** on the host with the 
   search in (Device*) "temp\\startup.bat"
   ```
 
-  >**Important:** If you do not see the *DeviceRegistryEvents* table in the results, an alternative for the following two queries is to use the *DeviceProcessEvents* table as replacement. Being that said, use one of the two provided examples below, depending on the table you see in the previous query.
+  >**Important:** If you do not see the *DeviceRegistryEvents* table in the results, an alternative for the following two queries is to use the *DeviceProcessEvents* table as a replacement. That said, use one of the two provided examples below, depending on the table you see in the previous query.
 
 6. The table - DeviceRegistryEvents looks to have the data already normalized and easy for us to query.  Expand the rows to see all the columns related to the record.
 
@@ -64,7 +63,7 @@ In this task, you will create a detection for **Attack 1** on the host with the 
     | extend timestamp = TimeGenerated, HostCustomEntity = DeviceName, AccountCustomEntity = InitiatingProcessAccountName
     ```
 
-9.  Now that you have a good detection rule, in the Log window with the query, select the **+ New alert rule** in the Command Bar(**...**).  Then select **Create Microsoft Sentinel alert**.
+9.  Now that you have a good detection rule, in the Log window with the query, select the **+ New alert rule** in the Command Bar(**...**). Then select **Create Microsoft Sentinel alert**.
 
 10. This starts our Analytics rule wizard. For the General Tab, enter:
 
@@ -101,7 +100,6 @@ In this task, you will create a detection for **Attack 1** on the host with the 
 
 17. On the Review tab, select the Create button to create the new Scheduled Analytics rule.
 
-
 ### Task 2: Attack 2 Detection with SecurityEvent
 
 In this task, you will create a detection for *Attack 2* on the host with the Security Events connector and Sysmon installed.
@@ -122,7 +120,7 @@ In this task, you will create a detection for *Attack 2* on the host with the Se
     - Event
     - SecurityEvent
 
-5. Our first data source is SecurityEvent. Time to research what event ID Windows uses to identify adding a member to a privileged group. copy the EventID and replace in all the bewlow queries. **Kindly check the Event Id before run the script** and replace. Run the following script to confirm:
+5. Our first data source is SecurityEvent. Time to research what event ID Windows uses to identify adding a member to a privileged group. copy the EventID and replace it in all the below queries. **Kindly check the Event Id before run the script** and replace. Run the following script to confirm:
 
   ```KQL
   SecurityEvent
@@ -162,7 +160,5 @@ In this task, you will create a detection for *Attack 2* on the host with the Se
   ) on $left.MachId == $right.MachId1, $left.Acct == $right.Acct1 
   | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = UserName1
   ```
-
-
 
 ## Proceed to Exercise 8
