@@ -10,7 +10,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you create a function that is a workspace parser for DeviceRegistryEvents. 
 
-1. Login to WIN1 virtual machine with the password as provided in the environment tab.   
+1. Login to the WIN1 virtual machine with the password as provided in the environment tab.   
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
@@ -20,7 +20,7 @@ In this task, you create a function that is a workspace parser for DeviceRegistr
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select your Microsoft Sentinel Workspace you created earlier.
+1. Select the Microsoft Sentinel Workspace you created earlier.
 
 1. Select the **Logs** page.
 
@@ -124,7 +124,6 @@ In this task, you create a function that is a workspace parser for DeviceRegistr
 1. Then select **Save**.
 
 1. In a new query tab, enter **vimRegEvtM365D** and select **Run**.
-
 
 ### Task 2: Develop KQL Function for SecurityEvent table. 
 
@@ -231,12 +230,11 @@ In this task, you create a function that is a workspace parser for SecurityEvent
     |Function name|vimRegEvtSecurityEvent|
     |Legacy Category|MyASIM|
 
-    >Note: Sometime it will take long time  to get the output, Meanwhile you can procceed with next task.
+    >Note: Sometimes it will take a long time  to get the output, Meanwhile you can proceed with the next task.
 
 1. Then select **Save**.
 
 1. In a new query tab, enter **vimRegEvtSecurityEvent** and select **Run**.
-
 
 ### Task 3: Create a unifying workspace parser. 
 
