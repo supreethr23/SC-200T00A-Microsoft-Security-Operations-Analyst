@@ -1,6 +1,7 @@
 # Module 7 - Lab 1 - Exercise 5 - Understand Detection Modeling
 
 ## Architecture Diagram
+
 ![Lab overview.](../Media/SC-200-Lab_Diagrams_Mod7_L1_Ex5.png)
 
 ### Task 1: Understand the Attacks
@@ -8,7 +9,6 @@
 >**Important: You will perform no actions in this exercise.**  These instructions are only an explanation of the attacks you will perform in the next exercise. Please carefully read this page.
 
 The attack patterns are based on an open-source project: https://github.com/redcanaryco/atomic-red-team
-
 
 #### Attack 1 - Persistence with Registry Key Add
 
@@ -20,7 +20,7 @@ REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t RE
 
 #### Attack 2 - User Add and Elevate Privilege
 
-Attackers will add new users and elevate the new user to the Administrators group. This enables the attacker to logon with a different account that is privileged.
+Attackers will add new users and elevate the new user to the Administrators group. This enables the attacker to log on with a different account that is privileged.
 
 ```
 net user theusernametoadd /add
@@ -30,7 +30,7 @@ net localgroup administrators theusernametoadd /add
 
 #### Attack 3 - DNS / C2 
 
-Attacker will send a large volume of DNS queries to a command and control (C2) server. The intent is to trigger threshold-based detection on the number of DNS queries either from a single source system or to a single target domain.
+The attacker will send a large volume of DNS queries to a command and control (C2) server. The intent is to trigger threshold-based detection on the number of DNS queries either from a single source system or to a single target domain.
 
 ```
 param(
@@ -73,14 +73,11 @@ Do {
 }
 Until ($TimeNow -ge $RunEnd)
 ```
-
-
 ### Task 2: Understand Detection Modeling
 
 The attack-detect configuration cycle used in this lab represents all data sources even though you are only focused on two specific data sources.
 
 To build a detection, you first start with building a KQL statement. Since you will attack a host, you will have representative data to start building the KQL statement.
-
 
 After you have the KQL statement, you create the Analytical Rule.
 
