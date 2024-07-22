@@ -4,7 +4,6 @@
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You already created Scheduled and Microsoft Security Analytics rules. 
 
-
 You need to configure Microsoft Sentinel to perform Entity Behavior Analytics to discover anomalies and provide entity analytic pages.
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Explore%20entity%20behavior%20analytics)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
@@ -23,7 +22,7 @@ In this task, you will explore Entity behavior analytics in Microsoft Sentinel.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select your Microsoft Sentinel Workspace you created earlier.
+1. Select the Microsoft Sentinel Workspace you created earlier.
 
 1. Select the **Entity behavior** page.
 
@@ -37,8 +36,7 @@ In this task, you will explore Entity behavior analytics in Microsoft Sentinel.
 
 1. Scroll down the *Settings* page and read through the *Anomalies* paragraph.
 
-1. Select **Go to analytics in oder to configure the anomalies**.
-
+1. Select **Go to analytics in order to configure the anomalies**.
 
 ### Task 2: Confirm and review Anomalies rules
 
@@ -70,6 +68,6 @@ In this task, you will confirm Anomalies analytics rules are enabled.
 
 1. Select **Next: Review and Create** and then **Save** to update the rule.
 
-    >**Note:** You can upgrade the **Flighting** rule to **Production** by changing the setting on this rule and save the changes. The **Production** rule will become the **Flighting** rule afterwards.
+    >**Note:** You can upgrade the **Flighting** rule to **Production** by changing the setting on this rule and saving the changes. The **Production** rule will become the **Flighting** rule afterwards.
 
 ## Proceed to Exercise 5
