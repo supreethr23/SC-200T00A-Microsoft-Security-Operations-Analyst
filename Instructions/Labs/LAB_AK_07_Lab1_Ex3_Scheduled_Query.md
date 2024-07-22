@@ -44,7 +44,7 @@ In this task, you create a scheduled query and connect it to the Teams channel y
 
 1. Select **Next: Set rule logic >** button:
 
-1. For the rule query, select **View query results**. You shouldn't receive any results nor any errors.
+1. For the rule query, select **View query results**. You shouldn't receive any results or any errors.
 
 1. Close the *Logs* window by selecting the upper right **X** and select **OK** to discard to save changes to go back to the wizard.
 
@@ -77,9 +77,9 @@ In this task, you create a scheduled query and connect it to the Teams channel y
 
    ![Picture 1](../Media/xs3.png)
 
-1. Use the *And then* drop-down menus to select **Run playbook**
+1. Use the *And then* drop-down menus to select **Run playbook**.
 
-1. A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**
+1. A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**.
 
     >**Note:** The playbooks will appear grayed out in the drop-down list until permissions are configured.
 
@@ -91,7 +91,7 @@ In this task, you create a scheduled query and connect it to the Teams channel y
 
    ![Picture 1](../Media/xs4.png)
 
-1. Select **Apply**
+1. Select **Apply**.
 
 1. Select the **Next: Review and create >** button.
   
@@ -138,6 +138,5 @@ In this task, you test your new scheduled query rule.
 1. Select the Incident and review the information in the right blade.
 
 1. Go back to Microsoft Teams by selecting the tab in your Microsoft Edge browser. If you closed it, just open a new tab and type https://teams.microsoft.com. Go to the *SOC* Teams, select the *New Alerts* channel and see the message post about the incident.
-
 
 ## Proceed to Exercise 4
