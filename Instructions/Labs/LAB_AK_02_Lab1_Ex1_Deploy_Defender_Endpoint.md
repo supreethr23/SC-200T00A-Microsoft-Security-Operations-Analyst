@@ -1,4 +1,4 @@
-# Module 2 - Lab 1 - Exercise 1 - Deploy Microsoft Defender for Endpoint
+# Module 2 - Lab 1 - Deploy Microsoft Defender for Endpoint
 
 ## Lab scenario
 
@@ -46,7 +46,7 @@ In this lab, you will perform the following:
 
     >**Note:** If the message "Hang on! We're preparing new spaces for your data and connecting them" does not appear, or the "Settings > Microsoft Defender XDR > Account" page opens, but you see the message "Failed to load data storage location. Please try again later",  select "Alert service settings" from the "General" menu, or go to the navigation menu, scroll down to the "Assets" section and select "Devices".
 
-1. When the new space completes successfully, you are going to see the Microsoft Defender XDR General settings for Account, Email notifications, Alert service settings, Permissions and roles and Streaming API. You will also see **Preview Features** turned on.
+1. When the new space is completed successfully, you will see the Microsoft Defender XDR General settings for Account, Email notifications, Alert service settings, Permissions and Roles, and Streaming API. You will also see **Preview Features** turned on.
 
 ### Task 2: Initialize Microsoft Defender for Endpoint
 
@@ -220,4 +220,4 @@ In this lab, you have completed the following:
 - Configured Roles
 - Configured Device Groups
 
-## Proceed to Exercise 2
+## Proceed to Lab 2
