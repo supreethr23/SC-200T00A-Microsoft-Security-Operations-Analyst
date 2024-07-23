@@ -29,17 +29,19 @@ In this task, you will create a Windows virtual machine in Azure.
 
  1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
- 1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
+ 1. In the **Sign in** dialog box, copy and paste **Email/Username:** <inject key="AzureAdUserEmail"></inject> and then select **Next**.
 
- 1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+ 1. In the **Enter password** dialog box, copy and paste **Password:** <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
  1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
- 1. Select **+ Create a Resource**. **Hint:** If you were already in the Azure Portal, you might need to select *Microsoft Azure* from the top bar to go Home.
+ 1. Select **+ Create a Resource**. 
+  
+    **Hint:** If you were already in the Azure Portal, you might need to select *Microsoft Azure* from the top bar to go Home.
 
- 1. In the **Search services and marketplace** box, enter *Windows 10* and select **Microsoft Window 10** from the drop-down list.
+ 1. In the **Search services and marketplace** box, enter ***Windows 10*** and select **Microsoft Window 10** from the drop-down list.
 
- 1. Open the *Plan* drop-down list and select **Windows 10 Enterprise, version 21H2**. Select **Start with a pre-set configuration** to continue.
+ 1. Open the *Plan* drop-down list and select **Windows 10 Enterprise, version 22H2**. Select **Start with a pre-set configuration** to continue.
  
  1. On **Choose recommended defaults that match your workload**  page select **Continue to Create a VM**
 
@@ -73,7 +75,7 @@ In this task, you will connect an Azure Windows virtual machine to Microsoft Sen
 
  1. Select **Data Connector** from configuration area.
  
- 1. Go to content hub and search for **Windows Security Events** and Install
+ 1. Go to content hub and search for **Windows Security Events** and Install.
  
  1. From the Data Connectors Tab, search for the **Windows Security Events via AMA** connector and select it from the list.
 
@@ -221,9 +223,13 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Select **Onboarding** in the Device Management section.
 
- 1. In the "1. Onboard a device" area make sure "Local Script (for up to 10 devices)" is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
+1. In the **Select operating system to start onboarding process:** are make sure **Windows Server 2019 and 2022** is displayed.
 
-1. Under the *Downloads* pop-ipup, highlight the **WindowsDefenderATPOnboardingPackage.zip** file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the downloads of **WIN01** file explorer.
+1. In the "1. Onboard a device" area make sure "Local Script (for up to 10 devices)" is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
+
+1. Under the *Downloads* pop-ipup, highlight the **WindowsDefenderATPOnboardingPackage.zip** file with your mouse and select the folder icon **Show in folder**. 
+  
+    >**Hint:** In case you don't see it, the file should be in the downloads of **WIN01** file explorer.
 
 1. Right-click the downloaded zip file and select **Extract All...**, make sure that **Show extracted files when complete** is checked and select **Extract**.
 
@@ -241,7 +247,9 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. When the "User Account Control" window is shown, select **Yes** to allow the app to run. 
 
-1. Paste the script by right-clicking in the **Administrator: Command Prompt** windows and press **Enter** to run it. **Note:** The window closes automatically after running the script.
+1. Paste the script by right-clicking in the **Administrator: Command Prompt** windows and press **Enter** to run it. 
+
+    >**Note:** The window closes automatically after running the script.
 
 1. In the Microsoft 365 Defender portal, in the left-hand menu, under the **Assets** area, select **Devices**. If the device is not shown, complete the next task and come back to check it later. It can take up to 60 minutes for the first device to be displayed in the portal.
 

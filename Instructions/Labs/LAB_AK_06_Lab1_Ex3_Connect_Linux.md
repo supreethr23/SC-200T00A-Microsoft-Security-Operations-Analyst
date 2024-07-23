@@ -61,9 +61,9 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
     ssh insert your Linux IP address here -l insert Linux user name here
     ```
     
-     >**Note**: Replace **insert your linux IP address** here with pasted on the notepad Public Ip address of **LIN1** and **insert linux username here** with **Admin Username** provided under Resource group: **LIN1** in the **Environment Details** page of the lab guide.
+     >**Note**: Replace **insert your linux IP address here** with pasted on the notepad Public Ip address of **LIN1** and **insert linux username here** with **Admin Username** provided under Resource group: **LIN1** in the **Environment Details** page of the lab guide.
 
-1. Enter **yes** to confirm the connection and then type the user's **password provided under Resource group: LIN1** in the Environment tab and press enter. Your screen should look something like this:
+1. Enter **yes** to confirm the connection and then type the user's **password provided under Resource group: LIN1** in the Environment tab and press **enter**. Your screen should look something like this:
 
    ![linux login](../Media/SC-200-img12updated.png)
 
@@ -89,7 +89,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 
 1. Select the Microsoft Sentinel Workspace you created in a previous lab.
 
-1. Go-to content hub in data connector window search for **syslog** and install it.
+1. Go-to content hub in data connector window search for **Syslog via Legacy Agent** and install it.
   
 1. From the **Data Connectors tab**, search for the **Syslog via Legacy Agent** connector and select it from the list.
 
