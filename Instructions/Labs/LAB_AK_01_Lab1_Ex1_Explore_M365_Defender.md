@@ -5,7 +5,7 @@
 
 ## Lab objectives
 In this lab, you will perform:
-- Task 1: Create a Group 
+- Task 1: Create a Group in Microsoft Entra ID
 - Task 2: Apply Microsoft Defender XDR for Office 365 present security policies
 - Task 3: Preparing the Microsoft Defender XDR workspace
     
@@ -13,9 +13,9 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/SC200-Lab_M1_L1_Ex1.png)
+  ![Picture 1](../Media/2024-07-23.png)
 
-### Task 1: Create a Group 
+### Task 1: Create a Group in Microsoft Entra ID
 
 1. In the Search bar of the Azure portal, type **Microsoft Entra ID**, then select **Microsoft Entra ID**.
 
@@ -42,8 +42,6 @@ In this lab, you will perform:
 ### Task 2: Apply Microsoft Defender XDR for Office 365 preset security policies
 
 In this task, you will assign preset security policies for Exchange Online Protection (EOP) and Microsoft Defender XDR for Office 365 in the Microsoft  security portal.
-
-**Note**: Skip the log-in steps if already logged in by default 
 
 1. In the Edge browser, go to the Microsoft  Defender XDR portal at (https://security.microsoft.com).
 
@@ -109,7 +107,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
    >**Note:** If the message "Hang on! We're preparing new spaces for your data and connecting them" does not appear, or the "Settings > Microsoft Defender XDR > Account" page opens, but you see the message "Failed to load data storage location. Please try again later", select "Alert service settings" from the "General" menu, or go to the navigation menu, scroll down to the "Assets" section and select "Devices".
 
-1. When the new space completes successfully, you are going to see the Microsoft Defender XDR General settings for Account, Email notifications, Alert service settings, Permissions and roles and Streaming API. You will also see **Preview Features** turned on.
+1. When the new space is completed successfully, you will see the Microsoft Defender XDR General settings for Account, Email notifications, Alert service settings, Permissions and Roles, and Streaming API. You will also see **Preview Features** turned on.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -119,8 +117,8 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 ### Review
  In this lab, you have completed the following:
-   - Created a Group
+   - Created a Group in Microsoft Entra ID
    - Applied Microsoft Defender XDR for Office 365 preset security policies
    - Prepared the Microsoft Defender XDR workspace
 
-## You have successfully completed the lab
+## You have successfully completed the lab.
