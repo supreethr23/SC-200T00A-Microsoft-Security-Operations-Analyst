@@ -1,4 +1,4 @@
-# Module 1 - Lab 1 - Exercise 1 - Explore Microsoft Defender XDR
+# Lab-01: Explore Microsoft Defender XDR
 
 ## Lab scenario
  You are a Security Operations Analyst working at a company that is implementing Microsoft Defender XDR. You start by assigning preset security policies in EOP and Microsoft Defender XDR for Office 365.
@@ -45,9 +45,17 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. In the Edge browser, go to the Microsoft  Defender XDR portal at (https://security.microsoft.com).
 
-1. In the **Sign in** dialog box, copy and paste in the tenant Email account for the admin username provided by your lab hosting provider and then select **Next**.
-
-1. In the **Enter password** dialog box, copy and paste in the admin's tenant password provided by your lab hosting provider and then select **Sign in**.
+1. You'll see the Sign into Microsoft Defender XDR portal tab. Here, enter your credentials:
+ 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+       ![Enter Your Username](../Media/sc900-image-1.png)
+ 
+1. Next, provide your password:
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+ 
+       ![Enter Your Password](../Media/sc900-image-2.png)
 
     >**Note:** If you receive a message "The operation could not be completed. Please try again later. If the problem persists, contact Microsoft support." Click **OK** to continue.
 
