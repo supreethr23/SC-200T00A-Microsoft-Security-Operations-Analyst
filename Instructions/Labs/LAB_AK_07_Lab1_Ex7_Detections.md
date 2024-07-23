@@ -12,157 +12,210 @@ In this task, you will create a detection for **Attack 1** on the host with the 
 
 4. Run the following KQL Statement:
 
-  ```KQL
-  search "temp\\startup.bat"
-  ```
+    ```KQL
+    search "temp\\startup.bat"
+    ```
    
    ![Screenshot](../Media/plx1.png)
 
-   > **Note**: If you dont see any output of the command, please follow the next step. because sometime this query may take more time to get proper output.
+   > **Note**: If you don't see any output of the command, please follow the next step. because sometimes this query may take more time to get proper output.
 
-5. This detection will focus on data from Defender for Endpoint.  Run the following KQL Statement:
+5. The table *SecurityEvent* looks to have the data already normalized and is easy for us to query. Expand the row to see all the columns related to the record.
 
-  ```KQL
-  search in (Device*) "temp\\startup.bat"
-  ```
+6. From the results, we now know that the Threat Actor is using reg.exe to add keys to the Registry key and the program is located in C:\temp. **Run** the following statement to replace the *search* operator with the *where* operator in our query:
+
+    ```KQL
+    SecurityEvent 
+    | where Activity startswith "4624" 
+    ```
+
+    ![Lab overview.](../Media/plx2.png)
 
   >**Important:** If you do not see the *DeviceRegistryEvents* table in the results, an alternative for the following two queries is to use the *DeviceProcessEvents* table as a replacement. That said, use one of the two provided examples below, depending on the table you see in the previous query.
 
-6. The table - DeviceRegistryEvents looks to have the data already normalized and easy for us to query.  Expand the rows to see all the columns related to the record.
-
-7. From the results, we now know that the Threat Actor is using reg.exe to add keys to the Registry key and the program is located in C:\temp. **Run** the following statement to replace the *search* operator with the *where* operator in our query:
+1. It is important to help the Security Operations Center Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. **Run** the following query:
 
     ```KQL
-    DeviceRegistryEvents | where ActionType == "RegistryValueSet"
-    | where InitiatingProcessFileName == "reg.exe"
-    | where RegistryValueData startswith "c:\\temp"
+    SecurityEvent 
+    | where Activity startswith "4624" 
+    | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = SubjectUserName
     ```
 
-    Alternatively, you can **Run** the following KQL query using the *DeviceProcessEvents* table:
+1. Now that you have a good detection rule, in the Logs window, select the **+ New alert rule** in the command bar and then select **Create Microsoft Sentinel alert**. This will create a new Scheduled rule.
+**Hint:** You might need to select the ellipsis (...) button in the command bar.
 
-    ```KQL
-    DeviceProcessEvents | where ActionType == "ProcessCreated"
-    | where FileName == "reg.exe"
-    | where ProcessCommandLine contains "c:\\temp"
-    ```
-
-8. It is important to help the Security Operations Center Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. Run the following query:
-
-    ```KQL
-    DeviceRegistryEvents
-    | where ActionType == "RegistryValueSet"
-    | where InitiatingProcessFileName == "reg.exe"
-    | where RegistryValueData startswith "c:\\temp"
-    | extend timestamp = TimeGenerated, HostCustomEntity = DeviceName, AccountCustomEntity = InitiatingProcessAccountName
-    ```
-
-   ![Screenshot](../Media/SC200_sysmon_query2.png)
-   
-   Alternatively, you can **Run** the following KQL query using the *DeviceProcessEvents* table:
-
-    ```KQL
-    DeviceProcessEvents | where ActionType == "ProcessCreated"
-    | where FileName == "reg.exe"
-    | where ProcessCommandLine contains "c:\\temp"
-    | extend timestamp = TimeGenerated, HostCustomEntity = DeviceName, AccountCustomEntity = InitiatingProcessAccountName
-    ```
-
-9.  Now that you have a good detection rule, in the Log window with the query, select the **+ New alert rule** in the Command Bar(**...**). Then select **Create Microsoft Sentinel alert**.
-
-10. This starts our Analytics rule wizard. For the General Tab, enter:
+1. This starts the "Analytics rule wizard". For the *General* tab type:
 
     |Setting|Value|
     |---|---|
-    |Name|**MDE Startup RegKey**|
-    |Description|**MDE Startup Regkey in c:\temp**|
-    |Tactics and techniques|**Persistence**|
-    |Severity|**High**|
+    |Name|Startup RegKey|
+    |Description|Startup RegKey in c:\temp|
+    |Severity|High|
+    |MITRE ATT&CK|Persistence|
+    
+1. Select **Next: Set rule logic >** button.
 
-11. Select **Next : Set rule logic >** button.
+   ![Lab overview.](../Media/plx3.png)
 
-12. On the Set rule logic tab, the **Rule query** should already be populated.
+1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, as well as the entities under *Alert enrichment - Entity mapping*.
 
-13. For Query scheduling set the following:
+    |Entity|Identifier|Data Field|
+    |:----|:----|:----|
+    |Account|FullName|AccountCustomEntity|
+    |Host|Hostname|HostCustomEntity|
+
+1. If **Hostname** isn't selected for *Host* Entity, select it from the drop-down list.
+
+1. For *Query scheduling* set the following:
 
     |Setting|Value|
     |---|---|
     |Run Query every|5 minutes|
-    |Look data from the last|1 Day|
+    |Lookup data from the last|1 Days|
 
-    >**Note:** We are purposely generating many incidents for the same data.  This enables the Lab to use these alerts.
+    >**Note:** We are purposely generating many incidents for the same data. This enables the Lab to use these alerts.
 
-14. Leave the rest of the options to the defaults.  Select **Next : Incident settings >**:
+1. Leave the rest of the options with the defaults. Select **Next: Incident settings>** button.
 
-15. For the *Incident settings* set the following: 
+1. For the *Incident settings* tab, leave the default values and select **Next: Automated response >** button.
+
+1. On the *Automated response* tab under *Automation rules*, select **Add new**.
+
+1. Use the settings in the table to configure the automation rule.
+
+    |Setting|Value|
+    |:----|:----|
+    |Automation rule name|Startup RegKey|
+    |Trigger|When incident is created|
+    |Actions |Run playbook|
+   
+1. A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**
+
+    >**Note:** The playbooks will appear grayed out in the drop-down list until permissions are configured.
+
+1. Select the **Manage playbook permissions link**
+
+1. On the *Manage Permissions* page, select the **threat-xdr** resource group, and select **Apply**.
+
+1. From the drop-down menu, select the playbook **PostMessageTeams-OnIncident**, if required refresh the page.
+
+1. Select **Apply**
+
+    ![Lab overview.](../Media/plx4.png)
+
+1. Select the **Next: Review + Create >** button.
+  
+1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
+
+### Task 2: Privilege Elevation Attack Detection
+
+In this task, you will create a detection for the second attack of the previous exercise.
+
+1. In the Microsoft Sentinel portal, select **Logs** from the General section in case you navigated away from this page.
+
+1. **Run** the following KQL Statement to identify any entry that refers to administrators:
+
+    ```KQL
+    search "administrators" 
+    | summarize count() by $table
+    ```
+
+    ![](../Media/plx5.png)
+
+1. The result might show events from different tables, but in our case, we want to investigate the SecurityEvent table. The EventID and Event that we are looking at is "4732 - A member was added to a security-enabled local group". With this, we will identify adding a member to a privileged group. **Run** the following KQL query to confirm:
+
+    ```KQL
+    SecurityEvent 
+    | where EventID == 4732
+    | where TargetAccount == "Builtin\\Administrators"
+    ```
+
+   ![](../Media/plx6.png)
+
+1. Expand the row to see all the columns related to the record. The username of the account added as Administrator does not show. The issue is that instead of storing the username, we have the Security IDentifier (SID). **Run** the following KQL to match the SID to the username that was added to the Administrators group:
+
+    ```KQL
+    SecurityEvent 
+    | where EventID == 4732
+    | where TargetAccount == "Builtin\\Administrators"
+    | extend Acct = MemberSid, MachId = SourceComputerId  
+    | join kind=leftouter (
+        SecurityEvent 
+        | summarize count() by TargetSid, SourceComputerId, TargetUserName 
+        | project Acct1 = TargetSid, MachId1 = SourceComputerId, UserName1 = TargetUserName) on $left.MachId == $right.MachId1, $left.Acct == $right.Acct1
+    ```
+
+    ![](../Media/plx7.png)
+
+1. Extend the row to show the resulting columns, in the last one, we see the name of the added user under the *UserName1* column we *project* within the KQL query. It is important to help the Security Operations Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. **Run** the following query:
+
+    ```KQL
+    SecurityEvent 
+    | where EventID == 4732
+    | where TargetAccount == "Builtin\\Administrators"
+    | extend Acct = MemberSid, MachId = SourceComputerId  
+    | join kind=leftouter (
+        SecurityEvent 
+        | summarize count() by TargetSid, SourceComputerId, TargetUserName 
+        | project Acct1 = TargetSid, MachId1 = SourceComputerId, UserName1 = TargetUserName) on $left.MachId == $right.MachId1, $left.Acct == $right.Acct1
+    | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = UserName1
+    ```
+
+   ![](../Media/plx8.png)
+
+1. Now that you have a good detection rule, in the Logs window, select **+ New alert rule** in the command bar and then select **Create Microsoft Sentinel alert**. **Hint:** You might need to select the ellipsis (...) button in the command bar.
+
+1. This starts the "Analytics rule wizard". For the *General* tab type:
 
     |Setting|Value|
     |---|---|
-    |Incident settings|Enabled|
-    |Alert grouping|Disabled|
+    |Name|**SecurityEvent Local Administrators User Add**|
+    |Description|**User added to Local Administrators group**|
+    |Severity|**High**|
+    |MITRE ATT&CK|**Privilege Escalation**|
+  
+1. Select **Next: Set rule logic >** button. 
 
-16. For the Automated response tab select the **PostMessageTeams-OnAlert** under Alert automation (classic) and then select Next: Review button.
+   ![](../Media/plx9.png)
 
-17. On the Review tab, select the Create button to create the new Scheduled Analytics rule.
 
-### Task 2: Attack 2 Detection with SecurityEvent
+1. On the *Set rule logic* tab, the *Rule query* should be populated already with your KQL query, and add the details for entities under *Alert enrichment - Entity mapping*.
 
-In this task, you will create a detection for *Attack 2* on the host with the Security Events connector and Sysmon installed.
+    |Entity|Identifier|Data Field|
+    |:----|:----|:----|
+    |Account|FullName|AccountCustomEntity|
+    |Host|Hostname|HostCustomEntity|
 
-1. Go to https://aka.ms/lademo in your browser. Log in with the ODL_User_Id Administrator credentials.
+1. For *Query scheduling* set the following:
 
-2. First, you need to see where the data is stored. Since you just performed the attacks.  
+    |Setting|Value|
+    |---|---|
+    |Run Query every| **5 minutes (1)** |
+    |Lookup data from the last| **1 Days (2)**|
 
-    Set the Log Time Range to Last 24 hours.
+    >**Note:** We are purposely generating many incidents for the same data. This enables the Lab to use these alerts.
 
-3. Run the following KQL Statement:
+1. Leave the rest of the options with the defaults. Select **Next: Incident settings> (3)** button.
 
-  ```KQL
-  search "administrators"
-  ```
+   ![](../Media/plx10.png)
 
-4. The results show the following tables:
-    - Event
-    - SecurityEvent
+1. For the *Incident settings* tab, leave the default values and select **Next: Automated response >** button.
 
-5. Our first data source is SecurityEvent. Time to research what event ID Windows uses to identify adding a member to a privileged group. copy the EventID and replace it in all the below queries. **Kindly check the Event Id before run the script** and replace. Run the following script to confirm:
+1. On the *Automated response* tab under *Automation rules*, select **Add new (1)** and Use the settings in the table to configure the automation rule Select **Apply (6)**.
 
-  ```KQL
-  SecurityEvent
-  | where EventID == "4799"
-  | where TargetAccount == "Builtin\\Administrators"
-  ```
+   |Setting|Value|
+   |:----|:----|
+   |Automation rule name|**SecurityEvent Local Administrators User Add (1)**|
+   |Trigger|**When incident is created (2)**|
+   |Actions |**Run playbook (3)**|
+   |playbook |**PostMessageTeams-OnIncident (4)**|
 
-6. Expand the rows to see all the columns related to the record.  The username we are looking for doesn't show.  The issue is that instead of storing the username, the security identifier (SID) is stored.  The following KQL will try to match the SID to populate the TargetUserName that was added to the Administrators group.
+   >**Note:** You have already assigned permissions to the playbook, so it must be available if not click on manage permissions and select it manually and it will be available by now
 
-  ```KQL
-  SecurityEvent
-  | where EventID == "4799"
-  | where TargetAccount == "Builtin\\Administrators"
-  | extend Acct = MemberSid, MachId = SourceComputerId 
-  | join kind=leftouter (
-      SecurityEvent 
-      | summarize count() by TargetSid, SourceComputerId, TargetUserName
-      | project Acct1 = TargetSid, MachId1 = SourceComputerId, UserName1 = TargetUserName
-  ) on $left.MachId == $right.MachId1, $left.Acct == $right.Acct1 
-  ```
+   ![](../Media/plx11.png)
 
-   ![Screenshot](../Media/SC200_sysmon_attack3.png)
-
-  >**Note:** This KQL might not return the expected results because of the small dataset used in the lab.
-
-7. It is important to help the Security Operations Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph.  Run the following query:
-
-  ```KQL
-  SecurityEvent
-  | where EventID == "4799"
-  | where TargetAccount == "Builtin\\Administrators"
-  | extend Acct = MemberSid, MachId = SourceComputerId 
-  | join kind=leftouter (
-      SecurityEvent 
-      | summarize count() by TargetSid, SourceComputerId, TargetUserName
-      | project Acct1 = TargetSid, MachId1 = SourceComputerId, UserName1 = TargetUserName
-  ) on $left.MachId == $right.MachId1, $left.Acct == $right.Acct1 
-  | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = UserName1
-  ```
+1. Select the **Next: Review and create >** button.
+  
+1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
 ## Proceed to Exercise 8
