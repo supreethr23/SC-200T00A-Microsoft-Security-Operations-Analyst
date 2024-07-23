@@ -12,7 +12,7 @@ You're a Security Operations Analyst working at a company that is implementing M
 - Task 4: Create a Threat Indicator
 - Task 5: Configure log retention
 
-## Estimated timing: 90 minutes
+## Estimated timing: 60 minutes
 
 ## Architecture Diagram
 
