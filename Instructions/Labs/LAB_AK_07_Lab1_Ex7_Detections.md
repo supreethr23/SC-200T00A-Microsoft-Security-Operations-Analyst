@@ -15,6 +15,10 @@ In this task, you will create a detection for **Attack 1** on the host with the 
   ```KQL
   search "temp\\startup.bat"
   ```
+   
+   ![Screenshot](../Media/plx1.png)
+
+   > **Note**: If you dont see any output of the command, please follow the next step. because sometime this query may take more time to get proper output.
 
 5. This detection will focus on data from Defender for Endpoint.  Run the following KQL Statement:
 
