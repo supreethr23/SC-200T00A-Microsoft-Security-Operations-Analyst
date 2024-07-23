@@ -1,6 +1,6 @@
 # Getting Started with Your SC-200: Microsoft Security Operations Analyst Workshop
  
-Welcome to your SC-200: Microsoft Security Operations Analyst workshop! We've prepared a seamless environment for you to explore and learn about monitor, identify, investigate, and respond to threats in multicloud environments.. Let's begin by making the most of this experience:
+Welcome to your SC-200: Microsoft Security Operations Analyst workshop! We've prepared a seamless environment for you to explore and learn about monitoring, identifying, investigating, and responding to threats in multi-cloud environments. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
@@ -36,7 +36,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
     ![Manage Your Virtual Machine](../Media/gext.png)
 
-    >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
+    >**Note:** You will get the **Hourglass** icon when 15 minutes are remaining in the lab.
 
 2. Click **OK** to extend your lab duration.
  
