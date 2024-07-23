@@ -6,9 +6,7 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 
 1. In the Edge browser, open a new window and navigate to the Microsoft Teams portal at (https://teams.microsoft.com).
 
-1.  If prompted, in the **Sign in** dialog box, copy and paste in the **Username** provided in the environment details page (odl_user_DID@xxxxx.onmicrosoft.com) and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
+   >**Note:** If prompted, in the **Sign in** dialog box, copy and paste in the **Username** from the Environment Tab.In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
 
 1. Close any Teams pop-ups that may appear.
 
