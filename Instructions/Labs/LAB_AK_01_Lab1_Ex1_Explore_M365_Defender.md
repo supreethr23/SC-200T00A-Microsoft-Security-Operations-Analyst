@@ -1,4 +1,4 @@
-# Lab-01: Explore Microsoft Defender XDR
+# Module 1 - Lab 1 - Explore Microsoft Defender XDR
 
 ## Lab scenario
  You are a Security Operations Analyst working at a company that is implementing Microsoft Defender XDR. You start by assigning preset security policies in EOP and Microsoft Defender XDR for Office 365.
