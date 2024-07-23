@@ -1,4 +1,4 @@
-# Module 5 - Lab 1 - Exercise 1 - Configure your Microsoft Sentinel environment
+# Lab 1 - Configure your Microsoft Sentinel environment
 
 ## Lab scenario
 
