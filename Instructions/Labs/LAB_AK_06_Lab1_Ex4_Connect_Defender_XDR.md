@@ -40,7 +40,13 @@ In this task, you deploy the Microsoft Defender XDR connector.
 
 1. In the *Configuration* section, under the *Instructions* tab, **select** the checkbox for *Turn off all Microsoft incident creation rules for these products. Recommended*, and select the **Connect incidents & alerts** button.
 
-    >**Note:** If you are not able to see the **Connect incident & alerts button**, search for **Microsoft Defender For Cloud** in the azure portal and **Select** it, in the getting started page Select **Upgrade** to upgrade your Microsoft Defender For cloud plan.
+    >**Note:** If you are not able to see the **Connect incident & alerts button**, Follow the following steps:
+    >- Search for **Microsoft Defender For Cloud** in the azure portal and **Select** it, in the **Getting started** page Select **Upgrade** to upgrade your Microsoft Defender For cloud plan.
+    >- Go to **Environment Settings** under **Management** and select your subscription.
+    >- GO to **Defender plans** and click on **settings** under **Partial** in **Defender CSPM**.
+    >- Turn **ON** the option next to **Permission Management (CIEM)** and click on **Continue** on top of the page.
+
+    >**Note:** If you are not able to see the **Connect Incident & alrets button**, wait for some time. It might take 25-30 minutes to show.
 
 1. You should see a message that the connection was successful.
 
