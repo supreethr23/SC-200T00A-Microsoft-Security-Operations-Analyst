@@ -4,13 +4,86 @@
 
 You are going to simulate the attacks that you will later use to detect and investigate in Microsoft Sentinel.
 
->**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Perform%20simulated%20attacks)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
-
 ## Architecture Diagram
 
 ![Lab overview.](../Media/SC-200-Lab_Diagrams_Mod7_L1_Ex6.png)
 
-### Task 1: Persistence Attack with Registry Key Add
+### Task 1: Connect the Windows security event connector
+
+1. In the Search bar of the Azure portal, type *Microsft Sentinel*, then select **Microsoft Sentinel**.
+
+1. Select the pre-created Sentinel **uniquenameDefender** from the available list.
+
+1. Navigate to the left menu and go to the Content Management section; there, select Content Hub. On the Content Hub page, locate Windows Security Events, and then Select  it and verify if it is installed.
+
+   ![Lab overview.](../media/pl1.png)
+
+1. Navigate to Data Connectors from the left navigation pane. You should observe two options: Security Events Via Legacy Agent and Windows Security Event Via AMA.
+
+1. Choose Security Events Via Legacy Agent, and then click on **Open connector page**.
+
+   ![Lab overview.](../media/pl2.png)
+
+1. In the configuration section, opt for **Install agent on Azure Windows Virtual Machine (1)**, and then choose **Download & Install agent for Azure Windows Virtual machines > (2)**.
+
+   ![Lab overview.](../media/pl3.png)
+
+1. Select the win1xxx virtual machine.
+
+1. Click on **Connect**, once **Connected (1)**, select the **Virtual Machine (2)** link from the top.
+
+   ![Lab overview.](../media/pl4.png)
+
+1. On the virtual machine page select the win1-xxxx virtual machine and click on Connect and  wait until get connected.
+
+1. Then, come back to the configuration and scroll down a bit. You can find Select which events to stream. Click on All Events. Click on Apply changes now. If you refresh the data connector page, you can see the status Connected for Security Events Via Legacy Agent.
+
+    ![Lab overview.](../media/pl5.png)
+
+### Task 2: Enable Microsoft Defender for Cloud
+
+In this task, you will enable and configure Microsoft Defender for Cloud.
+
+1. In the search bar of the Azure portal, type *Microsoft Defender for cloud (1)*, then select **Microsoft Defender for Cloud (2)**.
+
+    ![Picture 1](../media/pl6.png) 
+
+1. Click the left menu, and then click on **Getting Started**.
+
+1. On the **Getting Started** page, under the **Upgrade** tab, ensure your subscription is selected, and then click the **Upgrade** button at the bottom of the page.
+
+    ![Picture 1](../media/pl7.png)
+
+    >**Note:** Please wait for 2-5 minutes for the process to complete, as it may take some time. if you face some errors while upgrading the plan, please ignore and proceed with the next step.
+
+4. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings**.
+
+1. Click on the subscription (or its equivalent name in your language). 
+
+1. Review the Azure resources that are now protected with the Defender for Cloud plans.
+
+1. Select the **Settings & monitoring** tab from the Settings area (next to Save).
+ 
+    ![Picture 1](../media/pl8.png) 
+
+1. Review the monitoring extensions and confirm that **Log Analytics agent/Azure Monitor agent** is **On**.
+
+    ![Picture 1](../media/pl9.png) 
+
+1. Select the newly created **Log Analytics workspace** which will gather all security events data of the machines to analyze. Click on **Apply** and **Continue**. Click on **Save** for the changes to take effect.
+
+1. Close the settings page by selecting the 'X' on the upper right of the page to return to the **Environment settings**. Then, click on the '>' to the left of your subscription.
+
+1. Select the Log Analytics workspace named **uniquenameDefender** to review the available options and pricing.
+
+1. Select **Enable all plans** (to the right of Select Defender plan), and then choose **Save**. Wait for the *"Microsoft Defender plan for workspace loganalyticworkspace was saved successfully!"* notification to appear.
+
+    >**Note:** If the page is not being displayed, refresh your Edge browser and try again.
+
+1. Close the Defender plans page by selecting the 'X' in the upper right corner of the page to return to the **Environment settings**.
+
+
+### Task 3: Persistence Attack with Registry Key Add
 
 >**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
 
@@ -39,7 +112,7 @@ In this task, you will perform attacks on the host connected with Azure Arc that
     ```CommandPrompt
     REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
     ```
-### Task 2: Privilege Elevation Attack with User Add
+### Task 4: Privilege Elevation Attack with User Add
 
 1. Copy and run this command to simulate the creation of an Admin account. Remember to press Enter after the last row:
 
@@ -49,7 +122,7 @@ In this task, you will perform attacks on the host connected with Azure Arc that
     net localgroup administrators theusernametoadd /add
     ```
 
-### Task 3: Command and Control Attack with DNS
+### Task 5: Command and Control Attack with DNS
 
 1. Copy and run this command to create a script that will simulate a DNS query to a C2 server:
 
