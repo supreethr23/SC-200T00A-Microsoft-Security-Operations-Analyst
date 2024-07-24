@@ -32,7 +32,7 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 12.	At the bottom of the page, select **Review + create**. Then on the next page, select **Create**. 
 
-    >**Note:** It may take a few moments to deploy the Machine Learning workspace. 
+ >**Note:** It may take a few moments to deploy the Machine Learning workspace. 
 
 13.	After the deployment is finished, return to the Microsoft Sentinel portal.
 
