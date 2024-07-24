@@ -50,7 +50,7 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
     ![](../Media/m19.png)
 
-20. Type a unique name for the *Compute name* and select the first compute available since this is a lab environment. 
+20. Type a unique name for the **Compute name** (like **Uniquecomputeinstance**) and select the first compute available since this is a lab environment. 
 
 21. Select the **Create** button at the bottom of the screen. Close any feedback window that may appear. This will take a few minutes.
 
