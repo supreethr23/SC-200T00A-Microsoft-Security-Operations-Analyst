@@ -1,9 +1,11 @@
-# Module 7 - Lab 1 - Exercise 1 - Activate a Microsoft Security rule
+# Module 7 - Lab 1 - Exercise 1 - Modify a Microsoft Security rule
 
 ## Lab scenario
 
-You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to detect and mitigate threats using Microsoft Sentinel.  You need to enable alerts from other Microsoft 365 and Azure services.  
+![Lab overview.](../Media/sc1.png)
 
+You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to detect and mitigate threats using Microsoft Sentinel.  You need to enable alerts from other Microsoft 365 and Azure services.  
+     
 ### Task 1: Activate a Microsoft Security Rule
 
 In this task, you will activate a Microsoft Security rule.
