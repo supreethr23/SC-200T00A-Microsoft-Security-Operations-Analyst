@@ -1,9 +1,19 @@
 # Module 7 - Lab 1 - Exercise 2 - Create a Playbook
 
+   ![Picture 1](../Media/sc2.png)
+
+You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to detect and mitigate threats using Microsoft Sentinel. Now, you want to respond and reMediate actions that can be run from Microsoft Sentinel as a routine.
+
+With a playbook, you can help automate and orchestrate your threat response, integrate with other systems both internal and external, and can be set to run automatically in response to specific alerts or incidents, when triggered by an analytics rule or an automation rule, respectively. 
+
+>**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20a%20playbook)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.   
+
 ### Task 1: Create a Security Operations Center Team in Microsoft Teams.
 
 In this task, you will create a Microsoft Teams team for use in the lab.
 
+1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.
+   
 1. In the Edge browser, open a new window and navigate to the Microsoft Teams portal at (https://teams.microsoft.com).
 
    >**Note:** If prompted, in the **Sign in** dialog box, copy and paste in the **Username** from the Environment Tab.In the **Enter password** dialog box, copy and paste in the Password and then select **Sign in**.
@@ -28,7 +38,7 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 
 1. Scroll down the Teams blade to locate the newly created SOC team, select the ellipsis **(...)** on the right side of the name and select **Add channel**.
 
-1. Enter a channel name of *New Alerts* and channel type choose it as private then select the **Create** button.
+1. Enter a channel name of **New Alerts** and channel type choose it as **private** then select the **Create** button.
 
 ### Task 2: Create a Playbook in Microsoft Sentinel
 
