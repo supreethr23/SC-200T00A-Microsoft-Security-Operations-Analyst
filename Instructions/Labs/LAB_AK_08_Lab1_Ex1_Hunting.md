@@ -4,11 +4,13 @@
 
 ## Lab scenario
 
-You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You have received threat intelligence about a Command and Control (C2 or C&C) technique.  You need to perform a hunt and watch for the threat.
+You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You have received threat intelligence about a Command and Control (C2 or C&C) technique. You need to perform a hunt and watch for the threat.
 
-   **Important:** The log data used in the lab was created in the previous module. See **Attack 3** in WIN1 server in Exercise 5.
+>**Important:** The log data used in the lab was created in the previous module. See **Attack 3** on WIN1 server in Exercise 5.
 
-   **Note:**  Because you already experienced the process of exploring data in a previous module, the lab provides a KQL statement to start with.  
+>**Note:** Because you already experienced the process of exploring data in a previous module, this lab provides a KQL statement to start with.
+
+>**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Perform%20threat%20hunting%20in%20Microsoft%20Sentinel)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
 
 ### Task 1: Create a hunting query
