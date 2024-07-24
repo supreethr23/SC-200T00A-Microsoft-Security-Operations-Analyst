@@ -1,5 +1,7 @@
 # Module 7 - Lab 1 - Exercise 8 - Investigate Incidents
 
+   ![Screenshot](../Media/sc10.png)
+
 ### Task 1: Investigate an incident.
 
 In this task, you will investigate an incident.
