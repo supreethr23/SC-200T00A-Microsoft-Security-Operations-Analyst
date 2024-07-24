@@ -1,16 +1,39 @@
-# Module 7 - Lab 1 - Exercise 3 - Create a Scheduled Query
+# Module 7 - Lab 1 - Exercise 3 - Create a Scheduled Query from a template
+
+   ![Picture 1](../Media/sc3.png)
+
+You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to detect and mitigate threats using Microsoft Sentinel. After connecting your data sources to Microsoft Sentinel, you create custom analytics rules to help discover threats and anomalous behaviors in your environment.
+
+Analytics rules search for specific events or sets of events across your environment, alert you when certain event thresholds or conditions are reached, generate incidents for your SOC to triage and investigate, and respond to threats with automated tracking and reMediation processes.
+
+>**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20a%20scheduled%20query)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+   
 
 ### Task 1: Connect the Azure Activity connector.
 
 In this task, you will connect the Azure Activity connector.
 
-1. From the Data Connectors Tab, search for the **Azure Activity** connector and select it from the list.
+1. Log in to WIN1 virtual machine as Admin with the password: Pa55w.rd.
+
+1. In the Sign in dialog box, copy and paste in the Tenant Email account provided by your lab hosting provider and then select Next.
+
+1. In the Enter password dialog box, copy and paste in the Tenant Password provided by your lab hosting provider and then select Sign in.
+
+1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+
+1. Select your Microsoft Sentinel Workspace.
+
+1. Select **Content hub** under the Content management from the left pane.
+
+1. Search for **Azure Activity** then select it and Click on **Install** from the right pane.     
+
+1. From the Data Connectors Tab, search for the **Azure Activity** connector If doesn't appear just click refresh and select it from the list.
 
 1. Select the **Open connector page** on the connector information blade.
 
 1. In the Configuration area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
 
-1. In the **Basics** tab, select the button with the three dots under **Scope** to select your subscription from the drop-down list and click **Select**.
+1. In the **Basics** tab, select the button with the three dots under **Scope** to select your subscription and the Resource group from the drop-down list and click **Select**.
 
 1. Select the **Parameters** tab, choose your Microsoft Sentinel workspace from the **Primary Log Analytics workspace** drop-down list.
 
