@@ -96,6 +96,8 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 In this task, you will perform attacks on the host connected with Azure Arc that has the Azure Monitor Agent configured.
 
+>**Note:** Perform **Task 3** and **Task 4** for WIN1 Virtual machine also.
+
 1. Login to the WINServer virtual machine as Admin with the password: **Password.1!!**.  
 
     >**Important:** The lab *SAVE* functionality can cause WINServer to become disconnected from Azure Arc. A reboot will solve the issue.  
@@ -128,6 +130,7 @@ In this task, you will perform attacks on the host connected with Azure Arc that
     net user theusernametoadd ThePassword1!
     net localgroup administrators theusernametoadd /add
     ```
+    
 
 ### Task 5: Command and Control Attack with DNS
 
@@ -139,7 +142,7 @@ In this task, you will perform attacks on the host connected with Azure Arc that
 
 1. Select **Yes** to create a new file and copy the following PowerShell script into *c2.ps1*.
 
-    >**Note:** Pasting into the virtual machine file might not show the full script length. Make sure the script matches  the instructions within the *c2.ps1* file.
+    >**Note:** Pasting into the virtual machine file might not show the full script length. Make sure the script matches  the instructions within the **c2.ps1** file.
 
     ```PowerShell
     param(
