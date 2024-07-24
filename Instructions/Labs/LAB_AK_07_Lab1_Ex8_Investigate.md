@@ -22,7 +22,7 @@ In this task, you will investigate an incident.
 
     **Note:** The analytical rules are generating alerts and incidents on the same specific log entry.  This is done to generate more alerts and incidents to be utilized in the lab.
     
-1. Select one of the **MDE Startup RegKey** incidents.
+1. Select one of the **Startup RegKey** incidents.
 
 1. Review the incident details on the right blade that opened. Scroll down and select the **View full details** button.
 
@@ -34,7 +34,7 @@ In this task, you will investigate an incident.
 
 1. Type in the comments box: *I will research this* and select the **Comment** button to submit the new comment.
 
-1.Review the Incident timeline window. Select the Incident Actions button at top-right and then Run playbook. You will see the PostMessageTeams-OnIncident playbook. This option help you to run playbooks manually.
+1. Review the Incident timeline window. Select the Incident Actions button at top-right and then Run playbook. You will see the PostMessageTeams-OnIncident playbook. This option help you to run playbooks manually.
 
 1. Close the Run playbook on incident blade by selecting the x icon in the top right.
 
