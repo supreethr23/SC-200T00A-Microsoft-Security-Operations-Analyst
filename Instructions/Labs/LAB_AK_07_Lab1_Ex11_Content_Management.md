@@ -24,7 +24,7 @@ In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
 
 1. In the Analytics rule wizard, on the General tab, type the Name **Rule from Azure DevOps**.
 
-1. For Tactics, select **Persistence**.
+1. For MITRE ATT&CK, select **Persistence**.
 
 1. For Severity, select **Low**.
 

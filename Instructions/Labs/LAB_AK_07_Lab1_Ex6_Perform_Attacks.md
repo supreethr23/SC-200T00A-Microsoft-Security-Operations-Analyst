@@ -2,11 +2,14 @@
 
 ## Lab scenario
 
-You are going to simulate the attacks that you will later use to detect and investigate in Microsoft Sentinel.
-
 ## Architecture Diagram
 
 ![Lab overview.](../Media/SC-200-Lab_Diagrams_Mod7_L1_Ex6.png)
+
+You are going to simulate the attacks that you will later use to detect and investigate in Microsoft Sentinel.
+
+
+>**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Perform%20simulated%20attacks)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 ### Task 1: Connect the Windows security event connector
 
@@ -36,7 +39,7 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 1. On the virtual machine page select the win1-xxxx virtual machine and click on Connect and  wait until get connected.
 
-1. Then, come back to the configuration and scroll down a bit. You can find Select which events to stream. Click on All Events. Click on Apply changes now. If you refresh the data connector page, you can see the status Connected for Security Events Via Legacy Agent.
+1. Then, come back to the configuration and scroll down a bit. You can find Select **which events to stream**. Click on All Events. Click on Apply changes now. If you refresh the data connector page, you can see the status Connected for Security Events Via Legacy Agent.
 
     ![Lab overview.](../Media/pl5.png)
 
@@ -50,13 +53,13 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Click the left menu, and then click on **Getting Started**.
 
-1. On the **Getting Started** page, under the **Upgrade** tab, ensure your subscription is selected, and then click the **Upgrade** button at the bottom of the page.
+1. On the **Getting Started** page, under the **Upgrade** tab, ensure your subscription is selected, and select the workspace by checking the box then click the **Upgrade** button at the bottom of the page.
 
     ![Picture 1](../Media/pl7.png)
 
     >**Note:** Please wait for 2-5 minutes for the process to complete, as it may take some time. if you face some errors while upgrading the plan, please ignore and proceed with the next step.
 
-4. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings**.
+4. In the left menu for Microsoft Defender for Cloud, under Management, select **Environment settings** and then scroll down.
 
 1. Click on the subscription (or its equivalent name in your language). 
 
@@ -68,11 +71,15 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 1. Review the monitoring extensions and confirm that **Log Analytics agent/Azure Monitor agent** is **On**.
 
-    ![Picture 1](../Media/pl9.png) 
+    ![Picture 1](../Media/pl9.png)
 
-1. Select the newly created **Log Analytics workspace** which will gather all security events data of the machines to analyze. Click on **Apply** and **Continue**. Click on **Save** for the changes to take effect.
+1. Select the **Custom workspace**.   
+
+1. Select the newly created **Log Analytics workspace** from the drop down and which will gather all security events data of the machines to analyze.Leave others things as default.Click on **Apply** and **Continue** from the top below Settings and Monitoring. Click on **Save** for the changes to take effect.
 
 1. Close the settings page by selecting the 'X' on the upper right of the page to return to the **Environment settings**. Then, click on the '>' to the left of your subscription.
+
+    ![Picture 1](../Media/sc6.png)
 
 1. Select the Log Analytics workspace named **uniquenameDefender** to review the available options and pricing.
 
@@ -89,7 +96,9 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 In this task, you will perform attacks on the host connected with Azure Arc that has the Azure Monitor Agent configured.
 
-1. Login to the WINServer virtual machine as Admin with the password: **Pa55w.rd**.  
+>**Note:** Perform **Task 3** and **Task 4** for WIN1 Virtual machine also.
+
+1. Login to the WINServer virtual machine as Admin with the password: **Password.1!!**.  
 
     >**Important:** The lab *SAVE* functionality can cause WINServer to become disconnected from Azure Arc. A reboot will solve the issue.  
 
@@ -121,6 +130,7 @@ In this task, you will perform attacks on the host connected with Azure Arc that
     net user theusernametoadd ThePassword1!
     net localgroup administrators theusernametoadd /add
     ```
+    
 
 ### Task 5: Command and Control Attack with DNS
 
@@ -132,7 +142,7 @@ In this task, you will perform attacks on the host connected with Azure Arc that
 
 1. Select **Yes** to create a new file and copy the following PowerShell script into *c2.ps1*.
 
-    >**Note:** Pasting into the virtual machine file might not show the full script length. Make sure the script matches  the instructions within the *c2.ps1* file.
+    >**Note:** Pasting into the virtual machine file might not show the full script length. Make sure the script matches  the instructions within the **c2.ps1** file.
 
     ```PowerShell
     param(

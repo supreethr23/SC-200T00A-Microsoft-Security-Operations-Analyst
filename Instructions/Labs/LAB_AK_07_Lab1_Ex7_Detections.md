@@ -1,16 +1,32 @@
 # Module 7 - Lab 1 - Exercise 7 - Create Detections
 
-### Task 1: Attack 1 Detection with Defender for Endpoint
+## Lab scenario
+
+   ![Screenshot](../Media/sc7.png)
+
+You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You are going to work with Log Analytics KQL queries and from there, you will create custom analytics rules to help discover threats and anomalous behaviors in your environment.
+
+Analytics rules search for specific events or sets of events across your environment, alert you when certain event thresholds or conditions are reached, generate incidents for your SOC to triage and investigate, and respond to threats with automated tracking and reMediation processes.
+
+
+>**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20detections)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
+
+
+### Task 1: Persistence Attack Detection
 
 In this task, you will create a detection for **Attack 1** on the host with the Microsoft Defender for Endpoint configured.
 
-1. Log in to the WIN1 virtual machine with the password as provided in the Environment tab. 
+1. Log in to the WIN1 virtual machine with the password as provided in the Environment tab.
 
-2. In the Microsoft Sentinel portal, Select **Logs** from the General section.
+1. In the Search bar of the Azure portal, type Sentinel, then select Microsoft Sentinel.
 
-3. First, you need to see where the data is stored. Since you just performed the attacks set the log **Time Range: Last 24 hours**.
+1. Select your Microsoft Sentinel Workspace you created earlier.   
 
-4. Run the following KQL Statement:
+3. In the Microsoft Sentinel portal, Select **Logs** from the General section.
+
+4. First, you need to see where the data is stored. Since you just performed the attacks set the log **Time Range: Last 24 hours**.
+
+5. Run the following KQL Statement:
 
     ```KQL
     search "temp\\startup.bat"
@@ -20,9 +36,9 @@ In this task, you will create a detection for **Attack 1** on the host with the 
 
    > **Note**: If you don't see any output of the command, please follow the next step. because sometimes this query may take more time to get proper output.
 
-5. The table *SecurityEvent* looks to have the data already normalized and is easy for us to query. Expand the row to see all the columns related to the record.
+6. The table *SecurityEvent* looks to have the data already normalized and is easy for us to query. Expand the row to see all the columns related to the record.
 
-6. From the results, we now know that the Threat Actor is using reg.exe to add keys to the Registry key and the program is located in C:\temp. **Run** the following statement to replace the *search* operator with the *where* operator in our query:
+7. From the results, we now know that the Threat Actor is using reg.exe to add keys to the Registry key and the program is located in C:\temp. **Run** the following statement to replace the *search* operator with the *where* operator in our query:
 
     ```KQL
     SecurityEvent 
@@ -88,15 +104,8 @@ In this task, you will create a detection for **Attack 1** on the host with the 
     |Automation rule name|Startup RegKey|
     |Trigger|When incident is created|
     |Actions |Run playbook|
+    |playbook |PostMessageTeams-OnIncident|
    
-1. A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**
-
-    >**Note:** The playbooks will appear grayed out in the drop-down list until permissions are configured.
-
-1. Select the **Manage playbook permissions link**
-
-1. On the *Manage Permissions* page, select the **threat-xdr** resource group, and select **Apply**.
-
 1. From the drop-down menu, select the playbook **PostMessageTeams-OnIncident**, if required refresh the page.
 
 1. Select **Apply**
@@ -209,6 +218,7 @@ In this task, you will create a detection for the second attack of the previous 
    |Trigger|**When incident is created (2)**|
    |Actions |**Run playbook (3)**|
    |playbook |**PostMessageTeams-OnIncident (4)**|
+   
 
    >**Note:** You have already assigned permissions to the playbook, so it must be available if not click on manage permissions and select it manually and it will be available by now
 
