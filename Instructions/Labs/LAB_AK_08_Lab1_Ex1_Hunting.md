@@ -66,9 +66,9 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Select the **Queries** tab and then **+ New Query** from the command bar.
 
-1. In the *Create custom query* window, for the *Name* enter **PowerShell Hunt**.
+1. In the *Create hunting query* window, for the *Name* enter **PowerShell Hunt**.
 
-1. For the *Custom query* enter the following KQL statement:
+1. For the *hunting query* enter the following KQL statement:
 
     ```KQL
     let lookback = 2d; 
@@ -81,7 +81,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
     | order by count_ desc nulls last 
     ```
 
-1. Scroll down and under *Entity mapping* select:
+1. Scroll down and under *Entity mapping* select: add new entity
 
     - For the *Entity type* drop-down list select **Host**.
     - For the *Identifier* drop-down list select **HostName**.
@@ -92,12 +92,6 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 1. In the *"Microsoft Sentinel - Hunting"* blade, search for the query you just created in the list, *PowerShell Hunt*.
 
 1. Select **PowerShell Hunt** from the list.
-
-1. Review the number of results in the middle pane under the *Results* column.
-
-1. Select the **View Results** button from the right pane. The KQL query will automatically run.
-
-1. Close the *Logs* window by selecting the **X** in the top-right of the window and select **OK** to discard the changes. 
 
 1. Right-click the **PowerShell Hunt** query and select **Add to livestream**. **Hint:** This also can be done by sliding right and selecting the ellipsis **(...)** at the end of the row to open a context menu.
 
@@ -136,7 +130,7 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
     |---|---|
     |Name|**NRT PowerShell Hunt**|
     |Description|**NRT PowerShell Hunt**|
-    |Tactics|**Command and Control**|
+    |MITRE ATT&CK|**Command and Control**|
     |Severity|**High**|
 
 1. Select **Next: Set rule logic >** button. 
@@ -159,7 +153,7 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
 
 1. Select **Test with current data** under *Results simulation*. Notice the expected number of *Alerts per day*.
 
-1. Under *Entity mapping* select:
+1. Under *Entity mapping* select: add new entity
 
     - For the *Entity type* drop-down list select **Host**.
     - For the *Identifier* drop-down list select **HostName**.
