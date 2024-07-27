@@ -56,9 +56,7 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 22. Once the Compute has been created and running, in the top right of the notebook, verify that the kernel to use is *Python 3.10 - AzureML*.
 
-23. Select the **Authenticate** button and wait for the authentication to complete.
-
-24. Clear all the results from the notebook by selecting the **Clear all outputs** from the command bar and follow the *Getting Started* tutorial. **Hint:** This can be found by selecting the ellipsis (...) from the command bar.
+23. Clear all the results from the notebook by selecting the **Clear all outputs** from the command bar and follow the *Getting Started* tutorial. **Hint:** This can be found by selecting the ellipsis (...) from the command bar.
 
     ![Picture 1](../Media/m16.png)
 
