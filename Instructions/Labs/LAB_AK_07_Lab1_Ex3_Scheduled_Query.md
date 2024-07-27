@@ -33,7 +33,7 @@ In this task, you will connect the Azure Activity connector.
 
 1. In the Configuration area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
 
-1. In the **Basics** tab, select the button with the three dots under **Scope** to select your subscription and the Resource group from the drop-down list and click **Select**.
+1. In the **Basics** tab, select the button with the three dots under **Scope** to select your subscription from the drop-down list and click **Select**.
 
 1. Select the **Parameters** tab, choose your Microsoft Sentinel workspace from the **Primary Log Analytics workspace** drop-down list.
 
@@ -144,6 +144,8 @@ In this task, you test your new scheduled query rule.
 
 1. Make sure the following *Operation name* items appear: **List Storage Account Keys** and **Update Storage Account Create**. These are the operations that the KQL query you reviewed earlier will match to generate the alert. **Hint:** You might need to select **Refresh** to update the list.
 
+    >**Note:** You might not see the output of the logs at the Activity log, this might take sometime 30 mins or longer.
+
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
 1. Select your Microsoft Sentinel Workspace.
@@ -156,7 +158,7 @@ In this task, you test your new scheduled query rule.
 
 1. You should see the newly created Incident.
 
-    >**Note:** The event that triggers the incident may take time to process. Continue with the next exercise, you will come back to this view later.
+    >**Note:** The event that triggers the incident may take time to process. Continue with the next exercise, you will come back to this view later. if you did not find the connected connected for the activity log there are ongoing issues going on with Sentinel Product from Microsoft, on which they are working and trying to resolve in near real time.
 
 1. Select the Incident and review the information in the right blade.
 
