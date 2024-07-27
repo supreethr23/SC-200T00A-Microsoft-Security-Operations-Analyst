@@ -53,13 +53,9 @@ In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
 
 1. Under the *Event grouping* area, leave the **Group all events into a single alert** as the selected option since we want to generate a single alert every time it runs, as long as the query returns more results than the specified alert threshold above.
 
-1. Select the **Next: Incident settings >** button.
-
-1. Select the **Next: Automated response >** button.
-
-1. Select the **Next: Review >** button.
+1. Select the **Review+Create >** button.
  
-1. Select **Create**.
+1. Select **Save**.
 
 1. Select the rule just created, then select **Export** from the toolbar.
 
@@ -81,13 +77,13 @@ In this task, you will test create and populate an Azure DevOps repository.
 
 1. *Enter characters you see*, then **Continue**.
 
-1. On the *Create a project to get started* page, enter **My Sentinel Content** as project name and then select **Create project**.
+1. On the *Create a project to get started* page, enter **MySentinelContent** as project name and then select **Create project**.
 
 1. Navigate to **Repos** on the left pane.
 
 1. At the bottom of the page in the area *Initialize the main branch with a README or gitignore*, select **Initialize**.
 
-1. The page should show the Files for the Repo. the only file is README.me.
+1. The page should show the Files for the Repo. the only file is README.md.
 
 1. On the Files (right side of the page) blade, the toolbar includes options *Set up build*, *Clone*, and *:*. Select **:** to show more options.
 
