@@ -37,11 +37,12 @@ You are going to simulate the attacks that you will later use to detect and inve
 
    ![Lab overview.](../Media/pl4.png)
 
-1. On the virtual machine page select the win1-xxxx virtual machine and click on Connect and  wait until get connected.
 
 1. Then, come back to the configuration and scroll down a bit. You can find Select **which events to stream**. Click on All Events. Click on Apply changes now. If you refresh the data connector page, you can see the status Connected for Security Events Via Legacy Agent.
 
     ![Lab overview.](../Media/pl5.png)
+
+    >**Note:** If the option is grayed out, please follow the next task and come back once the defender task is complete.
 
 ### Task 2: Enable Microsoft Defender for Cloud
 
@@ -81,12 +82,6 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
     ![Picture 1](../Media/sc6.png)
 
-1. Select the Log Analytics workspace named **uniquenameDefender** to review the available options and pricing.
-
-1. Select **Enable all plans** (to the right of Select Defender plan), and then choose **Save**. Wait for the *"Microsoft Defender plan for workspace loganalyticworkspace was saved successfully!"* notification to appear.
-
-    >**Note:** If the page is not being displayed, refresh your Edge browser and try again.
-
 1. Close the Defender plans page by selecting the 'X' in the upper right corner of the page to return to the **Environment settings**.
 
 
@@ -121,6 +116,7 @@ In this task, you will perform attacks on the host connected with Azure Arc that
     ```CommandPrompt
     REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
     ```
+    
 ### Task 4: Privilege Elevation Attack with User Add
 
 1. Copy and run this command to simulate the creation of an Admin account. Remember to press Enter after the last row:
