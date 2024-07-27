@@ -32,7 +32,7 @@ In this task, you will save a workbook template and modify it.
 
 1. You should be back in the **Microsoft Sentinel - Workbooks - Templates** tab. Scroll down again and select the **Save** button for the *Azure Activity* workbook. 
 
-1. Leave **East US** as the default value for *Region* and select **OK**.
+1. Leave **East US** as the default value for *Region* and select **yes**.
 
 1. Select the **View saved workbook** button.
 
@@ -140,9 +140,9 @@ In this task, you will create a new workbook with advanced visualizations.
 
 1. Close the workbook by selecting the **X** at the top-right or select **Workbooks** in the Microsoft Sentinel portal.
 
-1. Back in the *Workbooks* page, select the **My workbooks** tab.
+1. Back in the *Workbooks* page, select the **My Workbooks** tab.
 
-1. Select the workbook you just created, **My workbook**.
+1. Select the workbook you just created, **My Workbook**.
 
 1. On the right pane, select **View saved workbook** to review your workbook.
 
