@@ -119,6 +119,8 @@ In this task, you create a function that is a workspace parser for DeviceRegistr
     |Function name|vimRegEvtM365D|
     |Legacy Category|MyASIM|
 
+    >**Note**: IF the Above query did not provide any output, it might take sometime for sentinel to gather the logs from the backend. meanwhile we can proceed with the next task and come back later after sometime.
+
 1. Then select **Save**.
 
 1. In a new query tab, enter **vimRegEvtM365D** and select **Run**.
