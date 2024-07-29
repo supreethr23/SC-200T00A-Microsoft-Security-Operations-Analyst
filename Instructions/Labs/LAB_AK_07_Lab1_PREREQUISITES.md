@@ -97,6 +97,8 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. For the Name, enter **uniquenameDefender**.
 
+    >**Note:** Please provide unique name to your log analytics.
+
 1. Select **Review + Create**.
 
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
