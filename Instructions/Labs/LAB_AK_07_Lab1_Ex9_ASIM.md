@@ -119,8 +119,6 @@ In this task, you create a function that is a workspace parser for DeviceRegistr
     |Function name|vimRegEvtM365D|
     |Legacy Category|MyASIM|
 
-    **Note**: Make sure you replace the EventID which you copied earlier.
-
 1. Then select **Save**.
 
 1. In a new query tab, enter **vimRegEvtM365D** and select **Run**.
@@ -220,6 +218,8 @@ In this task, you create a function that is a workspace parser for SecurityEvent
     ```
 
 1. Select **Run** to confirm the KQL is valid.
+
+    **Note**: Make sure you replace the EventID which you copied earlier to get the expected **EventID** Output.
 
 1. Select **Save**, then **Save as function**.
 
