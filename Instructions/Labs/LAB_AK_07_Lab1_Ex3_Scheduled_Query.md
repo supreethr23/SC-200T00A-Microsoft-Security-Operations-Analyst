@@ -43,6 +43,8 @@ In this task, you will connect the Azure Activity connector.
 
 1. Select **Create** to finish.
 
+    >**Note:** The Azure Activity Connector Sometimes takes moretime than expected to show as connected in data connector tab after creating the azure policy assignment.
+
 ### Task 2: Create a Scheduled Query
 
 In this task, you create a scheduled query and connect it to the Teams channel you created in the previous exercise.
@@ -158,7 +160,7 @@ In this task, you test your new scheduled query rule.
 
 1. You should see the newly created Incident.
 
-    >**Note:** The event that triggers the incident may take time to process. Continue with the next exercise, you will come back to this view later. if you did not find the connected connected for the activity log there are ongoing issues going on with Sentinel Product from Microsoft, on which they are working and trying to resolve in near real time.
+    >**Note:** The event that triggers the incident may take time to process. Continue with the next exercise, you will come back to this view later.
 
 1. Select the Incident and review the information in the right blade.
 
