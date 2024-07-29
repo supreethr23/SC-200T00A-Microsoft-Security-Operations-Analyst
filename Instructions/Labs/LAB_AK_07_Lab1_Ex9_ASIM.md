@@ -219,7 +219,7 @@ In this task, you create a function that is a workspace parser for SecurityEvent
 
 1. Select **Run** to confirm the KQL is valid.
 
-    **Note**: Make sure you replace the EventID which you copied earlier to get the expected **EventID** Output.
+    >**Note**: Make sure you replace the EventID which you copied earlier to get the expected **EventID** Output.
 
 1. Select **Save**, then **Save as function**.
 
@@ -230,7 +230,7 @@ In this task, you create a function that is a workspace parser for SecurityEvent
     |Function name|vimRegEvtSecurityEvent|
     |Legacy Category|MyASIM|
 
-    >Note: Sometimes it will take a long time  to get the output, Meanwhile you can proceed with the next task.
+    >**Note**: Sometimes it will take a long time  to get the output, Meanwhile you can proceed with the next task.
 
 1. Then select **Save**.
 
@@ -271,5 +271,7 @@ In this task, you create a unifying parser function that combines the previous t
     imRegEvt
     | where ActionType == 'RegistryValueSet'
     ```
+
+    >**Note**: Sometimes the ouput of the query might not come as expected. please proceed with the next exercise.
 
 ## Proceed to Exercise 8
