@@ -16,7 +16,7 @@ In this task, you will activate a Microsoft Security rule.
 
 1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.
 
-    >**Note:** WIN1 virtual machine is the one that your using previuosly.
+    >**Note:** WIN1 virtual machine is the one that your using previously.
 
 1. In the Microsoft Edge browser, navigate to the Azure portal at (https://portal.azure.com).
 
