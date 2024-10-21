@@ -18,13 +18,9 @@ In this task, you will explore Entity behavior analytics in Microsoft Sentinel.
 
    >**Note:** WIN1 virtual machine is the same one that your using in Excercise 3. only need to login if your logged out otherwise no need to login again.
 
-   >**Note:** If prompted to sign in, In the **Sign in** dialog box, copy and paste the **Username** and **Password** from the Environment tab and select **Sign in**.
-
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
-1. In the **Sign in** dialog box, copy and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
-
-1. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
+   >**Note:** If prompted to sign in, In the **Sign in** dialog box, copy and paste the **Username** and **Password** from the Environment tab and select **Sign in**.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
