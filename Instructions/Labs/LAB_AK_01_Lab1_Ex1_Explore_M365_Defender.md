@@ -38,7 +38,7 @@ In this lab, you will perform:
 
 1. Ignore the **No Roles Selected**.
 
-1. Select **Create** and click on **Yes**. 
+1. Select **Create.**
 
 ### Task 2: Apply Microsoft Defender XDR for Office 365 preset security policies
 
