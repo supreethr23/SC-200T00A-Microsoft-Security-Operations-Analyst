@@ -12,7 +12,13 @@ You need to configure Microsoft Sentinel to perform Entity Behavior Analytics to
 
 In this task, you will explore Entity behavior analytics in Microsoft Sentinel.
 
-1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.
+
+1. Log in to WIN1 virtual machine as Admin with the password: Pa55w.rd.
+
+   >**Note:** WIN1 virtual machine is the same one that your using in Excercise 3. only need to login if your logged out otherwise no need to login again.
+
+   >**Note:** If prompted to sign in, In the **Sign in** dialog box, copy and paste the **Username** and **Password** from the Environment tab and select **Sign in**.
 
 1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
 
