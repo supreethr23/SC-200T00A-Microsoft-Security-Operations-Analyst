@@ -10,11 +10,10 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 ## Lab objectives
 In this lab, you will perform the following:
-- Task 1: Preparing the Microsoft Defender XDR workspace
-- Task 2: Initialize Microsoft Defender for Endpoint
-- Task 3: Onboard a Device
-- Task 4: Configure Roles
-- Task 5: Configure Device Groups
+- Task 1: Initialize Microsoft Defender for Endpoint
+- Task 2: Onboard a Device
+- Task 3: Configure Roles
+- Task 4: Configure Device Groups
 
 ## Estimated timing: 60 minutes
 
@@ -22,17 +21,8 @@ In this lab, you will perform the following:
 
   ![Picture 1](../Media/2024-07-23(1).png)
 
-### Task 1: Preparing the Microsoft Defender XDR workspace
 
-1. In the Edge browser, go to the Microsoft Defender XDR portal at (https://security.microsoft.com).
-
-1. In the **Sign in** dialog box, copy and paste **Email/Username:** <inject key="AzureAdUserEmail"></inject> and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste **Password:** <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
-
-    >**Note:** If you asked for security default popup, please click on **Ask Later.**
-
-### Task 2: Initialize Microsoft Defender for Endpoint
+### Task 1: Initialize Microsoft Defender for Endpoint
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint.
 
@@ -58,7 +48,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
     >**Hint:** If you do not see the option, refresh the page.
 
-### Task 3: Onboard a Device
+### Task 2: Onboard a Device
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
 
@@ -110,7 +100,7 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
    <validation step="91447864-4d24-4dc4-a518-c1ebacf2fb66" />
 
 
-### Task 4: Configure Roles
+### Task 3: Configure Roles
 
 In this task, you will configure roles for use with device groups.
 
@@ -165,7 +155,7 @@ In this task, you will configure roles for use with device groups.
 
 1. Select **Submit** and **Done**. If you receive an error while saving the role, refresh the page and try again.
 
-### Task 5: Configure Device Groups
+### Task 4: Configure Device Groups
 
 In this task, you will configure device groups that allow for access control and automation configuration.
 
