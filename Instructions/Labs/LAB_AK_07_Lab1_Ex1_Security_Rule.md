@@ -47,5 +47,7 @@ In this task, you will activate a Microsoft Security rule.
 1. Review the changes made and select the **Save** button. The Analytics rule will be saved and incidents will be created if there is an Alert in Defender for Endpoint.
 
 1. You will now have the one *Fusion* and two *Microsoft Security* alert types.
+
+    ![Picture 1](../Media/sc-200-25.png)
    
 ## Proceed to Exercise 2
