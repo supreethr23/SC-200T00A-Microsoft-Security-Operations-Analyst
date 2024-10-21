@@ -29,7 +29,6 @@ In this lab, you will perform:
     |---|---|
     |Group Type| **Microsoft 365** |
     |Group Name| **Sg-IT-<inject key="DeploymentID" enableCopy="false"/>** |
-    |Microsoft Entra roles can be assigned to the group| **Yes** |
 
 1. Click on **No owners selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
