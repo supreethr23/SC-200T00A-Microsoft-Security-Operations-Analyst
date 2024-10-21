@@ -17,7 +17,7 @@ In this lab, you will perform:
 
 ### Task 1: Create a Group in Microsoft Entra ID
 
-1. In the Edge browser, go to the Microsoft azure portal at (https://portal.azure.com)
+1. In the Edge browser, go to the Microsoft Azure portal at (https://portal.azure.com)
 
 1. In the Search bar of the Azure portal, type **Microsoft Entra ID**, then select **Microsoft Entra ID**.
 
