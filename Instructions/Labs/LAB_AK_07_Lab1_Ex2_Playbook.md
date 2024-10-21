@@ -13,6 +13,8 @@ With a playbook, you can help automate and orchestrate your threat response, int
 In this task, you will create a Microsoft Teams team for use in the lab.
 
 1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.
+
+   >**Note:** WIN1 virtual machine is the same one that your using in Excercise 1. only need to login if your logged out otherwise no need to login again.
    
 1. In the Edge browser, open a new window and navigate to the Microsoft Teams portal at (https://teams.microsoft.com).
 
