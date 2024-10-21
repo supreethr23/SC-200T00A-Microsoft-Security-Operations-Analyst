@@ -107,9 +107,11 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
      ![Picture 1](../Media/sc-200-14.png)
 
-1. When the installation finishes,you will get a output like this in the powershell then go back to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
+1. When the installation finishes,you will get a output like this in the powershell. 
 
      ![Picture 1](../Media/sc-200-15.png)
+
+1. Then go back to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
 
 1. Select **Refresh** until **WIN-xxxx** name appears.
 
@@ -123,7 +125,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Click on **+ Create**.
 
-1. On the **Create Log Analytics workspace** provide the following details and click ***Review + Create (4.)**
+1. On the **Create Log Analytics workspace** provide the following details and click **Review + Create (4.)**
 
       - Subscription: Leave the default subscription **(1)**
       - Resource group: Select **RG-DEFENDER (2)**
@@ -135,9 +137,13 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. In the Azure portal's search bar, type **Microsoft Sentinel** and select it.
 
+     ![Picture 1](../Media/sc-200-19.png)
+
 1. Click on **+ Create**.
 
-1. Next, in Add Microsoft Sentinel to a workspace page select the existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
+1. Next, in Add Microsoft Sentinel to a workspace page select the existing workspace **(1)** that was created in the previous lab, then select **Add (2)**. This could take a few minutes.
+
+     ![Picture 1](../Media/sc-200-20.png)
 
 1. Select the Microsoft Sentinel Workspace you created.
  
@@ -158,9 +164,15 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
  
 1. In the **Configuration** section, select the **+Create data collection rule**.
 
-1. Enter **WINSERVER** for Rule Name, then select **Next: Resources**.
+     ![Picture 1](../Media/sc-200-21.png)
+
+1. Enter **WINSERVER (1)** for Rule Name, then select **Next: Resources (2)**.
+
+     ![Picture 1](../Media/sc-200-22.png)
 
 1. Expand the **Subscription** and the **RG-DEFENDER** (or the Resource Group you have created), then select **WIN-xxxx**. Then select **Next: Collect** and **Next: Review + Create**.
+
+     ![Picture 1](../Media/sc-200-23.png)
 
 1. Select **Create**.
 
