@@ -30,6 +30,8 @@ In this lab, you will perform the following:
 
 1. In the **Enter password** dialog box, copy and paste **Password:** <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
+    >**Note:** If you asked for security default popup, please click on **Ask Later.**
+
 1. On the **Microsoft Defender XDR** portal, from the navigation menu, select **Home** from the left.
 
     >**Note:** You may need to scroll all the way to the menu at the top.
