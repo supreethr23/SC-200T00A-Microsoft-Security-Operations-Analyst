@@ -32,24 +32,6 @@ In this lab, you will perform the following:
 
     >**Note:** If you asked for security default popup, please click on **Ask Later.**
 
-1. On the **Microsoft Defender XDR** portal, from the navigation menu, select **Home** from the left.
-
-    >**Note:** You may need to scroll all the way to the menu at the top.
-
-1. On the **Home** portal page, **Welcome to Microsoft Defender** is displayed.
-
-1. Scroll down through the tiles until you find the tile labeled **Microsoft Defender XDR**.
-
-    >**Hint:** It should be at the bottom right of the tiles.
-
-1. Select the button that says **Turn new features on.**
-
-1. You will see messages saying *loading and Initializing* briefly displayed at the top of the page, and then you're going to see an image of a coffee mug and a message that reads: **Hang on! We're preparing new spaces for your data and connecting them.** It will take approximately 5 minutes to finish. *Leave the page open and make sure it finishes since it is required for the next Lab.*
-
-    >**Note:** If the message "Hang on! We're preparing new spaces for your data and connecting them" does not appear, or the "Settings > Microsoft Defender XDR > Account" page opens, but you see the message "Failed to load data storage location. Please try again later",  select "Alert service settings" from the "General" menu, or go to the navigation menu, scroll down to the "Assets" section and select "Devices".
-
-1. When the new space is completed successfully, you will see the Microsoft Defender XDR General settings for Account, Email notifications, Alert service settings, Permissions and Roles, and Streaming API. You will also see **Preview Features** turned on.
-
 ### Task 2: Initialize Microsoft Defender for Endpoint
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint.
