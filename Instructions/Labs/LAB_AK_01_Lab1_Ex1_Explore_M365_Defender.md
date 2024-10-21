@@ -66,8 +66,6 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. On the *Threat policies* dashboard, select **Preset Security Policies**.
 
-    >**Note:** If you receive the message popup on "Learn about preset security policies". please click on cancel.
-
     >**Note:** If you receive the message *"Client Error - An error occurred when retrieving preset security policies. Please try again later."* Select **OK** to continue. Refresh your browser using **Ctrl+F5**.
 
 1. On the **Learn about preset security policies** *pop-out* page, select **Cancel**.
