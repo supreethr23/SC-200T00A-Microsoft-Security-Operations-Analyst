@@ -116,12 +116,12 @@ In this task, you will simulate an attack on the WIN1 virtual machine and verify
 
 1. Review the contents of the *Ip address* page *Overview, Incidents & alerts and Observed in organizations* tabs. Some tabs may not contain any information about the IP address.
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+  > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+  > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-   <validation step="91447864-4d24-4dc4-a518-c1ebacf2fb66" />
+ <validation step="91447864-4d24-4dc4-a518-c1ebacf2fb66" />
 
 
 ## Review
