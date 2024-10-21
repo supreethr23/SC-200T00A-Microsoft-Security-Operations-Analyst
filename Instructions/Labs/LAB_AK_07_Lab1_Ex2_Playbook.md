@@ -30,15 +30,11 @@ In this task, you will create a Microsoft Teams team for use in the lab.
 
 1. Select the **From scratch** button.
 
-1. Select the **Private** button.
+1. On the **Create a team** page, provide the team name as **SOC (1)**, select the Team type as **Private (2)** then **Name the first channel** as  **New Alerts (3)** and then click **Create (4).**
 
-1. Give the team the name: type **SOC** and select the **Create** button.
+    ![Picture 1](../Media/sc-200-27.png)
 
 1. In the Add members to SOC screen, select the **Skip** button. 
-
-1. Scroll down the Teams blade to locate the newly created SOC team, select the ellipsis **(...)** on the right side of the name and select **Add channel**.
-
-1. Enter a channel name of **New Alerts** and channel type choose it as **private** then select the **Create** button.
 
 ### Task 2: Create a Playbook in Microsoft Sentinel
 
@@ -58,11 +54,15 @@ In this task, you'll create a Logic App that is used as a Playbook in Microsoft 
 
 1. Make sure your Azure Subscription is selected.
 
-1. For Resource Group, select **Create New**, enter *RG-Playbooks* and select **OK**.
+1. For Resource Group, select **Create New (1)**, enter *RG-Playbooks* **(2)** and select **OK (3)**.
+
+    ![Picture 1](../Media/sc-200-28.png)
 
 1. Leave **(US) East US** as the default value for *Region*.
 
 1. Rename the *Playbook Name* to "PostMessageTeams-OnIncident" and select **Review + create**.
+
+    ![Picture 1](../Media/sc-200-29.png)
 
 1. Now select **Create**. 
 
@@ -76,9 +76,11 @@ In this task, you'll update the new playbook you created with the proper connect
 
 1. Select **uniquenameDefender** Microsoft Sentinel Workspace.
 
-1. Select **Automation** under the *Configuration* area and then select the **Active Playbooks** tab.
+1. Select **Automation** under the *Configuration* area.
 
-1. Select **Refresh** from the command bar in case you don't see any playbooks. You should see the playbook created from the previous step.
+    ![Picture 1](../Media/sc-200-30.png)
+
+1. Select the **Active Playbooks** tab. click **Refresh** from the command bar in case you don't see any playbooks. You should see the playbook created from the previous step.
 
 1. Select the **PostMessageTeams-Onincident** playbook name.
 
@@ -94,13 +96,22 @@ In this task, you'll update the new playbook you created with the proper connect
 
    ![Picture 1](../Media/xox2.png)
 
-1. Select **Add new** and select **Sign in**. In the new window, select your Azure subscription admin credentials (odl username) when prompted. The last line of the block should now read "Connected to your-admin-username".
+1. Select **Add new** and select **Sign in**.
+   
+    ![Picture 1](../Media/sc-200-31.png)
+    ![Picture 1](../Media/sc-200-32.png)
+
+1. In the new window, select your Azure subscription admin credentials (odl username) when prompted. The last line of the block should now read "Connected to your-admin-username".
+
+    ![Picture 1](../Media/sc-200-33.png)
 
    >**Note:** If you face a pop-up blocker from the browser allow it and try to authenticate again.
 
 1. Now select the *second* block, **Post a message (V3)**.
 
 1. In the Parameters tab, scroll down and select the **Change connection** link and then select **Add new** and **Sign in**. Choose your Azure admin credentials (odl username) when prompted. The Parameters tab should now read "Connected to your-admin-username".
+
+    ![Picture 1](../Media/sc-200-34.png)
 
 1. At the end of the *Team* field, select the **X** to clear the contents. The field is changed to a drop-down with a listing of the available Teams from Microsoft Teams. Select **SOC**.
 
