@@ -82,7 +82,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. In the *Impersonation protection* page, select **Next** for next all steps i.e. (4x times) to continue.
 
-1. In the *Policy mode* page, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
+1. In the popup appears for *Policy mode* page, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
