@@ -125,4 +125,6 @@ In this task, you'll update the new playbook you created with the proper connect
 
 1. Select **Save** on the command bar. The Logic App will be used in a future lab.
 
+   ![Picture 1](../Media/sc-200-35.png)
+
 ## Proceed to Exercise 3
