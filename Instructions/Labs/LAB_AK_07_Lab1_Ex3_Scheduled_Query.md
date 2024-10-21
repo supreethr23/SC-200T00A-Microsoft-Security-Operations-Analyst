@@ -55,7 +55,7 @@ In this task, you create a scheduled query and connect it to the Teams channel y
 
 1. Select **Analytics** from the Configuration area.
 
-1. Make sure that you are in the *Rule templates* tab in the command bar and search for the **New CloudShell User** rule.
+1. Make sure that you are in the **Rule templates** tab in the command bar and search for the **New CloudShell User** rule.
 
    ![Picture 1](../Media/xs1.png)
 
