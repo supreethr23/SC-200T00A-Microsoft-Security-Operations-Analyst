@@ -115,7 +115,6 @@ In this task, you will configure roles for use with device groups.
     |---|---|
     |Group Type| **Microsoft 365** |
     |Group Name| **Sg-IT** |
-    |Microsoft Entra roles can be assigned to the group| **Yes** |
 
 1. Click on **No owners selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
@@ -123,9 +122,7 @@ In this task, you will configure roles for use with device groups.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
-1. Ignore the **No Roles Selected**.
-
-1. Select **Create** and click on **Yes**. 
+1. Select **Create.**
 
 1. In the Microsoft Defender XDR portal select **Settings** from the left menu bar, then select **Endpoints**. 
 
