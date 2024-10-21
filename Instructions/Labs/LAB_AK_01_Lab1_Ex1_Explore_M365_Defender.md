@@ -78,7 +78,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
                                                                               
     >**Hint:** Your tenant's domain name is the same that you have for your admin account, it might be something like *mocholxxxxx.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing. 
 
-1. In the *Apply Defender XDR for Office  protection* page, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
+1. In the *Apply Defender for Office 365 protection* page, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
 
 1. In the *Impersonation protection* page, select **Next** for next all steps i.e. (4x times) to continue.
 
