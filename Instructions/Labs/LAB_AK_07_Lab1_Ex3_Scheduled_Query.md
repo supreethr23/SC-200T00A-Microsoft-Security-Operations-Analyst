@@ -15,9 +15,9 @@ In this task, you will connect the Azure Activity connector.
 
 1. Log in to WIN1 virtual machine as Admin with the password: Pa55w.rd.
 
-1. In the Sign in dialog box, copy and paste in the Tenant Email account provided by your lab hosting provider and then select Next.
+   >**Note:** WIN1 virtual machine is the same one that your using in Excercise 2. only need to login if your logged out otherwise no need to login again.
 
-1. In the Enter password dialog box, copy and paste in the Tenant Password provided by your lab hosting provider and then select Sign in.
+   >**Note:** If prompted to sign in, In the **Sign in** dialog box, copy and paste the **Username** and **Password** from the Environment tab and select **Sign in**.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
