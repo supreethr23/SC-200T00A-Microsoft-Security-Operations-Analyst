@@ -88,7 +88,7 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
 ### Task 3: Persistence Attack with Registry Key Add
 
->**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
+>**Important:** The next steps are done on a different machine than the one you were previously working on during **LAB PREREQUISITES**. Look for the Virtual Machine name references.
 
 In this task, you will perform attacks on the host connected with Azure Arc that has the Azure Monitor Agent configured.
 
@@ -102,7 +102,7 @@ In this task, you will perform attacks on the host connected with Azure Arc that
 
 1. Follow the instructions to log into WINServer again.
 
-1. In the search of the taskbar, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
+1. In the search of the taskbar, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** if prompted in the User Account Control window that appears to allow the app to run.
 
 1. In the Command Prompt, create a Temp folder in the root directory. Remember to press Enter after the last row:
 
