@@ -197,7 +197,7 @@ In this task, you will manually install the required agent on the Windows Server
 
     >**Note:** For the purposes of this lab you could select *Windows Event Logs*. These selections can be revised later.
 
-1. Click the **Destination** tab.
+1. Click the **Destination** tab, select **+ Add Destination**.
 
 1. Select **Azure Monitor Logs** in the **Destination Type** dropdown.
 
