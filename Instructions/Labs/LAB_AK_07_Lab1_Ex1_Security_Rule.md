@@ -8,7 +8,11 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Modify%20a%20Microsoft%20Security%20rule)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
+## Objectives
 
+After you complete this Exercise, you will be able to:
+
+-   Task 1: Activate a Microsoft Security Rule
      
 ### Task 1: Activate a Microsoft Security Rule
 
