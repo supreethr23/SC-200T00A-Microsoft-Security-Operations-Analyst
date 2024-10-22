@@ -70,6 +70,12 @@ In this task, you will build basic KQL statements.
 
 >**Important:**  For each query, clear the previous statement from the Query Window or open a new Query Window by selecting **+** after the last opened tab (up to 25).
 
+1. Navigate to Log analytics workspace created in earlier step, expand **Classic.** select the Virtual machine (depricated) option.
+
+1. On the right of the screen click on the virtual machine displayed and click on **Connect**. wait for the virtual machine status to change to **Connected**
+
+1. Go to Sentinel, click on **Logs**. Close all the pop-ups if they appear.
+
 1. The following statement demonstrates the **search** operator, which searches all columns in the table for the value. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
