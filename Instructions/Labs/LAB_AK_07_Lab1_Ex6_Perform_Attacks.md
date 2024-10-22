@@ -17,13 +17,13 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 1. Select the pre-created Sentinel **uniquenameDefender** from the available list.
 
-1. Navigate to the left menu and go to the Content Management section; there, select Content Hub. On the Content Hub page, locate Windows Security Events, and then Select  it and verify if it is installed.
+1. Navigate to the left menu select **Content Hub** under Content Management section. On the Content Hub page, locate **Windows Security Events,** and then Select  it and verify if it is **installed.**
 
    ![Lab overview.](../Media/pl1.png)
 
-1. Navigate to Data Connectors from the left navigation pane. You should observe two options: Security Events Via Legacy Agent and Windows Security Event Via AMA.
+1. Navigate to **Data Connectors** from the left navigation pane. You should observe two options: **Security Events Via Legacy Agent and Windows Security Event Via AMA.**
 
-1. Choose Security Events Via Legacy Agent, and then click on **Open connector page**.
+1. Choose **Security Events Via Legacy Agent,** and then click on **Open connector page**.
 
    ![Lab overview.](../Media/pl2.png)
 
@@ -31,12 +31,11 @@ You are going to simulate the attacks that you will later use to detect and inve
 
    ![Lab overview.](../Media/pl3.png)
 
-1. Select the win1xxx virtual machine.
+1. Select the **WIN1xxx** virtual machine.
 
-1. Click on **Connect**, once **Connected (1)**, select the **Virtual Machine (2)** link from the top.
+1. Click on **Connect (1)**, once **Connected**, select the **Virtual Machine (2)** link from the top.
 
    ![Lab overview.](../Media/pl4.png)
-
 
 1. Then, come back to the configuration and scroll down a bit. You can find Select **which events to stream**. Click on All Events. Click on Apply changes now. If you refresh the data connector page, you can see the status Connected for Security Events Via Legacy Agent.
 
@@ -48,13 +47,13 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 In this task, you will enable and configure Microsoft Defender for Cloud.
 
-1. In the search bar of the Azure portal, type *Microsoft Defender for cloud (1)*, then select **Microsoft Defender for Cloud (2)**.
+1. In the search bar of the Azure portal, type **Microsoft Defender for cloud (1)**, then select **Microsoft Defender for Cloud (2)**.
 
     ![Picture 1](../Media/pl6.png) 
 
 1. Click the left menu, and then click on **Getting Started**.
 
-1. On the **Getting Started** page, under the **Upgrade** tab, ensure your subscription is selected, and select the workspace by checking the box then click the **Upgrade** button at the bottom of the page.
+1. On the **Getting Started (1)** page, under the **Upgrade** tab, ensure your **subscription** is selected, and select the **workspace** by checking the box then click the **Upgrade (2)** button at the bottom of the page.
 
     ![Picture 1](../Media/pl7.png)
 
@@ -74,9 +73,11 @@ In this task, you will enable and configure Microsoft Defender for Cloud.
 
     ![Picture 1](../Media/pl9.png)
 
-1. Select the **Custom workspace**.   
+1. Click on **Edit configuration.**
 
-1. Select the newly created **Log Analytics workspace** from the drop down and which will gather all security events data of the machines to analyze.Leave others things as default.Click on **Apply** and **Continue** from the top below Settings and Monitoring. Click on **Save** for the changes to take effect.
+1. Select the **Custom workspace (1)** then select the newly created **Log Analytics workspace** named **uniquenameDefender (2)** from the drop down and which will gather all security events data of the machines to analyze.Leave others things as default and then click on **Apply (3).**
+
+1. Click on **Continue** from the top below Settings and Monitoring then click on **Save** for the changes to take effect.
 
 1. Close the settings page by selecting the 'X' on the upper right of the page to return to the **Environment settings**. Then, click on the '>' to the left of your subscription.
 
