@@ -8,6 +8,13 @@ You need to configure Microsoft Sentinel to perform Entity Behavior Analytics to
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Explore%20entity%20behavior%20analytics)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
+## Objectives
+
+After you complete this Exercise, you will be able to:
+
+-   Task 1: Task 1: Explore Entity Behavior
+-   Task 2: Confirm and review Anomalies rules
+
 ### Task 1: Explore Entity Behavior 
 
 In this task, you will explore Entity behavior analytics in Microsoft Sentinel.
