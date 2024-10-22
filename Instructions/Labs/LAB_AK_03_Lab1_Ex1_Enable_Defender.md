@@ -169,17 +169,9 @@ In this task, you will install Azure Arc on an on-premises server to make onboar
 
 In this task, you will manually install the required agent on the Windows Server.
 
-1. On the Lab Virtual machine, navigate to **Microsoft Defender for Cloud** in Azure Portal.
+1. Search **Data Collection Rules** on azure portal search bar.
 
-1. Select the **Inventory** from the leftpane.
-
-1. Select **+ Add non-Azure servers** section.
-
-1. Select **Upgrade** next to the workspace you created earlier.  This might take a few minutes, wait until you see the notification *"Defender plans for workspace were saved successfully"*.
-
-1. Select **+ Add Servers** next to the workspace you created earlier.
-
-1. Select **Data Collection Rules**.
+    ![Picture 1](../Media/newdata.png)
 
 1. Select **+ Create**.
 
