@@ -13,9 +13,13 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 ### Task 1: Connect the Windows security event connector
 
-1. In the Search bar of the Azure portal, type *Microsft Sentinel*, then select **Microsoft Sentinel**.
+1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select the pre-created Sentinel **uniquenameDefender** from the available list.
+    ![Picture 1](../Media/sc-200-19.png)
+
+1. Select the Microsoft Sentinel Workspace you created in the previous labs.
+
+    ![Picture 1](../Media/xx2.png)
 
 1. Navigate to the left menu select **Content Hub** under Content Management section. On the Content Hub page, locate **Windows Security Events,** and then Select  it and verify if it is **installed.**
 
