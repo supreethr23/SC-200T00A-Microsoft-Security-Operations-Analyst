@@ -74,6 +74,14 @@ In this task, you will build basic KQL statements.
 
 1. On the right of the screen click on the virtual machine displayed and click on **Connect**. wait for the virtual machine status to change to **Connected**
 
+1. Navigate back to the **Microsoft Sentinel** page, from the left navigation menu, scroll down to the **Content management** section and select **Content Hub**.
+
+1. Search for **Windows Security Events (2)** from the search bar and select it, Click on **Install (4)** on the right navigation page that shows up.
+
+1. From the left navigation pane, click on **Data connectors (1)** under the **Configuration** section.
+
+1. Select the **Security Events via Legacy Agent** Connector and click on open connector, scroll down look for **Select which events to stream** Select the **All events** radio button and click on **Apply Changes**.
+
 1. Go to Sentinel, click on **Logs**. Close all the pop-ups if they appear.
 
 1. The following statement demonstrates the **search** operator, which searches all columns in the table for the value. In the Query Window enter the following statement and select **Run**: 
