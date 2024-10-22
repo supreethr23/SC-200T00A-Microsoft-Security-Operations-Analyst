@@ -185,9 +185,9 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. In the **Resources** tab, **+ Add resources**.
 
-1. In the **Select a scope** page, expand the *Scope* column for **rg-defender** (or the Resource Group you created), then select **WINServer** and select **Apply**.
+1. In the **Select a scope** page, expand the *Scope* column for **rg-defender** (or the Resource Group you created), then select **WINServer (Azure Arc)** and select **Apply**.
 
-    >**Note:** You may need to set the column filter for *Resource type* to *Server-Azure Arc* if **WINServer** is not displayed.
+    >**Note:** You may need to set the column filter for *Resource type* to *Server-Azure Arc* if **WINServer (Azure Arc)** is not displayed.
 
 1. Select **Next: Collect and deliver**
 
@@ -209,15 +209,15 @@ In this task, you will manually install the required agent on the Windows Server
 
 1. Select **Create** after *Validation passed* is displayed.
 
-1. The **Data Collection Rule** creation initiates the installation of the *AzureMonitorWindowsAgent* extension on **WINServer**.
+1. The **Data Collection Rule** creation initiates the installation of the *AzureMonitorWindowsAgent* extension on **WINServer (Azure Arc)**.
 
-1. When the *Data Collection Rule* creation completes, enter **WINServer** in the *Search resources, services and docs* search bar, and select **WINServer** from *Resources*.
+1. When the *Data Collection Rule* creation completes, enter **WINServer (Azure Arc)** in the *Search resources, services and docs* search bar, and select **WINServer (Azure Arc)** from *Resources*.
 
-1. On **WINServer** scroll down through the left menu to *Settings* and *Extensions*.
+1. On **WINServer (Azure Arc)** scroll down through the left menu to *Settings* and *Extensions*.
 
 1. The **AzureMonitorWindowsAgent** should be listed with a *Status* of **Succeeded**.
 
-1. You can move on to the next lab and return later to review the **Inventory** section of **Microsoft Defender for Cloud** to verify that **WINServer** is included.
+1. You can move on to the next lab and return later to review the **Inventory** section of **Microsoft Defender for Cloud** to verify that **WINServer (Azure Arc)** is included.
 
 ### Review
 
