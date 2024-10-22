@@ -8,29 +8,35 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Modify%20a%20Microsoft%20Security%20rule)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same. 
 
+## Objectives
 
+After you complete this Exercise, you will be able to:
+
+-   Task 1: Activate a Microsoft Security Rule
      
 ### Task 1: Activate a Microsoft Security Rule
 
 In this task, you will activate a Microsoft Security rule.
 
-1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.
+
+    >**Note:** WIN1 virtual machine is the one that your using previously.
 
 1. In the Microsoft Edge browser, navigate to the Azure portal at (https://portal.azure.com).
 
-1. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
-
-1. In the **Enter password** dialog box, copy, and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
+1. If your not signed in. In the **Sign in** dialog box, provide the **Email/Username:** <inject key="AzureAdUserEmail"></inject> and **Password:** <inject key="AzureAdUserPassword"></inject> then select  **Sign in**.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+
+    ![Picture 1](../Media/sc-200-19.png)
 
 1. Select the Microsoft Sentinel Workspace you created in the previous labs.
 
     ![Picture 1](../Media/xx2.png)
 
-1. Select **Analytics** from the Configuration area.
+1. Select **Analytics (1)** from the Configuration area then click on  **+ Create (2)** drop down and then select **Microsoft incident creation rule (3)**.
 
-1. Select the **+ Create** button from the command bar and select **Microsoft incident creation rule**.
+    ![Picture 1](../Media/sc-200-24.png)
 
 1. Under *Name*, enter **Create incidents based on Defender for Endpoint**.
 
@@ -45,5 +51,7 @@ In this task, you will activate a Microsoft Security rule.
 1. Review the changes made and select the **Save** button. The Analytics rule will be saved and incidents will be created if there is an Alert in Defender for Endpoint.
 
 1. You will now have the one *Fusion* and two *Microsoft Security* alert types.
+
+    ![Picture 1](../Media/sc-200-25.png)
    
 ## Proceed to Exercise 2
