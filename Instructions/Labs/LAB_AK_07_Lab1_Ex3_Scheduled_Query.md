@@ -21,23 +21,41 @@ In this task, you will connect the Azure Activity connector.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select your Microsoft Sentinel Workspace.
+    ![Picture 1](../Media/sc-200-19.png)
+
+1. Select the Microsoft Sentinel Workspace you created in the previous labs.
+
+    ![Picture 1](../Media/xx2.png)
 
 1. Select **Content hub** under the Content management from the left pane.
 
-1. Search for **Azure Activity** then select it and Click on **Install** from the right pane.     
+    ![Picture 1](../Media/sc-200-36.png)
 
-1. From the Data Connectors Tab, search for the **Azure Activity** connector If doesn't appear just click refresh and select it from the list.
+1. Search for **Azure Activity (1)** then select it and Click on **Install (2)** from the right pane.
+
+    ![Picture 1](../Media/sc-200-37.png)
+
+1. From the Data Connectors Tab under Configuration, search for the **Azure Activity** connector If doesn't appear just click refresh and select it from the list.
+
+    ![Picture 1](../Media/sc-200-38.png)
 
 1. Select the **Open connector page** on the connector information blade.
 
-1. In the Configuration area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
+    ![Picture 1](../Media/sc-200-39.png)
 
-1. In the **Basics** tab, select the button with the three dots under **Scope** to select your subscription from the drop-down list and click **Select**.
+1. In the Configuration area, scroll down and under ***2. Connect your subscriptions...*** select **Launch Azure Policy Assignment Wizard>**.
+
+    ![Picture 1](../Media/sc-200-40.png)
+
+1. In the **Basics** tab, select the button with the **three dots(...)** under **Scope** to select your subscription from the drop-down list and click **Select**.
 
 1. Select the **Parameters** tab, choose your Microsoft Sentinel workspace from the **Primary Log Analytics workspace** drop-down list.
 
+    ![Picture 1](../Media/sc-200-41.png)
+
 1. Select the **Remediation** tab and mark the **Create a remediation task** checkbox.
+
+    ![Picture 1](../Media/sc-200-42.png)
 
 1. Select the **Review + Create** button to review the configuration.
 
@@ -51,25 +69,31 @@ In this task, you create a scheduled query and connect it to the Teams channel y
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
-1. Select your Microsoft Sentinel Workspace.
+    ![Picture 1](../Media/sc-200-19.png)
+
+1. Select the Microsoft Sentinel Workspace you created in the previous labs.
+
+    ![Picture 1](../Media/xx2.png)
 
 1. Select **Analytics** from the Configuration area.
 
 1. Make sure that you are in the **Rule templates** tab in the command bar and search for the **New CloudShell User** rule.
 
-   ![Picture 1](../Media/xs1.png)
+   ![Picture 1](../Media/sc-200-43.png)
 
 1. From the rule summary blade, make sure you're receiving data by reviewing the under *Data sources: Azure Activity*.
 
-1. Select **Create rule** to continue.
+1. Click on the three dots **(...) (1)** then select **Create rule (2)** to continue.
 
-   ![Picture 1](../Media/xs2.png)
+   ![Picture 1](../Media/sc-200-44.png)
 
-1. In the Analytics rule wizard, on the *General* tab, change the *Severity* to **Medium**.
+1. In the Analytics rule wizard, on the *General* tab, change the *Severity* to **Medium (1)** then click **Next: Set rule logic > (2)** button:
 
-1. Select **Next: Set rule logic >** button:
+   ![Picture 1](../Media/sc-200-45.png)
 
 1. For the rule query, select **View query results**. You shouldn't receive any results or any errors.
+
+   ![Picture 1](../Media/sc-200-46.png)
 
 1. Close the *Logs* window by selecting the upper right **X** and select **OK** to discard to save changes to go back to the wizard.
 
@@ -77,16 +101,16 @@ In this task, you create a scheduled query and connect it to the Teams channel y
 
     |Setting|Value|
     |---|---|
-    |Run Query every|5 minutes|
-    |Lookup data from the last|1 Days|
+    |Run Query every|5 minutes **(1)**|  
+    |Lookup data from the last|1 Days **(2)**| 
 
     >**Note:** We are purposely generating many incidents for the same data. This enables the Lab to use these alerts.
 
 1. Under the *Alert threshold* area, leave the value unchanged since we want the alert to register every event.
 
-1. Under the *Event grouping* area, leave the **Group all events into a single alert** as the selected option since we want to generate a single alert every time it runs, as long as the query returns more results than the specified alert threshold above.
+1. Under the *Event grouping* area, leave the **Group all events into a single alert (3)** as the selected option since we want to generate a single alert every time it runs, as long as the query returns more results than the specified alert threshold above then click on **Next: Incident settings > (4)** button. 
 
-1. Select the **Next: Incident settings >** button. 
+   ![Picture 1](../Media/sc-200-47.png)
 
 1. On the *Incident settings* tab, review the default options.
 
@@ -94,15 +118,15 @@ In this task, you create a scheduled query and connect it to the Teams channel y
 
 1. On the *Automated response* tab under *Automation rules*, select **Add new**.
 
-1. For the *Automation rule name*, enter **Tier 2**.
+1. For the *Automation rule name*, enter **Tier 2 (1)**.
 
-1. For the *Actions*, select **Assign owner**.
+1. For the *Actions*, select **Assign owner (2)**.
 
-1. Then select **<inject key="AzureAdUserEmail"></inject>**. Then select **+ Add action**.
+1. Then select **<inject key="AzureAdUserEmail"></inject> (3)**. Then select **+ Add action (4)**.
 
-   ![Picture 1](../Media/xs3.png)
+   ![Picture 1](../Media/sc-200-48.png)
 
-1. Use the *And then* drop-down menus to select **Run playbook**.
+1. Use the *And then* drop-down menus to select **Run playbook (1)**.
 
 1. A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**.
 
@@ -112,11 +136,9 @@ In this task, you create a scheduled query and connect it to the Teams channel y
 
 1. On the *Manage Permissions* page, select the **RG-Playbooks** resource group you created in the previous lab, and select **Apply**.
 
-1. From the drop-down menu, select the playbook **PostMessageTeams-OnIncident** you created in the previous exercise.
+1. From the drop-down menu, select the playbook **PostMessageTeams-OnIncident (2)** you created in the previous exercise then click on **Apply (3).**
 
-   ![Picture 1](../Media/xs4.png)
-
-1. Select **Apply**.
+   ![Picture 1](../Media/sc-200-49.png)
 
 1. Select the **Next: Review and create >** button.
   
@@ -144,7 +166,11 @@ In this task, you test your new scheduled query rule.
 
 1. In the Search bar of the Azure portal, type *Activity* and then select **Activity Log**.
 
+   ![Picture 1](../Media/sc-200-50.png)
+
 1. Make sure the following *Operation name* items appear: **List Storage Account Keys** and **Update Storage Account Create**. These are the operations that the KQL query you reviewed earlier will match to generate the alert. **Hint:** You might need to select **Refresh** to update the list.
+
+   ![Picture 1](../Media/sc-200-51.png)
 
     >**Note:** You might not see the output of the logs at the Activity log, this might take sometime 30 mins or longer.
 
