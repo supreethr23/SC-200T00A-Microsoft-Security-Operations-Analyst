@@ -150,13 +150,6 @@ In this task, you will create an indicator in Microsoft Sentinel.
    ![Picture 1](../Media/SC-200-img50.png)
 
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-   <validation step="4566fce4-7036-4f07-a040-186f5a2aee11" />
-
 ### Task 5: Configure log retention
 
 In this task, you will change the retention period for the SecurityEvent table.
@@ -174,6 +167,14 @@ In this task, you will change the retention period for the SecurityEvent table.
 1. Select **180 days** for ***Total retention period***. Notice that ***Archive period*** is only 150 days, since it uses 30 days from the (default) ***Interactive retention***.
 
 1. Select **Save** to apply the changes.
+
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="4566fce4-7036-4f07-a040-186f5a2aee11" />
+
 
 ## Review
 In this lab, you have completed the following:
