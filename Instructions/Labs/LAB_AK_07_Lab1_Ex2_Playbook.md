@@ -68,11 +68,11 @@ In this task, you'll create a Logic App that is used as a Playbook in Microsoft 
 
     ![Picture 1](../Media/sc-200-28.png)
 
-1. Leave **(US) East US** as the default value for *Region*.
+1. Leave **(US) East US (1)** as the default value for *Region*.
 
-1. Rename the *Playbook Name* to "PostMessageTeams-OnIncident" and select **Review + create**.
+1. Rename the *Playbook Name* to **PostMessageTeams-OnIncident (2)** and select **Review + create (3)**.
 
-    ![Picture 1](../Media/sc-200-29.png)
+    ![Picture 1](../Media/sc-200-94.png)
 
 1. Now select **Create**. 
 

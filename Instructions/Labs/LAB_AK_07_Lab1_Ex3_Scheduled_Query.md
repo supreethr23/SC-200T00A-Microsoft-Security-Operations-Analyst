@@ -145,7 +145,7 @@ In this task, you create a scheduled query and connect it to the Teams channel y
 
 1. From the drop-down menu, select the playbook **PostMessageTeams-OnIncident (2)** you created in the previous exercise then click on **Apply (3).**
 
-   ![Picture 1](../Media/sc-200-49.png)
+   ![Picture 1](../Media/sc-200-95.png)
 
 1. Select the **Next: Review and create >** button.
   
