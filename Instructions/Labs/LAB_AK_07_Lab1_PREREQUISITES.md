@@ -16,9 +16,19 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. In the lab virtual machine, search for **Hyper-V Manager** from the bottom windows search bar and select to open.
 
-1. Select and right-click on the **WINSERVER** virtual machine and select **Start**, then again right-click on the **WINSERVER** virtual machine and select **Connect**.
- 
+     ![Picture 1](../Media/sc-200-1.png)
+
+1. Select and right-click on the **WINSERVER** virtual machine and select **Start** only if it is not in **Running** state, then again right-click on the **WINSERVER** virtual machine and select **Connect**.
+
+     ![Picture 1](../Media/sc-200-2.png)
+
+1. If **Connect to WINServer** prompted, click **Connect.**
+
+     ![Picture 1](../Media/sc-200-3.png)  
+    
 1. Enter the **Password** as `Password.1!!` when prompted.
+
+     ![Picture 1](../Media/sc-200-4.png)
 
 1. Open the Microsoft Edge browser inside **WINSERVER**.
 
@@ -43,28 +53,36 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
-1. On the left side navigation pane under **Azure Arc Resources** select **Machines** and then click on **+ Add/Create** then click on **Add a Machine**.
+     ![Picture 1](../Media/sc-200-5.png)
+
+1. On the left side navigation pane under **Azure Arc Resources** select **Machines (1)** and then click on **+ Add/Create (2)** drop dowm and then click on **Add a Machine (3)**.
+
+     ![Picture 1](../Media/sc-200-6.png)
 
 1. Select **Generate script** in the **"Add a single server"** section.
 
-     ![Picture 1](../Media/SC-200-module6-ex2-img4.png)
+     ![Picture 1](../Media/sc-200-7.png)
 
 1. First, select the **East US** region.
 
-1. Then, create a new resource group named **RG-DEFENDER**.
+1. Then, create a new resource group by clicking on **Create new (1)** with the name **RG-DEFENDER (2)** then click **OK (3)**
+
+     ![Picture 1](../Media/sc-200-8.png)
      
 1. Review the *Server details* and *Connectivity method* options. Keep the default values and select **Next** to get to the Tags tab.
 
+     ![Picture 1](../Media/sc-200-9.png)
+
 1. Select **Next** to get to the Download and run script tab.
 
-1. Scroll down and select the **Download** button. **Hint:** If your browser blocks the download, take action in the browser to allow it. In Edge Browser, select the ellipsis button (...) if needed and then select **Keep**. 
+1. Scroll down and select the **Download** button. **Hint:** If your browser blocks the download, take action in the browser to allow it. In Edge Browser, select the ellipsis button (...) if needed and then select **Keep**.
 
-1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
+     ![Picture 1](../Media/sc-200-10.png)
 
-     ![Picture 1](../Media/SC-200-module6-ex2-img5.png)
+1. Right-click the Windows Start button, In the search box type in **PowerShell**. You should see the **Windows PowerShell App** appear. Select the **Run as Administrator** option.
 
-     >**Note:** You may need to search for **Windows PowerShell**. In the search box type in **PowerShell**. You should see the **Windows PowerShell App** appear. Select the **Run as Administrator** option.
-
+     ![Picture 1](../Media/sc-200-11.png)
+   
 1. In case you get a UAC prompt, enter *Administrator* for "Username" and *Passw0rd!* for "Password", else skip to the next step.
 
 1. Enter: **cd C:\Users\Administrator\Downloads**
@@ -75,39 +93,57 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Enter **A** for Yes to All and press enter.
 
+     ![Picture 1](../Media/sc-200-12.png)
+
 1. Type **.\OnboardingScript.ps1** and press enter.  
 
     >**Important:** If you get the error *"The term .\OnboardingScript.ps1 is not recognized..."*, make sure you are doing the steps for Task 3 on the WINSERVER virtual machine. Another issue might be that the name of the file changed due to multiple downloads, search for *".\OnboardingScript (1).ps1"* or other file numbers in the running directory.
 
 1. Enter **R** to Run once and press enter (this may take a couple of minutes).
 
+     ![Picture 1](../Media/sc-200-13.png)
+
 1. The setup process will open a new Edge browser tab to authenticate the Azure Arc agent. Select your admin account, wait for the message "Authentication complete" and then go back to the Windows PowerShell window.
 
-1. When the installation finishes, go back to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
+     ![Picture 1](../Media/sc-200-14.png)
+
+1. When the installation finishes,you will get a output like this in the powershell. 
+
+     ![Picture 1](../Media/sc-200-15.png)
+
+1. Then go back to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
 
 1. Select **Refresh** until **WIN-xxxx** name appears.
 
     >**Note:** This could take a few minutes.
+
+     ![Picture 1](../Media/sc-200-16.png)
     
 1. In the Azure portal's search bar, type **Log Analytics workspaces** and select it.
 
+     ![Picture 1](../Media/sc-200-17.png)
+
 1. Click on **+ Create**.
 
-1. Select **RG-DEFENDER** for the Resource group drop-down.
+1. On the **Create Log Analytics workspace** provide the following details and click **Review + Create (4.)**
 
-1. For the Name, enter **uniquenameDefender**.
+      - Subscription: Leave the default subscription **(1)**
+      - Resource group: Select **RG-DEFENDER (2)**
+      - Name: Enter  **uniquenameDefender (3)**
 
-    >**Note:** Please provide unique name to your log analytics.
-
-1. Select **Review + Create**.
-
+        ![Picture 1](../Media/sc-200-18.png)
+        
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
 
 1. In the Azure portal's search bar, type **Microsoft Sentinel** and select it.
 
+     ![Picture 1](../Media/sc-200-19.png)
+
 1. Click on **+ Create**.
 
-1. Next, in Add Microsoft Sentinel to a workspace page select the existing workspace that was created in the previous lab, then select **Add**. This could take a few minutes.
+1. Next, in Add Microsoft Sentinel to a workspace page select the existing workspace **(1)** that was created in the previous lab, then select **Add (2)**. This could take a few minutes.
+
+     ![Picture 1](../Media/sc-200-20.png)
 
 1. Select the Microsoft Sentinel Workspace you created.
  
@@ -128,9 +164,15 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
  
 1. In the **Configuration** section, select the **+Create data collection rule**.
 
-1. Enter **WINSERVER** for Rule Name, then select **Next: Resources**.
+     ![Picture 1](../Media/sc-200-21.png)
+
+1. Enter **WINSERVER (1)** for Rule Name, then select **Next: Resources (2)**.
+
+     ![Picture 1](../Media/sc-200-22.png)
 
 1. Expand the **Subscription** and the **RG-DEFENDER** (or the Resource Group you have created), then select **WIN-xxxx**. Then select **Next: Collect** and **Next: Review + Create**.
+
+     ![Picture 1](../Media/sc-200-23.png)
 
 1. Select **Create**.
 
