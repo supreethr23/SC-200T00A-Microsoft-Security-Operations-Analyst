@@ -36,8 +36,6 @@ In this lab, you will perform:
 
    > **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
-1. Ignore the **No Roles Selected**.
-
 1. Select **Create.**
 
 ### Task 2: Apply Microsoft Defender XDR for Office 365 preset security policies
@@ -68,8 +66,6 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. On the *Threat policies* dashboard, select **Preset Security Policies**.
 
-    >**Note:** If you receive the message *"Client Error - Error when getting bip rule"* select **OK** to continue. The error is due to the hydration status of your tenant at Office 365 which is not enabled by default.
-
     >**Note:** If you receive the message *"Client Error - An error occurred when retrieving preset security policies. Please try again later."* Select **OK** to continue. Refresh your browser using **Ctrl+F5**.
 
 1. On the **Learn about preset security policies** *pop-out* page, select **Cancel**.
@@ -82,11 +78,11 @@ In this task, you will assign preset security policies for Exchange Online Prote
                                                                               
     >**Hint:** Your tenant's domain name is the same that you have for your admin account, it might be something like *mocholxxxxx.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing. 
 
-1. In the *Apply Defender XDR for Office  protection* page, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
+1. In the *Apply Defender for Office 365 protection* page, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
 
 1. In the *Impersonation protection* page, select **Next** for next all steps i.e. (4x times) to continue.
 
-1. In the *Policy mode* page, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
+1. In the popup appears for *Policy mode* page, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 

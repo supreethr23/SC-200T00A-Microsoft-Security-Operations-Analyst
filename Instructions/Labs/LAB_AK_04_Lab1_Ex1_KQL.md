@@ -46,11 +46,12 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
     > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-    
+
+   <validation step="054d3b2b-26bd-41d8-8690-e4ace2e78de4" />
+
 ### Task 2: Initialize the Microsoft Sentinel Workspace.
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
@@ -68,6 +69,22 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 In this task, you will build basic KQL statements.
 
 >**Important:**  For each query, clear the previous statement from the Query Window or open a new Query Window by selecting **+** after the last opened tab (up to 25).
+
+1. Navigate to Log analytics workspace created in earlier step, expand **Classic.** select the Virtual machine (depricated) option.
+
+1. On the right of the screen click on the virtual machine displayed and click on **Connect**. wait for the virtual machine status to change to **Connected**
+
+1. Navigate back to the **Microsoft Sentinel** page, from the left navigation menu, scroll down to the **Content management** section and select **Content Hub**.
+
+1. Search for **Windows Security Events (2)** from the search bar and select it, Click on **Install (4)** on the right navigation page that shows up.
+
+1. From the left navigation pane, click on **Data connectors (1)** under the **Configuration** section.
+
+1. Select the **Security Events via Legacy Agent** Connector and click on open connector, scroll down look for **Select which events to stream** Select the **All events** radio button and click on **Apply Changes**.
+
+1. Go to Sentinel, click on **Logs**. Close all the pop-ups if they appear.
+
+  >**Note:** You may encounter situations where some of the queries below don't work as expected. Please don't hesitate to refer to the lab guide—there are instances when the connector may take some time to reach the desired state, which can affect how certain queries run. Your patience and understanding are greatly appreciated
 
 1. The following statement demonstrates the **search** operator, which searches all columns in the table for the value. In the Query Window enter the following statement and select **Run**: 
 

@@ -10,11 +10,10 @@ You start by initializing the Defender for the Endpoint environment. Next, you o
 
 ## Lab objectives
 In this lab, you will perform the following:
-- Task 1: Preparing the Microsoft Defender XDR workspace
-- Task 2: Initialize Microsoft Defender for Endpoint
-- Task 3: Onboard a Device
-- Task 4: Configure Roles
-- Task 5: Configure Device Groups
+- Task 1: Initialize Microsoft Defender for Endpoint
+- Task 2: Onboard a Device
+- Task 3: Configure Roles
+- Task 4: Configure Device Groups
 
 ## Estimated timing: 60 minutes
 
@@ -22,33 +21,8 @@ In this lab, you will perform the following:
 
   ![Picture 1](../Media/2024-07-23(1).png)
 
-### Task 1: Preparing the Microsoft Defender XDR workspace
 
-1. In the Edge browser, go to the Microsoft Defender XDR portal at (https://security.microsoft.com).
-
-1. In the **Sign in** dialog box, copy and paste **Email/Username:** <inject key="AzureAdUserEmail"></inject> and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste **Password:** <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
-
-1. On the **Microsoft Defender XDR** portal, from the navigation menu, select **Home** from the left.
-
-    >**Note:** You may need to scroll all the way to the menu at the top.
-
-1. On the **Home** portal page, **Welcome to Microsoft Defender** is displayed.
-
-1. Scroll down through the tiles until you find the tile labeled **Microsoft Defender XDR**.
-
-    >**Hint:** It should be at the bottom right of the tiles.
-
-1. Select the button that says **Turn new features on.**
-
-1. You will see messages saying *loading and Initializing* briefly displayed at the top of the page, and then you're going to see an image of a coffee mug and a message that reads: **Hang on! We're preparing new spaces for your data and connecting them.** It will take approximately 5 minutes to finish. *Leave the page open and make sure it finishes since it is required for the next Lab.*
-
-    >**Note:** If the message "Hang on! We're preparing new spaces for your data and connecting them" does not appear, or the "Settings > Microsoft Defender XDR > Account" page opens, but you see the message "Failed to load data storage location. Please try again later",  select "Alert service settings" from the "General" menu, or go to the navigation menu, scroll down to the "Assets" section and select "Devices".
-
-1. When the new space is completed successfully, you will see the Microsoft Defender XDR General settings for Account, Email notifications, Alert service settings, Permissions and Roles, and Streaming API. You will also see **Preview Features** turned on.
-
-### Task 2: Initialize Microsoft Defender for Endpoint
+### Task 1: Initialize Microsoft Defender for Endpoint
 
 In this task, you will perform the initialization of the Microsoft Defender for the Endpoint.
 
@@ -74,7 +48,7 @@ In this task, you will perform the initialization of the Microsoft Defender for 
 
     >**Hint:** If you do not see the option, refresh the page.
 
-### Task 3: Onboard a Device
+### Task 2: Onboard a Device
 
 In this task, you will onboard a device to Microsoft Defender for Endpoint using an onboarding script.
 
@@ -117,14 +91,9 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
      ![Picture 1](../Media/SC-200-img22.png)
 
     >**Note:** If you have completed the onboarding process and don't see devices in the Devices list after an hour, it might indicate an onboarding or connectivity problem.
-    
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### Task 4: Configure Roles
+
+### Task 3: Configure Roles
 
 In this task, you will configure roles for use with device groups.
 
@@ -146,7 +115,6 @@ In this task, you will configure roles for use with device groups.
     |---|---|
     |Group Type| **Microsoft 365** |
     |Group Name| **Sg-IT** |
-    |Microsoft Entra roles can be assigned to the group| **Yes** |
 
 1. Click on **No owners selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
@@ -154,9 +122,7 @@ In this task, you will configure roles for use with device groups.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
-1. Ignore the **No Roles Selected**.
-
-1. Select **Create** and click on **Yes**. 
+1. Select **Create.**
 
 1. In the Microsoft Defender XDR portal select **Settings** from the left menu bar, then select **Endpoints**. 
 
@@ -179,7 +145,7 @@ In this task, you will configure roles for use with device groups.
 
 1. Select **Submit** and **Done**. If you receive an error while saving the role, refresh the page and try again.
 
-### Task 5: Configure Device Groups
+### Task 4: Configure Device Groups
 
 In this task, you will configure device groups that allow for access control and automation configuration.
 
