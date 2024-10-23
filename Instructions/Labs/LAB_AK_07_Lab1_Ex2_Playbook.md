@@ -143,4 +143,9 @@ In this task, you'll update the new playbook you created with the proper connect
 
    ![Picture 1](../Media/sc-200-35.png)
 
+
+## Review
+
+ In this exercise, you established essential security components. You began by creating a Security Operations Center (SOC) team in Microsoft Teams to facilitate communication, followed by creating and updating a playbook in Microsoft Sentinel to streamline and improve security incident response.
+
 ## Proceed to Exercise 3
