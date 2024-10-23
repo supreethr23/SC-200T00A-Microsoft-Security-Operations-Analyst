@@ -81,7 +81,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. In the *Create hunting query* window, for the *Name* enter **PowerShell Hunt (1)**.
 
-1. For the *hunting query* enter the following KQL statement: ***(2)**
+1. For the *hunting query* enter the following KQL statement: **(2)**
 
     ```KQL
     let lookback = 2d; 
