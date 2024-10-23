@@ -12,7 +12,7 @@ You need to configure Microsoft Sentinel to perform Entity Behavior Analytics to
 
 After you complete this Exercise, you will be able to:
 
--   Task 1: Task 1: Explore Entity Behavior
+-   Task 1: Explore Entity Behavior
 -   Task 2: Confirm and review Anomalies rules
 
 ### Task 1: Explore Entity Behavior 
@@ -92,5 +92,9 @@ In this task, you will confirm Anomalies analytics rules are enabled.
 1. Select **Next: Review and Create** and then **Save** to update the rule.
 
     >**Note:** You can upgrade the **Flighting** rule to **Production** by changing the setting on this rule and saving the changes. The **Production** rule will become the **Flighting** rule afterwards.
+    
+## Review
+
+ In this exercise, you explored entity behavior to understand user and system activities. You then confirmed and reviewed anomalies rules to detect and analyze unusual or suspicious behavior for improved security monitoring.
 
 ## Proceed to Exercise 5

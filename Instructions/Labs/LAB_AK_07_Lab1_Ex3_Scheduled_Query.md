@@ -206,5 +206,8 @@ In this task, you test your new scheduled query rule.
  
    <validation step="d771d20d-c2d8-410c-8b53-a1ccd733741e" />
 
+## Review
+
+ In this exercise, you enhanced security monitoring by first connecting the Azure Activity connector to gather activity logs. Then, you created a scheduled query for automated log analysis and finally tested the new rule to ensure it functions as expected
 
 ## Proceed to Exercise 4

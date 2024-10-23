@@ -11,6 +11,14 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Perform%20simulated%20attacks)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
+## Objectives
+
+After you complete this Exercise, you will be able to:
+
+-   Task 1: Connect the Windows security event connector
+-   Task 2: Enable Microsoft Defender for Cloud
+-   Task 3: Persistence Attack with Registry Key Add
+
 ### Task 1: Connect the Windows security event connector
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
@@ -206,5 +214,9 @@ In this task, you will perform attacks on the host connected with Azure Arc that
       >**Note:** You will see DNS resolve errors. This is expected.
       
       >**Important**: Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
+
+## Review
+
+In this exercise, you connected the Windows security event connector to monitor security events, enabled Microsoft Defender for Cloud to enhance cloud security, and simulated a persistence attack by adding a registry key to test detection capabilities.
 
 ## Proceed to Exercise 7

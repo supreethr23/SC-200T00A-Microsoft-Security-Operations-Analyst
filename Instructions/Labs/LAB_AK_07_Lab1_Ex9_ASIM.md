@@ -2,9 +2,21 @@
 
 ## Lab scenario
 
+![Lab overview.](../Media/asimarc.png)
+
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You need to model ASIM parsers for a specific Windows registry event.  These simplified parsers will be finalized at a later time following the ASIM parser registry event normalization standard (https://docs.microsoft.com/en-us/azure/sentinel/registry-event-normalization-schema).
 
 >**Important:** This lab involves entering lengthy KQL ASIM parser scripts into Microsoft Sentinel. The scripts were provided via download files at the beginning of this lab. An alternate location to download them is:  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
+
+
+## Objectives
+
+After you complete this Exercise, you will be able to:
+
+-   Task 1: Develop KQL Function for Microsoft 365 Defender Registry Event 
+-   Task 2: Develop KQL Function for SecurityEvent table.
+-   Task 3: Create a unifying workspace parser. 
+
 
 ### Task 1: Develop KQL Function for Microsoft 365 Defender Registry Event 
 
@@ -20,106 +32,124 @@ In this task, you create a function that is a workspace parser for DeviceRegistr
 
 1. Select the Microsoft Sentinel Workspace you created earlier.
 
-1. Select the **Logs** page under **General** section. close the **Queries hub** page by clicking on **X (2).**
+1. Select the **Logs (1)** under **General** section. close the **Queries hub** page by clicking on **X (2).**
+
+    ![Picture 1](../Media/sc-200-65.png)
+
+1. Click on **Try the new Log Analytics** on the top right corner.
+
+    ![Picture 1](../Media/sc-200-91.png)
+
+1. Change the mode to **KQL mode.**
+
+    ![Picture 1](../Media/sc-200-92.png)
 
 1. Copy and paste the  KQL statements into a new query tab.
 
     ```KQL
-    let RegistryType = datatable (TypeCode: string, TypeName: string) [
-    "None", "Reg_None",
-    "String", "Reg_Sz",
-    "ExpandString", "Reg_Expand_Sz",
-    "Binary", "Reg_Binary",
-    "Dword", "Reg_DWord",
-    "MultiString", "Reg_Multi_Sz",
-    "QWord", "Reg_QWord"
-    ];
-    let RegistryEvents_M365D=() {
-    DeviceRegistryEvents
-    | extend
-        // Event
-        EventOriginalUid = tostring(ReportId), 
-        EventCount = int(1), 
-        EventProduct = 'M365 Defender for Endpoint', 
-        EventVendor = 'Microsoft', 
-        EventSchemaVersion = '0.1.0', 
-        EventStartTime = TimeGenerated, 
-        EventEndTime = TimeGenerated, 
-        EventType = ActionType,
-        // Registry
-        RegistryKey = iff (ActionType in ("RegistryKeyDeleted", "RegistryValueDeleted"), PreviousRegistryKey, RegistryKey),
-        RegistryValue = iff (ActionType == "RegistryValueDeleted", PreviousRegistryValueName, RegistryValueName),
-        // RegistryValueType -- original name is fine 
-        // RegistryValueData -- original name is fine 
-        RegistryKeyModified = iff (ActionType == "RegistryKeyRenamed", PreviousRegistryKey, ""),
-        RegistryValueModified = iff (ActionType == "RegistryValueSet", PreviousRegistryValueName, ""),
-        // RegistryValueTypeModified -- Not provided by Defender
-        RegistryValueDataModified = PreviousRegistryValueData
-    | lookup RegistryType on $left.RegistryValueType == $right.TypeCode
-    | extend RegistryValueType = TypeName
-    | project-away
-        TypeName,
-        PreviousRegistryKey,
-        PreviousRegistryValueName,
-        PreviousRegistryValueData
-    // Device
-    | extend
-        DvcHostname = DeviceName, 
-        DvcId = DeviceId, 
-        Dvc = DeviceName 
-    // Users
-    | extend
-        ActorUsername = iff (InitiatingProcessAccountDomain == '', InitiatingProcessAccountName, strcat(InitiatingProcessAccountDomain, '\\', InitiatingProcessAccountName)), 
-        ActorUsernameType = iff(InitiatingProcessAccountDomain == '', 'Simple', 'Windows'), 
-        ActorUserIdType = 'SID'
-    | project-away InitiatingProcessAccountDomain, InitiatingProcessAccountName
-    | project-rename
-    ActorUserId = InitiatingProcessAccountSid, 
-    ActorUserAadId = InitiatingProcessAccountObjectId, 
-    ActorUserUpn = InitiatingProcessAccountUpn
-    // Processes
-    | extend
-    ActingProcessId = tostring(InitiatingProcessId), 
-    ParentProcessId = tostring(InitiatingProcessParentId) 
-    | project-away InitiatingProcessId, InitiatingProcessParentId
-    | project-rename
-    ParentProcessName = InitiatingProcessParentFileName, 
-    ParentProcessCreationTime = InitiatingProcessParentCreationTime, 
-    ActingProcessName = InitiatingProcessFolderPath, 
-    ActingProcessFileName = InitiatingProcessFileName,
-    ActingProcessCommandLine = InitiatingProcessCommandLine, 
-    ActingProcessMD5 = InitiatingProcessMD5, 
-    ActingProcessSHA1 = InitiatingProcessSHA1, //OK
-    ActingProcessSHA256 = InitiatingProcessSHA256, 
-    ActingProcessIntegrityLevel = InitiatingProcessIntegrityLevel, 
-    ActingProcessTokenElevation = InitiatingProcessTokenElevation, 
-    ActingProcessCreationTime = InitiatingProcessCreationTime 
-    // -- aliases
-    | extend 
-    Username = ActorUsername,
-    UserId = ActorUserId,
-    UserIdType = ActorUserIdType,
-    User = ActorUsername,
-    CommandLine = ActingProcessCommandLine,
-    Process = ActingProcessName
-    };
-    RegistryEvents_M365D
+       let RegistryType = datatable (TypeCode: string, TypeName: string) [
+       "None", "Reg_None",
+       "String", "Reg_Sz",
+       "ExpandString", "Reg_Expand_Sz",
+       "Binary", "Reg_Binary",
+       "Dword", "Reg_DWord",
+       "MultiString", "Reg_Multi_Sz",
+       "QWord", "Reg_QWord"
+       ];
+       let RegistryEvents_M365D=() {
+       DeviceRegistryEvents
+       | extend
+           // Event
+           EventOriginalUid = tostring(ReportId), 
+           EventCount = int(1), 
+           EventProduct = 'M365 Defender for Endpoint', 
+           EventVendor = 'Microsoft', 
+           EventSchemaVersion = '0.1.0', 
+           EventStartTime = TimeGenerated, 
+           EventEndTime = TimeGenerated, 
+           EventType = ActionType,
+           // Registry
+           RegistryKey = iff (ActionType in ("Reunion isfuzzy=true
+   vimRegEvtM365D,
+   vimRegEvtSecurityEventgistryKeyDeleted", "RegistryValueDeleted"), PreviousRegistryKey, RegistryKey),
+           RegistryValue = iff (ActionType == "RegistryValueDeleted", PreviousRegistryValueName, RegistryValueName),
+           // RegistryValueType -- original name is fine 
+           // RegistryValueData -- original name is fine 
+           RegistryKeyModified = iff (ActionType == "RegistryKeyRenamed", PreviousRegistryKey, ""),
+           RegistryValueModified = iff (ActionType == "RegistryValueSet", PreviousRegistryValueName, ""),
+           // RegistryValueTypeModified -- Not provided by Defender
+           RegistryValueDataModified = PreviousRegistryValueData
+       | lookup RegistryType on $left.RegistryValueType == $right.TypeCode
+       | extend RegistryValueType = TypeName
+       | project-away
+           TypeName,
+           PreviousRegistryKey,
+           PreviousRegistryValueName,
+           PreviousRegistryValueData
+       // Device
+       | extend
+           DvcHostname = DeviceName, 
+           DvcId = DeviceId, 
+           Dvc = DeviceName 
+       // Users
+       | extend
+           ActorUsername = iff (InitiatingProcessAccountDomain == '', InitiatingProcessAccountName, strcat(InitiatingProcessAccountDomain, '\\', InitiatingProcessAccountName)), 
+           ActorUsernameType = iff(InitiatingProcessAccountDomain == '', 'Simple', 'Windows'), 
+           ActorUserIdType = 'SID'
+       | project-away InitiatingProcessAccountDomain, InitiatingProcessAccountName
+       | project-rename
+       ActorUserId = InitiatingProcessAccountSid, 
+       ActorUserAadId = InitiatingProcessAccountObjectId, 
+       ActorUserUpn = InitiatingProcessAccountUpn
+       // Processes
+       | extend
+       ActingProcessId = tostring(InitiatingProcessId), 
+       ParentProcessId = tostring(InitiatingProcessParentId) 
+       | project-away InitiatingProcessId, InitiatingProcessParentId
+       | project-rename
+       ParentProcessName = InitiatingProcessParentFileName, 
+       ParentProcessCreationTime = InitiatingProcessParentCreationTime, 
+       ActingProcessName = InitiatingProcessFolderPath, 
+       ActingProcessFileName = InitiatingProcessFileName,
+       ActingProcessCommandLine = InitiatingProcessCommandLine, 
+       ActingProcessMD5 = InitiatingProcessMD5, 
+       ActingProcessSHA1 = InitiatingProcessSHA1, //OK
+       ActingProcessSHA256 = InitiatingProcessSHA256, 
+       ActingProcessIntegrityLevel = InitiatingProcessIntegrityLevel, 
+       ActingProcessTokenElevation = InitiatingProcessTokenElevation, 
+       ActingProcessCreationTime = InitiatingProcessCreationTime 
+       // -- aliases
+       | extend 
+       Username = ActorUsername,
+       UserId = ActorUserId,
+       UserIdType = ActorUserIdType,
+       User = ActorUsername,
+       CommandLine = ActingProcessCommandLine,
+       Process = ActingProcessName
+       };
+       RegistryEvents_M365D
+    
+    SecurityEvent
     ```
 
 1. Select **Run** to confirm the KQL is valid.
 
-1. Select **Save**, then **Save as function**.
+    ![Picture 1](../Media/sc-200-7-1.png)
 
-1. Under *Save as function* set the following:
+1. Select **Save (1)** drop down, then **Save as function (2)**.
+
+    ![Picture 1](../Media/sc-200-7-4.png)
+
+1. Under *Save as function* set the following then click on **Save (3).**
 
     |Setting|Value|
     |---|---|
-    |Function name|vimRegEvtM365D|
-    |Legacy Category|MyASIM|
+    |Function name|vimRegEvtM365D **(1)**|
+    |Legacy Category|MyASIM **(2)**|
 
-    >**Note**: If the Above query did not provide any output, it might take sometime for sentinel to gather the logs from the backend. meanwhile we can proceed with the next task and come back later after sometime.
+    ![Picture 1](../Media/sc-200-67.png)    
 
-1. Then select **Save**.
+     >**Note**: IF the Above query did not provide any output, it might take sometime for sentinel to gather the logs from the backend. meanwhile we can proceed with the next task and come back later after sometime.
 
 1. In a new query tab, enter **vimRegEvtM365D** and select **Run**.
 
@@ -128,6 +158,8 @@ In this task, you create a function that is a workspace parser for DeviceRegistr
 In this task, you create a function that is a workspace parser for SecurityEvent.
 
 1. Create a new query tab.
+
+    >**Note**: Make sure to set the mode to **KQL Mode.**
 
 1. Copy and paste the KQL statements into the new query tab.
 
@@ -219,7 +251,9 @@ In this task, you create a function that is a workspace parser for SecurityEvent
 
 1. Select **Run** to confirm the KQL is valid.
 
-    >**Note**: Make sure you replace the EventID which you copied earlier to get the expected **EventID** Output.
+    >**Note**: Make sure you replace the EventID which need to be copied from the KQL query 1 table by scrolling to the right and replace the 2nd KQL query with that event id.
+
+    ![Picture 1](../Media/sc-200-7-5.png)    
 
 1. Select **Save**, then **Save as function**.
 
@@ -272,6 +306,10 @@ In this task, you create a unifying parser function that combines the previous t
     | where ActionType == 'RegistryValueSet'
     ```
 
-    >**Note**: Sometimes the ouput of the query might not come as expected, please proceed with the next exercise.
+    >**Note**: Sometimes the ouput of the query might not come as expected. please proceed with the next exercise.
+
+## Review
+
+In this exercise, you developed KQL functions for both Microsoft 365 Defender registry events and the SecurityEvent table to streamline data analysis. You then created a unifying workspace parser to integrate and standardize log data across these sources for more efficient security monitoring.
 
 ## Proceed to Exercise 8
