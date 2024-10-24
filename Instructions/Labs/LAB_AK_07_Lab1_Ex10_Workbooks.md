@@ -36,7 +36,9 @@ In this task, you will explore the Microsoft Sentinel workbook templates.
 
     ![linux login](../Media/sc-200-96.png)
 
-     >**Note:** Make sure **Azure Activity** in Data ***connectors*** under ***Configuration*** left blade is in **Connected** Status to view the results.
+     >**Note:** Make sure **Azure Activity** in ***Data connectors*** under ***Configuration*** left blade is in **Connected** Status to view the results.
+     
+     >**Note:** If not Navigate to ***Data connectors*** under Configuration, select ***Azure Activity*** then click on **Open connector page** ->scroll down and select **Launch Azure Policy Assignment wizard>** -> On the ***Basic*** tab under Scope click on the **elipse(...)** then select your ***Subscription and Resource group*** then click **Select**-> Navigate to ***Parameter*** tab, select your ***Primary Log Analytics Workspace*** by clicking on the **elipse (...)** then click **Select** ->Navigate to ***Remediation*** tab select the **create a remediation task** checkbox then click on **Review + create** and then **Create.**
 
 1. Close the workbook by selecting the **X** in the top-right corner.
 
