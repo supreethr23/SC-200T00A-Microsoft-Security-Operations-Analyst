@@ -134,7 +134,7 @@ In this task, you create a function that is a workspace parser for DeviceRegistr
 
 1. Select **Run** to confirm the KQL is valid.
 
-    ![Picture 1](../Media/sc-200-7-1.png)
+    ![Picture 1](../Media/sc-200-106.png)
 
 1. Select **Save (1)** drop down, then **Save as function (2)**.
 
