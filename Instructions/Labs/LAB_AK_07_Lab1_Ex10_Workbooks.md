@@ -30,11 +30,13 @@ In this task, you will explore the Microsoft Sentinel workbook templates.
 
 1. Search for and select the **Azure Activity (2)** template workbook. In the right pane, scroll down and select the **View template (3)** button.
 
-    ![linux login](../Media/sc-200-69.png)   
+    ![linux login](../Media/sc-200-97.png)   
 
 1. Review the contents of the workbook. It shows insights into your Azure subscription operations by collecting and analyzing the data from the Activity Log.
 
-    ![linux login](../Media/m3.png)  
+    ![linux login](../Media/sc-200-96.png)
+
+     >**Note:** Make sure **Azure Activity** in Data ***connectors*** under ***Configuration*** left blade is in **Connected** Status to view the results.
 
 1. Close the workbook by selecting the **X** in the top-right corner.
 
@@ -42,13 +44,19 @@ In this task, you will explore the Microsoft Sentinel workbook templates.
 
 In this task, you will save a workbook template and modify it.
 
-1. You should be back in the **Microsoft Sentinel - Workbooks - Templates** tab. Scroll down again and select the **Save** button for the *Azure Activity* workbook. 
+1. You should be back in the **Microsoft Sentinel - Workbooks - Templates** tab. Scroll down again and select the **Save (1)** button for the *Azure Activity* workbook.
+
+    ![linux login](../Media/sc-200-98.png)  
 
 1. Leave **East US** as the default value for *Region* and select **yes**.
 
 1. Select the **View saved workbook** button.
 
+    ![linux login](../Media/sc-200-99.png)  
+
 1. Select **Edit** in the command bar to enable changes in the workbook.
+
+    ![linux login](../Media/sc-200-100.png)  
 
 1. Scroll down to the *Caller activities over time* area, and look at the color of the *Activities* column since we are going to format those columns. Select the **Edit** button below the grid.
 
@@ -56,19 +64,23 @@ In this task, you will save a workbook template and modify it.
 
 1. Select the **Column Settings** button, it is located to the right of the *Run Query* command bar. **Hint:** This button only appears if there is data from the KQL query.
 
-   ![linux login](../Media/m5.png)  
+    ![linux login](../Media/sc-200-101.png)  
 
-1. In the *Edit column settings* blade that appears, within *Columns* select **Activities**.
+1. In the *Edit column settings* blade that appears, within *Columns* select **Activities (1)**.
 
-1. Change the value for *Column renderer* to **Heatmap**. For *Color palette*, scroll down to select **32-color categorical**.
+1. Change the value for *Column renderer* to **Heatmap (2)**. For *Color palette*, scroll down to select **32-color categorical (3)**.
 
-1. Select **Save and Close**. Notice the change in the *Activities* column.
+1. Select **Save and Close (4)**. Notice the change in the *Activities* column.
 
-   ![linux login](../Media/m6.png)  
+    ![linux login](../Media/sc-200-102.png)  
 
 1. Select **Done Editing** at the bottom of the query (not the top menu).
 
-1. Now select **Done Editing** at the top menu and select the **Save** icon. 
+    ![linux login](../Media/sc-200-103.png)  
+
+1. Now select **Done Editing (1)** at the top menu and select the **Save (2)** icon.
+
+    ![linux login](../Media/sc-200-104.png)  
 
 1. Close the workbook by selecting the **X** in the top-right corner and observe the change.
 
