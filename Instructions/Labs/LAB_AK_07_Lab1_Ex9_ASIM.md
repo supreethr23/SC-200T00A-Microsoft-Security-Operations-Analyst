@@ -280,6 +280,8 @@ In this task, you create a unifying parser function that combines the previous t
     vimRegEvtSecurityEvent
     ```
 
+    >**Note**: Sometimes the ouput of the query might not come as expected. please proceed with the next exercise.    
+
 1. Select **Run** to confirm the KQL is valid.
 
 1. Select **Save**, then **Save as function**.
@@ -303,8 +305,6 @@ In this task, you create a unifying parser function that combines the previous t
     ```
 
     >**Note**: Sometimes the ouput of the query might not come as expected. please proceed with the next exercise.
-    imRegEvt
-| summarize Count = count() by AccountType
 
 ## Review
 
