@@ -85,9 +85,7 @@ In this task, you will connect an Azure Windows virtual machine to Microsoft Sen
 
  1. Enter **AZWIN01DCR** for Rule Name, then select Next: Resources.
 
- 1. Select +Add resource(s).
-
- 1. Expand **RG-AZWIN01**, then select AZWIN01.
+ 1. Expand **Subcription** then expand **RG-AZWIN01**, then select AZWIN01.
 
  1. Select **Apply**.
 
@@ -189,9 +187,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
  1. Enter **WIN2** for Rule Name, then select **Next: Resources**.
 
- 1. Select **+Add resource(s)**.
-
- 1. Expand **rg-defender** (or the Resource Group you are created), then select **WIN-xxxx**.
+ 1. Expand **Subcription** then expand **rg-defender** (or the Resource Group you are created), then select **WIN-xxxx**.
 
  1. Select **Apply**.
 
@@ -200,12 +196,6 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
  1. Select **Create**.
 
 1. Wait a few minutes and then select **Refresh** to see the new data collection rule listed.
-
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 5: Onboard Microsoft Defender for Endpoint Device
 
