@@ -134,7 +134,7 @@ In this task, you create a function that is a workspace parser for DeviceRegistr
 
 1. Select **Run** to confirm the KQL is valid.
 
-    ![Picture 1](../Media/sc-200-7-1.png)
+    ![Picture 1](../Media/sc-200-106.png)
 
 1. Select **Save (1)** drop down, then **Save as function (2)**.
 
@@ -150,8 +150,6 @@ In this task, you create a function that is a workspace parser for DeviceRegistr
     ![Picture 1](../Media/sc-200-67.png)    
 
      >**Note**: IF the Above query did not provide any output, it might take sometime for sentinel to gather the logs from the backend. meanwhile we can proceed with the next task and come back later after sometime.
-
-1. In a new query tab, enter **vimRegEvtM365D** and select **Run**.
 
 ### Task 2: Develop KQL Function for SecurityEvent table. 
 
@@ -268,8 +266,6 @@ In this task, you create a function that is a workspace parser for SecurityEvent
 
 1. Then select **Save**.
 
-1. In a new query tab, enter **vimRegEvtSecurityEvent** and select **Run**.
-
 ### Task 3: Create a unifying workspace parser. 
 
 In this task, you create a unifying parser function that combines the previous two functions.  
@@ -283,6 +279,8 @@ In this task, you create a unifying parser function that combines the previous t
     vimRegEvtM365D,
     vimRegEvtSecurityEvent
     ```
+
+    >**Note**: Sometimes the ouput of the query might not come as expected. please proceed with the next exercise.    
 
 1. Select **Run** to confirm the KQL is valid.
 
@@ -303,7 +301,7 @@ In this task, you create a unifying parser function that combines the previous t
 
     ```KQL
     imRegEvt
-    | where ActionType == 'RegistryValueSet'
+    | summarize Count = count() by AccountType
     ```
 
     >**Note**: Sometimes the ouput of the query might not come as expected. please proceed with the next exercise.
