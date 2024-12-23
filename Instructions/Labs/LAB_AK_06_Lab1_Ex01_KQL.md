@@ -1,63 +1,96 @@
----
-lab:
-    title: 'Exercise 1 - Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
-    module: 'Learning Path 6 - Create queries for Microsoft Sentinel using Kusto Query Language (KQL)'
----
-
-# Learning Path 6 - Lab 1 - Exercise 1 - Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
+# Module 6 - Lab 1 - Exercise 1 - Create queries for Microsoft Sentinel using Kusto Query Language (KQL)
 
 ## Lab scenario
-
-![Lab overview.](../Media/SC-200-Lab_Diagrams_Mod4_L1_Ex1.png)
-
 You are a Security Operations Analyst working at a company that is implementing Microsoft Sentinel. You are responsible for performing log data analysis to search for malicious activity, display visualizations, and perform threat hunting. To query log data, you use the Kusto Query Language (KQL).
 
->**Important:** This lab involves entering many KQL scripts into Microsoft Sentinel. The scripts were provided in a file at the beginning of this lab. An alternate location to download them is:  <https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles>
+>**Important:** This lab involves entering many KQL scripts into Microsoft Sentinel. The scripts were provided in a file at the beginning of this lab. An alternate location to download them is:  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
 
-### Estimated time to complete this lab: 60 minutes
+## Lab objectives
+ In this lab, you will perform the following:
 
-### Task 1: Access the KQL testing area
+- Task 1: Create a Log Analytics Workspace
+- Task 2: Initialize the Microsoft Sentinel Workspace.
+- Task 3: Run Basic KQL Statements
+- Task 4: Analyze Results in KQL with the Summarize Operator
+- Task 5: Create visualizations in KQL with the Render Operator
+- Task 6: Build multi-table statements in KQL
+- Task 7: Work with string data in KQL
 
-In this task, you will access a Log Analytics environment where you can practice writing KQL statements.
+## Estimated timing: 90 minutes
 
-1. Login to **WIN1** virtual machine as Admin with the password: **Pa55w.rd**.  
+## Architecture Diagram
 
-1. In the Microsoft Edge browser, go to <https://aka.ms/lademo> and login with the Administrator credentials.
+  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod4_L1_Ex1.png)
 
-1. Close the Log Analytics video pop-up window that appears.
+### Task 1: Create a Log Analytics Workspace
 
-1. Explore the available tables and other tools listed in the *schema and filter pane* on the left side of the screen.
+In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud.
 
-1. In the query editor, enter the following query and select the **Run** button. You should see the query results in the bottom window.
+1. In the Edge browser, open the Azure portal at (https://portal.azure.com).
 
-    ```KQL
-    SecurityEvent
-    ```
+1. In the **Sign in** dialog box, copy and paste Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
 
-1. Notice that you have reached the maximum number of results (30,000).
+1. In the **Enter password** dialog box, copy and paste Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
 
-1. Change the *Time range* to **Last 30 minutes** in the Query Window.
+1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
 
-1. Next to the first record, select the **>** to expand the information for the row.
+1. Select **+Create** from the command bar.
 
+1. Select **Create new** under Resource Group and provide the name **RG-Defender**. Select **Ok**.
+1. For the Name, enter as **uniquenameDefender**.
 
-### Task 2: Run Basic KQL Statements
+1. Select the default Region. 
+
+1. Select **Review + Create**.
+
+1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
+
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="054d3b2b-26bd-41d8-8690-e4ace2e78de4" />
+
+### Task 2: Initialize the Microsoft Sentinel Workspace.
+
+1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+
+1. Click on **+ Create**.  
+
+1. Next, in Add Microsoft Sentinel to a workspace page.
+
+1. Select your existing workspace that was created in the previous task, then select **Add**. This could take a few minutes.
+
+1. In the Microsoft Sentinel free trial activated tab, select **Ok**.
+
+### Task 3: Run Basic KQL Statements
 
 In this task, you will build basic KQL statements.
 
 >**Important:**  For each query, clear the previous statement from the Query Window or open a new Query Window by selecting **+** after the last opened tab (up to 25).
 
-1. The following statement demonstrates the **search** operator, which searches all columns in the table for the value.
+1. Navigate to Log analytics workspace created in earlier step, expand **Classic.** select the Virtual machine (depricated) option.
 
-1. Change the *Time range* to **Last 30 minutes** in the Query Window.
+1. On the right of the screen click on the virtual machine displayed and click on **Connect**. wait for the virtual machine status to change to **Connected**
 
-1. In the Query Window enter the following statement and select **Run**:
+1. Navigate back to the **Microsoft Sentinel** page, from the left navigation menu, scroll down to the **Content management** section and select **Content Hub**.
+
+1. Search for **Windows Security Events (2)** from the search bar and select it, Click on **Install (4)** on the right navigation page that shows up.
+
+1. From the left navigation pane, click on **Data connectors (1)** under the **Configuration** section.
+
+1. Select the **Security Events via Legacy Agent** Connector and click on open connector, scroll down look for **Select which events to stream** Select the **All events** radio button and click on **Apply Changes**.
+
+1. Go to Sentinel, click on **Logs**. Close all the pop-ups if they appear.
+
+  >**Note:** You may encounter situations where some of the queries below don't work as expected. Please don't hesitate to refer to the lab guide—there are instances when the connector may take some time to reach the desired state, which can affect how certain queries run. Your patience and understanding are greatly appreciated
+
+1. The following statement demonstrates the **search** operator, which searches all columns in the table for the value. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
     search "location"
     ```
-
-    >**Note:** Using the *Search* operator without specific tables or qualifying clauses is less efficient than table-specific and column-specific text filtering.
 
 1. The following statement demonstrates **search** across tables listed within the **in** clause. In the Query Window enter the following statement and select **Run**: 
 
@@ -115,7 +148,7 @@ In this task, you will build basic KQL statements.
     ];
     SecurityEvent  
     | where TimeGenerated > ago(1h)
-    | where Account in (suspiciousAccounts)
+    | where Account in (suspiciousAccounts)
     ```
 
     >**Tip:** You can re-format the query easily by selecting the ellipsis (...) in the Query window and select **Format query**.
@@ -173,7 +206,7 @@ In this task, you will build basic KQL statements.
     | project-away ProcessName
     ```
 
-### Task 3: Analyze Results in KQL with the Summarize Operator
+### Task 4: Analyze Results in KQL with the Summarize Operator
 
 In this task, you will build KQL statements to aggregate data. **Summarize** groups the rows according to the **by** group columns, and calculates aggregations over each group.
 
@@ -267,8 +300,7 @@ In this task, you will build KQL statements to aggregate data. **Summarize** gro
     | summarize make_set(Account) by Computer
     ```
 
-
-### Task 4: Create visualizations in KQL with the Render Operator
+### Task 5: Create visualizations in KQL with the Render Operator
 
 In this task, you will use generate visualizations with KQL statements.
 
@@ -291,7 +323,7 @@ In this task, you will use generate visualizations with KQL statements.
     ```
 
 
-### Task 5: Build multi-table statements in KQL
+### Task 6: Build multi-table statements in KQL
 
 In this task, you will build multi-table KQL statements.
 
@@ -302,22 +334,22 @@ In this task, you will build multi-table KQL statements.
     1. **Query 1** will return all rows of SecurityEvent and all rows of SigninLogs.
 
         ```KQL
-        SecurityEvent  
-        | union SigninLogs  
+        SecurityEvent  
+        | union SigninLogs  
         ```
 
     1. **Query 2** will return one row and column, which is the count of all rows of SigninLogs and all rows of SecurityEvent.
 
         ```KQL
-        SecurityEvent  
-        | union SigninLogs  
-        | summarize count() 
+        SecurityEvent  
+        | union SigninLogs  
+        | summarize count() 
         ```
 
     1. **Query 3** will return all rows of SecurityEvent and one (last) row for SigninLogs. The last row for SigninLogs will have the summarized count of the total number of rows.
 
         ```KQL
-        SecurityEvent  
+        SecurityEvent  
         | union (SigninLogs | summarize count() | project count_)
         ```
 
@@ -345,12 +377,11 @@ In this task, you will build multi-table KQL statements.
     ) on Account
     ```
 
-    >**Important:**
-     The first table specified in the join is considered the Left table. The table after the **join** operator is the right table. When working with columns from the tables, the $left.Column name and $right.Column name is to distinguish which tables column are referenced. The **join** operator supports a full range of types: flouter, inner, innerunique, leftanti, leftantisemi, leftouter, leftsemi, rightanti, rightantisemi, rightouter, rightsemi.
+    >**Important:** The first table specified in the join is considered the Left table. The table after the **join** operator is the right table. When working with columns from the tables, the $left.Column name and $right.Column name is to distinguish which tables column are referenced. The **join** operator supports a full range of types: flouter, inner, innerunique, leftanti, leftantisemi, leftouter, leftsemi, rightanti, rightantisemi, rightouter, rightsemi.
 
 1. Change back the **Time range** to **Last 24 hours** in the Query Window.
 
-### Task 6: Work with string data in KQL
+### Task 7: Work with string data in KQL
 
 In this task, you will work with structured and unstructured string fields with KQL statements.
 
@@ -387,8 +418,6 @@ In this task, you will work with structured and unstructured string fields with 
     | project resourceName, totalSlices, sliceNumber, lockTime, releaseTime, previousLockTime
     ```
 
->**Important:** The following queries do not currently produce results in the lademo environment used for this lab. Entries in the *SigninLogs* table have been removed. However, the KQL queries demonstrate important concepts and use cases, so please take time to review them.
-
 1. The following statement demonstrates working with **dynamic** fields, which are special since they can take on any value of other data types. In this example, The DeviceDetail field from the SigninLogs table is of type **dynamic**. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
@@ -396,15 +425,15 @@ In this task, you will work with structured and unstructured string fields with 
     | extend OS = DeviceDetail.operatingSystem
     ```
 
-1. The following example shows how to break out packed fields for SigninLogs. In the Query Window enter the following statement and select **Run**:
+1. The following example shows how to break out packed fields for SigninLogs. In the Query Window enter the following statement and select **Run**: 
 
     ```KQL
     SigninLogs 
-    | extend OS = DeviceDetail.operatingSystem, Browser = DeviceDetail.browser 
-    | extend StatusCode = tostring(Status.errorCode), StatusDetails = tostring(Status.additionalDetails) 
-    | extend Date = startofday(TimeGenerated) 
-    | summarize count() by Date, Identity, UserDisplayName, UserPrincipalName, IPAddress, ResultType, ResultDescription, StatusCode, StatusDetails 
-    | sort by Date
+    | extend OS = DeviceDetail.operatingSystem, Browser = DeviceDetail.browser 
+    | extend StatusCode = tostring(Status.errorCode), StatusDetails = tostring(Status.additionalDetails) 
+    | extend Date = startofday(TimeGenerated) 
+    | summarize count() by Date, Identity, UserDisplayName, UserPrincipalName, IPAddress, ResultType, ResultDescription, StatusCode, StatusDetails 
+    | sort by Date
     ```
 
     >**Important:** Although the dynamic type appears JSON-like, it can hold values that the JSON model does not represent because they do not exist in JSON. Therefore, in serializing dynamic values into a JSON representation, values that JSON cannot represent are serialized into string values. 
@@ -445,4 +474,15 @@ In this task, you will work with structured and unstructured string fields with 
     PrivLogins  
     ```
 
-## You have completed the lab.
+## Review
+
+In this lab, you have completed the following:
+- Create a Log Analytics Workspace
+- Initialize the Microsoft Sentinel Workspace.
+- Run Basic KQL Statements
+- Analyze Results in KQL with the Summarize Operator
+- Create visualizations in KQL with the Render Operator
+- Build multi-table statements in KQL
+- Work with string data in KQL
+
+## You have successfully completed the lab.

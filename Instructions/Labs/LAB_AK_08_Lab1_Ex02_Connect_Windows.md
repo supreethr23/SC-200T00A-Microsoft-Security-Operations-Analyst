@@ -1,10 +1,4 @@
----
-lab:
-    title: 'Exercise 2 - Connect Windows devices to Microsoft Sentinel using data connectors'
-    module: 'Learning Path 8 - Connect logs to Microsoft Sentinel'
----
-
-# Learning Path 8 - Lab 1 - Exercise 2 - Connect Windows devices to Microsoft Sentinel using data connectors
+# Module 8 - Lab 1 - Exercise 2 - Connect Windows devices to Microsoft Sentinel using data connectors
 
 ## Lab scenario
 
