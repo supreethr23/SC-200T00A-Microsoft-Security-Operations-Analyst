@@ -1,5 +1,4 @@
-# Module 9 - Lab 1 - Exercise 2 - Threat Hunting using Notebooks with Microsoft Sentinel
-# Module 7 - Lab 1 - Exercise 9 - Create ASIM parsers
+# Module 9 - Lab 1 - Exercise 9 - Create ASIM parsers
 
 ## Lab scenario
 
