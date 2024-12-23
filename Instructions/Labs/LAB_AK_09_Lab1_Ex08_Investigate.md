@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 8 - Investigate Incidents
+# Module 9 - Lab 1 - Exercise 8 - Investigate Incidents
 
 ## Lab scenario
 
