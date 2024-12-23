@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 2 - Create a Playbook
+# Module 9 - Lab 1 - Exercise 2 - Create a Playbook
 
 ## Lab scenario
 
