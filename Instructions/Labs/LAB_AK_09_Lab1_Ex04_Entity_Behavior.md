@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 4 - Explore Entity Behavior Analytics
+# Module 9 - Lab 1 - Exercise 4 - Explore Entity Behavior Analytics
 
 ## Lab scenario
 
