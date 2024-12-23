@@ -1,4 +1,4 @@
-# Module 7 - Lab 1 - Exercise 11 - Use Repositories in Microsoft Sentinel
+# Module 9 - Lab 1 - Exercise 11 - Use Repositories in Microsoft Sentinel
 
 ## Lab scenario
 
