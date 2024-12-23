@@ -50,6 +50,39 @@ In this task, you will create a scheduled query and connect it to the Teams chan
     >1. Select **Create** to finish.
     >1. It might take few minutes for the **Connected** status to appear.
 
+1. Select **Create rule** to continue.
+
+1. In the Analytics rule wizard, on the *General* tab, change the *Severity* to **Medium**.
+
+1. Select **Next: Set rule logic >** button:
+
+1. For the rule query, select **View query results**. You shouldn't receive any results nor any errors.
+
+1. Close the *Logs* window by selecting the upper right **X** and select **OK** to discard to save changes to go back to the wizard.
+
+1. Scroll down and under *Query scheduling* set the following:
+
+    |Setting|Value|
+    |---|---|
+    |Run Query every|5 minutes|
+    |Lookup data from the last|1 Days|
+
+    >**Note:** We are purposely generating many incidents for the same data. This enables the Lab to use these alerts.
+
+1. Under the *Alert threshold* area, leave the value unchanged since we want the alert to register every event.
+
+1. Under the *Event grouping* area, leave the **Group all events into a single alert** as the selected option since we want to generate a single alert every time it runs, as long as the query returns more results than the specified alert threshold above.
+
+1. Select the **Next: Incident settings >** button.
+
+1. On the *Incident settings* tab, review the default options.
+
+1. Select the **Next: Automated response >** button.
+
+1. Select the **Next: Review and create >** button.
+  
+1. Select **Save**.
+
 ## Task 3: Create a Scheduled Query.
 
 1. Once, you've received data by reviewing the green icon under *Data sources: Azure Activity*.
