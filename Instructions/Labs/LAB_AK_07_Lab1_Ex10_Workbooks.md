@@ -62,7 +62,7 @@ In this task, you will save a workbook template and modify it.
 
 1. Change the value for *Column renderer* to **Heatmap**. For *Colour palette*, scroll down to select **32-color categorical**.
 
-1. Select **Save and Close**. Notice the change in the *Activities* column.
+1. Select **Apply**, then **Save and Close**. Notice the change in the *Activities* column.
 
 1. Select **Done Editing** at the bottom of the query (not the top menu).
 
