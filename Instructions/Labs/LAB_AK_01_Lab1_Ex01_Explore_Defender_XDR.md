@@ -1,92 +1,102 @@
----
-lab:
-    title: 'Exercise 1 - Explore Microsoft Defender XDR'
-    module: 'Learning Path 1 - Mitigate threats using Microsoft Defender XDR'
----
-
-# Learning Path 1 - Lab 1 - Exercise 1 - Explore Microsoft Defender XDR
+# Module 1 - Lab 1 - Explore Microsoft Defender XDR
 
 ## Lab scenario
+ You are a Security Operations Analyst working at a company that is implementing Microsoft Defender XDR. You start by assigning preset security policies in EOP and Microsoft Defender XDR for Office 365.
 
-![M365 Defender](../Media/SC-200-Lab_M1_L1_Ex1.png)
+## Lab objectives
+In this lab, you will perform:
+- Task 1: Create a Group in Microsoft Entra ID
+- Task 2: Apply Microsoft Defender XDR for Office 365 present security policies
+- Task 3: Preparing the Microsoft Defender XDR workspace
+    
+## Estimated timing: 60 minutes
 
-You're a Security Operations Analyst working at a company that is implementing Microsoft Defender XDR. You start by assigning preset security policies used in Exchange Online Protection (EOP) and Microsoft Defender for Office 365.
+## Architecture Diagram
 
->**Note:** **WWL Tenants - Terms of Use**
-If you are being provided with a tenant as a part of an instructor-led training delivery, please note that the tenant is made available for the purpose of supporting the hands-on labs in the instructor-led training.
-Tenants should not be shared or used for purposes outside of hands-on labs. The tenant used in this course is a trial tenant and cannot be used or accessed after the class is over and are not eligible for extension.
-Tenants must not be converted to a paid subscription. Tenants obtained as a part of this course remain the property of Microsoft Corporation and we reserve the right to obtain access and repossess at any time.
+  ![Picture 1](../Media/2024-07-23.png)
 
-### Estimated time to complete this lab: 30 minutes
+### Task 1: Create a Group in Microsoft Entra ID
 
-### Task 1: Obtain Your Microsoft 365 Credentials
+1. In the Edge browser, go to the Microsoft Azure portal at (https://portal.azure.com)
 
-Once you launch the lab, a Microsoft 365 E5 tenant is made available to you to access in the Microsoft virtual Lab environment. This tenant is automatically assigned a unique username and password. You must retrieve this username and password so that you can sign into and Microsoft 365 within the Microsoft Virtual Lab environment.
+1. In the Search bar of the Azure portal, type **Microsoft Entra ID**, then select **Microsoft Entra ID**.
 
-Because this course can be offered by learning partners using any one of several Authorized Lab Hosting (ALH) providers, the actual steps involved to retrieve the tenant ID associated with your tenant may vary by lab hosting provider. Therefore, your instructor will provide you with the necessary instructions for how to retrieve this information for your course. The information that you should note for later use includes:
+1. Select **Groups** and then click on **New group**.
 
-- **Tenant suffix ID.** This ID is for the onmicrosoft.com accounts that you'll use to sign into Microsoft 365 throughout the labs. This is in the format of **{username}@ZZZZZZ.onmicrosoft.com**, where ZZZZZZ is your unique tenant suffix ID provided by your lab hosting provider. Record this ZZZZZZ value for later use. When any of the lab steps direct you to sign into Microsoft 365 portals, you must enter the ZZZZZZ value that you obtained here.
-- **Tenant password.** This is the password for the admin account provided by your lab hosting provider.
+1. Enter the below details for the new group page:
 
-### Task 2: Apply Microsoft Defender for Office 365 preset security policies
+   |Setting|Value|
+    |---|---|
+    |Group Type| **Microsoft 365** |
+    |Group Name| **Sg-IT-<inject key="DeploymentID" enableCopy="false"/>** |
 
-In this task, you'll assign preset security policies for Exchange Online Protection (EOP) and Microsoft Defender for Office 365 in the Microsoft 365 security portal.
+1. Click on **No owners selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
-1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
+1. Click on **No members selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
-1. Start the Microsoft Edge browser.
+   > **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
-1. In the Microsoft Edge browser, go to the Microsoft Defender XDR portal at (<https://security.microsoft.com>).
+1. Select **Create.**
 
-1. In the **Sign in** dialog box, copy, and paste in the tenant Email account for the admin username provided by your lab hosting provider and then select **Next**.
+### Task 2: Apply Microsoft Defender XDR for Office 365 preset security policies
 
-1. In the **Enter password** dialog box, copy, and paste in the admin's tenant password provided by your lab hosting provider and then select **Sign in**.
+In this task, you will assign preset security policies for Exchange Online Protection (EOP) and Microsoft Defender XDR for Office 365 in the Microsoft  security portal.
 
-    >**Note:** If you receive a message "The operation could not be completed. Please try again later. If the problem persists, contact Microsoft support." just click **OK** to continue.  
+1. In the Edge browser, go to the Microsoft  Defender XDR portal at (https://security.microsoft.com).
 
-1. If shown, close the Microsoft Defender XDR quick tour pop-up window. **Hint:** Later in this lab, you'll need to wait until the Defender workspace is provisioned, you can take this time to navigate through the guided tours to learn more about Microsoft Defender XDR.
+1. You'll see the Sign into Microsoft Defender XDR portal tab. Here, enter your credentials:
+ 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+       ![Enter Your Username](../Media/sc900-image-1.png)
+ 
+1. Next, provide your password:
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+ 
+       ![Enter Your Password](../Media/sc900-image-2.png)
 
-1. From the navigation menu, expand the *Email & Collaboration* section, and select **Policies & rules**.
+    >**Note:** If you receive a message "The operation could not be completed. Please try again later. If the problem persists, contact Microsoft support." Click **OK** to continue.
+
+1. If shown, close the Microsoft Defender XDR quick tour.
+
+1. From the navigation menu, under *Email & Collaboration* area, select **Policies & rules**.
 
 1. On the *Policy & rules* dashboard, select **Threat policies**.
 
 1. On the *Threat policies* dashboard, select **Preset Security Policies**.
 
-    >**Note:** If you receive the message *"Client Error - Error when getting bip rule"* select **OK** to continue. The error is due to the hydration status of your tenant at Office 365 which is not enabled by default.
+    >**Note:** If you receive the message *"Client Error - An error occurred when retrieving preset security policies. Please try again later."* Select **OK** to continue. Refresh your browser using **Ctrl+F5**.
 
-    >**Note:** If you receive the message *"Client Error - An error occurred when retrieving preset security policies. Please try again later."* select **OK** to continue. Refresh your browser using **Ctrl+F5**.
+1. On the **Learn about preset security policies** *pop-out* page, select **Cancel**.
 
-1. On the **Learn about preset security policies** *pop-out* page, select **Close**.
+1. Under **Standard protection**, select **Manage protection settings**. **Hint:** If you see this option greyed out, refresh your browser using **Ctrl+F5**.
 
-1. Under *Standard protection*, select **Manage protection settings**. **Hint:** If you see this option grayed out, refresh your browser using **Ctrl+F5**.
+    >**Note:** After clicking on **Manage protection settings**, This might need 40 to 60 Minutes to load the content, wait for 40 to 60 Minutes to load the page completely after 40 to 60 Minutes back to the same page and might need to sign out of Microsoft defender XDR and sign in again and then try repeating the steps again to move forward. 
 
-1. In the *Apply Exchange Online Protection* section, select **Specific recipients** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**.
+1. In the *Apply Exchange Online Protection* page, select **Specific recipients** under **Apply protection to:** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**.
+                                                                              
+    >**Hint:** Your tenant's domain name is the same that you have for your admin account, it might be something like *mocholxxxxx.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing. 
 
-    >**Hint:** Your tenant's domain name is the same name that you have for your admin account, it might be something like *WWLx######.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
+1. In the *Apply Defender for Office 365 protection* page, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
 
-1. In the *Apply Defender for Office 365 protection* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
+1. In the *Impersonation protection* page, select **Next** for next all steps i.e. (4x times) to continue.
 
-1. In the *Impersonation protection* section, select **Next** four times (4x) to continue.
-
-1. In the *Policy mode* section, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
-
-1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
-
-    >**Note:** If you receive the message *"The URI '<https://outlook.office365.com/psws/service.svc/AntiPhishPolicy>' is not valid for PUT operation. The URI must point to a single resource for PUT operations."* just select **OK** and then select **Cancel** to return to the main page. You will see that *Standard protection is on* option enabled.
-
-1. Under *Strict protection*, select **Manage protection settings**. **Hint:** *Strict protection* is found under "Email & Collaboration - Policies & rules - Threat policies - Preset security policies".
-
-1. In the *Apply Exchange Online Protection*, select **Specific recipients** and under **Groups** start writing **Leadership**, select it, and then select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filter, anti-malware, anti-phishing.
-
-1. In the *Apply Defender for Office 365 protection* section, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, Safe Links.
-
-1. In the *Impersonation protection* section, select **Next** four times (4x) to continue.
-
-1. In the *Policy mode* section, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
+1. In the popup appears for *Policy mode* page, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
 
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
-    >**Note:** If you receive the message *"The URI '<https://outlook.office365.com/psws/service.svc/AntiPhishPolicy>' is not valid for PUT operation. The URI must point to a single resource for PUT operations."* just select **OK** and then select **Cancel** to return to the main page. You will see the *Strict protection is on* option enabled.
+1. Under **Strict protection**, select **Manage protection settings**. **Hint:** *Strict protection* is found under "Email & Collaboration - Policies & rules - Threat policies - Preset security policies".
+
+1. In the *Apply Exchange Online Protection* page, select **Specific recipients** and under **Groups** start writing **Sg-IT-<inject key="DeploymentID" enableCopy="false"/>**, select it, and then select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing.
+
+1. In the *Apply protection to* page, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
+
+1. In the *Impersonation protection* page, select **Next** for next all steps i.e. (4x times) to continue.
+
+1. In the *Policy mode* page, make sure the **Turn on the policy when finished** radio button is selected, and then select **Next**.
+
+1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
 ### Task 3: Preparing the Microsoft Defender XDR workspace
 
@@ -94,12 +104,27 @@ In this task, you'll assign preset security policies for Exchange Online Protect
 
     >**Note:** You may need to scroll all the way to the menu top.
 
+1. On the **Home** portal page, the **Get your SIEM and XDR in one place** banner is displayed.
+
 1. Scroll down the menu items to **Assets** and select **Devices**.
 
-1. The process to deploy the Defender XDR workspace should start and you should see messages saying *loading and Initializing* briefly displayed at the top of the page, and then you're going to see an image of a coffee mug and a message that reads: **Hang on! We're preparing new spaces for your data and connecting them.** It takes approximately 5 minutes to finish. *Leave the page open and make sure it finishes since it's required for the next Lab.*
+1. The process to deploy the Defender XDR workspace should start and you should see messages saying *loading and Initializing* briefly displayed at the top of the page, and then you're going to see an image of a coffee mug and a message that reads: **Hang on! We're preparing new spaces for your data and connecting them.** It will take approximately 5 minutes to finish. *Leave the page open and make sure it finishes since it is required for the next Lab.*
 
-    >**Note:** Disregard pop-up error messages saying *Some of your data cannot be retrieved*. If the message "Hang on! We're preparing new spaces for your data and connecting them" does not appear, or the "Settings > Microsoft Defender XDR > Account" page opens, but you see the message *Failed to load data storage location. Please try again later*, select "Alert service settings" from the "General" menu.
+   >**Note:** If the message "Hang on! We're preparing new spaces for your data and connecting them" does not appear, or the "Settings > Microsoft Defender XDR > Account" page opens, but you see the message "Failed to load data storage location. Please try again later", select "Alert service settings" from the "General" menu, or go to the navigation menu, scroll down to the "Assets" section and select "Devices".
 
-1. When the new workspace initialization completes successfully, the **Home** portal page will display a **Get your SIEM and XDR in one place** banner. And, in **Settings**, the Microsoft Defender XDR General settings for Account, Email notifications, **Preview Features**, Alert service settings, Permissions and roles and Streaming API are now turned on.
+1. When the new space is completed successfully, you will see the Microsoft Defender XDR General settings for Account, Email notifications, Alert service settings, Permissions and Roles, and Streaming API. You will also see **Preview Features** turned on.
 
-## You have completed the lab
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="cd91c5ce-77b6-4769-8216-ebe3792185a5" />
+
+### Review
+ In this lab, you have completed the following:
+   - Created a Group in Microsoft Entra ID
+   - Applied Microsoft Defender XDR for Office 365 preset security policies
+   - Prepared the Microsoft Defender XDR workspace
+
+## You have successfully completed the lab.

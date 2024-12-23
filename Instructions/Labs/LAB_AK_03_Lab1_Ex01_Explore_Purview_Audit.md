@@ -1,16 +1,15 @@
----
-lab:
-    title: 'Exercise 1 - Explore Microsoft Purview Audit logs'
-    module: 'Learning Path 3 - Mitigate threats using Microsoft Purview'
----
-
-# Learning Path 3 - Lab 1 - Exercise 1 - Explore Microsoft Purview Audit logs
+# Module 3 - Lab 1 - Exercise 1 - Explore Microsoft Purview Audit logs
 
 ## Lab scenario
 
 You're a Security Operations Analyst working at a company that is implementing Microsoft Defender XDR and Microsoft Purview. You're assisting colleagues on the the IT compliance team with configuring both Purview Audit (Standard) and Audit (Premium). Their objective is to ensure that all access and modifications to patient data in our network of healthcare facilitie sare accurately logged to meet health data protection regulations.
 
-### Estimated time to complete this lab: 15 minutes
+## Lab objectives
+In this lab, you will perform:
+
+- Task 1: Enable Purview Audit logs
+
+### Estimated timing: 15 minutes
 
 ### Task 1: Enable Purview Audit logs
 
@@ -45,4 +44,8 @@ In this task, you'll assign preset security policies for Exchange Online Protect
     >**Note:**
     > It might take 60 minutes to start recording activities.
 
-## You have completed the lab
+### Review
+ In this lab, you have completed the following:
+   - Enabled Purview Audit logs
+
+## You have successfully completed the lab.

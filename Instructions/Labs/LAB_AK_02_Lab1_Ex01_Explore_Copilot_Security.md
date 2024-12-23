@@ -1,10 +1,4 @@
----
-lab:
-    title: 'Exercise 1 - Explore use cases in Microsoft Security Copilot'
-    module: 'Learning Path 2 - Mitigate threats using Microsoft Security Copilot'
----
-
-# Learning Path 2 - Lab 1 - Exercise 1 - Explore Microsoft Security Copilot
+# Module 2 - Lab 1 - Exercise 1 - Explore Microsoft Security Copilot
 
 ## Lab scenario
 
@@ -16,7 +10,15 @@ In this exercise, you go through the *first run experience* of Microsoft Securit
 > The environment for this exercise is a simulation generated from the product. As a limited simulation, links on a page may not be enabled and text-based inputs that fall outside of the specified script may not be supported. A pop-up message will display stating, "This feature is not available within the simulation." When this occurs, select OK and continue the exercise steps.  
 >:::image type="content" source="../media/simulation-pop-up-error.png" alt-text="Screenshot of pop-up screen indicating that this feature is not available within the simulation.":::
 
-### Estimated time to complete this lab: 45 minutes
+## Lab objectives
+In this lab, you will perform:
+- Task 1: Provision Microsoft Security Copilot
+- Task 2: Explore the Microsoft Security Copilot standalone experience
+- Task 3: Explore the Microsoft Security Copilot embedded experience
+
+## Estimated timing: 45 minutes
+
+## Architecture Diagram
 
 ### Task 1: Provision Microsoft Security Copilot
 
@@ -295,3 +297,11 @@ This task is complex and requires the involvement of more senior analysts. In th
 In this exercise, you explored the first run experience of Microsoft Security Copilot, provisioned capacity, and explored the standalone and embedded experiences of Copilot. You investigated an incident in Microsoft Defender XDR, explored the incident summary, device summary, script analysis, and more. You also pivoted your investigation to the standalone experience and used the pin board as a way to share details of your investigation with your colleagues.
 
 To run additional Microsoft Security Copilot use case simulations, browse to [Explore Microsoft Security Copilot use case simulations](/training/modules/security-copilot-exercises/)
+
+### Review
+ In this lab, you have completed the following:
+   - Provisioned Microsoft Security Copilot
+   - Explored the Microsoft Security Copilot standalone experience
+   - Explored the Microsoft Security Copilot embedded experience
+
+## You have successfully completed the lab.
