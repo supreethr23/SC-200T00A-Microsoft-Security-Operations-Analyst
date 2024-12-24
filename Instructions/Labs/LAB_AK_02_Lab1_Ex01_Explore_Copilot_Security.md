@@ -22,37 +22,52 @@ For this exercise, you're logged in as Avery Howard and you have the global admi
 
 This exercise should take approximately **15** minutes to complete.
 
->**Note:**
-> When a lab instruction calls for opening a link to the simulated environment, it is generally recommended that you open the link in a new browser window so that you can simultaneously view the instructions and the exercise environment. To do so, select the right mouse key and select the option.
-
-Before users can start using Copilot, admins need to provision and allocate capacity. To provision capacity:
-
-- You must have an Azure subscription.
-- You need to be an Azure owner or Azure contributor, at a resource group level, as a minimum.
-
 In this task, you walk through the process of ensuring you have the appropriate role permissions. This starts by enabling access management for Azure resources.
 
-Once you're assigned the User Access Administrator role in Azure, you can assign a user the necessary access to provision SCUs for Copilot.  For the purpose of this exercise only, which is to show you the steps involved,  you will be assigning yourself the necessary access.  The steps that follow will guide you through the process.
-
 1. You'll start by enabling Access management for Azure resources. To access this setting:
+
     1. From the Azure portal, select **Microsoft Entra ID**.
+
     1. From the left navigation panel, expand **Manage**.
+
     1. From the left navigation panel, scroll down and select **Properties**.
+
     1. Enable the toggle switch for **Access management for Azure resources**, then select **Save**.
 
+       ![](../Media/lab2-6.png)
+
+       >**Note**: If Access Management for Azure resources is already enabled, proceed to the next step.
+
 1. Now that you can view all resources and assign access in any subscription or management group in the directory, assign yourself the Owner role for the Azure subscription.
+
     1. From the blue banner on the top of the page, select **Microsoft Azure** to return to the landing page of the Azure portal.
+
     1. Select **Subscriptions** then select the subscription listed.
+
+       ![](../Media/lab2-1.png)
+     
     1. Select **Access control (IAM)**.
     1. Select **Add**, then **Add role assignment**.
+
+       ![](../Media/lab2-4.png)
+
     1. From the Role tab, select **Privileged administrator roles**.
     1. Select **Owner**, then select **Next**.
+
+       ![](../Media/lab2-5.png)
+
     1. Select **+ Select members**.
+
     1. Avery Howard is the first name on this list, select the **+** to the right of the name.  Avery Howard is now listed under selected members. Select the **Select** button, then select **Next**.
+
+       ![](../Media/lab2-2.png)
+
     1. Select **Allow user to assign all roles except privileged administrator roles, Owner, UAA, RBAC (Recommended)**.
+
     1. Select **Review + assign**, then select **Review + assign** one last time.
 
-As an owner to the Azure subscription, you'll now be able to provision capacity within Copilot.
+       ![](../Media/lab2-3.png)
+
 
 #### Sub-task 1: Provision capacity
 
@@ -63,7 +78,7 @@ In this task, you go through the steps of provisioning capacity for your organiz
 
 For this exercise, you provision capacity through Security Copilot. When you first open Security Copilot, a wizard guides you through the steps in setting up capacity for your organization.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open a new tab and access the simulated environment by clicking on the following link: **[Microsoft Security Copilot](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. Follow the steps in the Wizard, select **Get started**.
 1. On this page, you set up your security capacity. For any of the fields listed below, you can select the information icon for more information.
