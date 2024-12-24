@@ -68,7 +68,6 @@ In this task, you walk through the process of ensuring you have the appropriate 
 
        ![](../Media/lab2-3.png)
 
-
 #### Sub-task 1: Provision capacity
 
 In this task, you go through the steps of provisioning capacity for your organization. There are two options for provisioning capacity:
@@ -81,23 +80,38 @@ For this exercise, you provision capacity through Security Copilot. When you fir
 1. Open a new tab and access the simulated environment by clicking on the following link: **[Microsoft Security Copilot](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
 1. Follow the steps in the Wizard, select **Get started**.
+
+    ![](../Media/lab2-7.png)
+
 1. On this page, you set up your security capacity. For any of the fields listed below, you can select the information icon for more information.
     1. Azure subscription: From the drop-down, select **Woodgrove - GTP Demos (External/Sponsored)**.
     1. Resource group: From the drop-down, select **RG-1**.
     1. Capacity name: Enter a capacity name.
     1. Prompt evaluation location [Geo]: From the drop-down, select your region.
     1. You can choose whether you want to select the option, "If this location has too much traffic, allow Copilot to evaluate prompts anywhere in the world (recommended for optimal performance).
-    1. Capacity region is set based on location selected.
     1. Security compute: This field is automatically populated with the minimum required SCU units, which is 1. Leave  field with the value of **1**.
     1. Select the box, **"I acknowledge that I have read, understood, and agree to the Terms and Conditions**.
+    1. Capacity region is set based on location selected.
     1. Select **Continue** on the bottom right corner of the page.
+
+       ![](../Media/lab2-8.png)
 
 1. The wizard displays information about where your customer data will be stored. The region displayed is based on the region you selected in the Prompt evaluation field. Select **Continue**.
 
+    ![](../Media/lab2-9.png)
+
 1. You can select options to help improve Copilot. You can select the toggle based on your preferences.  Select **Continue**.
 
+    ![](../Media/lab2-10.png)
+
 1. As part of the initial setup, Copilot provides contributor access to everyone by default and includes Global administrators and Security administrators as Copilot owners. In your production environment, you can change who has access to Copilot, once you've completed the initial setup. Select **Continue**.
+
+    ![](../Media/lab2-11.png)
+
 1. You're all set! Select **Finish**.
+
+    ![](../Media/lab2-13.png)
+
 1. Close the browser tab, as the next exercise will use a separate link to the lab-like environment.
 
 ### Task 2: Explore the Microsoft Security Copilot standalone experience
@@ -114,46 +128,97 @@ This exercise should take approximately **15** minutes to complete.
 
 In this task, you start your exploration in the home menu.
 
-1. Open the simulated environment by selecting this link: **[Microsoft Security Copilot](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
+1. Open a new tab and access the simulated environment by clicking on the following link: : **[Microsoft Security Copilot](https://app.highlights.guide/start/2cac767e-42c4-4058-afbb-a9413aac461d?link=0&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
 
-1. Select the **Menu** icon ![home menu icon](../media/home-menu-icon.png), which is sometimes referred to as the hamburger icon.
+1. Select the **Menu** icon, which is sometimes referred to as the hamburger icon.
 
 1. Select **My sessions** and note the available options.
-    1. Select recent to view the most recent sessions
+
+    ![](../Media/lab2-14.png)
+
+    1. Select recent to view the most recent sessions.
     1. Select filter and note the available options, then close the filer.
     1. Select the home menu icon to open the home menu.
 
 1. Select **Promptbook library**.
+ 
+    ![](../Media/lab2-15.png)
+
     1. Select My promptbooks. A subsequent task dives deeper into promptbooks.
+
+        ![](../Media/lab2-16.png)
+
     1. Select Woodgrove.
+
+        ![](../Media/lab2-17.png)
+
     1. Select Microsoft.
+
+        ![](../Media/lab2-18.png)
+
     1. Select filter to view the available options, then select the X to close.
+
     1. Select the home menu icon to open the home menu.
 
 1. Select **Owner settings**. These settings are available to you as a Copilot owner. A Copilot contributor does have not access to these menu options.
+
+    ![](../Media/lab2-19.png)
+
     1. For plugins for Security Copilot, select the drop-down for Who can add and manage their own custom plugins to view the available options.
+
     1. Select drop-down for Who can add and manage custom plugins for everyone in the organization to view the available options. Note, this option is greyed out if Who can add and manage their own custom plugins is set to owners only.
+
+       ![](../Media/lab2-21.png)
+
     1. Select the information icon next to "Allow Security Copilot to access data from your Microsoft 365 Services."  This setting must be enabled if you want to use the Microsoft Purview plugin. You'll work with this setting in a later exercise.
+
+       ![](../Media/lab2-22.png)
+
     1. Select the drop-down for who can upload files to view the available options.
+
     1. Select the home menu icon to open the home menu.
 
 1. Select **Role assignment**.
+
+    ![](../Media/lab2-23.png)
+
     1. Select Add members, then close.
+
+       ![](../Media/lab2-24.png)
+
     1. Expand owner.
+
+       ![](../Media/lab2-25.png)
+
     1. Expand contributor.
+
+       ![](../Media/lab2-26.png)
+
     1. Select the home menu icon to open the home menu.
 
 1. Select **Usage monitoring**.
+
+    ![](../Media/lab2-27.png)
+
     1. Select the date filter to view available options.
+      
+       ![](../Media/lab2-28.png)
+
     1. Select the home menu icon to open the home menu.
 
 1. Select **Settings**.
+
+    ![](../Media/lab2-29.png)
+
     1. Select preferences. Scroll down to view available options.
     1. Select data and privacy.
     1. Select About.
     1. Select the X to close the preferences window.
 
 1. Select where it says **Woodgrove** at the bottom left of the home menu.
+
+    ![](../Media/lab2-30.png)
+
     1. When you select this option, you see your tenants. This is referred to as the tenant switcher. In this case, Woodgrove is the only available tenant.
     1. Select the **Home** to return to the landing page.
 
@@ -171,12 +236,20 @@ The next section of the Copilot landing page revolves around promptbooks. The la
 
 1. To the right of where it says "Get started with these promptbooks" are a left and right arrow key that allows you to scroll through the tiles for Microsoft security promptbooks. Select the **right arrow >**
 
+   ![](../Media/lab2-31.png)
+
 1. Each tile shows the title of the promptbook, a brief description, the number of prompts, and a run icon. Select the title of any of the promptbook tiles to open that promptbook. Select **Vulnerability impact assessment**, as an example.
+
+    ![](../Media/lab2-32.png)
+
     1. The window for the selected promptbook provides information, including who created the promptbook, tags, a brief description, inputs required to run the promptbook, and a listing of the prompts.
     2. Note the information about the promptbook and the available options. For this simulation you can't start a new session, you'll do that in a subsequent exercise. 
     1. Select **X** to close the window.
 
 1. Select **View the promptbook library**.
+
+    ![](../Media/lab2-33.png)
+
     1. To view promptbooks that you own, select My promptbooks.
     1. Select Woodgrove for a listing of promptbooks owned by Woodgrove, the name of a fictitious organization.
     1. To view built-in, Microsoft owned/developed promptbooks, select Microsoft.
@@ -187,23 +260,47 @@ The next section of the Copilot landing page revolves around promptbooks. The la
 
 At the bottom center of the page is the prompt bar. The prompt bar includes the prompts and sources icon, which you explore in this task. In subsequent exercises you'll enter inputs directly in the prompt bar.
 
-1. From the prompt bar, you can select the prompts icon to select a built-in prompt or a promptbook. Select the **prompts icon** ![prompts icon](../media/prompt-icon.png).
+1. From the prompt bar, you can select the prompts icon to select a built-in prompt or a promptbook. Select the **prompts icon**.
+     
     1. Select **See all promptbooks**
-        1. Scroll to view all the available promptbooks.
-        1. Select the **back-arrow** next to the search bar to go back.
-    1. Select **See all system  capabilities**. The list shows all available system capabilities (these capabilities are in effect prompts that you can run). Many system capabilities are associated with specific plugins and as such will only be listed if the corresponding plugin is enabled.
+
+        ![](../Media/lab2-34.png)
+
         1. Scroll to view all the available promptbooks.
         1. Select the **back-arrow** next to the search bar to go back.
 
-1. Select the **sources icon** ![sources icon](../media/sources-icon.png).
+           ![](../Media/lab2-35.png)
+
+    1. Select **See all system  capabilities**. The list shows all available system capabilities (these capabilities are in effect prompts that you can run). Many system capabilities are associated with specific plugins and as such will only be listed if the corresponding plugin is enabled.
+
+         ![](../Media/lab2-36.png)
+
+        1. Scroll to view all the available promptbooks.
+        1. Select the **back-arrow** next to the search bar to go back.
+
+1. Select the **sources icon**.
+
+    ![](../Media/lab2-37.png)
+
     1. The sources icon opens the manage sources window. From here, you can access Plugins or Files. The **Plugins** tab is selected by default.
+
         1. Select whether you want to view all plugins, those that are enabled (on), or those that are disabled (off).
+
+            ![](../Media/lab2-20.png)
+
         1. Expand/collapse list of Microsoft, non-Microsoft, and custom plugins.
         1. Some plugins require configuring parameters. Select the **Set up** button for the Microsoft Sentinel plugin, to view the settings window. Select **cancel** to close the settings window. In a separate exercise, you configure the plugin.
+
+
     1. You should still be in the Manage sources window. Select **Files**.
+
         1. Review the description.
+
         1. Files can be uploaded and used as a knowledge base by Copilot. In a subsequent exercise, you'll work with file uploads.
+
         1. Select **X** to close the manage sources window.
+
+           ![](../Media/lab2-38.png)
 
 #### Sub-task 5:  Explore the help feature
 
@@ -214,6 +311,8 @@ At the bottom right corner of the window is the help icon where you can easily a
     1. Select **Help**.
         1. Anyone with access to Security Copilot can access the self help widget by selecting the help icon then selecting the Help tab. Here you can find solutions to common problems by entering something about the problem.
         1. Users with a minimum role of Service Support Administrator or Helpdesk Administrator role can submit a support case to the Microsoft support team. If you have this role, a headset icon is displayed. Close the contact support page.
+
+           ![](../Media/lab2-39.png)
 
 ### Task 3: Explore the Microsoft Security Copilot embedded experience
 
@@ -232,15 +331,25 @@ This exercise should take approximately **30** minutes to complete.
     1. Expand  **Incidents & alerts**.
     1. Select **Incidents**.
 
+     ![](../Media/lab2-40.png)
+
 1. Select the first incident in the list, **Incident Id: 30342** named Human-operated ransomware attack was launched from a compromised asset (attack disruption).
 
+    ![](../Media/lab2-41.png)
+
 1. This is a complex incident. Defender XDR provides a great deal of information, but with 72 alerts it can be a challenge to know where to focus. On the right side of the incident page, Copilot automatically generates an **Incident summary** that helps guide your focus and response. Select **See more**.
+
+   ![](../Media/lab2-42.png)
+
     1. Copilot's summary describes how this incident has evolved, including initial access, lateral movement, collection, credential access and exfiltration. It identifies specific devices, indicates that the PsExec tool was used to launch executable files, and more.
     1. These are all items you can leverage for further investigation. You explore some of these in subsequent tasks.
 
 1. Scroll down on the Copilot panel and just beneath the summary are **Guided responses**. Guided responses recommend actions in support of triage, containment, investigation, and remediation.
     1. The first item in the triage category it to Classify this incident. Select **Classify** to view the options. Review the guided responses in the other categories.
     1. Select the **Status** button at the top of the guided responses section and filter on **Completed**. Two completed activities show labeled as Attack Disruption. Automatic attack disruption is designed to contain attacks in progress, limit the impact on an organization's assets, and provide more time for security teams to remediate the attack fully.
+
+       ![](../Media/lab2-43.png)
+
 1. Keep the incident page open, you'll use it in the next task.
 
 #### Sub-task 2:  Explore device and identity summary
@@ -249,7 +358,11 @@ This exercise should take approximately **30** minutes to complete.
 
 1. Copilot  automatically generates an **Alert summary**, which provides a wealth of information for further analysis. For example, the summary identifies suspicious activity, it identifies data collection activities, credential access, malware, discovery activities, and more.
 
+   ![](../Media/lab2-44.png)
+
 1. There's a lot of information on the page, so to get a better view of this alert, select **Open alert page**. It's on the third panel on the alert page, next to the incident graph and below the alert title.
+
+   ![](../Media/lab2-45.png)
 
 1. On the top of the page, is card for the device parkcity-win10v. Select the ellipses and note the options. Select **Summarize**. Copilot generates a **Device summary**. It's worth nothing that there are many ways you can access device summary and this is just one convenient method. The summary shows the device is a VM, identifies the owner of the device, it shows its compliance status against Intune policies, and more.
 
@@ -259,9 +372,12 @@ This exercise should take approximately **30** minutes to complete.
 
 #### Sub-task 3:  Explore script analysis
 
-1. Let's Focus on the alert story. Select **Maximize ![maximize icon](../media/maximize-icon.png)**, located on the main panel of the alert, just beneath the card labeled 'partycity\jonaw' to get a better view of the process tree. From maximized view, you begin to get a clearer view of how this incident came to be. Many line items indicate that powershell.exe executed a script. Since the user Jonathan Wolcott is an account executive, it's reasonable to assume that executing PowerShell scripts isn't something this user is likely to be doing regularly.
+1. Let's Focus on the alert story. Select **Maximize**, located on the main panel of the alert, just beneath the card labeled 'partycity\jonaw' to get a better view of the process tree. From maximized view, you begin to get a clearer view of how this incident came to be. Many line items indicate that powershell.exe executed a script. Since the user Jonathan Wolcott is an account executive, it's reasonable to assume that executing PowerShell scripts isn't something this user is likely to be doing regularly.
 
-1. Expand the first instance of **powershell.exe execute a script**, it's the one showing the timestamp of 4:57:11 AM. Copilot has the capability to analyze scripts. Select **Analyze**.
+1. Expand the first instance of **powershell.exe execute a script**, it's the one showing the timestamp of 2:27:11 PM. Copilot has the capability to analyze scripts. Select **Analyze**.
+
+    ![](../Media/lab2-46.png)
+
     1. Copilot generates an analysis of the script and suggests it could be a phishing attempt or used to deliver a web-based exploit.
     1. Select **Show code**. The code shows a defanged URL.
 
@@ -274,6 +390,9 @@ This exercise should take approximately **30** minutes to complete.
 1. From the left side of the screen select **Files**.
 1. Select the first item from the list with the entity named **Rubeus.exe**.
 1. From the window that opens, select **Analyze**. Copilot generates a summary.
+
+   ![](../Media/lab2-47.png)
+
 1. Review the detailed file analysis that Copilot generates.
 1. Close the file analysis window.
 
@@ -285,17 +404,22 @@ This task is complex and requires the involvement of more senior analysts. In th
 
 1. Select the ellipses next to Copilot's Incident summary and select **Open in Copilot for Security**.
 
-1. Copilot opens in the standalone experience and shows the incident summary. You can also run more prompts. In this case, you'll run the promptbook for an incident. Select the **prompt icon** ![prompt icon](../media/prompt-icon.png). 
+1. Copilot opens in the standalone experience and shows the incident summary. You can also run more prompts. In this case, you'll run the promptbook for an incident. Select the **prompt icon**. 
     1. Select **See all promptbooks**.
     1. Select **Microsoft 365 Defender incident investigation**.
     1. The promptbook page opens and asks for the Defender Incident ID. Enter **30342** then select **Run**.
+
+       ![](../Media/lab2-48.png)
+
     1. Review the information provided. By pivoting to the standalone experience and running the promptbook, the investigation is able to invoke capabilities from a broader set security solution, beyond just Defender XDR, based on the plugins enabled.
 
-1. Select the **box icon ![box icon](../media/box-icon.png)** next to the pin icon to select all the prompts and and the corresponding responses, then select the **Pin icon ![pin icon](../media/pin-icon.png)** to save those responses to the pin board.
+1. Select the **box icon** next to the pin icon to select all the prompts and and the corresponding responses, then select the **Pin icon** to save those responses to the pin board.
 
-1. The pin board opens automatically. The pin board holds your saved prompts and responses, along with a summary of each one. You can open and close the pin board by selecting the **pin board icon ![pin board icon](../media/pinboard-icon.png)**.
+1. The pin board opens automatically. The pin board holds your saved prompts and responses, along with a summary of each one. You can open and close the pin board by selecting the **pin board icon**.
 
 1. From the top of the page, select **Share** to view your options. By sharing the incident via a link or email, people in your organization with Copilot access can view this session. Close the window by selecting the **X**.
+
+    ![](../Media/lab2-49.png)
 
 1. You can now close the browser tab to exit the simulation.
 
