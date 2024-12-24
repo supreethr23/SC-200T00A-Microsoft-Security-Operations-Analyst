@@ -34,8 +34,6 @@ In this task, you walk through the process of ensuring you have the appropriate 
 
 Once you're assigned the User Access Administrator role in Azure, you can assign a user the necessary access to provision SCUs for Copilot.  For the purpose of this exercise only, which is to show you the steps involved,  you will be assigning yourself the necessary access.  The steps that follow will guide you through the process.
 
-1. Open the simulated environment by selecting this link: **[Azure portal](https://app.highlights.guide/start/6373500f-1f10-4584-a14e-ca0b4aa7399f?link=1&token=40f793d4-2956-40a4-b11a-6b3d4f92557f&azure-portal=true)**.
-
 1. You'll start by enabling Access management for Azure resources. To access this setting:
     1. From the Azure portal, select **Microsoft Entra ID**.
     1. From the left navigation panel, expand **Manage**.
@@ -44,7 +42,7 @@ Once you're assigned the User Access Administrator role in Azure, you can assign
 
 1. Now that you can view all resources and assign access in any subscription or management group in the directory, assign yourself the Owner role for the Azure subscription.
     1. From the blue banner on the top of the page, select **Microsoft Azure** to return to the landing page of the Azure portal.
-    1. Select **Subscriptions** then select the subscription listed **Woodgrove - GTP Demos (Exernal/Sponsored)**.
+    1. Select **Subscriptions** then select the subscription listed.
     1. Select **Access control (IAM)**.
     1. Select **Add**, then **Add role assignment**.
     1. From the Role tab, select **Privileged administrator roles**.
@@ -251,8 +249,6 @@ This exercise should take approximately **30** minutes to complete.
 1. Expand the first instance of **powershell.exe execute a script**, it's the one showing the timestamp of 4:57:11 AM. Copilot has the capability to analyze scripts. Select **Analyze**.
     1. Copilot generates an analysis of the script and suggests it could be a phishing attempt or used to deliver a web-based exploit.
     1. Select **Show code**. The code shows a defanged URL.
-
-1. There are several other items that indicate powershell.exe executed a script. Expand the one labeled **powershell.exe -EncodedCommand...** with the timestamp 5:00:47 AM. The original script was base 64 encoded, but Defender has decoded that for you. For the decoded version, select **Analyze**. The analysis highlights the sophistication of the script used in this attack.
 
 1. Close the alert story page by selecting the **X** (the X that is to the left of Copilot panel). Now use the breadcrumb to return to the incident. Select **Human-operated ransomware attack was launched from a compromised asset (attack disruption)**.
 
