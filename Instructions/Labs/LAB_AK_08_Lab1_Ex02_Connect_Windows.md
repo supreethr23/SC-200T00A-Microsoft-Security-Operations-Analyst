@@ -125,7 +125,7 @@ In this task, you install Azure Arc on an on-premises server to make onboarding 
       > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
       > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-      <validation step="53b31791-6d4b-4f83-a56e-b7136bbba6a7" />
+      <validation step="cb8a9849-e7b9-487e-8717-e483d77a590a" />
 
 ### Task 3: Connect an Azure Windows virtual machine
 
