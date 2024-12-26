@@ -10,10 +10,11 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 ## Lab objectives
  In this lab, you will perform the following:
- - Task 1: Create a hunting query
- - Task 2: Create a NRT query rule
- - Task 3: Create a Search
- - Task 4: Create a hunt that combines multiple queries into a MITRE tactic
+ - Task 1: Create a Log Analytics Workspace and Sentinel Workspace.
+ - Task 2: Create a hunting query 
+ - Task 3: Create a NRT query rule
+ - Task 4: Create a Search
+ - Task 5: Create a hunt that combines multiple queries into a MITRE tactic
  
 ## Estimated timing: 40 minutes
 
@@ -21,7 +22,21 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
  ![](../Media/SC200-Lab_Diagrams_Mod8_L1_Ex1.png)
 
-### Task 1: Create a hunting query
+### Task 1: Create a Log Analytics Workspace and Sentinel Workspace.
+
+1. In the Search bar of the Azure portal, type **Log Analytics workspaces**, then select the same service name.
+
+1. Select **+ Create**
+
+1. Select **rg-defender** for the Resource group drop-down.
+
+1. For the Name, enter **uniquenameDefender**
+
+1. Select **Review + Create**.
+
+1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
+
+### Task 2: Create a hunting query
 
 In this task, you will create a hunting query, bookmark a result, and create a Livestream.
 
