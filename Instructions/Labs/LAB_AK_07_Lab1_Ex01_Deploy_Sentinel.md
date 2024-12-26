@@ -183,7 +183,7 @@ In this task, you will change the retention period for the SecurityEvent table.
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-  <validation step="4566fce4-7036-4f07-a040-186f5a2aee11" />
+  <validation step="53b31791-6d4b-4f83-a56e-b7136bbba6a7" />
 
 ## Review
 In this lab, you have completed the following:
