@@ -38,7 +38,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 1. When the workspace deployment completes, select **Refresh** to display the new workspace.
 
-1. Choose the workspace where you want to enable Microsoft Sentinel.
+1. Navigate to Sentinel from portal and choose the workspace where you want to enable Microsoft Sentinel.
 
 1. Select **Add**.
 
