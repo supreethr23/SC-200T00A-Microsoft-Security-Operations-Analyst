@@ -68,7 +68,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 In this task, you will build basic KQL statements.
 
->**Important:**  For each query, clear the previous statement from the Query Window or open a new Query Window by selecting **+** after the last opened tab (up to 25).
+   > **Important:**  For each query, clear the previous statement from the Query Window or open a new Query Window by selecting **+** after the last opened tab (up to 25).
 
 1. Navigate to Log analytics workspace created in earlier step, expand **Classic.** select the Virtual machine (depricated) option.
 
@@ -84,7 +84,7 @@ In this task, you will build basic KQL statements.
 
 1. Go to Sentinel, click on **Logs**. Close all the pop-ups if they appear.
 
->**Note:** You may encounter situations where some of the queries below don't work as expected. Please don't hesitate to refer to the lab guide—there are instances when the connector may take some time to reach the desired state, which can affect how certain queries run. Your patience and understanding are greatly appreciated
+   > **Note:** You may encounter situations where some of the queries below don't work as expected. Please don't hesitate to refer to the lab guide—there are instances when the connector may take some time to reach the desired state, which can affect how certain queries run. Your patience and understanding are greatly appreciated
 
 1. The following statement demonstrates the **search** operator, which searches all columns in the table for the value. In the Query Window enter the following statement and select **Run**: 
 
