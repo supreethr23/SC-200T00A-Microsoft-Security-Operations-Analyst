@@ -1,10 +1,4 @@
----
-lab:
-    title: 'Exercise 2 - Create a Playbook'
-    module: 'Learning Path 9 - Create detections and perform investigations using Microsoft Sentinel'
----
-
-# Learning Path 9 - Lab 1 - Exercise 2 - Create a Playbook in Microsoft Sentinel
+# Module 9 - Lab 1 - Exercise 2 - Create a Playbook in Microsoft Sentinel
 
 ## Lab scenario
 
@@ -13,6 +7,15 @@ You're a Security Operations Analyst working at a company that implemented Micro
 With a playbook, you can help automate and orchestrate your threat response, integrate with other systems both internal and external, and can be set to run automatically in response to specific alerts or incidents, when triggered by an analytics rule or an automation rule, respectively.
 
 >**Important:** The lab exercises for Learning Path #9 are in a *standalone* environment. If you exit the lab before completing it, you will be required to re-run the configurations again.
+
+## Lab Objectives
+  
+After completing this lab, you will be able to:
+- Task 1: Create a Playbook in Microsoft Sentinel
+- Task 2: Update a Playbook in Microsoft Sentinel
+- Task 3: Create an Automation Rule
+
+## Estimated timing: 30 minutes
 
 ### Task 1: Create a Playbook in Microsoft Sentinel
 
@@ -119,5 +122,11 @@ In this task, you’ll update the new playbook you created with the proper conne
 1. Select **Apply** at the bottom.
 
 From here, depending on your role, you will either continue doing more architect exercises or you will pivot to the analyst exercises.
+
+### Review
+In this lab, you have completed the following:
+- You have created a Playbook in Microsoft Sentinel
+- You have updated a Playbook in Microsoft Sentinel
+- Created an Automation Rule
 
 ## Proceed to Exercise 3
