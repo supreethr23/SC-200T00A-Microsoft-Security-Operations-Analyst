@@ -13,6 +13,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
  - Task 1: Create a hunting query
  - Task 2: Create a NRT query rule
  - Task 3: Create a Search
+ - Task 4: Create a hunt that combines multiple queries into a MITRE tactic
  
 ## Estimated timing: 40 minutes
 
