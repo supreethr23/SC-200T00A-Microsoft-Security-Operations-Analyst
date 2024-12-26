@@ -72,9 +72,13 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
 1. Under **Standard protection**, select **Manage protection settings**. **Hint:** If you see this option greyed out, refresh your browser using **Ctrl+F5**.
 
+   ![Standart protection](../Media/std1protect.png)
+
     >**Note:** After clicking on **Manage protection settings**, This might need 40 to 60 Minutes to load the content, wait for 40 to 60 Minutes to load the page completely after 40 to 60 Minutes back to the same page and might need to sign out of Microsoft defender XDR and sign in again and then try repeating the steps again to move forward. 
 
-1. In the *Apply Exchange Online Protection* page, select **Specific recipients** under **Apply protection to:** and under **Domains** start writing your tenant's domain name, select it, and then select **Next**.
+1. In the *Apply Exchange Online Protection* page, select **Specific recipients** under **Apply protection to:** and under **Domains** you can see that your domain is selected, if not start writing your tenant's domain name, select it, and then select **Next**.
+
+   ![Standart protection](../Media/stdprotect.png)
                                                                               
     >**Hint:** Your tenant's domain name is the same that you have for your admin account, it might be something like *mocholxxxxx.onmicrosoft.com*. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing. 
 
@@ -89,6 +93,10 @@ In this task, you will assign preset security policies for Exchange Online Prote
 1. Under **Strict protection**, select **Manage protection settings**. **Hint:** *Strict protection* is found under "Email & Collaboration - Policies & rules - Threat policies - Preset security policies".
 
 1. In the *Apply Exchange Online Protection* page, select **Specific recipients** and under **Groups** start writing **Sg-IT-<inject key="DeploymentID" enableCopy="false"/>**, select it, and then select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing.
+
+   ![Standart protection](../Media/stdprotect.png)
+
+   >**Note**: If a group is already selected, make sure it is **Sg-IT-<inject key="DeploymentID" enableCopy="false"/>**. else, remove and add it.
 
 1. In the *Apply protection to* page, apply the same configuration as the previous step and select **Next**. Notice that this configuration applies policies for anti-phishing, Safe Attachments, and Safe Links.
 
