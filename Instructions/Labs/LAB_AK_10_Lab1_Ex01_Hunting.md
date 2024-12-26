@@ -36,6 +36,12 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
 
+1. When the workspace deployment completes, select **Refresh** to display the new workspace.
+
+1. Choose the workspace where you want to enable Microsoft Sentinel.
+
+1. Select **Add**.
+
 ### Task 2: Create a hunting query
 
 In this task, you will create a hunting query, bookmark a result, and create a Livestream.
