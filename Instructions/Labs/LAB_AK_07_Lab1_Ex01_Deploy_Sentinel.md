@@ -23,55 +23,69 @@ You're a Security Operations Analyst working at a company that is implementing M
 
 In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud.
 
-1. Open the Edge browser.
+1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
 
-1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
+   ![](../Media/l8e132.png)
 
-1. In the **Sign in** dialog box, copy and paste **Email/Username:** <inject key="AzureAdUserEmail"></inject> and then select Next.
+1. Select **+Create** from the command bar.
 
-1. In the **Enter password** dialog box, copy and paste **Password:** <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+   ![](../Media/l8e133.png)
 
-1. In the Search bar of the Azure portal, type **Log Analytics workspaces**, then select the same service name.
+1. Select Resource Group **RG-Defender**  from the drop down.
 
-1. Select **+ Create**
-
-1. Select **rg-defender** for the Resource group drop-down.
-
-1. For the Name, enter **uniquenameDefender**
+1. For the Name, enter **uniquenameDefender**.
 
 1. Select **Review + Create**.
 
+   ![](../Media/l8e134.png)
+
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
+
+   ![](../Media/l8e135.png)
 
 ### Task 2 - Deploy Microsoft Sentinel to a workspace
 
 Deploy Microsoft Sentinel to the workspace.
 
-1. When the workspace deployment completes, select **Refresh** to display the new workspace.
+1. In the Search bar of the Azure portal, type **microsoft sentinel**, then select **Microsoft Sentinel**.
 
-1. Select the workspace you want to add Sentinel to (created in Task 1).
+   ![](../Media/l8e129.png)
 
-1. Select **Add**.
+1. Select **+Create** from the command bar.
+
+ 1. Select the newly created workspace and click on **Add**.
+  
+    ![](../Media/l8e131.png)
+
+1. Select your Microsoft Sentinel Workspace that you created in the previous lab.
 
 ### Task 3 - Configure data retention
 
-1. In the Microsoft Azure "breadcrumb" menu, select **Home**.
+1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**. 
 
-1. In the Search bar of the Azure portal, type "Log Analytics" and select the workspace created in Task 1.
+   ![](../Media/l8e132.png)
+
+1. Select **uniquenameDefender** Log Analytics workspaces. 
 
 1. Expand the *Settings* section in the navigation menu and select **Usage and estimated costs**.
 
 1. Select **Data retention**.
 
+   ![](../Media/l7-1.png)
+
 1. Change data retention period to **180 days**.
 
 1. Select **OK**.
+
+   ![](../Media/l7-2.png)
 
 ### Task 4: Create a Watchlist
 
 In this task, you will create a watchlist in Microsoft Sentinel.
 
-1. In the search box at the bottom of the Windows 10 screen, enter *Notepad*. Select **Notepad** from the results.
+1. In the search box of your Labvm, enter *Notepad*. Select **Notepad** from the results.
+
+   ![](../Media/l7-3.png)
 
 1. Type ***Hostname*** then enter for a new line.
 
@@ -85,14 +99,31 @@ In this task, you will create a watchlist in Microsoft Sentinel.
     Host5
     ```
 
-1. From the menu select, **File - Save As**, Name the file ***HighValue.csv***, change the file type to **All files(*.*)** and select **Save**.                                             
+    ![](../Media/l7-5.png)
+
+1. From the menu select, **File - Save As**.
+
+   ![](../Media/l7-4.png)
+
+1. Name the file ***HighValue.csv***, change the file type to **All files(*.*)** and select **Save**. 
+
+   ![](../Media/l7-6.png)
+
   >**Hint:** The file can be saved in the *Documents* folder.
 
 1. Close Notepad.
 
+1. In the Search bar of the Azure portal, type **microsoft sentinel**, then select **Microsoft Sentinel**.
+
+1. Select **uniquenameDefender** Microsoft Sentinel.
+
+   ![](../Media/l8e130.png)
+
 1. In Microsoft Sentinel, On the left menu, select the **Watchlist** option under the **Configuration** area.
 
 1. Select **+ New** from the command bar.
+
+   ![](../Media/l7-7.png)
 
 1. In the Watchlist wizard, enter the following:
 
@@ -104,23 +135,39 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. Select, **Next: Source >**.
 
+   ![](../Media/l7-8.png)
+
 1. Select **Browse for files** under *Upload file* and browse for the *HighValue.csv* file you just created.
+
+    ![](../Media/l7-9.png)
 
 1. In the ***SearchKey field*** select **Hostname**.
 
 1. Select **Next: Review + Create >**.
 
+    ![](../Media/l7-10.png)
+
 1. Review the settings you entered and select **Create**.
+
+    ![](../Media/l7-11.png)
 
 1. The screen returns to the Watchlist page.
 
 1. Select the *HighValueHosts* watchlist and on the right pane, select **View in logs**.
 
+     ![](../Media/l7-12.png)
+
     >**Important:** It could take up to ten minutes for the watchlist to appear. **Please continue to with the following task and run this command on the next lab**.
     
     >**Note:** You can now use the _GetWatchlist('HighValueHosts') in your own KQL statements to access the list. The column to reference would be *Hostname*.
 
-1. Close the *Logs* window by selecting the 'x' in the top-right and select **OK** to discard the unsaved edits.
+1. Close the *Logs* window by selecting the 'x' in the top-right. 
+
+    ![](../Media/l7-13.png)
+
+1. Select **OK** to discard the unsaved edits.
+
+    ![](../Media/l7-14.png)
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
@@ -137,15 +184,21 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 1. Select **+ Add New** from the command bar.
 
+   ![](../Media/l7-15.png)
+
 1. Review the different indicator types available in the ***Types*** dropdown. Select the **domain-name**. Enter your initials in the Domain box. You can use **onmicrosoft.com**.
 
 1. For the ***Threat types***, add **malicious-activity** and select **Apply**.
 
-1. For the ***Name***, enter the same value used for the Domain. An example would be **onmicrosoft.com**.
+    ![](../Media/l7-16.png)
 
-1. Set the **Valid from** field to today's date. and **valid till** to next day 
+1. For the ***Name***, enter indicator. 
+
+1. Set the **Valid from** field to today's date. and **valid till** to next day.
 
 1. Select **Apply**.
+
+    ![](../Media/l7-17.png)
 
     **Note:** It could take a couple of minutes for the indicator to appear.
 
@@ -156,6 +209,9 @@ In this task, you will create an indicator in Microsoft Sentinel.
     ```KQL
     ThreatIntelligenceIndicator
     ```
+    
+   ![](../Media/l7-19.png)
+
     **Note:** You may need to wait for 20 minutes to get the expected output.
 
     Scroll the results to the right to see the DomainName column. You can also run the following KQL statement to just see the DomainName column.  
@@ -175,17 +231,23 @@ In this task, you will change the retention period for the SecurityEvent table.
 
 1. Select **Workspace settings**.
 
+   ![](../Media/l7-20.png)
+
 1. In Log Analytics workspace, select the **Tables** option under the ***Settings*** area.
 
 1. Search and select the table **SecurityEvent**, and then right click on ***Security Event*** table.
 
+   ![](../Media/l7-21.png)
+
 1. Select **Manage Table**.
+
+   ![](../Media/l7-22.png)
 
 1. Select **180 days** for ***Total retention period***. Notice that ***Archive period*** is only 150 days, since it uses 30 days from the (default) ***Interactive retention***.
 
 1. Select **Save** to apply the changes.
 
-
+   ![](../Media/l7-23.png)
 
 ## Review
 In this lab, you have completed the following:
