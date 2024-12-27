@@ -26,7 +26,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 1. Select the **ASIM** folder. Here, you can deploy a template that contains all ASIM parsers, but we will only focus on the Registry Schema.
 
-1. Scroll down and next to **Registry**, select the **Deploy to Azure** button.
+1. Scroll down and next to **Registry event**, select the **Deploy to Azure** button.
 
 1. For *Resource Group*, select **WIN-1** where your Sentinel workspace resides.
 
