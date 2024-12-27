@@ -4,15 +4,16 @@
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You have received threat intelligence about a Command and Control (C2 or C&C) technique.  You need to perform a hunt and watch for the threat.
 
-   **Important:** The log data used in the lab was created in the previous module. See **Attack 3** in the WIN1 server in Exercise 5.
+   **Important:** The log data used in the lab was created in the previous module.
 
    **Note:**  Because you already experienced the process of exploring data in a previous module, the lab provides a KQL statement to start with.  
 
 ## Lab objectives
  In this lab, you will perform the following:
- - Task 1: Create a hunting query
+ - Task 1: Create a hunting query 
  - Task 2: Create a NRT query rule
  - Task 3: Create a Search
+ - Task 4: Create a hunt that combines multiple queries into a MITRE tactic
  
 ## Estimated timing: 40 minutes
 

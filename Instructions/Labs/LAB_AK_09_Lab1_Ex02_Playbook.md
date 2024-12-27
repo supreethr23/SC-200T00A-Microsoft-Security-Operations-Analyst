@@ -21,21 +21,13 @@ After completing this lab, you will be able to:
 
 In this task, you'll create a Logic App that is used as a Playbook in Microsoft Sentinel.
 
-1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
-
-1. In the **Sign in** dialog box, copy and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
-
-1. In the **Enter password** dialog box, copy and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
-
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
-
-1. Select your Microsoft Sentinel Workspace.
+1. In Azure Portal navigate to your Microsoft Sentinel Workspace.
 
 1. In *Microsoft Sentinel*, navigate to **Content Hub**.
 
 1. Within the search bar, look for **Sentinel SOAR Essentials**.
 
-1. Select the solution that appears in the results.
+1. Select the solution that appears in the results and click on **Install**.
 
 1. Within the solution details, select **Manage**.
 
