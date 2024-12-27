@@ -18,4 +18,4 @@ In this lab, you will perform log data analysis to search for malicious activity
 
  ![](media/SC200-Lab_Diagrams_Mod4_L1_Ex1.png)
 
-Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located in the top right corner. This will lead you to the lab environment and guide. You can also preview the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/32e2c1e5-abdd-4bb8-899a-05a631b62740) if you want to go through detailed guide prior to launching lab environment.
+Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located in the top right corner. This will lead you to the lab environment and guide. You can also preview the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/5201df5f-11a1-4adf-a280-c22b0e6c1d53) if you want to go through detailed guide prior to launching lab environment.

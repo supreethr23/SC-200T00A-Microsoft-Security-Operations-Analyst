@@ -19,4 +19,4 @@ In this lab, you will enable Microsoft Defender for Cloud.
 
    ![](media/SC200-Lab_Diagrams_Mod3_L1_Ex1.png)
 
-Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located in the top right corner. This will lead you to the lab environment and guide. You can also preview the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/cf95083f-8b3d-4aea-ad25-69b9984199a5) if you want to go through detailed guide prior to launching lab environment.
+Once you understand the lab's content, you can start the Hands-on Lab by clicking the **Launch** button located in the top right corner. This will lead you to the lab environment and guide. You can also preview the full lab guide [here](https://experience.cloudlabs.ai/#/labguidepreview/c39b50a1-73da-4127-aac1-e2e7b77d0623) if you want to go through detailed guide prior to launching lab environment.

@@ -1,6 +1,6 @@
-# Lab Scenario Preview: SC-200: Mitigate threats using Microsoft 365 Defender
+# Lab Scenario Preview: SC-200: Mitigate threats using Microsoft Defender XDR
 
-## Lab 01: Explore Microsoft 365 Defender
+## Module 1 - Lab 1 - Explore Microsoft Defender XDR
 
 ### Lab overview
 
