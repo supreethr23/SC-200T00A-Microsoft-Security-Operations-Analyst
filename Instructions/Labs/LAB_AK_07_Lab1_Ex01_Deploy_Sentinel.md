@@ -17,7 +17,7 @@ You're a Security Operations Analyst working at a company that is implementing M
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod5_L1_Ex1.png)
+  ![Picture 1](../Media/.png)
 
 ### Task 1: Create a Log Analytics Workspace
 

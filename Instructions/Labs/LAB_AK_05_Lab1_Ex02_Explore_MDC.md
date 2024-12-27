@@ -15,7 +15,7 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod3_L1_Ex2.png)
+  ![Picture 1](../Media/Mod5_L1_Ex2.png)
   
 ### Task 1: Explore Regulatory Compliance
 
@@ -62,6 +62,8 @@ In this task, you'll review cloud security posture management.  The Secure Score
    ![Picture 1](../Media/l5-6.png)
 
 1. Select the **Machines - Azure Arc** checkbox and then select the **Apply** button.
+
+   ![Picture 1](../Media/l5-7.png)
 
     >**Note:** If you don't see **Machines - Azure Arc** listed, make sure you have completed Learning Path 3 - Lab 1 - Exercise 1 Task 4..
 

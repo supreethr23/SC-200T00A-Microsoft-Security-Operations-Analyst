@@ -9,15 +9,15 @@ In this lab, you will perform:
 
 - Task 1: Enable Purview Audit logs
 
+## Architecture Diagram
+
+  ![Picture 1](../Media/archdialab3.png)
+
 ### Estimated timing: 15 minutes
 
 ### Task 1: Enable Purview Audit logs
 
 In this task, you'll assign preset security policies for Exchange Online Protection (EOP) and Microsoft Defender for Office 365 in the Microsoft 365 security portal.
-
-1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
-
-1. Start the Microsoft Edge browser.
 
 1. In the Microsoft Edge browser, go to the Microsoft Defender XDR portal at (<https://security.microsoft.com>).
 

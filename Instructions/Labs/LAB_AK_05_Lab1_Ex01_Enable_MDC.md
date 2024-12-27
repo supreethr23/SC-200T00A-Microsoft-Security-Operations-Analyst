@@ -6,7 +6,17 @@ You're a Security Operations Analyst working at a company that is implementing c
 
 >**Important:** The lab exercises for Learning Path #5 are in a *standalone* environment. If you exit the lab before completing it, you will be required to re-run the configurations again.
 
+## Lab objectives
+ In this lab, you will perform the following:
+- Task 1: Enable Microsoft Defender for Cloud
+- Task 2: Understanding the Microsoft Defender for Cloud Dashboard
+- Task 3: Install Azure Arc on an On-Premises Server
+
 ### Estimated timing: 15 minutes
+
+## Architecture Diagram
+
+  ![Picture 1](../Media/Mod5_L1_Ex1.png)
 
 ### Task 1: Enable Microsoft Defender for Cloud
 

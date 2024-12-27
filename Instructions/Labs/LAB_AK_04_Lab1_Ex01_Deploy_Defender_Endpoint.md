@@ -19,7 +19,7 @@ In this lab, you will perform the following:
 
 ## Architecture Diagram
 
-   ![](../media/SC200-Lab_Diagrams_Mod2_L1_Ex1.png)
+   ![](../Media/Mod4_L1_Ex1.png)
 
 ### Task 1: Initialize Microsoft Defender for Endpoint
 

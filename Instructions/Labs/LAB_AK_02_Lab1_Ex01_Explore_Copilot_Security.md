@@ -16,6 +16,8 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
+ ![Picture 1](../Media/archdialab2.png)
+
 ### Task 1: Provision Microsoft Security Copilot
 
 For this exercise, you're logged in as Avery Howard and you have the global administrator role in Microsoft Entra. You'll work in both the Azure portal and Microsoft Security Copilot.
