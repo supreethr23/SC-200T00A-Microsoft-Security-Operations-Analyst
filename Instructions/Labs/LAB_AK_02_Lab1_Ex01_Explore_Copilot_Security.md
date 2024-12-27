@@ -381,6 +381,8 @@ This exercise should take approximately **30** minutes to complete.
     1. Copilot generates an analysis of the script and suggests it could be a phishing attempt or used to deliver a web-based exploit.
     1. Select **Show code**. The code shows a defanged URL.
 
+1. There are several other items that indicate powershell.exe executed a script. Expand the one labeled **powershell.exe -EncodedCommand...** with the timestamp 5:00:47 AM. The original script was base 64 encoded, but Defender has decoded that for you. For the decoded version, select **Analyze**. The analysis highlights the sophistication of the script used in this attack.
+
 1. Close the alert story page by selecting the **X** (the X that is to the left of Copilot panel). Now use the breadcrumb to return to the incident. Select **Human-operated ransomware attack was launched from a compromised asset (attack disruption)**.
 
 #### Sub-task 4:  Explore file analysis
