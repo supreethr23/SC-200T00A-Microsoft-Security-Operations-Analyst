@@ -95,7 +95,7 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 1. Use the *And then* drop-down menus to select **Run playbook**
 
-1. A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**
+1. If A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**
 
     >**Note:** The playbooks will appear grayed out in the drop-down list until permissions are configured.
 
@@ -103,7 +103,7 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 1. On the *Manage Permissions* page, select the **RG-Playbooks** resource group you created in the previous lab, and select **Apply**.
 
-1. From the drop-down menu, select the playbook **PostMessageTeams-OnIncident** you created in the previous exercise.
+1. From the drop-down menu, select the playbook **Defender_XDR_Ransomware_Playbook_SecOps-Tasks** you created in the previous exercise.
 
 1. Select **Apply**
 
