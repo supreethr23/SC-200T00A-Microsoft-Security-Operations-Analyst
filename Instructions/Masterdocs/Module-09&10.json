@@ -51,10 +51,6 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/refs/heads/prod-new/Instructions/Labs/LAB_AK_09_Lab1_Ex11_Content_Management.md",
         "Order": 12
-      }
-{
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/refs/heads/prod-new/Instructions/Labs/LabIntro.md",
-        "Order": 13
       },
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/SC-200T00A-Microsoft-Security-Operations-Analyst/refs/heads/prod-new/Instructions/Labs/LAB_AK_10_Lab1_Ex01_Hunting.md",
