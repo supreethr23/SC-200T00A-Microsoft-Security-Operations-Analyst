@@ -31,6 +31,10 @@ In this task, you will load sample security alerts and review the alert details.
 
    ![Picture 1](../Media/lab5-3.png)
 
+1. On the **Defender plans** page enable **Defender CSPM** and Click on **Save**.
+ 
+   ![Picture 1](../Media/l5-4.png)
+
 1. On the left menu Under *Policy settings*, select **Security policies** in the portal menu.
 
 1. Review the **Microsoft security benchmark** available to you by default.
@@ -51,7 +55,11 @@ In this task, you'll review cloud security posture management.  The Secure Score
 
 1. Under the *Environment* tab, select **View recommendations >** link.
 
+   ![Picture 1](../Media/l5-5.png)
+
 1. Select **Add filter** and then select **Resource type**.
+
+   ![Picture 1](../Media/l5-6.png)
 
 1. Select the **Machines - Azure Arc** checkbox and then select the **Apply** button.
 
@@ -61,11 +69,17 @@ In this task, you'll review cloud security posture management.  The Secure Score
 
 1. Review the recommendation and in the **Take action** tab scroll down to **Delegate** and select **Assign owner & set due date**.
 
+   ![Picture 1](../Media/l5-3.png)
+
 1. In the **Create assignment** window, leave *Type* set to *Defender for Cloud* and expand the **Assignment details**.
+
+   ![Picture 1](../Media/l5-2.png)
 
 1. In the `Set owner` *Email address* box, type in your admin email. **Hint:** You can copy it from the instructions in the *Resources* tab.
 
 1. Explore the *Set remediation timeframe* and *Set email notifications* options and select **Create**.
+
+   ![Picture 1](../Media/l5-1.png)
 
     >**Note:** If you see the error *Failed to create requested assignments*, try again later.
 
