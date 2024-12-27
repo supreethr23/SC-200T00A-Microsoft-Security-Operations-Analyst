@@ -122,6 +122,13 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 1. Close the *Logs* window by selecting the 'x' in the top-right and select **OK** to discard the unsaved edits.
 
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="53b31791-6d4b-4f83-a56e-b7136bbba6a7" />
+  
 ### Task 5: Create a Threat Indicator
 
 In this task, you will create an indicator in Microsoft Sentinel.
@@ -178,12 +185,7 @@ In this task, you will change the retention period for the SecurityEvent table.
 
 1. Select **Save** to apply the changes.
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-  <validation step="4566fce4-7036-4f07-a040-186f5a2aee11" />
 
 ## Review
 In this lab, you have completed the following:

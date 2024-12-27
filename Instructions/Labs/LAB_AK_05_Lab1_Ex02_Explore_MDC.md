@@ -1,4 +1,4 @@
-# Nodule 5 - Lab 1 - Exercise 2 - Mitigate threats using Microsoft Defender for Cloud
+# Module 5 - Lab 1 - Exercise 2 - Mitigate threats using Microsoft Defender for Cloud
 
 ## Lab scenario
 
@@ -29,17 +29,23 @@ In this task, you will load sample security alerts and review the alert details.
 
 1. Select your subscription.
 
+   ![Picture 1](../Media/lab5-3.png)
+
 1. On the left menu Under *Policy settings*, select **Security policies** in the portal menu.
 
-1. Review the "Microsoft security benchmark" available to you by default.
+1. Review the **Microsoft security benchmark** available to you by default.
+
+   ![Picture 1](../Media/lab5-2.png)
 
 1. Select Microsoft Defender for Cloud below the search box to return to the main blade.
 
-### Task 2: Explore Security posture and recommendations
+### Task 2: Explore Security posture and recommendations (Read-Only)
 
 In this task, you'll review cloud security posture management.  The Secure Score information can take 24 hours to recalculate. It's recommended to do this task again in 24 hours.
 
 1. Under *Cloud Security*, select **Security posture** from the left menu items.
+
+   ![Picture 1](../Media/lab5-1.png)
 
 1. The *Secure score* defaults to the *Azure environment*.
 
@@ -73,9 +79,13 @@ In this task, you'll load sample security alerts and review the alert details.
 
 1. Select **Sample alerts** from the command bar. **Hint:** you may need to select the ellipsis (...) button from the command bar.
 
+   ![Picture 1](../Media/lab5-7.png)
+
 1. In the Create sample alerts (Preview) pane make sure your subscription is selected and that all sample alerts are selected in the *Defender for Cloud plans* area.
 
 1. Select **Create sample alerts**.  
+
+    ![Picture 1](../Media/lab5-4.png)
 
     >**Note:** This sample alert creation process may take a few minutes to complete, wait for the *"Successfully created sample alerts"* notification.
 
@@ -85,9 +95,13 @@ In this task, you'll load sample security alerts and review the alert details.
 
     - Select the alert checkbox and the alert detail pane should appear. Select **View full details**.
 
+      ![Picture 1](../Media/lab5-5.png)
+
     - Review and read the *Alert details* tab.
 
-    - Select the **Take action** tab or scroll down and select the **Next: Take Action** button at the end of the page.
+    - Select the **Take action** tab..
+
+       ![Picture 1](../Media/lab5-6.png)
 
     - Review the *Take action* information. Notice the sections available to take action depending on the type of alert: Inspect resource context, Mitigate the threat, Prevent future attacks, Trigger automated response and Suppress similar alerts.
 
