@@ -27,7 +27,7 @@ In this task, you'll create a Logic App that is used as a Playbook in Microsoft 
 
 1. Within the search bar, look for **Sentinel SOAR Essentials**.
 
-1. Select the solution that appears in the results.
+1. Select the solution that appears in the results and click on **Install**.
 
 1. Within the solution details, select **Manage**.
 
