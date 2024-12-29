@@ -12,7 +12,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 ## Architecture Diagram
 
- ![Lab overview.](../Media/SC-200ex9.png)
+ ![Lab overview.](../Media/SC-200ex9upd.png)
 
 ### Task 1: Deploy the Registry Schema ASIM parser. 
 
