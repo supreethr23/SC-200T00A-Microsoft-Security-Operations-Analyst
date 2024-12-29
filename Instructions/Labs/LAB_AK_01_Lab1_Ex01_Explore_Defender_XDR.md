@@ -13,7 +13,7 @@ In this lab, you will perform:
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/2024-07-23.png)
+  ![Picture 1](../Media/arch1.png)
 
 ### Task 1: Create a Group in Microsoft Entra ID
 
