@@ -18,7 +18,7 @@ Analytics rules search for specific events or sets of events across your environ
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod7_L1_Ex3.png)
+  ![Picture 1](../Media/lab9ex3.png)
 
 ### Task 1: Create a Scheduled Query.
 
