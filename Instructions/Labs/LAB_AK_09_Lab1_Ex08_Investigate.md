@@ -14,7 +14,7 @@ An incident can include multiple alerts. It is an aggregation of all the relevan
 
 ## Architecture Diagram
 
-  ![Lab overview.](../Media/SC-200ex8.png)
+  ![Lab overview.](../Media/SC-200ex8upd.png)
 
 ### Task 1: Investigate an incident
 
