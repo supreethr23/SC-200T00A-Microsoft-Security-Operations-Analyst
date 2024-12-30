@@ -149,6 +149,12 @@ In this task, you test your new scheduled query rule.
 
 1. Select the Incident and review the information in the right blade.
 
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+   <validation step="3e75085e-0e87-4db0-a6ad-9facbd092df7" />
 
 ### Review
 In this lab, you have completed the following:
