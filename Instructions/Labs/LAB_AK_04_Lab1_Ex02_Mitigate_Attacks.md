@@ -16,9 +16,8 @@ To explore the Defender for Endpoint attack mitigation capabilities, you will ru
 
 ## Estimated timing: 60 minutes
 
-## Architecture Diagram
-
-  ![Picture 1](../Media/2024-07-23(2).png)
+  ![](../Media/Mod4_L1_Ex2.png)
+  
 ### Task 1: Verify Device onboarding
 
 In this task, you will confirm that the device is onboarded successfully and create a test alert.

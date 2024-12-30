@@ -23,14 +23,6 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will access your Microsoft Sentinel workspace.
 
-1. Start the Microsoft Edge browser.
-
-1. In the Edge browser, navigate to the Azure portal at https://portal.azure.com.
-
-1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
-
-1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
-
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
 1. Select the Microsoft Sentinel Workspace you created in a previous lab.
@@ -43,15 +35,25 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 
 1. Go to content hub and search **Common Event Format** and click on install
 
+   ![](../Media/l8e3-8.png)
+
+   >**Note:** If the **Common Event Format** option is not visible, click on **More content in the Content Hub**.
+
+     ![](../Media/l8e3-9.png) 
+
 1. From the Data Connectors tab, search for the **Common Event Format (CEF) via Legacy agent** connector and select it from the list.
 
 1. Select the **Open connector page** on the connector information blade.
 
 1. Under configuration Copy the command shown in **1.2 Install the CEF collector on the Linux machine** and paste it on the Notepad.
 
+   ![](../Media/l8e3-6.png)
+
 1. Back to the Azure portal, In the Search bar of the Azure portal, type **virtual machine**, then select **Virtual machine**.
 
 1. Open LIN1 Linux virtual machine and copy the **Public IP address** of LIN1 and paste on the notepad.
+
+   ![](../Media/l8e3-5.png)
 
 1. Go back to the WIN1 virtual machine. launch Windows PowerShell as Administrator by right clicking the Start menu icon and selecting **Windows PowerShell (Admin)**. Select **Yes** to allow the app to run in the User Account Control window that appears.
 
@@ -95,9 +97,14 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 
 1. Select the **Open connector page** on the connector information blade.
 
+   ![](../Media/l8e3-4.png)
+
 1. Under **Configuration**, open the **Install agent on a non-Azure Linux Machine** section.
 
 1. Select the link for **Download & install agent for non-Azure Linux machine**. 
+
+
+    ![](../Media/l8e3-3.png)
 
     >**Note:** Your Log Analytics workspace should show **2 Windows computers connected**. This corresponds to WIN2 and AZWIN01 virtual machines connected earlier.
 
@@ -108,6 +115,8 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 1. Select **Log Analytics agent instructions**.
 
 1. Copy the command in the **Download and onboard agent for Linux** area to the clipboard and paste it into the notepad.
+
+   ![](../Media/l8e3-2.png)
    
 1. Open LIN2 Linux virtual machine and copy the Public IP address of **LIN2** paste on the notepad.
 
@@ -156,6 +165,8 @@ In this task, you will configure the Syslog collection facilities.
 1. Select **authpriv** from the drop-down menu for **Facility name**.
 
 1. Select **Apply**.  You have completed this task.
+
+    ![](../Media/l8e3-1.png)
 
    >**Note:** If you have not performed task 5 in exercise 1 because Licenses take some time to reflect then please go back to page 2 and perform task 5 to successfully complete this lab.
 
