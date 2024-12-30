@@ -270,4 +270,4 @@ In this task, you'll add an Azure Arc connected, non-Azure Windows virtual machi
  <validation step="cb8a9849-e7b9-487e-8717-e483d77a590a" />
 
 
-## Proceed to Exercise 3
+## Select **Next** to continue to Lab 3.

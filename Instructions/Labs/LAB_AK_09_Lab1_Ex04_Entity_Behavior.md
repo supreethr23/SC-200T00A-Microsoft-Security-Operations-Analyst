@@ -76,4 +76,4 @@ In this task, you will confirm Anomalies analytics rules are enabled.
 ### Review
 In this lab, you have understood the Attacks and Detection Modelling.
 
-## Proceed to Exercise 5
+## Select **Next** to continue to Lab 5.

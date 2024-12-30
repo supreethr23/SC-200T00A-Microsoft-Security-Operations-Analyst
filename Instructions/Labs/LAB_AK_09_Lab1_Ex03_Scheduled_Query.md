@@ -155,4 +155,4 @@ In this lab, you have completed the following:
 - You have created a Scheduled Query.
 - You have tested the new rule. 
 
-## Proceed to Exercise 4
+## Select **Next** to continue to Lab 4.

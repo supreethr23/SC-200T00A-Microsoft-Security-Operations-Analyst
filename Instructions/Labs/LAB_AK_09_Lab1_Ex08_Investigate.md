@@ -102,4 +102,4 @@ In this task, you will investigate an incident.
 In this lab, you have completed the following:
 - You have investigated an incident.
 
-## Proceed to Exercise 9
+## Select **Next** to continue to Lab 9.

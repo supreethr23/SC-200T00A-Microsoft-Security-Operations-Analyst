@@ -212,4 +212,4 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
       <validation step="18d5bcdd-1127-45e5-a67e-66311175135e" />
 
-## Proceed to Exercise 2
+## Select **Next** to continue to Lab 2.

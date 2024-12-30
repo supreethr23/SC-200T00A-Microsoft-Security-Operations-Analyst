@@ -170,4 +170,4 @@ In this lab, you have completed the following:
 - Configured Roles
 - Configured Device Groups
 
-## Proceed to Lab 2
+## Select **Next** to continue to Lab 2.

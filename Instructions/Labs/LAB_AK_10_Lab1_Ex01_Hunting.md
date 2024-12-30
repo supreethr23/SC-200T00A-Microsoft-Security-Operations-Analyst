@@ -264,4 +264,4 @@ In this lab, you have completed the following:
 - We Created a Search.
 - We Created a hunt that combines multiple queries into a MITRE tactic.
 
-## Proceed to Exercise 2
+## Click on **Next** to proceed to Lab 2. 

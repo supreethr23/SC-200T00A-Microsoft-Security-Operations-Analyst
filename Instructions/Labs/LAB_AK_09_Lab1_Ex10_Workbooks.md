@@ -159,4 +159,4 @@ In this lab, you have completed the following:
  - Saved and modified a workbook template
  - Created a Workbook
 
-## Proceed to Exercise 11
+## Click on **Next** to proceed to Lab 11.

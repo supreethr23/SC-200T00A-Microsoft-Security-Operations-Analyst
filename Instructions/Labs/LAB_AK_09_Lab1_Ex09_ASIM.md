@@ -161,7 +161,7 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 In this lab, you have completed the following:
 -  In this Lab, we successfully explored AZURE ML Notebooks.
 
-## You have completed the lab.
+## Select **Next** to continue to Lab 10.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.

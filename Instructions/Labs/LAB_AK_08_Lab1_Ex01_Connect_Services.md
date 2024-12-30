@@ -14,7 +14,6 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will access your Microsoft Sentinel workspace.
 
-
 1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
 
    ![](../Media/l8e132.png)
@@ -121,4 +120,4 @@ In this task, you will connect the *Azure Activity* data connector.
 
 1. Select **Create** to finish.
 
-## Proceed to Exercise 2
+## Select **Next** to continue to Lab 2.

@@ -112,4 +112,4 @@ In this lab
    - Attack 3 - DNS / C2 
 - You have understood Detection Modeling. 
 
-# Proceed to Exercise 6
+## Select **Next** to continue to Lab  6.
