@@ -17,7 +17,7 @@ You need to configure Microsoft Sentinel to perform Entity Behavior Analytics to
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod7_L1_Ex4.png)
+  ![Picture 1](../Media/lab9ex4.png)
 
 ### Task 1: Explore Entity Behavior 
 

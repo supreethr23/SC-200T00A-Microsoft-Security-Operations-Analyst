@@ -14,7 +14,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 ## Architecture Diagram
 
-  ![Lab overview.](../Media/SC200-Lab_Diagrams_Mod7_L1_Ex1.png)
+  ![Lab overview.](../Media/SC200-Lab_Diagrams_Mod7_L1_Ex1upd.png)
 
 ### Task 1: Activate a Microsoft Security Rule
 

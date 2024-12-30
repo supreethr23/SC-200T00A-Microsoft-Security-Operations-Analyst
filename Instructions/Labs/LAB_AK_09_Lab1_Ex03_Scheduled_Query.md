@@ -17,7 +17,7 @@ Analytics rules search for specific events or sets of events across your environ
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod7_L1_Ex3.png)
+  ![Picture 1](../Media/lab9ex3.png)
 
 ### Task 1: Create a Scheduled Query.
 
@@ -49,13 +49,7 @@ In this task, you will create a scheduled query and connect it to the Teams chan
     >1. Select **Create** to finish.
     >1. It might take few minutes for the **Connected** status to appear.
 
-
-
-## Task 3: Create a Scheduled Query.
-
-1. Once, you've received data by reviewing the green icon under *Data sources: Azure Activity*.
-
-1. Select **Create rule** and select Scheduled query rule to continue.
+1. Select **Create rule** to continue.
 
 1. In the Analytics rule wizard, on the *General* tab, change the *Severity* to **Medium**.
 
@@ -78,31 +72,41 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 1. Under the *Event grouping* area, leave the **Group all events into a single alert** as the selected option since we want to generate a single alert every time it runs, as long as the query returns more results than the specified alert threshold above.
 
-1. Select the **Next: Incident settings >** button. 
+1. Select the **Next: Incident settings >** button.
 
 1. On the *Incident settings* tab, review the default options.
 
 1. Select the **Next: Automated response >** button.
 
-1. On the *Automated response* tab under *Automation rules*, select **Add new**.
+1. Select the **Next: Review and create >** button.
+  
+1. Select **Save**.
+
+### Task 2: Edit your new rule
+
+1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+
+1. Select your Microsoft Sentinel Workspace.
+
+1. Select **Analytics** from the Configuration area.
+
+1. Make sure that you are in the *Active rules* tab in the command bar and select the **New CloudShell User** rule.
+
+1. Right click the rule and select **Edit** from the *pop-up* menu.
+
+1. Select the **Next: Set rule logic >** button.
+
+1. Select the **Next: Incident settings >** button.
+
+1. Select the **Next: Automated response >** button.
+
+1. On the *Automated response* tab under *Automation rules*, select **+ Add new**.
 
 1. For the *Automation rule name*, enter **Tier 2**.
 
 1. For the *Actions*, select **Assign owner**.
 
-1. Then select **Assign to me**. Then select **+ Add action**.
-
-1. Use the *And then* drop-down menus to select **Run playbook**
-
-1. A second drop-down menu appears with an *Information (i)* message regarding playbook permissions and a **Manage playbook permissions link**
-
-    >**Note:** The playbooks will appear grayed out in the drop-down list until permissions are configured.
-
-1. Select the **Manage playbook permissions link**
-
-1. On the *Manage Permissions* page, select the **RG-Playbooks** resource group you created in the previous lab, and select **Apply**.
-
-1. From the drop-down menu, select the playbook **PostMessageTeams-OnIncident** you created in the previous exercise.
+1. Then select **Assign to me**.
 
 1. Select **Apply**
 
@@ -110,21 +114,25 @@ In this task, you will create a scheduled query and connect it to the Teams chan
   
 1. Select **Save**.
 
-### Task 4: Test our new rule.
+### Task 3: Test your new rule
 
-In this task, you will test your new scheduled query rule.
+In this task, you test your new scheduled query rule.
 
 1. In the top bar of the Azure portal, Select the icon **>_** that corresponds to the Cloud Shell. You might need to select the ellipsis icon first **(...)** if your display resolution is too low.
 
-1. Select **PowerShell** and then **Create storage**. Wait until the Cloud Shell is provisioned.
+1. In the *Welcome to Azure Cloud Shell* window, select **Powershell**.
 
-1. Close the Azure Cloud Shell window.
+1. On the *Getting started* page, select **Mount storage account**, and then select your **Azure Pass - Sponsorship** from the *storage account subscription* drop-down menu item and select the **Apply** button.
+
+    >**Important:** Do not select the *No storage account required* radio button option. This wil cause the incident creation to fail.
+
+1. On the *Mount storage account* page, select **We will create a storage account for you**, and then select **Next**.
+
+1. Wait until the Cloud Shell is provisioned, then close the Azure Cloud Shell window.
 
 1. In the Search bar of the Azure portal, type *Activity* and then select **Activity Log**.
 
 1. Make sure the following *Operation name* items appear: **List Storage Account Keys** and **Update Storage Account Create**. These are the operations that the KQL query you reviewed earlier will match to generate the alert. **Hint:** You might need to select **Refresh** to update the list.
-
-    ![Lab overview.](../Media/alert.png)
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
@@ -136,23 +144,21 @@ In this task, you will test your new scheduled query rule.
 
 1. You should see the newly created Incident.
 
-    >**Note:** The event that triggers the incident may take 30 or more minutes to process. Continue with the next exercise, you will come back to this view later.
+    >**Note:** The event that triggers the incident may take 5+ minutes to process. Continue with the next exercise, you will come back to this view later.
 
 1. Select the Incident and review the information in the right blade.
 
-1. Go back to Microsoft Teams by selecting the tab in your Microsoft Edge browser. If you closed it, just open a new tab and type https://teams.microsoft.com. Go to the *SOC* Teams, select the *New Alerts* channel, and see the message post about the incident.
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
- 
-   <validation step="d771d20d-c2d8-410c-8b53-a1ccd733741e" />
-
+   <validation step="3e75085e-0e87-4db0-a6ad-9facbd092df7" />
 
 ### Review
 In this lab, you have completed the following:
 - You have created a Scheduled Query.
+- You have edited the Scheduled Query
 - You have tested the new rule. 
 
 ## Select **Next** to continue to Lab 4.
