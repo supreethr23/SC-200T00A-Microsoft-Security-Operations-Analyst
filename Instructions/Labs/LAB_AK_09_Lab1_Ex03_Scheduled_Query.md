@@ -153,7 +153,7 @@ In this task, you test your new scheduled query rule.
 ### Review
 In this lab, you have completed the following:
 - You have created a Scheduled Query.
-- You have edited a Scheduled Query
+- You have edited the Scheduled Query
 - You have tested the new rule. 
 
 ## Proceed to Exercise 4
