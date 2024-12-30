@@ -11,7 +11,7 @@ You are a Security Operations Analyst working at a company that implemented Sent
 
 ## Architecture Diagram
 
- ![](../Media/SC200-Lab_Diagrams_Mod8_L1_Ex2.png)
+ ![](../Media/SC200-Lab_Diagrams_Mod10ex2.png)
 
 ### Task 1: Explore Notebooks
 

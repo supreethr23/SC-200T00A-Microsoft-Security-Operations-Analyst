@@ -20,7 +20,7 @@ You are a Security Operations Analyst working at a company that is implementing 
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/archdialab6.png)
+  ![Picture 1](../Media/SC200-Lab_Diagrams_Mod4_L1_Ex1upd.png)
 
 ### Task 1: Create a Log Analytics Workspace
 
@@ -44,7 +44,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-   <validation step="054d3b2b-26bd-41d8-8690-e4ace2e78de4" />
+   <validation step="8edea4c7-f6fb-4714-9021-fcf6b6942abe" />
 
 ### Task 2: Initialize the Microsoft Sentinel Workspace.
 
@@ -315,7 +315,12 @@ In this task, you will use generate visualizations with KQL statements.
     | summarize count() by bin(TimeGenerated, 1m)
     | render timechart
     ```
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
+   <validation step="43dbc561-34b3-4571-b014-c5b7d09e1b40" />
 
 ### Task 6: Build multi-table statements in KQL
 

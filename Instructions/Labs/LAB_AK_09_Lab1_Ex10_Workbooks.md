@@ -18,7 +18,7 @@ Microsoft Sentinel allows you to create custom workbooks across your data and al
 
 ## Architecture Diagram
 
- ![Lab overview.](../Media/SC-200ex10.png)
+ ![Lab overview.](../Media/SC-200ex10upd.png)
 
 ### Task 1: Explore workbook templates
 
