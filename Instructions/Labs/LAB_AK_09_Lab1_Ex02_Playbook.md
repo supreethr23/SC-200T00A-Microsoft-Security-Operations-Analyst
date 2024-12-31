@@ -107,7 +107,7 @@ In this task, you’ll update the new playbook you created with the proper conne
 
 1. Select the link to **Manage playbook permissions**.
 
-1. On the *Manage Permissions* page, select the **RG-Playbooks** resource group you created in the previous lab, and select **Apply**.
+1. On the *Manage Permissions* page, select the **RG-DEFENDER** resource group you created in the previous lab, and select **Apply**.
 
 1. From the drop down list, select the **Defender_XDR_Ransomware_Playbook_SecOps_Tasks** playbook.
 
