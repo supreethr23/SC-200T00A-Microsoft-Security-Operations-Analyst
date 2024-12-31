@@ -20,18 +20,37 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will activate a Microsoft Security rule.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
 
-1. In the **Sign in** dialog box, copy and paste * Email/Username: <inject key="AzureAdUserEmail"></inject> and then select Next.
+   ![](../Media/l8e132.png)
 
-1. In the **Enter password** dialog box, copy and paste * Password: <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+1. Select **+Create** from the command bar.
 
-1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
+   ![](../Media/l8e133.png)
 
-1. Select the Microsoft Sentinel Workspace you created in the previous labs.
+1. Select Resource Group **RG-Defender**  from the drop down.
 
-   > **NOTE**: If not created follow the below steps:
- In the Search bar of the Azure portal, type *Log Analytics workspaces*, then select the same service name. Click on **create**. Select WIN-1 for the Resource group drop-down. For the Name, enter **uniquenameDefender**.  Select **Review + Create**. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes. Go to sentinel click on **create** select the created workspace and click on **add**.
+1. For the Name, enter **uniquenameDefender**.
+
+1. Select **Review + Create**.
+
+   ![](../Media/l8e134.png)
+
+1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
+
+    ![](../Media/l8e135.png)
+ 
+1. In the Search bar of the Azure portal, type **microsoft sentinel**, then select **Microsoft Sentinel**.
+
+   ![](../Media/l8e129.png)
+
+1. Select **+Create** from the command bar.
+
+ 1. Select the newly created workspace and click on **Add**.
+  
+    ![](../Media/l8e131.png)
+
+1. Select your Microsoft Sentinel Workspace that you created in the previous lab.
         
 1. Select **Analytics** from the Configuration area. By default, you will see the *Active rules*.
 
