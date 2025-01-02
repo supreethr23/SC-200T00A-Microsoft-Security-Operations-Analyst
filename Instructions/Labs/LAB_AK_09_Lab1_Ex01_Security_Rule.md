@@ -21,35 +21,8 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will activate a Microsoft Security rule.
 
-1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
-
-   ![](../Media/l8e132.png)
-
-1. Select **+Create** from the command bar.
-
-   ![](../Media/l8e133.png)
-
-1. Select Resource Group **RG-Defender**  from the drop down.
-
-1. For the Name, enter **uniquenameDefender**.
-
-1. Select **Review + Create**.
-
-   ![](../Media/l8e134.png)
-
-1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
-
-    ![](../Media/l8e135.png)
- 
 1. In the Search bar of the Azure portal, type **microsoft sentinel**, then select **Microsoft Sentinel**.
 
-   ![](../Media/l8e129.png)
-
-1. Select **+Create** from the command bar.
-
- 1. Select the newly created workspace and click on **Add**.
-  
-    ![](../Media/l8e131.png)
 
 1. Select your Microsoft Sentinel Workspace that you created in the previous lab.
         

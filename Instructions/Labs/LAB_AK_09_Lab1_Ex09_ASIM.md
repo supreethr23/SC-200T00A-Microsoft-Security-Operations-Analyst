@@ -48,13 +48,19 @@ In this task, you'll review the Registry Schema parsers that are included with t
 
 1. Hover over the **_Im_RegistryEvent_MicrosoftWindowsEventxxx** ASIM function and then select **Load the function code** in the popup window.
 
+   ![Lab overview.](../Media/3.png)
+
 1. Review the KQL that is parsing the Event ID 4657 to simplifying your analysis of the data in the Microsoft Sentinel workspace.
 
     >**Hint:** Typing ctrl+f in the code window brings up *Find* and makes searching for *EventID: 4657* much easier.
 
+     ![Lab overview.](../Media/1.png)
+
 1. In *Logs* Open a New Query tab.
 
 1. Go back to the *Schema and Filter* blade and now hover the **_Im_RegistryEvent_MicrosoftWindowsEventxxx** *Registry Event ASIM filtering parser for Microsoft Windows Events and Security Events* and then select **Use in editor**.
+
+   ![Lab overview.](../Media/2.png)
 
 1. **Run** the ASIM function query. If you've completed the previous lab exercises you should see results and noerror messages.
 
