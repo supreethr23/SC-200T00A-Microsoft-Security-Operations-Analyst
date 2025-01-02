@@ -14,14 +14,6 @@ You're a Security Operations Analyst working at a company that implemented Micro
 
 In this task, you'll review the Registry Schema parsers that are included with the Microsoft Sentinel deployment.
 
-1. Log in to WIN1 virtual machine as Admin with the password: **Pa55w.rd**.  
-
-1. In the Microsoft Edge browser, navigate to the Azure portal at <https://portal.azure.com>.
-
-1. In the **Sign in** dialog box, copy, and paste in the **Tenant Email** account provided by your lab hosting provider and then select **Next**.
-
-1. In the **Enter password** dialog box, copy, and paste in the **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
-
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
 1. Select your Microsoft Sentinel Workspace.
