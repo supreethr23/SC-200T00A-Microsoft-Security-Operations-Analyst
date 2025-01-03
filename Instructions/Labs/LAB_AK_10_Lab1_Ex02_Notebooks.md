@@ -74,6 +74,8 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 1. Clear all the results from the notebook by selecting the **Clear all outputs** from the command bar and following the *Getting Started* tutorial. **Hint:** This can be found by selecting the ellipsis (...) from the command bar.
 
+   ![](../Media/38.png)
+
 1. Review section *1 Introdution* in the notebook and proceed to section *2 Initializing the notebook and MSTICPy*.
 
 1. In section *2 Initializing the notebook and MSTICPy*, review the content on initalizing the notebook and installing the MSTICPy package.
