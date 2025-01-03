@@ -214,11 +214,19 @@ In this task, you will use a Search job to look for a C2.
 
 1. Unselect items in the *Active rules* drop-down menu.
 
+   ![](../Media/45.png)
+
 1. Select **Hunting queries** in the *Simulated rules* filter to see which techniques have hunting queries associated with them.
+
+   ![](../Media/44.png)
 
 1. Select the card for **Account Manipulation**.
 
+   ![](../Media/43.png)
+
 1. In the details pane locate *Simulated coverage* and select the **View** link next to *Hunting queries*.
+
+   ![](../Media/42.png)
 
 1. This link takes you to a filtered view of the Queries tab on the Hunting page based on the technique you selected.
 
@@ -228,13 +236,19 @@ In this task, you will use a Search job to look for a C2.
 
 1. Select **Create new hunt**. All the queries you selected are cloned for this new hunt.
 
-1. Fill out the hunt name and optional fields. The description is a good place to verbalize your hypothesis. The Hypothesis pull down menu is where you set the status of your working hypothesis.
+   ![](../Media/41.png)
+
+1. Fill out the hunt name as **myhunt** and optional fields. The description is a good place to verbalize your hypothesis. The Hypothesis pull down menu is where you set the status of your working hypothesis.
 
 1. Select **Create** to get started.
+
+   ![](../Media/40.png)
 
 1. Select the **Hunts (Preview)** tab to view your new hunt.
 
 1. Select the hunt link by name to view the details and take actions.
+
+   ![](../Media/39.png)
 
 1. View the details pane with the Hunt name, Description, Content, Last update time, and Creation time.
 
