@@ -51,11 +51,17 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 1. Select **Create rule** to continue.
 
+   ![](../Media/22.png)
+
 1. In the Analytics rule wizard, on the *General* tab, change the *Severity* to **Medium**.
 
 1. Select **Next: Set rule logic >** button:
 
+   ![](../Media/23.png)
+
 1. For the rule query, select **View query results**. You shouldn't receive any results nor any errors.
+
+   ![](../Media/24.png)
 
 1. Close the *Logs* window by selecting the upper right **X** and select **OK** to discard to save changes to go back to the wizard.
 
@@ -65,6 +71,8 @@ In this task, you will create a scheduled query and connect it to the Teams chan
     |---|---|
     |Run Query every|5 minutes|
     |Lookup data from the last|1 Days|
+
+    ![](../Media/25.png)
 
     >**Note:** We are purposely generating many incidents for the same data. This enables the Lab to use these alerts.
 
@@ -94,6 +102,8 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 1. Right click the rule and select **Edit** from the *pop-up* menu.
 
+   ![](../Media/26.png)
+
 1. Select the **Next: Set rule logic >** button.
 
 1. Select the **Next: Incident settings >** button.
@@ -106,11 +116,15 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 1. For the *Actions*, select **Assign owner**.
 
-1. Then select **Assign to me**.
+1. Then select **<inject key="AzureAdUserEmail"></inject>**.
 
-1. Select **Apply**
+   ![](../Media/27.png)
+
+1. Select **Apply**.
 
 1. Select the **Next: Review and create >** button.
+
+   ![](../Media/28.png)
   
 1. Select **Save**.
 
@@ -120,19 +134,29 @@ In this task, you test your new scheduled query rule.
 
 1. In the top bar of the Azure portal, Select the icon **>_** that corresponds to the Cloud Shell. You might need to select the ellipsis icon first **(...)** if your display resolution is too low.
 
+   ![](../Media/30.png)
+
 1. In the *Welcome to Azure Cloud Shell* window, select **Powershell**.
 
+   ![](../Media/29.png)
+
 1. On the *Getting started* page, select **Mount storage account**, and then select your **Subscription** from the *storage account subscription* drop-down menu item and select the **Apply** button.
+
+    ![](../Media/31.png)
 
     >**Important:** Do not select the *No storage account required* radio button option. This wil cause the incident creation to fail.
 
 1. On the *Mount storage account* page, select **We will create a storage account for you**, and then select **Next**.
+
+   ![](../Media/32.png)
 
 1. Wait until the Cloud Shell is provisioned, then close the Azure Cloud Shell window.
 
 1. In the Search bar of the Azure portal, type *Activity* and then select **Activity Log**.
 
 1. Make sure the following *Operation name* items appear: **List Storage Account Keys** and **Update Storage Account Create**. These are the operations that the KQL query you reviewed earlier will match to generate the alert. **Hint:** You might need to select **Refresh** to update the list.
+
+    ![](../Media/33.png)
 
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
@@ -141,6 +165,8 @@ In this task, you test your new scheduled query rule.
 1. Select the **Incidents** menu option under *Threat management*.
 
 1. Select the **Auto-refresh incidents** toggle.
+
+    ![](../Media/34.png)
 
 1. You should see the newly created Incident.
 

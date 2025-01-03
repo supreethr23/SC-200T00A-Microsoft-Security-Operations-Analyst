@@ -54,11 +54,11 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 1. Select **Close** if an informational window appears in the Microsoft Azure Machine Learning Studio.
 
-1. In the command bar, to the right of the **Compute instance:**  selector, select the **+** symbol to create a new compute instance. **Hint:** It might be hidden inside the ellipsis icon **(...)**.
+1. In the command bar, to the right of the **Compute instance:**  selector, select the **+ Create** symbol to create a new compute instance. **Hint:** It might be hidden inside the ellipsis icon **(...)**.
 
      >**Note:** You can have more screen space by hiding the Azure ML Studio left blade by selecting the 3 lines on the top left, as well as the Notebooks Files by selecting the **<<** icon.
 
-1. Type a unique name in the *Compute name* field. This will identify your compute instance.
+1. Enter **Mycompute<inject key="DeploymentID" enableCopy="false"/>** in the **Compute name** field. This will identify your compute instance.
 
 1. Scroll down and select the first option available. **Hint:** Workload type: Development on Notebooks and lightweight testing.
 
@@ -93,9 +93,3 @@ In this lab, you have completed the following:
 -  In this Lab, we successfully explored AZURE ML Notebooks.
 
 ## You have completed the lab.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-> - Hit the Validate button for the corresponding task. You can proceed to the next task if you receive a success message.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.

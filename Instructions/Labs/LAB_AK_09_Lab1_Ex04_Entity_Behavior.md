@@ -37,6 +37,8 @@ In this task, you will explore Entity behavior analytics in Microsoft Sentinel.
 
 1. Select the **Go to analytics in oder to configure the anomalies** link.
 
+    ![Lab overview.](../Media/35.png)
+
 ### Task 2: Confirm and review Anomalies rules
 
 In this task, you will confirm Anomalies analytics rules are enabled.
