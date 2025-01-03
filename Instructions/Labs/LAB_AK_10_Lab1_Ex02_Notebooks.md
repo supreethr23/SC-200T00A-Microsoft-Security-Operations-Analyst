@@ -54,13 +54,17 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 1. Select **Close** if an informational window appears in the Microsoft Azure Machine Learning Studio.
 
-1. In the command bar, to the right of the **Compute instance:**  selector, select the **+ Create** symbol to create a new compute instance. **Hint:** It might be hidden inside the ellipsis icon **(...)**.
+1. In the command bar, to the right of the **Compute instance:**  selector, select the **+**. **Hint:** It might be hidden inside the ellipsis icon **(...)**.
+
+     ![Picture 1](../Media/37.png)
 
      >**Note:** You can have more screen space by hiding the Azure ML Studio left blade by selecting the 3 lines on the top left, as well as the Notebooks Files by selecting the **<<** icon.
 
 1. Enter **Mycompute<inject key="DeploymentID" enableCopy="false"/>** in the **Compute name** field. This will identify your compute instance.
 
 1. Scroll down and select the first option available. **Hint:** Workload type: Development on Notebooks and lightweight testing.
+
+     ![](../Media/36.png)
 
 1. Select the **Review + Create** button at the bottom of the screen, then scroll down and select **Create**. Close any feedback window that may appear. This takes a few minutes, you'll see a notification (bell icon) when it's done and the *Compute instance* left icon turns from blue to green.
 
