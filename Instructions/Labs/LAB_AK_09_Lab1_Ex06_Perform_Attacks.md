@@ -112,6 +112,50 @@ You are going to simulate the attacks that you will later use to detect and inve
 
     >**Important:** Do not close these windows. Let this PowerShell script run in the background. The command needs to generate log entries for some hours. You can proceed to the next task and next exercises while this script runs. The data created by this task will be used in the Threat Hunting lab later. This process will not create substantial amounts of data or processing.
 
+
+### Task 4: Privilege Elevation Attack with User Add
+
+>**Important:** The next steps are done on a different machine than the one you were previously working on. Look for the Virtual Machine name references.
+
+In this task, you will perform attacks on the host connected with Azure Arc that has the Azure Monitor Agent configured.
+
+1. Go to Hyper-V manager. Connect to WINSERVER virtual machine.
+
+1. Login to WINSERVER virtual machine as Admin with the password: **Password.1!!**.  
+
+    >**Important:** The lab *SAVE* functionality can cause WINServer to become disconnected from Azure Arc. A reboot will solve the issue. 
+
+1. Select **Start** in Windows. Then **Power**, next **Restart**.
+
+1. Follow the instructions to log into WINServer again.
+
+1. In the search of the taskbar, enter *Command*. A Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
+
+1. In the Command Prompt, create a Temp folder in the root directory. Remember to press Enter after the last row:
+
+    ```CommandPrompt
+    cd \
+    ```
+    ```CommandPrompt
+    mkdir temp
+    ```
+    ```CommandPrompt
+    cd temp
+    ```
+
+1. Copy and run this command to simulate the creation of an Admin account. Remember to press Enter after the last row:
+
+    ```CommandPrompt
+    net user theusernametoadd /add
+    ```
+    ```CommandPrompt
+    net user theusernametoadd ThePassword1!
+    ```
+    ```CommandPrompt
+    net localgroup administrators theusernametoadd /add
+    ```
+
+
 ## Review
 In this lab, you have completed the following:
 - Persistence Attack with Registry Key Add 
