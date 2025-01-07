@@ -9,15 +9,14 @@ Analytics rules search for specific events or sets of events across your environ
 ## Lab objectives
  In this lab, you will perform the following:
 - Task 1: Create a Scheduled Query
-- Task 2: Connect to Azure Activity data connector
-- Task 3: Create a Scheduled Query.
-- Task 4: Test our new rule.
+- Task 2: Edit your new rule
+- Task 3: Test your new rule
 
 ## Estimated timing: 40 minutes
 
 ## Architecture Diagram
 
-  ![Picture 1](../Media/lab9ex3.png)
+  ![Picture 1](../Media/archdialab9ex3.png)
 
 ### Task 1: Create a Scheduled Query.
 

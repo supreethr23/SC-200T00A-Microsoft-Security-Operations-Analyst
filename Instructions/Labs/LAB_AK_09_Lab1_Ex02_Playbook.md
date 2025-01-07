@@ -17,6 +17,10 @@ After completing this lab, you will be able to:
 
 ## Estimated timing: 30 minutes
 
+## Architecture Diagram
+
+  ![Lab overview.](../Media/archdialab9ex2.png)
+
 ### Task 1: Create a Playbook in Microsoft Sentinel
 
 In this task, you'll create a Logic App that is used as a Playbook in Microsoft Sentinel.

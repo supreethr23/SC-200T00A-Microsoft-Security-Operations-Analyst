@@ -2,13 +2,23 @@
 
 ## Lab scenario
 
-![Lab overview.](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex2.png)
-
 You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You must learn how to connect log data from the many data sources in your organization. The next source of data is Windows virtual machines inside and outside of Azure, like On-Premises environments or other Public Clouds.
 
 >**Important:** The lab exercises for Learning Path #8 are in a *standalone* environment. If you exit the lab before completing it, you will be required to re-run the configurations again.
 
-### Estimated time to complete this lab: 30 minutes
+## Lab objectives
+ In this lab, you will perform the following:
+- Task 1: Create a Windows Virtual Machine in Azure
+- Task 2: Install Azure Arc on an On-Premises Server
+- Task 3: Connect an Azure Windows virtual machine
+- Task 4: Connect a non-Azure Windows Machine
+
+### Estimated Duration: 30 minutes
+
+## Architecture Diagram
+
+![Lab overview.](../Media/SC-200-Lab_Diagrams_Mod6_L1_Ex2.png)
+
 
 ### Task 1: Create a Windows Virtual Machine in Azure
 
@@ -269,5 +279,11 @@ In this task, you'll add an Azure Arc connected, non-Azure Windows virtual machi
 
  <validation step="cb8a9849-e7b9-487e-8717-e483d77a590a" />
 
+## Review
+In this lab, you have completed the following:
+- Created a Windows Virtual Machine in Azure
+- Installed Azure Arc on an On-Premises Server
+- Connected an Azure Windows virtual machine
+- Connected a non-Azure Windows Machine
 
 ## Select **Next** to continue to Lab 3.

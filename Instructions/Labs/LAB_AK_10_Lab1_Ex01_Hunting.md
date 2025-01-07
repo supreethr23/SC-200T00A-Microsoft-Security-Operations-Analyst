@@ -19,7 +19,7 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 ## Architecture Diagram
 
- ![](../Media/SC200-Lab_Diagrams_Mod10.png)
+ ![](../Media/archdialab10ex1.png)
 
 ### Task 1: Create a hunting query
 

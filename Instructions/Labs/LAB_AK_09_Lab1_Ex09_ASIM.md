@@ -2,13 +2,21 @@
 
 ## Lab scenario
 
-![Lab overview.](../Media/SC-200-Lab_Diagrams_Mod7_L1_Ex9.png)
 
 You're a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You need to model ASIM parsers for a specific Windows registry event. These parsers will be finalized at a later time following the [Advanced Security Information Model (ASIM) Registry Event normalization schema reference](https://docs.microsoft.com/azure/sentinel/registry-event-normalization-schema).
 
 >**Important:** The lab exercises for Learning Path #9 are in a *standalone* environment. If you exit the lab before completing it, you will be required to re-run the configurations again.
 
-### Estimated time to complete this lab: 30 minutes
+## Lab objectives
+ In this lab, you will Understand following:
+
+ - Task 1: Deploy the Registry Schema ASIM parsers
+
+## Estimated timing: 30 minutes
+
+## Architecture Diagram
+
+![Lab overview.](../Media/SC-200-Lab_Diagrams_Mod7_L1_Ex9.png)
 
 ### Task 1: Deploy the Registry Schema ASIM parsers
 
