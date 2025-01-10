@@ -136,6 +136,18 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
         
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
 
+1. In the Azure portal's search bar, type **Log Analytics workspaces** and Select the **uniquenameDefender (1)** you just created, click on **Virtual machines (deprecated) (3)** under **classic (3)** from the left panel, then select **WIN1 (4)** virtual machine.
+
+   ![Picture 1](../Media/111.png)
+
+1. On the WIN1 page, click on **Connect**.
+
+   ![Picture 1](../Media/112.png)
+
+1. Wait until its get connected.
+
+   ![Picture 1](../Media/113.png)
+
 1. In the Azure portal's search bar, type **Microsoft Sentinel** and select it.
 
      ![Picture 1](../Media/sc-200-19.png)
