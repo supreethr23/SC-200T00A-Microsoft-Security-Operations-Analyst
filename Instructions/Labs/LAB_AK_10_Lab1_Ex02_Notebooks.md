@@ -3,6 +3,8 @@
 ## Lab scenario
 You are a Security Operations Analyst working at a company that implemented Sentinel. You need to explore the benefits of threat hunting with Microsoft Sentinel Notebooks.
 
+>**Important:** The lab exercises for Learning Path #10 are in a *standalone* environment. If you exit the lab before completing it, you will be required to re-run the configurations again.
+
 ## Lab objectives
  In this lab, you will Understand the following:
   -  Task 1: Explore Notebooks

@@ -22,7 +22,6 @@ You're a Security Operations Analyst working at a company that is implementing c
 
 In this task, you'll enable and configure Microsoft Defender for Cloud.
 
-
 1. In the Search bar of the Microsoft Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
    ![Picture 1](../Media/lab5-8.png)
@@ -33,7 +32,7 @@ In this task, you'll enable and configure Microsoft Defender for Cloud.
 
 1. Select the **Expand all** button to view all subscriptions and resources.
 
-1. Select the **MOC Subscription-lodxxxxxxxx** subscription (or equivalent name in your Language).
+1. Select the your subscription (or equivalent name in your Language).
 
    ![Picture 1](../Media/lab5-3.png)
 

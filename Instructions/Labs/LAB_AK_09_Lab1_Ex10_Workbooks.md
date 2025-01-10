@@ -8,6 +8,8 @@ Microsoft Sentinel allows you to create custom workbooks across your data and al
 
 >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Create%20workbooks)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
+>**Important:** The lab exercises for Learning Path #9 are in a *standalone* environment. If you exit the lab before completing it, you will be required to re-run the configurations again.
+
 ## Lab objectives
  In this lab, you will Understand following:
  - Task 1: Explore workbook templates

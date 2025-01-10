@@ -4,6 +4,8 @@
 
 You are going to simulate the attacks that you will later use to detect and investigate in Microsoft Sentinel.
 
+>**Important:** The lab exercises for Learning Path #9 are in a *standalone* environment. If you exit the lab before completing it, you will be required to re-run the configurations again.
+
 ## Lab objectives
  In this lab, you will perform the following:
 - Task 1: Persistence Attack with Registry Key Add 

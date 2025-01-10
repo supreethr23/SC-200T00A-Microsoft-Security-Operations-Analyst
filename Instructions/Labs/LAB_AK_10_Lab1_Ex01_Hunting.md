@@ -4,9 +4,9 @@
 
 You are a Security Operations Analyst working at a company that implemented Microsoft Sentinel. You have received threat intelligence about a Command and Control (C2 or C&C) technique.  You need to perform a hunt and watch for the threat.
 
-   **Important:** The log data used in the lab was created in the previous module.
+   >**Important:** The lab exercises for Learning Path #10 are in a *standalone* environment. If you exit the lab before completing it, you will be required to re-run the configurations again.
 
-   **Note:**  Because you already experienced the process of exploring data in a previous module, the lab provides a KQL statement to start with.  
+   >**Note:** The log data created in the previous Learning Path *Perform Attacks* lab exercises will not be available in this lab without rerunning the **Attack 3** on WIN1 server in Exercise 5.
 
 ## Lab objectives
  In this lab, you will perform the following:

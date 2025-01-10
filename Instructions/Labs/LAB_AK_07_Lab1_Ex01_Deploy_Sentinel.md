@@ -4,6 +4,9 @@
 
 You're a Security Operations Analyst working at a company that is implementing Microsoft Sentinel. You're responsible for setting up the Microsoft Sentinel environment to meet the company requirements to minimize cost, meet compliance regulations, and provide the most manageable environment for your security team to perform their daily job responsibilities.
 
+>**Important:** The lab exercises for Learning Path #7 are in a *standalone* environment. If you exit the lab before completing it, you will be required to re-run the configurations again.
+
+
 ## Lab objectives
  In this lab, you will perform the following:
 - Task 1: Create a Log Analytics Workspace
