@@ -58,7 +58,7 @@ In this task, you will access your Microsoft Sentinel workspace.
 
 In this task, you will connect the Microsoft Defender for Cloud data connector.
 
-1. In the Microsoft Sentinel left menus, scroll down to the **Content management** section and select **Content Hub**.
+1. In the Microsoft Sentinel navigation menu, scroll down to the **Content management** section and select **Content Hub**.
 
 1.  In the *Content hub*, search for the **Microsoft Defender for Cloud** solution and select it from the list.
 
