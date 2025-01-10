@@ -49,7 +49,7 @@ In this task, you'll create a Logic App that is used as a Playbook in Microsoft 
 
     ![](../Media/7.png)
 
-1. For Resource Group, select **Create New**, enter **RG-Playbooks** and select OK.
+1. For Resource Group, select **Create New**, enter **RG-playbooks** and select OK.
 
 1. For Playbook name, enter **Defender_XDR_Ransomware_Playbook_SecOps-Tasks (1)** (would exceed limit of 64 characters).
 
@@ -151,7 +151,7 @@ In this task, you’ll update the new playbook you created with the proper conne
 
 1. Select the link to **Manage playbook permissions**.
 
-1. On the *Manage Permissions* page, select the **RG-DEFENDER** resource group you created in the previous lab, and select **Apply**.
+1. On the *Manage Permissions* page, select the **RG-Playbook** resource group you created in the previous lab, and select **Apply**.
 
 1. From the drop down list, select the **Defender_XDR_Ransomware_Playbook_SecOps_Tasks** playbook.
 
