@@ -15,13 +15,9 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
    >**Important:** The *Windows Security Events via AMA* data connector requires Azure Arc for non-Azure devices. 
 
-1. In the lab virtual machine, search for **Hyper-V Manager** from the bottom windows search bar and select to open.
+1. In the lab virtual machine, Select **WINserver** from the desktop.
 
-     ![Picture 1](../Media/sc-200-1.png)
-
-1. Select and right-click on the **WINSERVER** virtual machine and select **Start** only if it is not in **Running** state, then again right-click on the **WINSERVER** virtual machine and select **Connect**.
-
-     ![Picture 1](../Media/sc-200-2.png)
+   ![Picture 1](../Media/46.png)
 
 1. If **Connect to WINServer** prompted, click **Connect.**
 
@@ -117,6 +113,8 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 1. Select **Refresh** until **WIN-xxxx** name appears.
 
     >**Note:** This could take a few minutes.
+
+    >**Note:** XXXX will be some random value as shown in the below labguide. 
 
      ![Picture 1](../Media/sc-200-16.png)
     
