@@ -110,11 +110,11 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Then go back to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
 
-1. Select **Refresh** until **WIN-xxxx** name appears.
+1. Select **Refresh** until **WIN-xxxxxxxxxxx** name appears.
 
     >**Note:** This could take a few minutes.
 
-    >**Note:** XXXX will be some random value as shown in the below labguide. 
+    >**Note:** **xxxxxxxxxxx** will be a random suffix of the **WIN-**, as demonstrated in the below image. 
 
      ![Picture 1](../Media/sc-200-16.png)
     
