@@ -25,10 +25,15 @@ In this lab, you will perform:
 
    |Setting|Value|
     |---|---|
-    |Group Type| **Microsoft 365** |
-    |Group Name| **Sg-IT-<inject key="DeploymentID" enableCopy="false"/>** |
+    |Group Type| **Microsoft 365** (1)|
+    |Group Name| **Sg-IT-<inject key="DeploymentID" enableCopy="false"/>** (2)|
 
-1. Click on **No owners selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
+  ![Picture 1](../Media/newgroup1.png)
+
+  ![Picture 1](../Media/newgroup2.png)
+
+
+1. Click on **No owners selected (1)** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
 1. Click on **No members selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
@@ -91,8 +96,6 @@ In this task, you will assign preset security policies for Exchange Online Prote
 1. Under **Strict protection**, select **Manage protection settings**. **Hint:** *Strict protection* is found under "Email & Collaboration - Policies & rules - Threat policies - Preset security policies".
 
 1. In the *Apply Exchange Online Protection* page, select **Specific recipients** and under **Groups** start writing **Sg-IT-<inject key="DeploymentID" enableCopy="false"/>**, select it, and then select **Next**. Notice that this configuration applies policies for anti-spam, outbound spam filters, anti-malware, and anti-phishing.
-
-   ![Standart protection](../Media/stdprotect.png)
 
    >**Note**: If a group is already selected, make sure it is **Sg-IT-<inject key="DeploymentID" enableCopy="false"/>**. else, remove and add it.
 
