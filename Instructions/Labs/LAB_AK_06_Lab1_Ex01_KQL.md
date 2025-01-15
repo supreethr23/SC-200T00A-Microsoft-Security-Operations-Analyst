@@ -30,12 +30,14 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Select **+Create** from the command bar.
 
-1. Select **Create new** under Resource Group and provide the name **RG-Defender**. Select **Ok**.
-1. For the Name, enter as **uniquenameDefender**.
+1. Select **Create new** under Resource Group and provide the name **RG-Defender (1)**. Select **Ok**.
+1. For the Name, enter as **uniquenameDefender (2)**.
 
 1. Select the default Region. 
 
-1. Select **Review + Create**.
+1. Select **Review + Create (3)**.
+
+  ![Picture 1](../Media/loganalytics1.png)
 
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
 
@@ -54,7 +56,9 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Next, in Add Microsoft Sentinel to a workspace page.
 
-1. Select your existing workspace that was created in the previous task, then select **Add**. This could take a few minutes.
+1. Select your existing workspace (1) that was created in the previous task, then select **Add (2)**. This could take a few minutes.
+
+  ![Picture 1](../Media/sentinelworkspace.png)
 
 1. In the Microsoft Sentinel free trial activated tab, select **Ok**.
 
