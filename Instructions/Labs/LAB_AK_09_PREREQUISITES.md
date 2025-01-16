@@ -192,6 +192,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
     ![Picture 1](../Media/m1.png)
  
 1. In the **Configuration** section, select the **+Create data collection rule**.
+
      ![Picture 1](../Media/sc-200-21.png)
 
 1. Enter **WINSERVER (1)** for Rule Name, then select **Next: Resources (2)**.
