@@ -53,13 +53,17 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. If you are not already at the Microsoft Defender XDR portal in your browser, start the Microsoft Edge browser go to (https://security.microsoft.com) and log in with the **Tenant Email** credentials.
 
-1. Select **Settings** from the left menu bar, then from the Settings page select **Endpoints**.
+1. Select **Settings (1)** from the left menu bar, then from the Settings page select **Endpoints (2)**.
 
-1. Select **Onboarding** in the Device Management section.
+    ![Picture 1](../Media/endpt1.png)
+
+1. Select **Onboarding (1)** in the Device Management section.
 
     >**Note:** You can also perform device onboarding from the **Assets** section of the left menu bar. Expand Assets and select Devices. On the Device Inventory page, with Computers & Mobile selected, scroll down to **Onboard devices.** This takes you to the **Settings > Endpoints** page.
 
-1. In the "1. Onboard a device" area make sure "Local Script (for up to 10 devices)" is displayed in the Deployment method drop-down and select the **Download onboarding package** button. 
+1. In the Deployment method make sure **Local Script (for up to 10 devices) (2** is displayed in the Deployment method drop-down and select the **Download onboarding package (3)** button. 
+
+    ![Picture 1](../Media/onboarding.png)
 
 1. Under the *Downloads* pop-up, highlight the "WindowsDefenderATPOnboardingPackage.zip" file with your mouse and select the folder icon **Show in folder**. **Hint:** In case you don't see it, the file should be in the c:\users\admin\downloads directory.
 
@@ -97,16 +101,20 @@ In this task, you will configure roles for use with device groups.
 
    |Setting|Value|
     |---|---|
-    |Group Type| **Microsoft 365** |
-    |Group Name| **Sg-IT** |
+    |Group Type| **Microsoft 365** (1) |
+    |Group Name| **Sg-IT** (2) |
 
-1. Click on **No owners selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
+   ![Picture 1](../Media/newgroup1.png)
+
+1. Click on **No owners selected (1)** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
+
+   ![Picture 1](../Media/newgroup2.png)
 
 1. Click on **No members selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
-1. Select **Create.**
+1. Select **Create. (2)**
 
 1. In the Microsoft Defender XDR portal select **Settings** from the left menu bar, then select **Endpoints**. 
 

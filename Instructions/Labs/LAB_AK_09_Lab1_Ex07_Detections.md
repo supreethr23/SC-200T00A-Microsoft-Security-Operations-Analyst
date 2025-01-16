@@ -38,19 +38,7 @@ In this task, you will create a detection for the first attack of the previous e
     ```
    ![Lab overview.](../Media/sc200ex7temp.png)
     
-    >**Note:** A result with the event might take up to 5 minutes to appear. Wait until it does. If it does not appear, make sure you have rebooted WINServer as instructed in the previous exercise and that you have completed Task #3 of the Module-09 Lab-1, Exercise-6.
-     
-1. The table *SecurityEvent* looks to have the data already normalized and is easy for us to query. Expand the row to see all the columns related to the record.
-
-1. From the results, we now know that the Threat Actor is using reg.exe to add keys to the Registry key and the program is located in C:\temp. **Run** the following statement to replace the *search* operator with the *where* operator in our query:
-
-    ```KQL
-    SecurityEvent 
-    | where Activity startswith "4688"
-    | where Process == "reg.exe" 
-    | where CommandLine startswith "REG" 
-    ```
-   ![Lab overview.](../Media/sc200ex7log.png)
+    >**Note:** A result with the event might take up to 48 hours to appear, if you donot see the logs, you can proceed with the further steps.
 
 1. It is important to help the Security Operations Center Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. **Run** the following query:
 
@@ -106,7 +94,7 @@ In this task, you will create a detection for the first attack of the previous e
     |Automation rule name|Startup RegKey|
     |Trigger|When incident is created|
     |Actions |Run playbook|
-    |playbook |PostMessageTeams-OnIncident|
+    |playbook |Defender_XDR_Ransomware_Playbook_for_SecOps-Tasks|
 
     >**Note:** You have already assigned permissions to the playbook, so it will be available.
 

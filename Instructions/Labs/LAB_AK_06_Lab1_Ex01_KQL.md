@@ -30,12 +30,14 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Select **+Create** from the command bar.
 
-1. Select **Create new** under Resource Group and provide the name **RG-Defender**. Select **Ok**.
-1. For the Name, enter as **uniquenameDefender**.
+1. Select **Create new** under Resource Group and provide the name **RG-Defender (1)**. Select **Ok**.
+1. For the Name, enter as **uniquenameDefender (2)**.
 
 1. Select the default Region. 
 
-1. Select **Review + Create**.
+1. Select **Review + Create (3)**.
+
+   ![Picture 1](../Media/loganalytics1.png)
 
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
 
@@ -54,7 +56,9 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Next, in Add Microsoft Sentinel to a workspace page.
 
-1. Select your existing workspace that was created in the previous task, then select **Add**. This could take a few minutes.
+1. Select your existing workspace (1) that was created in the previous task, then select **Add (2)**. This could take a few minutes.
+
+   ![Picture 1](../Media/sentinelworkspace.png)
 
 1. In the Microsoft Sentinel free trial activated tab, select **Ok**.
 
@@ -64,19 +68,29 @@ In this task, you will build basic KQL statements.
 
    > **Important:**  For each query, clear the previous statement from the Query Window or open a new Query Window by selecting **+** after the last opened tab (up to 25).
 
-1. Navigate to Log analytics workspace created in earlier step, expand **Classic.** select the Virtual machine (depricated) option.
+1. Navigate to Log analytics workspace created in earlier step, expand **Classic (1)** select the **Virtual machine (depricated) (2)** option.
+
+   ![Picture 1](../Media/111.png)
 
 1. On the right of the screen click on the virtual machine displayed and click on **Connect**. wait for the virtual machine status to change to **Connected**
 
-1. Navigate back to the **Microsoft Sentinel** page, from the left navigation menu, scroll down to the **Content management** section and select **Content Hub**.
+   ![Picture 1](../Media/112.png)
 
-1. Search for **Windows Security Events (2)** from the search bar and select it, Click on **Install (4)** on the right navigation page that shows up.
+1. Navigate back to the **Microsoft Sentinel** page, from the left navigation menu, scroll down to the **Content management (1)** section and select **Content Hub (2)**.
 
-1. From the left navigation pane, click on **Data connectors (1)** under the **Configuration** section.
+   ![Picture 1](../Media/contentmgmt.png)
+
+1. Search for **Windows Security Events (1)** from the search bar and select it (2), Click on **Install(3)** on the right navigation page that shows up.
+
+   ![Picture 1](../Media/winevents.png)
+
+1. From the left navigation pane, click on **Data connectors** under the **Configuration** section.
 
 1. Select the **Security Events via Legacy Agent** Connector and click on open connector, scroll down look for **Select which events to stream** Select the **All events** radio button and click on **Apply Changes**.
 
-1. Go to Sentinel, click on **Logs**. Close all the pop-ups if they appear.
+1. Go to Sentinel, click on **Logs (1)**. Close all the pop-ups if they appear (2).
+
+   ![Picture 1](../Media/logs.png)
 
    >**Note:** You may encounter situations where some of the queries below don't work as expected. Please don't hesitate to refer to the lab guide—there are instances when the connector may take some time to reach the desired state, which can affect how certain queries run. Your patience and understanding are greatly appreciated
 
