@@ -60,11 +60,11 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
    > - On the left-right click on **WINSERVER**.
    > - Click on Hyper-V settings.
    > - From there click on allow enhanced mode policy Under **Server** and enable the option.
-   > -	Again, click on allow enhanced mode under **User** and enable the option. Restart the WINSERVER machine once to reflect the changes.
+   > - Again, click on allow enhanced mode under **User** and enable the option. Restart the WINSERVER machine once to reflect the changes.
 
-     >**Note:** If the copy-paste functionality is still not working, copy the content that has to be pasted then from the top navigation pane of the WINSERVER Hyper-V VM click on **Clipboard** and choose **Type Clipboard text** to paste.
+   >**Note:** If the copy-paste functionality is still not working, copy the content that has to be pasted then from the top navigation pane of the WINSERVER Hyper-V VM click on **Clipboard** and choose **Type Clipboard text** to paste.
       
-     > ![Picture 1](../Media/x0.png)
+   > ![Picture 1](../Media/x0.png)
 
 1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
 
