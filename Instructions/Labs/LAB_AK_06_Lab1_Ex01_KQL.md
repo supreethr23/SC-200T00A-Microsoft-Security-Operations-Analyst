@@ -70,9 +70,11 @@ In this task, you will build basic KQL statements.
 
 1. Navigate to Log analytics workspace created in earlier step, expand **Classic (1)** select the **Virtual machine (depricated) (2)** option.
 
-   ![Picture 1](../Media/classicvm.png)
+   ![Picture 1](../Media/111.png)
 
 1. On the right of the screen click on the virtual machine displayed and click on **Connect**. wait for the virtual machine status to change to **Connected**
+
+   ![Picture 1](../Media/112.png)
 
 1. Navigate back to the **Microsoft Sentinel** page, from the left navigation menu, scroll down to the **Content management (1)** section and select **Content Hub (2)**.
 
