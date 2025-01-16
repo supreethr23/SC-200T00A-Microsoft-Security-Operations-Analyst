@@ -102,15 +102,15 @@ In this task, you will configure roles for use with device groups.
 
   ![Picture 1](../Media/newgroup1.png)
 
-  ![Picture 1](../Media/newgroup2.png)
+1. Click on **No owners selected (1)** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
-1. Click on **No owners selected (1) ** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
+  ![Picture 1](../Media/newgroup2.png)
 
 1. Click on **No members selected** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
    **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
-1. Select **Create. (1)**
+1. Select **Create. (2)**
 
 1. In the Microsoft Defender XDR portal select **Settings** from the left menu bar, then select **Endpoints**. 
 
