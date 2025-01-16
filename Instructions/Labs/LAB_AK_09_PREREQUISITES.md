@@ -29,13 +29,32 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Open the Microsoft Edge browser inside **WINSERVER**.
 
-1. Open a browser and log into the Azure Portal at https://portal.azure.com with the credentials you have been using in the previous labs.
+1. On your virtual machine, click on the Azure Portal icon as shown below:
+ 
+     ![Launch Azure Portal](../Media/portal.png)
+ 
+2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+ 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+      ![Enter Your Username](../Media/AZ-500-siginazportal.png)
+ 
+3. Next, provide your password:
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+ 
+     ![Enter Your Password](../Media/AZ-500-pass.png)
 
-1. In the **Sign in** dialog box, copy and paste in the **Username** <inject key="AzureAdUserEmail"></inject> and then select Next.
+1. If you get a pop-up stating **Action Required** click on **Ask Later**.   
+   
+   ![](../Media/az500-2.png)
+ 
+4. If prompted to stay signed in, you can click **No**.
 
-1. In the **Enter password** dialog box, copy and paste in the Password <inject key="AzureAdUserPassword"></inject> and then select **Sign in**.
+    ![](../Media/AZ-500-staysignedin.png)
+ 
+5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
 
-1. On the **Stay signed in?** dialog box, select the Don’t show this again check box and then select **No**.
 
     >**Note:** If you are not able to copy-paste the username and password then:
     > - Go to Hyper-V manager.
