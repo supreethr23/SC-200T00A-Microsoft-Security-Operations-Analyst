@@ -37,7 +37,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Select **Review + Create (3)**.
 
- ![Picture 1](../Media/loganalytics1.png)
+   ![Picture 1](../Media/loganalytics1.png)
 
 1. Once the workspace validation has passed, select **Create**. Wait for the new workspace to be provisioned, this may take a few minutes.
 
@@ -58,7 +58,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 1. Select your existing workspace (1) that was created in the previous task, then select **Add (2)**. This could take a few minutes.
 
-  ![Picture 1](../Media/sentinelworkspace.png)
+   ![Picture 1](../Media/sentinelworkspace.png)
 
 1. In the Microsoft Sentinel free trial activated tab, select **Ok**.
 
