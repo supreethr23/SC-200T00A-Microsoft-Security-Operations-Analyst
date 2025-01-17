@@ -30,7 +30,7 @@ In this task, you will explore the Microsoft Sentinel workbook templates.
 
 1. Select your Microsoft Sentinel Workspace.
 
-1. Select **Workbooks** under the *Threat Management* left blade. The *Templates* tab is selected by default.
+1. Select **Workbooks** under the *Threat Management* left blade. Select the *Templates* tab.
 
 1. Search for and select the **Azure Activity** template workbook. In the right pane, scroll down and select the **View template** button.
 

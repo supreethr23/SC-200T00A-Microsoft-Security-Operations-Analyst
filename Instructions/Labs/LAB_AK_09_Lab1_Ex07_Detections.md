@@ -100,9 +100,9 @@ In this task, you will create a detection for the first attack of the previous e
 
 1. Select **Apply**
 
-1. Select the **Next: Review >** button.
+1. Select the **Next: Review + Create >** button.
   
-1. On the *Review and create* tab, select the **Create** button to create the new Scheduled Analytics rule.
+1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
 ### Task 2: Privilege Elevation Attack Detection
 
@@ -167,7 +167,12 @@ In this task, you will create a detection for the second attack of the previous 
 
 1. Select **Next: Set rule logic >** button. 
 
-1. On the *Set rule logic* tab, the *Rule query* should be populated already with you KQL query, as well the entities under *Alert enrichment - Entity mapping*.
+1. On the *Set rule logic* tab, the *Rule query* should be populated already with you KQL query, as well the entities under *Alert enhancement - Entity mapping*.
+
+    |Entity|Identifier|Data Field|
+    |:----|:----|:----|
+    |Account|FullName|AccountCustomEntity|
+    |Host|Hostname|HostCustomEntity|
 
 1. For *Query scheduling* set the following:
 
@@ -191,7 +196,7 @@ In this task, you will create a detection for the second attack of the previous 
    |Automation rule name|SecurityEvent Local Administrators User Add|
    |Trigger|When incident is created|
    |Actions |Run playbook|
-   |playbook |PostMessageTeams-OnAlert|
+   |playbook |Defender_XDR_Ransomware_Playbook_for_SecOps-Tasks|
 
    >**Note:** You have already assigned permissions to the playbook, so it will be available.
 
