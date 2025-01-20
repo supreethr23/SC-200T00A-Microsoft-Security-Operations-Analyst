@@ -103,6 +103,8 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
 ### Task 2: Edit your new rule
 
+In this task, you will modify the New CloudShell User rule in Microsoft Sentinel by configuring automated responses.
+
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
 1. Select your Microsoft Sentinel Workspace.
