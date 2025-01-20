@@ -62,6 +62,8 @@ In this task, you'll enable and configure Microsoft Defender for Cloud.
 
 ### Task 2: Understanding the Microsoft Defender for Cloud Dashboard
 
+In this task, you will explore the Microsoft Defender for Cloud dashboard to familiarize yourself with its interface, features, and how it provides insights into your cloud environment's security posture.
+
 1. In the Search bar of the Microsoft Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
 
 1. In the left navigation menu for Microsoft Defender for Cloud, under the *General* section, select **Overview**.

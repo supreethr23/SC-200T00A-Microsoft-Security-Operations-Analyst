@@ -25,7 +25,6 @@ In this task, you will activate a Microsoft Security rule.
 
 1. In the Search bar of the Azure portal, type **microsoft sentinel**, then select **Microsoft Sentinel**.
 
-
 1. Select your Microsoft Sentinel Workspace that you created in the previous lab.
         
 1. Select **Analytics** from the Configuration area. By default, you will see the *Active rules*.

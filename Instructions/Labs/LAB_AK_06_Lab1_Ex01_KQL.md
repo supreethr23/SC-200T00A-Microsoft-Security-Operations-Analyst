@@ -50,6 +50,8 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 ### Task 2: Initialize the Microsoft Sentinel Workspace.
 
+In this task, you will set up a Microsoft Sentinel workspace within the Azure portal. This workspace will be the foundation for monitoring, detecting, and responding to security threats.
+
 1. In the Search bar of the Azure portal, type *Sentinel*, then select **Microsoft Sentinel**.
 
 1. Click on **+ Create**.  

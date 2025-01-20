@@ -48,7 +48,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 ### Task 2 - Deploy Microsoft Sentinel to a workspace
 
-Deploy Microsoft Sentinel to the workspace.
+In this task, you will deploy Microsoft Sentinel to an existing Log Analytics workspace, enabling it to collect, detect, and respond to security threats.
 
 1. In the Search bar of the Azure portal, type **microsoft sentinel**, then select **Microsoft Sentinel**.
 

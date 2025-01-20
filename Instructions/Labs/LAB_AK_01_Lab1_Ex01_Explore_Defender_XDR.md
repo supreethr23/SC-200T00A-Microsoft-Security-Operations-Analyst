@@ -17,6 +17,8 @@ In this lab, you will perform:
 
 ### Task 1: Create a Group in Microsoft Entra ID
 
+In this task, you will create a new group in Microsoft Entra ID using the Azure portal.
+
 1. In the Search bar of the Azure portal, type **Microsoft Entra ID**, then select **Microsoft Entra ID**.
 
 1. Select **Groups** and then click on **New group**.
@@ -107,6 +109,8 @@ In this task, you will assign preset security policies for Exchange Online Prote
 1. Read the content under *Review and confirm your changes* and select **Confirm** to apply the changes and then select **Done** to finish.
 
 ### Task 3: Preparing the Microsoft Defender XDR workspace
+
+In this task, you will prepare the Microsoft Defender XDR workspace by setting up the required configurations.
 
 1. On the **Microsoft Defender** portal, from the navigation menu, select **Home** from the left.
 

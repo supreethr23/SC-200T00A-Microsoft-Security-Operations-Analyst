@@ -9,7 +9,7 @@ An incident can include multiple alerts. It is an aggregation of all the relevan
 >**Important:** The lab exercises for Learning Path #9 are in a *standalone* environment. If you exit the lab before completing it, you will be required to re-run the configurations again.
 
 ## Lab objectives
- In this lab, you will Understand following:
+ In this lab, you will Understand the following:
  - Task 1: Investigate an incident
 
 ## Estimated timing: 20 minutes
