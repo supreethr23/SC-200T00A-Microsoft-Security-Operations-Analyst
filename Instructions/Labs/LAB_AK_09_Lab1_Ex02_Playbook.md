@@ -117,6 +117,8 @@ In this task, you’ll update the new playbook you created with the proper conne
 
 ### Task 3: Create an Automation Rule
 
+In this task, you will create an automation rule in Microsoft Sentinel that runs a playbook based on specific tactics.
+
 1. Within Microsoft Sentinel, go to Automation under Configuration.
 
 1. Select Create and choose Automation Rule.
