@@ -90,6 +90,8 @@ In this task, you will create an Azure DevOps repository.
 
 ### Task 3: Connect Sentinel to Azure DevOps.
 
+In this task, you will connect Microsoft Sentinel to Azure DevOps to manage content and repositories.
+
 1. Select the *Azure Portal*/*Microsoft Sentinel* tab in your browser.
 
 1. In Microsoft Sentinel, select **Repositories (Preview)** in the *Content Management* section.
