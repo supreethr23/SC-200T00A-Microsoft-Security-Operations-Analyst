@@ -20,6 +20,8 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 ### Task 1: Persistence Attack with Registry Key Add 
 
+In this task, you will simulate a persistence attack by adding a registry key that ensures a program runs each time the system starts.
+
 1. Follow the instructions to log into WINServer again.
 
 1. In the search of the task bar, enter *Command*. Command Prompt will be displayed in the search results. Right-click on the Command Prompt and select **Run as Administrator**. Select **Yes** in the User Account Control window that appears to allow the app to run.
@@ -40,6 +42,8 @@ You are going to simulate the attacks that you will later use to detect and inve
 
 ### Task 2: Privilege Elevation Attack with User Add
 
+In this task, you will simulate a privilege elevation attack by creating a new admin user on the system. This exercise demonstrates how an attacker could escalate their privileges on a machine by adding a new user to the Administrators group.
+
 1. Copy and run this command to simulate the creation of an Admin account. Remember to press Enter after the last row:
 
     ```CommandPrompt
@@ -49,6 +53,8 @@ You are going to simulate the attacks that you will later use to detect and inve
     ```
 
 ### Task 3: Command and Control Attack with DNS
+
+In this task, you will simulate a DNS-based Command and Control (C2) attack by creating a PowerShell script. This simulated attack will continuously generate DNS queries to a C2 server.
 
 1. Copy and run this command to create a script that will simulate a DNS query to a C2 server:
 
