@@ -114,6 +114,8 @@ In this task, you will simulate an attack on the WIN1 virtual machine and verify
 
 ### Task 4: Investigate the simulated attack as a single incident
 
+In this task, you will investigate the simulated attack on the WIN1 virtual machine, treating it as a single incident in Microsoft Defender for Endpoint. This process will help you understand how to analyze security incidents and respond effectively.
+
 1. In the Microsoft Defender XDR portal select **Incidents & alerts** from the left menu bar, then select **Incidents**.
 
 1. A new incident called *Multi-stage incident involving Defense evasion & Discovery on one endpoint* is in the right pane. Select the incident name to load its details.
