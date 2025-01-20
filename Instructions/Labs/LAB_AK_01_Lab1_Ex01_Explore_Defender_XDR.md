@@ -32,7 +32,7 @@ In this task, you will create a new group in Microsoft Entra ID using the Azure 
 
    ![Picture 1](../Media/newgroup1.png)
 
-1. Click on **No owners selected (1)** and select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
+1. Click on **No owners selected (1)** and  select the **ODL_user <inject key="DeploymentID" enableCopy="false"/>** from the list and then click on **Select**.
 
    ![Picture 1](../Media/newgroup2.png)
 
@@ -40,7 +40,7 @@ In this task, you will create a new group in Microsoft Entra ID using the Azure 
 
    > **Note**: Make sure you have selected **Group type** as Microsoft 365.
 
-1. Select **Create.(2)**
+1. Select **Create**.
 
 ### Task 2: Apply Microsoft Defender XDR for Office 365 preset security policies
 

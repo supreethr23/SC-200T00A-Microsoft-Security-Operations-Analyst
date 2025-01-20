@@ -79,9 +79,9 @@ In this task, you'll review cloud security posture management.  The Secure Score
 
    ![Picture 1](../Media/l5-2.png)
 
-1. In the `Set owner` *Email address* box, type in your admin email. **Hint:** You can copy it from the instructions in the *Resources* tab.
+1. In the `Set owner` *Email address* box, enter **<inject key="AzureAdUserEmail"></inject>** . **Hint:** You can copy it from the instructions in the *Resources* tab.
 
-1. Explore the *Set remediation timeframe* and *Set email notifications* options and select **Create**.
+1. Explore the *Set remediation timeframe* and *Set email notifications* options and select **Create (2)**.
 
    ![Picture 1](../Media/l5-1.png)
 

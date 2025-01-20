@@ -22,7 +22,7 @@ You're a Security Operations Analyst working at a company that is implementing c
 
 In this task, you'll enable and configure Microsoft Defender for Cloud.
 
-1. In the Search bar of the Microsoft Azure portal, type *Defender*, then select **Microsoft Defender for Cloud**.
+1. In the Search bar of the Microsoft Azure portal, type *Defender for Cloud (1)*, then select **Microsoft Defender for Cloud (2)**.
 
    ![Picture 1](../Media/lab5-8.png)
 
@@ -110,7 +110,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
     ![](../Media/l8e1-13.png)
 
- 1. Select **WIN1-<inject key="DeploymentID" enableCopy="false"/>**, then select **WIN2**. Right-click on the **WIN2** virtual machine and choose **Start**, then click **Continue**. After that, right-click on the **WIN2** virtual machine again and select **Connect**.
+ 1. Select **WIN1-<inject key="DeploymentID" enableCopy="false"/> (1)**, then select **WIN2**. Right-click on the **WIN2 (2)** virtual machine and choose **Start**, then click **Continue**. After that, right-click on the **WIN2** virtual machine again and select **Connect (3)**.
 
     ![](../Media/l8e1-12.png)
  
@@ -134,9 +134,9 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
    ![](../Media/l8e1-15.png)
 
-1. In the navigation pane under **Azure Arc resources** select **Machines**
+1. In the navigation pane under **Azure Arc resources** select **Machines (1)**
 
-1. Select **+ Add/Create**, then select **Add a machine**.
+1. Select **+ Add/Create (2)**, then select **Add a machine (3)**.
 
    ![](../Media/l8e1-16.png)
 
@@ -144,15 +144,15 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
    ![](../Media/l8e1-17.png)
 
-1. In the **Add a server with Azure Arc** page, select the **RG-Defender** Resource group under Project details.
+1. In the **Add a server with Azure Arc** page, select the **RG-Defender (2)** Resource group under Project details.
  
-1. For *Region*, select **(US) East Us** from the drop-down list.
+1. For *Region*, select **(US) East Us (3)** from the drop-down list.
 
     ![](../Media/l8e118.png)
 
 1. Review the Server details and Connectivity method options. Keep the default values and select **Next** to get to the Tags tab.
 
-1. Review the default available tags. Select **Next** to get to the Download and run script tab.
+1. Review the default available tags. Select **Next** to get to the **Download and run script** tab.
 
    ![](../Media/l8e119.png)
 
@@ -164,7 +164,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
    ![](../Media/l8e121.png)
     
-1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
+1. Right-click the Windows Start **(1)** button and select **Windows PowerShell (Admin) (2)**.
 
    ![](../Media/l8e1-11.png)
 

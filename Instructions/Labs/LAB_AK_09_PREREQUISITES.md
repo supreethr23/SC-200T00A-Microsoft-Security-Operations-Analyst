@@ -66,77 +66,87 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
       
    > ![Picture 1](../Media/x0.png)
 
-1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
+1. In the Search bar of the Azure portal, type **Azure arc (1)**, then select **Azure Arc (2)**.
 
-     ![Picture 1](../Media/sc-200-5.png)
+   ![](../Media/l8e1-15.png)
 
-1. On the left side navigation pane under **Azure Arc Resources** select **Machines (1)** and then click on **+ Add/Create (2)** drop dowm and then click on **Add a Machine (3)**.
+1. In the navigation pane under **Azure Arc resources** select **Machines (1)**
 
-     ![Picture 1](../Media/sc-200-6.png)
+1. Select **+ Add/Create (2)**, then select **Add a machine (3)**.
 
-1. Select **Generate script** in the **"Add a single server"** section.
+   ![](../Media/l8e1-16.png)
 
-     ![Picture 1](../Media/sc-200-7.png)
+1. Select **Generate script** from the "Add a single server" section.
 
-1. First, select the **East US** region.
+   ![](../Media/l8e1-17.png)
 
-1. Then, create a new resource group by clicking on **Create new (1)** with the name **RG-DEFENDER (2)** then click **OK (3)**
-
-     ![Picture 1](../Media/sc-200-8.png)
-     
-1. Review the *Server details* and *Connectivity method* options. Keep the default values and select **Next** to get to the Tags tab.
-
-     ![Picture 1](../Media/sc-200-9.png)
-
-1. Select **Next** to get to the Download and run script tab.
-
-1. Scroll down and select the **Download** button. **Hint:** If your browser blocks the download, take action in the browser to allow it. In Edge Browser, select the ellipsis button (...) if needed and then select **Keep**.
-
-     ![Picture 1](../Media/sc-200-10.png)
-
-1. Right-click the Windows Start button, In the search box type in **PowerShell**. You should see the **Windows PowerShell App** appear. Select the **Run as Administrator** option.
-
-     ![Picture 1](../Media/sc-200-11.png)
-   
-1. In case you get a UAC prompt, enter *Administrator* for "Username" and *Passw0rd!* for "Password", else skip to the next step.
-
-1. Enter: **cd C:\Users\Administrator\Downloads**
-
-    >**Note:** If you are not able to copy the content, then copy the required content to a notepad file using the Clipboard functionality in the top navigation pane of the Hyper V VM in the lab VM and paste it into the Powershell window.
+1. In the **Add a server with Azure Arc** page, select the **RG-Defender (2)** Resource group under Project details.
  
-1. Type **Set-ExecutionPolicy -ExecutionPolicy Unrestricted** and press enter.
+1. For *Region*, select **(US) East Us (3)** from the drop-down list.
+
+    ![](../Media/l8e118.png)
+
+1. Review the Server details and Connectivity method options. Keep the default values and select **Next** to get to the Tags tab.
+
+1. Review the default available tags. Select **Next** to get to the Download and run script tab.
+
+   ![](../Media/l8e119.png)
+
+1. Scroll down and select the **Download** button. **Hint:** if your browser blocks the download, take action in the browser to allow it.
+
+   ![](../Media/l8e120.png)
+
+1. In Microsoft Edge Browser, select the ellipsis button (...) if needed and then select **Keep**.
+
+   ![](../Media/l8e121.png)
+    
+1. Right-click the Windows Start **(1)** button and select **Windows PowerShell (Admin) (2)**.
+
+   ![](../Media/l8e1-11.png)
+
+1. Enter *Administrator* for "Username" and *Passw0rd!* for "Password" if you get a UAC prompt.
+
+1. Enter: cd C:\Users\Administrator\Downloads
+
+    ![](../Media/l8e122.png)
+
+    >**Important:** If you do not have this directory, most likely means that you are in the wrong machine. Go back to the beginning of Task 4 and change to WINServer and start over.
+
+1. Type *Set-ExecutionPolicy -ExecutionPolicy Unrestricted* and press enter.
 
 1. Enter **A** for Yes to All and press enter.
 
-     ![Picture 1](../Media/sc-200-12.png)
+    ![](../Media/l8e123.png)
 
-1. Type **.\OnboardingScript.ps1** and press enter.  
+1. Type *.\OnboardingScript.ps1* and press enter. 
 
-    >**Important:** If you get the error *"The term .\OnboardingScript.ps1 is not recognized..."*, make sure you are doing the steps for Task 3 on the WINSERVER virtual machine. Another issue might be that the name of the file changed due to multiple downloads, search for *".\OnboardingScript (1).ps1"* or other file numbers in the running directory.
+    ![](../Media/l8e124.png)
 
-1. Enter **R** to Run once and press enter (this may take a couple of minutes).
+    >**Important:** If you get the error *"The term .\OnboardingScript.ps1 is not recognized..."*, make sure you are doing the steps for Task 4 in the WINServer virtual machine. Other issue might be that the name of the file changed due to multiple downloads, search for *".\OnboardingScript (1).ps1"* or other file numbers in the running directory.
 
-     ![Picture 1](../Media/sc-200-13.png)
+1. Enter **R** to Run once and press enter (this may take a couple minutes).
 
-1. The setup process will open a new Edge browser tab to authenticate the Azure Arc agent. Select your admin account, wait for the message "Authentication complete" and then go back to the Windows PowerShell window.
+    ![](../Media/l8e125.png)
 
-     ![Picture 1](../Media/sc-200-14.png)
+1. The setup process opens a new Microsoft Edge browser tab to authenticate the Azure Arc agent. Select your admin account, wait for the message "Authentication complete" and then go back to the Windows PowerShell window.
 
-1. When the installation finishes,you will get a output like this in the powershell. 
+    ![](../Media/l8e126.png)
 
-     ![Picture 1](../Media/sc-200-15.png)
+1. When the installation finishes, go back to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Machines** page.
 
-1. Then go back to the Azure portal page where you downloaded the script and select **Close**. Close the **Add servers with Azure Arc** to go back to the Azure Arc **Servers** page.
+    ![](../Media/l8e127.png)
 
-1. Select **Refresh** until **WIN-xxxxxxxxxxx** name appears.
+1. Select **Refresh** until WINServer server name appears and the Status is *Connected*.
+  
+    ![](../Media/l8e128.png)
 
-    >**Note:** This could take a few minutes.
+    >**Note:** This could take a couple of minutes.
 
     >**Note:** **xxxxxxxxxxx** will be a random suffix of the **WIN-**, as demonstrated in the below image. 
 
      ![Picture 1](../Media/sc-200-16.png)
     
-1. In the Azure portal's search bar, type **Log Analytics workspaces** and select it.
+1. In the Azure portal's search bar, type **Log Analytics workplaces** and select **Log analytics workplace** select it.
 
      ![Picture 1](../Media/sc-200-17.png)
 
@@ -164,7 +174,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
    ![Picture 1](../Media/113.png)
 
-1. In the Azure portal's search bar, type **Microsoft Sentinel** and select it.
+1. In the Azure portal's search bar **microsoft sentinel (1)**, type **Microsoft Sentinel (2)** and select it.
 
      ![Picture 1](../Media/sc-200-19.png)
 
@@ -176,12 +186,11 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Select the Microsoft Sentinel Workspace you created.
  
-1. Click on **Go to the content hub**, search for **Windows Security Events**, and click on **Install**.
+1. Click on **Go to the content hub (1)**, search for **Windows Security Events (2)** and select **Windows Security Events (3)**, and click on **Install (4)**.
 
-     ![Picture 1](../Media/contenthub.png)
      ![Picture 1](../Media/installWSEvents.png)
 
-1. Once the installation is completed, go to the data connector page and refresh you should find **Windows Security Events via AMA**.
+1. Once the installation is completed, go to the data connector (1) page and refresh you should find **Windows Security Events via AMA (2)**.
 
      ![Picture 1](../Media/dataconnectors.png)
 
@@ -199,7 +208,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
      ![Picture 1](../Media/sc-200-22.png)
 
-1. Expand the **Subscription** and the **RG-DEFENDER** (or the Resource Group you have created), then select **WIN-xxxx**. Then select **Next: Collect** and **Next: Review + Create**.
+1. Expand the **Subscription (1)** and the **RG-DEFENDER (3)** (or the Resource Group you have created), then select **WIN-xxxx (3)**. Then select **Next: Collect (4)** and **Next: Review + Create**.
 
      ![Picture 1](../Media/sc-200-23.png)
 

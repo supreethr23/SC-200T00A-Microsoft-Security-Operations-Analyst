@@ -64,9 +64,9 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
    ![](../Media/22.png)
 
-1. In the Analytics rule wizard, on the *General* tab, change the *Severity* to **Medium**.
+1. In the Analytics rule wizard, on the *General* tab, change the *Severity* to **Medium (1)**.
 
-1. Select **Next: Set rule logic >** button:
+1. Select **Next: Set rule logic > (2)** button:
 
    ![](../Media/23.png)
 
@@ -80,8 +80,8 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
     |Setting|Value|
     |---|---|
-    |Run Query every|5 minutes|
-    |Lookup data from the last|1 Days|
+    |Run Query every|5 minutes **(1)**|
+    |Lookup data from the last|1 Days **(2)**|
 
     ![](../Media/25.png)
 

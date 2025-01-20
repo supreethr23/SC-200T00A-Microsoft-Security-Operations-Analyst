@@ -23,21 +23,27 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will activate a Microsoft Security rule.
 
-1. In the Search bar of the Azure portal, type **microsoft sentinel**, then select **Microsoft Sentinel**.
+1. In the Azure portal's search bar **microsoft sentinel (1)**, type **Microsoft Sentinel (2)** and select it.
+
+   ![Picture 1](../Media/sc-200-19.png)
 
 1. Select your Microsoft Sentinel Workspace that you created in the previous lab.
         
-1. Select **Analytics** from the Configuration area. By default, you will see the *Active rules*.
+1. Select **Analytics (1)** from the Configuration area. By default, you will see the *Active rules*.
 
-1. Select the **+ Create** button from the command bar and select the **Microsoft incident creation rule**.
+1. Select the **+ Create (2)** button from the command bar and select the **Microsoft incident creation rule (3)**.
 
-1. Under Name, enter **Create incidents based on Defender for Endpoint**.
+   ![Picture 1](../Media/l9e1-1.png)
 
-1. Scroll down and under Microsoft security service select **Microsoft Defender for Endpoint**. 
+1. Under Name, enter **Create incidents based on Defender for Endpoint (1)**.
 
-1. Under Filter by Severity, select the **Custom** option select Low, Medium, and High for the severity level.
+1. Scroll down and under Microsoft security service select **Microsoft Defender for Endpoint (2)**. 
 
-1. Select the **Next: Automated response** button and then select **Next: Review + create** button.
+1. Under Filter by Severity, select the **Custom (3)** option select Low, Medium, and High for the severity level **(4)**.
+
+1. Select the **Next: Automated response (5)** button and then select **Next: Review + create** button.
+
+    ![Picture 1](../Media/l9e1-2.png)
 
 1. Click on **save**.
 

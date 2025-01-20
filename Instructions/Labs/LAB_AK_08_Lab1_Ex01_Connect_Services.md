@@ -22,19 +22,19 @@ You are a Security Operations Analyst working at a company that implemented Micr
 
 In this task, you will access your Microsoft Sentinel workspace.
 
-1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
+1. In the Search bar of the Azure portal, type **Log Analytics (1)**, then select **Log Analytics workspaces (2)**.
 
    ![](../Media/l8e132.png)
 
-1. Select **+Create** from the command bar.
+1. Select **+ Create** from the command bar.
 
    ![](../Media/l8e133.png)
 
-1. Select Resource Group **RG-Defender**  from the drop down.
+1. Select Resource Group **RG-Defender (2)**  from the drop down.
 
-1. For the Name, enter **uniquenameDefender**.
+1. For the Name, enter **uniquenameDefender (3)**.
 
-1. Select **Review + Create**.
+1. Select **Review + Create (4)**.
 
    ![](../Media/l8e134.png)
 
@@ -42,13 +42,13 @@ In this task, you will access your Microsoft Sentinel workspace.
 
     ![](../Media/l8e135.png)
  
-1. In the Search bar of the Azure portal, type **microsoft sentinel**, then select **Microsoft Sentinel**.
+1. In the Search bar of the Azure portal, type **microsoft sentinel (1)**, then select **Microsoft Sentinel (2)**.
 
    ![](../Media/l8e129.png)
 
-1. Select **+Create** from the command bar.
+1. Select **+ Create** from the command bar.
 
- 1. Select the newly created workspace and click on **Add**.
+ 1. Select the newly created workspace **uniquenameDefender (1)** and click on **Add (1)**.
   
     ![](../Media/l8e131.png)
 
@@ -58,11 +58,11 @@ In this task, you will access your Microsoft Sentinel workspace.
 
 In this task, you will connect the Microsoft Defender for Cloud data connector.
 
-1. In the Microsoft Sentinel navigation menu, scroll down to the **Content management** section and select **Content Hub**.
+1. In the Microsoft Sentinel navigation menu, scroll down to the **Content management (1)** section and select **Content Hub**.
 
-1.  In the *Content hub*, search for the **Microsoft Defender for Cloud** solution and select it from the list.
+1.  In the *Content hub*, search for the **Microsoft Defender for Cloud (2)** solution and select it (3) from the list.
 
-1. On the *Microsoft Defender for Cloud* solution details page select **Install**.
+1. On the *Microsoft Defender for Cloud* solution details page select **Install (4)**.
 
    ![](../Media/l8e136.png)
 
@@ -106,7 +106,7 @@ In this task, you will connect the *Azure Activity* data connector.
 
     >**Note:** The *Azure Activity* solution installs the *Azure Activity* Data connector, 12 Analytic rules, 14 Hunting queries and 1 Workbook.
 
-1. Select the *Azure Activity* Data connector and select **Open connector page**.
+1. Select the *Azure Activity (1)* Data connector and select **Open connector page (2)**.
 
     ![](../Media/l8e143.png)
 

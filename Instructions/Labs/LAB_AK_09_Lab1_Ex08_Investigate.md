@@ -36,7 +36,7 @@ In this task, you will investigate an incident.
 
 1. If the "New incident experience" pop-up appears, follow the prompts by reading the information by selecting the **Next** button.
 
-1. On the left blade of the incident, change the Status to **Active** and then select **Apply**.
+1. On the left blade of the incident, change the Status to **Active (2)** and then select **Apply (3)**.
 
    ![Lab overview.](../Media/active.png)
 

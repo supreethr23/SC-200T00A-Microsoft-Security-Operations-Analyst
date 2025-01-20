@@ -30,9 +30,9 @@ In this task, you walk through the process of ensuring you have the appropriate 
 
 1. From the left navigation panel, expand **Manage**.
 
-1. From the left navigation panel, scroll down and select **Properties**.
+1. From the left navigation panel, scroll down and select **Properties (1)**.
 
-1. Enable the toggle switch for **Access management for Azure resources**, then select **Save**.
+1. Enable the toggle switch for **Access management for Azure resources (2)**, then select **Save (3)**.
 
    ![](../Media/lab2-6.png)
 
@@ -44,27 +44,27 @@ In this task, you walk through the process of ensuring you have the appropriate 
 
    ![](../Media/lab2-1.png)
      
-1. Select **Access control (IAM)**.
+1. Select **Access control (IAM) (1)**.
 
-1. Select **Add**, then **Add role assignment**.
+1. Select **+ Add (2)**, then **Add role assignment (3)**.
 
    ![](../Media/lab2-4.png)
 
-1. From the Role tab, select **Privileged administrator roles**.
+1. From the Role tab, select **Privileged administrator roles (1)**.
 
-1. Select **Owner**, then select **Next**.
+1. Select **Owner (2)**, then select **Next (3)**.
 
    ![](../Media/lab2-5.png)
 
-1. Select **+ Select members**.
+1. Select **+ Select members (1)**.
 
-1. Avery Howard is the first name on this list, select the **+** to the right of the name.  Avery Howard is now listed under selected members. Select the **Select** button, then select **Next**.
+1. Avery Howard is the first name on this list, select the **+** to the right of the name.  Avery Howard (2) is now listed under selected members. Select the **Select (3)** button, then select **Next (4)**.
 
    ![](../Media/lab2-2.png)
 
-1. Select **Allow user to assign all roles except privileged administrator roles, Owner, UAA, RBAC (Recommended)**.
+1. Select **Allow user to assign all roles except privileged administrator roles, Owner, UAA, RBAC (Recommended) (1)**.
 
-1. Select **Review + assign**, then select **Review + assign** one last time.
+1. Select **Review + assign (3)**, then select **Review + assign** one last time.
 
    ![](../Media/lab2-3.png)
 
@@ -75,18 +75,18 @@ In this task, you walk through the process of ensuring you have the appropriate 
    ![](../Media/lab2-7.png)
 
 1. On this page, you set up your security capacity. For any of the fields listed below, you can select the information icon for more information.
-   - Azure subscription: From the drop-down, select **Woodgrove - GTP Demos (External/Sponsored)**.
-   - Resource group: From the drop-down, select **RG-1**.
-   - Capacity name: Enter **Mycapacity-<inject key="DeploymentID" enableCopy="false"></inject>**
-   - Prompt evaluation location [Geo]: From the drop-down, select **United Status**.
-   - You can choose whether you want to select the option, "If this location has too much traffic, allow Copilot to evaluate prompts anywhere in the world (recommended for optimal performance).
-   - **Capacity region** is set based on location selected.
+   - Azure subscription: From the drop-down, select **Woodgrove - GTP Demos (External/Sponsored) (1)**.
+   - Resource group: From the drop-down, select **RG-1 (2)**.
+   - Capacity name: Enter **Mycapacity-<inject key="DeploymentID" enableCopy="false"></inject> (3)**
+   - Prompt evaluation location [Geo]: From the drop-down, select **United Status (4)**.
+   - You can choose whether you want to select the option, "If this location has too much traffic, allow Copilot to evaluate prompts anywhere in the world (recommended for optimal performance) (5).
+   - **Capacity region (6)** is set based on location selected.
 
      ![](../Media/lab2-8.png)
 
-   - **Security compute:** This field is automatically populated with the minimum required SCU units, which is 1. Leave  field with the value of **1**.
-   - Select the box, **"I acknowledge that I have read, understood, and agree to the Terms and Conditions**.
-   - Select **Continue** on the bottom right corner of the page.
+   - **Security compute:** This field is automatically populated with the minimum required SCU units, which is 1. Leave  field with the value of **1 (7)**.
+   - Select the box, **"I acknowledge that I have read, understood, and agree to the Terms and Conditions (8)**.
+   - Select **Continue (9)** on the bottom right corner of the page.
 
      ![](../Media/1112.png)
 
@@ -386,7 +386,7 @@ This exercise should take approximately **30** minutes to complete.
 
 1. Select the first item from the list with the entity named **Rubeus.exe**.
 
-1. From the window that opens, select **Analyze**. Copilot generates a summary.
+1. From the window that opens, select **Analyze(1)**. Copilot generates a summary.
 
    ![](../Media/lab2-47.png)
 
@@ -404,17 +404,17 @@ This exercise should take approximately **30** minutes to complete.
 
 1. Select **Microsoft 365 Defender incident investigation**.
 
-1. The promptbook page opens and asks for the Defender Incident ID. Enter **30342** then select **Run**.
+1. The promptbook page opens and asks for the Defender Incident ID. Enter **30342 (1)** then select **Run (2)**.
 
    ![](../Media/lab2-48.png)
 
 1. Review the information provided. By pivoting to the standalone experience and running the promptbook, the investigation is able to invoke capabilities from a broader set security solution, beyond just Defender XDR, based on the plugins enabled.
 
-1. Select the **box icon** next to the pin icon to select all the prompts and and the corresponding responses, then select the **Pin icon** to save those responses to the pin board.
+1. Select the **box icon (1)** next to the pin icon to select all the prompts and and the corresponding responses, then select the **Pin icon (2)** to save those responses to the pin board.
 
 1. The pin board opens automatically. The pin board holds your saved prompts and responses, along with a summary of each one. You can open and close the pin board by selecting the **pin board icon**.
 
-1. From the top of the page, select **Share** to view your options. By sharing the incident via a link or email, people in your organization with Copilot access can view this session. Close the window by selecting the **X**.
+1. From the top of the page, select **Share (3)** to view your options. By sharing the incident via a link or email, people in your organization with Copilot access can view this session. Close the window by selecting the **X**.
 
    ![](../Media/lab2-49.png)
 
