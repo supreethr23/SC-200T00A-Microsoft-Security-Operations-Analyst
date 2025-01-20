@@ -204,7 +204,9 @@ In this task, you will use a Search job to look for a C2.
 
     >**Note:** If you were running the job, the restore would run for a couple of minutes and your data would be available in a new table.
 
-### Task 4: Create a hunt that combines multiple queries into a MITRE tactic
+### Task 4: Create a hunt that combines multiple queries into an MITRE tactic
+
+In this task, you will learn how to create a hunt in Microsoft Sentinel that combines multiple queries and associates them with a MITRE ATT&CK tactic to enhance your detection capabilities.
 
 1. The MITRE ATT&CK map helps you identify specific gaps in your detection coverage. Use predefined hunting queries for specific MITRE ATT&CK techniques as a starting point to develop new detection logic.
 
