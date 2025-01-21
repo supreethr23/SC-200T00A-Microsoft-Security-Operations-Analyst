@@ -84,9 +84,9 @@ In this task, you walk through the process of ensuring you have the appropriate 
 
      ![](../Media/lab2-8.png)
 
-   - **Security compute:** This field is automatically populated with the minimum required SCU units, which is 1. Leave  field with the value of **1 (7)**.
-   - Select the box, **"I acknowledge that I have read, understood, and agree to the Terms and Conditions (8)**.
-   - Select **Continue (9)** on the bottom right corner of the page.
+   - **Security compute:** This field is automatically populated with the minimum required SCU units, which is 1. Leave  field with the value of **1 (1)**.
+   - Select the box, **"I acknowledge that I have read, understood, and agree to the Terms and Conditions (2)**.
+   - Select **Continue (3)** on the bottom right corner of the page.
 
      ![](../Media/1112.png)
 
