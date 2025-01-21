@@ -96,7 +96,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Select **PowerShell Hunt** from the list.
 
-   ![Picture 1](../Media/huntingg.png)
+   ![Picture 1](../Media/huntinggupd.png)
 
 1. Review the number of results in the middle pane under the *Results* column.
 
@@ -126,7 +126,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Select one of the incidents and then select **Add**. 
 
-   ![Picture 1](../Media/addingbookmark.png)
+   ![Picture 1](../Media/addingbookmarkupd.png)
 
 1. Scroll left to notice that the *Severity* column is now populated with the incident's data.
 
@@ -238,13 +238,13 @@ In this task, you will learn how to create a hunt in Microsoft Sentinel that com
 
 1. Select **Create new hunt**. All the queries you selected are cloned for this new hunt.
 
-   ![](../Media/41.png)
+   ![](../Media/41upd.png)
 
 1. Fill out the hunt name as **myhunt** and optional fields. The description is a good place to verbalize your hypothesis. The Hypothesis pull down menu is where you set the status of your working hypothesis.
 
 1. Select **Create** to get started.
 
-   ![](../Media/40.png)
+   ![](../Media/40upd.png)
 
 1. Select the **Hunts (Preview)** tab to view your new hunt.
 
