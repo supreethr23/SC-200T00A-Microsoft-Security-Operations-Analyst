@@ -69,9 +69,9 @@ In this task, you will onboard a device to Microsoft Defender for Endpoint using
 
 1. Right-click the downloaded zip file and select **Extract All...**, make sure that **Show extracted files when complete** is checked and select **Extract**.
 
-1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" and select **Properties**. Select the **Unblock** checkbox in the bottom right of the Properties windows and select **OK**.
+1. Right-click on the extracted file "WindowsDefenderATPLocalOnboardingScript.cmd" and select **Properties**. Select the **Unblock (1)** checkbox in the bottom right of the Properties windows and select **OK (2)**.
 
-    ![Picture 1](../Media/sc200-mod2-unblock1.png)
+    ![Picture 1](../Media/sc200-mod2-unblock1upd.png)
 
 1. Right-click on the extracted file **WindowsDefenderATPLocalOnboardingScript.cmd** again and choose **Run as administrator**. **Hint:** If you encounter the Windows SmartScreen window, select on **More info**, and choose **Run anyway**. 
     

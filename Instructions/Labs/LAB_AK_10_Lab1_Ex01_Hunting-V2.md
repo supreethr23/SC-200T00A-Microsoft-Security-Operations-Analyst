@@ -52,7 +52,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. In the middle command bar, select the **Add bookmark** button.
 
-   ![Picture 1](../Media/logss.png)
+   ![Picture 1](../Media/logssupd.png)
 
 1. Select **+ Add new entity** under *Entity mapping*.
 
@@ -96,7 +96,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Select **PowerShell Hunt** from the list.
 
-   ![Picture 1](../Media/huntingg.png)
+   ![Picture 1](../Media/huntinggupd.png)
 
 1. Review the number of results in the middle pane under the *Results* column.
 
@@ -122,11 +122,11 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Hide the right blade by selecting the **>>** icon and then scroll right until you see the ellipsis **(...)** icon.
 
-1. Select **Add to existing incident**. All the incidents appear in the right pane.
+1. Select **Add to existing incident (1)**. All the incidents appear in the right pane.
 
-1. Select one of the incidents and then select **Add**. 
+1. Select one of the incidents and then select **Add (2)**. 
 
-   ![Picture 1](../Media/addingbookmark.png)
+   ![Picture 1](../Media/addingbookmarkupd.png)
 
 1. Scroll left to notice that the *Severity* column is now populated with the incident's data.
 

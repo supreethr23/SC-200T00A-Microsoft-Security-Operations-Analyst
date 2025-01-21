@@ -21,9 +21,9 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 1. In the Microsoft Sentinel Workspace, select **Notebooks** under the *Threat management* area.
 
-1. Next, you need to create an AzureML Workspace. Select **Configure Azure Machine Learning** and then select the **Create new Azure ML workspace** button in the command bar.
+1. Next, you need to create an AzureML Workspace. Select **Configure Azure Machine Learning (1)** and then select the **Create new Azure ML workspace (2)** button in the command bar.
 
-     ![Picture 1](../Media/ML.png)
+     ![Picture 1](../Media/MLupd.png)
 
 1. In the Subscription box, select your subscription.
 
@@ -44,11 +44,11 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 1. Select **Notebooks** again and then select the **Templates** tab from the middle command bar. 
 
-1. Select **A Getting Started Guide for Microsoft Sentinel** ML Notebooks. 
+1. Select **A Getting Started Guide for Microsoft Sentinel (1)** ML Notebooks. 
 
-1. On the right pane, scroll down and select **Create from template** button. Review the default options and then select **Save**.
+1. On the right pane, scroll down and select **Create from template (2)** button. Review the default options and then select **Save**.
 
-   ![Picture 1](../Media/createfromtemplate.png)
+   ![Picture 1](../Media/createfromtemplateupd.png)
 
 1. Once the saving is done, select the **Launch notebook** button. This will take you to the Microsoft Azure Machine Learning Studio.
 
@@ -65,8 +65,6 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 1. Enter **Mycompute<inject key="DeploymentID" enableCopy="false"/>** in the **Compute name** field. This will identify your compute instance.
 
 1. Scroll down and select the first option available. **Hint:** Workload type: Development on Notebooks and lightweight testing.
-
-     ![](../Media/36.png)
 
 1. Select the **Review + Create** button at the bottom of the screen, then scroll down and select **Create**. Close any feedback window that may appear. This takes a few minutes, you'll see a notification (bell icon) when it's done and the *Compute instance* left icon turns from blue to green.
 
