@@ -52,7 +52,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. In the middle command bar, select the **Add bookmark** button.
 
-   ![Picture 1](../Media/logss.png)
+   ![Picture 1](../Media/logssupd.png)
 
 1. Select **+ Add new entity** under *Entity mapping*.
 
@@ -94,7 +94,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. In the *"Microsoft Sentinel - Hunting"* blade, search for the query you just created in the list, *PowerShell Hunt*.
 
-1. Select **PowerShell Hunt** from the list.
+1. Select **PowerShell Hunt (1)** from the list and click on **Run Query (2)**.
 
    ![Picture 1](../Media/huntinggupd.png)
 
@@ -122,9 +122,9 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Hide the right blade by selecting the **>>** icon and then scroll right until you see the ellipsis **(...)** icon.
 
-1. Select **Add to existing incident**. All the incidents appear in the right pane.
+1. Select **Add to existing incident (1)**. All the incidents appear in the right pane.
 
-1. Select one of the incidents and then select **Add**. 
+1. Select one of the incidents and then select **Add (2)**. 
 
    ![Picture 1](../Media/addingbookmarkupd.png)
 
@@ -234,15 +234,15 @@ In this task, you will learn how to create a hunt in Microsoft Sentinel that com
 
 1. Select all the queries for that technique by selecting the box near the top of the list on the left.
 
-1. Select the **Hunt actions** drop down menu near the middle of the screen above the filters.
+1. Select the **Hunt actions (1)** drop down menu near the middle of the screen above the filters.
 
-1. Select **Create new hunt**. All the queries you selected are cloned for this new hunt.
+1. Select **Create new hunt (2)**. All the queries you selected are cloned for this new hunt.
 
    ![](../Media/41upd.png)
 
-1. Fill out the hunt name as **myhunt** and optional fields. The description is a good place to verbalize your hypothesis. The Hypothesis pull down menu is where you set the status of your working hypothesis.
+1. Fill out the hunt name as **myhunt (1)** and optional fields. The description is a good place to verbalize your hypothesis. The Hypothesis pull down menu is where you set the status of your working hypothesis.
 
-1. Select **Create** to get started.
+1. Select **Create  (2)** to get started.
 
    ![](../Media/40upd.png)
 
