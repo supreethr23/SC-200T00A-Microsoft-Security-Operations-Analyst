@@ -94,8 +94,6 @@ In this task, you will investigate an incident.
 
 1. Select **Entities** button and review the *Entities* and *Alerts* related to *WINServer*.
 
-1. Close the investigation graph by selecting the **X** icon at the top right of the page.
-
 1. Back in the incident page, in the left pane select **Active Status** and select **Closed**. 
 
 1. In the *Select classification* drop-down review the different options. After that, select **True positive - suspicious activity** and then select **Apply**.

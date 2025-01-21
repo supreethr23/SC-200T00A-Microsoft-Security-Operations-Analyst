@@ -80,7 +80,7 @@ In this task, you will assign preset security policies for Exchange Online Prote
 
     >**Note:** After clicking on **Manage protection settings**, This might need 40 to 60 Minutes to load the content, wait for 40 to 60 Minutes to load the page completely after 40 to 60 Minutes back to the same page and might need to sign out of Microsoft defender XDR and sign in again and then try repeating the steps again to move forward. 
 
-1. In the *Apply Exchange Online Protection* page, select **Specific recipients** under **Apply protection to:** and under **Domains** you can see that your domain is selected, if not start writing your tenant's domain name, select it, and then select **Next**.
+1. In the *Apply Exchange Online Protection* page, select **Specific recipients** under **Apply protection to:** and under **Domains** you can see that your domain is selected (1), if not start writing your tenant's domain name, select it, and then select **Next (2)**.
 
    ![Standart protection](../Media/stdprotect.png)
                                                                               

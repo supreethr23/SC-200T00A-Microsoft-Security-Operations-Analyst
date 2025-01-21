@@ -94,7 +94,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. In the *"Microsoft Sentinel - Hunting"* blade, search for the query you just created in the list, *PowerShell Hunt*.
 
-1. Select **PowerShell Hunt (1)** from the list and click on **Run Query (2)**.
+1. Select **PowerShell Hunt** from the list.
 
    ![Picture 1](../Media/huntinggupd.png)
 
@@ -204,9 +204,7 @@ In this task, you will use a Search job to look for a C2.
 
     >**Note:** If you were running the job, the restore would run for a couple of minutes and your data would be available in a new table.
 
-### Task 4: Create a hunt that combines multiple queries into an MITRE tactic
-
-In this task, you will learn how to create a hunt in Microsoft Sentinel that combines multiple queries and associates them with a MITRE ATT&CK tactic to enhance your detection capabilities.
+### Task 4: Create a hunt that combines multiple queries into a MITRE tactic
 
 1. The MITRE ATT&CK map helps you identify specific gaps in your detection coverage. Use predefined hunting queries for specific MITRE ATT&CK techniques as a starting point to develop new detection logic.
 
@@ -234,17 +232,17 @@ In this task, you will learn how to create a hunt in Microsoft Sentinel that com
 
 1. Select all the queries for that technique by selecting the box near the top of the list on the left.
 
-1. Select the **Hunt actions (1)** drop down menu near the middle of the screen above the filters.
+1. Select the **Hunt actions** drop down menu near the middle of the screen above the filters.
 
-1. Select **Create new hunt (2)**. All the queries you selected are cloned for this new hunt.
+1. Select **Create new hunt**. All the queries you selected are cloned for this new hunt.
 
-   ![](../Media/41upd.png)
+   ![](../Media/41.png)
 
-1. Fill out the hunt name as **myhunt (1)** and optional fields. The description is a good place to verbalize your hypothesis. The Hypothesis pull down menu is where you set the status of your working hypothesis.
+1. Fill out the hunt name as **myhunt** and optional fields. The description is a good place to verbalize your hypothesis. The Hypothesis pull down menu is where you set the status of your working hypothesis.
 
-1. Select **Create  (2)** to get started.
+1. Select **Create** to get started.
 
-   ![](../Media/40upd.png)
+   ![](../Media/40.png)
 
 1. Select the **Hunts (Preview)** tab to view your new hunt.
 
