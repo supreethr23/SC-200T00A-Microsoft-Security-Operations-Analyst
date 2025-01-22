@@ -38,7 +38,7 @@ In this task, you will create a detection for the first attack of the previous e
     ```
    ![Lab overview.](../Media/sc200ex7temp.png)
     
-    >**Note:** A result with the event might take up to 48 hours to appear, if you donot see the logs, you can proceed with the further steps.
+    >**Note:** A result with the event might take up to 5 to appear.
 
 1. It is important to help the Security Operations Center Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. **Run** the following query:
 
@@ -63,7 +63,7 @@ In this task, you will create a detection for the first attack of the previous e
 
 1. Select **Next: Set rule logic >** button.
 
-1. On the *Set rule logic* tab, the *Rule query* should be populated already with you KQL query, as well as the entities under *Alert enrichment - Entity mapping*.
+1. On the *Set rule logic* tab, the *Rule query* should be populated already with you KQL query, as well as the entities under *Alert enrichment - Entity mapping* if not add it manually.
 
     |Entity|Identifier|Data Field|
     |:----|:----|:----|
@@ -167,7 +167,7 @@ In this task, you will create a detection for the second attack of the previous 
 
 1. Select **Next: Set rule logic >** button. 
 
-1. On the *Set rule logic* tab, the *Rule query* should be populated already with you KQL query, as well the entities under *Alert enhancement - Entity mapping*.
+1. On the *Set rule logic* tab, the *Rule query* should be populated already with you KQL query, as well the entities under *Alert enhancement - Entity mapping* f not add it manually.
 
     |Entity|Identifier|Data Field|
     |:----|:----|:----|

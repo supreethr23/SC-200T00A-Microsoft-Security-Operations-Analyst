@@ -136,7 +136,7 @@ In this task, instead of using a LiveStream, you will create a NRT analytics que
 
 1. Select the **Analytics** page under *Configuration* in Microsoft Sentinel. 
 
-1. Select the **Create** tab, then **NRT query rule (Preview)**.
+1. Select the **Create** tab, then **NRT query rule**.
 
 1. This starts the "Analytics rule wizard". For the *General* tab type:
 
@@ -236,7 +236,7 @@ In this task, you will learn how to create a hunt in Microsoft Sentinel that com
 
 1. Select the **Hunt actions (1)** drop down menu near the middle of the screen above the filters.
 
-1. Select **Create new hunt (2)**. All the queries you selected are cloned for this new hunt.
+1. Select **Create hunt (2)**. All the queries you selected are cloned for this new hunt.
 
    ![](../Media/41upd.png)
 
