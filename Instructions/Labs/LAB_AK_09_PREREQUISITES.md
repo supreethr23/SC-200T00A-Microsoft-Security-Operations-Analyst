@@ -80,7 +80,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. First, select the **East US** region.
 
-1. Then, create a new resource group by clicking on **Create new (1)** with the name **RG-DEFENDER (2)** then click **OK (3)**
+1. Then, create a new resource group by clicking on **Create New (1)** with the name **RG-DEFENDER (2)** then click **OK (3)**
 
      ![Picture 1](../Media/sc-200-8.png)
      
