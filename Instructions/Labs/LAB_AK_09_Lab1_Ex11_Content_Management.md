@@ -48,7 +48,7 @@ In this task, you will enable Entity behavior analytics in Microsoft Sentinel.
 
 In this task, you will create an Azure DevOps repository.
 
-1. Open another tab in the browser and navigate to (https://aexprodcus1.vsaex.visualstudio.com/me?mkt=en-US).
+1. Open another tab in the browser and navigate to (https://aex.dev.azure.com).
 
 1. On the *We need a few more details* page, select **Continue**.
 

@@ -50,7 +50,7 @@ In this task, you will investigate an incident.
 
 1. Hide the left blade by selecting the **<<** icon next to the owner.
 
-1. Review the **Incident timeline** window. For the *Startup RegKey* alert, select the ellipsis **(...) (1)** icon and then **Run playbook (2)**. You will see the *PostMessageTeams-OnAlert* playbook. This option helps you to run playbooks manually.
+1. Review the **Incident timeline** window. Select the **Incident Actions** button at top-right and then **Run playbook**. You will see the Defender_XDR_Ransomware_Playbook_for_SecOps-Tasks playbook. This option help you to run playbooks manually.
 
     ![Lab overview.](../Media/runplaybook.png)
 
@@ -58,11 +58,11 @@ In this task, you will investigate an incident.
 
 1. Review the **Entities** window. At least the *Host* entity that we mapped within the KQL query from the previous exercise should appear. **Hint:** If no entities are shown, refresh the page.
 
-1. Select the **Tasks (Preview)** button from the command bar.
+1. Select the **Tasks** button from the command bar.
 
 1. Select **+ Add task**, type **Review who owns the machine** in the Title box and select **Save**.
 
-1. Close the *Incident tasks (Preview)* blade by selecting the **x** icon in the top right.
+1. Close the *Incident tasks* blade by selecting the **x** icon in the top right.
 
 1. Select the new **Activity Log** button from the command bar.
 
