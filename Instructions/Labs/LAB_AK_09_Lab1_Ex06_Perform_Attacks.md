@@ -53,6 +53,7 @@ In this task, you will simulate a privilege elevation attack by creating a new a
     net user theusernametoadd ThePassword1!
     net localgroup administrators theusernametoadd /add
     ```
+    >**Note:** If you face any issues during copy-paste, copy the prompt to a notepad and try pasting it to the cmd.
 
 ### Task 3: Command and Control Attack with DNS
 

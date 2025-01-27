@@ -60,7 +60,7 @@ In this task, you will create a scheduled query and connect it to the Teams chan
 
     >**Note:** If you do not see it in a connected state, follow the below Task to **connect to Azure Activity data connector**:
     
-1. Select **Create rule** to continue.
+1. Select **Create rule** to continue under Rule templates in the Analytics tab.
 
    ![](../Media/22.png)
 
@@ -124,6 +124,13 @@ In this task, you will modify the New CloudShell User rule in Microsoft Sentinel
 1. Select the **Next: Automated response >** button.
 
 1. On the *Automated response* tab under *Automation rules*, select **+ Add new**.
+
+   >**Note:** If you are unable to add a new Automation Rule, follow these steps:  
+   > 1. Open a new tab and navigate to your **Sentinel workspace**.  
+   > 2. Go to the **Automation** section and click on **+ Create**, then select **Automation Rule**.  
+   > 3. Enter the required details as specified from step 10 to step 13.  
+   > 4. Once completed, return to the previously open page and click **Refresh**.  
+   > 5. You should now see the newly created Automation Rule under **Automated Response**.
 
 1. For the *Automation rule name*, enter **Tier 2**.
 

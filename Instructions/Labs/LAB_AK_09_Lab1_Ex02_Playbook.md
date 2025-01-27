@@ -53,9 +53,9 @@ In this task, you'll create a Logic App that is used as a Playbook in Microsoft 
 
 1. For Playbook name, enter **Defender_XDR_Ransomware_Playbook_SecOps-Tasks (1)** (would exceed limit of 64 characters).
 
-1. Select **Connections (2)**.
-
    ![](../Media/8.png)
+
+1. Select **Connections (2)**.
 
 1. Select **Next: Review and create**.
 
@@ -109,8 +109,6 @@ In this task, you’ll update the new playbook you created with the proper conne
 
 1. The last line of the block should now read “Connected to your-admin-username”.
 
-1. Below within the logic split, select Add task to incident.
-
 1. Select Save on the command bar. The Logic App will be used in a future lab.
 
     ![](../Media/21.png)
@@ -153,7 +151,7 @@ In this task, you will create an automation rule in Microsoft Sentinel that runs
 
 1. Select the link to **Manage playbook permissions**.
 
-1. On the *Manage Permissions* page, select the **RG-Playbook** resource group you created in the previous lab, and select **Apply**.
+1. On the *Manage Permissions* page, select the **rg-playbook** resource group you created in the previous lab, and select **Apply**.
 
 1. From the drop down list, select the **Defender_XDR_Ransomware_Playbook_SecOps_Tasks (2)** playbook.
 

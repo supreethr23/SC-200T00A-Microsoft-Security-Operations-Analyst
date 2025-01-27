@@ -41,9 +41,9 @@ In this task, you will activate a Microsoft Security rule.
 
 1. Under Filter by Severity, select the **Custom (3)** option select Low, Medium, and High for the severity level **(4)**.
 
-1. Select the **Next: Automated response (5)** button and then select **Next: Review + create** button.
-
     ![Picture 1](../Media/l9e1-2.png)
+
+1. Select the **Next: Automated response (5)** button and then select **Next: Review + create** button.
 
 1. Click on **save**.
 

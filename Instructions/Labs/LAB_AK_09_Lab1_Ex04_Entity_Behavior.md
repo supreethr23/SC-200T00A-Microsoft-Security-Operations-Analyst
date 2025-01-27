@@ -51,6 +51,8 @@ In this task, you will confirm Anomalies analytics rules are enabled.
 
 1. Select any rule and then select **Edit** on the rule blade (Select ellipsis (...) icon at the right of the rule to see the Edit option).
 
+    >**Note:** If you are not able to select the edit option, please refresh the page.
+
 1. Review the *General* tab information. Notice the *Mode* is **Production** and then select **Next: Configuration**.
 
 1. Review the *Configuration* tab information. Notice that you cannot change the **Anomaly score threshold**.
