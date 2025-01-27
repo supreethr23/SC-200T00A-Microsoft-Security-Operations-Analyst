@@ -36,9 +36,9 @@ In this task, you will create a detection for the first attack of the previous e
     ```KQL
     search "temp\\startup.bat"
     ```
-   ![Lab overview.](../Media/sc200ex7temp.png)
+   ![Lab overview.](../Media/sc200ex7tempupd.png)
     
-    >**Note:** A result with the event might take up to 5 to appear.
+    >**Note:** A result with the event might take up to 5 minutes to appear.
 
 1. It is important to help the Security Operations Center Analyst by providing as much context about the alert as you can. This includes projecting Entities for use in the investigation graph. **Run** the following query:
 
@@ -58,19 +58,17 @@ In this task, you will create a detection for the first attack of the previous e
     |---|---|
     |Name|Startup RegKey|
     |Description|Startup RegKey in c:\temp|
-    |Tactics|Persistence|
     |Severity|High|
-
+    |MITRE ATT&CK|Persistence|
+ 
 1. Select **Next: Set rule logic >** button.
 
-1. On the *Set rule logic* tab, the *Rule query* should be populated already with you KQL query, as well as the entities under *Alert enrichment - Entity mapping* if not add it manually.
+1. On the *Set rule logic* tab, the *Rule query* should be populated already with you KQL query, as well as the entities under *Alert enrichment - Entity mapping*, if not add it manually with the below details.
 
     |Entity|Identifier|Data Field|
     |:----|:----|:----|
     |Account|FullName|AccountCustomEntity|
     |Host|Hostname|HostCustomEntity|
-
-1. If **Hostname** isn't selected for *Host* Entity, select it from the drop-down list.
 
 1. For *Query scheduling* set the following:
 
@@ -85,7 +83,15 @@ In this task, you will create a detection for the first attack of the previous e
 
 1. For the *Incident settings* tab, leave the default values and select **Next: Automated response >** button.
 
-1. On the *Automated response* tab under *Automation rules*, select **Add new**.
+1. On the *Automated response* tab under **Automation rules**, select **Add new**.
+
+    >**Note:** If you are unable to add a new Automation Rule, follow these steps:  
+    > 1. Open a new tab and navigate to your **Sentinel workspace**.  
+    > 2. Go to the **Automation** section and click on **+ Create**, then select **Automation Rule**.  
+    > 3. Enter the required details as specified from Step 14 to Step 15.  
+    > 4. Once completed, return to the previously open page and click **Refresh**.
+    > 5. Now fill the details again from Step 7.  
+    > 5. You should now see the newly created Automation Rule under **Automated Response**.
 
 1. Use the settings in the table to configure the automation rule.
 
@@ -162,8 +168,8 @@ In this task, you will create a detection for the second attack of the previous 
     |---|---|
     |Name|**SecurityEvent Local Administrators User Add**|
     |Description|**User added to Local Administrators group**|
-    |Tactics|**Privilege Escalation**|
     |Severity|**High**|
+    |MITRE ATT&CK|**Privilege Escalation**|
 
 1. Select **Next: Set rule logic >** button. 
 
@@ -189,6 +195,14 @@ In this task, you will create a detection for the second attack of the previous 
 
 1. On the *Automated response* tab under *Automation rules*, select **Add new**.
 
+    >**Note:** If you are unable to add a new Automation Rule, follow these steps:  
+    > 1. Open a new tab and navigate to your **Sentinel workspace**.  
+    > 2. Go to the **Automation** section and click on **+ Create**, then select **Automation Rule**.  
+    > 3. Enter the required details as specified from Step 14 to Step 15.  
+    > 4. Once completed, return to the previously open page and click **Refresh**.
+    > 5. Now fill the details again from Step 7.  
+    > 5. You should now see the newly created Automation Rule under **Automated Response**.
+
 1. Use the settings in the table to configure the automation rule.
 
    |Setting|Value|
@@ -204,7 +218,7 @@ In this task, you will create a detection for the second attack of the previous 
 
 1. Select the **Next: Review and create >** button.
   
-1. On the *Review and create* tab, select the **Create** button to create the new Scheduled Analytics rule.
+1. On the *Review and create* tab, select the **Save** button to create the new Scheduled Analytics rule.
 
 ## Review
 In this lab, you have completed the following:

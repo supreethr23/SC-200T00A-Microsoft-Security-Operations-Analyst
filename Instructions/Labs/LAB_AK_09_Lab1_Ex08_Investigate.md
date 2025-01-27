@@ -38,7 +38,7 @@ In this task, you will investigate an incident.
 
 1. On the left blade of the incident, change the Status to **Active (2)** and then select **Apply (3)**.
 
-   ![Lab overview.](../Media/active.png)
+   ![Lab overview.](../Media/activeupd.png)
 
 1. Scroll down to the *Tags* area, select **+ (1)** and type **RegKey (2)** and select **OK (3)**.
 
@@ -50,11 +50,11 @@ In this task, you will investigate an incident.
 
 1. Hide the left blade by selecting the **<<** icon next to the owner.
 
-1. Review the **Incident timeline** window. Select the **Incident Actions** button at top-right and then **Run playbook**. You will see the Defender_XDR_Ransomware_Playbook_for_SecOps-Tasks playbook. This option help you to run playbooks manually.
+1. Review the **Incident timeline** window. Select the **Incident Actions (1)** button at top-right and then **Run playbook (2)**. You will see the Defender_XDR_Ransomware_Playbook_for_SecOps-Tasks playbook. This option help you to run playbooks manually.
 
-    ![Lab overview.](../Media/runplaybook.png)
+    ![Lab overview.](../Media/runplaybookupd.png)
 
-1. Close the *Alert playbooks* blade by selecting the **x** icon in the top right.
+1. Close the *Run playbook on incident blade* by selecting the **X** icon in the top right.
 
 1. Review the **Entities** window. At least the *Host* entity that we mapped within the KQL query from the previous exercise should appear. **Hint:** If no entities are shown, refresh the page.
 
@@ -70,7 +70,7 @@ In this task, you will investigate an incident.
 
 1. Close the *Incident activity log* blade by selecting the **x** icon in the top right.
 
-1. From the almost hidden left blade, select the user icon named **Unassigned (1)**. The new incident experience allows quick changes from here.
+1. From the almost hidden left blade, if the User icon shows as **Unassigned** then select the user icon named **Unassigned (1)**. The new incident experience allows quick changes from here.
 
 1. Select **Assign to me (2)** and then scroll down to select **Apply (3)** to save the changes.
 
@@ -84,11 +84,15 @@ In this task, you will investigate an incident.
 
    ![Lab overview.](../Media/investigation.png) 
 
+   >**Note:** You might see only one entity initially, as it may take some time for the other entities to appear. Please do not wait and proceed to the next steps.
+
    >**Hint:** If the icons are too small for your screen, select **(+)** to magnify them.   
 
 1. Close the query window by selecting the **X** icon at the top right to go back to the *Investigation* page.
 
 1. Now select the **WINServer** entity, a window on the right opens for more detailed information. Review the **Info** page.
+
+   >**Note:** If the right window does not open then click on the blade icon.
 
 1. Select **Timeline** button. Hover the incidents and see which things on the graph occurred at what point in time.
 

@@ -84,6 +84,8 @@ In this task, you will create an Azure DevOps repository.
 
 1. Select **Policies** under the *Security* area of the left blade.
 
+   >**Note:** If the Policies option is not visible, click on the **Back arrow**, and it should appear.
+
 1. Toggle **On** *Third-party application access via OAuth* under the *Application connection policies* area.
 
    ![Picture 1](../Media/thirdpartyauth.png)
@@ -104,13 +106,13 @@ In this task, you will connect Microsoft Sentinel to Azure DevOps to manage cont
 
 1. Select **Authorize**. Scroll down the permissions request and then select **Accept**.
 
-1. Select the Organization you created earlier (e.g., WWLx...).
+1. Select the Organization you created earlier (e.g., odluserxxxxxx...).
 
 1. Select the Project you created earlier, *My Sentinel Content*.
 
 1. Select the Repository you created earlier, *My Sentinel Content*. **Hint:** You might need to scroll down within the drop-down to see the repository.
 
-1. Select the Branch **main**. **Hint:** You might need to scroll down within the drop-down to see the branch.
+1. Select the Branch **refsheads/main**. **Hint:** You might need to scroll down within the drop-down to see the branch.
 
 1. Select all content types.
 

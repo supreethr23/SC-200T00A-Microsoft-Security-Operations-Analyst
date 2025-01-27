@@ -48,11 +48,11 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. Review the different results. You have now identified PowerShell requests that are running in your environment.
 
-1. Select the checkbox of the results that shows the **azureuser** SubjectUsername.
+1. Select the checkbox of the results that shows the **Administrator** SubjectUsername.
 
 1. In the middle command bar, select the **Add bookmark** button.
 
-   ![Picture 1](../Media/logssupd.png)
+   ![Picture 1](../Media/logssupd1.png)
 
 1. Select **+ Add new entity** under *Entity mapping*.
 
@@ -70,7 +70,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. In the *Create custom query* window, for the *Name* enter **PowerShell Hunt**.
 
-1. For the *Custom query* enter the following KQL statement:
+1. For the *Query* enter the following KQL statement:
 
     ```KQL
     let lookback = 2d; 
@@ -94,7 +94,7 @@ In this task, you will create a hunting query, bookmark a result, and create a L
 
 1. In the *"Microsoft Sentinel - Hunting"* blade, search for the query you just created in the list, *PowerShell Hunt*.
 
-1. Select **PowerShell Hunt (1)** from the list and click on **Run Query (2)**.
+1. Select **PowerShell Hunt (1)** from the list and click on **Run selected query (2)**.
 
    ![Picture 1](../Media/huntinggupd.png)
 
@@ -246,7 +246,7 @@ In this task, you will learn how to create a hunt in Microsoft Sentinel that com
 
    ![](../Media/40upd.png)
 
-1. Select the **Hunts (Preview)** tab to view your new hunt.
+1. Click on **Hunting** from the left navigation pane and select the **Hunts (Preview)** tab to view your new hunt.
 
 1. Select the hunt link by name to view the details and take actions.
 

@@ -56,7 +56,7 @@ In this task, you will save a workbook template and modify it.
 
 1. Scroll down to the *Caller activities over time* area, look at the color of the *Activities* column since we are going to format those columns. Select the **Edit** button below the grid.
 
-   ![Picture 1](../Media/editcaller.png)
+   ![Picture 1](../Media/editcallerupd.png)
 
 1. Select the **Column Settings** button, it is located to the right of the *Run Query* command bar. **Hint:** This button only appears if there is data from the KQL query.
 
@@ -91,13 +91,15 @@ overview of the workbook.
 
 1. Select **Done Editing** on the bottom of this section, *Editing text item: text - 2*. Notice that your header increased in size and name changed.
 
+1. To edit the workbook, select **Edit**.
+
 1. Select **Edit** below the only visible bar chart graph.
 
 1. Review the KQL statement that provides a *union* statement of counts across all tables.
 
-1. Scroll down and select the **Done Editing** on the bottom menu, for the *Editing query item: query - 2*.
+1. Scroll down and select the **Done Editing** on the bottom menu.
 
-1. Select the ellipsis **...** next to the *Edit* button of the bar chart graph, then select **+ Add**, then select **Add query**.
+1. Select the ellipsis **...** next to the *Edit* button of the barchart graph, then select **+ Add**, then select **Add query**.
 
 1. Type **SecurityEvent** into the query box.
 
@@ -117,9 +119,9 @@ overview of the workbook.
 
 1. Scroll down and select **Done Editing** on the bottom menu, for the new *Editing query item: query - 2*.
 
-1. Scroll down and at the bottom of the workbook select **+ Add**, then **Add query**.
+1. Scroll down and at the bottom of the workbook select **+ Add (1)**, then **Add query (2)**.
 
-    ![Picture 1](../Media/addquery.png)
+    ![Picture 1](../Media/addqueryupd.png)
 
 1. Type **SecurityEvent** into the query box.
 
@@ -145,7 +147,7 @@ overview of the workbook.
 
 1. Select the **RG-Defender** resource group if needed and leave other values as default.
 
-1.  Select **Apply** to commit the changes. 
+1.  Select **Save as** to commit the changes. 
 
 1. Close the workbook by selecting the **X** at the top-right or select **Workbooks** in the Microsoft Sentinel portal.
 

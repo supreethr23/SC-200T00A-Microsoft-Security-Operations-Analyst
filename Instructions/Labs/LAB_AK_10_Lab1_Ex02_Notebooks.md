@@ -64,7 +64,8 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 
 1. Enter **Mycompute<inject key="DeploymentID" enableCopy="false"/>** in the **Compute name** field. This will identify your compute instance.
 
-1. Scroll down and select the first option available. **Hint:** Workload type: Development on Notebooks and lightweight testing.
+1. Scroll down and select **Standard_DS11_v2**. 
+**Hint:** Workload type: Development on Notebooks and lightweight testing.
 
 1. Select the **Review + Create** button at the bottom of the screen, then scroll down and select **Create**. Close any feedback window that may appear. This takes a few minutes, you'll see a notification (bell icon) when it's done and the *Compute instance* left icon turns from blue to green.
 
@@ -83,6 +84,8 @@ In this task, you will explore using notebooks in Microsoft Sentinel.
 1. Run the *Python code* to initialize the cell by selecting the **Run cell** button (Play icon) to the left of the code.
 
 1. It should take approximately 15 seconds to run. Once it's done, review the output messages and disregard any warnings about the Python kernel version. The code ran successfully if *msticpyconfig.yaml* was created in the *utils* folder in the *file explorer* pane on the left. It may take another 30 seconds for the file to appear.
+
+   ![Picture 1](../Media/pyconfig.png)
 
     >**Hint:** You can clear the output messages by selecting the ellipsis (...) on the left of the code window for the *Output menu* and selecting the *Clear output* (square with an x*) icon.
 
