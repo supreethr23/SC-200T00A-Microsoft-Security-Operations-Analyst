@@ -66,17 +66,17 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
       
    > ![Picture 1](../Media/x0.png)
 
-1. In the Search bar of the Azure portal, type *Arc*, then select **Azure Arc**.
+1. In the Search bar of the Azure portal, type **Azure Arc (1)**, then select **Azure Arc (2)**.
 
-     ![Picture 1](../Media/sc-200-5.png)
+     ![Picture 1](../Media/l8e1-15.png)
 
-1. On the left side navigation pane under **Azure Arc Resources** select **Machines (1)** and then click on **+ Add/Create (2)** drop dowm and then click on **Add a Machine (3)**.
+1. On the left side navigation pane under **Azure Arc resources** select **Machines (1)** and then click on **+ Add/Create (2)** drop dowm and then click on **Add a Machine (3)**.
 
-     ![Picture 1](../Media/sc-200-6.png)
+     ![Picture 1](../Media/l8e1-16.png)
 
 1. Select **Generate script** in the **"Add a single server"** section.
 
-     ![Picture 1](../Media/sc-200-7.png)
+     ![Picture 1](../Media/l8e1-17.png)
 
 1. First, select the **East US** region.
 
@@ -94,9 +94,9 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
      ![Picture 1](../Media/sc-200-10.png)
 
-1. Right-click the Windows Start button, In the search box type in **PowerShell**. You should see the **Windows PowerShell App** appear. Select the **Run as Administrator** option.
+1. Right-click the Windows Start **(1)** button and select **Windows PowerShell (Admin) (2)**.
 
-     ![Picture 1](../Media/sc-200-11.png)
+     ![Picture 1](../Media/l8e1-11.png)
    
 1. In case you get a UAC prompt, enter *Administrator* for "Username" and *Passw0rd!* for "Password", else skip to the next step.
 
@@ -108,15 +108,17 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Enter **A** for Yes to All and press enter.
 
-     ![Picture 1](../Media/sc-200-12.png)
+     ![Picture 1](../Media/l8e123.png)
 
 1. Type **.\OnboardingScript.ps1** and press enter.  
 
     >**Important:** If you get the error *"The term .\OnboardingScript.ps1 is not recognized..."*, make sure you are doing the steps for Task 3 on the WINSERVER virtual machine. Another issue might be that the name of the file changed due to multiple downloads, search for *".\OnboardingScript (1).ps1"* or other file numbers in the running directory.
 
+    ![](../Media/l8e124.png)
+
 1. Enter **R** to Run once and press enter (this may take a couple of minutes).
 
-     ![Picture 1](../Media/sc-200-13.png)
+     ![Picture 1](../Media/l8e125.png)
 
 1. The setup process will open a new Edge browser tab to authenticate the Azure Arc agent. Select your admin account, wait for the message "Authentication complete" and then go back to the Windows PowerShell window.
 
@@ -164,7 +166,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
    ![Picture 1](../Media/113.png)
 
-1. In the Azure portal's search bar, type **Microsoft Sentinel** and select it.
+1. In the Azure portal's search bar, type **Microsoft Sentinel (1)** and select it **Microsoft Sentinel (2)**.
 
      ![Picture 1](../Media/sc-200-19.png)
 
@@ -176,12 +178,12 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
 1. Select the Microsoft Sentinel Workspace you created.
  
-1. Click on **Go to the content hub**, search for **Windows Security Events**, and click on **Install**.
+1. Click on **Go to the content hub (1)**, search for **Windows Security Events (2)**, and select it(3) and click on **Install (4)**.
 
      ![Picture 1](../Media/contenthub.png)
      ![Picture 1](../Media/installWSEvents.png)
 
-1. Once the installation is completed, go to the data connector page and refresh you should find **Windows Security Events via AMA**.
+1. Once the installation is completed, go to the **Data connector (1)** page and refresh you should find **Windows Security Events via AMA (2)**.
 
      ![Picture 1](../Media/dataconnectors.png)
 
@@ -199,7 +201,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
      ![Picture 1](../Media/sc-200-22.png)
 
-1. Expand the **Subscription** and the **RG-DEFENDER** (or the Resource Group you have created), then select **WIN-xxxx**. Then select **Next: Collect** and **Next: Review + Create**.
+1. Expand the **Subscription (1)** and the **RG-DEFENDER (2)** (or the Resource Group you have created), then select **WIN-xxxx (3)**. Then select **Next: Collect (4)** and **Next: Review + Create**.
 
      ![Picture 1](../Media/sc-200-23.png)
 
