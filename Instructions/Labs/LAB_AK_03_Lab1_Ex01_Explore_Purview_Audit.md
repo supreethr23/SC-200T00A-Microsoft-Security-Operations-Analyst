@@ -27,7 +27,7 @@ In this task, you'll assign preset security policies for Exchange Online Protect
 
 1. From the navigation menu, expand *Operational technology* and select **More resources**.
 
-1. In the **More resources** pane, select the **Open** button om the *Microsoft Purview portal* tile.
+1. In the **More resources (1)** pane, select the **Open (2)** button om the *Microsoft Purview portal* tile.
 
    ![Screenshot showing the Welcome to the new Microsoft Purview portal screen.](../Media/lab3-1.png)
 

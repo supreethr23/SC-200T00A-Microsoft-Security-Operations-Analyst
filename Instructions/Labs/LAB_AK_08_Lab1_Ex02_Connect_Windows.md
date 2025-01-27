@@ -28,7 +28,7 @@ In this task, you'll create a Windows virtual machine in Azure.
 
     ![](../Media/l8e1-1.png)
 
-1. In the **Search services and marketplace** box, enter *Windows 10* and select **Microsoft Window 10** from the drop-down list.
+1. In the **Search services and marketplace** box, enter *Windows 10 (1)* and select **Microsoft Window 10 (2)** from the drop-down list.
 
     ![](../Media/l8e1-2.png)
 
@@ -100,7 +100,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
     ![](../Media/l8e1-13.png)
 
- 1. Select **WIN1-<inject key="DeploymentID" enableCopy="false"/>**, then select **WIN2**. Right-click on the **WIN2** virtual machine and choose **Start**, then click **Continue**. After that, right-click on the **WIN2** virtual machine again and select **Connect**.
+ 1. Select **WIN1-<inject key="DeploymentID" enableCopy="false"/> (1)**, then select **WIN2**. Right-click on the **WIN2 (2)** virtual machine and choose **Start**, then click **Continue**. After that, right-click on the **WIN2** virtual machine again and select **Connect (3)**.
 
     ![](../Media/l8e1-12.png)
  
@@ -124,9 +124,9 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
    ![](../Media/l8e1-15.png)
 
-1. In the navigation pane under **Azure Arc resources** select **Machines**
+1. In the navigation pane under **Azure Arc resources** select **Machines (1)**
 
-1. Select **+ Add/Create**, then select **Add a machine**.
+1. Select **+ Add/Create (2)**, then select **Add a machine (3)**.
 
    ![](../Media/l8e1-16.png)
 
@@ -134,9 +134,9 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
    ![](../Media/l8e1-17.png)
 
-1. In the **Add a server with Azure Arc** page, select the **RG-Defender** Resource group under Project details.
+1. In the **Add a server with Azure Arc** page, select the **RG-Defender (2)** Resource group under Project details.
  
-1. For *Region*, select **(US) East Us** from the drop-down list.
+1. For *Region*, select **(US) East Us (3)** from the drop-down list.
 
     ![](../Media/l8e118.png)
 
@@ -154,7 +154,7 @@ In this task, you will install Azure Arc and connect a non-Azure Windows virtual
 
    ![](../Media/l8e121.png)
     
-1. Right-click the Windows Start button and select **Windows PowerShell (Admin)**.
+1. Right-click the Windows Start **(1)** button and select **Windows PowerShell (Admin) (2)**.
 
    ![](../Media/l8e1-11.png)
 
@@ -222,7 +222,7 @@ In this task, you'll connect an Azure Windows virtual machine to Microsoft Senti
 
     >**Note:** The *Windows Security Events* solution installs both the *Windows Security Events via AMA* and the *Security Events via Legacy Agent* Data connectors. Plus 2 Workbooks, 20 Analytic Rules, and 43 Hunting Queries.
 
-1. Select the **Windows Security Events via AMA** Data connector, and select **Open connector page** on the connector information blade.
+1. Select the **Windows Security Events via AMA (1)** Data connector, and select **Open connector page (2)** on the connector information blade.
 
    ![](../Media/l8e3-14.png)
     

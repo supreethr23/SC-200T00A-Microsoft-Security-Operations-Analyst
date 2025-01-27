@@ -26,7 +26,7 @@ You're a Security Operations Analyst working at a company that is implementing M
 
 In this task, you will create a Log Analytics workspace for use with Microsoft Defender for Cloud.
 
-1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**.
+1. In the Search bar of the Azure portal, type **Log Analytics (1)**, then select **Log Analytics workspaces (2)**.
 
    ![](../Media/l8e132.png)
 
@@ -34,11 +34,11 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
    ![](../Media/l8e133.png)
 
-1. Select Resource Group **RG-Defender**  from the drop down.
+1. Select Resource Group **RG-Defender (2)**  from the drop down.
 
-1. For the Name, enter **uniquenameDefender**.
+1. For the Name, enter **uniquenameDefender (3)**.
 
-1. Select **Review + Create**.
+1. Select **Review + Create (4)**.
 
    ![](../Media/l8e134.png)
 
@@ -50,7 +50,7 @@ In this task, you will create a Log Analytics workspace for use with Microsoft D
 
 In this task, you will deploy Microsoft Sentinel to an existing Log Analytics workspace, enabling it to collect, detect, and respond to security threats.
 
-1. In the Search bar of the Azure portal, type **microsoft sentinel**, then select **Microsoft Sentinel**.
+1. In the Search bar of the Azure portal, type **microsoft sentinel (1)**, then select **Microsoft Sentinel (2)**.
 
    ![](../Media/l8e129.png)
 
@@ -64,7 +64,7 @@ In this task, you will deploy Microsoft Sentinel to an existing Log Analytics wo
 
 ### Task 3 - Configure data retention
 
-1. In the Search bar of the Azure portal, type **Log Analytics**, then select **Log Analytics workspaces**. 
+1. In the Search bar of the Azure portal, type **Log Analytics (1)**, then select **Log Analytics workspaces (2)**. 
 
    ![](../Media/l8e132.png)
 
@@ -86,7 +86,7 @@ In this task, you will deploy Microsoft Sentinel to an existing Log Analytics wo
 
 In this task, you will create a watchlist in Microsoft Sentinel.
 
-1. In the search box of your Labvm, enter *Notepad*. Select **Notepad** from the results.
+1. In the search box of your Labvm, enter *Notepad (1)*. Select **Notepad (2)** from the results.
 
    ![](../Media/l7-3.png)
 
@@ -104,15 +104,15 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
     ![](../Media/l7-5.png)
 
-1. From the menu select, **File - Save As**.
+1. From the menu select, **File (1) - Save As (2)**.
 
    ![](../Media/l7-4.png)
 
-1. Name the file ***HighValue.csv***, change the file type to **All files(*.*)** and select **Save**. 
+1. Name the file ***HighValue.csv (1)***, change the file type to **All files(*.*) (2)** and select **Save (3)**. 
 
    ![](../Media/l7-6.png)
 
-  >**Hint:** The file can be saved in the *Documents* folder.
+   >**Hint:** The file can be saved in the *Documents* folder.
 
 1. Close Notepad.
 
@@ -132,21 +132,21 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
     |General setting|Value|
     |---|---|
-    |Name|**HighValueHosts**|
-    |Description|**High Value Hosts**|
-    |Alias|**HighValueHosts**|
+    |Name|**HighValueHosts (1)**|
+    |Description|**High Value Hosts (2)**|
+    |Alias|**HighValueHosts (3)**|
 
-1. Select, **Next: Source >**.
+1. Select, **Next: Source > (4)**.
 
    ![](../Media/l7-8.png)
 
-1. Select **Browse for files** under *Upload file* and browse for the *HighValue.csv* file you just created.
+1. Select **Browse for files** under *Upload file* and browse for the *HighValue.csv (1)* file you just created.
 
     ![](../Media/l7-9.png)
 
-1. In the ***SearchKey field*** select **Hostname**.
+1. In the ***SearchKey field*** select **Hostname (2)**.
 
-1. Select **Next: Review + Create >**.
+1. Select **Next: Review + Create > (3)**.
 
     ![](../Media/l7-10.png)
 
@@ -183,29 +183,29 @@ In this task, you will create a watchlist in Microsoft Sentinel.
 
 In this task, you will create an indicator in Microsoft Sentinel.
 
-1. In Microsoft Sentinel, On the left menu, select the **Threat intelligence** option in the **Threat management** area.
+1. In Microsoft Sentinel, On the left menu, select the **Threat intelligence** option in the **Threat management (1)** area.
 
-1. Select **+ Add New** from the command bar.
+1. Select **+ Add New (2)** from the command bar.
 
    ![](../Media/l7-15.png)
 
 1. Review the different indicator types available in the ***Types*** dropdown. Select the **domain-name**. Enter your initials in the Domain box. You can use **onmicrosoft.com**.
 
-1. For the ***Threat types***, add **malicious-activity** and select **Apply**.
+1. For the ***Threat types***, click on **+ (1)**, enter tag **malicious-activity (1)** and select **Apply (3)**.
 
     ![](../Media/l7-16.png)
 
-1. For the ***Name***, enter indicator. 
+1. For the ***Name (1)***, enter indicator. 
 
-1. Set the **Valid from** field to today's date. and **valid till** to next day.
+1. Set the **Valid from (2)** field to today's date. and **valid till (3)** to next day.
 
-1. Select **Apply**.
+1. Select **Apply (4)**.
 
     ![](../Media/l7-17.png)
 
     **Note:** It could take a couple of minutes for the indicator to appear.
 
-1. On the left Menu, Select the **Logs** option in the **General** area. You may need to disable the "Always show queries" option and close the *Queries* window to run the statements.
+1. On the left Menu, Select the **Logs (1** option in the **General** area. You may need to disable the "Always show queries" option and close the *Queries* window to run the statements by clickin on **Run (2)**.
 
 1. Run the following KQL statement.
 
@@ -230,15 +230,15 @@ In this task, you will create an indicator in Microsoft Sentinel.
 
 In this task, you will change the retention period for the SecurityEvent table.
 
-1. In Microsoft Sentinel, select the **Settings** option under the ***Configuration*** area.
+1. In Microsoft Sentinel, select the **Settings (1)** option under the ***Configuration*** area.
 
-1. Select **Workspace settings**.
+1. Select **Workspace settings (2)**.
 
    ![](../Media/l7-20.png)
 
-1. In Log Analytics workspace, select the **Tables** option under the ***Settings*** area.
+1. In Log Analytics workspace, select the **Tables (1)** option under the ***Settings*** area.
 
-1. Search and select the table **SecurityEvent**, and then right click on ***Security Event*** table.
+1. Search and select the table **SecurityEvent (2)**, and then right click on ***Security Event (3)*** table.
 
    ![](../Media/l7-21.png)
 
@@ -246,9 +246,9 @@ In this task, you will change the retention period for the SecurityEvent table.
 
    ![](../Media/l7-22.png)
 
-1. Select **180 days** for ***Total retention period***. Notice that ***Archive period*** is only 150 days, since it uses 30 days from the (default) ***Interactive retention***.
+1. Select **180 days (1)** for ***Total retention period***. Notice that ***Archive period*** is only 150 days, since it uses 30 days from the (default) ***Interactive retention***.
 
-1. Select **Save** to apply the changes.
+1. Select **Save (2)** to apply the changes.
 
    ![](../Media/l7-23.png)
 

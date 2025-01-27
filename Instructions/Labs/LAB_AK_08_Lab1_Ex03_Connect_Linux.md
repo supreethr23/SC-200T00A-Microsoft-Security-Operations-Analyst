@@ -51,7 +51,7 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Commo
 
 1. Back to the Azure portal, In the Search bar of the Azure portal, type **virtual machine**, then select **Virtual machine**.
 
-1. Open LIN1 Linux virtual machine and copy the **Public IP address** of LIN1 and paste on the notepad.
+1. Open LIN1 **(1)** Linux virtual machine and copy the **Public IP address (3)** of LIN1 from the overview **(2)** and paste on the notepad.
 
    ![](../Media/l8e3-5.png)
 
@@ -93,16 +93,15 @@ In this task, you will connect a Linux host to Microsoft Sentinel with the Syslo
 
 1. Go-to content hub in data connector window search for **Syslog via Legacy Agent** and install it.
   
-1. From the **Data Connectors tab**, search for the **Syslog via Legacy Agent** connector and select it from the list.
+1. From the **Data Connectors tab (1)**, search for the **Syslog via Legacy Agent (2)** connector and select it from the list.
 
-1. Select the **Open connector page** on the connector information blade.
+1. Select the **Open connector page (3)** on the connector information blade.
 
    ![](../Media/l8e3-4.png)
 
 1. Under **Configuration**, open the **Install agent on a non-Azure Linux Machine** section.
 
 1. Select the link for **Download & install agent for non-Azure Linux machine**. 
-
 
     ![](../Media/l8e3-3.png)
 
@@ -152,9 +151,9 @@ In this task, you will configure the Syslog collection facilities.
 
 1. In Microsoft Sentinel portal, select **Settings** from *Configuration* area and then select **Workspace settings** from the settings blade.
 
-1. On the left menu Select **Legacy agents management** from the **Classic** area.
+1. On the left menu Select **Legacy agents management (1)** from the **Classic** area.
 
-1. Select the **Syslog** tab.
+1. Select the **Syslog (2)** tab.
 
 1. Select the **+ Add facility** button.
 
@@ -162,9 +161,9 @@ In this task, you will configure the Syslog collection facilities.
 
 1. Select the **+ Add facility** button again.
 
-1. Select **authpriv** from the drop-down menu for **Facility name**.
+1. Select **authpriv (3)** from the drop-down menu for **Facility name**.
 
-1. Select **Apply**.  You have completed this task.
+1. Select **Apply (4)**.  You have completed this task.
 
     ![](../Media/l8e3-1.png)
 

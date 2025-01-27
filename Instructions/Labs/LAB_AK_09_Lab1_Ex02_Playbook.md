@@ -43,9 +43,9 @@ In this task, you'll create a Logic App that is used as a Playbook in Microsoft 
 
    ![](../Media/4.png)
 
-1. Select the **Incident tasks - Microsoft Defender XDR Ransomware Playbook for SecOps** template.
+1. Select the **Incident tasks - Microsoft Defender XDR Ransomware Playbook for SecOps (1)** template.
 
-1. On the details pane, select **Create playbook**.
+1. On the details pane, select **Create playbook (2)**.
 
     ![](../Media/7.png)
 
@@ -121,7 +121,7 @@ In this task, you will create an automation rule in Microsoft Sentinel that runs
 
 1. Within Microsoft Sentinel, go to Automation under Configuration.
 
-1. Select Create and choose Automation Rule.
+1. Select **+ Create (1)** and choose **Automation Rule (2)**.
 
    ![](../Media/17.png)
 
@@ -135,11 +135,11 @@ In this task, you will create an automation rule in Microsoft Sentinel that runs
 
     ![](../Media/18.png)
 
-1. From the drop down, select Tactics.
+1. From the drop down, select **Tactics (1)**.
 
-1. Select the **Contains** operator from the dropdown.
+1. Select the **Contains (2)** operator from the dropdown.
 
-1. Select the following tactics:
+1. Select the following tactics **(3)**:
     - Reconnaissance
     - Execution
     - Persistence
@@ -149,15 +149,15 @@ In this task, you will create an automation rule in Microsoft Sentinel that runs
 
       ![](../Media/19.png)
 
-1. Under Actions, select Run Playbook.
+1. Under Actions, select **Run Playbook (1)**.
 
 1. Select the link to **Manage playbook permissions**.
 
 1. On the *Manage Permissions* page, select the **RG-Playbook** resource group you created in the previous lab, and select **Apply**.
 
-1. From the drop down list, select the **Defender_XDR_Ransomware_Playbook_SecOps_Tasks** playbook.
+1. From the drop down list, select the **Defender_XDR_Ransomware_Playbook_SecOps_Tasks (2)** playbook.
 
-1. Select **Apply** at the bottom.
+1. Select **Apply (3)** at the bottom.
 
    ![](../Media/20.png)
 

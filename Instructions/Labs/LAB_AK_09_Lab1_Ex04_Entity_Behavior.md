@@ -35,9 +35,9 @@ In this task, you will explore Entity behavior analytics in Microsoft Sentinel.
 
     ![Lab overview.](../Media/ueba.png)
 
-1. On the *Settings* tab under *Entity behaviour analytics*, scroll down the *Anomalies* section and verify read through the paragraph, and verify that the *switch* is *On*.
+1. On the *Settings* tab under *Entity behaviour analytics*, scroll down the *Anomalies* section and verify read through the paragraph, and verify that the *switch* is *On (1)*.
 
-1. Select the **Go to analytics in oder to configure the anomalies** link.
+1. Select the **Go to analytics in oder to configure the anomalies (1)** link.
 
     ![Lab overview.](../Media/35.png)
 
